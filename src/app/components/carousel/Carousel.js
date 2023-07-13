@@ -17,7 +17,7 @@ const CarouselComponent = () => {
               <Navbar.Brand href="#">
                 <Image
                   src="/image 5.png"
-                  width={250}
+                  width={300}
                   height={80}
                   alt="Picture of the author"
                   className="nav-logo"
