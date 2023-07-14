@@ -61,7 +61,7 @@ const Event = () => {
                 </div>
             </div>
             </div>
-            {/* <div className="row-2">
+            <div className="row-2">
               <div className="event-image-2">
                 <img src="Mask group.png" alt="" />
               </div>
@@ -82,8 +82,8 @@ const Event = () => {
                 <button>Learn More</button>
               </div>
               </div>
-            </div> */}
-            {/* <div className="row-3">
+            </div>
+            <div className="row-3">
               <div className="director">
                 <div className="container">
                   <div className="director-heading">
@@ -115,7 +115,27 @@ const Event = () => {
                  </div>
                 </div>
               </div>
-            </div> */}
+              </div>
+              <div className="row-5">
+                  <div className="faculties-section">
+                   <div className="container">
+                    <div className="fac-heading">
+                      <h1>Faculties</h1>
+                    </div>
+                    <div className="fac-para">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nobis perferendis vitae 
+                        id excepturi sint? Placeat dicta similique, asperiores, ullam dolores excepturi corporis Lorem 
+                        ipsum dolor sit amet consectetur adipisicing elit. Nemo aspernatur assumenda ab blanditiis. Quo, 
+                        explicabo aliquid? Non aspernatur quod quas dolor eligendi.
+                         Quasi earum cum molestias saepe distinctio
+                         nemo neque. aliquid fugit esse veniam libero reprehenderit sapiente.</p>
+                    </div>
+                    <div className="fac-btn">
+                      <button>Take a Tour</button>
+                    </div>
+                   </div>
+                  </div>
+                </div>
       </div>
     </div>
   )
