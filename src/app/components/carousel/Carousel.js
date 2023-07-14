@@ -54,7 +54,7 @@ const CarouselComponent = () => {
         </div>
         {/* </navbar-end> */}
         <div className="carousel-header">
-          <Carousel controls={false} className="carousel">
+          <Carousel indicators controls={false} className="carousel">
             <Carousel.Item interval={1000}>
               <div className="d-block w-100">
                 <Image
