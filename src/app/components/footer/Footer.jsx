@@ -60,8 +60,8 @@ const Footer = () => {
               <h2>Contact</h2>
               <p>
                 <FaPhone /> 00914933 – 270439
-                <p className="footer-number"> 00914933 – 270565</p>
               </p>
+              <p className="footer-number"> 00914933 – 270565</p>
 
               <p>
                 <FaEnvelope /> aljamiaalislamia@gmail.com
