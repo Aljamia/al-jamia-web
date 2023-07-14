@@ -1,127 +1,156 @@
-.events-section{
-    background-color: #f7eeee;
-}
-.event-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-    padding-bottom: 2rem;
-}
-.event-title h1{
-    color: #619A46;
-    padding-top: 3rem;
-}
-.event-img img{
-    height: 450px;
-}
-.event-btn button{
-    margin-top: 1rem;
-    color: #fff;
-    padding: 7px 15px;
-    background-color: rgba(97, 154, 70, 0.75);
-    border: none;
-    border-radius: 3px;
-}
-.event-btn-2 button{
-    margin-top: 0.5rem;
-    color: #000;
-    padding: 7px 15px;
-    border: none;
-    border-radius: 3px;
-    background-color: #e2dddd;
-}
-.event-right{
-    margin-left: 50px;
-}
-.evnet-right-description h2{
-    font-size: 20px;
-}
-.p2{
-    font-size: 12px;
-    color: #555555;
-}
-.event-r-btn button{
-    color: #000;
-    padding: 3px 7px;
-    border: none;
-    border-radius: 3px;
-    background-color: #e2dddd;
-}
-/* ..............library */
-.row-2{
-    margin-top: 7rem;
-}
-.event-image-2 img{
-    width: 100%;
-    height: 350px;
-}
-.row-2 .container{
-    margin-top: 5rem;
-}
-.library h1{
-    color: #619A46;
-}
-.library-para p{
-    margin-top: 2rem;
-    max-width: 85%;
-    color: #555555;
-}
-.library-btn button{
-    color: #000;
-    padding: 3px 7px;
-    border: none;
-    border-radius: 3px;
-    background-color: #e2dddd;
-}
-/* .......director------- */
-.director-heading{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-.director-heading h1{
-    color: #619A46;
-    margin-top: 2rem;
-}
-.row-3{
-    background-color: #f0faf8;
-    margin-top: 3rem;
-}
-.row-4 .container{
-    display: flex;
-}
-.person img{
-   height: 350px; 
-}
-.two-para{
-    margin-top: 4rem;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  /* Add other properties to adjust the layout */
-}
-.person-details h2{
-    color: #555555;
-}
-.row-5{
-    margin-top: 4rem;
-}
-.fac-heading h1{
-    color: #619A46;
-}
-.fac-para{
-    margin-top: 1rem;
-}
-.fac-para p{
-    color: #555555;
-    max-width: 80%;
-}
-.fac-btn button{
-    color: #fff;
-    background-color: #CCA65D;
-    padding: 7px 45px;
-    border: none;
-    border-radius: 5px;
-}
+    .events-section {
+        background-color: #f7eeee;
+    }
+
+    .event-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .event-title h1 {
+        color: #619A46;
+        padding-top: 3rem;
+    }
+
+    .event-img img {
+        height: 450px;
+    }
+
+    .event-btn button {
+        margin-top: 1rem;
+        color: #fff;
+        padding: 7px 15px;
+        background-color: rgba(97, 154, 70, 0.75);
+        border: none;
+        border-radius: 3px;
+    }
+
+    .event-btn-2 button {
+        margin-top: 0.5rem;
+        color: #000;
+        padding: 7px 15px;
+        border: none;
+        border-radius: 3px;
+        background-color: #e2dddd;
+    }
+
+    .event-right {
+        margin-left: 50px;
+    }
+
+    .evnet-right-description h2 {
+        font-size: 20px;
+    }
+
+    .p2 {
+        font-size: 12px;
+        color: #555555;
+    }
+
+    .event-r-btn button {
+        color: #000;
+        padding: 3px 7px;
+        border: none;
+        border-radius: 3px;
+        background-color: #e2dddd;
+    }
+
+    /* ..............library */
+    .row-2 {
+        margin-top: 7rem;
+    }
+
+    .event-image-2 img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .row-2 .container {
+        margin-top: 5rem;
+    }
+
+    .library h1 {
+        color: #619A46;
+    }
+
+    .library-para p {
+        margin-top: 1rem;
+        max-width: 85%;
+        color: #555555;
+    }
+
+    .library-btn button {
+        color: #000;
+        padding: 3px 7px;
+        border: none;
+        border-radius: 3px;
+        background-color: #e2dddd;
+    }
+
+    /* .......director------- */
+    .director-heading {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .director-heading h1 {
+        color: #619A46;
+        margin-top: 2rem;
+    }
+
+    .row-3 {
+        background-color: #f0faf8;
+        margin-top: 3rem;
+    }
+
+    .row-4 .container {
+        display: flex;
+    }
+
+    .person img {
+        height: 350px;
+    }
+
+
+    .two-para {
+        margin-top: 4rem;
+    }
+
+    .container-events-event {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .person-details h2 {
+        color: #555555;
+    }
+
+    .row-5 {
+        margin-top: 4rem;
+    }
+
+
+    .fac-heading h1 {
+        color: #619A46;
+    }
+
+    .fac-para {
+        margin-top: 1rem;
+    }
+
+    .fac-para p {
+        color: #555555;
+        max-width: 80%;
+    }
+
+    .fac-btn button {
+        color: #fff;
+        background-color: #CCA65D;
+        padding: 7px 45px;
+        border: none;
+        border-radius: 5px;
+    }
