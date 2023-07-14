@@ -2,6 +2,7 @@
   /* color */
   --white-color: #ffffff;
   --green-color: green;
+  --goldish-color: #cca65d;
 
   /* fonts */
   --font-inter: Inter;
@@ -68,6 +69,13 @@
 
 .carousel {
   position: relative;
+}
+
+.carousel-indicators .active {
+  background-color: var(--goldish-color);
+  border-radius: 20%;
+  width: 18px;
+  height: 12px;
 }
 .carousel-caption {
   color: var(--white-color);
