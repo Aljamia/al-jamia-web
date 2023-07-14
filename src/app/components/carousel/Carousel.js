@@ -17,7 +17,7 @@ const CarouselComponent = () => {
               <Navbar.Brand href="#">
                 <Image
                   src="/image 5.png"
-                  width={250}
+                  width={300}
                   height={80}
                   alt="Picture of the author"
                   className="nav-logo"
@@ -54,7 +54,7 @@ const CarouselComponent = () => {
         </div>
         {/* </navbar-end> */}
         <div className="carousel-header">
-          <Carousel controls={false} className="carousel">
+          <Carousel indicators controls={false} className="carousel">
             <Carousel.Item interval={1000}>
               <div className="d-block w-100">
                 <Image
