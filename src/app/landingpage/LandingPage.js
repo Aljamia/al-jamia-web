@@ -8,8 +8,8 @@ const LandingPage = () => {
   return (
     <div>
       <CarouselComponent />
-      <About/>
-      <Event/>
+      <About />
+      <Event />
       <Footer />
     </div>
   );
