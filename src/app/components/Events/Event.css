@@ -97,3 +97,31 @@
 .two-para{
     margin-top: 4rem;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Add other properties to adjust the layout */
+}
+.person-details h2{
+    color: #555555;
+}
+.row-5{
+    margin-top: 4rem;
+}
+.fac-heading h1{
+    color: #619A46;
+}
+.fac-para{
+    margin-top: 1rem;
+}
+.fac-para p{
+    color: #555555;
+    max-width: 80%;
+}
+.fac-btn button{
+    color: #fff;
+    background-color: #CCA65D;
+    padding: 7px 45px;
+    border: none;
+    border-radius: 5px;
+}
