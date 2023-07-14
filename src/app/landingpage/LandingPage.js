@@ -4,6 +4,7 @@ import CarouselComponent from "../components/carousel/Carousel";
 import Event from "../components/Events/Event";
 import Footer from "../components/footer/Footer";
 import Courses from "../components/ourCourses/Courses";
+import Grades from "../components/grades/Grades";
 
 const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <CarouselComponent />
       <About />
       <Courses />
+      <Grades />
       <Event />
       <Footer />
     </div>
