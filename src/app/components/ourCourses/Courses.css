@@ -1,16 +1,6 @@
-:root {
-  /* color */
-  --green-color: #619a46;
-  --grey-color: #555555;
-  --goldish-color: #cca65d;
-  --white-color: #ffffff;
-
-  /* fonts */
-  --font-inter: Inter;
-  --font-meta: Meta Serif OT;
-}
 .course {
   margin-top: 3em;
+  text-align: center;
 }
 
 .course-header {
@@ -20,21 +10,21 @@
   font-style: normal;
   font-weight: 450;
   line-height: normal;
+  margin-bottom: 20px;
 }
 
 .course-desc {
-  margin-top: 20px;
   color: var(--grey-color);
   font-family: var(--font-inter);
   text-align: justify;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 130%; /* 39px */
+  line-height: 130%;
+  margin-bottom: 40px;
 }
 
 .portfolio {
-  position: relative;
   padding: 45px 20px;
 }
 
@@ -65,34 +55,20 @@
   transition: 0.3s;
 }
 
-.portfolio-item {
-  position: relative;
-  margin-bottom: 30px;
-  overflow: hidden;
-  transition: 0.5s;
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
 }
 
-.portfolio-item:hover {
-  margin-top: -10px;
-}
-
-.portfolio-wrap {
-  position: relative;
-  margin-top: 2em;
-  width: 100%;
-}
 .portfolio-card {
   border-radius: 20px;
   border: none;
   outline: none;
+  width: 18rem;
 }
 
-.portfolio img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .portfolio-title {
   margin: 10px;
   color: var(--goldish-color);
@@ -100,20 +76,24 @@
   font-size: 28px;
   font-style: normal;
   font-weight: 450;
-  line-height: 97.6%; /* 39.04px */
+  line-height: 97.6%;
 }
+
 .portfolio-text {
   margin: 10px;
   text-align: left;
   word-spacing: normal;
 }
+
 .portfolio-btn {
   margin: 10px;
   margin-left: 25%;
 }
+
 .portfolio-btn:hover {
   background-color: var(--goldish-color);
 }
+
 .btn-primary {
   color: #000000;
   background-color: rgb(211, 208, 208);
@@ -124,4 +104,10 @@
   border-radius: 14px;
   outline: none;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
