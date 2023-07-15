@@ -1,0 +1,52 @@
+.director{
+   
+    width: 100%;
+    background-color: rgb(224, 245, 238);
+    overflow: hidden;
+}
+.director-heading h3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #619A46;
+    margin-top: 2rem;
+}
+
+.director-img img{
+    width: 100%;
+   
+}
+.director-des{
+    margin-top: 5rem;
+}
+.person-detail{
+    margin-top: 1rem;
+}
+.person-detail h4{
+    color: #535151f5;
+    font-weight: 500;
+}
+.person-detail p{
+    color: #555555;
+}
+.facualies{
+    margin-top: 4rem;
+    padding-bottom: 4rem !important;
+}
+.fac-title h1{
+    color: #619A46;
+}
+.fac-des p{
+    color: #555555;
+    max-width: 80%;
+}
+.fac-btn{
+    margin-top: 1rem;
+}
+.fac-btn button{
+    color: #fff;
+    background-color: #CCA65D;
+    padding: 7px 45px;
+    border: none;
+    border-radius: 5px;
+}
