@@ -5,13 +5,14 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "next/image";
+import Header from "../header/Header";
 
 const CarouselComponent = () => {
   return (
     <div>
       <div className="header">
         {/* <navbar-start> */}
-        <div className="navbar-header">
+        {/* <div className="navbar-header">
           <Navbar expand="lg" className="bg-body-tertiary navbar" fixed="top">
             <Container>
               <Navbar.Brand href="#">
@@ -51,7 +52,8 @@ const CarouselComponent = () => {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-        </div>
+        </div> */}
+        <Header />
         {/* </navbar-end> */}
         <div className="carousel-header">
           <Carousel indicators controls={false} className="carousel">
