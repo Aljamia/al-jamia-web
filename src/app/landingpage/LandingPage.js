@@ -5,6 +5,8 @@ import Deparments from "../components/deparments/Deparments";
 import Director from "../components/director/Director";
 import Event from "../components/Events/Event";
 import Footer from "../components/footer/Footer";
+import Courses from "../components/ourCourses/Courses";
+import Grades from "../components/grades/Grades";
 
 const LandingPage = () => {
   return (
@@ -14,6 +16,8 @@ const LandingPage = () => {
       <Event />
       <Director/>
       <Deparments/>
+      <Courses />
+      <Grades />
       <Footer />
     </div>
   );

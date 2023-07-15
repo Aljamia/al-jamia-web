@@ -1,0 +1,131 @@
+.course {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.course-header {
+  color: var(--green-color);
+  font-family: var(--font-meta);
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.course-desc {
+  color: var(--grey-color);
+  font-family: var(--font-inter);
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.portfolio {
+  padding: 45px 20px;
+}
+
+#portfolio-flters {
+  padding: 0;
+  margin: -15px 0 25px 0;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+  background-color: var(--white-color);
+  box-shadow: 2px 5px 2px 5px rgba(221, 219, 219, 0.5);
+  border-radius: 10px;
+}
+
+#portfolio-flters li {
+  color: var(--goldish-color);
+  font-family: Meta Serif OT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+.portfolio-card {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 18rem;
+}
+
+.portfolio-title {
+  margin: 10px;
+  color: var(--goldish-color);
+  font-family: Meta Serif OT;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 97.6%;
+}
+
+.portfolio-text {
+  margin: 10px;
+  text-align: left;
+  word-spacing: normal;
+}
+
+.portfolio-btn {
+  margin: 10px;
+  margin-left: 25%;
+}
+
+.portfolio-btn:hover {
+  background-color: var(--goldish-color);
+}
+
+.btn-primary {
+  color: #000000;
+  background-color: rgb(211, 208, 208);
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 14px;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
