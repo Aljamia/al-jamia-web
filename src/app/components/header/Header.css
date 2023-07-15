@@ -24,10 +24,12 @@
   line-height: normal;
   color: var(--white-color) !important;
 }
+
 .nav-links:focus,
 .nav-links:active {
   color: var(--green-color) !important;
 }
+
 .navbar-toggler-white {
   background-color: white !important;
 }
@@ -44,10 +46,17 @@
   color: black;
 }
 
+.navbar-fixed-top.scrolled {
+  background-color: #000 !important;
+  transition: background-color 500ms linear;
+}
+
+
 @media (max-width: 1000px) {
   .nav-logo {
     width: 180px;
   }
+
   .nav-carousel {
     background: rgba(42, 83, 90, 0.06);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -56,10 +65,12 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
+
   .nav-links {
     color: #d0a356 !important;
     margin-top: -5px;
     height: 5px;
   }
 }
+
 /***** End navbar *****/
