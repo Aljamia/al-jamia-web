@@ -50,3 +50,19 @@
     border: none;
     border-radius: 5px;
 }
+.fac-btn button {
+    padding: 7px 45px;
+  }
+  
+  @media (max-width: 768px) {
+    .fac-btn button{
+      padding: 7px 30px; /* Adjust the padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .fac-btn button{
+      padding: 7px 15px; /* Adjust the padding for even smaller screens */
+    }
+  }
+  
