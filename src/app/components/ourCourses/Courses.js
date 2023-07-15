@@ -65,6 +65,45 @@ const Courses = () => {
                 </Button>
               </Card.Body>
             </Card>
+            <Card className="portfolio-card shadow-sm">
+              <Card.Img variant="top" src="/Rectangle 970.jpg" />
+              <Card.Body>
+                <Card.Title className="portfolio-title">Card Title</Card.Title>
+                <Card.Text className="portfolio-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the content.
+                </Card.Text>
+                <Button variant="primary btn-primary" className="portfolio-btn">
+                  Learn More
+                </Button>
+              </Card.Body>
+            </Card>
+            <Card className="portfolio-card shadow-sm">
+              <Card.Img variant="top" src="/Rectangle 970.jpg" />
+              <Card.Body>
+                <Card.Title className="portfolio-title">Card Title</Card.Title>
+                <Card.Text className="portfolio-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the content.
+                </Card.Text>
+                <Button variant="primary btn-primary" className="portfolio-btn">
+                  Learn More
+                </Button>
+              </Card.Body>
+            </Card>
+            <Card className="portfolio-card shadow-sm">
+              <Card.Img variant="top" src="/Rectangle 970.jpg" />
+              <Card.Body>
+                <Card.Title className="portfolio-title">Card Title</Card.Title>
+                <Card.Text className="portfolio-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the content.
+                </Card.Text>
+                <Button variant="primary btn-primary" className="portfolio-btn">
+                  Learn More
+                </Button>
+              </Card.Body>
+            </Card>
           </div>
         </div>
       </Container>
