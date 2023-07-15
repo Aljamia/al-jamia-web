@@ -210,4 +210,75 @@
     .event-right {
         margin-left: 50px;
     }
+.person img{
+    width: 100%;
+    height: 400px;
+    border: 2px solid black;
+}
+.director-section{
+    border: 2px solid black;
+
+}
+.event-first-section p{
+    color: #555555;;
+}
+.events-section{
+    background-color: #f0e6e6e3;
+}
+.event-title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.event-title h1{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    color: #619A46;
+}
+.event-img img{
+    width: 100%;
+}
+.event-btn {
+    margin-top: 0.5rem;
+}
+.event-btn button{
+    border: none;
+    border-radius: 7px;
+    padding: 5px 7px 5px;
+    color: #fff;
+    background-color: rgba(97, 154, 70, 0.75);
+
+}
+.learn-btn{
+    padding-bottom: 1rem;
+}
+.learn-btn button{
+    border: none;
+    border-radius: 5px;
+    background-color: #b6acac93;
+  
+}
+span{
+    padding-left: 10px;
+}
+/* ----event section -2----- */
+.event-section-2{
+    background-color: #fff;
+    margin-top: 3rem;
+    padding-bottom: 3rem !important;
+}
+.event-s-img img{
+    width: 100%;
+    height: 300px;
+}
+.library{
+    margin-top: 3rem;
+}
+.library h2{
+    color: #619A46;
+}
+.library p{
+  color: #555555;
+  max-width: 90%;
+}
 }
