@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Event.css";
-import Image from "next/image";
+
+
 const Event = () => {
   return (
     <div>
