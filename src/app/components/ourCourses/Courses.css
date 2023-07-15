@@ -108,6 +108,24 @@
 
 @media (max-width: 768px) {
   .portfolio-container {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 }

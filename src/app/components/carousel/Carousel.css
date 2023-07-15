@@ -115,6 +115,21 @@
     color: var(--white-color);
   }
 }
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.carousel-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 401px) and (max-width: 900px) {
   /* CSS rules for this range */
   .carousel-caption {
