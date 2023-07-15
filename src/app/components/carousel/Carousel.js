@@ -8,7 +8,7 @@ const CarouselComponent = () => {
   return (
     <div>
       <div className="header">
-        <Header /> {/*imported navabr from header */}
+        <Header /> {/*imported navbar from header */}
         <div className="carousel-header">
           <Carousel indicators controls={false} className="carousel">
             <Carousel.Item interval={1000}>
