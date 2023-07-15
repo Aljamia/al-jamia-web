@@ -13,7 +13,6 @@ const LandingPage = () => {
       <About />
       <Courses />
       <Grades />
-      <Event />
       <Footer />
     </div>
   );
