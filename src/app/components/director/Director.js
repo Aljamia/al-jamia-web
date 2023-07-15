@@ -1,6 +1,10 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import "./Director.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClockflip } from '@fortawesome/free-solid-svg-icons';
+
+
 const Director = () => {
   return (
     <div>
@@ -38,7 +42,7 @@ const Director = () => {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores doloribus molestiae tempore facere libero culpa sapiente. Ipsam esse natus mollitia nobis at doloremque quisquam numquam tenetur obcaecati? Illum, veritatis ut!</p>
             </div>
             <div className="fac-btn">
-              <button>Take a Tour</button>
+              <button>  <FontAwesomeIcon icon={faClockflip} />Take a Tour</button>
             </div>
             </Container>
           </div>
