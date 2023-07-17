@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 
 const CarouselComponent = () => {
   const sliderRef = useRef(null);
-  const slideDuration = 5000; // Adjust the slide duration (in milliseconds)
+  const slideDuration = 6000; // Adjust the slide duration (in milliseconds)
 
   useEffect(() => {
     const slideInterval = setInterval(() => {
@@ -24,7 +24,7 @@ const CarouselComponent = () => {
     dots: false,
     fade: true,
     infinite: true,
-    speed: 3000,
+    speed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
