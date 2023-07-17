@@ -16,7 +16,7 @@
 .nav-links {
   text-transform: capitalize;
   padding: 20px;
-  margin: 15px;
+  margin: 10px;
   font-family: Inter;
   font-size: 25px;
   font-style: normal;
@@ -51,10 +51,9 @@
   transition: background-color 500ms linear;
 }
 
-
 @media (max-width: 1000px) {
   .nav-logo {
-    width: 180px;
+    width: 250px;
   }
 
   .nav-carousel {
@@ -69,7 +68,12 @@
   .nav-links {
     color: #d0a356 !important;
     margin-top: -5px;
-    height: 5px;
+    height: 2px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    overflow-y: hidden;
   }
 }
 
