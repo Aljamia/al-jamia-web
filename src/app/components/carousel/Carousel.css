@@ -6,10 +6,13 @@
 
   /* fonts */
   --font-inter: Inter;
-  --font-meta: Meta Serif OT;
+  --font-meta: "Meta" Serif OT;
 }
 
 /***** header video *****/
+.fullscreen-video {
+  filter: brightness(50%);
+}
 .header-video {
   position: relative;
 }
@@ -29,12 +32,12 @@
 .carousel-para {
   color: var(--white-color);
   font-family: Meta Serif OT;
-  font-size: 40px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 450;
   line-height: 100%;
   text-align: left;
-  text-shadow: 2px 2px 4px #000000;
+  opacity: 1;
 }
 
 .slick-slide div {
@@ -50,21 +53,27 @@
 /***** End header video *****/
 .animate__bounceIn {
   animation-name: animate__bounceIn;
-  animation-duration: 1s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
 }
-
+/* animation */
 @keyframes animate__bounceIn {
   0% {
     opacity: 0;
-    transform: scale(0.1);
     animation-delay: 1s;
   }
-  60% {
-    opacity: 1;
-    transform: scale(0.5);
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.7;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 @media (max-width: 500px) {
@@ -111,7 +120,7 @@
   .carousel-para {
     color: var(--white-color);
     font-family: Meta Serif OT;
-    font-size: 25px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 450;
     line-height: 96.023%;

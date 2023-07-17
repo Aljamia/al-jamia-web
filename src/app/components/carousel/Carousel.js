@@ -1,21 +1,35 @@
 import "./Carousel.css";
-import React from "react";
 import Header from "../header/Header";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useEffect, useRef } from "react";
 
 const CarouselComponent = () => {
+  const sliderRef = useRef(null);
+  const slideDuration = 5000; // Adjust the slide duration (in milliseconds)
+
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      if (sliderRef.current) {
+        sliderRef.current.slickNext();
+      }
+    }, slideDuration);
+
+    return () => {
+      clearInterval(slideInterval);
+    };
+  }, []);
   const settings = {
     dots: false,
+    fade: true,
     infinite: true,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 3000,
-    cssEase: "ease",
-    arrows: false,
+    autoplaySpeed: 5000,
+    pauseOnHover: false,
   };
   return (
     <div className="header">
@@ -36,19 +50,19 @@ const CarouselComponent = () => {
             />
             Your browser does not support the video tag.
           </video>
-          <div className="carousel-overlay">
-            <Slider {...settings}>
-              <div className="carousel-para animate__bounceIn">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div className="carousel-para animate__bounceIn">
-                <p className="">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <div className="carousel-overlay ">
+            <Slider ref={(slider) => (slider = slider)} {...settings}>
+              <div className="carousel-para">
+                <p className="animate__bounceIn">
+                  Resolve The Campaign with our pleasure
                 </p>
               </div>
-              <div className="carousel-para animate__bounceIn">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+              <div className="carousel-para">
+                <p className="animate__bounceIn">Welcome To Al-jamia member</p>
+              </div>
+              <div className="carousel-para ">
+                <p className="animate__bounceIn">
+                  This is a wonderful occation to have you all join us
                 </p>
               </div>
             </Slider>

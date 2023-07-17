@@ -10,7 +10,7 @@ const Header = () => {
       if (nav) {
         nav.classList.toggle(
           "scrolled",
-          document.documentElement.scrollTop > 100
+          document.documentElement.scrollTop > 500
         );
       }
     };
