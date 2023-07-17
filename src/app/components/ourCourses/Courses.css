@@ -1,10 +1,21 @@
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --lightgreen-color: #619a46;
+  --goldish-color: #cca65d;
+
+  /* fonts */
+  --font-inter: Inter;
+  --font-meta: Meta Serif OT;
+}
+
 .course {
   margin-top: 3em;
   text-align: center;
 }
 
 .course-header {
-  color: var(--green-color);
+  color: var(--lightgreen-color);
   font-family: var(--font-meta);
   font-size: 75px;
   font-style: normal;
