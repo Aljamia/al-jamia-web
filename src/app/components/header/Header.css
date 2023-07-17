@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 :root {
   /* color */
   --white-color: #ffffff;
   --green-color: green;
 
   /* fonts */
-  --font-inter: Inter;
+  --font-inter: "Inter", sans-serif;
   --font-meta: Meta Serif OT;
 }
 
@@ -17,12 +18,13 @@
   text-transform: capitalize;
   padding: 20px;
   margin: 10px;
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: var(--white-color) !important;
+  z-index: 1000;
 }
 
 .nav-links:focus,
@@ -42,12 +44,12 @@
   scroll-behavior: smooth;
 }
 
-.nav-link-black {
-  color: black;
+.navbar-fixed-top.scrolled .nav-link-black {
+  color: black !important;
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #000 !important;
+  background-color: var(--white-color) !important;
   transition: background-color 500ms linear;
 }
 
