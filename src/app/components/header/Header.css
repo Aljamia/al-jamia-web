@@ -30,7 +30,6 @@
   color: var(--white-color) !important;
   z-index: 1000;
 }
-
 .nav-links:focus,
 .nav-links:active {
   color: var(--green-color) !important;
@@ -65,13 +64,13 @@
 }
 
 .navbar-fixed-top.scrolled .nav-link-black {
-  color: black !important;
+  color: #555 !important;
 }
 
 .navbar-fixed-top.scrolled {
   background-color: var(--white-color) !important;
   transition: background-color 500ms linear;
-  box-shadow: 2px 3px 2px 2px rgb(241, 237, 237);
+  box-shadow: 1px 1px 1px 1px rgb(241, 237, 237);
 }
 
 @media (max-width: 1000px) {
