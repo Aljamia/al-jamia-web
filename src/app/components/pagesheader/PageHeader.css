@@ -60,8 +60,6 @@
 .nav-carousel {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
 
@@ -97,6 +95,5 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    overflow-y: hidden;
   }
 }
