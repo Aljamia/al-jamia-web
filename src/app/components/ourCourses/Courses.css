@@ -12,21 +12,24 @@
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-meta: Meta Serif OT;
+  --font-martel: "Martel", serif;
 }
 
 .course {
   margin-top: 3em;
+  background-color: #f8f8f8;
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+  background-repeat: no-repeat;
 }
 
-.course-header {
+.course-header h1 {
   color: var(--lightgreen-color);
-  font-family: var(--font-meta);
-  font-size: 75px;
+  font-family: var(--font-martel);
+  font-size: 40px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
-  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .course-desc {
@@ -37,12 +40,12 @@
   font-style: normal;
   font-weight: 300;
   line-height: 130%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .portfolio {
   padding: 45px 20px;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 #portfolio-flters {
@@ -58,7 +61,7 @@
 
 #portfolio-flters li {
   color: var(--goldish-color);
-  font-family: Meta Serif OT;
+  font-family: var(--font-martel);
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -90,8 +93,8 @@
 .portfolio-title {
   margin: 10px;
   color: var(--goldish-color);
-  font-family: Meta Serif OT;
-  font-size: 28px;
+  font-family: var(--font-martel);
+  font-size: 25px;
   font-style: normal;
   font-weight: 450;
   line-height: 97.6%;

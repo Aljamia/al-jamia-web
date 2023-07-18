@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@font-face {
-  font-family: "meta-serif OT";
-  src: url("/Meta\ Serif\ Book.otf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+
 :root {
   /* color */
   --white-color: #ffffff;
@@ -11,6 +9,7 @@
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
 }
 
 /***** header video *****/
@@ -23,7 +22,7 @@
 
 .carousel-overlay {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 25%;
   transform: translate(-50%, -50%);
   width: 80%;
@@ -34,13 +33,13 @@
   padding: 20px;
   text-align: center;
 }
-.carousel-para {
+.carousel-para p {
   color: var(--white-color);
-  font-family: "meta-serif OT";
-  font-size: 55px;
+  font-family: var(--font-martel);
+  font-size: 50px;
   font-style: normal;
-  font-weight: 450;
-  line-height: 70px;
+  font-weight: 550;
+  line-height: 60px;
   text-align: left;
   opacity: 1;
 }
@@ -88,9 +87,9 @@
     padding: 20px;
     text-align: center;
   }
-  .carousel-para {
+  .carousel-para p {
     color: var(--white-color);
-    font-family: "meta-serif OT";
+    font-family: var(--font-martel);
     font-size: 20px;
     font-style: normal;
     font-weight: 450;
@@ -113,9 +112,9 @@
     padding: 20px;
     text-align: center;
   }
-  .carousel-para {
+  .carousel-para p {
     color: var(--white-color);
-    font-family: Meta Serif OT;
+    font-family: var(--font-martel);
     font-size: 35px;
     font-style: normal;
     font-weight: 450;

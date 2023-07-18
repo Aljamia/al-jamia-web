@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 
 :root {
   /* color */
@@ -9,7 +10,7 @@
 
   /* fonts */
   --font-rubik: "Rubik", sans-serif;
-  --font-meta: Meta Serif OT;
+  --font-martel: "Martel", serif;
   --font-inter: "Inter", sans-serif;
 }
 
@@ -20,7 +21,7 @@
 .footer .footer-desc {
   padding: 5px;
   margin-top: 5px;
-  font-family: var(--font-meta);
+  font-family: var(--font-martel);
   font-style: normal;
   font-weight: 450;
   font-size: 18px;
