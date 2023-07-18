@@ -52,6 +52,8 @@ const Deparments = () => {
         <div className="department-para">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur consequuntur 
             deserunt dolorum qui itaque aliquid hic labore, aut illum expedita reiciendis blanditiis quibusdam rerum pariatur 
+            consequatur optio ullam recusandae sequi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur consequuntur 
+            deserunt dolorum qui itaque aliquid hic labore, aut illum expedita reiciendis blanditiis quibusdam rerum pariatur 
             consequatur optio ullam recusandae sequi?
           </p>
         </div>
@@ -64,7 +66,18 @@ const Deparments = () => {
                 <img src="book.png" alt="" />
               </div>
                <div className="caro-des">
-               <h5>Centre for Information Technology</h5>
+               <h4>Centre for Information Technology</h4>
+                <div className="caro-btn" >
+                  <button>Learn More</button>
+                </div>
+               </div>
+            </div>
+            <div className="box">
+              <div className="caro-img">
+                <img src="book.png" alt="" />
+              </div>
+               <div className="caro-des">
+               <h4>Centre for Information Technology</h4>
                 <div className="caro-btn">
                   <button>Learn More</button>
                 </div>
@@ -75,7 +88,7 @@ const Deparments = () => {
                 <img src="book.png" alt="" />
               </div>
                <div className="caro-des">
-               <h5>Centre for Information Technology</h5>
+               <h4>Centre for Information Technology</h4>
                 <div className="caro-btn">
                   <button>Learn More</button>
                 </div>
@@ -86,7 +99,7 @@ const Deparments = () => {
                 <img src="book.png" alt="" />
               </div>
                <div className="caro-des">
-               <h5>Centre for Information Technology</h5>
+               <h4>Centre for Information Technology</h4>
                 <div className="caro-btn">
                   <button>Learn More</button>
                 </div>
@@ -97,18 +110,7 @@ const Deparments = () => {
                 <img src="book.png" alt="" />
               </div>
                <div className="caro-des">
-               <h5>Centre for Information Technology</h5>
-                <div className="caro-btn">
-                  <button>Learn More</button>
-                </div>
-               </div>
-            </div>
-            <div className="box">
-              <div className="caro-img">
-                <img src="book.png" alt="" />
-              </div>
-               <div className="caro-des">
-               <h5>Centre for Information Technology</h5>
+               <h4>Centre for Information Technology</h4>
                 <div className="caro-btn">
                   <button>Learn More</button>
                 </div>
