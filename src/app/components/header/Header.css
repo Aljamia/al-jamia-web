@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@font-face {
+  font-family: "meta-serif OT";
+  src: url("/public/fonts/Meta\ Serif\ Book.otf");
+}
 :root {
-  /* color */
+  /* colors */
   --white-color: #ffffff;
   --green-color: green;
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-meta: Meta Serif OT;
 }
 
-/***** navbar *****/
+/* Navbar */
 .bg-body-tertiary {
   background-color: transparent !important;
 }
 
 .nav-links {
+  position: relative;
   text-transform: capitalize;
   padding: 20px;
   margin: 10px;
@@ -30,6 +34,22 @@
 .nav-links:focus,
 .nav-links:active {
   color: var(--green-color) !important;
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 42px;
+  width: 90%;
+  height: 5px;
+  background-color: var(--green-color) !important;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links:hover::after {
+  transform: scaleX(1);
 }
 
 .navbar-toggler-white {
@@ -51,6 +71,7 @@
 .navbar-fixed-top.scrolled {
   background-color: var(--white-color) !important;
   transition: background-color 500ms linear;
+  box-shadow: 2px 3px 2px 2px rgb(241, 237, 237);
 }
 
 @media (max-width: 1000px) {
@@ -71,12 +92,10 @@
     color: #d0a356 !important;
     margin-top: -5px;
     height: 2px;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     overflow-y: hidden;
   }
 }
-
-/***** End navbar *****/

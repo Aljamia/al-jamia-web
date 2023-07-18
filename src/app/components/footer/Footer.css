@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
 :root {
   /* color */
   --black-color: #2c2c2c;
@@ -5,9 +8,9 @@
   --gold--color: #cea553;
 
   /* fonts */
-  --font-rubik: Rubik;
+  --font-rubik: "Rubik", sans-serif;
   --font-meta: Meta Serif OT;
-  --font-inter: Inter;
+  --font-inter: "Inter", sans-serif;
 }
 
 .footer {
@@ -35,7 +38,8 @@
 }
 .footer-links h5 {
   font-family: var(--font-rubik);
-  font-size: 22px;
+  font-size: 20px;
+  padding: 5px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -49,7 +53,7 @@
 .footer-contact p {
   color: var(--white-color);
   font-family: var(--font-rubik);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 10px;
