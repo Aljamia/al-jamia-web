@@ -59,7 +59,7 @@ const CarouselComponent = () => {
               </div>
               <div className="carousel-para">
                 <p className="animate__bounceIn">
-                  Welcome To Al-jamia member everyone
+                  Welcome To Al-jamia member everyone hi
                 </p>
               </div>
               <div className="carousel-para ">
