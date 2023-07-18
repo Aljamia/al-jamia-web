@@ -47,7 +47,6 @@
 .slick-slide div {
   margin: 0 0.5rem;
   background-color: transparent !important;
-  overflow-y: hidden !important;
   opacity: 1;
 }
 .carousel-overlay .slick-slider {
