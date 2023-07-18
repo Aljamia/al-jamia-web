@@ -1,33 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@font-face {
+  font-family: "meta-serif OT";
+  src: url("/public/fonts/Meta\ Serif\ Book.otf");
+}
 :root {
-  /* color */
+  /* colors */
   --white-color: #ffffff;
   --green-color: green;
 
   /* fonts */
-  --font-inter: Inter;
-  --font-meta: Meta Serif OT;
+  --font-inter: "Inter", sans-serif;
 }
 
-/***** navbar *****/
+/* Navbar */
 .bg-body-tertiary {
   background-color: transparent !important;
 }
 
 .nav-links {
+  position: relative;
   text-transform: capitalize;
   padding: 20px;
-  margin: 15px;
-  font-family: Inter;
+  margin: 10px;
+  font-family: var(--font-inter);
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: var(--white-color) !important;
+  z-index: 1000;
 }
 
 .nav-links:focus,
 .nav-links:active {
   color: var(--green-color) !important;
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 42px;
+  width: 90%;
+  height: 5px;
+  background-color: var(--green-color) !important;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links:hover::after {
+  transform: scaleX(1);
 }
 
 .navbar-toggler-white {
@@ -42,19 +64,19 @@
   scroll-behavior: smooth;
 }
 
-.nav-link-black {
-  color: black;
+.navbar-fixed-top.scrolled .nav-link-black {
+  color: black !important;
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #000 !important;
+  background-color: var(--white-color) !important;
   transition: background-color 500ms linear;
+  box-shadow: 2px 3px 2px 2px rgb(241, 237, 237);
 }
-
 
 @media (max-width: 1000px) {
   .nav-logo {
-    width: 180px;
+    width: 250px;
   }
 
   .nav-carousel {
@@ -69,8 +91,11 @@
   .nav-links {
     color: #d0a356 !important;
     margin-top: -5px;
-    height: 5px;
+    height: 2px;
+    font-family: var(--font-inter);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    overflow-y: hidden;
   }
 }
-
-/***** End navbar *****/

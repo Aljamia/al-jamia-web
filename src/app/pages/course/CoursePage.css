@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --green-color: green;
+  --goldish-color: #cca65d;
+
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+}
+
+.coursePage-header {
+  margin-top: 6.5em;
+}
+.coursePage-img {
+  position: relative;
+}
+.coursePage-text h2 {
+  text-transform: capitalize;
+  position: absolute;
+  left: 80px;
+  width: 300px;
+  bottom: 40%;
+  z-index: 1000;
+  color: var(--white-color);
+  font-family: var(--font-martel);
+  overflow: hidden;
+  font-size: 40px;
+  font-weight: 450;
+  line-height: 50px; /* 84.08px */
+}
+.coursePage-about {
+  margin-top: 20px;
+  padding: 1em;
+}
+.CoursePage-subtitle {
+  padding: 0.5em;
+}
+.CoursePage-subtitle h2 {
+  color: var(--gold, #cca65d);
+  font-family: var(--font-martel);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+.coursePage-header__title {
+  padding: 0.5em;
+  display: flex;
+  gap: 10px;
+}
+.coursePage-header__title__items > h3 {
+  color: #565656;
+  font-family: var(--font-inter);
+  font-size: 30px;
+  font-style: normal;
+  overflow: hidden;
+  font-weight: 500;
+  line-height: 105.1%; /* 52.55px */
+}
+.button--state-secondary {
+  background-color: #cdcdcd;
+  outline: none;
+  border: none;
+  color: #5b5959;
+}
+.button--state-warning {
+  margin: 5px;
+  border-radius: 10px;
+  background: var(--gold, #cca65d);
+  color: var(--white-color);
+}
+.coursePage-header__para {
+  padding: 0.5em;
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  font-size: 20px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
+}
+@media (max-width: 1000px) {
+  .coursePage-text h2 {
+    font-size: 20px;
+    left: 15px;
+    bottom: 30%;
+    line-height: 30px;
+  }
+
+  .CoursePage-subtitle h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coursePage-header__title {
+    flex-wrap: wrap;
+  }
+
+  .coursePage-header__title__items {
+    flex: 1 1 100%;
+    margin-bottom: 10px; /* Adjust the desired margin-bottom size */
+  }
+}
