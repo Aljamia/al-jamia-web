@@ -32,30 +32,77 @@
   font-weight: 450;
   line-height: 50px; /* 84.08px */
 }
-.CoursePage-about {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+.coursePage-about {
+  margin-top: 20px;
+  padding: 1em;
 }
 .CoursePage-subtitle {
-  padding: 1em;
-  margin: 1.3em;
+  padding: 0.5em;
+}
+.CoursePage-subtitle h2 {
+  color: var(--gold, #cca65d);
+  font-family: var(--font-martel);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+.coursePage-header__title {
+  padding: 0.5em;
+  display: flex;
+  gap: 10px;
+}
+.coursePage-header__title__items > h3 {
+  color: #565656;
+  font-family: var(--font-inter);
+  font-size: 30px;
+  font-style: normal;
+  overflow: hidden;
+  font-weight: 500;
+  line-height: 105.1%; /* 52.55px */
+}
+.button--state-secondary {
+  background-color: #cdcdcd;
+  outline: none;
+  border: none;
+  color: #5b5959;
+}
+.button--state-warning {
+  margin: 5px;
+  border-radius: 10px;
+  background: var(--gold, #cca65d);
+  color: var(--white-color);
+}
+.coursePage-header__para {
+  padding: 0.5em;
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  font-size: 20px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
 }
 @media (max-width: 1000px) {
   .coursePage-text h2 {
     font-size: 20px;
-    width: auto;
     left: 15px;
     bottom: 30%;
     line-height: 30px;
   }
 
-  .CoursePage-about {
-    flex-direction: column;
-    align-items: center;
+  .CoursePage-subtitle h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coursePage-header__title {
+    flex-wrap: wrap;
   }
 
-  .CoursePage-subtitle {
-    margin: 10px;
+  .coursePage-header__title__items {
+    flex: 1 1 100%;
+    margin-bottom: 10px; /* Adjust the desired margin-bottom size */
   }
 }
