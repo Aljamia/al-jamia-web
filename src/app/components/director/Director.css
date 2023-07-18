@@ -2,100 +2,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 :root {
   /* color */
-  --white-color: #FFFFFF;
+  --white-color: #ffffff;
   --green-color: green;
-  --goldish-color: #CCA65D;
+  --goldish-color: #cca65d;
   /* fonts */
   --font-inter: "Inter", sans-serif;
   --font-martel: "Martel", serif;
 }
 
-.director{
-    width: 100%;
-    overflow: hidden;
-    background-color: 
-#EAF6E4;
-background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+.director {
+  width: 100%;
+  background-color: #eaf6e4;
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
 }
-.director-heading h2{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    color: #619A46;
-    margin-top: 2rem;
-    font-family: var(--font-martel);
+.director-heading h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #619a46;
+  margin-top: 2rem;
+  font-family: var(--font-martel);
 }
 
 /* .director-img img{
     width: 100%;
    
 } */
-.director-des{
-    margin-top: 5rem;
+.director-des {
+  margin-top: 5rem;
 }
-.person-detail{
-    margin-top: 1rem;
+.person-detail {
+  margin-top: 1rem;
 }
-.director-des p{
-    max-width: 80%;
-    font-size: 18px;
-    font-family: var(--font-inter);
+.director-des p {
+  max-width: 80%;
+  font-size: 18px;
+  font-family: var(--font-inter);
 }
-.person-detail h4{
-    color: #535151f5;
-    font-weight: 500;
-    font-family: var(--font-inter);
+.person-detail h4 {
+  color: #535151f5;
+  font-weight: 500;
+  font-family: var(--font-inter);
 }
-.person-detail p{
-    color: #555555;
-    font-size: 20px;
-    font-family: var(--font-inter);
-
+.person-detail p {
+  color: #555555;
+  font-size: 20px;
+  font-family: var(--font-inter);
 }
-.facualies{
-    margin-top: 4rem;
-    padding-bottom: 4rem !important;
+.facualies {
+  margin-top: 4rem;
+  padding-bottom: 4rem !important;
 }
-.fac-title h1{
-    color: #619A46;
-    font-family: var(--font-martel);
+.fac-title h1 {
+  color: #619a46;
+  font-family: var(--font-martel);
 }
-.fac-des p{
-    color: #555555;
-    max-width: 80%;
-    font-family: var(--font-inter);
+.fac-des p {
+  color: #555555;
+  max-width: 80%;
+  font-family: var(--font-inter);
 }
-.fac-btn{
-    margin-top: 1rem;
-}
-.fac-btn button{
-    color: #fff;
-    background-color: #CCA65D;
-    padding: 7px 45px;
-    border: none;
-    border-radius: 5px;
-    font-family: var(--font-inter);
+.fac-btn {
+  margin-top: 1rem;
 }
 .fac-btn button {
-    padding: 7px 45px;
+  color: #fff;
+  background-color: #cca65d;
+  padding: 7px 45px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-inter);
+}
+.fac-btn button {
+  padding: 7px 45px;
+}
+
+@media (max-width: 768px) {
+  .fac-btn button {
+    padding: 7px 30px; /* Adjust the padding for smaller screens */
   }
-  
-  @media (max-width: 768px) {
-    .fac-btn button{
-      padding: 7px 30px; /* Adjust the padding for smaller screens */
-    }
+}
+
+@media (max-width: 500px) {
+  .fac-btn button {
+    padding: 7px 15px; /* Adjust the padding for even smaller screens */
   }
-  
-  @media (max-width: 500px) {
-    .fac-btn button{
-      padding: 7px 15px; /* Adjust the padding for even smaller screens */
-    }
-    .director-des p{
-       font-size: 15px;
-        margin-top: 0;
-    }
-    .director-des {
-        margin-top: 0;
-    }
+  .director-des p {
+    font-size: 15px;
+    margin-top: 0;
   }
-  
+  .director-des {
+    margin-top: 0;
+  }
+}
