@@ -92,7 +92,7 @@
 
 .portfolio-title {
   margin: 10px;
-  margin-top: 5px;
+  padding: 3px;
   color: var(--goldish-color);
   font-family: var(--font-martel);
   font-size: 25px;
