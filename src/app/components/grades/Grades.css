@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@font-face {
+  font-family: "meta-serif OT";
+  src: url("/Meta\ Serif\ Book.otf");
+}
 :root {
+  /* colors */
   --grey-color: #7d7d7d;
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-meta: Meta Serif OT;
 }
 
 .grades {
@@ -15,16 +24,16 @@
 }
 .grades-digits h2 {
   color: var(--grary-2, #252424);
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-size: 30px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   line-height: normal;
   margin-top: 10px;
 }
 .grades-title {
   color: var(--grary-2, #7d7d7d);
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
