@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@font-face {
+  font-family: "meta-serif OT";
+  src: url("/public/fonts/Meta\ Serif\ Book.otf");
+}
+:root {
+  /* colors */
+  --white-color: #ffffff;
+  --green-color: green;
+  --black-color: black;
+
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+}
+
+/* Navbar */
+.bg-body-tertiary {
+  background-color: transparent !important;
+}
+
+.nav-links {
+  position: relative;
+  text-transform: capitalize;
+  padding: 20px;
+  margin: 10px;
+  font-family: var(--font-inter);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--black-color) !important;
+  z-index: 1000;
+}
+
+.nav-links:focus,
+.nav-links:active {
+  color: var(--green-color) !important;
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 42px;
+  width: 90%;
+  height: 5px;
+  background-color: var(--green-color) !important;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-toggler-white {
+  background-color: white !important;
+}
+
+.nav-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.navbar-fixed-top.scrolled .nav-link-black {
+  color: black !important;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: var(--white-color) !important;
+  transition: background-color 500ms linear;
+  box-shadow: 2px 3px 2px 2px rgb(241, 237, 237);
+}
+
+@media (max-width: 1000px) {
+  .nav-logo {
+    width: 250px;
+  }
+
+  .nav-carousel {
+    background: rgba(42, 83, 90, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .nav-links {
+    color: #d0a356 !important;
+    margin-top: -5px;
+    height: 2px;
+    font-family: var(--font-inter);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    overflow-y: hidden;
+  }
+}
