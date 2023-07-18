@@ -10,7 +10,7 @@ const Header = () => {
       if (nav) {
         nav.classList.toggle(
           "scrolled",
-          document.documentElement.scrollTop > 100
+          document.documentElement.scrollTop > 500
         );
       }
     };
@@ -33,7 +33,7 @@ const Header = () => {
             <Navbar.Brand href="#">
               <Image
                 src="/image 5.png"
-                width={250}
+                width={350}
                 height={80}
                 alt="Picture of the author"
                 className="nav-logo"
@@ -46,7 +46,7 @@ const Header = () => {
             <Navbar.Collapse id="navbarScroll">
               <Nav className="ms-auto my-2 my-lg-0 nav-carousel">
                 <Nav.Link href="" className="nav-links nav-link-black">
-                  Home Link
+                  Home
                 </Nav.Link>
                 <Nav.Link href="" className="nav-links nav-link-black">
                   Academics
