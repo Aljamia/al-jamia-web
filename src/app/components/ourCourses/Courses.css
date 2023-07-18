@@ -1,16 +1,35 @@
-.course {
-  margin-top: 3em;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@font-face {
+  font-family: "meta-serif OT";
+  src: url("/Meta\ Serif\ Book.otf");
 }
 
-.course-header {
-  color: var(--green-color);
-  font-family: var(--font-meta);
-  font-size: 75px;
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --lightgreen-color: #619a46;
+  --goldish-color: #cca65d;
+
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+}
+
+.course {
+  margin-top: 3em;
+  background-color: #f8f8f8;
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+  background-repeat: no-repeat;
+}
+
+.course-header h1 {
+  color: var(--lightgreen-color);
+  font-family: var(--font-martel);
+  font-size: 40px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
-  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .course-desc {
@@ -21,11 +40,12 @@
   font-style: normal;
   font-weight: 300;
   line-height: 130%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .portfolio {
   padding: 45px 20px;
+  margin-top: -30px;
 }
 
 #portfolio-flters {
@@ -35,13 +55,13 @@
   font-size: 0;
   text-align: center;
   background-color: var(--white-color);
-  box-shadow: 2px 5px 2px 5px rgba(221, 219, 219, 0.5);
+  box-shadow: 1px 2px 1px 2px rgba(221, 219, 219, 0.5);
   border-radius: 10px;
 }
 
 #portfolio-flters li {
   color: var(--goldish-color);
-  font-family: Meta Serif OT;
+  font-family: var(--font-martel);
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -67,22 +87,28 @@
   border: none;
   outline: none;
   width: 18rem;
+  margin-top: 1.5em;
 }
 
 .portfolio-title {
   margin: 10px;
   color: var(--goldish-color);
-  font-family: Meta Serif OT;
-  font-size: 28px;
+  font-family: var(--font-martel);
+  font-size: 25px;
   font-style: normal;
   font-weight: 450;
   line-height: 97.6%;
 }
 
 .portfolio-text {
+  color: var(--grey-color);
   margin: 10px;
   text-align: left;
   word-spacing: normal;
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .portfolio-btn {
@@ -91,7 +117,7 @@
 }
 
 .portfolio-btn:hover {
-  background-color: var(--goldish-color);
+  background-color: var(--goldish-color) !important;
 }
 
 .btn-primary {
