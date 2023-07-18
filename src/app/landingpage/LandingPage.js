@@ -13,11 +13,11 @@ const LandingPage = () => {
     <div>
       <CarouselComponent />
       <About />
+      <Courses />
+      <Grades />
       <Event />
       <Director/>
       <Deparments/>
-      <Courses />
-      <Grades />
       <Footer />
     </div>
   );
