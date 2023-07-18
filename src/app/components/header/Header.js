@@ -46,7 +46,7 @@ const Header = () => {
             <Navbar.Collapse id="navbarScroll">
               <Nav className="ms-auto my-2 my-lg-0 nav-carousel">
                 <Nav.Link href="" className="nav-links nav-link-black">
-                  Home Link
+                  Home 
                 </Nav.Link>
                 <Nav.Link href="" className="nav-links nav-link-black">
                   Academics

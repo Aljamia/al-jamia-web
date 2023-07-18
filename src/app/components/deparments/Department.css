@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+:root {
+  /* color */
+  --white-color: #FFFFFF;
+  --green-color: green;
+  --goldish-color: #CCA65D;
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+}
+
 .department-section{
-    background-color: #f7eeee;
+    background-color: #F8F8F8;
+    background-image: url("/Hotel\ Wallpaper\ Pattern.png");
 }
 .department-heading{
     display: flex;
@@ -10,9 +23,13 @@
     color: #619A46;
     margin-top: 2rem;
     padding-bottom: 1rem;
+    font-family: var(--font-martel);
  } 
  .department-para p{
     color: #555555; 
+    font-family: var(--font-inter);
+    font-size: 20px;
+    text-align: center;
  }
 
  /* -----------carousel side */
@@ -20,14 +37,14 @@
     padding: 5rem;
     color: #fff;
     /* width: 100vw; */
-    background-color: #f7eeee;
+    background-color: #F8F8F8;
    
  }
  .box{
-   background-color: #f7eeee;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   background-color: #F8F8F8;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     width: 300px;
-    height: 300px;
+    height: 340px;
     border-radius: 15px;
     overflow: hidden;
     display: flex;
@@ -40,7 +57,7 @@
  }
  .slick-slide div{
    margin: 0 0.5rem;
-   background-color: #f7eeee;
+   background-color: #F8F8F8;
  }
  .slick-dots li.slick-active button:before{
    color: rgb(218, 172, 58) !important;
@@ -54,16 +71,19 @@
    max-width: 100%; /* Make sure the image doesn't exceed the width of the div */
    height: auto; /* Preserve the image's aspect ratio */
  }
- .caro-des h5{
+ .caro-des h4{
    padding-top: 1rem;
    color: #CCA65D;
     text-align: center;
+    font-family: var(--font-inter);
+    font-weight: 500;
    
  }
  .caro-btn{
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-top: 20px !important;
  }
  .caro-btn button{
    color: #000;
@@ -71,4 +91,7 @@
    border: none;
    border-radius: 3px;
    background-color: #e2dddd;
+   font-family: var(--font-inter);
+ 
  }
+ 
