@@ -58,7 +58,9 @@ const CarouselComponent = () => {
                 </p>
               </div>
               <div className="carousel-para">
-                <p className="animate__bounceIn">Welcome To Al-jamia member</p>
+                <p className="animate__bounceIn">
+                  Welcome To Al-jamia member everyone
+                </p>
               </div>
               <div className="carousel-para ">
                 <p className="animate__bounceIn">
