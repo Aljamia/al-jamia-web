@@ -29,10 +29,12 @@ const Courses = () => {
             <Card className="portfolio-card shadow-sm">
               <Card.Img variant="top" src="/Rectangle 970.jpg" />
               <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
+                <Card.Title className="portfolio-title">
+                  Maqasid Al Sharia
+                </Card.Title>
                 <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
+                  Some quick example text to build on the Maqasid Al Sharia and
+                  make up the bulk of the content.
                 </Card.Text>
                 <Button variant="primary btn-primary" className="portfolio-btn">
                   Learn More
@@ -42,7 +44,9 @@ const Courses = () => {
             <Card className="portfolio-card shadow-sm">
               <Card.Img variant="top" src="/Rectangle 970.jpg" />
               <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
+                <Card.Title className="portfolio-title">
+                  Maqasid Al Sharia
+                </Card.Title>
                 <Card.Text className="portfolio-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the content.
