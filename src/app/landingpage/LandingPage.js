@@ -16,8 +16,8 @@ const LandingPage = () => {
       <Courses />
       <Grades />
       <Event />
-      <Director/>
-      <Deparments/>
+      <Director />
+      <Deparments />
       <Footer />
     </div>
   );
