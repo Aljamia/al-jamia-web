@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Image from "next/image";
 import "./Header.css";
@@ -49,7 +49,7 @@ const Header = () => {
                   Home
                 </Nav.Link>
                 <Nav.Link href="" className="nav-links nav-link-black">
-                  Academics
+                  About us
                 </Nav.Link>
                 <Nav.Link href="" className="nav-links nav-link-black">
                   Admission
