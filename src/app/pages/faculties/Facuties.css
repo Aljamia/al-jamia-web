@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --light-green-color: #619a46;
+  --goldish-color: #cca65d;
+
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+}
+.Faculties-header {
+  padding: 4em;
+  margin-top: 4em;
+  text-align: center;
+}
+.Faculties-title {
+  color: var(--light-green-color);
+  font-family: var(--font-martel);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+.Faculties-desc {
+  text-align: center;
+}
+.Faculties-ourleader {
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Faculties-leader-title {
+  color: var(--gold, #cca65d);
+  font-family: var(--font-martel);
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Faculties-modals {
+  padding: 2em;
+}
+.btn-primary-faculties {
+  color: black;
+  background-color: var(--gray, #dcd8d8);
+  transform: translate(60%);
+  outline: none;
+  border: none;
+}
+.btn-primary-faculties:hover {
+  color: black;
+  background-color: var(--goldish-color);
+}
+.faculties-card {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 18rem;
+  margin-top: 2.5em;
+}
+.faculties-card:hover {
+  transform: scale(1.1);
+  transition: 1000ms;
+  opacity: 0.8;
+}
+.faculties-card-title {
+  color: var(--gold, #cca65d);
+  text-align: center;
+  font-family: var(--font-inter);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 119%; /* 41.65px */
+}
+.faculties-card-text {
+  color: var(--grary-2, #7d7d7d);
+  font-family: var(--font-inter);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+}
+.faculties-modalitems {
+  padding: 1.5em;
+}
+.faculties-cardmodal-title {
+  color: var(--gold, #cca65d);
+  text-align: left;
+  font-family: var(--font-inter);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 119%; /* 41.65px */
+}
+.faculties-cardmodal-text {
+  color: var(--grary-2, #7d7d7d);
+  font-family: var(--font-inter);
+  text-align: left;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 119%;
+}
+.faculties-cardmodal-desc {
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-style: normal;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
+}
+@media (max-width: 768px) {
+  .Faculties-leader-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+  .Faculties-leader-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 5em;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .Faculties-leader-card {
+    display: grid;
+    padding: 3em;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 180px;
+  }
+}
+.Faculties-sharia {
+  margin-top: 3em;
+  padding: 2em;
+}
