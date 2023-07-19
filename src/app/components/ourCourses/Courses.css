@@ -92,12 +92,14 @@
 
 .portfolio-title {
   margin: 10px;
+  padding: 3px;
   color: var(--goldish-color);
   font-family: var(--font-martel);
   font-size: 25px;
   font-style: normal;
   font-weight: 450;
   line-height: 97.6%;
+  overflow-y: hidden !important;
 }
 
 .portfolio-text {

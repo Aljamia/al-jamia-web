@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --light-green-color: #619a46;
+  --goldish-color: #cca65d;
+
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+}
+.AboutUspage-header {
+  padding: 4em;
+  margin-top: 4em;
+  text-align: center;
+}
+.AboutUspage-title {
+  color: var(--light-green-color);
+  font-family: var(--font-martel);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+.AboutUspage-desc {
+  color: var(--gray, #555);
+  padding: 3em;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
+}
+.AboutUspage-vision {
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.3em;
+}
+.AboutUspage-vision-title {
+  color: var(--light-green-color);
+  font-family: var(--font-martel);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+.AboutUspage-vision-desc {
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
+}
+#our-mission-header {
+  margin-top: 20px;
+}
+.AboutUspage-ourMission {
+  margin-top: 1.3em;
+}
+.AboutUspage-ourCampus {
+  padding: 1.3em;
+  margin-bottom: 2em;
+}
+.AboutUspage-gallery {
+  display: flex;
+  flex-direction: row;
+}
+.AboutUspage-gallery-img {
+  flex: 40%;
+  max-width: 40%;
+  padding: 0 4px;
+}
+.AboutUspage-gallery-img > img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .AboutUspage-vision-title {
+    font-size: 25px;
+  }
+  .AboutUspage-desc {
+    text-align: justify;
+  }
+  .AboutUspage-vision {
+    margin-top: -60px;
+  }
+}

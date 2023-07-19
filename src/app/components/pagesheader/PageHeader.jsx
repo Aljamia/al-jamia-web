@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Image from "next/image";
 import "./PageHeader.css";
@@ -10,7 +10,7 @@ const PageHeader = () => {
       if (nav) {
         nav.classList.toggle(
           "scrolled",
-          document.documentElement.scrollTop > 500
+          document.documentElement.scrollTop > 100
         );
       }
     };
@@ -49,7 +49,7 @@ const PageHeader = () => {
                   Home
                 </Nav.Link>
                 <Nav.Link href="" className="nav-links nav-link-black">
-                  Academics
+                  About us
                 </Nav.Link>
                 <Nav.Link href="" className="nav-links nav-link-black">
                   Admission

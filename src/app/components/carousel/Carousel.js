@@ -54,11 +54,13 @@ const CarouselComponent = () => {
             <Slider ref={(slider) => (slider = slider)} {...settings}>
               <div className="carousel-para">
                 <p className="animate__bounceIn">
-                  Resolve The Campaign with our pleasure
+                  Resolve The Campaign with our pleasure everyone
                 </p>
               </div>
               <div className="carousel-para">
-                <p className="animate__bounceIn">Welcome To Al-jamia member</p>
+                <p className="animate__bounceIn">
+                  Welcome To Al-jamia member everyone hi
+                </p>
               </div>
               <div className="carousel-para ">
                 <p className="animate__bounceIn">
