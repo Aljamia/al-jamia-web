@@ -81,7 +81,12 @@ const AboutUs = () => {
                 </div>
               </Col>
               <Col xl={6} lg={6} xs={12}>
-                <div className="AboutUspage-vision-title">Our Vision</div>
+                <div
+                  className="AboutUspage-vision-title"
+                  id="our-mission-header"
+                >
+                  Our Mission
+                </div>
                 <p className="AboutUspage-vision-desc">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Obcaecati officia excepturi aspernatur culpa alias.
@@ -98,11 +103,35 @@ const AboutUs = () => {
           </div>
         </Container>
       </div>
-      <Container>
-        <div className="AboutUspage-ourCampus shadow-sm">
+
+      <div className="AboutUspage-ourCampus shadow-lg">
+        <Container>
           <div className="AboutUspage-vision-title">Campus Life</div>
-        </div>
-      </Container>
+
+          <div className="AboutUspage-gallery">
+            <div className="AboutUspage-gallery-img">
+              <img
+                src="/Rectangle 990.jpg"
+                alt=""
+                width={"100%"}
+                className="Aboutpage-images"
+              />
+            </div>
+            <div className="AboutUspage-gallery-img">
+              <img src="/Rectangle 993.png" alt="" width={"100%"} />
+              <img src="/Rectangle 991.jpg" alt="" width={"100%"} />
+            </div>
+            <div className="AboutUspage-gallery-img">
+              <img src="/Rectangle 991.jpg" alt="" width={"100%"} />
+              <img src="/Rectangle 994.jpg" alt="" width={"100%"} />
+            </div>
+            <div className="AboutUspage-gallery-img">
+              <img src="/Rectangle 993.png" alt="" width={"100%"} />
+              <img src="/Rectangle 991.jpg" alt="" width={"100%"} />
+            </div>
+          </div>
+        </Container>
+      </div>
       <Footer />
     </div>
   );

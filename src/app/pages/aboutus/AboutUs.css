@@ -57,9 +57,38 @@
   font-weight: 300;
   line-height: 130%; /* 39px */
 }
+#our-mission-header {
+  margin-top: 20px;
+}
 .AboutUspage-ourMission {
   margin-top: 1.3em;
 }
 .AboutUspage-ourCampus {
   padding: 1.3em;
+  margin-bottom: 2em;
+}
+.AboutUspage-gallery {
+  display: flex;
+  flex-direction: row;
+}
+.AboutUspage-gallery-img {
+  flex: 40%;
+  max-width: 40%;
+  padding: 0 4px;
+}
+.AboutUspage-gallery-img > img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .AboutUspage-vision-title {
+    font-size: 25px;
+  }
+  .AboutUspage-desc {
+    text-align: justify;
+  }
+  .AboutUspage-vision {
+    margin-top: -60px;
+  }
 }
