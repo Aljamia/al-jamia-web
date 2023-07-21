@@ -67,9 +67,13 @@ const Footer = () => {
                 <FaEnvelope /> aljamiaalislamia@gmail.com
               </p>
               <p>
-                <FaLocationDot /> SANTHAPURAM, P.O. PATTIKKAD
+                <FaLocationDot />
+                AL JAMIA AL ISLAMIYA SANTHAPURAM P.O.
               </p>
-              <p className="footer-address">679 325, MALAPPURAM, KERALA</p>
+              <p className="footer-address">
+                {" "}
+                PATTIKKAD –679 325 MALAPPURAM DISTRICT, KERALA – INDIA.{" "}
+              </p>
             </div>
           </Col>
         </Row>

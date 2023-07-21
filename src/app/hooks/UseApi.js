@@ -24,6 +24,11 @@ export const getBoardOfDirector = async () => {
 };
 
 export const getManagementCommitee = async () => {
-  const response = await axios.get(`${BASE_URL}/boardof-director`);
+  const response = await axios.get(`${BASE_URL}/administrative-council`);
+  return response.data;
+};
+
+export const getCourse = async () => {
+  const response = await axios.get(`${BASE_URL}/course`);
   return response.data;
 };
