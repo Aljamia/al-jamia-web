@@ -169,6 +169,9 @@ const CoursePage = () => {
               </div>
             </>
           )}
+          <ol>
+            <li>1</li>
+          </ol>
           {syllabus && (
             <>
               <div className="coursePage-header__title">
