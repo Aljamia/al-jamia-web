@@ -1,10 +1,10 @@
 import React from "react";
-import CoursePage from "../pages/course/CoursePage";
+import AboutUs from "../pages/aboutus/AboutUs";
 
 function About() {
   return (
     <div className="about">
-      <CoursePage />
+      <AboutUs />
     </div>
   );
 }

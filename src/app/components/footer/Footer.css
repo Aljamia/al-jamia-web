@@ -80,6 +80,9 @@
 .footer-social-icons-list:hover {
   color: var(--gold--color);
 }
+.footer-address {
+  margin-top: -10px;
+}
 @media (max-width: 991px) {
   .footer-nav {
     margin-left: 0px;
