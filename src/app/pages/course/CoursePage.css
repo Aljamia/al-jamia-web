@@ -23,7 +23,6 @@
   position: absolute;
   left: 80px;
   width: 300px;
-  overflow-y: hidden;
   bottom: 40%;
   z-index: 1000;
   color: var(--white-color);
@@ -57,8 +56,12 @@
   font-family: var(--font-inter);
   font-size: 30px;
   font-style: normal;
+  overflow-y: hidden;
   font-weight: 500;
   line-height: 105.1%; /* 52.55px */
+}
+.coursePage-header__syllabus {
+  padding: 0.5em;
 }
 .button--state-secondary {
   background-color: #cdcdcd;
