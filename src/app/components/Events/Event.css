@@ -154,8 +154,7 @@ span {
 }
 
 /* Optional: Add styling to the active dot */
-.slick-dots li.slick-active button {
-}
+
 .slick-prev {
   display: none !important;
 }

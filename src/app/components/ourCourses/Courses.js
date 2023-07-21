@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./Courses.css";
+import { getCourse } from "@/app/hooks/UseApi";
+import Link from "next/link";
 
 const Courses = () => {
+  const [course, setCourse] = useState([]);
+  const [activeField, setActiveField] = useState(0);
+
+  useEffect(() => {
+    const fetchCourse = async () => {
+      const data = await getCourse();
+      setCourse(data?.response);
+    };
+    fetchCourse();
+  }, []);
+
   return (
     <div className="course">
       <Container>
@@ -12,12 +25,9 @@ const Courses = () => {
           <h1>Our Courses</h1>
         </div>
         <div className="course-desc">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            neque dolorem consectetur at molestiae quidem, eligendi maxime
-            architecto similique deserunt quas, nemo, voluptates voluptatibus ab
-            ipsum sequi! Expedita, possimus iure.
-          </p>
+          {course.map((item) => (
+            <p key={item}>{item.eligibility}</p>
+          ))}
         </div>
         <div className="portfolio">
           <ul id="portfolio-flters">
@@ -26,88 +36,30 @@ const Courses = () => {
             <li data-filter=".third">Short Term</li>
           </ul>
           <div className="portfolio-container">
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">
-                  Maqasid Al Sharia
-                </Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the Maqasid Al Sharia and
-                  make up the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">
-                  Maqasid Al Sharia
-                </Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
+            {course.map((item) => (
+              <Card className="portfolio-card shadow-sm" key={item}>
+                <Card.Img
+                  variant="top"
+                  src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
+                />
+                <Card.Body>
+                  <Card.Title className="portfolio-title">
+                    Maqasid Al Sharia
+                  </Card.Title>
+                  <Card.Text className="portfolio-text">
+                    {item.description.substring(0, 80)}...
+                  </Card.Text>
+                  <Link href={"/coursepage"} style={{ textDecoration: "none" }}>
+                    <Button
+                      variant="primary btn-primary"
+                      className="portfolio-btn"
+                    >
+                      Learn More
+                    </Button>
+                  </Link>
+                </Card.Body>
+              </Card>
+            ))}
           </div>
         </div>
       </Container>
