@@ -51,12 +51,11 @@
   display: flex;
   gap: 10px;
 }
-.coursePage-header__title__items > h3 {
+.coursePage-header__title__items {
   color: #565656;
   font-family: var(--font-inter);
   font-size: 30px;
   font-style: normal;
-  overflow-y: hidden;
   font-weight: 500;
   line-height: 105.1%; /* 52.55px */
 }
