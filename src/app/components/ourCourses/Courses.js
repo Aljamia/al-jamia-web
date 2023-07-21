@@ -47,7 +47,7 @@ const Courses = () => {
                     Maqasid Al Sharia
                   </Card.Title>
                   <Card.Text className="portfolio-text">
-                    {item.description.substring(0, 80)}...
+                    <> {item.description.substring(0, 75)}...</>
                   </Card.Text>
                   <Link href={"/coursepage"} style={{ textDecoration: "none" }}>
                     <Button

@@ -64,9 +64,9 @@ const Footer = () => {
               <p className="footer-number"> 00914933 – 270565</p>
 
               <p>
-                <FaEnvelope /> aljamiaalislamia@gmail.com
+                <FaEnvelope /> mail@aljamia.net
               </p>
-              <p>
+              <p className="footer-location">
                 <FaLocationDot />
                 AL JAMIA AL ISLAMIYA SANTHAPURAM P.O.
               </p>

@@ -67,6 +67,7 @@
   outline: none;
   border: none;
   color: #5b5959;
+  margin-top: -5px;
 }
 .button--state-warning {
   margin: 5px;
