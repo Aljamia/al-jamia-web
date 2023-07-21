@@ -1,6 +1,6 @@
 "use client";
 import Footer from "@/app/components/footer/Footer";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./CoursePage.css";
@@ -8,6 +8,24 @@ import Courses from "@/app/components/ourCourses/Courses";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 
 const CoursePage = () => {
+
+  const [aboutData, setAboutData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch('https://website-builder-api.azurewebsites.net/api/v1//about-us');
+        const data = await response.json();
+        setAboutData(data.response);
+        console.log("about api", data.response);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setAboutData([]);
+      }
+    }
+
+    fetchData();
+  }, []);
   return (
     <div className="coursePage">
       <PageHeader />
@@ -105,21 +123,7 @@ const CoursePage = () => {
           </div>
           <div className="coursePage-header__para">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Excepturi id voluptatem nobis unde laudantium, doloribus possimus
-              fugit libero impedit! Commodi earum adipisci vero fugit esse
-              debitis quia labore aperiam recusandae! Error ab temporibus
-              similique sed repellendus officiis molestias minima eveniet atque
-              labore cum ipsum amet, numquam aliquam aut veritatis odit dolor!
-              Porro, molestias dolores quis totam voluptates quod dignissimos
-              quo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo ducimus sunt ut rem eius. Dolorem, error obcaecati.
-              Repellendus placeat rerum praesentium est magni harum, consequatur
-              iusto, corrupti, mollitia nulla iste! Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Repellat harum delectus,
-              consequuntur excepturi dolores corporis quas voluptates nostrum
-              aut? Cum, est amet? Doloremque corporis repellat fugiat. Libero
-              qui minus dolorum.
+          
             </p>
           </div>
           <div>

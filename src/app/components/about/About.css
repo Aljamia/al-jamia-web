@@ -14,10 +14,13 @@
     text-align: center;
     color: #619A46;
     margin-top: 5rem;
+    
   
 }
 .about-Title h1{
-  font-family: var(--font-martel)
+  font-family: var(--font-martel);
+  overflow-y:hidden !important
+
 }
 .about-description{
     display: flex;

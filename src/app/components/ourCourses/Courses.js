@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./Courses.css";
 
 const Courses = () => {
+  const [coursesData, setCoursesData] = useState([]);
+
+  useEffect(() => {
+    // Function to fetch the data from the API
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://website-builder-api.azurewebsites.net/api/v1/course");
+        if (!response.ok) {
+          throw new Error("Network response was not ok.");
+        }
+        const data = await response.json();
+        setCoursesData(data.response); // Assuming the "response" key holds the array of courses
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+  
+      
+  const trimDescription = (description, maxLength) => {
+    if (description.length <= maxLength) return description;
+    return description.slice(0, maxLength) + "...";
+  };
+
   return (
     <div className="course">
       <Container>
@@ -26,88 +52,19 @@ const Courses = () => {
             <li data-filter=".third">Short Term</li>
           </ul>
           <div className="portfolio-container">
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">
-                  Maqasid Al Sharia
-                </Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the Maqasid Al Sharia and
-                  make up the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">
-                  Maqasid Al Sharia
-                </Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="portfolio-card shadow-sm">
-              <Card.Img variant="top" src="/Rectangle 970.jpg" />
-              <Card.Body>
-                <Card.Title className="portfolio-title">Card Title</Card.Title>
-                <Card.Text className="portfolio-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
-                </Card.Text>
-                <Button variant="primary btn-primary" className="portfolio-btn">
-                  Learn More
-                </Button>
-              </Card.Body>
-            </Card>
+            {/* Map over the coursesData and create a Card for each course */}
+            {coursesData.map((course) => (
+              <Card key={course._id} className="portfolio-card shadow-sm">
+                <Card.Img variant="top" src="/Rectangle 970.jpg" />
+                <Card.Body>
+                  <Card.Title className="portfolio-title">{course.courseName}</Card.Title>
+                  <Card.Text className="portfolio-text">{trimDescription(course.description, 65)}</Card.Text>
+                  <Button variant="primary btn-primary" className="portfolio-btn">
+                    Learn More
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))}
           </div>
         </div>
       </Container>

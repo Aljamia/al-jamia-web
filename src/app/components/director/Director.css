@@ -22,12 +22,9 @@
   color: #619a46;
   margin-top: 2rem;
   font-family: var(--font-martel);
+  overflow-y: hidden !important;
 }
 
-/* .director-img img{
-    width: 100%;
-   
-} */
 .director-des {
   margin-top: 5rem;
 }
@@ -40,8 +37,8 @@
   font-family: var(--font-inter);
 }
 .person-detail h4 {
-  color: #535151f5;
-  font-weight: 500;
+  color: #555555;
+  font-weight: 800;
   font-family: var(--font-inter);
 }
 .person-detail p {
@@ -56,6 +53,7 @@
 .fac-title h1 {
   color: #619a46;
   font-family: var(--font-martel);
+  overflow-y: hidden !important;
 }
 .fac-des p {
   color: #555555;

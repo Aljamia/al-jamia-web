@@ -1,27 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Event.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Image from "next/image";
+import Link from "next/link";
 
 const Event = () => {
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     vertical: true, // Set the vertical option to true
     verticalSwiping: true, // Enable vertical swiping
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
@@ -44,6 +46,34 @@ const Event = () => {
       },
     ],
   };
+  const MAX_DESCRIPTION_LENGTH = 100; // Set the maximum length for the description
+
+  function trimDescription(description) {
+    if (description.length <= MAX_DESCRIPTION_LENGTH) {
+      return description;
+    }
+    return description.slice(0, MAX_DESCRIPTION_LENGTH) + "...";
+  }
+
+  const [newsData, setNewsData] = useState([]); // Set initial value to an empty array
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(
+          "https://website-builder-api.azurewebsites.net/api/v1/news"
+        );
+        const data = await response.json();
+        setNewsData(data.response.slice(0, 4)); // Slice the array to extract the first 3 elements
+       console.log("news",data.response)
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        setNewsData([]);
+      }
+    }
+
+    fetchData();
+  }, []);
 
   return (
     <div>
@@ -55,138 +85,58 @@ const Event = () => {
         <div className="event-first-section">
           <Container>
             <Row>
-              <Col xl={5}>
+              <Col xl={4}>
                 <div className="event-img">
                   <img src="image 13.png" alt="" width="100%" />
                 </div>
                 <div className="event-btn">
                   <button>Up Coming Events</button>
-                  <span>32 MINUTES AGO</span>
+                  <span>{new Date(newsData[0]?.date).toDateString()}</span>
                 </div>
                 <div className="event-des">
                   <h4>
-                    Lorem ipsum dolor sit amet corrupti natus perferendis
-                    commodi sit?
+                  {newsData[0]?.title}
                   </h4>
                   <p>
-                    Lorem, ipsum dolor sit amet nobis molestias!adipisicing
-                    elit.corrupti quam libero atque nisi mollitia doloribus
-                    distinctio? Sapiente non illo, porro ad eum dicta ducimus
-                    aliquam nemo.
+                  {newsData[0]?.description.substring(0,100)}
                   </p>
                 </div>
                 <div className="learn-btn">
-                  <button>Learn More</button>
+                  <Link href="/Event">
+                    <b>
+                      <button>Read More</button>
+                    </b>
+                  </Link>
                 </div>
               </Col>
-              <Col xl={7}>
+              <Col xl={8}>
                 <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
-                    <div className="right-event-caro">
-                      <div className="right-event-des">
-                        <h4>
-                          Lorem ipsum dolor sit amet corrupti natus perferendis
-                          commodi sit?
-                        </h4>
-                        <p>30 june 2023 _____</p>
-                        <p>
-                          Lorem, ipsum dolor sit amet nobis
-                          molestias!adipisicing elit.corrupti quam libero atque
-                          nisi mollitia doloribus distinctio? Sapiente non illo,
-                          porro ad eum dicta ducimus aliquam nemo.
-                        </p>
-                        <div className="right-learn-btn">
-                          <button>Learn More</button>
+                    {newsData.map((newsItem) => (
+                      <>
+                        <div className="right-event-caro">
+                          <div className="righttevent-caro-des">
+                            <h4>{newsItem.title}</h4>
+                            <h5>{new Date(newsItem.date).toDateString()}</h5>
+                            <p>{trimDescription(newsItem.description)}</p>
+                            <div className="learn-btn">
+                              <Link href="/Event">
+                                <b>
+                                  <button>Read More</button>
+                                </b>
+                              </Link>
+                            </div>
+                          </div>
+                          <div className="right-evnt-img">
+                            <img
+                              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${newsItem.image}`}
+                              alt={newsItem.title}
+                              width="100%"
+                            />
+                          </div>
                         </div>
-                      </div>
-                      <div className="event-caro-img">
-                        <img src="events.png" alt="" />
-                      </div>
-                    </div>
-                    <div className="right-event-caro">
-                      <div className="right-event-des">
-                        <h4>
-                          Lorem ipsum dolor sit amet corrupti natus perferendis
-                          commodi sit?
-                        </h4>
-                        <p>30 june 2023 _____</p>
-                        <p>
-                          Lorem, ipsum dolor sit amet nobis
-                          molestias!adipisicing elit.corrupti quam libero atque
-                          nisi mollitia doloribus distinctio? Sapiente non illo,
-                          porro ad eum dicta ducimus aliquam nemo.
-                        </p>
-                        <div className="right-learn-btn">
-                          <button>Learn More</button>
-                        </div>
-                      </div>
-                      <div className="event-caro-img">
-                        <img src="events.png" alt="" />
-                      </div>
-                    </div>
-                    <div className="right-event-caro">
-                      <div className="right-event-des">
-                        <h4>
-                          Lorem ipsum dolor sit amet corrupti natus perferendis
-                          commodi sit?
-                        </h4>
-                        <p>30 june 2023 _____</p>
-                        <p>
-                          Lorem, ipsum dolor sit amet nobis
-                          molestias!adipisicing elit.corrupti quam libero atque
-                          nisi mollitia doloribus distinctio? Sapiente non illo,
-                          porro ad eum dicta ducimus aliquam nemo.
-                        </p>
-                        <div className="right-learn-btn">
-                          <button>Learn More</button>
-                        </div>
-                      </div>
-                      <div className="event-caro-img">
-                        <img src="events.png" alt="" />
-                      </div>
-                    </div>
-                    <div className="right-event-caro">
-                      <div className="right-event-des">
-                        <h4>
-                          Lorem ipsum dolor sit amet corrupti natus perferendis
-                          commodi sit?
-                        </h4>
-                        <p>30 june 2023 _____</p>
-                        <p>
-                          Lorem, ipsum dolor sit amet nobis
-                          molestias!adipisicing elit.corrupti quam libero atque
-                          nisi mollitia doloribus distinctio? Sapiente non illo,
-                          porro ad eum dicta ducimus aliquam nemo.
-                        </p>
-                        <div className="right-learn-btn">
-                          <button>Learn More</button>
-                        </div>
-                      </div>
-                      <div className="event-caro-img">
-                        <img src="events.png" alt="" />
-                      </div>
-                    </div>
-                    <div className="right-event-caro">
-                      <div className="right-event-des">
-                        <h4>
-                          Lorem ipsum dolor sit amet corrupti natus perferendis
-                          commodi sit?
-                        </h4>
-                        <p>30 june 2023 _____</p>
-                        <p>
-                          Lorem, ipsum dolor sit amet nobis
-                          molestias!adipisicing elit.corrupti quam libero atque
-                          nisi mollitia doloribus distinctio? Sapiente non illo,
-                          porro ad eum dicta ducimus aliquam nemo.
-                        </p>
-                        <div className="right-learn-btn">
-                          <button>Learn More</button>
-                        </div>
-                      </div>
-                      <div className="event-caro-img">
-                        <img src="events.png" alt="" />
-                      </div>
-                    </div>
+                      </>
+                    ))}
                   </Slider>
                 </div>
               </Col>
