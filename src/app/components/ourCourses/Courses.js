@@ -3,7 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./Courses.css";
-import { getCourse, certificate } from "@/app/hooks/UseApi";
+import {
+  getCourse,
+  certificate,
+  getFaculties,
+  getAboutUsGallery,
+} from "@/app/hooks/UseApi";
 import Link from "next/link";
 import { Modal } from "react-bootstrap";
 
@@ -21,7 +26,7 @@ const Courses = () => {
   useEffect(() => {
     const fetchCourse = async () => {
       const data = await getCourse();
-      setCourse(data?.response);
+      // setCourse(data?.response);
       setCardValues(data?.response);
     };
     fetchCourse();
@@ -55,20 +60,16 @@ const Courses = () => {
     },
   ];
 
-  const handleClick = async (fName) => {
-    console.log(fName);
-    if (fName === "certificate") {
-      alert("1");
-      const response = await getCourse();
-      setCardValues(response.data);
-    } else if (fName === "diploma") {
-      alert("2");
-      const response = await certificate();
-      setCardValues(response.data);
-    } else if (fName === "certificate") {
-      alert("3");
-      const response = await getCourse();
-      setCardValues(response.data);
+  const handleClick = async (functionName) => {
+    if (functionName === "certificate") {
+      const data = await getFaculties();
+      setCardValues(data.response);
+    } else if (functionName === "diploma") {
+      const data = await getAboutUsGallery();
+      setCardValues(data.response);
+    } else {
+      const data = await getCourse();
+      setCardValues(data?.response);
     }
   };
 
