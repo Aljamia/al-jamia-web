@@ -55,13 +55,12 @@
   font-size: 0;
   text-align: center;
   background-color: var(--white-color);
-  box-shadow: 1px 2px 1px 2px rgba(221, 219, 219, 0.5);
-  border-radius: 10px;
 }
 
 #portfolio-flters li {
   color: var(--goldish-color);
   font-family: var(--font-martel);
+
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -83,39 +82,90 @@
 }
 
 .portfolio-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
   position: relative;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
   outline: none;
-  width: 18rem;
+  width: 18em;
+  height: auto;
   padding: 0.2em;
   margin-top: 1.5em;
 }
+.portfolio-modal-images {
+  transform: translate(0, 0);
+  transition: 0.3s;
+}
+.portfolio-modal-images:hover {
+  transform: translate(0, -10px);
+  transition: 0.3s;
+}
 
-.portfolio-title {
+.portfolio-title,
+.course-cardmodal-title {
+  position: relative;
+  height: 50px;
+  overflow-y: hidden;
   padding: 3px;
   color: var(--goldish-color);
   font-family: var(--font-martel);
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
+  text-transform: capitalize;
+  transition: 0.5s ease;
   font-weight: 450;
-  line-height: 97.6%;
 }
 
 .portfolio-text {
-  color: var(--grey-color);
+  color: #747373;
   text-align: left;
   padding: auto;
   width: 100%;
-  word-spacing: none !important;
+  height: 80px;
   font-family: var(--font-inter);
   font-size: 18px;
+  content: normal;
+  overflow-y: hidden;
+  font-weight: 300;
+}
+.course-modalitems {
+  padding: 1em;
+}
+.course-cardmodal-desc {
+  margin-top: 10px;
+  margin: 5px;
+  font-size: 16px;
+  font-family: var(--font-inter);
+  font-weight: lighter;
+}
+.course-modal-category {
+  background-color: rgba(97, 154, 70, 0.75);
+  padding: 6px;
+  border-radius: 10px;
+}
+.course-modal-duration {
+  border-radius: 10px;
+  padding: 6px;
+  background-color: #747373;
+  margin-left: 15px;
+}
+.course-cardmodal-text {
+  color: #747373;
+  text-align: left;
+  padding: auto;
+  width: 100%;
+  font-family: var(--font-inter);
+  font-size: 17px;
+  content: normal;
   font-weight: 300;
 }
 
 .portfolio-btn {
   margin: 10px;
-  margin-left: 25%;
+  margin-left: 22%;
 }
 
 .portfolio-btn:hover {
@@ -132,6 +182,38 @@
   border-radius: 14px;
   outline: none;
   border: none;
+}
+
+.card-back {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 54%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #e7d2d2;
+  display: none; /* Initially hidden */
+  transition: transform 20s ease-in-out;
+}
+.card-back-title {
+  color: #e99d11;
+  text-align: justify;
+  font-size: 25px;
+  font-family: var(--font-martel);
+}
+.card-back-desc {
+  color: rgb(53, 46, 46);
+  font-family: var(--font-inter);
+  font-size: 18px;
+}
+
+.portfolio-card:hover .card-back {
+  display: inline; /* Show the back content on hover */
+  transform: translate(0, 0);
+  background-image: url("/public//Hotel\ Wallpaper\ Pattern.png");
+  transition: 0.8s linear;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {

@@ -109,7 +109,7 @@ const Faculties = () => {
         </div>
       </div>
 
-      <div className="Faculties-sharia shadow-lg">
+      {/* <div className="Faculties-sharia shadow-lg">
         <div className="Faculties-sharia-leader">
           <h3 className="Faculties-leader-title">Sharia Facalties</h3>
           <div className="Faculties-leader-card">
@@ -125,8 +125,8 @@ const Faculties = () => {
                 <Button variant="primary btn-primary-faculties">
                   Learn More
                 </Button>
-              </Card.Body>
-              {/* <Modal show={show} onHide={handleClose} size="lg">
+              </Card.Body> */}
+      {/* <Modal show={show} onHide={handleClose} size="lg">
                 <Modal.Header closeButton></Modal.Header>
                 <Modal.Body>
                   <Row className="faculties-modalitems">
@@ -153,9 +153,9 @@ const Faculties = () => {
                   </Row>
                 </Modal.Body>
               </Modal> */}
-            </Card>{" "}
-            {/* card-2*/}
-            {/* <Card className="faculties-card shadow-sm">
+      {/* </Card>{" "} */}
+      {/* card-2*/}
+      {/* <Card className="faculties-card shadow-sm">
               <Card.Img variant="top" src="/image 14.jpg" />
               <Card.Body>
                 <Card.Title className="faculties-card-title">
@@ -207,8 +207,8 @@ const Faculties = () => {
                 </Modal.Body>
               </Modal>
             </Card> */}
-            {/* card-4 */}
-            {/* <Card className="faculties-card shadow-sm">
+      {/* card-4 */}
+      {/* <Card className="faculties-card shadow-sm">
               <Card.Img variant="top" src="/image 14.jpg" />
               <Card.Body>
                 <Card.Title className="faculties-card-title">
@@ -260,8 +260,8 @@ const Faculties = () => {
                 </Modal.Body>
               </Modal>
             </Card> */}
-            {/* card-5 */}
-            {/* <Card className="faculties-card shadow-sm">
+      {/* card-5 */}
+      {/* <Card className="faculties-card shadow-sm">
               <Card.Img variant="top" src="/image 14.jpg" />
               <Card.Body>
                 <Card.Title className="faculties-card-title">
@@ -313,8 +313,8 @@ const Faculties = () => {
                 </Modal.Body>
               </Modal>
             </Card> */}
-            {/* card-6 */}
-            {/* <Card className="faculties-card shadow-sm">
+      {/* card-6 */}
+      {/* <Card className="faculties-card shadow-sm">
               <Card.Img variant="top" src="/image 14.jpg" />
               <Card.Body>
                 <Card.Title className="faculties-card-title">
@@ -366,8 +366,8 @@ const Faculties = () => {
                 </Modal.Body>
               </Modal>
             </Card> */}
-            {/* card-7 */}
-            {/* <Card className="faculties-card shadow-sm">
+      {/* card-7 */}
+      {/* <Card className="faculties-card shadow-sm">
               <Card.Img variant="top" src="/image 14.jpg" />
               <Card.Body>
                 <Card.Title className="faculties-card-title">
@@ -419,10 +419,10 @@ const Faculties = () => {
                 </Modal.Body>
               </Modal>
             </Card> */}
-            {/* card-8 end */}
-          </div>
-        </div>
-      </div>
+      {/* card-8 end */}
+      {/* </div>
+        </div> */}
+      {/* </div> */}
       <Footer />
     </div>
   );
