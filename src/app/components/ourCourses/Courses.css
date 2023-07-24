@@ -60,13 +60,13 @@
 #portfolio-flters li {
   color: var(--goldish-color);
   font-family: var(--font-martel);
-
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
   cursor: pointer;
   display: inline-block;
+  justify-content: space-between;
   margin: 5px;
   padding: 8px 15px;
   text-transform: uppercase;
@@ -96,6 +96,8 @@
   margin-top: 1.5em;
 }
 .portfolio-modal-images {
+  padding: 10px;
+  border-radius: 20px;
   transform: translate(0, 0);
   transition: 0.3s;
 }
@@ -192,9 +194,11 @@
   height: 54%;
   padding: 20px;
   border-radius: 5px;
-  background-color: #e7d2d2;
+  background-color: #e7e1e1;
   display: none; /* Initially hidden */
-  transition: transform 20s ease-in-out;
+  transform: scale(1);
+  /* Add a smooth transition for the transform property */
+  transition: transform 0.5s ease; /* You can adjust the duration (0.5s) to control the speed */
 }
 .card-back-title {
   color: #e99d11;
@@ -210,9 +214,10 @@
 
 .portfolio-card:hover .card-back {
   display: inline; /* Show the back content on hover */
-  transform: translate(0, 0);
-  background-image: url("/public//Hotel\ Wallpaper\ Pattern.png");
-  transition: 0.8s linear;
+  transition: 0.8s ease-in;
+  padding: 20px;
+  transform: scale(0.8);
+  border-radius: 20px;
   opacity: 1;
 }
 
