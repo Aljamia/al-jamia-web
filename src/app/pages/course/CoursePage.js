@@ -7,7 +7,6 @@ import "./CoursePage.css";
 import Courses from "@/app/components/ourCourses/Courses";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { getCourse } from "@/app/hooks/UseApi";
-import Link from "next/link";
 
 const CoursePage = () => {
   const [course, setCourse] = useState([]);
