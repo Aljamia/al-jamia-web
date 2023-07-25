@@ -25,6 +25,12 @@
   line-height: normal;
 }
 .Faculties-desc {
+  font-family: var(--font-inter);
+  color: gray;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
   text-align: center;
 }
 .Faculties-ourleader {
@@ -45,10 +51,24 @@
 .Faculties-modals {
   padding: 2em;
 }
+.faculties-card {
+  position: relative;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 17rem;
+  height: 28rem;
+  margin-top: 1em;
+  cursor: pointer;
+  padding: 0.5em;
+  opacity: 1;
+}
 .btn-primary-faculties {
   color: black;
   background-color: var(--gray, #dcd8d8);
   transform: translate(60%);
+  position: absolute;
+  bottom: 20px;
   outline: none;
   border: none;
 }
@@ -56,18 +76,7 @@
   color: black;
   background-color: var(--goldish-color);
 }
-.faculties-card {
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  width: 17rem;
-  margin-top: 2.5em;
-}
-.faculties-card:hover {
-  transform: scale(0.9);
-  transition: 1000ms;
-  opacity: 0.8;
-}
+
 .faculties-card-title {
   color: var(--gold, #cca65d);
   text-align: center;
@@ -124,13 +133,18 @@
     justify-content: center;
     gap: 15px;
   }
+  .Faculties-desc {
+    font-size: 16px;
+    text-align: justify;
+    word-spacing: normal;
+  }
 }
 
 @media (min-width: 770px) and (max-width: 1000px) {
   .Faculties-leader-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 5em;
+    padding: 3em;
     gap: 10px;
   }
 }
@@ -138,12 +152,66 @@
 @media (min-width: 1001px) {
   .Faculties-leader-card {
     display: grid;
-    padding: 5em;
+    padding: 2em;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 180px;
   }
 }
-.Faculties-sharia {
-  margin-top: 3em;
-  padding: 2em;
+
+.Faculties-leader-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  max-width: 1440px;
+  margin: 1em;
+}
+
+.profile {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.profile:hover {
+  transform: translateY(20px);
+}
+
+.profile img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid #f7f7f7;
+  filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+}
+
+.profile .name {
+  position: absolute;
+  background-color: dodgerblue;
+  color: #fff;
+  font-family: var(--font-martel), cursive;
+  padding: 15px 30px;
+  border-radius: 100px;
+  bottom: -80px;
+  left: 50%;
+  white-space: nowrap;
+  transform: translate(-50%, -50px);
+  letter-spacing: 1px;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.profile .name::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: dodgerblue;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.profile img:hover + .name {
+  opacity: 1;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
 }

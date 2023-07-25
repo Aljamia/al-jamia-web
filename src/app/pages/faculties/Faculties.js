@@ -55,20 +55,24 @@ const Faculties = () => {
         <div className="Faculties-leader-card">
           {faculties.map((item) => (
             <Card className="faculties-card shadow-sm" key={item.id}>
-              <Card.Img
-                variant="top"
-                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
-              />
+              <div className="profile">
+                <Card.Img
+                  variant="top"
+                  src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
+                />
+                <span className="name">{item.enName}</span>
+              </div>
               <Card.Body>
                 <Card.Title className="faculties-card-title">
-                  {item.enName}
+                  <span className="name">{item.enName}</span>
                 </Card.Title>
                 <Card.Text className="faculties-card-text">
                   {item.enDesignation}
                 </Card.Text>
                 <Button
-                  variant="primary btn-primary-faculties"
+                  variant="primary"
                   onClick={() => handleShow(item)}
+                  className="btn-primary-faculties"
                 >
                   Learn More
                 </Button>
