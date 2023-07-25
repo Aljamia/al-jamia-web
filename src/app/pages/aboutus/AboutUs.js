@@ -54,13 +54,14 @@ const AboutUs = () => {
               <div className="AboutUspage-vision-title">Our Vision</div>
               <p className="AboutUspage-vision-desc">{about[0]?.vision}</p>
             </Col>
+
             <Col xl={6} lg={6} xs={12}>
               <div className="AboutUspage-vision-img">
                 <Image
                   src="/image 7.png"
-                  layout="fixed" // Use layout="responsive" for responsiveness
-                  width={600} // Provide the width of the image
-                  height={300} // Provide the height of the image (optional)
+                  layout="responsive" // Use layout="responsive" for responsiveness
+                  width={500} // Provide the width of the image
+                  height={800} // Adjust the height as needed to make it taller
                   alt="Image"
                 />
               </div>
@@ -72,10 +73,12 @@ const AboutUs = () => {
                 <div className="AboutUspage-vision-img">
                   <Image
                     src="/image 7.png"
-                    layout="fixed" // Use layout="responsive" for responsiveness
-                    width={600} // Provide the width of the image
-                    height={300} // Provide the height of the image (optional)
+                    layout="responsive" // Use layout="responsive" for responsiveness
+                    width={500} // Provide the width of the image
+                    height={800} // Adjust the height as needed to make it taller
                     alt="Image"
+                    objectFit="cover"
+                    className="AboutUspage-vision-img2"
                   />
                 </div>
               </Col>
@@ -96,30 +99,18 @@ const AboutUs = () => {
       <div className="AboutUspage-ourCampus shadow-lg">
         <Container>
           <div className="AboutUspage-vision-title">Campus Life</div>
-
           <div className="AboutUspage-gallery">
             {gallery?.map((value, key) => (
               <div className="AboutUspage-gallery-img" key={key}>
-                <img
+                <Image
                   src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${value.image}`}
                   alt=""
-                  width="50%"
+                  width={300}
+                  height={230}
                   className="Aboutpage-images"
                 />
               </div>
             ))}
-            {/* <div className="AboutUspage-gallery-img">
-              <img src="/Rectangle 993.png" alt="" width={"100%"} />
-              <img src="/Rectangle 991.jpg" alt="" width={"100%"} />
-            </div>
-            <div className="AboutUspage-gallery-img">
-              <img src="/Rectangle 991.jpg" alt="" width={"100%"} />
-              <img src="/Rectangle 994.jpg" alt="" width={"100%"} />
-            </div>
-            <div className="AboutUspage-gallery-img">
-              <img src="/Rectangle 993.png" alt="" width={"100%"} />
-              <img src="/Rectangle 991.jpg" alt="" width={"100%"} />
-            </div> */}
           </div>
         </Container>
       </div>

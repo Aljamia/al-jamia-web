@@ -3,17 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./Courses.css";
-import {
-  getCourse,
-  certificate,
-  getFaculties,
-  getAboutUsGallery,
-} from "@/app/hooks/UseApi";
-import Link from "next/link";
+import { getCourse, getFaculties, getAboutUsGallery } from "@/app/hooks/UseApi";
 import { Modal } from "react-bootstrap";
 
 const Courses = () => {
-  const [course, setCourse] = useState([]);
   const [show, setShow] = useState(false);
   const [modalVal, setModalVal] = useState(false);
   const [cardValues, setCardValues] = useState([]);
@@ -111,14 +104,25 @@ const Courses = () => {
                   className="portfolio-modal-images"
                   src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
                 />
+                <div className="portfolio-title-data">
+                  <ul class="list">
+                    <li>
+                      <a href="#0">
+                        <span>{course.language}</span>
+                        <p
+                          className="portfolio-title-desc"
+                          style={{ fontSize: "16px" }}
+                        >
+                          {course.eligibility}{" "}
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
                 <Card.Body>
                   <Card.Title>
                     <h2 className="portfolio-title">{course.courseName}</h2>
                   </Card.Title>
-                  <div className="card-back">
-                    <h2 className="card-back-title">{course.language}</h2>
-                    <p className="card-back-desc">{course.eligibility}</p>
-                  </div>
                   <Card.Text>
                     <p className="portfolio-text">{course.description}</p>
                   </Card.Text>

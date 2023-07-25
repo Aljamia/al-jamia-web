@@ -96,6 +96,7 @@
   margin-top: 1.5em;
 }
 .portfolio-modal-images {
+  position: relative;
   padding: 10px;
   border-radius: 20px;
   transform: translate(0, 0);
@@ -104,6 +105,33 @@
 .portfolio-modal-images:hover {
   transform: translate(0, -10px);
   transition: 0.3s;
+}
+.portfolio-title-data {
+  position: absolute;
+  border-radius: 50px;
+  top: 5px;
+  width: 100%;
+}
+.portfolio-title-desc {
+  position: absolute;
+  top: 30%;
+  text-align: left;
+  display: none;
+  padding: 1.5em;
+  font-family: var(--font-martel);
+  font-weight: 400;
+  color: black;
+  word-wrap: break-word;
+  opacity: 1;
+  transition: ease;
+}
+.list li a span:hover + .portfolio-title-desc {
+  display: flex;
+  margin-top: 23px;
+  width: 77.6%;
+  min-height: 100%;
+  background-color: #eeedec;
+  opacity: 0.8;
 }
 
 .portfolio-title,
@@ -186,41 +214,6 @@
   border: none;
 }
 
-.card-back {
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 100%;
-  height: 54%;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #e7e1e1;
-  display: none; /* Initially hidden */
-  transform: scale(1);
-  /* Add a smooth transition for the transform property */
-  transition: transform 0.5s ease; /* You can adjust the duration (0.5s) to control the speed */
-}
-.card-back-title {
-  color: #e99d11;
-  text-align: justify;
-  font-size: 25px;
-  font-family: var(--font-martel);
-}
-.card-back-desc {
-  color: rgb(53, 46, 46);
-  font-family: var(--font-inter);
-  font-size: 18px;
-}
-
-.portfolio-card:hover .card-back {
-  display: inline; /* Show the back content on hover */
-  transition: 0.8s ease-in;
-  padding: 20px;
-  transform: scale(0.8);
-  border-radius: 20px;
-  opacity: 1;
-}
-
 @media (max-width: 768px) {
   .portfolio-container {
     display: flex;
@@ -242,5 +235,48 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.list li {
+  flex: 1;
+}
+.list li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.8em;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  font-size: 40px;
+  border-radius: 10px;
+}
+.list li a span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  font-size: 22px;
+  margin-top: 4.8rem;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  color: #eeedec;
+}
+
+@media (hover: hover) {
+  .list li a span {
+    transform: translateY(-100px);
+    transition: 0.2s;
+  }
+  .list:hover span {
+    transform: translateY(-80px);
+  }
+  .list li:nth-child(1) span {
+    transition-delay: 0s;
   }
 }
