@@ -44,7 +44,7 @@ const Courses = () => {
                 />
                 <Card.Body>
                   <Card.Title className="portfolio-title">
-                    Maqasid Al Sharia
+                    {item.courseName.substring(0,19)}...
                   </Card.Title>
                   <Card.Text className="portfolio-text">
                     {item.description.substring(0, 80)}...

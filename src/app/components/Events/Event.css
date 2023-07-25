@@ -139,10 +139,10 @@ span {
 
 .slick-dots {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: -30%;
   transform: translateY(-50%) rotate(90deg);
-  display: none !important;
+  
 
 }
 

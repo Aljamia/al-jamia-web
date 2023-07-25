@@ -30,5 +30,6 @@ export const getManagementCommitee = async () => {
 
 export const getCourse = async () => {
   const response = await axios.get(`${BASE_URL}/course`);
+  console.log(response.data,"coursepage api")
   return response.data;
 };

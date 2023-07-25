@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./About.css";
+import Link from 'next/link';
+import Annoucement from '../annoucement/Annoucement';
 
 const About = () => {
   const [data, setData] = useState({});
@@ -32,12 +34,15 @@ const About = () => {
       </div>
       <div className="school-img">
         <div className="btn">
-          <button>Take a Tour</button>
+          <Link href="/about">
+            <button>Take a Tour</button>
+            </Link>
         </div>
         <div className="image">
           <img src="image 7.png" alt="photo" width="100%" />
         </div>
       </div>
+      <Annoucement/>
     </div>
   );
 }
