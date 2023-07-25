@@ -43,8 +43,8 @@ const AboutUs = () => {
         />
       </div>
       <div className="AboutUspage-desc">
-        {about.map((item) => (
-          <Container key={item.id}>{item.longDescription}</Container>
+        {about.map((item, index) => (
+          <Container key={index}>{item.longDescription}</Container>
         ))}
       </div>
       <div className="AboutUspage-vision">
@@ -102,13 +102,28 @@ const AboutUs = () => {
           <div className="AboutUspage-gallery">
             {gallery?.map((value, key) => (
               <div className="AboutUspage-gallery-img" key={key}>
-                <Image
-                  src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${value.image}`}
-                  alt=""
-                  width={300}
-                  height={230}
-                  className="Aboutpage-images"
-                />
+                <div className="AboutUsPage-gallery-items">
+                  <div className="box">
+                    <div className="imgBox">
+                      <Image
+                        src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${value.image}`}
+                        alt=""
+                        width={300}
+                        height={230}
+                        className="Aboutpage-images"
+                      />
+                    </div>
+                    <div className="content">
+                      <h2 className="content-author-name">
+                        {value.title}
+                        <br />
+                        <span className="content-author-desig">
+                          Graphic Designer
+                        </span>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

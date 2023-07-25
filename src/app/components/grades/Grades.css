@@ -10,7 +10,7 @@
 
 .grades {
   margin-top: 3em;
-  padding: 6em 3em;
+  padding: 3em;
 }
 .grades-header {
   padding: 0.5em;
@@ -41,5 +41,8 @@
 @media (max-width: 500px) {
   .grades-digits h2 {
     font-size: 22px;
+  }
+  .grades-title h3 {
+    font-size: 20px;
   }
 }

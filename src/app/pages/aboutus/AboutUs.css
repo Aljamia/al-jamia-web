@@ -45,6 +45,7 @@
   font-family: var(--font-martel);
   font-size: 40px;
   font-style: normal;
+  margin-top: 1em;
   font-weight: 450;
   line-height: normal;
 }
@@ -78,6 +79,7 @@
   }
   .AboutUspage-desc {
     text-align: justify;
+    padding: 1em;
   }
   .AboutUspage-vision {
     margin-top: -60px;
@@ -87,15 +89,87 @@
 /* Container for the masonry grid gallery */
 .AboutUspage-gallery {
   display: grid;
-
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 5px;
 }
 
-/* Individual image container in the masonry grid */
-.AboutUspage-gallery-img {
-  overflow: hidden;
-  margin: 5px;
-  padding: 10px;
-  object-fit: fill;
+.AboutUsPage-gallery-items {
+  position: relative;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.AboutUsPage-gallery-items .box {
+  position: relative;
+  width: 30rem;
+  height: 20rem;
+}
+
+.AboutUsPage-gallery-items .box:hover .imgBox {
+  transform: translate(-1.5rem, -1.5rem);
+}
+
+.AboutUsPage-gallery-items .box:hover .content {
+  transform: translate(1rem, 1rem);
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.imgBox img {
+  position: relative;
+  object-fit: cover;
+  resize: both;
+}
+
+.content {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 1;
+  align-items: flex-end;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.content .content-author-name {
+  display: block;
+  text-transform: capitalize;
+  font-size: 22px;
+  color: balck;
+  font-family: var(--font-martel);
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.content .content-author-desig {
+  color: #555;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .AboutUsPage-gallery-items .box:hover .content {
+    transform: translate(0, 2rem);
+  }
+  .AboutUsPage-gallery-items .box:hover .imgBox {
+    transform: translate(0, -2rem);
+  }
 }
