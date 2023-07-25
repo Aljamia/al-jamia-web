@@ -48,6 +48,10 @@
   font-weight: 450;
   line-height: normal;
 }
+.AboutUspage-vision-img {
+  margin-top: 20px;
+}
+
 .AboutUspage-vision-desc {
   color: var(--gray, #555);
   font-family: var(--font-inter);
@@ -67,20 +71,7 @@
   padding: 1.3em;
   margin-bottom: 2em;
 }
-.AboutUspage-gallery {
-  display: flex;
-  flex-direction: row;
-}
-.AboutUspage-gallery-img {
-  flex: 40%;
-  max-width: 40%;
-  padding: 0 4px;
-}
-.AboutUspage-gallery-img > img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
+
 @media (max-width: 700px) {
   .AboutUspage-vision-title {
     font-size: 25px;
@@ -91,4 +82,19 @@
   .AboutUspage-vision {
     margin-top: -60px;
   }
+}
+
+/* Container for the masonry grid gallery */
+.AboutUspage-gallery {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
+}
+
+/* Individual image container in the masonry grid */
+.AboutUspage-gallery-img {
+  overflow: hidden;
+  margin: 5px;
+  padding: 10px;
 }
