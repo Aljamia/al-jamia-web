@@ -22,7 +22,7 @@ function EventPage() {
 
   return (
     <div>
-      <div>Event not found</div>;<h1>{event.title}</h1>
+      <h1>{event.title}</h1>
       <p>{event.description}</p>
       {/* ...other event details */}
     </div>
