@@ -41,20 +41,22 @@
 }
 .box {
   background-color: #f8f8f8;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: 300px;
-  height: 340px;
-  border-radius: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+   width: 300px !important;
+  height: 370px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 10px !important;
 }
 .box h3 {
   text-align: center;
 }
 .slick-slide div {
-  margin: 0 0.5rem;
+  padding-bottom: 2rem;
+  margin: 0 0.0rem;
   background-color: #f8f8f8;
 }
 .slick-dots li.slick-active button:before {
@@ -66,8 +68,7 @@
   top: 2rem !important;
 }
 .caro-img img {
-  max-width: 100%; /* Make sure the image doesn't exceed the width of the div */
-  height: auto; /* Preserve the image's aspect ratio */
+width: 100%;
 }
 .caro-des h4 {
   padding-top: 1rem;

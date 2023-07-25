@@ -15,12 +15,13 @@
   background-color: #eaf6e4;
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
 }
-.director-heading h2 {
+.director-heading h1 {
+  padding-top: 2rem;
   align-items: center;
   justify-content: center;
   display: flex;
   color: #619a46;
-  margin-top: 2rem;
+
   font-family: var(--font-martel);
 }
 

@@ -45,23 +45,25 @@ const Header = () => {
             />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="ms-auto my-2 my-lg-0 nav-carousel">
-                <Nav.Link
-                  href=""
-                  className="nav-links nav-link-black"
-                  id="nav-links-home"
-                >
+                <Nav.Link href="/" className="nav-links nav-link-black">
                   Home
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link href="/about" className="nav-links nav-link-black">
                   About us
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link
+                  href="coursepage"
+                  className="nav-links nav-link-black"
+                >
                   Admission
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link
+                  href="/faculties"
+                  className="nav-links nav-link-black"
+                >
                   Examination
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link href="/event" className="nav-links nav-link-black">
                   Event
                 </Nav.Link>
                 <Nav.Link href="" className="nav-links nav-link-black">

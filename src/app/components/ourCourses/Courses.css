@@ -55,8 +55,6 @@
   font-size: 0;
   text-align: center;
   background-color: var(--white-color);
-  box-shadow: 1px 2px 1px 2px rgba(221, 219, 219, 0.5);
-  border-radius: 10px;
 }
 
 #portfolio-flters li {
@@ -68,6 +66,7 @@
   line-height: normal;
   cursor: pointer;
   display: inline-block;
+  justify-content: space-between;
   margin: 5px;
   padding: 8px 15px;
   text-transform: uppercase;
@@ -83,39 +82,120 @@
 }
 
 .portfolio-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
   outline: none;
-  width: 18rem;
+  width: 18em;
+  height: auto;
+  padding: 0.2em;
   margin-top: 1.5em;
 }
+.portfolio-modal-images {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  transform: translate(0, 0);
+  transition: 0.3s;
+}
+.portfolio-modal-images:hover {
+  transform: translate(0, -10px);
+  transition: 0.3s;
+}
+.portfolio-title-data {
+  position: absolute;
+  border-radius: 50px;
+  top: 5px;
+  width: 100%;
+}
+.portfolio-title-desc {
+  position: absolute;
+  top: 30%;
+  text-align: left;
+  display: none;
+  padding: 1.5em;
+  font-family: var(--font-martel);
+  font-weight: 400;
+  color: black;
+  word-wrap: break-word;
+  opacity: 1;
+  transition: ease;
+}
+.list li a span:hover + .portfolio-title-desc {
+  display: flex;
+  margin-top: 23px;
+  width: 77.6%;
+  min-height: 100%;
+  background-color: #eeedec;
+  opacity: 0.8;
+}
 
-.portfolio-title {
-  margin: 10px;
+.portfolio-title,
+.course-cardmodal-title {
+  position: relative;
+  height: 50px;
+  overflow-y: hidden;
   padding: 3px;
   color: var(--goldish-color);
   font-family: var(--font-martel);
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
+  text-transform: capitalize;
+  transition: 0.5s ease;
   font-weight: 450;
-  line-height: 97.6%;
-  overflow-y: hidden !important;
 }
 
 .portfolio-text {
-  color: var(--grey-color);
-  margin: 10px;
+  color: #747373;
   text-align: left;
-  word-spacing: normal;
+  padding: auto;
+  width: 100%;
+  height: 80px;
   font-family: var(--font-inter);
-  font-size: 20px;
-  font-style: normal;
+  font-size: 18px;
+  content: normal;
+  overflow-y: hidden;
+  font-weight: 300;
+}
+.course-modalitems {
+  padding: 1em;
+}
+.course-cardmodal-desc {
+  margin-top: 10px;
+  margin: 5px;
+  font-size: 16px;
+  font-family: var(--font-inter);
+  font-weight: lighter;
+}
+.course-modal-category {
+  background-color: rgba(97, 154, 70, 0.75);
+  padding: 6px;
+  border-radius: 10px;
+}
+.course-modal-duration {
+  border-radius: 10px;
+  padding: 6px;
+  background-color: #747373;
+  margin-left: 15px;
+}
+.course-cardmodal-text {
+  color: #747373;
+  text-align: left;
+  padding: auto;
+  width: 100%;
+  font-family: var(--font-inter);
+  font-size: 17px;
+  content: normal;
   font-weight: 300;
 }
 
 .portfolio-btn {
   margin: 10px;
-  margin-left: 25%;
+  margin-left: 22%;
 }
 
 .portfolio-btn:hover {
@@ -155,5 +235,48 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.list li {
+  flex: 1;
+}
+.list li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.8em;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  font-size: 40px;
+  border-radius: 10px;
+}
+.list li a span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  font-size: 22px;
+  margin-top: 4.8rem;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  color: #eeedec;
+}
+
+@media (hover: hover) {
+  .list li a span {
+    transform: translateY(-100px);
+    transition: 0.2s;
+  }
+  .list:hover span {
+    transform: translateY(-80px);
+  }
+  .list li:nth-child(1) span {
+    transition-delay: 0s;
   }
 }
