@@ -33,3 +33,8 @@ export const getCourse = async () => {
   console.log(response.data,"coursepage api")
   return response.data;
 };
+
+export const certificate = async () => {
+  const response = await axios.get(`${BASE_URL}/administrative-council`);
+  return response.data;
+};
