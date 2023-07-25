@@ -54,7 +54,7 @@ const Header = () => {
                 <Nav.Link href="coursepage" className="nav-links nav-link-black">
                   Admission
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link href="/faculties" className="nav-links nav-link-black">
                   Examination
                 </Nav.Link>
                 <Nav.Link href="/event" className="nav-links nav-link-black">

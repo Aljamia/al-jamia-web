@@ -1,4 +1,5 @@
 import axios from "axios";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Director.css";
@@ -59,7 +60,9 @@ const Director = () => {
             </p>
           </div>
           <div className="fac-btn">
-            <button> Take a Tour</button>
+            <Link href="/faculties">
+              <button> Take a Tour</button>
+              </Link>
           </div>
         </Container>
       </div>

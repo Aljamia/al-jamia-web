@@ -200,13 +200,14 @@ span {
   padding: 0 !important;
   margin: 0 0.5rem;
   opacity: 1;
-  overflow-y: hidden !important;
+
 }
 .event-slick div {
   margin: 0 0.5rem;
   background-color: transparent !important;
   opacity: 1;
-  overflow-y: hidden !important;
+  margin-top: 0.2rem;
+
 }
 .carouselevent {
   background-color: #f8f8f8;
@@ -222,6 +223,7 @@ span {
   top: 50%;
   right: -40%;
   transform: translateY(-50%) rotate(90deg);
+  display: none !important;
 
 }
 
