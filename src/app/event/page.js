@@ -5,7 +5,7 @@ import EventDetails from './[eventId]'
 const page = () => {
   return (
     <div>
-      <News/>
+      {/* <News/> */}
       <EventDetails/>
     </div>
   )
