@@ -14,7 +14,7 @@ const Annoucement = () => {
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         vertical: true, // Set the vertical option to true
         verticalSwiping: true, // Enable vertical swiping
         responsive: [
@@ -49,7 +49,7 @@ const Annoucement = () => {
     <div>
         <Container className="annon-slick">
 
-                <Slider {...settings} className="annon-slick slider1">
+                <Slider {...settings} className="annon-slick ">
               <div className="annon-caro">
                 <div className="right-event-des">
                     <p>32 MINUTES AGO</p>
