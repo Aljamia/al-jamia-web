@@ -105,10 +105,9 @@ const AboutUs = () => {
                 <Image
                   src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${value.image}`}
                   alt=""
-                  width={320} // Set the width to 100% to make the images responsive
-                  height={280} // Set the height for each image using the height property from the gallery data
-                  // Adjust the object-fit property as needed
-                  className="Aboutpage-images" // Add the CSS class name for the image
+                  width={300}
+                  height={230}
+                  className="Aboutpage-images"
                 />
               </div>
             ))}

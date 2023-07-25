@@ -97,4 +97,5 @@
   overflow: hidden;
   margin: 5px;
   padding: 10px;
+  object-fit: fill;
 }
