@@ -1,9 +1,12 @@
-import React from 'react'
-import "./Department.css"
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
-const Deparments = () => {
+import axios from 'axios';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Department.css";
+
+const Departments = () => {
+  // ... (the rest of your settings and useEffect code)
   var settings = {
     dots: true,
     infinite: true,
@@ -41,87 +44,61 @@ const Deparments = () => {
     ]
   };
   
+  const [department, setDepartment] = useState([]);
+  
+  // Fetch the API data on component mount using Axios
+  useEffect(() => {
+    axios
+      .get("https://website-builder-api.azurewebsites.net/api/v1//department")
+      .then((response) => {
+        setDepartment(response.data.response);
+        console.log("department data",response.data.response); // Log the data to the console
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+   
+
   return (
     <div>
       <div className="department-section">
-      <div className="container">
-        <div className="row">
-          <div className="department-heading">
-          <h1>Department</h1>
-        </div>
-        <div className="department-para">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur consequuntur 
-            deserunt dolorum qui itaque aliquid hic labore, aut illum expedita reiciendis blanditiis quibusdam rerum pariatur 
-            consequatur optio ullam recusandae sequi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur consequuntur 
-            deserunt dolorum qui itaque aliquid hic labore, aut illum expedita reiciendis blanditiis quibusdam rerum pariatur 
-            consequatur optio ullam recusandae sequi?
-          </p>
-        </div>
+        <div className="container">
+          <div className="row">
+            <div className="department-heading">
+              <h1>Department</h1>
+            </div>
+            <div className="department-para">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur consequuntur 
+                deserunt dolorum qui itaque aliquid hic labore, aut illum expedita reiciendis blanditiis quibusdam rerum pariatur 
+                consequatur optio ullam recusandae sequi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur consequuntur 
+                deserunt dolorum qui itaque aliquid hic labore, aut illum expedita reiciendis blanditiis quibusdam rerum pariatur 
+                consequatur optio ullam recusandae sequi?
+              </p>
+            </div>
           </div>
         </div>
         <div className="carousel-2">
-             <Slider {...settings}>
-             <div className="box">
-              <div className="caro-img">
-                <img src="book.png" alt="" />
-              </div>
-               <div className="caro-des">
-               <h4>Centre for Information Technology</h4>
-                <div className="caro-btn" >
-                  <button>Learn More</button>
+          <Slider {...settings}>
+            {department.map((dept) => (
+                <div className="box" key={dept._id}>
+                <div className="caro-img">
+                  <img src="book.png" alt="" />
                 </div>
-               </div>
-            </div>
-            <div className="box">
-              <div className="caro-img">
-                <img src="book.png" alt="" />
-              </div>
-               <div className="caro-des">
-               <h4>Centre for Information Technology</h4>
-                <div className="caro-btn">
-                  <button>Learn More</button>
+                <div className="caro-des">
+                  <h4>{dept.description.substring(0,30)}....</h4>
+                  <div className="caro-btn">
+                    <button>Learn More</button>
+                  </div>
                 </div>
-               </div>
-            </div>
-            <div className="box">
-              <div className="caro-img">
-                <img src="book.png" alt="" />
               </div>
-               <div className="caro-des">
-               <h4>Centre for Information Technology</h4>
-                <div className="caro-btn">
-                  <button>Learn More</button>
-                </div>
-               </div>
-            </div>
-            <div className="box">
-              <div className="caro-img">
-                <img src="book.png" alt="" />
-              </div>
-               <div className="caro-des">
-               <h4>Centre for Information Technology</h4>
-                <div className="caro-btn">
-                  <button>Learn More</button>
-                </div>
-               </div>
-            </div>
-            <div className="box">
-              <div className="caro-img">
-                <img src="book.png" alt="" />
-              </div>
-               <div className="caro-des">
-               <h4>Centre for Information Technology</h4>
-                <div className="caro-btn">
-                  <button>Learn More</button>
-                </div>
-               </div>
-            </div>
-       
-             </Slider>
-          </div>
+
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Deparments
+export default Departments;
+
+// -----------------------------------------

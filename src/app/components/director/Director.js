@@ -1,15 +1,28 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Director.css";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faClockflip } from '@fortawesome/free-solid-svg-icons';
 
 const Director = () => {
+  const [director, setDirector] = useState([]);
+
+  // Fetch the API data on component mount using Axios
+  useEffect(() => {
+    axios
+      .get("https://website-builder-api.azurewebsites.net/api/v1//boardof-director")
+      .then((response) => {
+        setDirector(response.data.response);
+        console.log("director data",response.data.response); // Log the data to the console
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
   return (
     <div>
       <div className="director">
         <div className="director-heading">
-          <h2> Message From The Director</h2>
+          <h1> Message From The Director</h1>
         </div>
         <Container>
           <Row>
@@ -21,19 +34,11 @@ const Director = () => {
             <Col xl={6}>
               <div className="director-des">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat, laborum perspiciatis. Veritatis, accusamus?
-                  Praesentium, excepturi iste porro quo deserunt ducimus
-                  consectetur iure, dignissimos animi Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Corporis autem excepturi fuga
-                  dolor obcaecati neque, aspernatur tenetur, eum molestiae
-                  alias, est nam? Placeat magnam necessitatibus hic sequi esse,
-                  perferendis itaque! quas perspiciatis obcaecati. Nobis, facere
-                  animi?
+                 {director[0]?.enDescription}
                 </p>
               </div>
               <div className="person-detail">
-                <h4>Dr Abdulslam Ahmen</h4>
+                <h4>{director[0]?.enName}</h4>
                 <p>Rector Al Jamia Al Islamia</p>
               </div>
             </Col>
