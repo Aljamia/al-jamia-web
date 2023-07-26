@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Grades = () => {
   return (
-    <div className="grades shadow-lg">
+    <div className="grades">
       <Container>
         <Row>
           <Col xl={3} xs={6} sm={6}>

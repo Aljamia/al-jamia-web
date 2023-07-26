@@ -66,7 +66,7 @@ const Header = () => {
                 <Nav.Link href="/event" className="nav-links nav-link-black">
                   Event
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link href="/contact" className="nav-links nav-link-black">
                   Contact
                 </Nav.Link>
               </Nav>

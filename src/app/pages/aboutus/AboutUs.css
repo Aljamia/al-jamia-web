@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 
 :root {
   /* color */
@@ -9,7 +9,7 @@
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-martel: "Martel", serif;
+  --font-PT-serif: "PT Serif", serif;
 }
 .AboutUspage-header {
   padding: 4em;
@@ -18,8 +18,8 @@
 }
 .AboutUspage-title {
   color: var(--light-green-color);
-  font-family: var(--font-martel);
-  font-size: 40px;
+  font-family: var(--font-PT-serif);
+  font-size: 50px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
@@ -28,10 +28,10 @@
   color: var(--gray, #555);
   padding: 3em;
   text-align: center;
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 130%; /* 39px */
 }
 .AboutUspage-vision {
@@ -42,17 +42,27 @@
 }
 .AboutUspage-vision-title {
   color: var(--light-green-color);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   font-size: 40px;
   font-style: normal;
+  margin-top: 1em;
   font-weight: 450;
   line-height: normal;
 }
 .AboutUspage-vision-img {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .AboutUspage-vision-desc {
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
+}
+.AboutUspage-mission-desc {
   color: var(--gray, #555);
   font-family: var(--font-inter);
   text-align: justify;
@@ -74,10 +84,11 @@
 
 @media (max-width: 700px) {
   .AboutUspage-vision-title {
-    font-size: 25px;
+    font-size: 30px;
   }
   .AboutUspage-desc {
     text-align: justify;
+    padding: 1em;
   }
   .AboutUspage-vision {
     margin-top: -60px;
@@ -87,15 +98,46 @@
 /* Container for the masonry grid gallery */
 .AboutUspage-gallery {
   display: grid;
-
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 5px;
 }
 
-/* Individual image container in the masonry grid */
-.AboutUspage-gallery-img {
-  overflow: hidden;
-  margin: 5px;
-  padding: 10px;
-  object-fit: fill;
+.AboutUsPage-gallery-items {
+  position: relative;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.AboutUsPage-gallery-items .box {
+  position: relative;
+  width: 30rem;
+  height: 20rem;
+}
+
+.AboutUsPage-gallery-items .box:hover .imgBox {
+  transform: translate(-1.5rem, -1.5rem);
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.imgBox img {
+  position: relative;
+  object-fit: cover;
+  resize: both;
+}
+
+@media (max-width: 600px) {
+  .AboutUsPage-gallery-items .box:hover .imgBox {
+    transform: translate(0, -2rem);
+  }
 }

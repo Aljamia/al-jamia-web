@@ -24,15 +24,17 @@ const Footer = () => {
                 src="/image 5.png"
                 width={300}
                 height={80}
+                layout="responsive"
                 alt="Picture of the author"
                 className="footer-logo"
               />
               <p className="footer-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid reprehenderit fugit vitae provident dolorem magnam
-                tempore modi debitis laboriosam? Tenetur aliquid fuga voluptates
-                asperiores reiciendis? Eligendi, deserunt! Sit, exercitationem
-                sunt.
+                Al Jamia Arts and Science College (AJAS), a resourceful
+                destination for higher studies in the region, was established in
+                2010 with the main objective of uplifting the educationally
+                developing Muslims and other communities and moulding them into
+                professionally competent, socially responsible, and morally
+                sound citizens.
               </p>
             </div>
           </Col>
@@ -84,12 +86,12 @@ const Footer = () => {
       <div className="footer-end">
         <Container>
           <Row>
-            <Col xs={12} lg={6}>
+            <Col xs={12} lg={6} sm={12}>
               <p className="footer-copyright">
                 © 2023 al jamia All Rights Reserved Privacy Policy
               </p>
             </Col>
-            <Col xs={12} lg={6} className="footer-social-icons">
+            <Col xs={12} lg={6} sm={12} className="footer-social-icons">
               <span>
                 <Link href="/" className="footer-social-icons-list">
                   <FaFacebook />

@@ -19,23 +19,12 @@
     /* border: 1px solid #000; */
     padding: 0.6rem;
 }
-/* Custom styles for slick dots */
- .slider1 .slick-dots {
-  right: -45%; /* Adjust this value to control the horizontal position */
-  top: 50%; /* Adjust this value to center the dots vertically */
-  transform: translateY(-50%)  rotate(90deg);
-}
 
-/* Custom styles for individual slick dots */
-.slick-dots li button {
-  width: 10px; /* Adjust this value to control the size of the dots */
-  height: 10px; /* Adjust this value to control the size of the dots */
-  border-radius: 50%;
-  background-color: #ddd; /* Change this color to your desired dot color */
-  opacity: 0.7; /* Adjust this value to control the opacity of the dots */
-}
-
-/* Custom style for the active slick dot */
-.slick-dots li.slick-active button {
-  background-color: #555; /* Change this color to your desired active dot color */
-}
+@media screen and (max-width: 570px) {
+    .annon-slick{
+        width: 32rem;
+    }
+    .right-event-des h2{
+        font-size: 17px;
+    }
+  }

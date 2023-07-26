@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 :root {
   /* colors */
   --grey-color: #7d7d7d;
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-martel: "Martel", serif;
 }
 
 .grades {
-  margin-top: 3em;
-  padding: 6em 3em;
+  background-color: #fff;
+  margin-top: 2em;
+  padding: 3em;
 }
 .grades-header {
   padding: 0.5em;
@@ -24,14 +23,13 @@
   font-family: var(--font-inter);
   font-size: 30px;
   font-style: normal;
-  font-weight: bolder;
-  line-height: normal;
+  font-weight: 600;
   margin-top: 10px;
 }
 .grades-title h3 {
   color: var(--grary-2, #7d7d7d);
   font-family: var(--font-inter);
-  font-size: 30px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -41,5 +39,8 @@
 @media (max-width: 500px) {
   .grades-digits h2 {
     font-size: 22px;
+  }
+  .grades-title h3 {
+    font-size: 20px;
   }
 }

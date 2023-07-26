@@ -14,7 +14,6 @@ const AboutUs = () => {
   useEffect(() => {
     const fetchAbout = async () => {
       const data = await getAboutUs();
-      console.log(data);
       setAbout(data?.response);
     };
     const fetchGallery = async () => {
@@ -24,8 +23,6 @@ const AboutUs = () => {
     fetchAbout();
     fetchGallery();
   }, []);
-
-  console.log({ gallery });
 
   return (
     <div className="AboutUspage">
@@ -43,8 +40,8 @@ const AboutUs = () => {
         />
       </div>
       <div className="AboutUspage-desc">
-        {about.map((item) => (
-          <Container key={item.id}>{item.longDescription}</Container>
+        {about.map((item, index) => (
+          <Container key={index}>{item.longDescription}</Container>
         ))}
       </div>
       <div className="AboutUspage-vision">
@@ -58,7 +55,7 @@ const AboutUs = () => {
             <Col xl={6} lg={6} xs={12}>
               <div className="AboutUspage-vision-img">
                 <Image
-                  src="/image 7.png"
+                  src="/image 12.png"
                   layout="responsive" // Use layout="responsive" for responsiveness
                   width={500} // Provide the width of the image
                   height={800} // Adjust the height as needed to make it taller
@@ -72,7 +69,7 @@ const AboutUs = () => {
               <Col xl={6} lg={6} xs={12}>
                 <div className="AboutUspage-vision-img">
                   <Image
-                    src="/image 7.png"
+                    src="/image 12.png"
                     layout="responsive" // Use layout="responsive" for responsiveness
                     width={500} // Provide the width of the image
                     height={800} // Adjust the height as needed to make it taller
@@ -89,7 +86,7 @@ const AboutUs = () => {
                 >
                   Our Mission
                 </div>
-                <p className="AboutUspage-vision-desc">{about[0]?.mission}</p>
+                <p className="AboutUspage-mission-desc">{about[0]?.mission}</p>
               </Col>
             </Row>
           </div>
@@ -102,13 +99,19 @@ const AboutUs = () => {
           <div className="AboutUspage-gallery">
             {gallery?.map((value, key) => (
               <div className="AboutUspage-gallery-img" key={key}>
-                <Image
-                  src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${value.image}`}
-                  alt=""
-                  width={300}
-                  height={230}
-                  className="Aboutpage-images"
-                />
+                <div className="AboutUsPage-gallery-items">
+                  <div className="box">
+                    <div className="imgBox">
+                      <Image
+                        src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${value.image}`}
+                        alt=""
+                        width={300}
+                        height={230}
+                        className="Aboutpage-images"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

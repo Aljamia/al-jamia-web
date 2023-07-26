@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@font-face {
-  font-family: "meta-serif OT";
-  src: url("/Meta\ Serif\ Book.otf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 
 :root {
   /* color */
@@ -12,19 +9,21 @@
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-martel: "Martel", serif;
+  --font-PT-serif: "PT Serif", serif;
 }
 
 .course {
-  margin-top: 3em;
+  margin-top: 2.5em;
   background-color: #f8f8f8;
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
   background-repeat: no-repeat;
 }
-
+.course-headerpage {
+  padding: 2em;
+}
 .course-header h1 {
   color: var(--lightgreen-color);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   font-size: 40px;
   font-style: normal;
   font-weight: 450;
@@ -33,7 +32,7 @@
 }
 
 .course-desc {
-  color: var(--grey-color);
+  color: #747373;
   font-family: var(--font-inter);
   text-align: justify;
   font-size: 20px;
@@ -58,8 +57,9 @@
 }
 
 #portfolio-flters li {
+  position: relative;
   color: var(--goldish-color);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -72,6 +72,20 @@
   text-transform: uppercase;
   border-radius: 0;
   transition: 0.3s;
+}
+#portfolio-flters li::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 42px;
+  width: 90%;
+  height: 5px;
+  background-color: var(--lightgreen-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+#portfolio-flters li:hover::after {
+  transform: scaleX(1);
 }
 
 .portfolio-container {
@@ -90,7 +104,7 @@
   border: none;
   cursor: pointer;
   outline: none;
-  width: 18em;
+  width: 22em;
   height: auto;
   padding: 0.2em;
   margin-top: 1.5em;
@@ -106,33 +120,6 @@
   transform: translate(0, -10px);
   transition: 0.3s;
 }
-.portfolio-title-data {
-  position: absolute;
-  border-radius: 50px;
-  top: 5px;
-  width: 100%;
-}
-.portfolio-title-desc {
-  position: absolute;
-  top: 30%;
-  text-align: left;
-  display: none;
-  padding: 1.5em;
-  font-family: var(--font-martel);
-  font-weight: 400;
-  color: black;
-  word-wrap: break-word;
-  opacity: 1;
-  transition: ease;
-}
-.list li a span:hover + .portfolio-title-desc {
-  display: flex;
-  margin-top: 23px;
-  width: 77.6%;
-  min-height: 100%;
-  background-color: #eeedec;
-  opacity: 0.8;
-}
 
 .portfolio-title,
 .course-cardmodal-title {
@@ -141,7 +128,7 @@
   overflow-y: hidden;
   padding: 3px;
   color: var(--goldish-color);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   font-size: 20px;
   font-style: normal;
   text-transform: capitalize;
@@ -173,14 +160,31 @@
 }
 .course-modal-category {
   background-color: rgba(97, 154, 70, 0.75);
-  padding: 6px;
-  border-radius: 10px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  color: #f8f8f8;
+}
+.course-data-items {
+  margin: 2px;
+  margin-left: 8px;
+}
+.course-data-category {
+  background-color: rgba(97, 154, 70, 0.75);
+  padding: 3px 10px;
+  border-radius: 5px;
+  color: #f8f8f8;
+}
+.course-data-duration {
+  margin: 15px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  background-color: rgb(211, 208, 208);
 }
 .course-modal-duration {
-  border-radius: 10px;
-  padding: 6px;
-  background-color: #747373;
-  margin-left: 15px;
+  margin: 15px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  background-color: rgb(211, 208, 208);
 }
 .course-cardmodal-text {
   color: #747373;
@@ -194,24 +198,21 @@
 }
 
 .portfolio-btn {
-  margin: 10px;
-  margin-left: 22%;
-}
-
-.portfolio-btn:hover {
-  background-color: var(--goldish-color) !important;
-}
-
-.btn-primary {
   color: #000000;
   background-color: rgb(211, 208, 208);
   font-family: var(--font-inter);
   font-size: 18px;
   font-style: normal;
+  text-align: center;
   font-weight: 400;
-  border-radius: 14px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  transform: translate(70%, -50%);
   outline: none;
   border: none;
+}
+.portfolio-btn:hover {
+  background-color: var(--goldish-color) !important;
 }
 
 @media (max-width: 768px) {
@@ -220,9 +221,21 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1em;
+    gap: 20px;
+  }
+  .course-header h1 {
+    font-size: 30px;
+  }
+  .course-desc {
+    font-size: 18px;
+  }
 }
 
-@media (min-width: 770px) and (max-width: 1000px) {
+@media (min-width: 760px) and (max-width: 1000px) {
   .portfolio-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -235,48 +248,5 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  }
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.list li {
-  flex: 1;
-}
-.list li a {
-  text-decoration: none;
-  color: inherit;
-  padding: 0.8em;
-  display: block;
-  text-align: center;
-  overflow: hidden;
-  font-size: 40px;
-  border-radius: 10px;
-}
-.list li a span {
-  display: block;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0.5rem;
-  font-size: 22px;
-  margin-top: 4.8rem;
-  font-family: var(--font-inter);
-  font-weight: 600;
-  color: #eeedec;
-}
-
-@media (hover: hover) {
-  .list li a span {
-    transform: translateY(-100px);
-    transition: 0.2s;
-  }
-  .list:hover span {
-    transform: translateY(-80px);
-  }
-  .list li:nth-child(1) span {
-    transition-delay: 0s;
   }
 }
