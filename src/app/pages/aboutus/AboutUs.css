@@ -50,10 +50,19 @@
   line-height: normal;
 }
 .AboutUspage-vision-img {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .AboutUspage-vision-desc {
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
+}
+.AboutUspage-mission-desc {
   color: var(--gray, #555);
   font-family: var(--font-inter);
   text-align: justify;
@@ -112,10 +121,6 @@
   transform: translate(-1.5rem, -1.5rem);
 }
 
-.AboutUsPage-gallery-items .box:hover .content {
-  transform: translate(1rem, 1rem);
-}
-
 .imgBox {
   position: absolute;
   top: 0;
@@ -131,44 +136,7 @@
   resize: both;
 }
 
-.content {
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1.5rem;
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  z-index: 1;
-  align-items: flex-end;
-  text-align: center;
-  transition: 0.5s ease-in-out;
-}
-
-.content .content-author-name {
-  display: block;
-  text-transform: capitalize;
-  font-size: 22px;
-  color: balck;
-  font-family: var(--font-martel);
-  font-weight: 500;
-  line-height: 2rem;
-  letter-spacing: 1px;
-}
-
-.content .content-author-desig {
-  color: #555;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
-
 @media (max-width: 600px) {
-  .AboutUsPage-gallery-items .box:hover .content {
-    transform: translate(0, 2rem);
-  }
   .AboutUsPage-gallery-items .box:hover .imgBox {
     transform: translate(0, -2rem);
   }

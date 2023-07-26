@@ -4,9 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
-
 import "./Boardofdirector.css";
-
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { getBoardOfDirector } from "@/app/hooks/UseApi";
 import Footer from "@/app/components/footer/Footer";

@@ -104,21 +104,17 @@ const Courses = () => {
                   className="portfolio-modal-images"
                   src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
                 />
-                <div className="portfolio-title-data">
-                  <ul class="list">
-                    <li>
-                      <a href="#0">
-                        <span>{course.language}</span>
-                        <p
-                          className="portfolio-title-desc"
-                          style={{ fontSize: "16px" }}
-                        >
-                          {course.eligibility}{" "}
-                        </p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <Container>
+                  <div className="course-data-items">
+                    <span className="course-data-category">
+                      {course.category}{" "}
+                    </span>
+
+                    <span className="course-data-duration">
+                      {course.duration}
+                    </span>
+                  </div>
+                </Container>
                 <Card.Body>
                   <Card.Title>
                     <h2 className="portfolio-title">{course.courseName}</h2>

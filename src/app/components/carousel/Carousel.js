@@ -45,7 +45,7 @@ const CarouselComponent = () => {
             style={{ width: "100%" }}
           >
             <source
-              src="/ENCORE 2022 -GRADUATION CEREMONY- AFTER MOVIE-JWALA 2015 MBBS -GOVERNMENT MEDICAL COLLEGE TRIVANDRUM.mp4"
+              src="/y2mate.com - ADMISSION OPEN 202223_1080pFHR.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

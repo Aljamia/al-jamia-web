@@ -35,6 +35,7 @@ const PageHeader = () => {
                 src="/image 5.png"
                 width={350}
                 height={80}
+                layout="responsive"
                 alt="Picture of the author"
                 className="nav-logo"
               />
@@ -51,16 +52,22 @@ const PageHeader = () => {
                 <Nav.Link href="/about" className="nav-links nav-link-black">
                   About us
                 </Nav.Link>
-                <Nav.Link href="/coursepage" className="nav-links nav-link-black">
+                <Nav.Link
+                  href="/coursepage"
+                  className="nav-links nav-link-black"
+                >
                   Admission
                 </Nav.Link>
-                <Nav.Link href="/faculties" className="nav-links nav-link-black">
+                <Nav.Link
+                  href="/faculties"
+                  className="nav-links nav-link-black"
+                >
                   Examination
                 </Nav.Link>
                 <Nav.Link href="/event" className="nav-links nav-link-black">
                   Event
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link href="/contact" className="nav-links nav-link-black">
                   Contact
                 </Nav.Link>
               </Nav>

@@ -41,7 +41,7 @@
   position: absolute;
   left: 9px;
   top: 42px;
-  width: 90%;
+  width: 88%;
   height: 5px;
   background-color: var(--green-color) !important;
   transform: scaleX(0);
@@ -75,6 +75,7 @@
 @media (max-width: 1000px) {
   .nav-logo {
     width: 250px;
+    height: 20px;
   }
 
   .nav-carousel {

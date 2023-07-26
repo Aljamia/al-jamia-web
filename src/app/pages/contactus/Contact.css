@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@font-face {
+  font-family: "meta-serif OT";
+  src: url("/Meta\ Serif\ Book.otf");
+}
+
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --lightgreen-color: #619a46;
+  --goldish-color: #cca65d;
+
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+}
+.contact-header-items {
+  background-color: #f7f7f7;
+  margin-top: 6em;
+  padding: 1.5em;
+}
+.contact-header-title h1 {
+  color: var(--lightgreen-color);
+  font-family: var(--font-martel);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  margin-top: 30px;
+}
+.contact-header-title p {
+  text-align: justify;
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
+}
+.contact-header-phone {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.contact-header-mail {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+}
+.contact-header-location {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+}
+.social-details {
+  margin: 10px;
+  color: #5b5b5b;
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.social-address {
+  text-transform: uppercase;
+}
+.contact-header-map {
+  margin-top: 3em;
+}
+@media (max-width: 500px) {
+  .contact-header-title h1 {
+    font-size: 30px;
+  }
+  .contact-header-title p {
+    font-size: 18px;
+  }
+  .contact-header-phone {
+    margin-top: 2em;
+  }
+  .social-details {
+    font-size: 16px;
+  }
+  .contact-map {
+    width: 100%;
+  }
+}
