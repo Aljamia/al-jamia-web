@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap');
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --green-color: green;
+  --goldish-color: #cca65d;
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+  --font-pt-serif: 'PT Serif', serif;
+}
+
 .annon-slick{
     width: 50rem;
     align-items: center !important;
@@ -13,6 +27,11 @@
     font-size: 23px;
     max-width: 100% !important;
     color: #555555;
+    font-family: var(--font-inter)
+}
+.right-event-des p{
+    color: #555555;
+    font-family: var(--font-inter)
 }
 .annon-caro{
      margin-top: -30% !important;

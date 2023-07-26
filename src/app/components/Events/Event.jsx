@@ -65,7 +65,7 @@ const Event = () => {
   };
 
   const handleClick = (eventId) => {
-    alert(eventId);
+    // alert(eventId);
     router.push(`/testpage/${eventId}`);
   };
 
@@ -96,12 +96,12 @@ const Event = () => {
                   <p>{events[0]?.description.substring(0, 150)}</p>
                 </div>
                 <div className="learn-btn">
-                  <Link href={`/event/${events[0]?._id}`}>
-                    <button>Learn More</button>
-                  </Link>
+                  <button onClick={() => handleClick(events[0]?._id)}>
+                    Learn More
+                  </button>
                 </div>
               </Col>
-              <Col xl={7}>
+              <Col xl={7}>                      
                 <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
                     {events.map((event) => (
@@ -112,11 +112,11 @@ const Event = () => {
                           <p>{event.description.substring(0, 150)}</p>
                           <div className="right-learn-btn">
                             {/* Use Link to navigate to the dynamic event details page */}
-                            <Link href={`/testpage?${event._id}`}>
+                            {/* <Link href={`/testpage?${event._id}`}>
                               <button>Learn More</button>
-                            </Link>
+                            </Link> */}
                             <button onClick={() => handleClick(event._id)}>
-                              Learn some
+                              Learn More
                             </button>
                           </div>
                         </div>
@@ -134,7 +134,7 @@ const Event = () => {
             </Row>
           </Container>
         </div>
-        <div className="event-section-2">
+        {/* <div className="event-section-2">
           <div className="event-s-img">
             <img src="Mask group.png" alt="" width="100%" />
           </div>
@@ -156,7 +156,7 @@ const Event = () => {
               <button>Learn More</button>
             </div>
           </Container>
-        </div>
+        </div> */}
       </div>
     </div>
   );
