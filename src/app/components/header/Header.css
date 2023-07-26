@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@font-face {
-  font-family: "meta-serif OT";
-  src: url("/public/fonts/Meta\ Serif\ Book.otf");
-}
+
 :root {
   /* colors */
   --white-color: #ffffff;
@@ -75,7 +72,7 @@
 @media (max-width: 1000px) {
   .nav-logo {
     width: 250px;
-    height: 20px;
+    height: 60px;
   }
 
   .nav-carousel {

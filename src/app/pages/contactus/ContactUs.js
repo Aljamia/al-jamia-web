@@ -20,12 +20,11 @@ const ContactUs = () => {
                 <div className="contact-header-title">
                   <h1>Contact Us</h1>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam porro nam commodi consequuntur minus itaque inventore
-                    quo laborum sapiente, exercitationem distinctio
-                    voluptatibus! Harum tenetur molestiae magni eaque atque ad
-                    reprehenderit. Voluptatem reprehenderit doloribus explicabo
-                    asperiores
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the standard
+                    dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type
+                    specimen book.
                   </p>
                 </div>
                 <div className="contact-header-phone">

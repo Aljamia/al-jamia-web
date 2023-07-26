@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@font-face {
-  font-family: "meta-serif OT";
-  src: url("/Meta\ Serif\ Book.otf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 
 :root {
   /* color */
@@ -12,19 +9,21 @@
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-martel: "Martel", serif;
+  --font-PT-serif: "PT Serif", serif;
 }
 
 .course {
-  margin-top: 3em;
+  margin-top: 2.5em;
   background-color: #f8f8f8;
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
   background-repeat: no-repeat;
 }
-
+.course-headerpage {
+  padding: 2em;
+}
 .course-header h1 {
   color: var(--lightgreen-color);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   font-size: 40px;
   font-style: normal;
   font-weight: 450;
@@ -33,7 +32,7 @@
 }
 
 .course-desc {
-  color: var(--grey-color);
+  color: #747373;
   font-family: var(--font-inter);
   text-align: justify;
   font-size: 20px;
@@ -60,7 +59,7 @@
 #portfolio-flters li {
   position: relative;
   color: var(--goldish-color);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   font-size: 20px;
   font-style: normal;
   font-weight: 450;
@@ -129,7 +128,7 @@
   overflow-y: hidden;
   padding: 3px;
   color: var(--goldish-color);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   font-size: 20px;
   font-style: normal;
   text-transform: capitalize;
@@ -199,25 +198,21 @@
 }
 
 .portfolio-btn {
-  margin: 10px;
-  margin-left: 23%;
-}
-
-.portfolio-btn:hover {
-  background-color: var(--goldish-color) !important;
-}
-
-.btn-primary {
   color: #000000;
   background-color: rgb(211, 208, 208);
   font-family: var(--font-inter);
   font-size: 18px;
   font-style: normal;
+  text-align: center;
   font-weight: 400;
   padding: 3px 10px;
   border-radius: 5px;
+  transform: translate(70%, -50%);
   outline: none;
   border: none;
+}
+.portfolio-btn:hover {
+  background-color: var(--goldish-color) !important;
 }
 
 @media (max-width: 768px) {
@@ -226,9 +221,21 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1em;
+    gap: 20px;
+  }
+  .course-header h1 {
+    font-size: 30px;
+  }
+  .course-desc {
+    font-size: 18px;
+  }
 }
 
-@media (min-width: 770px) and (max-width: 1000px) {
+@media (min-width: 760px) and (max-width: 1000px) {
   .portfolio-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

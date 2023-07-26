@@ -86,9 +86,7 @@ const AboutUs = () => {
                 >
                   Our Mission
                 </div>
-                <ul className="AboutUspage-mission-desc">
-                  <li>{about[0]?.mission}</li>
-                </ul>
+                <p className="AboutUspage-mission-desc">{about[0]?.mission}</p>
               </Col>
             </Row>
           </div>

@@ -33,7 +33,7 @@ const PageHeader = () => {
             <Navbar.Brand href="#">
               <Image
                 src="/image 5.png"
-                width={350}
+                width={1000}
                 height={80}
                 layout="responsive"
                 alt="Picture of the author"

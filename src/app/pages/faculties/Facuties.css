@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 
 :root {
   /* color */
@@ -9,7 +9,7 @@
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-martel: "Martel", serif;
+  --font-PT-serif: "PT Serif", serif;
 }
 .Faculties-header {
   padding: 4em;
@@ -18,18 +18,19 @@
 }
 .Faculties-title {
   color: var(--light-green-color);
-  font-family: var(--font-martel);
-  font-size: 40px;
+  font-family: var(--font-PT-serif);
+  font-size: 50px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
 }
 .Faculties-desc {
   font-family: var(--font-inter);
-  color: gray;
+  margin-top: 20px;
+  color: var(--gray, #555);
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 130%; /* 39px */
   text-align: center;
 }
@@ -40,10 +41,10 @@
 }
 .Faculties-leader-title {
   color: var(--gold, #cca65d);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   text-transform: capitalize;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -64,7 +65,14 @@
   opacity: 1;
 }
 .btn-primary-faculties {
-  color: black;
+  color: #000000;
+  background-color: rgb(211, 208, 208);
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  padding: 3px 10px;
   background-color: var(--gray, #dcd8d8);
   position: absolute;
   bottom: 15px;
@@ -73,7 +81,6 @@
   border: none;
 }
 .btn-primary-faculties:hover {
-  color: black;
   background-color: var(--goldish-color);
 }
 
@@ -81,7 +88,7 @@
   color: var(--gold, #cca65d);
   text-align: center;
   font-family: var(--font-inter);
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 119%; /* 41.65px */

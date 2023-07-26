@@ -71,107 +71,109 @@ const Courses = () => {
   return (
     <div className="course">
       <Container>
-        <div className="course-header">
-          <h1>Our Courses</h1>
-        </div>
-        <div className="course-desc">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-            quasi minus. Ut impedit voluptas excepturi aperiam iste non in
-            explicabo. Tenetur inventore dolor distinctio necessitatibus vero,
-            perspiciatis aliquam debitis ea.
-          </p>
-        </div>
-        <div className="portfolio">
-          <Row>
-            {fields?.map((val, index) => (
-              <Col
-                xl={val.styleIn}
-                id="portfolio-flters"
-                key={index}
-                onClick={() => handleClick(val.functionName)}
-              >
-                <li>{val.title}</li>
-              </Col>
-            ))}
-          </Row>
+        <div className="course-headerpage">
+          <div className="course-header">
+            <h1>Our Courses</h1>
+          </div>
+          <div className="course-desc">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+              quasi minus. Ut impedit voluptas excepturi aperiam iste non in
+              explicabo. Tenetur inventore dolor distinctio necessitatibus vero,
+              perspiciatis aliquam debitis ea.
+            </p>
+          </div>
+          <div className="portfolio">
+            <Row>
+              {fields?.map((val, index) => (
+                <Col
+                  xl={val.styleIn}
+                  id="portfolio-flters"
+                  key={index}
+                  onClick={() => handleClick(val.functionName)}
+                >
+                  <li>{val.title}</li>
+                </Col>
+              ))}
+            </Row>
 
-          <div className="portfolio-container">
-            {cardValues?.map((course) => (
-              <Card className="portfolio-card shadow-sm" key={course.id}>
-                <Card.Img
-                  variant="top"
-                  className="portfolio-modal-images"
-                  src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
-                />
-                <Container>
-                  <div className="course-data-items">
-                    <span className="course-data-category">
-                      {course.category}{" "}
-                    </span>
+            <div className="portfolio-container">
+              {cardValues?.map((course) => (
+                <Card className="portfolio-card shadow-sm" key={course.id}>
+                  <Card.Img
+                    variant="top"
+                    className="portfolio-modal-images"
+                    src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
+                  />
+                  <Container>
+                    <div className="course-data-items">
+                      <span className="course-data-category">
+                        {course.category}{" "}
+                      </span>
 
-                    <span className="course-data-duration">
-                      {course.duration}
-                    </span>
-                  </div>
-                </Container>
-                <Card.Body>
-                  <Card.Title>
-                    <h2 className="portfolio-title">{course.courseName}</h2>
-                  </Card.Title>
-                  <Card.Text>
-                    <p className="portfolio-text">{course.description}</p>
-                  </Card.Text>
+                      <span className="course-data-duration">
+                        {course.duration}
+                      </span>
+                    </div>
+                  </Container>
+                  <Card.Body>
+                    <Card.Title>
+                      <h2 className="portfolio-title">{course.courseName}</h2>
+                    </Card.Title>
+                    <Card.Text>
+                      <p className="portfolio-text">{course.description}</p>
+                    </Card.Text>
 
-                  <Button
-                    variant="primary btn-primary"
-                    className="portfolio-btn"
-                    onClick={() => handleShow(course)}
-                  >
-                    Learn More
-                  </Button>
+                    <Button
+                      variant="primary btn-primary"
+                      className="portfolio-btn"
+                      onClick={() => handleShow(course)}
+                    >
+                      Learn More
+                    </Button>
 
-                  <Modal
-                    key={modalVal?.id}
-                    show={show}
-                    onHide={handleClose}
-                    size="lg"
-                    className="Course-modal"
-                  >
-                    <Modal.Header closeButton></Modal.Header>
-                    <Modal.Body>
-                      <Row className="course-modalitems">
-                        <Col xl={6} xs={12} sm={12}>
-                          <Card className="faculties-cardmodal shadow-sm">
-                            <Card.Img
-                              variant="top"
-                              className="course-card-modalimages"
-                              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
-                            />
-                          </Card>
-                        </Col>
-                        <Col xl={6} xs={12} sm={12}>
-                          <Card.Title className="course-cardmodal-title">
-                            {modalVal?.courseName}
-                          </Card.Title>
-                          <Card.Text className="course-cardmodal-desc">
-                            <span className="course-modal-category">
-                              {modalVal?.category}{" "}
-                            </span>
-                            <span className="course-modal-duration">
-                              {modalVal?.duration}
-                            </span>
-                          </Card.Text>
-                          <Card.Text className="course-cardmodal-text">
-                            {modalVal?.description}
-                          </Card.Text>
-                        </Col>
-                      </Row>
-                    </Modal.Body>
-                  </Modal>
-                </Card.Body>
-              </Card>
-            ))}
+                    <Modal
+                      key={modalVal?.id}
+                      show={show}
+                      onHide={handleClose}
+                      size="lg"
+                      className="Course-modal"
+                    >
+                      <Modal.Header closeButton></Modal.Header>
+                      <Modal.Body>
+                        <Row className="course-modalitems">
+                          <Col xl={6} xs={12} sm={12}>
+                            <Card className="faculties-cardmodal shadow-sm">
+                              <Card.Img
+                                variant="top"
+                                className="course-card-modalimages"
+                                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
+                              />
+                            </Card>
+                          </Col>
+                          <Col xl={6} xs={12} sm={12}>
+                            <Card.Title className="course-cardmodal-title">
+                              {modalVal?.courseName}
+                            </Card.Title>
+                            <Card.Text className="course-cardmodal-desc">
+                              <span className="course-modal-category">
+                                {modalVal?.category}{" "}
+                              </span>
+                              <span className="course-modal-duration">
+                                {modalVal?.duration}
+                              </span>
+                            </Card.Text>
+                            <Card.Text className="course-cardmodal-text">
+                              {modalVal?.description}
+                            </Card.Text>
+                          </Col>
+                        </Row>
+                      </Modal.Body>
+                    </Modal>
+                  </Card.Body>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </Container>

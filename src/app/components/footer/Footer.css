@@ -89,6 +89,9 @@
   }
 }
 @media (max-width: 500px) {
+  .footer-social-icons-list {
+    margin: 20px;
+  }
   .footer-address {
     margin-left: 0px;
   }

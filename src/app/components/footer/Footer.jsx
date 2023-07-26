@@ -86,12 +86,12 @@ const Footer = () => {
       <div className="footer-end">
         <Container>
           <Row>
-            <Col xs={12} lg={6}>
+            <Col xs={12} lg={6} sm={12}>
               <p className="footer-copyright">
                 © 2023 al jamia All Rights Reserved Privacy Policy
               </p>
             </Col>
-            <Col xs={12} lg={6} className="footer-social-icons">
+            <Col xs={12} lg={6} sm={12} className="footer-social-icons">
               <span>
                 <Link href="/" className="footer-social-icons-list">
                   <FaFacebook />
