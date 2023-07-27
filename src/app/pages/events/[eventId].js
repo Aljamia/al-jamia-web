@@ -1,5 +1,3 @@
-// pages/event/[eventId].js
-
 import { useRouter } from "next/router";
 
 const events = [
