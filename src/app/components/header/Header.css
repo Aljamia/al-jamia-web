@@ -47,8 +47,12 @@
 .nav-links:hover::after {
   transform: scaleX(1);
 }
-
+.nav-logo {
+  position: relative;
+}
 .navbar-toggler-white {
+  position: absolute;
+  left: 76%;
   background-color: white !important;
 }
 
@@ -127,8 +131,8 @@ nav.primary-navigation ul li ul li {
 
 @media (max-width: 1000px) {
   .nav-logo {
-    width: 250px;
-    height: 60px;
+    width: 220px;
+    height: 55px;
   }
 
   .nav-carousel {

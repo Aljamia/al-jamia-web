@@ -83,6 +83,9 @@
 }
 
 @media (max-width: 700px) {
+  .AboutUspage-title {
+    font-size: 30px;
+  }
   .AboutUspage-vision-title {
     font-size: 30px;
   }

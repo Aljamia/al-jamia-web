@@ -22,9 +22,8 @@ const Footer = () => {
             <div>
               <Image
                 src="/image 5.png"
-                width={300}
+                width={350}
                 height={80}
-                layout="responsive"
                 alt="Picture of the author"
                 className="footer-logo"
               />
@@ -32,9 +31,7 @@ const Footer = () => {
                 Al Jamia Arts and Science College (AJAS), a resourceful
                 destination for higher studies in the region, was established in
                 2010 with the main objective of uplifting the educationally
-                developing Muslims and other communities and moulding them into
-                professionally competent, socially responsible, and morally
-                sound citizens.
+                developing Muslims and other communities.
               </p>
             </div>
           </Col>

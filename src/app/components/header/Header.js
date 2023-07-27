@@ -41,7 +41,7 @@ const Header = () => {
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="navbarScroll"
-              className="navbar-toggler-white"
+              className="navbar-toggler-white "
             />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="ms-auto my-2 my-lg-0 nav-carousel">
