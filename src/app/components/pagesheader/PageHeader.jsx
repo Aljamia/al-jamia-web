@@ -62,19 +62,21 @@ const PageHeader = () => {
                         <li className="nav-dropdown-links">
                           <Nav.Link href="/management">
                             {" "}
-                            <h5>Management</h5>{" "}
+                            <h5>Management Board</h5>{" "}
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
                           <Nav.Link href="/boardofdirector">
                             {" "}
-                            <h5> Board of director</h5>{" "}
+                            <h5> Administrative Council</h5>{" "}
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
                           <Nav.Link href="/faculties">
                             {" "}
-                            <h5> Faculties</h5>{" "}
+                            <h5>
+                              Succession List of Heads of the Institution
+                            </h5>{" "}
                           </Nav.Link>
                         </li>
                       </ul>

@@ -88,7 +88,7 @@ const Departments = () => {
                   <img src="book.png" alt="" />
                 </div>
                 <div className="caro-des">
-                  <h4>{dept.description.substring(0, 30)}....</h4>
+                  <h4>{dept.description.substring(0, 30)}...</h4>
                   <div className="caro-btn">
                     <Link href="/coursepage">
                       <button>Learn More</button>

@@ -83,6 +83,7 @@
 .footer-address {
   margin-top: -10px;
 }
+
 @media (max-width: 991px) {
   .footer-logo {
     width: 220px;
@@ -92,7 +93,7 @@
     margin-left: 0px;
   }
   .footer .footer-desc {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media (max-width: 500px) {

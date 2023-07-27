@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import Image from "next/image";
 import "./Header.css";
+import { FaAngleDown } from "react-icons/fa";
 
 const Header = () => {
   useEffect(() => {
@@ -10,7 +11,7 @@ const Header = () => {
       if (nav) {
         nav.classList.toggle(
           "scrolled",
-          document.documentElement.scrollTop > 500
+          document.documentElement.scrollTop > 100
         );
       }
     };
@@ -41,7 +42,7 @@ const Header = () => {
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="navbarScroll"
-              className="navbar-toggler-white "
+              className="navbar-toggler-white"
             />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="ms-auto my-2 my-lg-0 nav-carousel">
@@ -56,26 +57,28 @@ const Header = () => {
                   <ul>
                     <li>
                       <Nav.Link href="" className="nav-links nav-link-black">
-                        Authorities
+                        Authorities <FaAngleDown />
                       </Nav.Link>
 
                       <ul className="dropdown">
                         <li className="nav-dropdown-links">
                           <Nav.Link href="/management">
                             {" "}
-                            <h5>Management</h5>{" "}
+                            <h5>Management Board</h5>{" "}
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
                           <Nav.Link href="/boardofdirector">
                             {" "}
-                            <h5> Board of director</h5>{" "}
+                            <h5> Administrative Council</h5>{" "}
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
                           <Nav.Link href="/faculties">
                             {" "}
-                            <h5> Faculties</h5>{" "}
+                            <h5>
+                              Succession List of Heads of the Institution
+                            </h5>{" "}
                           </Nav.Link>
                         </li>
                       </ul>

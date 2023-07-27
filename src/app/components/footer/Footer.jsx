@@ -40,16 +40,16 @@ const Footer = () => {
               <Link href="/" className="footer-links">
                 <h5>Home</h5>
               </Link>
+              <Link href="/about" className="footer-links">
+                <h5>About Us</h5>
+              </Link>
+              <Link href="/" className="footer-links">
+                <h5>Authorities</h5>
+              </Link>
+              <Link href="/venture" className="footer-links">
+                <h5>Ventures</h5>
+              </Link>
               <Link href="/contact" className="footer-links">
-                <h5>Academics</h5>
-              </Link>
-              <Link href="/academics" className="footer-links">
-                <h5>Examinations</h5>
-              </Link>
-              <Link href="/admissions" className="footer-links">
-                <h5>Admissions</h5>
-              </Link>
-              <Link href="/admissions" className="footer-links">
                 <h5>Contact</h5>
               </Link>
             </div>

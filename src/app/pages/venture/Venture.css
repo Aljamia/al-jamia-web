@@ -101,7 +101,7 @@ button {
     height: 400px;
     overflow: hidden;
     margin-top: 40px;
-    margin-left: 0px;
+    margin-left: 10px;
     border-radius: 20px;
   }
   .ventures-cards {
@@ -110,5 +110,14 @@ button {
     justify-content: center;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 350px) {
+  .card {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 500px) {
+  .card {
+    margin-left: 20px;
+  }
 }
