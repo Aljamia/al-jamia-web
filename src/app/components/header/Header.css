@@ -120,9 +120,11 @@ nav.primary-navigation ul li ul li {
   font-family: var(--font-inter);
   border-style: none;
 }
-
-.nav-dropdown-links h5:hover {
+.nav-dropdown-links h5 {
   font-size: 20px;
+  font-weight: 400;
+}
+.nav-dropdown-links h5:hover {
   color: #e0b873;
   transition: all 0.3s linear;
 }
