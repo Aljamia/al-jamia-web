@@ -5,14 +5,11 @@ import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Link from "next/link";
-import Slider from "react-slick";
-import "./News.css"
+import "./News.css";
 import Event from "@/app/components/Events/Event";
 import Footer from "@/app/components/footer/Footer";
 
 function HomePage(eventId) {
-
   // ----slider---------
   // var settings = {
   //   dots: true,
@@ -73,26 +70,30 @@ function HomePage(eventId) {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
   console.log({ events });
- 
+
   return (
     <div>
-    <PageHeader/>
-    <div className="news-section">
-      <Container id="news-container">
-        <div className="header-news">
-          <div className="news-title">
-            <h1>{events.title}</h1>
+      <PageHeader />
+      <div className="news-section">
+        <Container id="news-container">
+          <div className="header-news">
+            <div className="news-title">
+              <h1>{events.title}</h1>
+            </div>
+            <div className="new-img">
+              <img
+                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events.image}`}
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div className="news-para">
+              <p>{events.description}</p>
+            </div>
           </div>
-          <div className="new-img">
-            <img  src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events.image}`} alt="" width="100%" />
-          </div>
-          <div className="news-para">
-            <p>{events.description}</p>
-          </div>
-        </div>
-      </Container>
-{/* news finesh--------------------------------- */}
-{/* <div className="event-first-section">
+        </Container>
+        {/* news finesh--------------------------------- */}
+        {/* <div className="event-first-section">
           <Container>
             <Row>
               <Col xl={5}>
@@ -146,10 +147,10 @@ function HomePage(eventId) {
             </Row>
           </Container>
         </div> */}
-      <Event event-section-2={false} />
+        <Event event-section-2={false} />
+      </div>
+      <Footer />
     </div>
-    <Footer/>
-  </div>
   );
 }
 
