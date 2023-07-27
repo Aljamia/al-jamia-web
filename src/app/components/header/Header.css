@@ -161,7 +161,7 @@ nav.primary-navigation ul li ul li {
     opacity: 0;
     position: absolute;
     left: 10%;
-    top: 10%;
+    top: -80%;
     display: none;
     border-radius: 10px;
     background: white;
