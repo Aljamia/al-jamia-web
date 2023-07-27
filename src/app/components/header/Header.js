@@ -83,16 +83,10 @@ const Header = () => {
                   </ul>
                 </nav>
 
-                <Nav.Link
-                  href="/faculties"
-                  className="nav-links nav-link-black"
-                >
-                  Examination
+                <Nav.Link href="/venture" className="nav-links nav-link-black">
+                  Ventures
                 </Nav.Link>
 
-                <Nav.Link href="/event" className="nav-links nav-link-black">
-                  Event
-                </Nav.Link>
                 <Nav.Link href="/contact" className="nav-links nav-link-black">
                   Contact
                 </Nav.Link>
