@@ -134,11 +134,17 @@
   line-height: 130%; /* 39px */
 }
 @media (max-width: 768px) {
+  .Faculties-title {
+    font-size: 30px;
+  }
   .Faculties-leader-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+  }
+  .Faculties-leader-title {
+    font-size: 30px;
   }
   .Faculties-desc {
     font-size: 16px;

@@ -19,10 +19,11 @@
 .Faculties-title {
   color: var(--light-green-color);
   font-family: var(--font-martel);
-  font-size: 40px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
+  margin-bottom: 20px;
 }
 .Faculties-desc {
   text-align: center;
@@ -118,6 +119,10 @@
   line-height: 130%; /* 39px */
 }
 @media (max-width: 768px) {
+  .Faculties-title,
+  .Faculties-leader-title {
+    font-size: 30px;
+  }
   .Faculties-leader-card {
     display: flex;
     flex-wrap: wrap;
