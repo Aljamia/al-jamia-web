@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import Event from "../components/Events/Event";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import "../components/Events/Event.css";
+import Event from "../components/Events/Event";
 
 const page = () => {
   return (
