@@ -52,6 +52,14 @@
   padding: 5px 10px;
   font-family: var(--font-inter);
 }
+.learn-btn-lib button {
+  color: #fff;
+  background-color: #cca65d;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-inter);
+}
 span {
   padding-left: 10px;
   font-family: var(--font-inter);
