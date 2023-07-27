@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import axios from "axios"; // Import Axios
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const Event = () => {
@@ -65,7 +66,7 @@ const Event = () => {
   };
 
   const handleClick = (eventId) => {
-    alert(eventId);
+    // alert(eventId);
     router.push(`/testpage/${eventId}`);
   };
 
@@ -81,10 +82,12 @@ const Event = () => {
             <Row>
               <Col xl={5}>
                 <div className="event-img">
-                  <img
+                  <Image
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
                     alt=""
-                    width="100%"
+                    layout="responsive"
+                    width={200} // Set the desired width of the image
+                    height={300} // Set the desired height of the image
                   />
                 </div>
                 <div className="event-btn">
@@ -96,9 +99,9 @@ const Event = () => {
                   <p>{events[0]?.description.substring(0, 150)}</p>
                 </div>
                 <div className="learn-btn">
-                  <Link href={`/event/${events[0]?._id}`}>
-                    <button>Learn More</button>
-                  </Link>
+                  <button onClick={() => handleClick(events[0]?._id)}>
+                    Learn More
+                  </button>
                 </div>
               </Col>
               <Col xl={7}>
@@ -112,18 +115,21 @@ const Event = () => {
                           <p>{event.description.substring(0, 150)}</p>
                           <div className="right-learn-btn">
                             {/* Use Link to navigate to the dynamic event details page */}
-                            <Link href={`/testpage?${event._id}`}>
+                            {/* <Link href={`/testpage?${event._id}`}>
                               <button>Learn More</button>
-                            </Link>
+                            </Link> */}
                             <button onClick={() => handleClick(event._id)}>
-                              Learn some
+                              Learn More
                             </button>
                           </div>
                         </div>
                         <div className="event-caro-img">
-                          <img
+                          <Image
                             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                             alt=""
+                            layout="responsive"
+                            width={300} // Set the desired width of the image
+                            height={100} // Set the desired height of the image
                           />
                         </div>
                       </div>
@@ -134,7 +140,7 @@ const Event = () => {
             </Row>
           </Container>
         </div>
-        <div className="event-section-2">
+        {/* <div className="event-section-2">
           <div className="event-s-img">
             <img src="Mask group.png" alt="" width="100%" />
           </div>
@@ -156,7 +162,7 @@ const Event = () => {
               <button>Learn More</button>
             </div>
           </Container>
-        </div>
+        </div> */}
       </div>
     </div>
   );

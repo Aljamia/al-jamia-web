@@ -1,6 +1,6 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 :root {
   /* color */
   --white-color: #ffffff;
@@ -9,8 +9,68 @@
   /* fonts */
   --font-inter: "Inter", sans-serif;
   --font-martel: "Martel", serif;
-  --font-pt-serif: "PT Serif", serif;
 }
+
+.event-first-section{
+    background-color: 
+    #F8F8F8 !important;
+    /* margin-top: 2rem; */
+   
+}
+.news-section{
+  margin-top: 8rem;
+}
+.news-title h1{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding: 0 60px; /* Adjust the value as needed */
+  font-size: 33px;
+  color: #555555;
+  font-weight: 600;
+  padding-bottom: 40px;
+  font-family: var(--font-inter);
+}
+.new-img img{
+  width: 100%;
+  height: 30rem;
+  padding: 0 40px;
+}
+@media screen and (max-width: 900px) {
+  .new-img img {
+    height: auto; /* Set height to 'auto' to adjust the height based on content */
+    /* Alternatively, you can set height to '0' if you want it to have no height at all */
+    /* height: 0; */
+  }
+  .news-title h1{
+    font-size: 20px;
+  }
+  .news-para p{
+    font-size: 14px !important;
+  }
+}
+.news-para {
+  margin-top: 20px;
+}  
+
+.news-para p{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+    text-align: center;
+    font-family: var(--font-inter);
+    color: #555555;
+    font-size: 19px;
+    padding: 0 40px; /* Adjust the value as needed */
+    font-family: var(--font-inter);
+}
+
+#news-container{
+  display: flex !important;
+}
+/* -------------------------------------------- */
+
 
 .event-first-section p {
   color: #555555;
@@ -28,7 +88,7 @@
   padding-top: 4rem;
   padding-bottom: 3rem;
   color: #619a46;
-  font-family: var(--font-pt-serif);
+  font-family: var(--font-martel);
 }
 .event-btn {
   margin-top: 0.5rem;
@@ -45,50 +105,21 @@
   padding-bottom: 1rem;
 }
 .learn-btn button {
+  padding: 5px 7px 5px;
   border: none;
   border-radius: 5px;
   background-color: #b6acac93;
-  font-size: 13px;
-  padding: 5px 10px;
   font-family: var(--font-inter);
 }
 span {
   padding-left: 10px;
   font-family: var(--font-inter);
 }
-/* ----event section -2----- */
-.event-section-2 {
-  background-color: #fff;
-  padding-bottom: 3rem !important;
-}
-.headlibrary {
-  margin-top: 6rem !important;
-  padding-bottom: 4rem !important;
-}
 
-.library {
-  margin-top: 3rem;
-}
-.library h2 {
-  color: #619a46;
-}
-.library p {
-  color: #555555;
-  max-width: 90%;
-}
 
-.library h1 {
-  color: #619a46;
-  font-family: var(--font-pt-serif);
-}
-.library p {
-  color: #555555;
-  max-width: 90%;
-  font-family: var(--font-inter);
-  font-size: 20px;
-}
-/* --right side carouse */
 
+
+/* last updated------------- */
 .right-event-caro {
   display: flex !important;
   border-radius: none;
@@ -96,7 +127,10 @@ span {
   box-shadow: none;
   background-color: #f8f8f8;
 }
-
+.event-caro-img img {
+  width: 230px;
+  border-radius: 10px;
+}
 .right-event-des {
   background-color: #b6acac93;
 }
@@ -134,6 +168,7 @@ span {
 }
 .carouselevent {
   background-color: #f8f8f8;
+  
 }
 .carouselevent {
   position: relative;
@@ -145,6 +180,7 @@ span {
   right: -30%;
   transform: translateY(-50%) rotate(90deg);
   display: none !important;
+
 }
 
 .slick-dots li {
@@ -166,23 +202,15 @@ span {
 .slick-next {
   display: none !important;
 }
-.link-event {
-  padding-top: 7rem;
-}
+
 /* ----------media query for small screen */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   .right-event-des h4 {
     font-size: 16px;
     color: black;
   }
   .right-event-des p {
     font-size: 10px;
-    text-align: left !important;
-  }
-
-  .right-event-caro {
-    margin-top: 2em !important;
-    margin-left: -20px !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -191,6 +219,9 @@ span {
   }
 }
 @media screen and (max-width: 600px) {
+  /* .event-img img{
+      width: 350px !important;
+    } */
   .event-btn button {
     border: none;
     border-radius: 7px;
@@ -208,6 +239,6 @@ span {
     align-items: center;
   }
   .library p {
-    text-align: left;
+    text-align: center;
   }
 }

@@ -66,8 +66,6 @@ const Courses = () => {
     }
   };
 
-  console.log({ cardValues });
-
   return (
     <div className="course">
       <Container>
