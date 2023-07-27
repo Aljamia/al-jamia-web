@@ -52,12 +52,37 @@ const PageHeader = () => {
                 <Nav.Link href="/about" className="nav-links nav-link-black">
                   About us
                 </Nav.Link>
-                <Nav.Link
-                  href="/coursepage"
-                  className="nav-links nav-link-black"
-                >
-                  Admission
-                </Nav.Link>
+                <nav role="navigation" className="primary-navigation ">
+                  <ul>
+                    <li>
+                      <Nav.Link href="" className="nav-links nav-link-black">
+                        Authorities
+                      </Nav.Link>
+
+                      <ul className="dropdown">
+                        <li className="nav-dropdown-links">
+                          <Nav.Link href="/management">
+                            {" "}
+                            <h5>Management</h5>{" "}
+                          </Nav.Link>
+                        </li>
+                        <li className="nav-dropdown-links">
+                          <Nav.Link href="/boardofdirector">
+                            {" "}
+                            <h5> Board of director</h5>{" "}
+                          </Nav.Link>
+                        </li>
+                        <li className="nav-dropdown-links">
+                          <Nav.Link href="/faculties">
+                            {" "}
+                            <h5> Faculties</h5>{" "}
+                          </Nav.Link>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+
                 <Nav.Link
                   href="/faculties"
                   className="nav-links nav-link-black"

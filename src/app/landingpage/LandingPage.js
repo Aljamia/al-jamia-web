@@ -7,6 +7,7 @@ import Event from "../components/Events/Event";
 import Footer from "../components/footer/Footer";
 import Courses from "../components/ourCourses/Courses";
 import Grades from "../components/grades/Grades";
+import Library from "../components/Events/Library";
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <Courses />
       <Grades />
       <Event />
+      <Library/>
       <Director />
       <Deparments />
       <Footer />

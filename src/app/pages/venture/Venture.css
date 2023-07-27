@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap');
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --green-color: green;
+  --goldish-color: #cca65d;
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+  --font-pt-serif: 'PT Serif', serif;
+}
+
+
+.venture-section{
+    margin-top: 10rem;
+    padding-bottom: 4rem;
+}
+.ventures-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.venture-title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.venture-title h1{
+    color: #619A46;
+    font-family: var(--font-pt-serif);
+    font-size: 3em;
+}
+/* ----------------cards of ventures-- */
+/* Card.css */
+.ventures-cards {
+  display: flex;
+  justify-content: center; /* This centers the cards horizontally */
+  margin-top: 4rem;
+}
+
+.card {
+  width: 340px;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 0 60px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.image {
+  height: 200px !important; /* Set a fixed height for the image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+
+.content {
+  padding: 25px;
+  text-align: center;
+  justify-content: space-between; /* This separates the title and description from the button */
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #619A46;
+  font-family: var(--font-inter);
+}
+
+.content p {
+  font-size: 17px;
+  color: #555555;
+  font-family: var(--font-inter);
+}
+
+button {
+  color: #fff;
+  background-color: #CCA65D;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-inter);
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .image {
+    max-height: 200px;
+  }
+  .card {
+    width: 340px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 40px;
+   margin-left: 90px;
+    border-radius: 20px;
+    
+  }
+  .ventures-cards{
+    display: block;
+    align-items: center;
+     justify-content: center;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+ 
+
+}

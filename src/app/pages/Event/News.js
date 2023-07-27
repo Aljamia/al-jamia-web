@@ -75,39 +75,16 @@ const News = () => {
         setNewsData(data.response.slice(0, 4)); // Slice the array to extract the first 4 elements
 
         // Check if there is data available before setting the state
-        if (data.response.length > 0) {
-          setH1Content(data.response[0]?.title);
-          setImgSrc(
-            `https://event-manager.syd1.cdn.digitaloceanspaces.com/${data.response[0]?.image}`
-          );
-          setPContent(data.response[0]?.description);
-        } else {
-          // Set the state variables to empty if the array is empty
-          setH1Content("");
-          setImgSrc("");
-          setPContent("");
-        }
-
+     
         console.log("news data", data.response);
       } catch (error) {
         console.error("Error fetching data:", error);
         setNewsData([]);
-        setH1Content("");
-        setImgSrc("");
-        setPContent("");
       }
     }
 
     fetchData();
   }, []);
-
-  const handleReadMoreClick = (containerId) => {
-    // Get the container element based on the provided ID
-    var container = document.getElementById(containerId);
-
-    // Scroll to the container
-    container.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <div>

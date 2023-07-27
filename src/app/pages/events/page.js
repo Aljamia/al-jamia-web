@@ -7,7 +7,7 @@ function HomePage({ eventId }) {
 
   return (
     <div>
-      <h1>Welcome to the Events Page!02</h1>
+   
     </div>
   );
 }
