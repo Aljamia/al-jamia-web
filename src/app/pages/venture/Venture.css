@@ -109,15 +109,20 @@ button {
     align-items: center;
     justify-content: center;
   }
+  .venture-title h1 {
+    color: #619a46;
+    font-family: var(--font-pt-serif);
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 350px) {
   .card {
-    margin-left: 5px;
+    margin-left: 0px;
   }
 }
 
 @media (min-width: 351px) and (max-width: 500px) {
   .card {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
