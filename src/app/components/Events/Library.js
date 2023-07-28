@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./Event.css";
+import Link from "next/link";
 const Library = () => {
   return (
     <div>
@@ -40,7 +41,14 @@ const Library = () => {
                   />
                 </svg>
               </span>{" "}
-              Take a Tour
+              <Link
+                href="https://library.aljamia.in/"
+                target="blank"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                {" "}
+                Take a Tour
+              </Link>
             </button>
           </div>
         </Container>

@@ -71,7 +71,7 @@ const Courses = () => {
       <Container>
         <div className="course-headerpage">
           <div className="course-header">
-            <h1>Our Courses</h1>
+            <h1>Academics</h1>
           </div>
           <div className="course-desc">
             <p>
@@ -82,7 +82,7 @@ const Courses = () => {
             </p>
           </div>
           <div className="portfolio">
-            <Row>
+            {/* <Row>
               {fields?.map((val, index) => (
                 <Col
                   xl={val.styleIn}
@@ -93,7 +93,7 @@ const Courses = () => {
                   <li>{val.title}</li>
                 </Col>
               ))}
-            </Row>
+            </Row> */}
 
             <div className="portfolio-container">
               {cardValues?.map((course) => (

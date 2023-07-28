@@ -60,7 +60,7 @@ const Header = () => {
                       Authorities{" "}
                       <FontAwesomeIcon
                         icon={faChevronDown}
-                        style={{ fontSize: "20px" }}
+                        style={{ fontSize: "18px" }}
                       />
                     </Nav.Link>
 
@@ -68,7 +68,7 @@ const Header = () => {
                       <li className="nav-dropdown-links">
                         <Nav.Link href="/management">
                           {" "}
-                          <h5>Management Board</h5>{" "}
+                          <h5>Supreme Council</h5>{" "}
                         </Nav.Link>
                       </li>
                       <li className="nav-dropdown-links">

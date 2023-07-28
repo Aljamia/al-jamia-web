@@ -38,10 +38,10 @@
   content: "";
   position: absolute;
   left: 9px;
-  top: 42px;
+  top: 44px;
   width: 90%;
   height: 5px;
-  background-color: var(--green-color) !important;
+  background-color: #91cf73 !important;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }

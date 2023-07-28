@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 :root {
   /* color */
   --white-color: #ffffff;
@@ -9,7 +8,7 @@
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-martel: "Martel", serif;
+  --font-PT-serif: "PT Serif", serif;
 }
 .Faculties-header {
   padding: 4em;
@@ -18,7 +17,7 @@
 }
 .Faculties-title {
   color: var(--light-green-color);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   font-size: 40px;
   font-style: normal;
   font-weight: 450;
@@ -26,6 +25,12 @@
 }
 .Faculties-desc {
   text-align: center;
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 39px */
 }
 .Faculties-ourleader {
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
@@ -34,7 +39,7 @@
 }
 .Faculties-leader-title {
   color: var(--gold, #cca65d);
-  font-family: var(--font-martel);
+  font-family: var(--font-PT-serif);
   text-transform: capitalize;
   text-align: center;
   font-size: 30px;
@@ -46,12 +51,23 @@
   padding: 2em;
 }
 .btn-primary-faculties {
-  color: black;
-  background-color: var(--gray, #dcd8d8);
-  transform: translate(60%);
+  position: relative;
+  top: 15px;
+  color: #4f4d4d;
+  background-color: rgb(237, 235, 235);
+  font-family: var(--font-inter);
   outline: none;
   border: none;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  padding: 3px 10px;
+  width: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 8px;
 }
+
 .btn-primary-faculties:hover {
   color: black;
   background-color: var(--goldish-color);
@@ -59,14 +75,15 @@
 .faculties-card {
   border-radius: 20px;
   border: none;
+  cursor: pointer;
   outline: none;
   width: 17rem;
   margin-top: 2.5em;
 }
 .faculties-card:hover {
-  transform: scale(0.9);
-  transition: 1000ms;
-  opacity: 0.8;
+  transform: scale(0.95);
+  transition: 500ms;
+  opacity: 0.9;
 }
 .faculties-card-title {
   color: var(--gold, #cca65d);
@@ -117,6 +134,9 @@
   font-weight: 300;
   line-height: 130%; /* 39px */
 }
+.Supreme-council-members {
+  margin-top: 3em;
+}
 @media (max-width: 768px) {
   .Faculties-title,
   .Faculties-leader-title {
@@ -130,21 +150,22 @@
   }
 }
 
-@media (min-width: 770px) and (max-width: 1000px) {
+@media (min-width: 760px) and (max-width: 1000px) {
   .Faculties-leader-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 5em;
-    gap: 10px;
+    padding-left: 3em;
+    column-gap: 20px;
   }
 }
 
 @media (min-width: 1001px) {
   .Faculties-leader-card {
     display: grid;
-    padding: 5em;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 180px;
+    gap: 10px;
+    padding: 2em;
+    margin-left: 60px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .Faculties-sharia {
