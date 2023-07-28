@@ -10,10 +10,10 @@ const Grades = () => {
           {" "}
           <Image
             src="/Group 2059.svg"
-            width={350}
+            width={280}
             height={80}
             alt="Picture of the author"
-            className="nav-logo"
+            className="grade-logo"
           />
           <h2 className="grades-digits">22K+</h2>
           <h3 className="grades-title">Students</h3>
@@ -22,10 +22,10 @@ const Grades = () => {
           {" "}
           <Image
             src="/Group 2059.svg"
-            width={350}
+            width={280}
             height={80}
             alt="Picture of the author"
-            className="nav-logo"
+            className="grade-logo"
           />
           <h2 className="grades-digits">22K+</h2>
           <h3 className="grades-title">Programs</h3>
@@ -34,10 +34,10 @@ const Grades = () => {
           {" "}
           <Image
             src="/Group 2059.svg"
-            width={350}
+            width={280}
             height={80}
             alt="Picture of the author"
-            className="nav-logo"
+            className="grade-logo"
           />
           <h2 className="grades-digits">22K+</h2>
           <h3 className="grades-title">Faculties</h3>
@@ -46,10 +46,10 @@ const Grades = () => {
           {" "}
           <Image
             src="/Group 2059.svg"
-            width={350}
+            width={280}
             height={80}
             alt="Picture of the author"
-            className="nav-logo"
+            className="grade-logo"
           />
           <h2 className="grades-digits">22K+</h2>
           <h3 className="grades-title">Alumini</h3>
