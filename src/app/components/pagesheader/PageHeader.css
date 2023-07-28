@@ -168,3 +168,9 @@ li:hover {
     text-align: center;
   }
 }
+
+@media (min-width: 1020px) {
+  .nav-logo {
+    margin-top: -22px;
+  }
+}

@@ -8,6 +8,7 @@ import Footer from "../components/footer/Footer";
 import Courses from "../components/ourCourses/Courses";
 import Grades from "../components/grades/Grades";
 import Library from "../components/Events/Library";
+import { Container } from "react-bootstrap";
 
 const LandingPage = () => {
   return (
@@ -17,7 +18,7 @@ const LandingPage = () => {
       <Courses />
       <Grades />
       <Event />
-      <Library/>
+      <Library />
       <Director />
       <Deparments />
       <Footer />

@@ -3,13 +3,16 @@
 :root {
   /* colors */
   --white-color: #ffffff;
-  --green-color: green;
+  --green-color: rgb(218, 169, 8);
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
 }
 
 /* Navbar */
+.navbar {
+  width: 100%;
+}
 .bg-body-tertiary {
   background-color: transparent !important;
 }
@@ -20,7 +23,7 @@
   padding: 20px;
   margin: 10px;
   font-family: var(--font-inter);
-  font-size: 25px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -52,7 +55,6 @@
 }
 .navbar-toggler-white {
   background-color: white !important;
-  /* margin-right: 30px; */
 }
 
 .nav-carousel {
@@ -102,16 +104,14 @@ nav.primary-navigation ul li ul:hover {
   visibility: visible;
   opacity: 1;
   display: block;
-  min-width: 280px;
-  height: 170px;
-  text-align: center;
-  border-radius: 2px;
-  box-shadow: 0px 3px 5px -3px #d7d6d6;
+  min-width: 230px;
+  height: 150px;
+  text-align: justify;
+  border-radius: 10px;
+  z-index: 3;
+  opacity: 0.7;
 }
-.nav-dropdown-links h5 {
-  font-size: 20px;
-  color: black;
-}
+
 nav.primary-navigation ul li ul li {
   clear: both;
   width: 100%;
@@ -121,8 +121,9 @@ nav.primary-navigation ul li ul li {
   border-style: none;
 }
 .nav-dropdown-links h5 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
+  color: black;
 }
 .nav-dropdown-links h5:hover {
   color: #e0b873;
