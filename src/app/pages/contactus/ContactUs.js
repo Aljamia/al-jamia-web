@@ -1,10 +1,19 @@
 "use client";
-import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import React from "react";
 import "./Contact.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaLocationDot,
+  FaPhone,
+  FaTwitter,
+} from "react-icons/fa6";
 
 const ContactUs = () => {
   return (
@@ -90,7 +99,49 @@ const ContactUs = () => {
           </Row>
         </Container>
       </div>
-      <Footer />
+      <div className="footer-end">
+        <Container>
+          <Row>
+            <div>
+              <hr className="footer-line " />
+            </div>
+            <Col xs={12} lg={6} sm={12}>
+              <p className="footer-copyright">
+                © 2023 al jamia All Rights Reserved Privacy Policy | Powered by
+                @Datahex
+              </p>
+            </Col>
+            <Col
+              xs={12}
+              lg={6}
+              sm={12}
+              className="footer-social-icons"
+              style={{ display: "flex", justifyContent: "flex-end" }}
+            >
+              <span>
+                <Link href="/" className="footer-social-icons-list">
+                  <FaFacebook />
+                </Link>
+              </span>
+              <span>
+                <Link href="/" className="footer-social-icons-list">
+                  <FaTwitter />
+                </Link>
+              </span>
+              <span>
+                <Link href="/" className="footer-social-icons-list">
+                  <FaInstagram />
+                </Link>
+              </span>
+              <span>
+                <Link href="/" className="footer-social-icons-list">
+                  <FaLinkedin />
+                </Link>
+              </span>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import "./AboutUs.css";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
 import { getAboutUs, getAboutUsGallery } from "@/app/hooks/UseApi";
+import Link from "next/link";
 
 const AboutUs = () => {
   const [about, setAbout] = useState([]);
@@ -23,6 +24,9 @@ const AboutUs = () => {
     fetchAbout();
     fetchGallery();
   }, []);
+  if (!gallery || gallery.length === 0) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="AboutUspage">
@@ -94,26 +98,49 @@ const AboutUs = () => {
       <div className="AboutUspage-ourCampus shadow-lg">
         <Container>
           <div className="AboutUspage-campus-title">Campus Life</div>
-          <div className="AboutUspage-gallery">
-            {gallery?.map((value, key) => (
-              <div className="AboutUspage-gallery-img" key={key}>
-                <div className="AboutUsPage-gallery-items">
-                  <div className="box">
-                    <div className="imgBox">
-                      <Image
-                        src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${value.image}`}
-                        alt=""
-                        width={300}
-                        height={230}
-                        className="Aboutpage-images"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </Container>
+        <div class="grid-wrapper">
+          <div className="wide">
+            <Image
+              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[6]?.image}`}
+              width={350}
+              height={10}
+              alt="Picture of the author"
+            />
+          </div>
+
+          <div className="big">
+            <Image
+              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[7]?.image}`}
+              width={350}
+              height={180}
+              alt="Picture of the author"
+            />
+          </div>
+
+          <div className="tall">
+            <Image
+              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[0]?.image}`}
+              width={350}
+              height={180}
+              alt="Picture of the author"
+              className="gallery-data-link"
+            />
+            <div className="gallery-link">
+              <Link href="/gallery" style={{ textDecoration: "none" }}>
+                <h3 className="gallery-navigate">25+</h3>
+              </Link>
+            </div>
+          </div>
+          <div className="wide">
+            <Image
+              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[9]?.image}`}
+              width={350}
+              height={180}
+              alt="Picture of the author"
+            />
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
