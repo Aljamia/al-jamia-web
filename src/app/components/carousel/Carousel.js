@@ -44,10 +44,7 @@ const CarouselComponent = () => {
             className="fullscreen-video"
             style={{ width: "100%" }}
           >
-            <source
-              src="/y2mate.com - ADMISSION OPEN 202223_1080pFHR.mp4"
-              type="video/mp4"
-            />
+            <source src="/Helicam.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="carousel-overlay ">
