@@ -125,7 +125,10 @@ nav.primary-navigation ul li ul li {
   color: black;
 }
 .nav-dropdown-links h5:hover {
-  color: #e0b873;
+  color: white;
+  background-color: var(--green-color);
+  opacity: 1;
+  padding: 0.1em;
   transition: all 0.3s linear;
 }
 @media (max-width: 350px) {
@@ -150,7 +153,6 @@ nav.primary-navigation ul li ul li {
     bottom: 10px;
     background-color: white !important;
   }
-
   .nav-carousel {
     background: rgba(42, 83, 90, 0.06);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);

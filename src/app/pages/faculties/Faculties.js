@@ -1,31 +1,16 @@
 // Import the required modules
 "use client";
 import React, { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import "./Facuties.css";
 import { getBoardOfDirector } from "@/app/hooks/UseApi";
 
 const Faculties = () => {
-  const tableData = [
-    { firstName: "Peter", lastName: "Griffin" },
-    { firstName: "Lois", lastName: "Griffin" },
-    { firstName: "Joe", lastName: "Swanson" },
-    { firstName: "Cleveland", lastName: "Brown" },
-    { firstName: "Cleveland", lastName: "Brown" },
-    { firstName: "Cleveland", lastName: "Brown" },
-    { firstName: "Cleveland", lastName: "Brown" },
-    { firstName: "Cleveland", lastName: "Brown" },
-    { firstName: "Cleveland", lastName: "Brown" },
-    { firstName: "Cleveland", lastName: "Brown" },
-  ];
-
   const [board, setBoard] = useState([]);
-  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
     const fetchBoard = async () => {
       const data = await getBoardOfDirector();
       console.log(data);
@@ -58,21 +43,29 @@ const Faculties = () => {
         </Container>
       </div>
 
-      <div className="Faculties-ourleader">
+      <div className="Supreme-council-members">
         <h3 className="Faculties-leader-title">Members</h3>
-        <div className="Faculties-data">
-          {/* Conditional rendering to avoid server-side rendering */}
-          {isClient && (
-            <table>
-              {tableData.map((row, index) => (
-                <tr key={index}>
-                  <td className="council-name">{row.firstName}</td>
-                  <td className="council-position">{row.lastName}</td>
-                </tr>
-              ))}
-            </table>
-          )}
-        </div>
+        <>
+          <div className="members-leader-cards">
+            {board.map((item) => (
+              <Card className="members-cards shadow-sm" key={item.id}>
+                <Card.Img
+                  variant="top"
+                  src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
+                  className="members-card-img"
+                />
+                <Card.Body>
+                  <Card.Title className="members-card-title">
+                    {item.enName}
+                  </Card.Title>
+                  <Card.Text className="members-card-text">
+                    {item.enDescription}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            ))}
+          </div>
+        </>
       </div>
       <Footer />
     </div>

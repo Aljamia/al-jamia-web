@@ -85,7 +85,23 @@ const Footer = () => {
           <Row>
             <Col xs={12} lg={6} sm={12}>
               <p className="footer-copyright">
-                © 2023 al jamia All Rights Reserved Privacy Policy
+                © 2023 Al Jamia Al Islamiya{" "}
+                <Link
+                  href="/"
+                  target="blank"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  {" "}
+                  Privacy{" "}
+                </Link>{" "}
+                | Developed by
+                <Link
+                  href="https://datahex.in/"
+                  className="datahex-link"
+                  target="blank"
+                >
+                  DataHex
+                </Link>
               </p>
             </Col>
             <Col xs={12} lg={6} sm={12} className="footer-social-icons">

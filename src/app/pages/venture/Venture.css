@@ -13,30 +13,33 @@
 }
 
 .venture-section {
-  margin-top: 10rem;
-  padding-bottom: 4rem;
+  margin-top: 6.5em;
 }
 .ventures-cards {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 2em;
 }
-.venture-title {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
+
 .venture-title h1 {
   color: #619a46;
   font-family: var(--font-pt-serif);
+  text-align: center;
+  font-family: var(--font-pt-serif);
   font-size: 50px;
+  font-style: normal;
+  width: 100%;
+  font-weight: 450;
+  line-height: normal;
 }
 /* ----------------cards of ventures-- */
 /* Card.css */
 .ventures-cards {
   display: flex;
   justify-content: center; /* This centers the cards horizontally */
-  margin-top: 4rem;
+  margin-top: 1.5rem;
+  padding: 2em;
 }
 
 .card {
@@ -88,19 +91,22 @@ button {
 
 /* Add media queries for responsiveness */
 @media (max-width: 768px) {
+  .venture-section {
+    margin-top: 2em;
+  }
   .card {
     width: 100%;
     height: auto;
   }
 
   .image {
-    max-height: 200px;
+    max-height: 400px;
   }
   .card {
-    width: 315px;
-    height: 400px;
+    width: 90%;
+    height: 480px;
     overflow: hidden;
-    margin-top: 40px;
+    margin-bottom: 40px;
     margin-left: 10px;
     border-radius: 20px;
   }
@@ -110,19 +116,7 @@ button {
     justify-content: center;
   }
   .venture-title h1 {
-    color: #619a46;
-    font-family: var(--font-pt-serif);
     font-size: 30px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .card {
-    margin-left: 0px;
-  }
-}
-
-@media (min-width: 351px) and (max-width: 500px) {
-  .card {
-    margin-left: 10px;
+    margin-top: 3em;
   }
 }

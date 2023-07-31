@@ -137,12 +137,53 @@
 .Supreme-council-members {
   margin-top: 3em;
 }
+.members-cards {
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 10rem;
+  height: auto;
+  margin-top: 2.5em;
+}
+.members-card-title {
+  color: var(--gold, #cca65d);
+  text-align: center;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  /* 41.65px */
+}
+.members-card-text {
+  color: var(--grary-2, #7d7d7d);
+  font-family: var(--font-inter);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+}
+.members-card-img {
+  width: 100%;
+  padding: 0.3em;
+  height: 18vh;
+}
 @media (max-width: 768px) {
+  .Faculties-header {
+    margin-top: 2em;
+  }
   .Faculties-title,
   .Faculties-leader-title {
     font-size: 30px;
   }
   .Faculties-leader-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .members-leader-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -157,6 +198,14 @@
     padding-left: 3em;
     column-gap: 20px;
   }
+
+  .members-leader-cards {
+    display: grid;
+    gap: 10px;
+    padding: 2em;
+    margin-left: 60px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (min-width: 1001px) {
@@ -167,8 +216,11 @@
     margin-left: 60px;
     grid-template-columns: repeat(4, 1fr);
   }
-}
-.Faculties-sharia {
-  margin-top: 3em;
-  padding: 2em;
+  .members-leader-cards {
+    display: grid;
+    gap: 10px;
+    padding: 2em;
+    margin-left: 60px;
+    grid-template-columns: repeat(7, 1fr);
+  }
 }

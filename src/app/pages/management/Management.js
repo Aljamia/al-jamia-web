@@ -110,57 +110,21 @@ const Management = () => {
       <div className="Supreme-council-members">
         <h3 className="Faculties-leader-title">Members</h3>
         <>
-          <div className="Faculties-leader-card">
+          <div className="members-leader-cards">
             {commitee.map((item) => (
-              <Card className="faculties-card shadow-sm" key={item.id}>
+              <Card className="members-cards shadow-sm" key={item.id}>
                 <Card.Img
                   variant="top"
                   src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
+                  className="members-card-img"
                 />
                 <Card.Body>
-                  <Card.Title className="faculties-card-title">
+                  <Card.Title className="members-card-title">
                     {item.enName}
                   </Card.Title>
-                  <Card.Text className="faculties-card-text">
+                  <Card.Text className="members-card-text">
                     {item.enDescription}
                   </Card.Text>
-                  <Button
-                    variant="primary btn-primary-faculties"
-                    onClick={() => handleShow(item)}
-                  >
-                    Learn More
-                  </Button>
-                  <Modal
-                    key={modalVal?.id}
-                    show={show}
-                    onHide={handleClose}
-                    size="lg"
-                  >
-                    <Modal.Header closeButton></Modal.Header>
-                    <Modal.Body>
-                      <Row className="faculties-modalitems">
-                        <Col xl={6} xs={12} sm={12}>
-                          <Card className="faculties-cardmodal shadow-sm">
-                            <Card.Img
-                              variant="top"
-                              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
-                            />
-                          </Card>
-                        </Col>
-                        <Col xl={6} xs={12} sm={12}>
-                          <Card.Title className="faculties-cardmodal-title">
-                            {modalVal?.enName}
-                          </Card.Title>
-                          <Card.Text className="faculties-cardmodal-text">
-                            {modalVal?.enDesignation}
-                          </Card.Text>
-                          <Card.Text className="faculties-cardmodal-desc">
-                            {modalVal?.enDescription}
-                          </Card.Text>
-                        </Col>
-                      </Row>
-                    </Modal.Body>
-                  </Modal>
                 </Card.Body>
               </Card>
             ))}

@@ -82,19 +82,6 @@ const Courses = () => {
             </p>
           </div>
           <div className="portfolio">
-            {/* <Row>
-              {fields?.map((val, index) => (
-                <Col
-                  xl={val.styleIn}
-                  id="portfolio-flters"
-                  key={index}
-                  onClick={() => handleClick(val.functionName)}
-                >
-                  <li>{val.title}</li>
-                </Col>
-              ))}
-            </Row> */}
-
             <div className="portfolio-container">
               {cardValues?.map((course) => (
                 <Card className="portfolio-card shadow-sm" key={course.id}>
