@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 :root {
   /* color */
   --white-color: #ffffff;
@@ -8,6 +9,7 @@
   /* fonts */
   --font-inter: "Inter", sans-serif;
   --font-martel: "Martel", serif;
+  --font-pt-serif: "PT Serif", serif;
 }
 
 .event-first-section p {
@@ -26,7 +28,7 @@
   padding-top: 4rem;
   padding-bottom: 3rem;
   color: #619a46;
-  font-family: var(--font-martel);
+  font-family: var(--font-pt-serif);
 }
 .event-btn {
   margin-top: 0.5rem;
@@ -46,6 +48,16 @@
   border: none;
   border-radius: 5px;
   background-color: #b6acac93;
+  font-size: 13px;
+  padding: 5px 10px;
+  font-family: var(--font-inter);
+}
+.learn-btn-lib button {
+  color: #fff;
+  background-color: #cca65d;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
   font-family: var(--font-inter);
 }
 span {
@@ -55,8 +67,11 @@ span {
 /* ----event section -2----- */
 .event-section-2 {
   background-color: #fff;
-  margin-top: 3rem;
   padding-bottom: 3rem !important;
+}
+.headlibrary {
+  margin-top: 6rem !important;
+  padding-bottom: 4rem !important;
 }
 
 .library {
@@ -70,9 +85,9 @@ span {
   max-width: 90%;
 }
 
-.library h2 {
+.library h1 {
   color: #619a46;
-  font-family: var(--font-martel);
+  font-family: var(--font-pt-serif);
 }
 .library p {
   color: #555555;
@@ -88,10 +103,6 @@ span {
   margin-top: 1rem;
   box-shadow: none;
   background-color: #f8f8f8;
-}
-.event-caro-img img {
-  width: 230px;
-  border-radius: 10px;
 }
 .right-event-des {
   background-color: #b6acac93;
@@ -137,9 +148,10 @@ span {
 
 .slick-dots {
   position: absolute;
-  top: 50%;
-  right: -40%;
+  top: 40%;
+  right: -30%;
   transform: translateY(-50%) rotate(90deg);
+  display: none !important;
 }
 
 .slick-dots li {
@@ -154,23 +166,29 @@ span {
 }
 
 /* Optional: Add styling to the active dot */
-.slick-dots li.slick-active button {
-}
 .slick-prev {
   display: none !important;
 }
 .slick-next {
   display: none !important;
 }
-
+.link-event {
+  padding-top: 7rem;
+}
 /* ----------media query for small screen */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .right-event-des h4 {
     font-size: 16px;
     color: black;
   }
   .right-event-des p {
     font-size: 10px;
+    text-align: left !important;
+  }
+
+  .right-event-caro {
+    margin-top: 2.2em !important;
+    margin-left: -20px !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -179,9 +197,6 @@ span {
   }
 }
 @media screen and (max-width: 600px) {
-  /* .event-img img{
-      width: 350px !important;
-    } */
   .event-btn button {
     border: none;
     border-radius: 7px;
@@ -199,6 +214,6 @@ span {
     align-items: center;
   }
   .library p {
-    text-align: center;
+    text-align: left;
   }
 }

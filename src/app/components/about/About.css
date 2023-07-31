@@ -2,68 +2,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 :root {
   /* color */
-  --white-color: #FFFFFF;
+  --white-color: #ffffff;
   --green-color: green;
-  --goldish-color: #CCA65D;
+  --goldish-color: #cca65d;
   /* fonts */
   --font-inter: "Inter", sans-serif;
   --font-martel: "Martel", serif;
 }
 
 .about-Title {
-    text-align: center;
-    color: #619A46;
-    margin-top: 5rem;
-  
+  text-align: center;
+  color: #619a46;
+  margin-top: 5rem;
 }
-.about-Title h1{
-  font-family: var(--font-martel)
+.about-Title h1 {
+  font-family: var(--font-martel);
 }
-.about-description{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
+.about-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
 }
-.about-description p{
-    text-align: center;
-    color: #555555;
-    max-width: 70rem;
-    align-items: center;
-    font-size: 20px;
+.about-description p {
+  text-align: center;
+  color: #555555;
+  max-width: 70rem;
+  align-items: center;
+  font-size: 20px;
 }
 /* .image img{
     width: 100%;
     height: 300px;
 } */
-.btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
-.btn button{
-    color: #fff;
-    background-color: #CCA65D;
-    padding: 7px 45px;
-    border: none;
-    border-radius: 5px;
-    font-family: var(--font-inter)
+.btn button {
+  color: #fff;
+  background-color: #cca65d;
+  padding: 7px 45px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-inter);
 }
 
 /* --------------------font family-------------------------------- */
 
 /* Import the Inter font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 /* Apply the Inter font to <p> tags */
 .about-description p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Apply the Inter font to <button> tags */
 .btn button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* about section animations----------- */
@@ -71,9 +70,7 @@
 .about-Title h1 {
   position: relative;
   animation: fadeLeft 1s ease-in-out forwards;
-  
 }
-
 
 @keyframes fadeLeft {
   from {
@@ -101,6 +98,3 @@
     transform: translateY(0);
   }
 }
-
-  
-  

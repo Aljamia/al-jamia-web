@@ -1,12 +1,33 @@
 "use client";
 import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./AboutUs.css";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
+import { getAboutUs, getAboutUsGallery } from "@/app/hooks/UseApi";
+import Link from "next/link";
 
 const AboutUs = () => {
+  const [about, setAbout] = useState([]);
+  const [gallery, setGallery] = useState([]);
+
+  useEffect(() => {
+    const fetchAbout = async () => {
+      const data = await getAboutUs();
+      setAbout(data?.response);
+    };
+    const fetchGallery = async () => {
+      const data = await getAboutUsGallery();
+      setGallery(data?.response);
+    };
+    fetchAbout();
+    fetchGallery();
+  }, []);
+  if (!gallery || gallery.length === 0) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="AboutUspage">
       <PageHeader />
@@ -23,114 +44,103 @@ const AboutUs = () => {
         />
       </div>
       <div className="AboutUspage-desc">
-        <Container>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
-          tempora ipsa rem officiis voluptates, culpa dolor molestias itaque
-          dignissimos nam ea animi aut, eos nihil earum obcaecati eum porro
-          corporis! Illo sapiente modi libero repudiandae dolores praesentium
-          inventore incidunt ullam consectetur impedit natus ab amet molestias
-          ea doloremque quas non nesciunt nulla sunt vel labore, corporis odio
-          iure. Magni, veritatis! Quod autem, necessitatibus velit modi enim ab
-          veritatis sint? Earum ut modi assumenda officiis autem quibusdam a,
-          molestiae fuga! Nobis, illo molestias quo magnam voluptates fugiat
-          debitis est cupiditate culpa? Quam cumque incidunt itaque obcaecati
-          impedit suscipit quidem eveniet vero qui tenetur, veritatis illo
-          accusantium error fugiat, facere iusto debitis ea minus iure quo eius.
-          Itaque aliquid natus obcaecati tempora.
-        </Container>
+        {about.map((item, index) => (
+          <>
+            <Container className="AboutUspage-short-desc" key={index}>
+              {item.shortDescription}
+            </Container>
+            <Container className="AboutUspage-long-desc" key={index}>
+              {item.longDescription}
+            </Container>
+          </>
+        ))}
       </div>
-      <div className="AboutUspage-vision">
+      <div className="AboutUspage-items">
         <Container>
-          <Row>
-            <Col xl={6} lg={6} xs={12}>
-              <div className="AboutUspage-vision-title">Our Vision</div>
-              <p className="AboutUspage-vision-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati officia excepturi aspernatur culpa alias. Voluptatum,
-                repellendus. Voluptates quos vel optio voluptate natus similique
-                fugit minima illum, ducimus, repudiandae repellat voluptas.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit facilis tempore repudiandae quam beatae, ab nam iure
-                mollitia voluptates, autem necessitatibus, numquam deserunt
-                quibusdam pariatur recusandae sequi sint error? Iusto?
-              </p>
-            </Col>
-            <Col xl={6} lg={6} xs={12}>
-              <div className="AboutUspage-vision-img">
-                <Image
-                  src="/image 7.png"
-                  layout="fixed" // Use layout="responsive" for responsiveness
-                  width={600} // Provide the width of the image
-                  height={300} // Provide the height of the image (optional)
-                  alt="Image"
-                />
-              </div>
-            </Col>
-          </Row>
-          <div className="AboutUspage-ourMission">
+          <div className="AboutUspage-vision">
+            <div className="AboutUspage-vision-title">Our Vision</div>
+
+            <div className="AboutUspage-vision-details">
+              <p className="AboutUspage-vision-desc">{about[1]?.vision}</p>
+            </div>
+          </div>
+        </Container>
+
+        <div className="AboutUspage-ourMission">
+          <Container>
             <Row>
               <Col xl={6} lg={6} xs={12}>
-                <div className="AboutUspage-vision-img">
+                <div className="AboutUspage-mission-img">
                   <Image
-                    src="/image 7.png"
-                    layout="fixed" // Use layout="responsive" for responsiveness
-                    width={600} // Provide the width of the image
-                    height={300} // Provide the height of the image (optional)
+                    src="/image 12.png"
+                    layout="responsive" // Use layout="responsive" for responsiveness
+                    width={500} // Provide the width of the image
+                    height={800} // Adjust the height as needed to make it taller
                     alt="Image"
+                    objectFit="cover"
+                    className="AboutUspage-vision-img2"
                   />
                 </div>
               </Col>
               <Col xl={6} lg={6} xs={12}>
                 <div
-                  className="AboutUspage-vision-title"
+                  className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
                   Our Mission
                 </div>
-                <p className="AboutUspage-vision-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati officia excepturi aspernatur culpa alias.
-                  Voluptatum, repellendus. Voluptates quos vel optio voluptate
-                  natus similique fugit minima illum, ducimus, repudiandae
-                  repellat voluptas. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Suscipit facilis tempore repudiandae quam
-                  beatae, ab nam iure mollitia voluptates, autem necessitatibus,
-                  numquam deserunt quibusdam pariatur recusandae sequi sint
-                  error? Iusto?
-                </p>
+                <p className="AboutUspage-mission-desc">{about[0]?.mission}</p>
               </Col>
             </Row>
-          </div>
-        </Container>
+          </Container>
+        </div>
       </div>
-
       <div className="AboutUspage-ourCampus shadow-lg">
         <Container>
-          <div className="AboutUspage-vision-title">Campus Life</div>
+          <div className="AboutUspage-campus-title">Campus Life</div>
+        </Container>
+        <div class="grid-wrapper">
+          <div className="wide">
+            <Image
+              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[6]?.image}`}
+              width={350}
+              height={10}
+              alt="Picture of the author"
+            />
+          </div>
 
-          <div className="AboutUspage-gallery">
-            <div className="AboutUspage-gallery-img">
-              <img
-                src="/Rectangle 990.jpg"
-                alt=""
-                width={"100%"}
-                className="Aboutpage-images"
-              />
-            </div>
-            <div className="AboutUspage-gallery-img">
-              <img src="/Rectangle 993.png" alt="" width={"100%"} />
-              <img src="/Rectangle 991.jpg" alt="" width={"100%"} />
-            </div>
-            <div className="AboutUspage-gallery-img">
-              <img src="/Rectangle 991.jpg" alt="" width={"100%"} />
-              <img src="/Rectangle 994.jpg" alt="" width={"100%"} />
-            </div>
-            <div className="AboutUspage-gallery-img">
-              <img src="/Rectangle 993.png" alt="" width={"100%"} />
-              <img src="/Rectangle 991.jpg" alt="" width={"100%"} />
+          <div className="big">
+            <Image
+              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[7]?.image}`}
+              width={350}
+              height={180}
+              alt="Picture of the author"
+            />
+          </div>
+
+          <div className="tall">
+            <Image
+              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[0]?.image}`}
+              width={350}
+              height={180}
+              alt="Picture of the author"
+              className="gallery-data-link"
+            />
+            <div className="gallery-link">
+              <Link href="/gallery" style={{ textDecoration: "none" }}>
+                <h3 className="gallery-navigate">25+</h3>
+              </Link>
             </div>
           </div>
-        </Container>
+          <div className="wide">
+            <Image
+              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[9]?.image}`}
+              width={350}
+              height={180}
+              alt="Picture of the author"
+            />
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

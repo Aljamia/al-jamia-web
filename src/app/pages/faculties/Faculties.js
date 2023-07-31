@@ -1,40 +1,47 @@
 // Import the required modules
 "use client";
-import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import Card from "react-bootstrap/Card";
+import React, { useState, useEffect } from "react";
+import { Container } from "react-bootstrap";
 import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import "./Facuties.css";
+import { getBoardOfDirector } from "@/app/hooks/UseApi";
 
 const Faculties = () => {
-  // Create an array of state variables for each card's modal visibility
-  const [showModals, setShowModals] = useState([
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ]);
+  const tableData = [
+    { firstName: "Peter", lastName: "Griffin" },
+    { firstName: "Lois", lastName: "Griffin" },
+    { firstName: "Joe", lastName: "Swanson" },
+    { firstName: "Cleveland", lastName: "Brown" },
+    { firstName: "Cleveland", lastName: "Brown" },
+    { firstName: "Cleveland", lastName: "Brown" },
+    { firstName: "Cleveland", lastName: "Brown" },
+    { firstName: "Cleveland", lastName: "Brown" },
+    { firstName: "Cleveland", lastName: "Brown" },
+    { firstName: "Cleveland", lastName: "Brown" },
+  ];
 
-  // Function to handle the click event for each card's "Learn More" button
-  const handleShowModal = (index) => {
-    const updatedShowModals = showModals.map((_, i) => i === index);
-    setShowModals(updatedShowModals);
-  };
+  const [board, setBoard] = useState([]);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+    const fetchBoard = async () => {
+      const data = await getBoardOfDirector();
+      console.log(data);
+      setBoard(data?.response);
+    };
+    fetchBoard();
+  }, []);
 
   return (
     <div className="Faculties">
       <PageHeader />
       <div className="Faculties-header">
         <Container>
-          <h2 className="Faculties-title">Faculties</h2>
+          <h2 className="Faculties-title">
+            Succession List of Heads of the Institution
+          </h2>
           <p className="Faculties-desc">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
             delectus nam repudiandae quaerat sequi id consequuntur obcaecati
@@ -50,492 +57,21 @@ const Faculties = () => {
           </p>
         </Container>
       </div>
+
       <div className="Faculties-ourleader">
-        <h3 className="Faculties-leader-title">Our Leadership</h3>
-        <div className="Faculties-leader-card">
-          <Card className="faculties-card shadow-sm">
-            <Card.Img variant="top" src="/image 14.jpg" />
-            <Card.Body>
-              <Card.Title className="faculties-card-title">
-                Card Title 1
-              </Card.Title>
-              <Card.Text className="faculties-card-text">
-                Some quick example text
-              </Card.Text>
-              <Button
-                variant="primary btn-primary-faculties"
-                onClick={() => handleShowModal(0)}
-              >
-                Learn More
-              </Button>
-            </Card.Body>
-            <Modal
-              show={showModals[0]}
-              onHide={() =>
-                setShowModals((prev) =>
-                  prev.map((_, i) => (i === 0 ? false : _))
-                )
-              }
-              size="lg"
-            >
-              <Modal.Header closeButton></Modal.Header>
-              <Modal.Body>
-                <Row className="faculties-modalitems">
-                  <Col xl={6} xs={12} sm={12}>
-                    <Card className="faculties-cardmodal shadow-sm">
-                      <Card.Img variant="top" src="/image 14.jpg" />
-                    </Card>
-                  </Col>
-                  <Col xl={6} xs={12} sm={12}>
-                    <Card.Title className="faculties-cardmodal-title">
-                      Card Title 1
-                    </Card.Title>
-                    <Card.Text className="faculties-cardmodal-text">
-                      Some quick example text
-                    </Card.Text>
-                    <Card.Text className="faculties-cardmodal-desc">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsa hic ipsam quibusdam nesciunt impedit dolorem eos
-                      accusantium, asperiores magnam molestias et sapiente non
-                      similique nihil necessitatibus modi quisquam iusto ullam.
-                      hello
-                    </Card.Text>
-                  </Col>
-                </Row>
-              </Modal.Body>
-            </Modal>
-          </Card>
-
-          <Card className="faculties-card shadow-sm">
-            <Card.Img variant="top" src="/image 14.jpg" />
-            <Card.Body>
-              <Card.Title className="faculties-card-title">
-                Card Title 1
-              </Card.Title>
-              <Card.Text className="faculties-card-text">
-                Some quick example text
-              </Card.Text>
-              <Button
-                variant="primary btn-primary-faculties"
-                onClick={() => handleShowModal(1)}
-              >
-                Learn More
-              </Button>
-            </Card.Body>
-            <Modal
-              show={showModals[1]}
-              onHide={() =>
-                setShowModals((prev) =>
-                  prev.map((_, i) => (i === 1 ? false : _))
-                )
-              }
-              size="lg"
-            >
-              <Modal.Header closeButton></Modal.Header>
-              <Modal.Body>
-                <Row className="faculties-modalitems">
-                  <Col xl={6} xs={12} sm={12}>
-                    <Card className="faculties-cardmodal shadow-sm">
-                      <Card.Img variant="top" src="/image 14.jpg" />
-                    </Card>
-                  </Col>
-                  <Col xl={6} xs={12} sm={12}>
-                    <Card.Title className="faculties-cardmodal-title">
-                      Card Title 1
-                    </Card.Title>
-                    <Card.Text className="faculties-cardmodal-text">
-                      Some quick example text
-                    </Card.Text>
-                    <Card.Text className="faculties-cardmodal-desc">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsa hic ipsam quibusdam nesciunt impedit dolorem eos
-                      accusantium, asperiores magnam molestias et sapiente non
-                      similique nihil necessitatibus modi quisquam iusto ullam.
-                      hello
-                    </Card.Text>
-                  </Col>
-                </Row>
-              </Modal.Body>
-            </Modal>
-          </Card>
-
-          <Card className="faculties-card shadow-sm">
-            <Card.Img variant="top" src="/image 14.jpg" />
-            <Card.Body>
-              <Card.Title className="faculties-card-title">
-                Card Title 1
-              </Card.Title>
-              <Card.Text className="faculties-card-text">
-                Some quick example text
-              </Card.Text>
-              <Button
-                variant="primary btn-primary-faculties"
-                onClick={() => handleShowModal(2)}
-              >
-                Learn More
-              </Button>
-            </Card.Body>
-            <Modal
-              show={showModals[2]}
-              onHide={() =>
-                setShowModals((prev) =>
-                  prev.map((_, i) => (i === 2 ? false : _))
-                )
-              }
-              size="lg"
-            >
-              <Modal.Header closeButton></Modal.Header>
-              <Modal.Body>
-                <Row className="faculties-modalitems">
-                  <Col xl={6} xs={12} sm={12}>
-                    <Card className="faculties-cardmodal shadow-sm">
-                      <Card.Img variant="top" src="/image 14.jpg" />
-                    </Card>
-                  </Col>
-                  <Col xl={6} xs={12} sm={12}>
-                    <Card.Title className="faculties-cardmodal-title">
-                      Card Title 1
-                    </Card.Title>
-                    <Card.Text className="faculties-cardmodal-text">
-                      Some quick example text
-                    </Card.Text>
-                    <Card.Text className="faculties-cardmodal-desc">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsa hic ipsam quibusdam nesciunt impedit dolorem eos
-                      accusantium, asperiores magnam molestias et sapiente non
-                      similique nihil necessitatibus modi quisquam iusto ullam.
-                      hello
-                    </Card.Text>
-                  </Col>
-                </Row>
-              </Modal.Body>
-            </Modal>
-          </Card>
-        </div>
-      </div>
-      <div className="Faculties-sharia shadow-lg">
-        <div className="Faculties-sharia-leader">
-          <h3 className="Faculties-leader-title">Sharia Facalties</h3>
-          <div className="Faculties-leader-card">
-            <Card className="faculties-card shadow-sm">
-              <Card.Img variant="top" src="/image 14.jpg" />
-              <Card.Body>
-                <Card.Title className="faculties-card-title">
-                  Card Title 1
-                </Card.Title>
-                <Card.Text className="faculties-card-text">
-                  Some quick example text
-                </Card.Text>
-                <Button
-                  variant="primary btn-primary-faculties"
-                  onClick={() => handleShowModal(3)}
-                >
-                  Learn More
-                </Button>
-              </Card.Body>
-              <Modal
-                show={showModals[3]}
-                onHide={() =>
-                  setShowModals((prev) =>
-                    prev.map((_, i) => (i === 3 ? false : _))
-                  )
-                }
-                size="lg"
-              >
-                <Modal.Header closeButton></Modal.Header>
-                <Modal.Body>
-                  <Row className="faculties-modalitems">
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card className="faculties-cardmodal shadow-sm">
-                        <Card.Img variant="top" src="/image 14.jpg" />
-                      </Card>
-                    </Col>
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card.Title className="faculties-cardmodal-title">
-                        Card Title 1
-                      </Card.Title>
-                      <Card.Text className="faculties-cardmodal-text">
-                        Some quick example text
-                      </Card.Text>
-                      <Card.Text className="faculties-cardmodal-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa hic ipsam quibusdam nesciunt impedit dolorem
-                        eos accusantium, asperiores magnam molestias et sapiente
-                        non similique nihil necessitatibus modi quisquam iusto
-                        ullam. hello
-                      </Card.Text>
-                    </Col>
-                  </Row>
-                </Modal.Body>
-              </Modal>
-            </Card>
-            {/* card-2*/}
-            <Card className="faculties-card shadow-sm">
-              <Card.Img variant="top" src="/image 14.jpg" />
-              <Card.Body>
-                <Card.Title className="faculties-card-title">
-                  Card Title 1
-                </Card.Title>
-                <Card.Text className="faculties-card-text">
-                  Some quick example text
-                </Card.Text>
-                <Button
-                  variant="primary btn-primary-faculties"
-                  onClick={() => handleShowModal(4)}
-                >
-                  Learn More
-                </Button>
-              </Card.Body>
-              <Modal
-                show={showModals[4]}
-                onHide={() =>
-                  setShowModals((prev) =>
-                    prev.map((_, i) => (i === 4 ? false : _))
-                  )
-                }
-                size="lg"
-              >
-                <Modal.Header closeButton></Modal.Header>
-                <Modal.Body>
-                  <Row className="faculties-modalitems">
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card className="faculties-cardmodal shadow-sm">
-                        <Card.Img variant="top" src="/image 14.jpg" />
-                      </Card>
-                    </Col>
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card.Title className="faculties-cardmodal-title">
-                        Card Title 1
-                      </Card.Title>
-                      <Card.Text className="faculties-cardmodal-text">
-                        Some quick example text
-                      </Card.Text>
-                      <Card.Text className="faculties-cardmodal-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa hic ipsam quibusdam nesciunt impedit dolorem
-                        eos accusantium, asperiores magnam molestias et sapiente
-                        non similique nihil necessitatibus modi quisquam iusto
-                        ullam. hello
-                      </Card.Text>
-                    </Col>
-                  </Row>
-                </Modal.Body>
-              </Modal>
-            </Card>
-            {/* card-4 */}
-            <Card className="faculties-card shadow-sm">
-              <Card.Img variant="top" src="/image 14.jpg" />
-              <Card.Body>
-                <Card.Title className="faculties-card-title">
-                  Card Title 1
-                </Card.Title>
-                <Card.Text className="faculties-card-text">
-                  Some quick example text
-                </Card.Text>
-                <Button
-                  variant="primary btn-primary-faculties"
-                  onClick={() => handleShowModal(5)}
-                >
-                  Learn More
-                </Button>
-              </Card.Body>
-              <Modal
-                show={showModals[5]}
-                onHide={() =>
-                  setShowModals((prev) =>
-                    prev.map((_, i) => (i === 5 ? false : _))
-                  )
-                }
-                size="lg"
-              >
-                <Modal.Header closeButton></Modal.Header>
-                <Modal.Body>
-                  <Row className="faculties-modalitems">
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card className="faculties-cardmodal shadow-sm">
-                        <Card.Img variant="top" src="/image 14.jpg" />
-                      </Card>
-                    </Col>
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card.Title className="faculties-cardmodal-title">
-                        Card Title 1
-                      </Card.Title>
-                      <Card.Text className="faculties-cardmodal-text">
-                        Some quick example text
-                      </Card.Text>
-                      <Card.Text className="faculties-cardmodal-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa hic ipsam quibusdam nesciunt impedit dolorem
-                        eos accusantium, asperiores magnam molestias et sapiente
-                        non similique nihil necessitatibus modi quisquam iusto
-                        ullam. hello
-                      </Card.Text>
-                    </Col>
-                  </Row>
-                </Modal.Body>
-              </Modal>
-            </Card>
-            {/* card-5 */}
-            <Card className="faculties-card shadow-sm">
-              <Card.Img variant="top" src="/image 14.jpg" />
-              <Card.Body>
-                <Card.Title className="faculties-card-title">
-                  Card Title 1
-                </Card.Title>
-                <Card.Text className="faculties-card-text">
-                  Some quick example text
-                </Card.Text>
-                <Button
-                  variant="primary btn-primary-faculties"
-                  onClick={() => handleShowModal(6)}
-                >
-                  Learn More
-                </Button>
-              </Card.Body>
-              <Modal
-                show={showModals[6]}
-                onHide={() =>
-                  setShowModals((prev) =>
-                    prev.map((_, i) => (i === 6 ? false : _))
-                  )
-                }
-                size="lg"
-              >
-                <Modal.Header closeButton></Modal.Header>
-                <Modal.Body>
-                  <Row className="faculties-modalitems">
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card className="faculties-cardmodal shadow-sm">
-                        <Card.Img variant="top" src="/image 14.jpg" />
-                      </Card>
-                    </Col>
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card.Title className="faculties-cardmodal-title">
-                        Card Title 1
-                      </Card.Title>
-                      <Card.Text className="faculties-cardmodal-text">
-                        Some quick example text
-                      </Card.Text>
-                      <Card.Text className="faculties-cardmodal-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa hic ipsam quibusdam nesciunt impedit dolorem
-                        eos accusantium, asperiores magnam molestias et sapiente
-                        non similique nihil necessitatibus modi quisquam iusto
-                        ullam. hello
-                      </Card.Text>
-                    </Col>
-                  </Row>
-                </Modal.Body>
-              </Modal>
-            </Card>
-            {/* card-6 */}
-            <Card className="faculties-card shadow-sm">
-              <Card.Img variant="top" src="/image 14.jpg" />
-              <Card.Body>
-                <Card.Title className="faculties-card-title">
-                  Card Title 1
-                </Card.Title>
-                <Card.Text className="faculties-card-text">
-                  Some quick example text
-                </Card.Text>
-                <Button
-                  variant="primary btn-primary-faculties"
-                  onClick={() => handleShowModal(7)}
-                >
-                  Learn More
-                </Button>
-              </Card.Body>
-              <Modal
-                show={showModals[7]}
-                onHide={() =>
-                  setShowModals((prev) =>
-                    prev.map((_, i) => (i === 7 ? false : _))
-                  )
-                }
-                size="lg"
-              >
-                <Modal.Header closeButton></Modal.Header>
-                <Modal.Body>
-                  <Row className="faculties-modalitems">
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card className="faculties-cardmodal shadow-sm">
-                        <Card.Img variant="top" src="/image 14.jpg" />
-                      </Card>
-                    </Col>
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card.Title className="faculties-cardmodal-title">
-                        Card Title 1
-                      </Card.Title>
-                      <Card.Text className="faculties-cardmodal-text">
-                        Some quick example text
-                      </Card.Text>
-                      <Card.Text className="faculties-cardmodal-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa hic ipsam quibusdam nesciunt impedit dolorem
-                        eos accusantium, asperiores magnam molestias et sapiente
-                        non similique nihil necessitatibus modi quisquam iusto
-                        ullam. hello
-                      </Card.Text>
-                    </Col>
-                  </Row>
-                </Modal.Body>
-              </Modal>
-            </Card>
-            {/* card-7 */}
-            <Card className="faculties-card shadow-sm">
-              <Card.Img variant="top" src="/image 14.jpg" />
-              <Card.Body>
-                <Card.Title className="faculties-card-title">
-                  Card Title 1
-                </Card.Title>
-                <Card.Text className="faculties-card-text">
-                  Some quick example text
-                </Card.Text>
-                <Button
-                  variant="primary btn-primary-faculties"
-                  onClick={() => handleShowModal(8)}
-                >
-                  Learn More
-                </Button>
-              </Card.Body>
-              <Modal
-                show={showModals[8]}
-                onHide={() =>
-                  setShowModals((prev) =>
-                    prev.map((_, i) => (i === 8 ? false : _))
-                  )
-                }
-                size="lg"
-              >
-                <Modal.Header closeButton></Modal.Header>
-                <Modal.Body>
-                  <Row className="faculties-modalitems">
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card className="faculties-cardmodal shadow-sm">
-                        <Card.Img variant="top" src="/image 14.jpg" />
-                      </Card>
-                    </Col>
-                    <Col xl={6} xs={12} sm={12}>
-                      <Card.Title className="faculties-cardmodal-title">
-                        Card Title 1
-                      </Card.Title>
-                      <Card.Text className="faculties-cardmodal-text">
-                        Some quick example text
-                      </Card.Text>
-                      <Card.Text className="faculties-cardmodal-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa hic ipsam quibusdam nesciunt impedit dolorem
-                        eos accusantium, asperiores magnam molestias et sapiente
-                        non similique nihil necessitatibus modi quisquam iusto
-                        ullam. hello evrey
-                      </Card.Text>
-                    </Col>
-                  </Row>
-                </Modal.Body>
-              </Modal>
-            </Card>
-            {/* card-8 end */}
-          </div>
+        <h3 className="Faculties-leader-title">Members</h3>
+        <div className="Faculties-data">
+          {/* Conditional rendering to avoid server-side rendering */}
+          {isClient && (
+            <table>
+              {tableData.map((row, index) => (
+                <tr key={index}>
+                  <td className="council-name">{row.firstName}</td>
+                  <td className="council-position">{row.lastName}</td>
+                </tr>
+              ))}
+            </table>
+          )}
         </div>
       </div>
       <Footer />

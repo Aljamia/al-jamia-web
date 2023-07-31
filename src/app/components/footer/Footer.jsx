@@ -22,17 +22,16 @@ const Footer = () => {
             <div>
               <Image
                 src="/image 5.png"
-                width={300}
+                width={350}
                 height={80}
                 alt="Picture of the author"
                 className="footer-logo"
               />
               <p className="footer-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid reprehenderit fugit vitae provident dolorem magnam
-                tempore modi debitis laboriosam? Tenetur aliquid fuga voluptates
-                asperiores reiciendis? Eligendi, deserunt! Sit, exercitationem
-                sunt.
+                Al Jamia Arts and Science College (AJAS), a resourceful
+                destination for higher studies in the region, was established in
+                2010 with the main objective of uplifting the educationally
+                developing Muslims and other communities.
               </p>
             </div>
           </Col>
@@ -41,16 +40,16 @@ const Footer = () => {
               <Link href="/" className="footer-links">
                 <h5>Home</h5>
               </Link>
+              <Link href="/about" className="footer-links">
+                <h5>About Us</h5>
+              </Link>
+              <Link href="/" className="footer-links">
+                <h5>Authorities</h5>
+              </Link>
+              <Link href="/venture" className="footer-links">
+                <h5>Ventures</h5>
+              </Link>
               <Link href="/contact" className="footer-links">
-                <h5>Academics</h5>
-              </Link>
-              <Link href="/academics" className="footer-links">
-                <h5>Examinations</h5>
-              </Link>
-              <Link href="/admissions" className="footer-links">
-                <h5>Admissions</h5>
-              </Link>
-              <Link href="/admissions" className="footer-links">
                 <h5>Contact</h5>
               </Link>
             </div>
@@ -64,12 +63,16 @@ const Footer = () => {
               <p className="footer-number"> 00914933 – 270565</p>
 
               <p>
-                <FaEnvelope /> aljamiaalislamia@gmail.com
+                <FaEnvelope /> mail@aljamia.net
               </p>
-              <p>
-                <FaLocationDot /> SANTHAPURAM, P.O. PATTIKKAD
+              <p className="footer-location">
+                <FaLocationDot />
+                AL JAMIA AL ISLAMIYA SANTHAPURAM P.O.
               </p>
-              <p className="footer-address">679 325, MALAPPURAM, KERALA</p>
+              <p className="footer-address">
+                {" "}
+                PATTIKKAD –679 325 MALAPPURAM DISTRICT, KERALA – INDIA.{" "}
+              </p>
             </div>
           </Col>
         </Row>
@@ -80,12 +83,12 @@ const Footer = () => {
       <div className="footer-end">
         <Container>
           <Row>
-            <Col xs={12} lg={6}>
+            <Col xs={12} lg={6} sm={12}>
               <p className="footer-copyright">
                 © 2023 al jamia All Rights Reserved Privacy Policy
               </p>
             </Col>
-            <Col xs={12} lg={6} className="footer-social-icons">
+            <Col xs={12} lg={6} sm={12} className="footer-social-icons">
               <span>
                 <Link href="/" className="footer-social-icons-list">
                   <FaFacebook />

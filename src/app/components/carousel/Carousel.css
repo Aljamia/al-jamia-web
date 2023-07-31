@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 
 :root {
   /* color */
@@ -9,7 +9,7 @@
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-martel: "Martel", serif;
+  --font-PT-serif: "PT Serif", serif;
 }
 
 /***** header video *****/
@@ -35,20 +35,18 @@
 }
 .carousel-para p {
   color: var(--white-color);
-  font-family: var(--font-martel);
-  font-size: 50px;
+  font-family: var(--font-PT-serif);
+  font-size: 60px;
   font-style: normal;
-  font-weight: 550;
+  font-weight: 500;
   line-height: 60px;
   text-align: left;
-  overflow-y: hidden !important;
   opacity: 1;
 }
 
 .slick-slide div {
   margin: 0 0.5rem;
   background-color: transparent !important;
-  overflow-y: hidden !important;
   opacity: 1;
 }
 .carousel-overlay .slick-slider {
@@ -90,7 +88,7 @@
   }
   .carousel-para p {
     color: var(--white-color);
-    font-family: var(--font-martel);
+    font-family: var(--font-PT-serif);
     font-size: 20px;
     font-style: normal;
     font-weight: 450;
@@ -115,7 +113,7 @@
   }
   .carousel-para p {
     color: var(--white-color);
-    font-family: var(--font-martel);
+    font-family: var(--font-PT-serif);
     font-size: 35px;
     font-style: normal;
     font-weight: 450;

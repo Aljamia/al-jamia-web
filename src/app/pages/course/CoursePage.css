@@ -23,7 +23,6 @@
   position: absolute;
   left: 80px;
   width: 300px;
-  overflow-y: hidden;
   bottom: 40%;
   z-index: 1000;
   color: var(--white-color);
@@ -42,7 +41,7 @@
 .CoursePage-subtitle h2 {
   color: var(--gold, #cca65d);
   font-family: var(--font-martel);
-  font-size: 40px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
@@ -52,7 +51,7 @@
   display: flex;
   gap: 10px;
 }
-.coursePage-header__title__items > h3 {
+.coursePage-header__title__items {
   color: #565656;
   font-family: var(--font-inter);
   font-size: 30px;
@@ -60,11 +59,15 @@
   font-weight: 500;
   line-height: 105.1%; /* 52.55px */
 }
+.coursePage-header__syllabus {
+  padding: 0.5em;
+}
 .button--state-secondary {
   background-color: #cdcdcd;
   outline: none;
   border: none;
   color: #5b5959;
+  margin-top: -5px;
 }
 .button--state-warning {
   margin: 5px;

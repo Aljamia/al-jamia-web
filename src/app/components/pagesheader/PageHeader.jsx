@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Image from "next/image";
 import "./PageHeader.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const PageHeader = () => {
   useEffect(() => {
@@ -45,22 +47,53 @@ const PageHeader = () => {
             />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="ms-auto my-2 my-lg-0 nav-carousel">
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link href="/" className="nav-links nav-link-black">
                   Home
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link href="/about" className="nav-links nav-link-black">
                   About us
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
-                  Admission
+                <nav role="navigation" className="primary-navigation ">
+                  <ul>
+                    <li>
+                      <Nav.Link href="#" className="nav-links nav-link-black">
+                        Authorities{" "}
+                        <FontAwesomeIcon
+                          icon={faChevronDown}
+                          style={{ fontSize: "18px" }}
+                        />
+                      </Nav.Link>
+
+                      <ul className="dropdown">
+                        <li className="nav-dropdown-links">
+                          <Nav.Link href="/management">
+                            {" "}
+                            <h5>Supreme Council</h5>{" "}
+                          </Nav.Link>
+                        </li>
+                        <li className="nav-dropdown-links">
+                          <Nav.Link href="/boardofdirector">
+                            {" "}
+                            <h5> Administrative Council</h5>{" "}
+                          </Nav.Link>
+                        </li>
+                        <li className="nav-dropdown-links">
+                          <Nav.Link href="/faculties">
+                            {" "}
+                            <h5>
+                              Succession List of Heads of the Institution
+                            </h5>{" "}
+                          </Nav.Link>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+
+                <Nav.Link href="/venture" className="nav-links nav-link-black">
+                  Ventures
                 </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
-                  Examination
-                </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
-                  Event
-                </Nav.Link>
-                <Nav.Link href="" className="nav-links nav-link-black">
+                <Nav.Link href="/contact" className="nav-links nav-link-black">
                   Contact
                 </Nav.Link>
               </Nav>
