@@ -26,21 +26,64 @@
 }
 .AboutUspage-desc {
   color: var(--gray, #555);
-  padding: 3em;
-  text-align: center;
   font-family: var(--font-inter);
   font-size: 20px;
   font-style: normal;
+  text-align: center;
+  margin-top: 1.5em;
+  padding: 1em;
   font-weight: 400;
   line-height: 130%; /* 39px */
 }
-.AboutUspage-vision {
+:is(.AboutUspage-short-desc, .AboutUspage-long-desc)::first-letter {
+  font-size: 30px;
+  color: #619a46;
+  text-transform: uppercase;
+  font-family: var(--font-inter);
+  font-weight: 900;
+}
+.AboutUspage-long-desc {
+  margin-top: 2em;
+}
+.AboutUspage-items {
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+  background-color: #f8f8f8;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3.3em;
+  padding: 3em;
+  margin-top: 3em;
+}
+.AboutUspage-vision {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5em;
 }
 .AboutUspage-vision-title {
+  color: var(--light-green-color);
+  font-family: var(--font-PT-serif);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 450;
+  text-align: right;
+  margin-top: 10px;
+  width: 50%;
+  line-height: normal;
+}
+
+.AboutUspage-vision-desc {
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-style: normal;
+  width: 60%;
+  margin-left: 80px;
+  text-align: left;
+  font-weight: 300;
+  line-height: 130%; /* 39px */
+}
+.AboutUspage-mission-title,
+.AboutUspage-campus-title {
   color: var(--light-green-color);
   font-family: var(--font-PT-serif);
   font-size: 40px;
@@ -49,19 +92,10 @@
   font-weight: 450;
   line-height: normal;
 }
-.AboutUspage-vision-img {
+.AboutUspage-mission-img {
   margin-top: 30px;
 }
 
-.AboutUspage-vision-desc {
-  color: var(--gray, #555);
-  font-family: var(--font-inter);
-  text-align: justify;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 130%; /* 39px */
-}
 .AboutUspage-mission-desc {
   color: var(--gray, #555);
   font-family: var(--font-inter);
@@ -69,78 +103,127 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
+  margin-top: 0.3em;
   line-height: 130%; /* 39px */
 }
 #our-mission-header {
   margin-top: 20px;
 }
 .AboutUspage-ourMission {
-  margin-top: 1.3em;
+  margin-top: 1em;
 }
 .AboutUspage-ourCampus {
   padding: 1.3em;
   margin-bottom: 2em;
 }
 
+/***** image gallery *****/
+.grid-wrapper > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-wrapper > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.grid-wrapper > div > img:hover {
+  transition: 1s ease-in;
+  opacity: 0.9;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  padding: 3em;
+}
+.grid-wrapper .wide {
+  grid-column: span 2;
+}
+.grid-wrapper .tall {
+  grid-row: span 2;
+}
+.grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.tall {
+  position: relative;
+}
+.gallery-data-link {
+  opacity: 0.7;
+  filter: contrast(90%);
+  filter: brightness(50%);
+}
+.gallery-link {
+  position: absolute;
+  padding: 5px;
+  opacity: 1;
+  top: 45%;
+  left: 35%;
+}
+.gallery-navigate {
+  color: rgb(248, 247, 247);
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--font-PT-serif);
+}
+.gallery-navigate:hover {
+  transition: 0.8s linear;
+  opacity: 0.8;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+/***** End image gallery *****/
+
 @media (max-width: 700px) {
+  .AboutUspage-header {
+    margin-top: 2em;
+  }
   .AboutUspage-title {
     font-size: 30px;
   }
   .AboutUspage-vision-title {
     font-size: 30px;
+    margin-top: -0.5em;
   }
-  .AboutUspage-desc {
-    text-align: justify;
-    padding: 1em;
+  .AboutUspage-mission-title {
+    font-size: 30px;
   }
+  .AboutUspage-campus-title {
+    font-size: 30px;
+  }
+  .AboutUspage-mission-img {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 800px) {
   .AboutUspage-vision {
-    margin-top: -60px;
+    flex-direction: column;
   }
-}
-
-/* Container for the masonry grid gallery */
-.AboutUspage-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 5px;
-}
-
-.AboutUsPage-gallery-items {
-  position: relative;
-  margin-top: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.AboutUsPage-gallery-items .box {
-  position: relative;
-  width: 30rem;
-  height: 20rem;
-}
-
-.AboutUsPage-gallery-items .box:hover .imgBox {
-  transform: translate(-1.5rem, -1.5rem);
-}
-
-.imgBox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-.imgBox img {
-  position: relative;
-  object-fit: cover;
-  resize: both;
-}
-
-@media (max-width: 600px) {
-  .AboutUsPage-gallery-items .box:hover .imgBox {
-    transform: translate(0, -2rem);
+  .AboutUspage-vision-title {
+    text-align: left;
+    width: 100%;
+  }
+  .AboutUspage-vision-desc {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0.2em;
+    text-align: justify;
+  }
+  .grid-wrapper {
+    margin-top: 1em;
+    padding: 0px;
   }
 }

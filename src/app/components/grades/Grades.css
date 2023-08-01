@@ -5,7 +5,9 @@
   /* fonts */
   --font-inter: "Inter", sans-serif;
 }
-
+.grades {
+  padding: 5em;
+}
 .grades-digits {
   color: var(--grary-2, #252424);
   font-family: var(--font-inter);
@@ -38,6 +40,9 @@
   width: 80%;
 }
 @media (max-width: 500px) {
+  .grades {
+    padding: 0px;
+  }
   .grades-items {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;

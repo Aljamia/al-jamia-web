@@ -104,7 +104,6 @@ span {
   box-shadow: none;
   background-color: #f8f8f8;
 }
-
 .right-event-des {
   background-color: #b6acac93;
 }
@@ -167,7 +166,6 @@ span {
 }
 
 /* Optional: Add styling to the active dot */
-
 .slick-prev {
   display: none !important;
 }

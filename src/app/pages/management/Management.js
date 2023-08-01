@@ -33,7 +33,7 @@ const Management = () => {
       <PageHeader />
       <div className="Faculties-header">
         <Container>
-          <h2 className="Faculties-title">Management Committee</h2>
+          <h2 className="Faculties-title">Supreme Council</h2>
           <p className="Faculties-desc">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
             delectus nam repudiandae quaerat sequi id consequuntur obcaecati
@@ -106,6 +106,30 @@ const Management = () => {
             </Card>
           ))}
         </div>
+      </div>
+      <div className="Supreme-council-members">
+        <h3 className="Faculties-leader-title">Members</h3>
+        <>
+          <div className="members-leader-cards">
+            {commitee.map((item) => (
+              <Card className="members-cards shadow-sm" key={item.id}>
+                <Card.Img
+                  variant="top"
+                  src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
+                  className="members-card-img"
+                />
+                <Card.Body>
+                  <Card.Title className="members-card-title">
+                    {item.enName}
+                  </Card.Title>
+                  <Card.Text className="members-card-text">
+                    {item.enDescription}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            ))}
+          </div>
+        </>
       </div>
       <Footer />
     </div>

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-
 :root {
   /* colors */
   --white-color: #ffffff;
@@ -21,7 +20,7 @@
   padding: 20px;
   margin: 10px;
   font-family: var(--font-inter);
-  font-size: 25px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -38,10 +37,10 @@
   content: "";
   position: absolute;
   left: 9px;
-  top: 42px;
+  top: 44px;
   width: 90%;
   height: 5px;
-  background-color: var(--green-color) !important;
+  background-color: #91cf73 !important;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -78,14 +77,6 @@ nav.primary-navigation ul li {
   z-index: 2;
 }
 
-nav.primary-navigation li a:hover {
-  color: #3ca0e7;
-}
-
-nav.primary-navigation li:hover {
-  cursor: pointer;
-}
-
 nav.primary-navigation ul li ul {
   visibility: hidden;
   opacity: 0;
@@ -100,18 +91,29 @@ nav.primary-navigation ul li ul:hover {
   visibility: visible;
   opacity: 1;
   display: block;
-  min-width: 280px;
+  min-width: 270px;
+  height: 160px;
   text-align: left;
+  margin-top: -20px;
+  border-radius: 10px;
   box-shadow: 0px 3px 5px -1px #ccc;
+  z-index: 3;
+  opacity: 1;
+  margin-left: -25px;
 }
 .nav-dropdown-links h5 {
-  font-size: 20px;
+  font-size: 18px;
+  text-align: left;
   color: black;
+}
+.nav-dropdown-links h5:hover {
+  color: #e0b873;
+  transition: all 0.3s linear;
 }
 nav.primary-navigation ul li ul li {
   clear: both;
   width: 100%;
-  text-align: left;
+  margin: auto;
   font-size: 22px;
   font-family: var(--font-inter);
   border-style: none;
@@ -165,7 +167,8 @@ li:hover {
     z-index: 3;
   }
   nav.primary-navigation ul li ul h5 {
-    text-align: center;
+    text-align: left;
+    margin-left: 10px;
   }
 }
 

@@ -1,10 +1,16 @@
 "use client";
-import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import React from "react";
 import "./Contact.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa6";
 
 const ContactUs = () => {
   return (
@@ -20,11 +26,10 @@ const ContactUs = () => {
                 <div className="contact-header-title">
                   <h1>Contact Us</h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the standard
-                    dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
+                    Al Jamia Arts and Science College (AJAS), a resourceful
+                    destination for higher studies in the region, was
+                    established in 2010 with the main objective of uplifting the
+                    educationally developing Muslims and other communities.
                   </p>
                 </div>
                 <div className="contact-header-phone">
@@ -76,7 +81,7 @@ const ContactUs = () => {
             <Col xl={6}>
               <div className="contact-header-map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15665.54081443219!2d76.21293589105628!3d11.009698189352825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cce05a42ee09%3A0x54f67afa3d76f84d!2sAl%20Jamia%20Arts%20and%20Science%20College!5e0!3m2!1sen!2sin!4v1690361731329!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2670557627926!2d76.22156737457779!3d11.018578854681394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cd2a01624cbd%3A0xacc202556b7e348d!2sAl%20Jamia%20Al%20Islamiya!5e0!3m2!1sen!2sin!4v1690781859394!5m2!1sen!2sin"
                   width="600"
                   height="450"
                   style={{ border: "0" }}
@@ -90,7 +95,55 @@ const ContactUs = () => {
           </Row>
         </Container>
       </div>
-      <Footer />
+      <div className="footer-end">
+        <Container>
+          <Row>
+            <div>
+              <hr className="footer-line " />
+            </div>
+            <Col xs={12} lg={6} sm={12}>
+              <p className="footer-copyright">
+                © 2023 Al Jamia Al Islamiya Privacy | Developed by
+                <Link
+                  href="https://datahex.in/"
+                  className="datahex-link"
+                  target="blank"
+                >
+                  DataHex
+                </Link>
+              </p>
+            </Col>
+            <Col
+              xs={12}
+              lg={6}
+              sm={12}
+              className="footer-social-icons"
+              style={{ display: "flex", justifyContent: "flex-end" }}
+            >
+              <span>
+                <Link href="/" className="footer-social-icons-list">
+                  <FaFacebook />
+                </Link>
+              </span>
+              <span>
+                <Link href="/" className="footer-social-icons-list">
+                  <FaTwitter />
+                </Link>
+              </span>
+              <span>
+                <Link href="/" className="footer-social-icons-list">
+                  <FaInstagram />
+                </Link>
+              </span>
+              <span>
+                <Link href="/" className="footer-social-icons-list">
+                  <FaLinkedin />
+                </Link>
+              </span>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };

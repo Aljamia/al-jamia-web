@@ -21,7 +21,7 @@ const Grades = () => {
         <div className="grid-items">
           {" "}
           <Image
-            src="/Group 2059.svg"
+            src="/Group 2062.svg"
             width={280}
             height={80}
             alt="Picture of the author"
@@ -45,7 +45,7 @@ const Grades = () => {
         <div className="grid-items">
           {" "}
           <Image
-            src="/Group 2059.svg"
+            src="/Group 2060.svg"
             width={280}
             height={80}
             alt="Picture of the author"

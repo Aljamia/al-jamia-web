@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Image from "next/image";
 import "./PageHeader.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const PageHeader = () => {
   useEffect(() => {
@@ -55,14 +57,18 @@ const PageHeader = () => {
                   <ul>
                     <li>
                       <Nav.Link href="#" className="nav-links nav-link-black">
-                        Authorities
+                        Authorities{" "}
+                        <FontAwesomeIcon
+                          icon={faChevronDown}
+                          style={{ fontSize: "18px" }}
+                        />
                       </Nav.Link>
 
                       <ul className="dropdown">
                         <li className="nav-dropdown-links">
                           <Nav.Link href="/management">
                             {" "}
-                            <h5>Management Board</h5>{" "}
+                            <h5>Supreme Council</h5>{" "}
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">

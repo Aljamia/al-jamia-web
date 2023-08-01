@@ -27,7 +27,7 @@ const About = () => {
   return (
     <div>
       <div className="about-Title">
-        <h1>Welcome to Al Jamia al Islamia</h1>
+        <h1>Welcome to Al Jamia al Islamiya</h1>
       </div>
       <div className="about-description">
         <p>
