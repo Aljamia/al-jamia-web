@@ -38,3 +38,8 @@ export const certificate = async () => {
   const response = await axios.get(`${BASE_URL}/administrative-council`);
   return response.data;
 };
+
+export const getventures = async () => {
+  const response = await axios.get(`${BASE_URL}/ventures`);
+  return response.data;
+};
