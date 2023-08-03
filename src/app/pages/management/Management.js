@@ -69,7 +69,7 @@ const Management = () => {
                   variant="primary btn-primary-faculties"
                   onClick={() => handleShow(item)}
                 >
-                  Learn More
+                  View
                 </Button>
                 <Modal
                   key={modalVal?.id}

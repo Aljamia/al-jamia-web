@@ -18,7 +18,7 @@ const Event = () => {
   // Fetch the API data on component mount using Axios
   useEffect(() => {
     axios
-      .get("https://website-builder-api.azurewebsites.net/api/v1/news")
+      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/news")
       .then((response) => {
         setEvents(response.data.response);
         console.log("news data", response.data.response); // Log the data to the console
@@ -100,7 +100,7 @@ const Event = () => {
                 </div>
                 <div className="learn-btn">
                   <button onClick={() => handleClick(events[0]?._id)}>
-                    Learn More
+                    Read More
                   </button>
                 </div>
               </Col>
@@ -119,7 +119,7 @@ const Event = () => {
                               <button>Learn More</button>
                             </Link> */}
                             <button onClick={() => handleClick(event._id)}>
-                              Learn More
+                              Read More
                             </button>
                           </div>
                         </div>

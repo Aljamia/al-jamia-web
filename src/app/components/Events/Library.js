@@ -13,13 +13,14 @@ const Library = () => {
           <div className="library">
             <h1>Central Library</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              eveniet, sit similique eum ipsum fugit tenetur? Aliquid voluptatum
-              perspiciatis eveniet ipsam eius, vero Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Maiores, eaque repellat at earum
-              blanditiis soluta est dolor molestiae deserunt! Autem corporis
-              eius velit voluptatem ipsa iusto, reiciendis cum adipisci eos.
-              consequuntur, aliquam maxime accusantium sequi libero error?
+              Al Jamia Central Library is among the leading reference libraries
+              in India. This celebrated institution, located in a three-story
+              building on the campus of Santapuram al-Jamia, houses over 50,500
+              books in different titles. Additionally, it boasts a unique
+              digital reference library with access to millions of books. The
+              collection mainly comprises books in Arabic, English, Malayalam,
+              and Urdu, but it also includes separate shelves for books in
+              Hindi, Bengali, Tamil, and Kannada.
             </p>
           </div>
           <div className="learn-btn-lib">

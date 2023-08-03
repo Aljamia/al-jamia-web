@@ -114,7 +114,7 @@ const Courses = () => {
                       className="portfolio-btn"
                       onClick={() => handleShow(course)}
                     >
-                      Learn More
+                      Read More
                     </Button>
 
                     <Modal
