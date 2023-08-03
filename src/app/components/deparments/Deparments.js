@@ -5,8 +5,29 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Department.css";
 import Link from "next/link";
-
+import { Col, Row, Card, Modal } from "react-bootstrap";
 const Departments = () => {
+  const [show, setShow] = useState(false);
+  const [modalVal, setModalVal] = useState(false);
+  const [cardValues, setCardValues] = useState([]);
+
+  const handleClose = () => setShow(false);
+
+  const handleShow = (data) => {
+    setShow(true);
+    setModalVal(data);
+  };
+  // Fetch the API data on component mount using Axios
+  useEffect(() => {
+    axios
+      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/department")
+      .then((response) => {
+        setCardValues(response.data?.response);
+        console.log("department data", response.data?.response); // Log the data to the console
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
   // ... (the rest of your settings and useEffect code)
   var settings = {
     dots: true,
@@ -45,19 +66,6 @@ const Departments = () => {
     ],
   };
 
-  const [department, setDepartment] = useState([]);
-
-  // Fetch the API data on component mount using Axios
-  useEffect(() => {
-    axios
-      .get("https://website-builder-api.azurewebsites.net/api/v1//department")
-      .then((response) => {
-        setDepartment(response.data.response);
-        console.log("department data", response.data.response); // Log the data to the console
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
-
   return (
     <div>
       <div className="department-section">
@@ -82,17 +90,49 @@ const Departments = () => {
         </div>
         <div className="carousel-2">
           <Slider {...settings}>
-            {department.map((dept) => (
-              <div className="box" key={dept._id}>
+            {cardValues.map((department) => (
+              <div className="box" key={department.id}>
                 <div className="caro-img">
                   <img src="book.png" alt="" />
                 </div>
                 <div className="caro-des">
-                  <h4>{dept.description.substring(0, 30)}...</h4>
+                  <h4>{department.description.substring(0, 30)}</h4>
                   <div className="caro-btn">
-                    <Link href="/coursepage">
-                      <button>Learn More</button>
-                    </Link>
+                    <button onClick={() => handleShow(department)}>
+                      Learn More
+                    </button>
+
+                    <Modal
+                      key={modalVal?.id}
+                      show={show}
+                      onHide={handleClose}
+                      size="lg"
+                      className="Course-modal"
+                    >
+                      <Modal.Header closeButton></Modal.Header>
+                      <Modal.Body>
+                        <Row className="course-modalitems">
+                          <Col xl={6} xs={12} sm={12}>
+                            <Card className="faculties-cardmodal shadow-sm">
+                              {/* <Card.Img
+                                variant="top"
+                                className="course-card-modalimages"
+                                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
+                              /> */}
+                            </Card>
+                          </Col>
+                          <Col xl={6} xs={12} sm={12}>
+                            <Card.Title className="course-cardmodal-title">
+                              {modalVal?.courseName}
+                            </Card.Title>
+
+                            <Card.Text className="course-cardmodal-text">
+                              {modalVal?.description}
+                            </Card.Text>
+                          </Col>
+                        </Row>
+                      </Modal.Body>
+                    </Modal>
                   </div>
                 </div>
               </div>

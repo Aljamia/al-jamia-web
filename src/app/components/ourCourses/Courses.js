@@ -25,46 +25,46 @@ const Courses = () => {
     fetchCourse();
   }, []);
 
-  const fields = [
-    {
-      title: "Certificate",
-      content: <p>The course is about a majid alsharia in al-ja mia</p>,
-      styleIn: 4,
-      functionName: "certificate",
-    },
-    {
-      title: "Diploma",
-      content: <p>almajia sample course page mia</p>,
-      styleIn: 4,
-      functionName: "diploma",
-    },
-    {
-      title: "Short Term",
-      content: (
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, sint.
-          Aspernatur excepturi consequatur, iure incidunt ut quae sed dolore
-          repellat maxime cum illum, magni pariatur delectus accusamus
-          voluptate, modi magnam!
-        </p>
-      ),
-      styleIn: 4,
-      functionName: "shortTerm",
-    },
-  ];
+  // const fields = [
+  //   {
+  //     title: "Certificate",
+  //     content: <p>The course is about a majid alsharia in al-ja mia</p>,
+  //     styleIn: 4,
+  //     functionName: "certificate",
+  //   },
+  //   {
+  //     title: "Diploma",
+  //     content: <p>almajia sample course page mia</p>,
+  //     styleIn: 4,
+  //     functionName: "diploma",
+  //   },
+  //   {
+  //     title: "Short Term",
+  //     content: (
+  //       <p>
+  //         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, sint.
+  //         Aspernatur excepturi consequatur, iure incidunt ut quae sed dolore
+  //         repellat maxime cum illum, magni pariatur delectus accusamus
+  //         voluptate, modi magnam!
+  //       </p>
+  //     ),
+  //     styleIn: 4,
+  //     functionName: "shortTerm",
+  //   },
+  // ];
 
-  const handleClick = async (functionName) => {
-    if (functionName === "certificate") {
-      const data = await getFaculties();
-      setCardValues(data.response);
-    } else if (functionName === "diploma") {
-      const data = await getAboutUsGallery();
-      setCardValues(data.response);
-    } else {
-      const data = await getCourse();
-      setCardValues(data?.response);
-    }
-  };
+  // const handleClick = async (functionName) => {
+  //   if (functionName === "certificate") {
+  //     const data = await getFaculties();
+  //     setCardValues(data.response);
+  //   } else if (functionName === "diploma") {
+  //     const data = await getAboutUsGallery();
+  //     setCardValues(data.response);
+  //   } else {
+  //     const data = await getCourse();
+  //     setCardValues(data?.response);
+  //   }
+  // };
 
   return (
     <div className="course">
