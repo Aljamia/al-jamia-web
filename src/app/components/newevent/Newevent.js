@@ -24,16 +24,16 @@ const Newevent = () => {
     vertical: true,
     verticalSwiping: true,
     autoplay: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     autoplaySpeed: 2000,
-    slidesToScroll: 3, // Change this value to control how many slides scroll at once
+    slidesToScroll: 1, // Change this value to control how many slides scroll at once
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -55,16 +55,12 @@ const Newevent = () => {
       },
     ],
   };
-
+  const sliderHeight = "1200px"; // Set your desired height here
   return (
-    <div>
+    <div style={{ height: sliderHeight }}>
       <Slider {...settings}>
         {news.map((newsItem, index) => (
-          <div
-            key={index}
-            className="slide-content"
-            style={{ height: "500px" }}
-          >
+          <div key={index} className="slide-content">
             <Container fluid>
               <Row>
                 <Col xs={12} xl={6} lg={6}>

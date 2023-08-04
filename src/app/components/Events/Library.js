@@ -4,7 +4,7 @@ import "./Event.css";
 import Link from "next/link";
 const Library = () => {
   return (
-    <div>
+    <div className="library-event">
       <div className="event-section-2">
         <div className="event-s-img ">
           <img src="Mask group.png" alt="" width="100%" />
@@ -24,7 +24,7 @@ const Library = () => {
             </p>
           </div>
           <div className="learn-btn-lib">
-            <button>
+            <button className="library-btn">
               {" "}
               <span>
                 <svg

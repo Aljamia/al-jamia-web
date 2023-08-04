@@ -16,6 +16,7 @@
   color: #555555;
 }
 .events-section {
+  padding: 2em;
   background-color: #f8f8f8;
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
 }
@@ -30,35 +31,23 @@
   color: #619a46;
   font-family: var(--font-pt-serif);
 }
+.event-des {
+  margin-top: 1em;
+}
 .event-btn {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .event-btn button {
   border: none;
-  border-radius: 7px;
+  border-radius: 10px;
   padding: 5px 7px 5px;
   color: #fff;
   background-color: rgba(97, 154, 70, 0.75);
   font-family: var(--font-inter);
 }
-.learn-btn {
-  padding-bottom: 1rem;
-}
-.learn-btn button {
-  border: none;
-  border-radius: 5px;
-  background-color: #b6acac93;
-  font-size: 13px;
-  padding: 5px 10px;
-  font-family: var(--font-inter);
-}
-.learn-btn-lib button {
+.event-btn-right:hover {
   color: #fff;
   background-color: #cca65d;
-  padding: 7px 20px;
-  border: none;
-  border-radius: 5px;
-  font-family: var(--font-inter);
 }
 span {
   padding-left: 10px;
@@ -95,14 +84,84 @@ span {
   font-family: var(--font-inter);
   font-size: 20px;
 }
-/***** left side *****/
+.library-btn {
+  color: #fff;
+  background-color: #cca65d;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-inter);
+}
+/* --right side carouse */
 
-/***** End left side *****/
+.right-event-caro {
+  display: flex !important;
+  border-radius: none;
+  margin-top: 1rem;
+  box-shadow: none;
+  background-color: #f8f8f8;
+}
+.event-caro-img img {
+  width: 230px;
+  border-radius: 10px;
+}
+.right-event-des {
+  width: 80%;
+  background-color: #b6acac93;
+}
+.right-event-des h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  font-family: var(--font-inter) !important;
+}
+.right-event-des p {
+  font-size: 16px;
+  font-family: var(--font-inter) !important;
+}
 
-/* .slick-dots {
+.right-learn-btn button {
+  border: none;
+  border-radius: 5px;
+  background-color: #b6acac93;
+  font-size: 13px;
+  padding: 3px 30px;
+  font-family: var(--font-inter);
+}
+.right-learn-btn button:hover {
+  background-color: #cca65d;
+  color: #fff;
+}
+.event-btn-right {
+  border: none;
+  border-radius: 5px;
+  background-color: #b6acac93;
+  font-size: 13px;
+  padding: 3px 30px;
+  font-family: var(--font-inter);
+}
+.event-slick {
+  margin: 0px !important;
+  padding: 0 !important;
+  margin: 0 0.5rem;
+  opacity: 1;
+}
+.event-slick div {
+  margin: 0 0.5rem;
+  background-color: transparent !important;
+  opacity: 1;
+}
+.carouselevent {
+  background-color: #f8f8f8;
+}
+.carouselevent {
+  position: relative;
+}
+
+.slick-dots {
   position: absolute;
   top: 40%;
-  left: -30%;
+  right: -30%;
   transform: translateY(-50%) rotate(90deg);
   display: none !important;
 }
@@ -113,12 +172,13 @@ span {
 
 .slick-dots li button {
   padding: 0;
-  width: 10px; 
-  height: 10px;
+  width: 10px; /* Adjust the value as needed */
+  height: 10px; /* Adjust the value as needed */
   border-radius: 50%;
-} */
+}
 
 /* Optional: Add styling to the active dot */
+
 .slick-prev {
   display: none !important;
 }
@@ -129,13 +189,34 @@ span {
   padding-top: 7rem;
 }
 /* ----------media query for small screen */
-
+@media screen and (max-width: 550px) {
+  .right-event-des h4 {
+    font-size: 12px;
+    color: black;
+    font-weight: 400;
+  }
+  .right-event-des p {
+    font-size: 10px;
+    text-align: left !important;
+  }
+}
 @media screen and (max-width: 1200px) {
   .slick-dots {
     display: none !important;
   }
 }
 @media screen and (max-width: 600px) {
+  .right-event-caro {
+    display: flex !important;
+    border-radius: none;
+    margin-top: 0rem;
+    box-shadow: none;
+    background-color: #f8f8f8;
+  }
+  .event-caro-img img {
+    width: 100px !important;
+    height: auto;
+  }
   .event-btn button {
     border: none;
     border-radius: 7px;
@@ -155,22 +236,4 @@ span {
   .library p {
     text-align: left;
   }
-}
-
-.events-slider {
-  position: relative;
-  text-align: justify;
-  padding: 2em;
-  width: 100%;
-  height: 700px;
-}
-.slick-dots {
-  display: none !important;
-}
-.slider-news {
-  padding: 1em;
-  border: 2px solid red;
-}
-.news-rows {
-  padding: 0.5em;
 }

@@ -6,13 +6,15 @@ import "./Event.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { getNews } from "@/app/hooks/UseApi";
 
 const Event = () => {
+  const router = useRouter();
   const [events, setEvents] = useState([]);
+
+  // Fetch the API data on component mount using Axios
+
   useEffect(() => {
     const fetchNews = async () => {
       const data = await getNews();
@@ -21,33 +23,33 @@ const Event = () => {
     fetchNews();
   }, []);
 
-  const settings = {
+  var settings = {
     dots: true,
     infinite: true,
     speed: 1000,
-    vertical: true,
-    verticalSwiping: true,
-    autoplay: true,
     slidesToShow: 2,
-    autoplaySpeed: 2000,
-    slidesToScroll: 1, // Change this value to control how many slides scroll at once
+    slidesToScroll: 1,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    vertical: true, // Set the vertical option to true
+    verticalSwiping: true, // Enable vertical swiping
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -75,15 +77,13 @@ const Event = () => {
         <div className="event-first-section">
           <Container>
             <Row>
-              <Col xl={4}>
+              <Col xl={5}>
                 <div className="event-img">
-                  <Image
+                  <img
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
                     alt=""
-                    layout="responsive"
+                    width="100%"
                     style={{ borderRadius: "10px" }}
-                    width={200} // Set the desired width of the image
-                    height={300} // Set the desired height of the image
                   />
                 </div>
                 <div className="event-btn">
@@ -95,64 +95,49 @@ const Event = () => {
                   <p>{events[0]?.description.substring(0, 150)}</p>
                 </div>
                 <div className="learn-btn">
-                  <button onClick={() => handleClick(events[0]?._id)}>
-                    Read More
+                  <button
+                    className="event-btn-right"
+                    onClick={() => handleClick(events[0]?._id)}
+                  >
+                    More
                   </button>
                 </div>
               </Col>
-              <Col xl={8}>
-                {/* <div className="carouselevent">
+              <Col xl={7}>
+                <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
                     {events.map((event) => (
                       <div key={event._id} className="right-event-caro">
                         <div className="right-event-des">
                           <h4>{event.title}</h4>
-                          <p>{new Date(event.date).toDateString()}</p>
+                          <p>
+                            {new Date(event.date).toDateString()}{" "}
+                            <span>
+                              {" "}
+                              <hr style={{ color: "grey" }} />
+                            </span>
+                          </p>
                           <p>{event.description.substring(0, 150)}</p>
                           <div className="right-learn-btn">
-                            <button onClick={() => handleClick(event._id)}>
-                              Read More
+                            {/* Use Link to navigate to the dynamic event details page */}
+                            {/* <Link href={`/testpage?${event._id}`}>
+                              <button>Learn More</button>
+                            </Link> */}
+                            <button
+                              className="event-btn-right"
+                              onClick={() => handleClick(event._id)}
+                            >
+                              More
                             </button>
                           </div>
                         </div>
                         <div className="event-caro-img">
-                          <Image
+                          <img
                             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                             alt=""
-                            layout="responsive"
-                            width={300}
-                            height={100}
+                            className="event-img-items"
                           />
                         </div>
-                      </div>
-                    ))}
-                  </Slider>
-                </div> */}
-                <div className="slider-news">
-                  <Slider {...settings}>
-                    {events.map((events, index) => (
-                      <div
-                        key={index}
-                        className="slide-content"
-                        style={{ height: "500px" }}
-                      >
-                        <Container fluid>
-                          <Row className="news-rows">
-                            <Col xs={12} xl={6} lg={6}>
-                              <p>{events.description}</p>
-                            </Col>
-                            <Col xs={12} xl={6} lg={6}>
-                              <Image
-                                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events.image}`}
-                                alt=""
-                                width={200}
-                                height={160}
-                                className="right-img"
-                                style={{ borderRadius: "5px" }}
-                              />
-                            </Col>
-                          </Row>
-                        </Container>
                       </div>
                     ))}
                   </Slider>
@@ -161,29 +146,6 @@ const Event = () => {
             </Row>
           </Container>
         </div>
-        {/* <div className="event-section-2">
-          <div className="event-s-img">
-            <img src="Mask group.png" alt="" width="100%" />
-          </div>
-          <Container>
-            <div className="library">
-              <h2>Central Library</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                eveniet, sit similique eum ipsum fugit tenetur? Aliquid
-                voluptatum perspiciatis eveniet ipsam eius, vero Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Maiores, eaque
-                repellat at earum blanditiis soluta est dolor molestiae
-                deserunt! Autem corporis eius velit voluptatem ipsa iusto,
-                reiciendis cum adipisci eos. consequuntur, aliquam maxime
-                accusantium sequi libero error?
-              </p>
-            </div>
-            <div className="learn-btn">
-              <button>Learn More</button>
-            </div>
-          </Container>
-        </div> */}
       </div>
     </div>
   );
