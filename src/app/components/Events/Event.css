@@ -95,61 +95,14 @@ span {
   font-family: var(--font-inter);
   font-size: 20px;
 }
-/* --right side carouse */
+/***** left side *****/
 
-.right-event-caro {
-  display: flex !important;
-  border-radius: none;
-  margin-top: 1rem;
-  box-shadow: none;
-  background-color: #f8f8f8;
-}
-.right-event-des {
-  background-color: #b6acac93;
-}
-.right-event-des h4 {
-  font-size: 20px;
-  color: black;
-  font-family: var(--font-inter) !important;
-}
-.right-event-des p {
-  font-size: 15px;
-  font-family: var(--font-inter) !important;
-  margin-top: 0 !important;
-}
-.right-learn-btn {
-  padding-bottom: 10px;
-}
-.right-learn-btn button {
-  border: none;
-  border-radius: 5px;
-  background-color: #b6acac93;
-  font-size: 13px;
-  padding: 5px 10px;
-  font-family: var(--font-inter);
-}
-.event-slick {
-  margin: 0px !important;
-  padding: 0 !important;
-  margin: 0 0.5rem;
-  opacity: 1;
-}
-.event-slick div {
-  margin: 0 0.5rem;
-  background-color: transparent !important;
-  opacity: 1;
-}
-.carouselevent {
-  background-color: #f8f8f8;
-}
-.carouselevent {
-  position: relative;
-}
+/***** End left side *****/
 
-.slick-dots {
+/* .slick-dots {
   position: absolute;
   top: 40%;
-  right: -30%;
+  left: -30%;
   transform: translateY(-50%) rotate(90deg);
   display: none !important;
 }
@@ -160,10 +113,10 @@ span {
 
 .slick-dots li button {
   padding: 0;
-  width: 10px; /* Adjust the value as needed */
-  height: 10px; /* Adjust the value as needed */
+  width: 10px; 
+  height: 10px;
   border-radius: 50%;
-}
+} */
 
 /* Optional: Add styling to the active dot */
 .slick-prev {
@@ -176,21 +129,7 @@ span {
   padding-top: 7rem;
 }
 /* ----------media query for small screen */
-@media screen and (max-width: 550px) {
-  .right-event-des h4 {
-    font-size: 16px;
-    color: black;
-  }
-  .right-event-des p {
-    font-size: 10px;
-    text-align: left !important;
-  }
 
-  .right-event-caro {
-    margin-top: 2.2em !important;
-    margin-left: -20px !important;
-  }
-}
 @media screen and (max-width: 1200px) {
   .slick-dots {
     display: none !important;
@@ -216,4 +155,22 @@ span {
   .library p {
     text-align: left;
   }
+}
+
+.events-slider {
+  position: relative;
+  text-align: justify;
+  padding: 2em;
+  width: 100%;
+  height: 700px;
+}
+.slick-dots {
+  display: none !important;
+}
+.slider-news {
+  padding: 1em;
+  border: 2px solid red;
+}
+.news-rows {
+  padding: 0.5em;
 }

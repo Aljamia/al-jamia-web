@@ -6,7 +6,7 @@ const Library = () => {
   return (
     <div>
       <div className="event-section-2">
-        <div className="event-s-img">
+        <div className="event-s-img ">
           <img src="Mask group.png" alt="" width="100%" />
         </div>
         <Container className="headlibrary">

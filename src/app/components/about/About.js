@@ -1,28 +1,20 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import "./About.css";
 import Link from "next/link";
 import Annoucement from "../annoucement/Annoucement";
+import { getAboutUs } from "@/app/hooks/UseApi";
 
 const About = () => {
-  const [data, setData] = useState({});
+  const [aboutdata, setAboutData] = useState({});
 
   useEffect(() => {
-    // Function to fetch data from the API
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "https://website-builder-api.azurewebsites.net/api/v1//about-us"
-        );
-        setData(response.data.response[0]); // Set the response data to state
-        console.log("Fetched data:", response.data.response[0]); // Log the fetched data to the console
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
+    const fetchAboutus = async () => {
+      const data = await getAboutUs();
+      setAboutData(data?.response);
     };
 
-    fetchData();
-  }, []); // Empty dependency array ensures the effect runs only once when the component mounts
+    fetchAboutus();
+  }, []);
 
   return (
     <div>
@@ -30,9 +22,7 @@ const About = () => {
         <h1>Welcome to Al Jamia al Islamiya</h1>
       </div>
       <div className="about-description">
-        <p>
-          {data && data.shortDescription ? data.shortDescription : "Loading..."}
-        </p>
+        <p>{aboutdata && aboutdata[0]?.shortDescription}</p>
       </div>
       <div className="school-img">
         <div className="btn">

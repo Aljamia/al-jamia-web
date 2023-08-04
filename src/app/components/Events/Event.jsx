@@ -6,51 +6,46 @@ import "./Event.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import axios from "axios"; // Import Axios
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { getNews } from "@/app/hooks/UseApi";
 
 const Event = () => {
-  const router = useRouter();
   const [events, setEvents] = useState([]);
-
-  // Fetch the API data on component mount using Axios
   useEffect(() => {
-    axios
-      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/news")
-      .then((response) => {
-        setEvents(response.data.response);
-        console.log("news data", response.data.response); // Log the data to the console
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+    const fetchNews = async () => {
+      const data = await getNews();
+      setEvents(data?.response);
+    };
+    fetchNews();
   }, []);
 
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    initialSlide: 0,
+    speed: 1000,
+    vertical: true,
+    verticalSwiping: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    vertical: true, // Set the vertical option to true
-    verticalSwiping: true, // Enable vertical swiping
+    slidesToShow: 2,
+    autoplaySpeed: 2000,
+    slidesToScroll: 1, // Change this value to control how many slides scroll at once
+    initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -80,12 +75,13 @@ const Event = () => {
         <div className="event-first-section">
           <Container>
             <Row>
-              <Col xl={5}>
+              <Col xl={4}>
                 <div className="event-img">
                   <Image
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
                     alt=""
                     layout="responsive"
+                    style={{ borderRadius: "10px" }}
                     width={200} // Set the desired width of the image
                     height={300} // Set the desired height of the image
                   />
@@ -104,8 +100,8 @@ const Event = () => {
                   </button>
                 </div>
               </Col>
-              <Col xl={7}>
-                <div className="carouselevent">
+              <Col xl={8}>
+                {/* <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
                     {events.map((event) => (
                       <div key={event._id} className="right-event-caro">
@@ -114,10 +110,6 @@ const Event = () => {
                           <p>{new Date(event.date).toDateString()}</p>
                           <p>{event.description.substring(0, 150)}</p>
                           <div className="right-learn-btn">
-                            {/* Use Link to navigate to the dynamic event details page */}
-                            {/* <Link href={`/testpage?${event._id}`}>
-                              <button>Learn More</button>
-                            </Link> */}
                             <button onClick={() => handleClick(event._id)}>
                               Read More
                             </button>
@@ -128,10 +120,39 @@ const Event = () => {
                             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                             alt=""
                             layout="responsive"
-                            width={300} // Set the desired width of the image
-                            height={100} // Set the desired height of the image
+                            width={300}
+                            height={100}
                           />
                         </div>
+                      </div>
+                    ))}
+                  </Slider>
+                </div> */}
+                <div className="slider-news">
+                  <Slider {...settings}>
+                    {events.map((events, index) => (
+                      <div
+                        key={index}
+                        className="slide-content"
+                        style={{ height: "500px" }}
+                      >
+                        <Container fluid>
+                          <Row className="news-rows">
+                            <Col xs={12} xl={6} lg={6}>
+                              <p>{events.description}</p>
+                            </Col>
+                            <Col xs={12} xl={6} lg={6}>
+                              <Image
+                                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events.image}`}
+                                alt=""
+                                width={200}
+                                height={160}
+                                className="right-img"
+                                style={{ borderRadius: "5px" }}
+                              />
+                            </Col>
+                          </Row>
+                        </Container>
                       </div>
                     ))}
                   </Slider>

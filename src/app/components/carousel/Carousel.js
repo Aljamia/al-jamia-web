@@ -30,6 +30,8 @@ const CarouselComponent = () => {
     autoplay: true,
     autoplaySpeed: 6000,
     pauseOnHover: false,
+    nextArrow: false,
+    prevArrow: false,
   };
   return (
     <div className="header">

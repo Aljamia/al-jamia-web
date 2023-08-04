@@ -43,3 +43,8 @@ export const getventures = async () => {
   const response = await axios.get(`${BASE_URL}/ventures`);
   return response.data;
 };
+
+export const getNews = async () => {
+  const response = await axios.get(`${BASE_URL}/news`);
+  return response.data;
+};
