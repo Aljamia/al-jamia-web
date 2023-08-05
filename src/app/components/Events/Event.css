@@ -16,7 +16,7 @@
   color: #555555;
 }
 .events-section {
-  padding: 2em;
+  padding: 1em;
   background-color: #f8f8f8;
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
 }
@@ -103,10 +103,9 @@ span {
 }
 .event-caro-img img {
   width: 230px;
-  border-radius: 10px;
 }
 .right-event-des {
-  width: 80%;
+  width: 100%;
   background-color: #b6acac93;
 }
 .right-event-des h4 {
@@ -152,10 +151,8 @@ span {
   opacity: 1;
 }
 .carouselevent {
-  background-color: #f8f8f8;
-}
-.carouselevent {
   position: relative;
+  background-color: #f8f8f8;
 }
 
 .slick-dots {
@@ -206,6 +203,10 @@ span {
   }
 }
 @media screen and (max-width: 600px) {
+  .carouselevent {
+    margin-top: 3em;
+  }
+
   .right-event-caro {
     display: flex !important;
     border-radius: none;

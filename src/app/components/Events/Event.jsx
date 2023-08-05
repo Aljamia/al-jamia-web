@@ -82,8 +82,7 @@ const Event = () => {
                   <img
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
                     alt=""
-                    width="100%"
-                    style={{ borderRadius: "10px" }}
+                    style={{ borderRadius: "10px", width: "100%" }}
                   />
                 </div>
                 <div className="event-btn">
@@ -117,7 +116,7 @@ const Event = () => {
                               <hr style={{ color: "grey" }} />
                             </span>
                           </p>
-                          <p>{event.description.substring(0, 150)}</p>
+                          <p>{event.description.substring(0, 165)}</p>
                           <div className="right-learn-btn">
                             {/* Use Link to navigate to the dynamic event details page */}
                             {/* <Link href={`/testpage?${event._id}`}>
