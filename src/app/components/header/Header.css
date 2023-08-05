@@ -66,7 +66,7 @@
 }
 
 .navbar-fixed-top.scrolled .nav-link-black {
-  color: #555 !important;
+  color: black !important;
 }
 
 .navbar-fixed-top.scrolled {
@@ -157,7 +157,7 @@ nav.primary-navigation ul li ul li {
     background-color: white !important;
   }
   .nav-carousel {
-    background: rgba(42, 83, 90, 0.06);
+    background-color: #ffffff;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -166,7 +166,7 @@ nav.primary-navigation ul li ul li {
   }
 
   .nav-links {
-    color: #d0a356 !important;
+    color: black !important;
     margin-top: -5px;
     height: 2px;
     font-family: var(--font-inter);
@@ -188,10 +188,11 @@ nav.primary-navigation ul li ul li {
     top: -80%;
     display: none;
     border-radius: 10px;
-    background: white;
+    background: rgb(242, 241, 239);
   }
   nav.primary-navigation ul li ul h5 {
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
   }
   nav.primary-navigation ul li:hover > ul,
   nav.primary-navigation ul li ul:hover {
