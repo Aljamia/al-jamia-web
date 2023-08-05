@@ -53,24 +53,34 @@
   padding: 3em;
   margin-top: 3em;
 }
+.central-lib-title {
+  text-align: center;
+  font-family: var(--font-PT-serif);
+  color: var(--light-green-color);
+  font-size: 40px;
+  padding: 1em;
+}
 .central-lib-cards {
-  padding: 0.5em;
+  padding: 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .central-lib__carditems {
   margin: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .AboutUspage-header {
     margin-top: 2em;
   }
   .AboutUspage-title {
     font-size: 30px;
+  }
+  .AboutUspage-vision {
+    flex-direction: column;
   }
   .AboutUspage-vision-title {
     font-size: 30px;
@@ -79,30 +89,23 @@
   .AboutUspage-mission-title {
     font-size: 30px;
   }
-  .AboutUspage-campus-title {
-    font-size: 30px;
-  }
-  .AboutUspage-mission-img {
-    margin-top: 0px;
-  }
-}
-
-@media (max-width: 800px) {
-  .AboutUspage-vision {
-    flex-direction: column;
-  }
-  .AboutUspage-vision-title {
-    text-align: left;
-    width: 100%;
-  }
   .AboutUspage-vision-desc {
     width: 100%;
     margin-left: 0px;
     margin-top: 0.2em;
     text-align: justify;
   }
-  .grid-wrapper {
-    margin-top: 1em;
-    padding: 0px;
+  .AboutUspage-campus-title {
+    font-size: 30px;
+  }
+  .AboutUspage-mission-img {
+    margin-top: 0px;
+  }
+  .central-lib-title {
+    text-align: center;
+    font-family: var(--font-PT-serif);
+    color: var(--light-green-color);
+    font-size: 22px;
+    padding: 0.5em;
   }
 }

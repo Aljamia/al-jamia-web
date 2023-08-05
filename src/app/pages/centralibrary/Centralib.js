@@ -75,6 +75,7 @@ const Centralib = () => {
           </>
         </div>
         <div className="AboutUspage-items">
+          <h2 className="central-lib-title">Explore The Our Publications</h2>
           <Container>
             <Row>
               <div className="central-lib-cards">
@@ -89,6 +90,36 @@ const Centralib = () => {
                   className="central-lib__carditems"
                 >
                   <Card.Img variant="top" src="/Rectangle 993.png" />
+                </Card>
+                <Card
+                  style={{ width: "18rem" }}
+                  className="central-lib__carditems"
+                >
+                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
+                </Card>
+                <Card
+                  style={{ width: "18rem" }}
+                  className="central-lib__carditems"
+                >
+                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
+                </Card>
+                <Card
+                  style={{ width: "18rem" }}
+                  className="central-lib__carditems"
+                >
+                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
+                </Card>
+                <Card
+                  style={{ width: "18rem" }}
+                  className="central-lib__carditems"
+                >
+                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
+                </Card>
+                <Card
+                  style={{ width: "18rem" }}
+                  className="central-lib__carditems"
+                >
+                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
                 </Card>
                 <Card
                   style={{ width: "18rem" }}

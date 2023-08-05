@@ -42,8 +42,8 @@ const Departments = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -52,8 +52,7 @@ const Departments = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
         },
       },
       {
@@ -96,11 +95,9 @@ const Departments = () => {
                   <img src="book.png" alt="" />
                 </div>
                 <div className="caro-des">
-                  <h4>{department.description.substring(0, 30)}</h4>
+                  <h4>{department.courseName}</h4>
                   <div className="caro-btn">
-                    <button onClick={() => handleShow(department)}>
-                      Learn More
-                    </button>
+                    <button onClick={() => handleShow(department)}>More</button>
 
                     <Modal
                       key={modalVal?.id}

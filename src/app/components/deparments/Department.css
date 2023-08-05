@@ -28,6 +28,7 @@
 }
 .department-para p {
   color: #555555;
+  height: auto;
   font-family: var(--font-inter);
   font-size: 20px;
   text-align: center;
@@ -35,7 +36,6 @@
 
 /* -----------carousel side */
 .carousel-2 {
-  padding: 1em;
   color: #fff;
   margin: 20px;
   background-color: #f8f8f8;
@@ -73,7 +73,6 @@
 }
 .caro-des h4 {
   padding-top: 1rem;
-
   color: #cca65d;
   text-align: center;
   font-family: var(--font-pt-serif);
@@ -86,10 +85,30 @@
   margin-top: 20px !important;
 }
 .caro-btn button {
-  color: #000;
-  padding: 3px 7px;
   border: none;
-  border-radius: 3px;
-  background-color: #e2dddd;
+  border-radius: 5px;
+  background-color: #b6acac93;
+  font-size: 13px;
+  padding: 3px 30px;
+  color: black;
   font-family: var(--font-inter);
+}
+.caro-btn button:hover {
+  background-color: var(--goldish-color);
+}
+@media (max-width: 378px) {
+  .carousel-2 {
+    color: #fff;
+    margin: 0px;
+    margin-left: 25px;
+    background-color: #f8f8f8;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 500px) {
+  .carousel-2 {
+    color: #fff;
+    margin: 60px;
+    background-color: #f8f8f8;
+  }
 }
