@@ -50,61 +50,6 @@ function HomePage(eventId) {
             </div>
           </div>
         </Container>
-        {/* news finesh--------------------------------- */}
-        {/* <div className="event-first-section">
-          <Container>
-            <Row>
-              <Col xl={5}>
-                <div className="event-img">
-                  <img
-                    src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${newsData[0]?.image}`}
-                    alt=""
-                    width="100%"
-                  />
-                </div>
-                <div className="event-btn">
-                  <button>Up Coming Events</button>
-                  <span>{new Date(newsData[0]?.date).toDateString()}</span>
-                </div>
-                <div className="event-des">
-                  <h4>{newsData[0]?.title}</h4>
-                  <p>{newsData[0]?.description.substring(0, 150)}</p>
-                </div>
-                <div className="learn-btn">
-                <button onClick={() => handleClick(events[0]?._id)}>
-                    Learn More
-                  </button>
-                </div>
-              </Col>
-              <Col xl={7}>
-                <div className="carouselevent">
-                  <Slider {...settings} className="event-slick">
-                    {newsData.map((event) => (
-                      <div key={event._id} className="right-event-caro">
-                        <div className="right-event-des">
-                          <h4>{event.title}</h4>
-                          <p>{new Date(event.date).toDateString()}</p>
-                          <p>{event.description.substring(0, 150)}</p>
-                          <div className="right-learn-btn">
-                            <button onClick={() => handleClick(event._id)}>
-                              Learn More
-                            </button>
-                          </div>
-                        </div>
-                        <div className="event-caro-img">
-                          <img
-                            src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </Slider>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </div> */}
         <Event event-section-2={false} />
       </div>
       <Footer />
