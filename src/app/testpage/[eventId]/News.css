@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 :root {
@@ -11,16 +10,14 @@
   --font-martel: "Martel", serif;
 }
 
-.event-first-section{
-    background-color: 
-    #F8F8F8 !important;
-    /* margin-top: 2rem; */
-   
+.event-first-section {
+  background-color: #f8f8f8 !important;
+  /* margin-top: 2rem; */
 }
-.news-section{
+.news-section {
   margin-top: 8rem;
 }
-.news-title h1{
+.news-title h1 {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -32,10 +29,12 @@
   padding-bottom: 40px;
   font-family: var(--font-inter);
 }
-.new-img img{
-  width: 100%;
+.new-img img {
+  margin: auto;
+  width: 50%;
   height: 30rem;
-  padding: 0 40px;
+  padding: auto;
+  transform: translateX(50%);
 }
 @media screen and (max-width: 900px) {
   .new-img img {
@@ -43,34 +42,33 @@
     /* Alternatively, you can set height to '0' if you want it to have no height at all */
     /* height: 0; */
   }
-  .news-title h1{
+  .news-title h1 {
     font-size: 20px;
   }
-  .news-para p{
+  .news-para p {
     font-size: 14px !important;
   }
 }
 .news-para {
   margin-top: 20px;
-}  
+}
 
-.news-para p{
+.news-para p {
   align-items: center;
   justify-content: center;
   display: flex;
-    text-align: center;
-    font-family: var(--font-inter);
-    color: #555555;
-    font-size: 19px;
-    padding: 0 40px; /* Adjust the value as needed */
-    font-family: var(--font-inter);
+  text-align: center;
+  font-family: var(--font-inter);
+  color: #555555;
+  font-size: 19px;
+  padding: 0 40px; /* Adjust the value as needed */
+  font-family: var(--font-inter);
 }
 
-#news-container{
+#news-container {
   display: flex !important;
 }
 /* -------------------------------------------- */
-
 
 .event-first-section p {
   color: #555555;
@@ -115,9 +113,6 @@ span {
   padding-left: 10px;
   font-family: var(--font-inter);
 }
-
-
-
 
 /* last updated------------- */
 .right-event-caro {
@@ -168,7 +163,6 @@ span {
 }
 .carouselevent {
   background-color: #f8f8f8;
-  
 }
 .carouselevent {
   position: relative;
@@ -180,7 +174,6 @@ span {
   right: -30%;
   transform: translateY(-50%) rotate(90deg);
   display: none !important;
-
 }
 
 .slick-dots li {

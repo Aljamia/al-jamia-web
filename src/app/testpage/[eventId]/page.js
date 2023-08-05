@@ -10,55 +10,13 @@ import Event from "@/app/components/Events/Event";
 import Footer from "@/app/components/footer/Footer";
 
 function HomePage(eventId) {
-  // ----slider---------
-  // var settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   initialSlide: 0,
-  //   autoplay: true,
-  //   autoplaySpeed: 1000,
-  //   vertical: true, // Set the vertical option to true
-  //   verticalSwiping: true, // Enable vertical swiping
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 3,
-  //         infinite: true,
-  //         dots: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 2,
-  //         initialSlide: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // };
-  // const [newsData, setNewsData] = useState([]);
-  // const router = useRouter();
-  // const { eventId } = router.query;
   console.log("connected", { eventId });
   const [events, setEvents] = useState([]);
 
   // Fetch the API data on component mount using Axios
   useEffect(() => {
     axios
-      .get("https://website-builder-api.azurewebsites.net/api/v1/news", {
+      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/news", {
         params: {
           id: eventId.params.eventId,
         },

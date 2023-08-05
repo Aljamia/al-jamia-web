@@ -69,13 +69,13 @@ const News = () => {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://website-builder-api.azurewebsites.net/api/v1/news"
+          "https://aljamia-hgtgv.ondigitalocean.app/api/v1/news"
         );
         const data = await response.json();
         setNewsData(data.response.slice(0, 4)); // Slice the array to extract the first 4 elements
 
         // Check if there is data available before setting the state
-     
+
         console.log("news data", data.response);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -96,7 +96,7 @@ const News = () => {
               <h1>{h1Content}</h1>
             </div>
             <div className="new-img">
-              <img src={imgSrc} alt="" width="100%" />
+              <img src={imgSrc} alt="" style={{ width: "50%" }} />
             </div>
             <div className="news-para">
               <p>{pContent}</p>
