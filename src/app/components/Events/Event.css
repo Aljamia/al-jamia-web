@@ -231,10 +231,10 @@ span {
   .slick-dots li button {
     display: none;
   }
-  .library h2 {
-    align-items: center;
+  .library h1 {
+    text-align: center;
   }
   .library p {
-    text-align: left;
+    text-align: center;
   }
 }

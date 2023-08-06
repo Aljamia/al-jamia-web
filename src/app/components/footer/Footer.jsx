@@ -58,15 +58,25 @@ const Footer = () => {
             <div className="footer-contact">
               <h2>Contact</h2>
               <p>
-                <FaPhone /> 00914933 – 270439
+                <span className="">
+                  <FaPhone />{" "}
+                </span>
+                00914933 – 270439
               </p>
               <p className="footer-number"> 00914933 – 270565</p>
 
               <p>
-                <FaEnvelope /> mail@aljamia.net
+                <span>
+                  {" "}
+                  <FaEnvelope />
+                </span>{" "}
+                mail@aljamia.net
               </p>
               <p className="footer-location">
-                <FaLocationDot />
+                <span>
+                  {" "}
+                  <FaLocationDot />
+                </span>
                 AL JAMIA AL ISLAMIYA SANTHAPURAM P.O.
               </p>
               <p className="footer-address">

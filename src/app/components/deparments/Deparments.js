@@ -94,10 +94,15 @@ const Departments = () => {
                 <div className="caro-img">
                   <img src="book.png" alt="" />
                 </div>
-                <div className="caro-des">
-                  <h4>{department.courseName}</h4>
+                <div className="caro-items">
+                  <h4 className="caro-des">{department.courseName}</h4>
+                  <p className="caro-paragraph">
+                    {department.description.substring(0, 110)}
+                  </p>
                   <div className="caro-btn">
-                    <button onClick={() => handleShow(department)}>More</button>
+                    <button onClick={() => handleShow(department)}>
+                      Read More
+                    </button>
 
                     <Modal
                       key={modalVal?.id}

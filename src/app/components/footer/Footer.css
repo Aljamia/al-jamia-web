@@ -61,8 +61,11 @@
   font-weight: 400;
   margin-bottom: 10px;
 }
+.footer-contact span {
+  margin-right: 5px;
+}
 .footer-number {
-  margin-left: 22px;
+  margin-left: 38px;
 }
 .footer-address {
   margin-left: 20px;
@@ -115,5 +118,8 @@
   }
   .footer-location {
     margin-top: 12px;
+  }
+  .footer-contact span {
+    margin-right: 5px;
   }
 }

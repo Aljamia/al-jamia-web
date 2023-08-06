@@ -37,16 +37,17 @@
 /* -----------carousel side */
 .carousel-2 {
   color: #fff;
-  margin: 20px;
+  margin: 40px;
   background-color: #f8f8f8;
 }
 .box {
   background-color: #f8f8f8;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   width: 300px !important;
-  height: 370px;
+  height: 460px;
   border-radius: 25px;
   display: flex;
+  padding: 0.2em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -71,12 +72,23 @@
 .caro-img img {
   width: 100%;
 }
-.caro-des h4 {
+.caro-des {
   padding-top: 1rem;
   color: #cca65d;
-  text-align: center;
+  font-size: 22px;
+  text-align: left;
+  padding: 0.3em;
+  text-transform: capitalize;
   font-family: var(--font-pt-serif);
   font-weight: 500;
+}
+.caro-paragraph {
+  color: #555555;
+  text-align: left;
+  padding: 0.3em;
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 400;
 }
 .caro-btn {
   display: flex;
@@ -89,7 +101,7 @@
   border-radius: 5px;
   background-color: #b6acac93;
   font-size: 13px;
-  padding: 3px 30px;
+  padding: 5px 20px;
   color: black;
   font-family: var(--font-inter);
 }
@@ -108,7 +120,7 @@
 @media (min-width: 380px) and (max-width: 500px) {
   .carousel-2 {
     color: #fff;
-    margin: 60px;
+    margin: 40px;
     background-color: #f8f8f8;
   }
 }

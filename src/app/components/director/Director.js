@@ -40,7 +40,7 @@ const Director = () => {
               </div>
               <div className="person-detail">
                 <h4>{director[0]?.enName}</h4>
-                <p>Rector Al Jamia Al Islamia</p>
+                <p>Rector Al Jamia Al Islamiya</p>
               </div>
             </Col>
           </Row>

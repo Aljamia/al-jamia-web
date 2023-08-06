@@ -39,12 +39,14 @@
 .director-des p {
   max-width: 80%;
   font-size: 18px;
+  text-align: justify;
+  padding: 0px;
   font-family: var(--font-inter);
 }
 .person-detail h4 {
   color: #3b3b3bf9;
-  font-weight: 500;
-  font-family: var(--font-inter);
+  font-weight: 400;
+  font-family: var(--font-pt-serif);
 }
 .person-detail p {
   color: #555555;
@@ -88,10 +90,11 @@
     padding: 7px 15px; /* Adjust the padding for even smaller screens */
   }
   .director-des p {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 0;
+    padding: 0.5em;
   }
   .director-des {
-    margin-top: 0;
+    margin-top: 20px;
   }
 }
