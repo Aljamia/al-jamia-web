@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --light-green-color: #619a46;
+  --goldish-color: #cca65d;
+
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-PT-serif: "PT Serif", serif;
+}
+.facilities {
+  padding: 4em;
+  margin-top: 3em;
+}
+.facilities-title {
+  color: var(--light-green-color);
+  font-family: var(--font-PT-serif);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 450;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.facilities-sub-title {
+  color: var(--gold, #cca65d);
+  font-family: var(--font-PT-serif);
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.facilities-data {
+  margin-top: 3em;
+}
+.facilities-desc {
+  text-align: center;
+  color: var(--gray, #555);
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.img-responsive {
+  border-radius: 10px;
+}
+
+.facilities-data-items h3 {
+  font-size: 25px;
+  font-family: var(--font-PT-serif);
+  font-weight: 400;
+  color: gray;
+  padding: 0.5em;
+}
+@media (max-width: 500px) {
+  .facilities-data {
+    margin-top: 3em;
+  }
+  .facilities-data-items h3 {
+    font-size: 20px;
+    font-family: var(--font-PT-serif);
+    font-weight: 400;
+    color: gray;
+    padding: 0.2em;
+  }
+  .facilities-sub-title {
+    font-size: 30px;
+  }
+}
+
+.facilities-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  padding: 5px;
+  background: rgb(247, 204, 126);
+}
+.facilities-images:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: all 0.8s linear;
+}
+/*Circle*/
+.facilities-images-list {
+  border-radius: 200px;
+}
+
+.first-images {
+  border-radius: 50%;
+  width: 100%;
+  padding: 0.5em;
+  height: 100%;
+}
+.first-images:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: all 0.8s linear;
+}
+
+@media (max-width: 500px) {
+  .facilities-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background: rgb(247, 204, 126);
+  }
+}
