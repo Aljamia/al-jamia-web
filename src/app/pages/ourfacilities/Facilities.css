@@ -57,18 +57,38 @@
   padding: 0.5em;
 }
 @media (max-width: 500px) {
+  .facilities {
+    padding: 2em;
+    margin-top: 3em;
+  }
+  .facilities-title {
+    font-size: 30px;
+  }
+  .facilities-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background: rgb(247, 204, 126);
+  }
   .facilities-data {
     margin-top: 3em;
   }
   .facilities-data-items h3 {
-    font-size: 20px;
+    margin-top: 15px;
+    font-size: 16px;
     font-family: var(--font-PT-serif);
     font-weight: 400;
     color: gray;
     padding: 0.2em;
   }
   .facilities-sub-title {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -80,7 +100,7 @@
   height: 260px;
   margin: 10px;
   padding: 5px;
-  background: rgb(247, 204, 126);
+  background: rgb(211, 183, 126);
 }
 .facilities-images:hover {
   filter: grayscale(100%);
@@ -102,19 +122,4 @@
   filter: grayscale(100%);
   cursor: pointer;
   transition: all 0.8s linear;
-}
-
-@media (max-width: 500px) {
-  .facilities-images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
-    height: 220px;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    background: rgb(247, 204, 126);
-  }
 }
