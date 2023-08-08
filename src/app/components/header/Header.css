@@ -94,7 +94,7 @@ nav.primary-navigation ul li ul {
   position: absolute;
   left: 0;
   display: none;
-  background: white;
+  background: #fffefe;
 }
 
 nav.primary-navigation ul li:hover > ul,
@@ -108,7 +108,7 @@ nav.primary-navigation ul li ul:hover {
   border-radius: 5px;
   z-index: 3;
   margin-left: -25px;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 nav.primary-navigation ul li ul li {
@@ -119,18 +119,18 @@ nav.primary-navigation ul li ul li {
   font-family: var(--font-inter);
   border-style: none;
 }
+
 .nav-dropdown-links h5 {
   font-size: 16px;
   font-weight: 400;
-  padding: 0.3em;
   margin-top: 3px;
+  padding: 0.3em;
   border-radius: 3px;
   color: black;
 }
 .nav-dropdown-links h5:hover {
   color: white;
-  width: 100%;
-  background-color: #ddba7b;
+  background-color: #e7c991;
   opacity: 1;
   transition: all 0.3s linear;
 }

@@ -89,7 +89,12 @@ const PageHeader = () => {
                     </li>
                   </ul>
                 </nav>
-
+                <Nav.Link
+                  href="/facilities"
+                  className="nav-links nav-link-black"
+                >
+                  Facilities
+                </Nav.Link>
                 <Nav.Link href="/venture" className="nav-links nav-link-black">
                   Ventures
                 </Nav.Link>
