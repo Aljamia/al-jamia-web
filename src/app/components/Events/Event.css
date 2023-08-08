@@ -235,6 +235,12 @@ span {
     text-align: center;
   }
   .library p {
+    color: #555555;
+    max-width: 100%;
     text-align: center;
+  }
+  .learn-btn-lib {
+    text-align: center;
+    font-size: 13px;
   }
 }

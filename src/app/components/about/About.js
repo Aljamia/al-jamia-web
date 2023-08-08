@@ -18,12 +18,16 @@ const About = () => {
 
   return (
     <div>
-      <div className="about-Title">
+     <div className="container">
+     <div className="about-Title">
         <h1>Welcome to Al Jamia al Islamiya</h1>
       </div>
       <div className="about-description">
         <p>{aboutdata && aboutdata[0]?.shortDescription}</p>
       </div>
+     </div>
+
+
       <div className="school-img">
         <div className="btn">
           <Link href="/about">
