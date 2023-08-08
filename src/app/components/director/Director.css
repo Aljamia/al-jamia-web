@@ -61,6 +61,10 @@
   color: #619a46;
   font-family: var(--font-pt-serif);
 }
+.fac-des {
+  margin-left: auto;
+  margin-right: auto;
+}
 .fac-des p {
   color: #555555;
   max-width: 80%;
@@ -93,8 +97,26 @@
     font-size: 16px;
     margin-top: 0;
     padding: 0.5em;
+    max-width: 100%;
   }
   .director-des {
     margin-top: 20px;
+  }
+  .fac-des p {
+    color: #555555;
+    max-width: 100%;
+    font-family: var(--font-inter);
+    font-size: 20px;
+    text-align: center;
+  }
+  .fac-title h1 {
+    text-align: center;
+  }
+  .fac-btn {
+    text-align: center;
+    font-size: 15px;
+  }
+  .person-detail {
+    text-align: center;
   }
 }
