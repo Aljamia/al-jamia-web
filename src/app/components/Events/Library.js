@@ -43,7 +43,7 @@ const Library = () => {
                 </svg>
               </span>{" "}
               <Link
-                href="https://library.aljamia.in/"
+                href="/centralibrary"
                 target="blank"
                 style={{ textDecoration: "none", color: "white" }}
               >

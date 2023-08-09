@@ -5,6 +5,7 @@ import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import Link from "next/link";
 
 const Centralib = () => {
   return (
@@ -130,7 +131,16 @@ const Centralib = () => {
               </div>
             </Row>
           </Container>
+          <div className="explore-btn">
+            <Link
+              href="https://library.aljamia.in/"
+              style={{ textDecoration: "none" }}
+            >
+              <h5>Explore More</h5>
+            </Link>
+          </div>
         </div>
+
         <Footer />
       </div>
     </div>

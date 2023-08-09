@@ -47,11 +47,13 @@
   line-height: normal;
   cursor: pointer;
 }
-
+.footer-contact {
+  transform: translateX(20%);
+}
 .footer-contact h2 {
   margin-top: 30px;
   color: var(--white-color);
-  font-size: 22px;
+  font-size: 25px;
 }
 .footer-contact p {
   color: var(--white-color);
@@ -65,7 +67,7 @@
   margin-right: 5px;
 }
 .footer-number {
-  margin-left: 38px;
+  margin-left: 36px;
 }
 .footer-address {
   margin-left: 20px;
@@ -98,6 +100,9 @@
 }
 
 @media (max-width: 991px) {
+  .footer-contact {
+    transform: translateX(0%);
+  }
   .footer-logo {
     width: 220px;
     height: 55px;

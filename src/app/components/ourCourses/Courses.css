@@ -217,6 +217,25 @@
 .portfolio-btn:hover {
   background-color: var(--goldish-color) !important;
 }
+.explore-btn {
+  width: 13%;
+  height: auto;
+  margin: auto;
+  background: #cca65d;
+  padding: 3px 20px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.explore-btn:hover {
+  background-color: #e9b554;
+}
+.explore-btn h5 {
+  font-family: var(--font-inter);
+  color: #ffffff;
+  margin-top: 5px;
+  font-size: 16px;
+}
 
 @media (max-width: 768px) {
   .portfolio-container {
@@ -239,6 +258,20 @@
   }
   .course-desc {
     font-size: 18px;
+  }
+  .explore-btn {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background: #cca65d;
+    padding: 5px 20px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .explore-btn h5 {
+    color: #ffffff;
+    font-size: 14px;
   }
 }
 
