@@ -11,8 +11,8 @@
   --font-PT-serif: "PT Serif", serif;
 }
 .facilities {
-  padding: 4em;
-  margin-top: 3em;
+  padding: 3em;
+  margin-top: 5em;
 }
 .facilities-title {
   color: var(--light-green-color);
@@ -94,7 +94,7 @@
     margin-top: 3em;
   }
   .facilities-title {
-    font-size: 30px;
+    font-size: 24px;
   }
   .facilities-images {
     display: flex;

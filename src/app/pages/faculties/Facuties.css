@@ -13,7 +13,7 @@
 }
 .Faculties-header {
   padding: 3em;
-  margin-top: 4em;
+  margin-top: 5em;
   text-align: center;
 }
 .Faculties-title {
@@ -86,11 +86,12 @@
 
 @media (max-width: 768px) {
   .Faculties-header {
-    margin-top: 2em;
+    margin-top: 3em;
+    padding: 2em;
   }
   .Faculties-title,
   .Faculties-leader-title {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .members-leader-cards {

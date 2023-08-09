@@ -25,7 +25,11 @@ const AboutUs = () => {
     fetchGallery();
   }, []);
   if (!gallery || gallery.length === 0) {
-    return <div>Loading...</div>;
+    return (
+      <div className="text-left">
+        <h6>Loading...</h6>
+      </div>
+    );
   }
 
   return (
