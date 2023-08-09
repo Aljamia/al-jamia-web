@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./Courses.css";
-import { getCourse, getFaculties, getAboutUsGallery } from "@/app/hooks/UseApi";
+import Link from "next/link";
+import { getCourse } from "@/app/hooks/UseApi";
 import { Modal } from "react-bootstrap";
 
 const Courses = () => {
@@ -83,7 +84,7 @@ const Courses = () => {
           </div>
           <div className="portfolio">
             <div className="portfolio-container">
-              {cardValues?.map((course) => (
+              {cardValues.slice(0, 6).map((course) => (
                 <Card className="portfolio-card shadow-sm" key={course.id}>
                   <Card.Img
                     variant="top"
@@ -159,6 +160,11 @@ const Courses = () => {
                 </Card>
               ))}
             </div>
+          </div>
+          <div className="explore-btn">
+            <Link href="/coursepage" style={{ textDecoration: "none" }}>
+              <h5>Explore More</h5>
+            </Link>
           </div>
         </div>
       </Container>

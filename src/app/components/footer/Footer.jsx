@@ -18,7 +18,7 @@ const Footer = () => {
     <div className="footer">
       <Container className="footer-contents">
         <Row>
-          <Col lg={4}>
+          <Col lg={6}>
             <div>
               <Image
                 src="/image 5.png"
@@ -35,7 +35,7 @@ const Footer = () => {
               </p>
             </div>
           </Col>
-          <Col lg={4}>
+          {/* <Col lg={4}>
             <div className="footer-nav">
               <Link href="/" className="footer-links">
                 <h5>Home</h5>
@@ -53,8 +53,8 @@ const Footer = () => {
                 <h5>Contact</h5>
               </Link>
             </div>
-          </Col>
-          <Col lg={4}>
+          </Col> */}
+          <Col lg={6}>
             <div className="footer-contact">
               <h2>Contact</h2>
               <p>

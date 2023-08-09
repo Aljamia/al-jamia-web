@@ -94,19 +94,30 @@ span {
 }
 /* --right side carouse */
 
+.carouselevent {
+  position: relative;
+  bottom: 50px;
+}
+
+.event-slick div {
+  margin: 0 0.5rem;
+  background-color: transparent !important;
+  opacity: 1;
+}
 .right-event-caro {
   display: flex !important;
   border-radius: none;
-  margin-top: 1rem;
+  margin-top: 0rem !important;
   box-shadow: none;
   background-color: #f8f8f8;
 }
 .event-caro-img img {
   width: 230px;
 }
+
 .right-event-des {
   width: 100%;
-  background-color: #b6acac93;
+  height: auto;
 }
 .right-event-des h4 {
   font-size: 20px;
@@ -138,21 +149,6 @@ span {
   font-size: 13px;
   padding: 3px 30px;
   font-family: var(--font-inter);
-}
-.event-slick {
-  margin: 0px !important;
-  padding: 0 !important;
-  margin: 0 0.5rem;
-  opacity: 1;
-}
-.event-slick div {
-  margin: 0 0.5rem;
-  background-color: transparent !important;
-  opacity: 1;
-}
-.carouselevent {
-  position: relative;
-  background-color: #f8f8f8;
 }
 
 .slick-dots {
@@ -188,12 +184,12 @@ span {
 /* ----------media query for small screen */
 @media screen and (max-width: 550px) {
   .right-event-des h4 {
-    font-size: 12px;
+    font-size: 14px;
     color: black;
     font-weight: 400;
   }
   .right-event-des p {
-    font-size: 10px;
+    font-size: 12px;
     text-align: left !important;
   }
 }
@@ -204,7 +200,8 @@ span {
 }
 @media screen and (max-width: 600px) {
   .carouselevent {
-    margin-top: 3em;
+    position: relative;
+    bottom: 0px;
   }
 
   .right-event-caro {
