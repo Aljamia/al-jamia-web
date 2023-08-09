@@ -111,14 +111,14 @@
 @media (max-width: 378px) {
   .carousel-2 {
     color: #fff;
-    margin: 10px;
+    margin: 6px;
     padding: 0.8em;
     background-color: #f8f8f8;
   }
   .box {
     background-color: #f8f8f8;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    width: 300px !important;
+    width: 310px !important;
     height: 480px;
     border-radius: 25px;
     display: flex;
@@ -133,14 +133,14 @@
 @media (min-width: 380px) and (max-width: 500px) {
   .carousel-2 {
     color: #fff;
-    margin: 28px;
-    padding: 1em;
+    margin: 6px;
+    padding: 0.8em;
     background-color: #f8f8f8;
   }
   .box {
     background-color: #f8f8f8;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    width: 300px !important;
+    width: 350px !important;
     height: 480px;
     border-radius: 25px;
     display: flex;
