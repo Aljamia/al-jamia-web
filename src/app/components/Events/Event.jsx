@@ -71,7 +71,7 @@ const Event = () => {
     <div>
       <div className="events-section">
         <div className="event-title">
-          <h1>Events</h1>
+          <h1>Events and Updates</h1>
         </div>
         <div></div>
         <div className="event-first-section">
@@ -98,7 +98,7 @@ const Event = () => {
                     className="event-btn-right"
                     onClick={() => handleClick(events[0]?._id)}
                   >
-                    More
+                    Read More
                   </button>
                 </div>
               </Col>
@@ -126,7 +126,7 @@ const Event = () => {
                               className="event-btn-right"
                               onClick={() => handleClick(event._id)}
                             >
-                              More
+                              Read More
                             </button>
                           </div>
                         </div>
