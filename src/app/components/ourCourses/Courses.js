@@ -6,6 +6,7 @@ import "./Courses.css";
 import Link from "next/link";
 import { getCourse } from "@/app/hooks/UseApi";
 import { Modal } from "react-bootstrap";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Courses = () => {
   const [show, setShow] = useState(false);
@@ -84,7 +85,7 @@ const Courses = () => {
           </div>
           <div className="portfolio">
             <div className="portfolio-container">
-              {cardValues.slice(0, 6).map((course) => (
+              {cardValues.slice(0, 3).map((course) => (
                 <Card className="portfolio-card shadow-sm" key={course.id}>
                   <Card.Img
                     variant="top"
@@ -163,7 +164,12 @@ const Courses = () => {
           </div>
           <div className="explore-btn">
             <Link href="/coursepage" style={{ textDecoration: "none" }}>
-              <h5>Explore More</h5>
+              <h5>
+                Explore More{" "}
+                <i style={{ marginLeft: "10px", fontSize: "20px" }}>
+                  <FaArrowRight />{" "}
+                </i>
+              </h5>
             </Link>
           </div>
         </div>
