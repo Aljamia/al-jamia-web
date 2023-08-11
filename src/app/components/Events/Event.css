@@ -16,18 +16,16 @@
   color: #555555;
 }
 .events-section {
-  padding: 1em;
+  padding: 1.5em;
   background-color: #f8f8f8;
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
 }
-.event-title {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
+
 .event-title h1 {
+  margin-left: 110px;
   padding-top: 4rem;
-  padding-bottom: 3rem;
+  font-size: 40px;
+  padding-bottom: 2rem;
   color: #619a46;
   font-family: var(--font-pt-serif);
 }
@@ -135,7 +133,7 @@ span {
   border-radius: 5px;
   background-color: #b6acac93;
   font-size: 13px;
-  padding: 3px 30px;
+  padding: 3px 15px;
   font-family: var(--font-inter);
 }
 .right-learn-btn button:hover {
@@ -147,7 +145,7 @@ span {
   border-radius: 5px;
   background-color: #b6acac93;
   font-size: 13px;
-  padding: 3px 30px;
+  padding: 3px 15px;
   font-family: var(--font-inter);
 }
 
@@ -183,6 +181,14 @@ span {
 }
 /* ----------media query for small screen */
 @media screen and (max-width: 550px) {
+  .event-title h1 {
+    margin-left: 20px;
+    font-size: 30px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    color: #619a46;
+    font-family: var(--font-pt-serif);
+  }
   .right-event-des h4 {
     font-size: 14px;
     color: black;
@@ -193,9 +199,14 @@ span {
     text-align: left !important;
   }
 }
-@media screen and (max-width: 1200px) {
-  .slick-dots {
-    display: none !important;
+@media (min-width: 700px) and (max-width: 1000px) {
+  .event-title h1 {
+    margin-left: 30px;
+    font-size: 40px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    color: #619a46;
+    font-family: var(--font-pt-serif);
   }
 }
 @media screen and (max-width: 600px) {
