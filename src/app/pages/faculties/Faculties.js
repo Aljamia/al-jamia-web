@@ -4,8 +4,9 @@ import React, { useState, useEffect } from "react";
 import { Container, Card } from "react-bootstrap";
 import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
-import "./Facuties.css";
+import "./Faculties.css";
 import { getBoardOfDirector } from "@/app/hooks/UseApi";
+import Image from "next/image";
 
 const Faculties = () => {
   const [board, setBoard] = useState([]);
@@ -27,6 +28,15 @@ const Faculties = () => {
           <h2 className="Faculties-title">
             Succession List of Heads of the Institution
           </h2>
+          <div className="Faculties-img">
+            <Image
+              src="/Mask group.png"
+              layout="responsive"
+              width={1000}
+              height={200}
+              alt="Image"
+            />
+          </div>
           <p className="Faculties-desc">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
             delectus nam repudiandae quaerat sequi id consequuntur obcaecati

@@ -8,6 +8,7 @@ import "./Management.css";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Footer from "@/app/components/footer/Footer";
 import { getManagementCommitee } from "@/app/hooks/UseApi";
+import Image from "next/image";
 
 const Management = () => {
   const [commitee, Setcommitee] = useState([]);
@@ -34,6 +35,15 @@ const Management = () => {
       <div className="Faculties-header">
         <Container>
           <h2 className="Faculties-title">Supreme Council</h2>
+          <div className="Faculties-img">
+            <Image
+              src="/Rectangle 991.jpg"
+              layout="responsive"
+              width={1000}
+              height={200}
+              alt="Image"
+            />
+          </div>
           <p className="Faculties-desc">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
             delectus nam repudiandae quaerat sequi id consequuntur obcaecati

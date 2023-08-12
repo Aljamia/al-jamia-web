@@ -23,7 +23,11 @@
   font-weight: 450;
   margin-bottom: 20px;
 }
+.Faculties-img {
+  margin-top: 2em;
+}
 .Faculties-desc {
+  margin-top: 1em;
   text-align: center;
   color: var(--gray, #555);
   font-family: var(--font-inter);
