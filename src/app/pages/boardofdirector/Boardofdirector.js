@@ -5,6 +5,7 @@ import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { getBoardOfDirector } from "@/app/hooks/UseApi";
 import Footer from "@/app/components/footer/Footer";
 import { Container, Card } from "react-bootstrap";
+import Image from "next/image";
 
 const Boardofdirector = () => {
   const [board, setBoard] = useState([]);
@@ -24,6 +25,15 @@ const Boardofdirector = () => {
       <div className="Faculties-header">
         <Container>
           <h2 className="Faculties-title">Administrative Council</h2>
+          <div className="Faculties-img">
+            <Image
+              src="/the library.jpg"
+              layout="responsive"
+              width={1000}
+              height={200}
+              alt="Image"
+            />
+          </div>
           <p className="Faculties-desc">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
             delectus nam repudiandae quaerat sequi id consequuntur obcaecati

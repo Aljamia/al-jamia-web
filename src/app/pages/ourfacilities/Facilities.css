@@ -10,121 +10,90 @@
   --font-inter: "Inter", sans-serif;
   --font-PT-serif: "PT Serif", serif;
 }
-.facilities {
-  padding: 3em;
-  margin-top: 5em;
+.facilities-header {
+  padding: 4em;
+  margin-top: 4em;
+  text-align: center;
 }
 .facilities-title {
   color: var(--light-green-color);
   font-family: var(--font-PT-serif);
-  font-size: 40px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 450;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.facilities-sub-title {
-  color: var(--gold, #cca65d);
-  font-family: var(--font-PT-serif);
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.facilities-data {
-  margin-top: 3em;
-}
-.facilities-desc {
-  text-align: center;
-  color: var(--gray, #555);
-  font-family: var(--font-inter);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-}
-.img-responsive {
-  border-radius: 10px;
+  line-height: normal;
 }
 
-.facilities-data-items h3 {
-  font-size: 25px;
-  font-family: var(--font-PT-serif);
-  font-weight: 400;
-  color: gray;
-  padding: 0.5em;
-}
-.facilities-images {
+.facilities-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 260px;
-  height: 260px;
-  margin: 10px;
-  padding: 5px;
-  background: rgb(211, 183, 126);
 }
-.facilities-images:hover {
-  filter: grayscale(100%);
-  cursor: pointer;
-  transition: all 0.8s linear;
+.facilities-section-one {
+  padding: 2em;
+  margin: auto;
+  width: 80%;
 }
-/*Circle*/
-.facilities-images-list {
-  border-radius: 200px;
-  margin: 10px;
+.facilities-one h2 {
+  color: #555;
+  width: 250px;
+  font-family: var(--font-inter);
+  font-size: 25px;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-
-.first-images {
-  border-radius: 50%;
-  width: 100%;
-  padding: 0.1em;
-  height: 100%;
+.facilities-section-two {
+  padding: 2em;
+  margin: auto;
+  width: 80%;
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+  background-color: var(--white-color);
 }
-.first-images:hover {
-  filter: grayscale(100%);
-  cursor: pointer;
-  transition: all 0.8s linear;
+.facilities-item-two {
+  padding: 1.3em 0px;
+  display: flex;
+  align-items: center;
+}
+.facilities-section-three {
+  padding: 2em;
+  margin: auto;
+  width: 80%;
 }
 @media (max-width: 500px) {
-  .facilities {
+  .facilities-header {
     padding: 2em;
     margin-top: 3em;
   }
   .facilities-title {
-    font-size: 24px;
+    font-size: 30px;
   }
-  .facilities-images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
-    height: 220px;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    background: rgb(247, 204, 126);
+  .facilities-section-one {
+    padding: 0em;
+    margin: auto;
+    width: 100%;
   }
-  .facilities-data {
-    margin-top: 3em;
+  .facilities-section-two {
+    padding: 0em;
+    margin: auto;
+    width: 100%;
+    background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+    background-color: var(--white-color);
   }
-  .facilities-data-items h3 {
-    margin-top: 15px;
+  .facilities-one h2 {
+    color: #555;
+    width: 250px;
+    font-family: var(--font-inter);
     font-size: 16px;
-    font-family: var(--font-PT-serif);
+    margin-left: 10px;
+    font-style: normal;
     font-weight: 400;
-    color: gray;
-    padding: 0.2em;
+    line-height: normal;
   }
-  .facilities-sub-title {
-    font-size: 25px;
-  }
-  .facilities-images-list {
-    border-radius: 200px;
-    margin-left: auto;
-    margin-right: auto;
+  .facilities-section-three {
+    padding: 0em;
+    margin: auto;
+    width: 100%;
+    margin-top: 1em;
   }
 }
