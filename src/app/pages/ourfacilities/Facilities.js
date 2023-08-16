@@ -30,7 +30,7 @@ const Facilities = () => {
                 <div>
                   {" "}
                   <Image
-                    src="/Group 2062.svg"
+                    src="/Group 2098.png"
                     width={80}
                     height={80}
                     alt="Image"
@@ -44,7 +44,7 @@ const Facilities = () => {
                 <div>
                   {" "}
                   <Image
-                    src="/Group 2062.svg"
+                    src="/Group 2098.png"
                     width={80}
                     height={80}
                     alt="Image"
@@ -60,7 +60,7 @@ const Facilities = () => {
                 <div>
                   {" "}
                   <Image
-                    src="/Group 2062.svg"
+                    src="/Group 2098.png"
                     width={80}
                     height={80}
                     alt="Image"
@@ -74,7 +74,7 @@ const Facilities = () => {
                 <div>
                   {" "}
                   <Image
-                    src="/Group 2062.svg"
+                    src="/Group 2098.png"
                     width={80}
                     height={80}
                     alt="Image"
@@ -90,7 +90,7 @@ const Facilities = () => {
                 <div>
                   {" "}
                   <Image
-                    src="/Group 2062.svg"
+                    src="/Group 2098.png"
                     width={80}
                     height={80}
                     alt="Image"
@@ -104,7 +104,7 @@ const Facilities = () => {
                 <div>
                   {" "}
                   <Image
-                    src="/Group 2062.svg"
+                    src="/Group 2098.png"
                     width={80}
                     height={80}
                     alt="Image"
