@@ -1,62 +1,6 @@
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/pages/aboutus/AboutUs.css ***!
-    \*****************************************************************************************************************************************************************************************************************************************************************************/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
-
-:root {
-  /* color */
-  --white-color: #ffffff;
-  --light-green-color: #619a46;
-  --goldish-color: #cca65d;
-
-  /* fonts */
-  --font-inter: "Inter", sans-serif;
-  --font-PT-serif: "unse";
-}
-
-.AboutUspage-header {
-  margin-top: 2em;
-  text-align: center;
-}
-
-.about-Title {
-  text-align: center;
-  color: #619a46;
-  margin-top: 5rem;
-}
-
-.about-Title h1 {
-  /* font-family: unset; */
-
-  font-family: unset;
-  font-weight: 300;
-}
-
-.AboutUspage-title {
-  color: var(--light-green-color);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 250;
-  line-height: normal;
-}
-
-.AboutUspage-desc {
-  color: var(--gray, #555);
-  font-family: var(--font-inter);
-  font-size: 20px;
-  font-style: normal;
-  text-align: justify;
-  margin-top: 1.5em;
-  padding: 1em;
-  font-weight: 400;
-  line-height: 130%;
-  /* 39px */
-}
-
 /*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-      !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/about/About.css ***!
-      \******************************************************************************************************************************************************************************************************************************************************************************/
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/about/About.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
@@ -93,7 +37,7 @@
 }
 
 .about-description p {
-  text-align: center;
+  text-align: justify;
   color: #555555;
   max-width: 70rem;
   align-items: center;
@@ -101,9 +45,9 @@
 }
 
 /* .image img{
-          width: 100%;
-          height: 300px;
-      } */
+      width: 100%;
+      height: 300px;
+  } */
 .btn {
   display: flex;
   align-items: center;
@@ -157,8 +101,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 160%;
-  /* 41.6px */
+  line-height: 160%; /* 41.6px */
   letter-spacing: 0.52px;
   color: var(--half-dark-text-color, rgba(1, 5, 20, 0.8));
 }
@@ -211,8 +154,8 @@
 }
 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/annoucement/Announcement.css ***!
-        \*******************************************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/annoucement/Announcement.css ***!
+    \*******************************************************************************************************************************************************************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
@@ -254,7 +197,7 @@
   color: #3d3d3d;
   font-size: 16px;
   text-transform: capitalize;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 .news-alert-desc {
@@ -298,7 +241,7 @@
 
   .news-alert-desc {
     color: var(--gray, #232222);
-    font-family: var(--font-inter);
+    font-family: unset;
     font-size: 16px;
     font-style: normal;
     text-align: center;
@@ -310,8 +253,8 @@
 }
 
 /*!************************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/carousel/Carousel.css ***!
-        \************************************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/carousel/Carousel.css ***!
+    \************************************************************************************************************************************************************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 
@@ -448,8 +391,8 @@
 }
 
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/header/Header.css ***!
-        \********************************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/header/Header.css ***!
+    \********************************************************************************************************************************************************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
 :root {
@@ -478,7 +421,7 @@
   padding: 20px;
   margin: 10px;
   margin-top: 2em;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 16px;
   font-style: normal;
   font-weight: 100;
@@ -575,7 +518,7 @@ nav.primary-navigation ul li ul li {
   width: 100%;
   height: 35px;
   text-align: left;
-  font-family: var(--font-inter);
+  font-family: unset;
   border-style: none;
 }
 
@@ -596,11 +539,11 @@ nav.primary-navigation ul li ul li {
 }
 
 /* @media (max-width: 350px) {
-        .navbar-toggler-white {
-          background-color: white !important;
-          margin-right: 32px;
-        }
-      } */
+    .navbar-toggler-white {
+      background-color: white !important;
+      margin-right: 32px;
+    }
+  } */
 @media (min-width: 300px) and (max-width: 990px) {
   .navbar {
     width: 100%;
@@ -633,7 +576,7 @@ nav.primary-navigation ul li ul li {
     color: black !important;
     margin-top: -5px;
     height: 2px;
-    font-family: var(--font-inter);
+    font-family: unset;
     font-size: 18px;
     text-transform: capitalize;
     font-style: normal;
@@ -694,7 +637,7 @@ nav.primary-navigation ul li ul li {
     color: rgb(233, 229, 229) !important;
     margin-top: -15px;
     height: 2px;
-    font-family: var(--font-inter);
+    font-family: unset;
     font-size: 17px;
     text-transform: capitalize;
     font-style: normal;
@@ -749,8 +692,8 @@ nav.primary-navigation ul li ul li {
 }
 
 /*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/deparments/Department.css ***!
-        \****************************************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/deparments/Department.css ***!
+    \****************************************************************************************************************************************************************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
@@ -787,7 +730,7 @@ nav.primary-navigation ul li ul li {
 .department-para p {
   color: #555555;
   height: auto;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 20px;
   text-align: center;
 }
@@ -841,10 +784,10 @@ nav.primary-navigation ul li ul li {
 .caro-des {
   color: #484848;
   text-align: center;
-  font-family: Poppins;
+  font-family: unset;
   font-size: 22px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
 }
@@ -853,7 +796,7 @@ nav.primary-navigation ul li ul li {
   color: #555555;
   text-align: center;
   padding: 0.3em;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 18px;
   font-weight: 400;
 }
@@ -872,7 +815,7 @@ nav.primary-navigation ul li ul li {
   font-size: 16px;
   padding: 3px 20px;
   color: white;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 .caro-btn button:hover {
@@ -926,8 +869,8 @@ nav.primary-navigation ul li ul li {
 }
 
 /*!************************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/director/Director.css ***!
-        \************************************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/director/Director.css ***!
+    \************************************************************************************************************************************************************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
@@ -958,9 +901,9 @@ nav.primary-navigation ul li ul li {
 }
 
 /* .director-img img{
-          width: 100%;
-         
-      } */
+      width: 100%;
+     
+  } */
 .director-des {
   margin-top: 3rem;
 }
@@ -973,6 +916,7 @@ nav.primary-navigation ul li ul li {
   max-width: 100%;
   font-size: 18px;
   text-align: justify;
+  font-weight: 300;
   padding: 0px;
   font-family: unset;
 }
@@ -986,7 +930,7 @@ nav.primary-navigation ul li ul li {
 .person-detail p {
   color: #555555;
   font-size: 17px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 .facualies {
@@ -1007,7 +951,7 @@ nav.primary-navigation ul li ul li {
 .fac-des p {
   color: #555555;
   max-width: 80%;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 20px;
 }
 
@@ -1021,7 +965,7 @@ nav.primary-navigation ul li ul li {
   padding: 7px 20px;
   border: none;
   border-radius: 5px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 @media (max-width: 768px) {
@@ -1051,7 +995,7 @@ nav.primary-navigation ul li ul li {
   .fac-des p {
     color: #555555;
     max-width: 100%;
-    font-family: var(--font-inter);
+    font-family: unset;
     font-size: 20px;
     text-align: center;
   }
@@ -1071,8 +1015,8 @@ nav.primary-navigation ul li ul li {
 }
 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/Events/Event.css ***!
-        \*******************************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/Events/Event.css ***!
+    \*******************************************************************************************************************************************************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
@@ -1118,7 +1062,7 @@ nav.primary-navigation ul li ul li {
   padding: 5px 25px 5px;
   color: #fff;
   background-color: rgba(97, 154, 70, 0.75);
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 .event-btn-right:hover {
@@ -1129,7 +1073,7 @@ nav.primary-navigation ul li ul li {
 
 span {
   padding: 0px 10px 0px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 /* ----event section -2----- */
@@ -1154,6 +1098,7 @@ span {
 .library p {
   color: #555555;
   max-width: 90%;
+  text-align: justify;
 }
 
 .library h1 {
@@ -1166,7 +1111,7 @@ span {
 .library p {
   color: #555555;
   max-width: 90%;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 20px;
 }
 
@@ -1176,7 +1121,7 @@ span {
   padding: 7px 20px;
   border: none;
   border-radius: 5px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 /* --right side carouse */
@@ -1215,7 +1160,7 @@ span {
   font-size: 20px;
   font-weight: 600;
   color: black;
-  font-family: var(--font-inter) !important;
+  font-family: unset !important;
 }
 
 .right-event-des p {
@@ -1228,7 +1173,7 @@ span {
   background-color: #b6acac93;
   font-size: 13px;
   padding: 3px 15px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 .right-learn-btn button:hover {
@@ -1242,7 +1187,7 @@ span {
   background-color: #b6acac93;
   font-size: 13px;
   padding: 3px 15px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 .slick-dots {
@@ -1356,7 +1301,7 @@ span {
   .library p {
     color: #555555;
     max-width: 100%;
-    text-align: center;
+    text-align: j;
   }
 
   .learn-btn-lib {
@@ -1365,172 +1310,9 @@ span {
   }
 }
 
-/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/footer/Footer.css ***!
-        \********************************************************************************************************************************************************************************************************************************************************************************/
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
-
-:root {
-  /* color */
-  --black-color: #2c2c2c;
-  --white-color: #ffffff;
-  --gold--color: #cea553;
-  --green-color: #91cf73;
-
-  /* fonts */
-  --font-rubik: "Rubik", sans-serif;
-  --font-martel: "Martel", serif;
-  --font-inter: "Inter", sans-serif;
-}
-
-.footer {
-  background-color: #cea553;
-  padding: 1em 1em;
-}
-
-.footer .footer-desc {
-  padding: 5px;
-  margin-top: 5px;
-  font-family: unset;
-  font-style: normal;
-  font-weight: 250;
-  font-size: 18px;
-  color: var(--white-color);
-  text-align: justify;
-}
-
-.footer-nav {
-  margin-top: 30px;
-  margin-left: 30%;
-}
-
-.footer-nav .footer-links {
-  text-decoration: none;
-  color: var(--white-color);
-}
-
-.footer-links h5 {
-  font-family: var(--font-rubik);
-  font-size: 20px;
-  padding: 5px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  cursor: pointer;
-}
-
-.footer-contact {
-  transform: translateX(20%);
-}
-
-.footer-contact h2 {
-  margin-top: 30px;
-  color: var(--white-color);
-  font-size: 25px;
-}
-
-.footer-contact p {
-  color: var(--white-color);
-  font-family: var(--font-rubik);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.footer-contact span {
-  margin-right: 5px;
-}
-
-.footer-number {
-  margin-left: 36px;
-}
-
-.footer-address {
-  margin-left: 20px;
-}
-
-.footer-line {
-  border: 1px solid var(--white-color);
-}
-
-.footer-copyright {
-  color: var(--white-color);
-}
-
-.footer-social-icons-list {
-  font-size: 20px;
-  color: var(--white-color);
-  margin: 0px 0px 20px 30px;
-  float: right;
-  cursor: pointer;
-}
-
-.footer-social-icons-list:hover {
-  color: var(--black--color);
-}
-
-.footer-address {
-  margin-top: -10px;
-}
-
-.datahex-link {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 3px;
-}
-
-.datahex-link:hover {
-  color: var(--green-color);
-}
-
-@media (max-width: 991px) {
-  .footer-contact {
-    transform: translateX(0%);
-  }
-
-  .footer-logo {
-    width: 200px !important;
-    height: auto;
-  }
-
-  .footer-nav {
-    margin-left: 0px;
-  }
-
-  .footer .footer-desc {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 500px) {
-  .footer-social-icons-list {
-    margin: 0px 0px 20px 30px;
-    float: right;
-  }
-
-  .footer-address {
-    margin-left: 0px;
-  }
-
-  .footer-location {
-    margin-top: 12px;
-  }
-
-  .footer-contact span {
-    margin-right: 5px;
-  }
-
-  .footer-number {
-    margin-left: 35px;
-  }
-}
-
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/ourCourses/Courses.css ***!
-        \*************************************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/ourCourses/Courses.css ***!
+    \*************************************************************************************************************************************************************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 
@@ -1672,7 +1454,7 @@ span {
   overflow-y: hidden;
   padding: 3px;
   color: #252641;
-  font-family: Poppins;
+  font-family: unset;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -1689,7 +1471,7 @@ span {
   padding: auto;
   width: 100%;
   height: 80px;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 18px;
   content: normal;
   overflow-y: hidden;
@@ -1704,7 +1486,7 @@ span {
   margin-top: 10px;
   margin: 5px;
   font-size: 16px;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-weight: lighter;
 }
 
@@ -1715,7 +1497,7 @@ span {
 
 .course-data-category,
 .course-modal-category {
-  font-family: var(--font-inter);
+  font-family: unset;
   padding: 5px;
   font-size: 16px;
   font-weight: 400;
@@ -1726,7 +1508,7 @@ span {
 
 .course-data-duration,
 .course-modal-duration {
-  font-family: var(--font-inter);
+  font-family: unset;
   padding: 5px;
   font-size: 16px;
   font-weight: 400;
@@ -1741,7 +1523,7 @@ span {
   text-align: left;
   padding: auto;
   width: 100%;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 17px;
   content: normal;
   font-weight: 300;
@@ -1784,7 +1566,7 @@ span {
 }
 
 .explore-btn h5 {
-  font-family: var(--font-inter);
+  font-family: unset;
   color: #ffffff;
   margin-top: 5px;
   font-size: 16px;
@@ -1890,13 +1672,12 @@ span {
   font-size: 60px;
   font-style: normal;
   font-weight: 300;
-  line-height: 100%;
-  /* 96px */
+  line-height: 100%; /* 96px */
 }
 
 .grades-title {
   color: var(--grary-2, #7d7d7d);
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -1951,8 +1732,8 @@ span {
 }
 
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick.css ***!
-        \***************************************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick.css ***!
+    \***************************************************************************************************************************************************************************************************************************************************************************************/
 /* Slider */
 .slick-slider {
   position: relative;
@@ -2064,8 +1845,8 @@ span {
 }
 
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick-theme.css ***!
-        \*********************************************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick-theme.css ***!
+    \*********************************************************************************************************************************************************************************************************************************************************************************************/
 /* @charset 'UTF-8'; */
 
 /* Slider */
@@ -2269,8 +2050,8 @@ span {
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[3]!./src/app/page.module.css ***!
-        \*****************************************************************************************************************************************************************************************************************************************************************/
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[3]!./src/app/page.module.css ***!
+    \*****************************************************************************************************************************************************************************************************************************************************************/
 
 .icon_pl {
   padding-right: 5px;
@@ -2290,45 +2071,167 @@ span {
   margin-bottom: 30px;
 }
 
-/* PreparatoryStyle */
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/footer/Footer.css ***!
+    \********************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 
-.PreparatoryStyle {
-  background: #619a46;
-  width: 100%;
-  float: left;
-  padding: 5%;
+:root {
+  /* color */
+  --black-color: #2c2c2c;
+  --white-color: #ffffff;
+  --gold--color: #cea553;
+  --green-color: #91cf73;
+
+  /* fonts */
+  --font-rubik: "Rubik", sans-serif;
+  --font-martel: "Martel", serif;
+  --font-inter: "Inter", sans-serif;
 }
 
-.PreparatoryStyle img {
-  width: 80% !important;
-  padding-top: 5%;
+.footer {
+  background-color: #cea553;
+  padding: 1em 1em;
 }
 
-.PreparatoryH4 {
-  color: var(--Light-Grey, #f1f1f1);
+.footer .footer-desc {
+  padding: 5px;
+  margin-top: 5px;
+  font-family: unset;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 18px;
+  color: var(--white-color);
+  text-align: justify;
+}
+
+.footer-nav {
+  margin-top: 30px;
+  margin-left: 30%;
+}
+
+.footer-nav .footer-links {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.footer-links h5 {
+  font-family: var(--font-rubik);
   font-size: 20px;
+  padding: 5px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px;
-  text-align: center;
-
-  /* 160% */
+  line-height: normal;
+  cursor: pointer;
 }
 
-.PreparatoryH2 {
-  color: var(--White, #fff);
-  text-align: center;
-  font-size: 48px;
-  padding-left: 5%;
-  padding-right: 5%;
+.footer-contact {
+  transform: translateX(20%);
+}
+
+.footer-contact h2 {
+  margin-top: 30px;
+  color: var(--white-color);
+  font-size: 25px;
+}
+
+.footer-contact p {
+  color: var(--white-color);
+  font-family: var(--font-rubik);
+  font-size: 16px;
   font-style: normal;
-  font-weight: 200;
-  line-height: 72px;
-  /* 150% */
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.PreparatoryTittle {
+.footer-contact span {
+  margin-right: 5px;
+}
+
+.footer-number {
+  margin-left: 36px;
+}
+
+.footer-address {
+  margin-left: 20px;
+}
+
+.footer-line {
+  border: 1px solid var(--white-color);
   width: 100%;
-  color: white;
-  padding: 3%;
+}
+.footer-end {
+  background-color: #cea553;
+}
+.footer-copyright {
+  color: var(--white-color);
+}
+.footer-social-icons-list {
+  font-size: 20px;
+  color: var(--white-color);
+  margin: 0px 0px 20px 30px;
+  float: right;
+  cursor: pointer;
+}
+.footer-social-icons-list:hover {
+  color: var(--goldish-color);
+}
+.footer-address {
+  margin-top: -10px;
+}
+.footer-icons-right {
+  display: flex;
+  justify-content: end;
+}
+.datahex-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.datahex-link:hover {
+  color: var(--green-color);
+}
+
+@media (max-width: 991px) {
+  .footer-contact {
+    transform: translateX(0%);
+  }
+
+  .footer-logo {
+    width: 200px !important;
+    height: auto;
+  }
+
+  .footer-nav {
+    margin-left: 0px;
+  }
+
+  .footer .footer-desc {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-social-icons-list {
+    margin: 20px;
+  }
+
+  .footer-address {
+    margin-left: 0px;
+  }
+
+  .footer-location {
+    margin-top: 12px;
+  }
+
+  .footer-contact span {
+    margin-right: 5px;
+  }
+
+  .footer-number {
+    margin-left: 35px;
+  }
 }

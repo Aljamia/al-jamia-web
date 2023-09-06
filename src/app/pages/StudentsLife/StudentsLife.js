@@ -4,17 +4,15 @@ import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 
-import "./StudentsLife.css"
+import "./StudentsLife.css";
 import Facilities from "../ourfacilities/Facilities";
 
 function StudentsLife() {
   return (
     <div>
-        
-<PageHeader/>
+      <PageHeader />
 
-
-<div className="AboutUspage-img">
+      <div className="AboutUspage-img">
         <Image
           src="/image 7.png"
           layout="responsive"
@@ -23,13 +21,10 @@ function StudentsLife() {
           alt="Image"
         />
       </div>
-<div className="AboutUspage-items">
+      <div className="AboutUspage-items">
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-            
-
-
               <Col xl={6} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
                   <Image
@@ -44,47 +39,45 @@ function StudentsLife() {
                 </div>
               </Col>
 
-
- 
               <Col xl={6} lg={6} xs={12}>
-                
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
-                 Student Success & Development 
+                  Student Success & Development
                 </div>
                 <p className="AboutUspage-mission-desc">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                  ratione ex, quo molestiae, vel sit veritatis distinctio enim
+                  nulla sunt eligendi natus nihil iste explicabo quam assumenda
+                  at ut! Sit! A quas eveniet saepe ad quo perferendis
+                  voluptatum. Porro enim rem alias corrupti qui dolores libero
+                  dignissimos fugit harum sed doloremque illum officia ea et
+                  magni laborum, ex obcaecati! Dicta.
                 </p>
               </Col>
-
             </Row>
           </Container>
         </div>
 
-
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-            
-
- 
-            <Col xl={6} lg={6} xs={12}>
-                
+              <Col xl={6} lg={6} xs={12}>
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
-                 Student Services 
-
+                  Student Services
                 </div>
                 <p className="AboutUspage-mission-desc">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                  ratione ex, quo molestiae, vel sit veritatis distinctio enim
+                  nulla sunt eligendi natus nihil iste explicabo quam assumenda
+                  at ut! Sit! A quas eveniet saepe ad quo perferendis
+                  voluptatum. Porro enim rem alias corrupti qui dolores libero
+                  dignissimos fugit harum sed doloremque illum officia ea et
+                  magni laborum, ex obcaecati! Dicta.
                 </p>
               </Col>
 
@@ -101,21 +94,13 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                   />
                 </div>
               </Col>
-
-
-
             </Row>
           </Container>
         </div>
 
-
-
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-            
-
-
               <Col xl={6} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
                   <Image
@@ -130,45 +115,35 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </div>
               </Col>
 
-
- 
               <Col xl={6} lg={6} xs={12}>
-                
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
-                Students Life Services 
+                  Students Life Services
                 </div>
                 <p className="AboutUspage-mission-desc">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                  ratione ex, quo molestiae, vel sit veritatis distinctio enim
+                  nulla sunt eligendi natus nihil iste explicabo quam assumenda
+                  at ut! Sit! A quas eveniet saepe ad quo perferendis
+                  voluptatum. Porro enim rem alias corrupti qui dolores libero
+                  dignissimos fugit harum sed doloremque illum officia ea et
+                  magni laborum, ex obcaecati! Dicta.
                 </p>
               </Col>
-
             </Row>
           </Container>
         </div>
 
-
-
         <div className="AboutUspage-ourMission">
-
-<Facilities/>
-
+          <Facilities />
         </div>
-
-
-
-   
-
       </div>
 
-
-<Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default StudentsLife
+export default StudentsLife;

@@ -3,8 +3,6 @@ import Slider from "react-slick";
 import axios from "axios";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Department.css";
-import Link from "next/link";
 import { Col, Row, Card, Modal } from "react-bootstrap";
 const Departments = () => {
   const [show, setShow] = useState(false);
@@ -67,18 +65,14 @@ const Departments = () => {
 
   return (
     <div>
-
-
-
-
       <div className="department-section">
         <div className="container">
           <div className="row">
-          <div className="about-Title">
-        <h1>Department</h1>
-      </div>
-      <div className="about-description">
-      <p>
+            <div className="about-Title">
+              <h1>Department</h1>
+            </div>
+            <div className="about-description">
+              <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Tenetur consequuntur deserunt dolorum qui itaque aliquid hic
                 labore, aut illum expedita reiciendis blanditiis quibusdam rerum
@@ -87,9 +81,10 @@ const Departments = () => {
                 consequuntur deserunt dolorum qui itaque aliquid hic labore, aut
                 illum expedita reiciendis blanditiis quibusdam rerum pariatur
                 consequatur optio ullam recusandae sequi?
-              </p>      </div>
-            
-          </div>   <Slider {...settings}>
+              </p>{" "}
+            </div>
+          </div>{" "}
+          <Slider {...settings}>
             {cardValues.map((department) => (
               <div className="box" key={department.id}>
                 <div className="caro-img">
@@ -102,7 +97,7 @@ const Departments = () => {
                   </p>
                   <div className="caro-btn">
                     <button onClick={() => handleShow(department)}>
-                    More Details
+                      More Details
                     </button>
 
                     <Modal
@@ -141,15 +136,7 @@ const Departments = () => {
               </div>
             ))}
           </Slider>
-
         </div>
-
-        
-       
-
-
-        
-        
       </div>
     </div>
   );

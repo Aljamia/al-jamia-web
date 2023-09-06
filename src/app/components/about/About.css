@@ -18,7 +18,8 @@
   margin-top: 5rem;
 }
 .about-Title h1 {
-  font-family: var(--font-pt-serif);
+  font-family: unset;
+  font-weight: 300;
 }
 .about-description {
   display: flex;
@@ -27,16 +28,13 @@
   margin-top: 1rem;
 }
 .about-description p {
-  text-align: center;
-  color: #555555;
-  max-width: 70rem;
-  align-items: center;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0.52px;
+  color: var(--half-dark-text-color, rgba(1, 5,  20,  0.80));
 }
-/* .image img{
-    width: 100%;
-    height: 300px;
-} */
 .btn {
   display: flex;
   align-items: center;
@@ -45,12 +43,12 @@
 }
 .btn button {
   color: #619a46;
-      background-color: #ffffff;
-      /* padding: 7px 20px; */
-      border: solid 1px #619a46;
-      border-radius: 55px;
-      width: auto;
-      padding: 0px 0px 0px 20px;
+  background-color: #ffffff;
+  /* padding: 7px 20px; */
+  border: solid 1px #619a46;
+  border-radius: 55px;
+  width: auto;
+  padding: 0px 0px 0px 20px;
 }
 
 /* --------------------font family-------------------------------- */
@@ -59,8 +57,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 /* Apply the Inter font to <p> tags */
+
 .about-description p {
-  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0.52px;
+  color: var(--half-dark-text-color, rgba(1, 5,  20,  0.80));
 }
 
 /* Apply the Inter font to <button> tags */
@@ -106,7 +110,3 @@
     font-size: 13px;
   }
 }
-
-
-
-

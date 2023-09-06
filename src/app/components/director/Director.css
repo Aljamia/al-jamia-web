@@ -20,7 +20,7 @@
 .director-heading h1 {
   padding-bottom: 1rem;
   font-family: unset;
-    font-weight: 300;
+  font-weight: 300;
   display: flex;
   color: #619a46;
 }
@@ -36,11 +36,11 @@
   margin-top: 1rem;
 }
 .director-des p {
-  max-width: 80%;
+  max-width: 100%;
   font-size: 18px;
   text-align: justify;
   padding: 0px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 .person-detail h4 {
   color: #3b3b3bf9;
