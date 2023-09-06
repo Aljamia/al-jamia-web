@@ -3,18 +3,14 @@ import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-
-import "./Research.css"
-import Facilities from "../ourfacilities/Facilities";
+import "./Research.css";
 
 function Research() {
   return (
     <div>
-        
-<PageHeader/>
+      <PageHeader />
 
-
-<div className="AboutUspage-img">
+      <div className="AboutUspage-img">
         <Image
           src="/image 7.png"
           layout="responsive"
@@ -23,13 +19,10 @@ function Research() {
           alt="Image"
         />
       </div>
-<div className="AboutUspage-items">
+      <div className="AboutUspage-items">
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-            
-
-
               <Col xl={6} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
                   <Image
@@ -44,38 +37,28 @@ function Research() {
                 </div>
               </Col>
 
-
- 
               <Col xl={6} lg={6} xs={12}>
-                
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
-                Research
+                  Research
                 </div>
                 <p className="AboutUspage-mission-desc">
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Fugit ab repudiandae praesentium aperiam porro dignissimos ea
+                  est tempore quasi voluptas voluptatem voluptate iste nisi
+                  nostrum quos doloremque illo, eius placeat?
                 </p>
               </Col>
-
             </Row>
           </Container>
         </div>
-
-
-
-
-
-   
-
       </div>
 
-
-<Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Research
+export default Research;

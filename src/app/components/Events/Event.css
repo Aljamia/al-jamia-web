@@ -44,8 +44,8 @@
 }
 .event-btn-right:hover {
   color: #fff;
-  background-color: #cca65d;  border-radius: 50px;
-
+  background-color: #cca65d;
+  border-radius: 50px;
 }
 span {
   padding-left: 10px;
@@ -74,7 +74,9 @@ span {
 
 .library h1 {
   color: #619a46;
-  font-family: var(--font-pt-serif);
+  font-family: unset;
+  margin-top: 3rem;
+  font-weight: 300;
 }
 .library p {
   color: #555555;
@@ -138,8 +140,8 @@ span {
 }
 .right-learn-btn button:hover {
   background-color: #cca65d;
-  color: #fff;    border-radius: 50px;
-
+  color: #fff;
+  border-radius: 50px;
 }
 .event-btn-right {
   border: none;
@@ -189,7 +191,8 @@ span {
     padding-bottom: 2rem;
     color: #619a46;
     font-family: unset;
-    font-weight: 300;  }
+    font-weight: 300;
+  }
   .right-event-des h4 {
     font-size: 14px;
     color: black;

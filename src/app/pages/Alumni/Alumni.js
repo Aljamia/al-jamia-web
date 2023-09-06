@@ -6,50 +6,41 @@ import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 
-import "./Alumni.css"
+import "./Alumni.css";
 import Event from "@/app/components/Events/Event";
-
-
-
-
-
 
 import { getAboutUs, getAboutUsGallery } from "@/app/hooks/UseApi";
 import Link from "next/link";
 
 function Alumni() {
+  const [about, setAbout] = useState([]);
+  const [gallery, setGallery] = useState([]);
 
-    const [about, setAbout] = useState([]);
-    const [gallery, setGallery] = useState([]);
-  
-    useEffect(() => {
-      const fetchAbout = async () => {
-        const data = await getAboutUs();
-        setAbout(data?.response);
-      };
-      const fetchGallery = async () => {
-        const data = await getAboutUsGallery();
-        setGallery(data?.response);
-      };
-      fetchAbout();
-      fetchGallery();
-    }, []);
-    if (!gallery || gallery.length === 0) {
-      return (
-        <div className="text-left">
-          <h6>Loading...</h6>
-        </div>
-      );
-    }
-  
-    
+  useEffect(() => {
+    const fetchAbout = async () => {
+      const data = await getAboutUs();
+      setAbout(data?.response);
+    };
+    const fetchGallery = async () => {
+      const data = await getAboutUsGallery();
+      setGallery(data?.response);
+    };
+    fetchAbout();
+    fetchGallery();
+  }, []);
+  if (!gallery || gallery.length === 0) {
+    return (
+      <div className="text-left">
+        <h6>Loading...</h6>
+      </div>
+    );
+  }
+
   return (
     <div>
-      
-<PageHeader/>
+      <PageHeader />
 
-
-<div className="AboutUspage-img">
+      <div className="AboutUspage-img">
         <Image
           src="/image 7.png"
           layout="responsive"
@@ -58,13 +49,10 @@ function Alumni() {
           alt="Image"
         />
       </div>
-<div className="AboutUspage-items">
-<div className="AboutUspage-ourMission">
+      <div className="AboutUspage-items">
+        <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-            
-
-
               <Col xl={6} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
                   <Image
@@ -79,22 +67,20 @@ function Alumni() {
                 </div>
               </Col>
 
-
- 
               <Col xl={6} lg={6} xs={12}>
-                
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
-                Association
+                  Association
                 </div>
                 <p className="AboutUspage-mission-desc">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis, eveniet. Nisi pariatur tenetur facere dolore. Id,
+                  deserunt beatae error aspernatur eos dolor explicabo ad,
+                  inventore eum pariatur dolore sapiente ex.
                 </p>
               </Col>
-
             </Row>
           </Container>
         </div>
@@ -102,26 +88,25 @@ function Alumni() {
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-            
-
-
- 
               <Col xl={6} lg={6} xs={12}>
-                
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
-                Chapters
+                  Chapters
                 </div>
                 <p className="AboutUspage-mission-desc">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto tempore rerum beatae minima, corrupti error autem
+                  unde eligendi tempora ipsa delectus dolorum? Nihil voluptatum
+                  dicta neque suscipit delectus commodi impedit! Ipsa soluta
+                  odio fugiat. Iste cumque dignissimos distinctio eaque nobis
+                  fuga nam voluptas nostrum, numquam, deleniti a illum
+                  asperiores doloribus culpa dolore quam totam reprehenderit
+                  dicta officiis voluptates odit ex?
                 </p>
               </Col>
 
-
-              
               <Col xl={6} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
                   <Image
@@ -135,9 +120,6 @@ function Alumni() {
                   />
                 </div>
               </Col>
-
-
-
             </Row>
           </Container>
         </div>
@@ -145,9 +127,6 @@ function Alumni() {
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-            
-
-
               <Col xl={6} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
                   <Image
@@ -162,45 +141,55 @@ function Alumni() {
                 </div>
               </Col>
 
-
- 
               <Col xl={6} lg={6} xs={12}>
-                
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
-                Recognition and Awards
+                  Recognition and Awards
                 </div>
                 <p className="AboutUspage-mission-desc">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Doloribus ipsa, deserunt pariatur saepe est exercitationem
+                  laboriosam voluptatibus facere perspiciatis molestiae dolorum,
+                  ullam excepturi quasi repellat aliquid aliquam repudiandae,
+                  maxime rerum! Neque sit expedita, beatae harum voluptatibus
+                  dignissimos eos, eligendi odio magnam assumenda excepturi
+                  pariatur inventore recusandae. Dolore aut architecto dolores
+                  omnis deserunt expedita et repudiandae, beatae quas, animi,
+                  quaerat dolor. Consectetur nemo aspernatur atque fugiat veniam
+                  delectus qui rerum ex exercitationem? Aspernatur illo quis
+                  architecto sed corrupti quasi atque adipisci nesciunt
+                  recusandae, expedita minus facere enim, at nobis totam neque.
                 </p>
               </Col>
-
             </Row>
           </Container>
         </div>
 
-
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-            
-
- 
-            <Col xl={6} lg={6} xs={12}>
-                
+              <Col xl={6} lg={6} xs={12}>
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
-               Publications
-
+                  Publications
                 </div>
                 <p className="AboutUspage-mission-desc">
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Doloribus ipsa, deserunt pariatur saepe est exercitationem
+                  laboriosam voluptatibus facere perspiciatis molestiae dolorum,
+                  ullam excepturi quasi repellat aliquid aliquam repudiandae,
+                  maxime rerum! Neque sit expedita, beatae harum voluptatibus
+                  dignissimos eos, eligendi odio magnam assumenda excepturi
+                  pariatur inventore recusandae. Dolore aut architecto dolores
+                  omnis deserunt expedita et repudiandae, beatae quas, animi,
+                  quaerat dolor. Consectetur nemo aspernatur atque fugiat veniam
+                  delectus qui rerum ex exercitationem? Aspernatur illo quis
+                  architecto sed corrupti quasi atque adipisci nesciunt
+                  recusandae, expedita minus facere enim, at nobis totam neque.
                 </p>
               </Col>
 
@@ -217,100 +206,91 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                   />
                 </div>
               </Col>
-
-
-
             </Row>
           </Container>
         </div>
 
         <Container>
-            <Row>
-             <Col xl={12} lg={12} xs={12}>
-                <div className="AboutUspage-mission-img">
+          <Row>
+            <Col xl={12} lg={12} xs={12}>
+              <div className="AboutUspage-mission-img">
                 <Event />
-                </div>
-              </Col>
-
-
-
-            </Row>
-          </Container> 
-
-      
-
-            <div className="AboutUspage-ourCampus shadow-lg">
-        <Container>
-          <div className="AboutUspage-campus-title center_aln">Campus Life</div>
+              </div>
+            </Col>
+          </Row>
         </Container>
-        <div class="grid-wrapper">
-          <div className="wide">
-            <Image
-              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[6]?.image}`}
-              width={350}
-              height={10}
-              alt="Picture of the author"
-            />
-          </div>
 
-          <div className="big">
-            <Image
-              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[7]?.image}`}
-              width={350}
-              height={180}
-              alt="Picture of the author"
-            />
-          </div>
+        <div className="AboutUspage-ourCampus shadow-lg">
+          <Container>
+            <div className="AboutUspage-campus-title center_aln">
+              Campus Life
+            </div>
+          </Container>
+          <div class="grid-wrapper">
+            <div className="wide">
+              <Image
+                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[6]?.image}`}
+                width={350}
+                height={10}
+                alt="Picture of the author"
+              />
+            </div>
 
-          <div className="tall">
-            <Image
-              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[0]?.image}`}
-              width={350}
-              height={180}
-              alt="Picture of the author"
-              className="gallery-data-link"
-            />
-            <div className="gallery-link">
-              <Link href="/gallery" style={{ textDecoration: "none" }}>
-                <h3 className="gallery-navigate">25+</h3>
-              </Link>
+            <div className="big">
+              <Image
+                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[7]?.image}`}
+                width={350}
+                height={180}
+                alt="Picture of the author"
+              />
+            </div>
+
+            <div className="tall">
+              <Image
+                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[0]?.image}`}
+                width={350}
+                height={180}
+                alt="Picture of the author"
+                className="gallery-data-link"
+              />
+              <div className="gallery-link">
+                <Link href="/gallery" style={{ textDecoration: "none" }}>
+                  <h3 className="gallery-navigate">25+</h3>
+                </Link>
+              </div>
+            </div>
+            <div className="wide">
+              <Image
+                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[9]?.image}`}
+                width={350}
+                height={180}
+                alt="Picture of the author"
+              />
             </div>
           </div>
-          <div className="wide">
-            <Image
-              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${gallery[9]?.image}`}
-              width={350}
-              height={180}
-              alt="Picture of the author"
-            />
-          </div>
         </div>
-      </div>
-
-
-
 
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-            
-
- 
               <Col xl={6} lg={6} xs={12}>
-                
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
                 >
-                Projects
+                  Projects
                 </div>
                 <p className="AboutUspage-mission-desc">
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  aliquam eos odio esse quisquam perspiciatis, repudiandae quasi
+                  vel eligendi distinctio aspernatur natus magni neque dolor ad
+                  blanditiis fuga! Numquam, maiores! Aliquid, sint amet. Non
+                  deserunt repellendus dolorem quasi aperiam expedita ipsum
+                  voluptates veritatis perferendis minima tenetur corporis nulla
+                  numquam, sapiente, quidem vero, aliquam cupiditate quia
+                  mollitia excepturi at distinctio possimus.
                 </p>
               </Col>
-
-
 
               <Col xl={6} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
@@ -325,29 +305,14 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                   />
                 </div>
               </Col>
-
-
-
             </Row>
-          </Container> 
-
-
-        
-          
-         
+          </Container>
         </div>
-
-      
-
-
-   
-
       </div>
 
-<Footer/>
-    </div>  
-
-  )
+      <Footer />
+    </div>
+  );
 }
 
-export default Alumni
+export default Alumni;

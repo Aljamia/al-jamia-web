@@ -8,6 +8,7 @@ import Footer from "../components/footer/Footer";
 import Courses from "../components/ourCourses/Courses";
 import Grades from "../components/grades/Grades";
 import Library from "../components/Events/Library";
+import "/src/app/globals.css";
 
 const LandingPage = () => {
   return (
