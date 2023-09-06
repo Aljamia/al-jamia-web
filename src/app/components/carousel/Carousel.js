@@ -55,19 +55,19 @@ const CarouselComponent = () => {
           <div className="carousel-overlay ">
             <Slider ref={(slider) => (slider = slider)} {...settings}>
               <div className="carousel-para">
-                <p className="animate__bounceIn">
+                {/* <p className="animate__bounceIn">
                   Resolve The Campaign with our pleasure everyone
-                </p>
+                </p> */}
               </div>
               <div className="carousel-para">
-                <p className="animate__bounceIn">
+                {/* <p className="animate__bounceIn">
                   Welcome To Al-jamia member everyone Lorem
-                </p>
+                </p> */}
               </div>
               <div className="carousel-para ">
-                <p className="animate__bounceIn">
+                {/* <p className="animate__bounceIn">
                   This is a wonderful occation to have you all join us
-                </p>
+                </p> */}
               </div>
             </Slider>
           </div>

@@ -50,14 +50,25 @@ const PageHeader = () => {
                 <Nav.Link href="/" className="nav-links nav-link-black">
                   Home
                 </Nav.Link>
-                <Nav.Link href="/about" className="nav-links nav-link-black">
+                {/* <Nav.Link href="/about" className="nav-links nav-link-black">
                   About us
+                </Nav.Link> */}
+
+<Nav.Link href="/about" className="nav-links nav-link-black">
+                About Us
                 </Nav.Link>
-                <nav role="navigation" className="primary-navigation ">
+
+                <Nav.Link href="/Academics" className="nav-links nav-link-black">
+                Academics
+                </Nav.Link>
+
+              
+               
+                {/* <nav role="navigation" className="primary-navigation ">
                   <ul>
                     <li>
-                      <Nav.Link href="#" className="nav-links nav-link-black">
-                        Authorities{" "}
+                      <Nav.Link href="/about" className="nav-links nav-link-black">
+                      About Us{" "}
                         <FontAwesomeIcon
                           icon={faChevronDown}
                           style={{ fontSize: "18px" }}
@@ -88,16 +99,78 @@ const PageHeader = () => {
                       </ul>
                     </li>
                   </ul>
-                </nav>
-                <Nav.Link
+                </nav> */}
+
+                {/* <nav role="navigation" className="primary-navigation ">
+                  <ul>
+                    <li>
+                      <Nav.Link href="/admission" className="nav-links nav-link-black">
+                      Admission{" "}
+                        <FontAwesomeIcon
+                          icon={faChevronDown}
+                          style={{ fontSize: "18px" }}
+                        />
+                      </Nav.Link>
+
+                      <ul className="dropdown">
+                        <li className="nav-dropdown-links">
+                          <Nav.Link href="/management">
+                            {" "}
+                            <h5>Supreme Council</h5>{" "}
+                          </Nav.Link>
+                        </li>
+                        <li className="nav-dropdown-links">
+                          <Nav.Link href="/boardofdirector">
+                            {" "}
+                            <h5> Administrative Council</h5>{" "}
+                          </Nav.Link>
+                        </li>
+                        <li className="nav-dropdown-links">
+                          <Nav.Link href="/faculties">
+                            {" "}
+                            <h5>
+                              Succession List of Heads of the Institution
+                            </h5>{" "}
+                          </Nav.Link>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav> */}
+
+
+
+
+
+<Nav.Link href="/Research" className="nav-links nav-link-black">
+Research
+                </Nav.Link>
+                <Nav.Link href="/Admission" className="nav-links nav-link-black">
+                Admission
+                </Nav.Link>
+
+  {/* <Nav.Link href="/centralibrary" className="nav-links nav-link-black">
+  Library
+                </Nav.Link> */}
+
+
+                <Nav.Link href="/Alumni" className="nav-links nav-link-black">
+                Alumni
+                </Nav.Link>
+
+                <Nav.Link href="/StudentsLife" className="nav-links nav-link-black">
+                Students Life
+                </Nav.Link>
+                
+
+                {/* <Nav.Link
                   href="/facilities"
                   className="nav-links nav-link-black"
                 >
                   Facilities
-                </Nav.Link>
-                <Nav.Link href="/venture" className="nav-links nav-link-black">
-                  Ventures
-                </Nav.Link>
+                </Nav.Link> */}
+               
+                
                 <Nav.Link href="/contact" className="nav-links nav-link-black">
                   Contact
                 </Nav.Link>

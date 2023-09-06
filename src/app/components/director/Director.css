@@ -18,12 +18,11 @@
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
 }
 .director-heading h1 {
-  padding-top: 2rem;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 1rem;
+  font-family: unset;
+    font-weight: 300;
   display: flex;
   color: #619a46;
-  font-family: var(--font-pt-serif);
 }
 
 /* .director-img img{
@@ -46,7 +45,7 @@
 .person-detail h4 {
   color: #3b3b3bf9;
   font-weight: 400;
-  font-family: var(--font-pt-serif);
+  font-family: unset;
 }
 .person-detail p {
   color: #555555;

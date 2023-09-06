@@ -67,14 +67,18 @@ const Departments = () => {
 
   return (
     <div>
+
+
+
+
       <div className="department-section">
         <div className="container">
           <div className="row">
-            <div className="department-heading">
-              <h1>Department</h1>
-            </div>
-            <div className="department-para">
-              <p>
+          <div className="about-Title">
+        <h1>Department</h1>
+      </div>
+      <div className="about-description">
+      <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Tenetur consequuntur deserunt dolorum qui itaque aliquid hic
                 labore, aut illum expedita reiciendis blanditiis quibusdam rerum
@@ -83,12 +87,9 @@ const Departments = () => {
                 consequuntur deserunt dolorum qui itaque aliquid hic labore, aut
                 illum expedita reiciendis blanditiis quibusdam rerum pariatur
                 consequatur optio ullam recusandae sequi?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="carousel-2">
-          <Slider {...settings}>
+              </p>      </div>
+            
+          </div>   <Slider {...settings}>
             {cardValues.map((department) => (
               <div className="box" key={department.id}>
                 <div className="caro-img">
@@ -101,7 +102,7 @@ const Departments = () => {
                   </p>
                   <div className="caro-btn">
                     <button onClick={() => handleShow(department)}>
-                      Read More
+                    More Details
                     </button>
 
                     <Modal
@@ -140,7 +141,15 @@ const Departments = () => {
               </div>
             ))}
           </Slider>
+
         </div>
+
+        
+       
+
+
+        
+        
       </div>
     </div>
   );

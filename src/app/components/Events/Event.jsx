@@ -27,7 +27,7 @@ const Event = () => {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
@@ -71,10 +71,20 @@ const Event = () => {
     <div>
       <div className="events-section">
         <div className="event-title">
-          <h1>Events and Updates</h1>
-        </div>
+        <div className="about-Title">
+            <h1>News and Events</h1>
+          </div>
+          <div className="grades-desc pb-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+              quasi minus. Ut impedit voluptas excepturi aperiam iste non in
+              explicabo. Tenetur inventore dolor distinctio necessitatibus vero,
+              perspiciatis aliquam debitis ea.
+            </p>
+          </div>       
+           </div>
         <div></div>
-        <div className="event-first-section">
+        <div className="event-first-section p-1">
           <Container>
             <Row>
               <Col xl={5}>
@@ -82,7 +92,7 @@ const Event = () => {
                   <img
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
                     alt=""
-                    style={{ borderRadius: "10px", width: "100%" }}
+                    style={{ borderRadius: "20px", width: "100%" }}
                   />
                 </div>
                 <div className="event-btn">
@@ -102,7 +112,7 @@ const Event = () => {
                   </button>
                 </div>
               </Col>
-              <Col xl={7}>
+              <Col xl={7} className="pt-3">
                 <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
                     {events.map((event) => (
@@ -111,7 +121,7 @@ const Event = () => {
                           <h4>{event.title}</h4>
                           <p>
                             {new Date(event.date).toDateString()}{" "}
-                            <span>
+                            <span className="p-0">
                               {" "}
                               <hr style={{ color: "grey" }} />
                             </span>

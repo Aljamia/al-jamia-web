@@ -24,58 +24,59 @@ const ContactUs = () => {
             <Col xl={6}>
               <div className="contact-header-left">
                 <div className="contact-header-title">
-                  <h1>Contact Us</h1>
-                  <p>
-                    Al Jamia Arts and Science College (AJAS), a resourceful
+                  <h1 className="h1style">Contact us</h1>
+                  <p className="pb-3">
+                  our friendly team  would love to hear from you!
+                    {/* Al Jamia Arts and Science College (AJAS), a resourceful
                     destination for higher studies in the region, was
                     established in 2010 with the main objective of uplifting the
-                    educationally developing Muslims and other communities.
+                    educationally developing Muslims and other communities. */}
                   </p>
                 </div>
-                <div className="contact-header-phone">
-                  <span className="social-logo">
-                    <Image
-                      src="/Group 2092.png"
-                      width={45}
-                      height={45}
-                      alt="Picture of the author"
-                    />
-                  </span>
-                  <span className="social-details">
-                    <div>00914933 – 270439</div>
-                    <div>00 914933 – 270565</div>
-                  </span>
-                </div>
-                <div className="contact-header-mail">
-                  <span className="social-logo">
-                    <Image
-                      src="/Group 2089.png"
-                      width={45}
-                      height={45}
-                      alt="Picture of the author"
-                    />
-                  </span>
-                  <span className="social-details">
-                    <div className="social-mail">
-                      aljamiaalislamia@gmail.com
-                    </div>
-                  </span>
-                </div>
-                <div className="contact-header-location">
-                  <span className="social-logo">
-                    <Image
-                      src="/Group 2090.png"
-                      width={45}
-                      height={45}
-                      alt="Picture of the author"
-                    />
-                  </span>
-                  <span className="social-details">
-                    <div className="social-address">
-                      SANTHAPURAM , P.O. PATTIKKAD 679 325, MALAPPURAM ,KERALA{" "}
-                    </div>
-                  </span>
-                </div>
+                
+                <form>
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+      <label class="form-label" for="form6Example1">First name</label>
+
+        <input type="text" id="" class="cont_form" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+      <label class="form-label" for="form6Example2">Last name</label>
+
+        <input type="text" id="form6Example2" class="cont_form" />
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="form-outline mb-4">
+  <label class="form-label" for="form6Example5">Email</label>
+
+    <input type="email" id="form6Example5" class="cont_form" />
+  </div>
+
+  <div class="form-outline mb-4">
+  <label class="form-label" for="form6Example6">Phone</label>
+
+    <input type="number" id="form6Example6" class="cont_form" />
+  </div>
+
+ 
+  <div class="form-outline mb-4">
+  <label class="form-label" for="form6Example4">Address</label>
+
+    <input type="text" id="form6Example4" class="cont_form" />
+  </div>
+
+
+  <button type="submit" class="send_button  mb-4">Send message</button>
+</form>
+
+
               </div>
             </Col>
             <Col xl={6}>
@@ -95,6 +96,34 @@ const ContactUs = () => {
           </Row>
         </Container>
       </div>
+
+
+      <div className="p-5 m-5">
+        <Container>
+          <Row>
+          <Col xl={4}>
+              <div className="addres_box">
+          <img src="location_icon.svg" />
+                <p>SANTHAPURAM , P.O. PATTIKKAD  679 325, MALAPPURAM ,KERALA </p>
+              </div>
+              </Col>
+              <Col xl={4}>
+              <div className="addres_box">
+          <img src="mail_icon.svg" />
+                <p>aljamiaalislamia@gmail.com <br/>www.aljamiaalislamia.com </p>
+              </div>
+              </Col>
+              <Col xl={4}>
+              <div className="addres_box">
+          <img src="call_icon.svg" />
+                <p>00914933 – 27043900 <br/> 914933 – 270565 </p>
+              </div>
+              </Col>
+              </Row>
+              </Container>
+        </div>
+
+
       <div className="footer-end">
         <Container>
           <Row>
@@ -143,7 +172,13 @@ const ContactUs = () => {
             </Col>
           </Row>
         </Container>
+
+
+        
       </div>
+
+   
+
     </div>
   );
 };

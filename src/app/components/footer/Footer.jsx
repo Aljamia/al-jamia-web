@@ -15,13 +15,13 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer p-5">
       <Container className="footer-contents">
         <Row>
           <Col lg={6}>
             <div>
               <Image
-                src="/image 5.png"
+                src="/aljamiya_logo.png"
                 width={350}
                 height={80}
                 alt="Picture of the author"
@@ -61,9 +61,8 @@ const Footer = () => {
                 <span className="">
                   <FaPhone />{" "}
                 </span>
-                00914933 – 270439
+                00914933 – 270439 - 00914933 – 270565
               </p>
-              <p className="footer-number"> 00914933 – 270565</p>
 
               <p>
                 <span>

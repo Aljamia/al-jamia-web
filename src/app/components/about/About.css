@@ -44,12 +44,13 @@
   margin-top: 2rem;
 }
 .btn button {
-  color: #fff;
-  background-color: #cca65d;
-  padding: 7px 20px;
-  border: none;
-  border-radius: 5px;
-  font-family: var(--font-inter);
+  color: #619a46;
+      background-color: #ffffff;
+      /* padding: 7px 20px; */
+      border: solid 1px #619a46;
+      border-radius: 55px;
+      width: auto;
+      padding: 0px 0px 0px 20px;
 }
 
 /* --------------------font family-------------------------------- */
@@ -105,3 +106,7 @@
     font-size: 13px;
   }
 }
+
+
+
+

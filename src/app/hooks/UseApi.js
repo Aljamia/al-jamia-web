@@ -3,10 +3,38 @@ import axios from "axios";
 
 const BASE_URL = "https://aljamia-hgtgv.ondigitalocean.app/api/v1";
 
+
 export const getAboutUs = async () => {
   const response = await axios.get(`${BASE_URL}/about-us`);
   return response.data;
 };
+
+export const getAcademics = async () => {
+  const response = await axios.get(`${BASE_URL}/Academics`);
+  return response.data;
+};
+
+export const getAdmission = async () => {
+  const response = await axios.get(`${BASE_URL}/Admission`);
+  return response.data;
+};
+
+export const getStudentsLife = async () => {
+  const response = await axios.get(`${BASE_URL}/StudentsLife`);
+  return response.data;
+};
+
+export const getAlumni = async () => {
+  const response = await axios.get(`${BASE_URL}/Alumni`);
+  return response.data;
+};
+
+export const getResearch = async () => {
+  const response = await axios.get(`${BASE_URL}/Research`);
+  return response.data;
+};
+
+
 
 export const getAboutUsGallery = async () => {
   const response = await axios.get(`${BASE_URL}/gallery`);

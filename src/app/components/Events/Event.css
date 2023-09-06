@@ -22,12 +22,11 @@
 }
 
 .event-title h1 {
-  margin-left: 110px;
   padding-top: 4rem;
   font-size: 40px;
   padding-bottom: 2rem;
   color: #619a46;
-  font-family: var(--font-pt-serif);
+  font-family: unset;
 }
 .event-des {
   margin-top: 1em;
@@ -37,7 +36,7 @@
 }
 .event-btn button {
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   padding: 5px 7px 5px;
   color: #fff;
   background-color: rgba(97, 154, 70, 0.75);
@@ -45,7 +44,8 @@
 }
 .event-btn-right:hover {
   color: #fff;
-  background-color: #cca65d;
+  background-color: #cca65d;  border-radius: 50px;
+
 }
 span {
   padding-left: 10px;
@@ -130,7 +130,7 @@ span {
 
 .right-learn-btn button {
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: #b6acac93;
   font-size: 13px;
   padding: 3px 15px;
@@ -138,11 +138,12 @@ span {
 }
 .right-learn-btn button:hover {
   background-color: #cca65d;
-  color: #fff;
+  color: #fff;    border-radius: 50px;
+
 }
 .event-btn-right {
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: #b6acac93;
   font-size: 13px;
   padding: 3px 15px;
@@ -187,8 +188,8 @@ span {
     padding-top: 4rem;
     padding-bottom: 2rem;
     color: #619a46;
-    font-family: var(--font-pt-serif);
-  }
+    font-family: unset;
+    font-weight: 300;  }
   .right-event-des h4 {
     font-size: 14px;
     color: black;

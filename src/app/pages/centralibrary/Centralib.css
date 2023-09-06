@@ -13,15 +13,15 @@
 }
 .AboutUspage-header {
   padding: 4em;
-  margin-top: 4em;
+  margin-top: 8em;
   text-align: center;
 }
 .AboutUspage-title {
   color: var(--light-green-color);
-  font-family: var(--font-PT-serif);
-  font-size: 50px;
+  font-family: unset;
+  font-size: 40px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 250;
   line-height: normal;
 }
 .AboutUspage-desc {
@@ -29,21 +29,15 @@
   font-family: var(--font-inter);
   font-size: 20px;
   font-style: normal;
-  text-align: center;
+  text-align: justify;
   margin-top: 1.5em;
   padding: 1em;
   font-weight: 400;
   line-height: 130%; /* 39px */
 }
-:is(.AboutUspage-short-desc, .AboutUspage-long-desc)::first-letter {
-  font-size: 30px;
-  color: #619a46;
-  text-transform: uppercase;
-  font-family: var(--font-inter);
-  font-weight: 900;
-}
 .AboutUspage-long-desc {
-  margin-top: 2em;
+  margin-top: 2em;    text-align: justify;
+
 }
 .AboutUspage-items {
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
@@ -55,10 +49,11 @@
 }
 .central-lib-title {
   text-align: center;
-  font-family: var(--font-PT-serif);
+  font-family: unset;
   color: var(--light-green-color);
   font-size: 40px;
   padding: 1em;
+  font-weight: 200;
 }
 .central-lib-cards {
   padding: 1em;
@@ -76,10 +71,10 @@
   height: auto;
   margin: auto;
   background: #cca65d;
-  padding: 3px 20px;
+  padding: 10px 30px;
   margin-top: 10px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 .explore-btn:hover {
   background-color: #ddae56;
@@ -122,10 +117,11 @@
   }
   .central-lib-title {
     text-align: center;
-    font-family: var(--font-PT-serif);
+    font-family: unset;
     color: var(--light-green-color);
     font-size: 18px;
     padding: 0.5em;
+    font-weight: 200;
   }
   .explore-btn {
     width: 50%;

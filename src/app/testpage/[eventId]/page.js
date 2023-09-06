@@ -32,7 +32,7 @@ function HomePage(eventId) {
   return (
     <div>
       <PageHeader />
-      <div className="news-section">
+      <div className="news-section pt-5">
         <Container id="news-container">
           <div className="header-news">
             <div className="news-title">
@@ -50,7 +50,12 @@ function HomePage(eventId) {
             </div>
           </div>
         </Container>
+
+        <div className="news-para">
+
         <Event event-section-2={false} />
+                    </div>
+
       </div>
       <Footer />
     </div>
