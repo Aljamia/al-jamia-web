@@ -18,7 +18,7 @@ const Centralib = () => {
             Al Jamia Al Islamiya Central Library
           </div>
         </div>
-        <div className="AboutUspage-img">
+        <div className="AboutUspage-img padimg">
           <Image
             src="/the library.jpg"
             layout="responsive"

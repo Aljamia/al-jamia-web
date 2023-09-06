@@ -34,7 +34,7 @@ const CoursePage = () => {
         style={{ width: "100%", maxWidth: "100%" }}
       >
         <Container>
-          <div className="coursePage-img">
+          <div className="coursePage-img pt-5 mag_top">
             <Image
               src="/image 15.jpg"
               layout="responsive"
@@ -42,7 +42,7 @@ const CoursePage = () => {
               height={500}
               alt="Image"
             />
-            <div className="coursePage-text">
+            <div className="coursePage-text center_div">
               <h2> Explore Our More Courses</h2>
             </div>
           </div>
@@ -73,16 +73,17 @@ const CoursePage = () => {
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
                       />
                       <Container>
-                        <div className="course-data-items">
-                          <span className="course-data-category">
-                            {course.category}{" "}
-                          </span>
+                    <div className="course-data-items">
+                      <span className="course-data-category">
+                      <img className="icon_pl" src="forbox.svg" alt="photo" width="auto" /> {course.category}{" "}
+                      </span>
 
-                          <span className="course-data-duration">
-                            {course.duration}
-                          </span>
-                        </div>
-                      </Container>
+                      <span className="course-data-duration">
+                      <img className="icon_pl" src="time.svg" alt="photo" width="auto" />
+ {course.duration}
+                      </span>
+                    </div>
+                  </Container>
                       <Card.Body>
                         <Card.Title>
                           <h2 className="portfolio-title">
@@ -93,13 +94,24 @@ const CoursePage = () => {
                           <p className="portfolio-text">{course.description}</p>
                         </Card.Text>
 
-                        <Button
-                          variant="primary btn-primary"
-                          className="portfolio-btn"
-                          onClick={() => handleShow(course)}
-                        >
-                          Read More
-                        </Button>
+<div className="center_div">
+
+
+                        <button
+                      variant="primary btn-primary"
+                      className="portfolio-btn btn btn-primary btn-primary"
+                      onClick={() => handleShow(course)}
+                    >
+              {" "}
+             <span className="">
+             More Details
+             </span>
+
+       
+            {" "}
+              </button>
+
+</div>
 
                         <Modal
                           key={modalVal?.id}
@@ -126,13 +138,16 @@ const CoursePage = () => {
                                 </Card.Title>
                                 <Card.Text className="course-cardmodal-desc">
                                   <span className="course-modal-category">
-                                    {modalVal?.category}{" "}
+                                  <img className="icon_pl" src="forbox.svg" alt="photo" width="auto" /> {modalVal?.category}{" "}
                                   </span>
                                   <span className="course-modal-duration">
-                                    {modalVal?.duration}
+                                  <img className="icon_pl" src="time.svg" alt="photo" width="auto" /> {modalVal?.duration}
                                   </span>
                                 </Card.Text>
+
+                                <br/>
                                 <Card.Text className="course-cardmodal-text">
+                                <br/>
                                   {modalVal?.description}
                                 </Card.Text>
                               </Col>

@@ -18,10 +18,9 @@
 }
 .Faculties-title {
   color: var(--light-green-color);
-  font-family: var(--font-PT-serif);
   font-size: 50px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 250;
   line-height: normal;
   margin-top: 1em;
 }

@@ -13,7 +13,7 @@ const Facilities = () => {
       <div className="facilities-header">
         <div className="facilities-title">Our Facilities</div>
       </div>
-      <div className="facilities-img">
+      <div className="facilities-section-three">
         <Image
           src="/Rectangle 991.jpg"
           layout="responsive"
@@ -230,7 +230,7 @@ const Facilities = () => {
                 layout="responsive"
                 width={1000}
                 height={200}
-                style={{ borderRadius: "5px" }}
+                style={{ borderRadius: "30px" }}
                 alt="Image"
               />
             </Col>
@@ -370,7 +370,6 @@ const Facilities = () => {
           </Row>
         </Container>
       </div>
-      <Footer />
     </div>
   );
 };

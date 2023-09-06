@@ -62,10 +62,9 @@
   }
   .news-alert-headertitle {
     color: var(--light-green-color);
-    font-family: var(--font-PT-serif);
-    font-size: 30px;
+    font-family: unset;
+    font-weight: 300;    font-size: 30px;
     font-style: normal;
-    font-weight: 450;
     line-height: normal;
   }
   .news-alert-title {

@@ -57,13 +57,10 @@
 .news-para p {
   align-items: center;
   justify-content: center;
-  display: flex;
-  text-align: center;
   font-family: var(--font-inter);
   color: #555555;
   font-size: 19px;
-  padding: 0 40px; /* Adjust the value as needed */
-  font-family: var(--font-inter);
+  padding: 0px; /* Adjust the value as needed */
 }
 
 #news-container {
