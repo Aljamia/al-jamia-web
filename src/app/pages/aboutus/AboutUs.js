@@ -48,12 +48,10 @@ const AboutUs = () => {
         />
       </div>
 
-      <div className="AboutUspage-desc">
+      <div className="AboutUspage-desc">  
+          <div className="AboutUspage-title center_aln pb-4">About Us</div>
         {" "}
-        <img src="vision.png" alt="photo" className="about_img" />
-        <div className="AboutUspage-header">
-          <div className="AboutUspage-title">About Us</div>
-        </div>
+      
         {about.map((item, index) => (
           <>
             <Container className="AboutUspage-short-desc" key={index}>
@@ -65,6 +63,8 @@ const AboutUs = () => {
           </>
         ))}
       </div>
+
+
 
       <Director />
 
@@ -130,7 +130,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="AboutUspage-ourMission p-5">
+      <div className="AboutUspage-ourMission">
         <Container>
           <Row>
             <Col xl={6} lg={6} xs={12}>
@@ -169,7 +169,7 @@ const AboutUs = () => {
         </Container>
       </div>
 
-      <div className="AboutUspage-ourMission p-5">
+      <div className="AboutUspage-ourMission">
         <Container>
           <Row>
             <Col xl={6} lg={6} xs={12}>

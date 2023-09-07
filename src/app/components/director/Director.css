@@ -49,7 +49,7 @@
 }
 .person-detail p {
   color: #555555;
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--font-inter);
 }
 .facualies {
@@ -68,7 +68,7 @@
   color: #555555;
   max-width: 80%;
   font-family: var(--font-inter);
-  font-size: 20px;
+  font-size: 18px;
 }
 .fac-btn {
   margin-top: 1rem;
@@ -105,7 +105,7 @@
     color: #555555;
     max-width: 100%;
     font-family: var(--font-inter);
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
   .fac-title h1 {

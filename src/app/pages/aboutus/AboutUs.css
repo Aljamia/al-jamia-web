@@ -43,7 +43,7 @@
 }
 .footer-links h5 {
   font-family: var(--font-rubik);
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px;
   font-style: normal;
   font-weight: 400;
@@ -61,7 +61,7 @@
 .footer-contact p {
   color: var(--white-color);
   font-family: var(--font-rubik);
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 10px;
@@ -82,7 +82,7 @@
   color: var(--white-color);
 }
 .footer-social-icons-list {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--white-color);
   margin: 0px 0px 20px 30px;
   float: right;
@@ -120,7 +120,7 @@
 }
 @media (max-width: 500px) {
   .footer-social-icons-list {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--white-color);
     margin: 0px 0px 20px 30px;
     float: right;
@@ -490,13 +490,13 @@ nav.primary-navigation ul li ul li {
 .AboutUspage-desc {
   color: var(--gray, #555);
   font-family: var(--font-inter);
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   text-align: justify;
   margin-top: 1.5em;
   padding: 1em;
   font-weight: 400;
-  line-height: 130%; /* 39px */
+  line-height: 160%; /* 39px */
 }
 :is(.AboutUspage-short-desc, .AboutUspage-long-desc)::first-letter {
   /* font-size: 30px;
@@ -538,13 +538,13 @@ nav.primary-navigation ul li ul li {
 .AboutUspage-vision-desc {
   color: var(--gray, #555);
   font-family: var(--font-inter);
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   width: 60%;
   margin-left: 80px;
   text-align: left;
   font-weight: 300;
-  line-height: 130%; /* 39px */
+  line-height: 160%; /* 39px */
 }
 .AboutUspage-mission-title,
 .AboutUspage-campus-title {
@@ -562,11 +562,11 @@ nav.primary-navigation ul li ul li {
 .AboutUspage-mission-desc {
   color: var(--gray, #555);
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   margin-top: 0.3em;
-  line-height: 130%; /* 39px */
+  line-height: 160%; /* 39px */
 }
 #our-mission-header {
   margin-top: 30px;
@@ -668,6 +668,25 @@ nav.primary-navigation ul li ul li {
   }
   .AboutUspage-mission-img {
     margin-top: 0px;
+  }
+  .AboutUspage-mission-desc {
+    color: var(--gray, #555);
+    text-align: justify;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 0;
+    line-height: 160%; /* 39px */
+  }
+  .AboutUspage-mission-title, .AboutUspage-campus-title{
+    text-align: center;
+  }
+  .AboutUspage-items{
+    padding: 3%;
+  }
+  .AboutUspage-desc {
+    font-size: 14px;
+
   }
 }
 
@@ -775,5 +794,5 @@ nav.primary-navigation ul li ul li {
 
 .about_img {
   float: left;
-  width: auto;
+  width: 100%;
 }

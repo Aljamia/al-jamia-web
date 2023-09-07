@@ -41,7 +41,7 @@
   color: #555555;
   max-width: 70rem;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* .image img{
@@ -98,7 +98,7 @@
 
 /* Apply the Inter font to <p> tags */
 .about-description p {
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 160%; /* 41.6px */
@@ -355,7 +355,7 @@
   .carousel-para p {
     color: var(--white-color);
     font-family: unset;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 450;
     line-height: 25px;
@@ -547,7 +547,7 @@ nav.primary-navigation ul li ul li {
 @media (min-width: 300px) and (max-width: 990px) {
   .navbar {
     width: 100%;
-    height: 10vh;
+    height: auto;
   }
 
   .nav-logo {
@@ -617,7 +617,7 @@ nav.primary-navigation ul li ul li {
 @media (min-width: 989px) and (max-width: 1200px) {
   .navbar {
     width: 100%;
-    height: 10vh;
+    height: auto;
   }
 
   .nav-logo {
@@ -731,7 +731,7 @@ nav.primary-navigation ul li ul li {
   color: #555555;
   height: auto;
   font-family: unset;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -952,7 +952,7 @@ nav.primary-navigation ul li ul li {
   color: #555555;
   max-width: 80%;
   font-family: unset;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fac-btn {
@@ -996,7 +996,7 @@ nav.primary-navigation ul li ul li {
     color: #555555;
     max-width: 100%;
     font-family: unset;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -1072,7 +1072,6 @@ nav.primary-navigation ul li ul li {
 }
 
 span {
-  padding: 0px 10px 0px;
   font-family: unset;
 }
 
@@ -1112,7 +1111,7 @@ span {
   color: #555555;
   max-width: 90%;
   font-family: unset;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .library-btn {
@@ -1157,7 +1156,7 @@ span {
 }
 
 .right-event-des h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: black;
   font-family: unset !important;
@@ -1287,7 +1286,7 @@ span {
   }
 
   .event-des h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .slick-dots li button {
@@ -1301,7 +1300,8 @@ span {
   .library p {
     color: #555555;
     max-width: 100%;
-    text-align: j;
+    font-size: 14px;
+    text-align: center;
   }
 
   .learn-btn-lib {
@@ -1350,12 +1350,12 @@ span {
 
 .course-desc {
   color: #747373;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
   letter-spacing: 0.52px;
-  line-height: 130%;
+  line-height: 160%;
   margin-bottom: 30px;
 }
 
@@ -1377,7 +1377,7 @@ span {
   position: relative;
   color: var(--goldish-color);
   font-family: unset;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
@@ -1718,7 +1718,7 @@ span {
   }
 
   .grades-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -1917,7 +1917,7 @@ span {
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
 
   opacity: 0.75;
@@ -2059,7 +2059,7 @@ span {
 
 .grades-desc {
   color: #747373;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   text-align: center;
@@ -2067,7 +2067,7 @@ span {
   margin: auto;
   line-height: 160%;
   letter-spacing: 0.52px;
-  line-height: 130%;
+  line-height: 160%;
   margin-bottom: 30px;
 }
 
@@ -2119,7 +2119,7 @@ span {
 
 .footer-links h5 {
   font-family: var(--font-rubik);
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px;
   font-style: normal;
   font-weight: 400;
@@ -2140,7 +2140,7 @@ span {
 .footer-contact p {
   color: var(--white-color);
   font-family: var(--font-rubik);
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 10px;
@@ -2169,7 +2169,7 @@ span {
   color: var(--white-color);
 }
 .footer-social-icons-list {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--white-color);
   margin: 0px 0px 20px 30px;
   float: right;

@@ -39,7 +39,7 @@
     /* height: 0; */
   }
   .news-title h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .news-para p {
     font-size: 14px !important;
@@ -133,7 +133,7 @@ span {
   color: #555555;
   max-width: 90%;
   font-family: unset;
-  font-size: 20px;
+  font-size: 18px;
 }
 /* --right side carouse */
 
@@ -150,7 +150,7 @@ span {
 }
 
 .righttevent-caro-des h4 {
-  font-size: 20px;
+  font-size: 18px;
   max-width: 100%;
   color: black;
   font-weight: 400 !important;
@@ -166,7 +166,7 @@ span {
   background-color: #b6acac93;
 }
 .right-event-des h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   font-family: unset !important;
 }
@@ -193,7 +193,7 @@ span {
   opacity: 1;
 }
 .event-slick div {
-  margin: 0 0.5rem;
+  margin: 0;
   background-color: transparent !important;
   opacity: 1;
   margin-top: 0.2rem;
@@ -261,7 +261,7 @@ span {
     font-size: 10px;
   }
   .event-des h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .slick-dots li button {
     display: none;
@@ -272,5 +272,6 @@ span {
   }
   .library p {
     text-align: center;
+    font-size: 14px;
   }
 }
