@@ -39,8 +39,8 @@ const academics = () => {
                 />
               </div>
             </Col>
-            <Col xl={6} lg={6} xs={12}>
-              <div className="pt-5 mt-5">
+            <Col xl={6} lg={6} xs={12} className="Academicsstyle">
+              <div className="">
                 <h1>
                   Academics
                   <br />

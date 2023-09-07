@@ -15,7 +15,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer p-5">
+    <div className="footer">
       <Container className="footer-contents">
         <Row>
           <Col lg={6}>

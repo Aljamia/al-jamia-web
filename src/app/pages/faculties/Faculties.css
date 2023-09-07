@@ -38,10 +38,10 @@
   text-align: center;
   color: var(--gray, #555);
   font-family: var(--font-inter);
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 130%; /* 39px */
+  line-height: 160%; /* 39px */
 }
 .Faculties-ourleader {
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
