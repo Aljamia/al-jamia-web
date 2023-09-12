@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import axios from "axios";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Row, Card, Modal } from "react-bootstrap";
@@ -95,7 +96,7 @@ const Departments = () => {
                   <p className="caro-paragraph">
                     {department.description.substring(0, 110)}
                   </p>
-                  <div className="caro-btn">
+                  <div className="More_btn2">
                     <button onClick={() => handleShow(department)}>
                       More Details
                     </button>

@@ -48,12 +48,10 @@ const AboutUs = () => {
         />
       </div>
 
-      <div className="AboutUspage-desc">
+      <div className="AboutUspage-desc">  
+          <div className="AboutUspage-title center_aln pb-4">About Us</div>
         {" "}
-        <img src="vision.png" alt="photo" className="about_img" />
-        <div className="AboutUspage-header">
-          <div className="AboutUspage-title">About Us</div>
-        </div>
+      
         {about.map((item, index) => (
           <>
             <Container className="AboutUspage-short-desc" key={index}>
@@ -66,8 +64,10 @@ const AboutUs = () => {
         ))}
       </div>
 
-      <Director />
 
+
+      <Director />
+{/* 
       <div className="AboutUspage-items">
         <div className="AboutUspage-ourMission">
           <Container>
@@ -130,7 +130,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="AboutUspage-ourMission p-5">
+      <div className="AboutUspage-ourMission">
         <Container>
           <Row>
             <Col xl={6} lg={6} xs={12}>
@@ -169,7 +169,7 @@ const AboutUs = () => {
         </Container>
       </div>
 
-      <div className="AboutUspage-ourMission p-5">
+      <div className="AboutUspage-ourMission">
         <Container>
           <Row>
             <Col xl={6} lg={6} xs={12}>
@@ -274,10 +274,10 @@ const AboutUs = () => {
                 </p>
 
                 <div className="btn">
-                  <Link href="/about">
+                  <Link href="/Career">
                     <button>
                       {" "}
-                      <div className="icon_arrow_abt">
+                      <div className="icon_arrow_abt bg-image">
                         <span className="p-2">Careers</span>
 
                         <svg
@@ -301,7 +301,7 @@ const AboutUs = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

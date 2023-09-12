@@ -34,7 +34,7 @@ const About = () => {
             <button>
               {" "}
              <div className="icon_arrow_abt">
-             <span className="pl-3">Take a Tour</span>
+             <span className="p-3">Take a Tour</span>
 
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 80 80" fill="none">
   <circle cx="40" cy="40" r="39.5" stroke="#619A46"/>

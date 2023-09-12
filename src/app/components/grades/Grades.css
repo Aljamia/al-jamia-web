@@ -10,7 +10,7 @@
 }
 .grades-digits {
   color: var(--grary-2, #252424);
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -18,7 +18,7 @@
 }
 .grades-title {
   color: var(--grary-2, #7d7d7d);
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -50,9 +50,11 @@
   }
   .grades-digits {
     font-size: 25px;
+    font-family: unset;
+
   }
   .grades-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

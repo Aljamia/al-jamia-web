@@ -44,20 +44,20 @@
     }
     .AboutUspage-desc {
       color: var(--gray, #555);
-      font-family: var(--font-inter);
-      font-size: 20px;
+      font-family: unset;
+      font-size: 18px;
       font-style: normal;
       text-align: justify;
       margin-top: 1.5em;
       padding: 1em;
       font-weight: 400;
-      line-height: 130%; /* 39px */
+      line-height: 160%; /* 39px */
     }
     :is(.AboutUspage-short-desc, .AboutUspage-long-desc)::first-letter {
       /* font-size: 30px;
       color: #619a46;
       text-transform: uppercase;
-      font-family: var(--font-inter);
+      font-family: unset;
       font-weight: 900; */
     }
     .AboutUspage-long-desc {
@@ -92,14 +92,14 @@
     
     .AboutUspage-vision-desc {
       color: var(--gray, #555);
-      font-family: var(--font-inter);
-      font-size: 20px;
+      font-family: unset;
+      font-size: 18px;
       font-style: normal;
       width: 60%;
       margin-left: 80px;
       text-align: left;
       font-weight: 300;
-      line-height: 130%; /* 39px */
+      line-height: 160%; /* 39px */
     }
     .AboutUspage-mission-title,
     .AboutUspage-campus-title {
@@ -117,11 +117,11 @@
     .AboutUspage-mission-desc {
       color: var(--gray, #555);
       text-align: justify;
-      font-size: 20px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 300;
       margin-top: 0.3em;
-      line-height: 130%; /* 39px */
+      line-height: 160%; /* 39px */
     }
     #our-mission-header {
       margin-top: 30px;
@@ -278,8 +278,14 @@
     
     
     .p_style{
-      color: white;
-      padding: 5% 5% 1%;
+      color: var(--gray, #ffffff);
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      margin-top: 0.3em;
+      line-height: 160%;
+        padding: 5% 5% 1%;
     }
     
     .white{
@@ -338,6 +344,6 @@
   
       .about_img{
         float: left;
-        width: auto;
+        width: 100%;
       }
   

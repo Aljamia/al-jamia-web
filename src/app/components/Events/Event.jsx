@@ -74,7 +74,7 @@ const Event = () => {
         <div className="about-Title">
             <h1>News and Events</h1>
           </div>
-          <div className="grades-desc pb-4">
+          <div className="grades-desc p-4">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
               quasi minus. Ut impedit voluptas excepturi aperiam iste non in

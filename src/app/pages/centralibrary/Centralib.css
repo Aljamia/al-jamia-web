@@ -26,14 +26,14 @@
 }
 .AboutUspage-desc {
   color: var(--gray, #555);
-  font-family: var(--font-inter);
-  font-size: 20px;
+  font-family: unset;
+  font-size: 18px;
   font-style: normal;
   text-align: justify;
   margin-top: 1.5em;
   padding: 1em;
   font-weight: 400;
-  line-height: 130%; /* 39px */
+  line-height: 160%; /* 39px */
 }
 .AboutUspage-long-desc {
   margin-top: 2em;    text-align: justify;
@@ -80,7 +80,7 @@
   background-color: #ddae56;
 }
 .explore-btn h5 {
-  font-family: var(--font-inter);
+  font-family: unset;
   color: #ffffff;
   margin-top: 5px;
   font-size: 16px;
