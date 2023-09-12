@@ -168,7 +168,6 @@ const CoursePage = () => {
                               {modalVal?.duration}
                             </span>
                           </Card.Text>
-
                           <br />
                           <Card.Text className="course-cardmodal-text">
                             <br />
