@@ -36,7 +36,7 @@
   margin-top: 1em;
   text-align: center;
   color: var(--gray, #555);
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -71,7 +71,7 @@
 .members-card-title {
   color: var(--gold, #cca65d);
   text-align: center;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -80,7 +80,7 @@
 
 .members-card-text {
   color: var(--grary-2, #7d7d7d);
-  font-family: var(--font-inter);
+  font-family: unset;
   text-align: center;
   font-size: 16px;
   height: 40px;

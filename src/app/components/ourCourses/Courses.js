@@ -133,47 +133,51 @@ const Courses = () => {
 
 
 
-                    <Modal
-                      key={modalVal?.id}
-                      show={show}
-                      onHide={handleClose}
-                      size="lg"
-                      className="Course-modal"
-                    >
-                      <Modal.Header closeButton></Modal.Header>
-                      <Modal.Body>
-                        <Row className="course-modalitems">
-                          <Col xl={6} xs={12} sm={12}>
-                            <Card className="faculties-cardmodal shadow-sm">
-                              <Card.Img
-                                variant="top"
-                                className="course-card-modalimages"
-                                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
-                              />
-                            </Card>
-                          </Col>
-                          <Col xl={6} xs={12} sm={12}>
-                            <Card.Title className="course-cardmodal-title">
-                              {modalVal?.courseName}
-                            </Card.Title>
-                            <Card.Text className="course-cardmodal-desc">
-                              <span className="course-modal-category">
-                                {modalVal?.category}{" "}
-                              </span>
-                              <span className="course-modal-duration">
-                                {modalVal?.duration}
-                              </span>
-                            </Card.Text>
-                            <Card.Text className="course-cardmodal-text">
-                              {modalVal?.description}
-                            </Card.Text>
-                          </Col>
-                        </Row>
-                      </Modal.Body>
-                    </Modal>
+          
                   </Card.Body>
                 </Card>
               ))}
+                  <Modal
+                          key={modalVal?.id}
+                          show={show}
+                          onHide={handleClose}
+                          size="lg"
+                          className="Course-modal"
+                        >
+                          <Modal.Header closeButton></Modal.Header>
+                          <Modal.Body>
+                            <Row className="course-modalitems">
+                              <Col xl={12} xs={12} sm={12}>
+                                <Card className="faculties-cardmodal shadow-sm">
+                                  <Card.Img
+                                    variant="top"
+                                    className="course-card-modalimages"
+                                    src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
+                                  />
+                                </Card>
+                              </Col>
+                              <Col xl={12} xs={12} sm={12}>
+                                <Card.Title className="course-cardmodal-title pt-2">
+                                  {modalVal?.courseName}
+                                </Card.Title>
+                                <Card.Text className="course-cardmodal-desc">
+                                  <span className="course-modal-category">
+                                  <img className="icon_pl" src="forbox.svg" alt="photo" width="auto" /> {modalVal?.category}{" "}
+                                  </span>
+                                  <span className="course-modal-duration">
+                                  <img className="icon_pl" src="time.svg" alt="photo" width="auto" /> {modalVal?.duration}
+                                  </span>
+                                </Card.Text>
+
+                                <br/>
+                                <Card.Text className="course-cardmodal-text">
+                                <br/>
+                                  {modalVal?.description}
+                                </Card.Text>
+                              </Col>
+                            </Row>
+                          </Modal.Body>
+                        </Modal>
             </div>
           </div>
 
@@ -183,7 +187,7 @@ const Courses = () => {
             <button>
               {" "}
              <div className="icon_arrow_abt">
-             <span className="pl-3">Explore More</span>
+             <span className="p-3">Explore More</span>
 
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 80 80" fill="none">
   <circle cx="40" cy="40" r="39.5" stroke="#619A46"/>

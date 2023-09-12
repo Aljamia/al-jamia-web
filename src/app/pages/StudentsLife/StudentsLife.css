@@ -44,7 +44,7 @@
     }
     .AboutUspage-desc {
       color: var(--gray, #555);
-      font-family: var(--font-inter);
+      font-family: unset;
       font-size: 18px;
       font-style: normal;
       text-align: justify;
@@ -57,7 +57,7 @@
       /* font-size: 30px;
       color: #619a46;
       text-transform: uppercase;
-      font-family: var(--font-inter);
+      font-family: unset;
       font-weight: 900; */
     }
     .AboutUspage-long-desc {
@@ -92,7 +92,7 @@
     
     .AboutUspage-vision-desc {
       color: var(--gray, #555);
-      font-family: var(--font-inter);
+      font-family: unset;
       font-size: 18px;
       font-style: normal;
       width: 60%;
@@ -278,8 +278,14 @@
     
     
     .p_style{
-      color: white;
-      padding: 5% 5% 1%;
+      color: var(--gray, #ffffff);
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      margin-top: 0.3em;
+      line-height: 160%;
+        padding: 5% 5% 1%;
     }
     
     .white{

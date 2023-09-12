@@ -11,6 +11,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa6";
+import Footer from "@/app/components/footer/Footer";
 
 const ContactUs = () => {
   return (
@@ -98,7 +99,9 @@ const ContactUs = () => {
       </div>
 
 
-      <div className="p-5 m-5">
+      <div className="pt-5">
+
+
         <Container>
           <Row>
           <Col xl={4}>
@@ -124,54 +127,9 @@ const ContactUs = () => {
         </div>
 
 
-      <div className="footer-end">
-        <Container>
-          <Row>
-            <div>
-              <hr className="footer-line " />
-            </div>
-            <Col xs={12} lg={6} sm={12}>
-              <p className="footer-copyright">
-                © 2023 Al Jamia Al Islamiya Privacy | Developed by
-                <Link
-                  href="https://datahex.in/"
-                  className="datahex-link"
-                  target="blank"
-                >
-                  DataHex
-                </Link>
-              </p>
-            </Col>
-            <Col
-              xs={12}
-              lg={6}
-              sm={12}
-              className="footer-social-icons"
-              style={{ display: "flex", justifyContent: "flex-end" }}
-            >
-              <span>
-                <Link href="/" className="footer-social-icons-list">
-                  <FaFacebook />
-                </Link>
-              </span>
-              <span>
-                <Link href="/" className="footer-social-icons-list">
-                  <FaTwitter />
-                </Link>
-              </span>
-              <span>
-                <Link href="/" className="footer-social-icons-list">
-                  <FaInstagram />
-                </Link>
-              </span>
-              <span>
-                <Link href="/" className="footer-social-icons-list">
-                  <FaLinkedin />
-                </Link>
-              </span>
-            </Col>
-          </Row>
-        </Container>
+      <div className="footer-end mt-5">
+      <Footer/>
+
 
 
         

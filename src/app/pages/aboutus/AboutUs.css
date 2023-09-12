@@ -19,8 +19,8 @@
 }
 
 .footer {
-  background-color: #cea553;
-  padding: 1em 1em;
+  background: rgb(255,149,0);
+  background: linear-gradient(77deg, rgba(255,149,0,1) 10%, rgba(223,144,0,1) 41%);  padding: 1em 1em;
 }
 .footer .footer-desc {
   padding: 5px;
@@ -51,7 +51,8 @@
   cursor: pointer;
 }
 .footer-contact {
-  transform: translateX(20%);
+  transform: translateX(0%);      
+
 }
 .footer-contact h2 {
   margin-top: 30px;
@@ -140,306 +141,6 @@
   }
 }
 
-/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
-      !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/header/Header.css ***!
-      \********************************************************************************************************************************************************************************************************************************************************************************/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-
-:root {
-  /* colors */
-  --white-color: #ffffff;
-  --green-color: #91cf73;
-  --goldish-color: #dbb56d;
-
-  /* fonts */
-  --font-inter: "Inter", sans-serif;
-}
-
-/* Navbar */
-.navbar {
-  width: 100%;
-  height: auto;
-}
-
-.bg-body-tertiary {
-  background-color: #000 !important;
-}
-
-.nav-links {
-  position: relative;
-  /* text-transform: uppercase; */
-  padding: 20px;
-  margin: 10px;
-  margin-top: 2em;
-  font-family: var(--font-inter);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: normal;
-  color: var(--white-color) !important;
-  z-index: 1;
-}
-
-.nav-links:focus,
-.nav-links:active {
-  color: var(--green-color) !important;
-}
-
-.nav-links::after {
-  content: "";
-  position: absolute;
-  left: 2px;
-  top: 45px;
-  width: 95%;
-  height: 2px;
-  background-color: var(--goldish-color) !important;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.nav-links:hover::after {
-  transform: scaleX(1);
-}
-
-.nav-logo {
-  position: relative;
-  width: 250px;
-  height: auto;
-}
-
-.navbar-toggler-white {
-  background-color: white !important;
-}
-
-.nav-carousel {
-  display: flex;
-  flex-wrap: nowrap;
-  scroll-behavior: smooth;
-}
-
-.navbar-fixed-top.scrolled .nav-link-black {
-  color: black !important;
-}
-
-.navbar-fixed-top.scrolled {
-  background-color: var(--white-color) !important;
-  transition: background-color 500ms linear;
-  box-shadow: 1px 1px 1px 1px rgb(241, 237, 237);
-}
-
-nav.primary-navigation ul li {
-  list-style: none;
-  text-decoration: none;
-  position: relative;
-  left: -18px;
-  bottom: 1px;
-  z-index: 2;
-}
-
-nav.primary-navigation li:hover {
-  cursor: pointer;
-}
-
-nav.primary-navigation ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  display: none;
-  background: #fffefe;
-}
-
-nav.primary-navigation ul li:hover > ul,
-nav.primary-navigation ul li ul:hover {
-  visibility: visible;
-  display: block;
-  min-width: 240px;
-  height: 150px;
-  text-align: left;
-  margin-top: -20px;
-  border-radius: 5px;
-  z-index: 3;
-  margin-left: -25px;
-  opacity: 1;
-}
-
-nav.primary-navigation ul li ul li {
-  clear: both;
-  width: 100%;
-  height: 35px;
-  text-align: left;
-  font-family: var(--font-inter);
-  border-style: none;
-}
-
-.nav-dropdown-links h5 {
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 3px;
-  padding: 0.3em;
-  border-radius: 3px;
-  color: black;
-}
-
-.nav-dropdown-links h5:hover {
-  color: white;
-  background-color: #e7c991;
-  opacity: 1;
-  transition: all 0.3s linear;
-}
-
-/* @media (max-width: 350px) {
-        .navbar-toggler-white {
-          background-color: white !important;
-          margin-right: 32px;
-        }
-      } */
-@media (min-width: 300px) and (max-width: 990px) {
-  .navbar {
-    width: 100%;
-    height: auto;
-  }
-
-  .nav-logo {
-    position: relative;
-    top: -10px;
-    width: 220px;
-    height: 55px;
-  }
-
-  .navbar-toggler-white {
-    position: relative;
-    bottom: 10px;
-    background-color: white !important;
-  }
-
-  .nav-carousel {
-    background-color: #ffffff;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-  }
-
-  .nav-links {
-    color: black !important;
-    margin-top: -5px;
-    height: 2px;
-    font-family: var(--font-inter);
-    font-size: 18px;
-    text-transform: capitalize;
-    font-style: normal;
-    font-weight: 400;
-  }
-
-  nav.primary-navigation ul li {
-    position: relative;
-    top: 0px;
-    left: -33px;
-  }
-
-  nav.primary-navigation ul li ul {
-    visibility: hidden;
-    opacity: 1;
-    position: absolute;
-    left: 10%;
-    top: -80%;
-    display: none;
-    border-radius: 10px;
-    background: rgb(242, 241, 239);
-  }
-
-  nav.primary-navigation ul li ul h5 {
-    text-align: left;
-    margin-left: 20px;
-  }
-
-  nav.primary-navigation ul li:hover > ul,
-  nav.primary-navigation ul li ul:hover {
-    margin-top: -5px;
-    z-index: 3;
-    margin-left: -25px;
-    opacity: 1;
-  }
-}
-
-@media (min-width: 989px) and (max-width: 1200px) {
-  .navbar {
-    width: 100%;
-    height: auto;
-  }
-
-  .nav-logo {
-    position: relative;
-    top: -10px;
-    width: 220px;
-    height: 55px;
-  }
-
-  .navbar-toggler-white {
-    position: relative;
-    bottom: 10px;
-    background-color: white !important;
-  }
-
-  .nav-links {
-    color: rgb(233, 229, 229) !important;
-    margin-top: -15px;
-    height: 2px;
-    font-family: var(--font-inter);
-    font-size: 17px;
-    text-transform: capitalize;
-    font-style: normal;
-    font-weight: 400;
-  }
-
-  nav.primary-navigation ul li {
-    position: relative;
-    top: 0px;
-    left: -33px;
-  }
-
-  nav.primary-navigation ul li ul {
-    visibility: hidden;
-    opacity: 1;
-    position: absolute;
-    left: 10%;
-    top: 120%;
-    display: none;
-    border-radius: 10px;
-    background: rgb(242, 241, 239);
-  }
-
-  nav.primary-navigation ul li ul h5 {
-    text-align: left;
-    margin-left: 20px;
-  }
-
-  nav.primary-navigation ul li:hover > ul,
-  nav.primary-navigation ul li ul:hover {
-    margin-top: -5px;
-    z-index: 3;
-    margin-left: -25px;
-    opacity: 1;
-  }
-
-  .nav-dropdown-links h5 {
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 3px;
-    padding: 0.3em;
-    border-radius: 3px;
-    color: black;
-  }
-
-  .nav-dropdown-links h5:hover {
-    color: white;
-    background-color: #e7c991;
-    opacity: 1;
-    transition: all 0.3s linear;
-  }
-}
 
 /*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/deparments/Department.css ***!
@@ -489,7 +190,7 @@ nav.primary-navigation ul li ul li {
 }
 .AboutUspage-desc {
   color: var(--gray, #555);
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 18px;
   font-style: normal;
   text-align: justify;
@@ -502,7 +203,7 @@ nav.primary-navigation ul li ul li {
   /* font-size: 30px;
     color: #619a46;
     text-transform: uppercase;
-    font-family: var(--font-inter);
+    font-family: unset;
     font-weight: 900; */
 }
 .AboutUspage-long-desc {
@@ -537,7 +238,7 @@ nav.primary-navigation ul li ul li {
 
 .AboutUspage-vision-desc {
   color: var(--gray, #555);
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 18px;
   font-style: normal;
   width: 60%;
@@ -590,6 +291,10 @@ nav.primary-navigation ul li ul li {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+  width: 95%;box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 0px;
+  transition: 0.9s ease-in;
+  border: solid 8px #fff; 
 }
 .grid-wrapper > div > img:hover {
   transition: 1s ease-in;
@@ -605,6 +310,7 @@ nav.primary-navigation ul li ul li {
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
   padding: 3em;
+
 }
 .grid-wrapper .wide {
   grid-column: span 2;
@@ -730,15 +436,29 @@ nav.primary-navigation ul li ul li {
 .work_box {
   border-radius: 12px;
   background: #619a46;
-  width: 100%;
+  background-image: url(/careersbg.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
   padding: 2% 10% 1%;
   float: left;
   text-align: center;
 }
 
+.bg-image {
+  opacity: 0.7;
+}
+
 .p_style {
-  color: white;
-  padding: 5% 5% 1%;
+  color: var(--gray, #ffffff);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 0.3em;
+  line-height: 160%;
+    padding: 5% 5% 1%;
 }
 
 .white {
@@ -795,4 +515,13 @@ nav.primary-navigation ul li ul li {
 .about_img {
   float: left;
   width: 100%;
+}
+
+
+.joinstyle{
+  width: 22%;
+}
+
+.joinstyle{
+  width: 22%;
 }

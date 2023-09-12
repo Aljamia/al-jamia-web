@@ -34,16 +34,21 @@ const CoursePage = () => {
         style={{ width: "100%", maxWidth: "100%" }}
       >
         <Container>
-          <div className="coursePage-img pt-5 mag_top">
+          <div className="coursePage-img pt-1 mag_top">
             <Image
               src="/image 15.jpg"
               layout="responsive"
               width={1000}
-              height={500}
+              height={300}
               alt="Image"
             />
             <div className="coursePage-text center_div">
-              <h2> Explore Our More Courses</h2>
+              <h2> Academics</h2>
+              <p>
+              Al Jamia offers good academic programs with a few specializations to meet the needs of both the 
+Nation and Society. It includes the Preparatory program, two Bachelor programs, three Masters programs 
+and one Diploma program.
+                </p>
             </div>
           </div>
         </Container>
@@ -52,7 +57,7 @@ const CoursePage = () => {
         <div className="course">
           <Container>
             <div className="course-headerpage">
-              <div className="course-header">
+              {/* <div className="course-header">
                 <h1>Academics</h1>
               </div>
               <div className="course-desc">
@@ -62,7 +67,7 @@ const CoursePage = () => {
                   iste non in explicabo. Tenetur inventore dolor distinctio
                   necessitatibus vero, perspiciatis aliquam debitis ea.
                 </p>
-              </div>
+              </div> */}
               <div className="portfolio">
                 <div className="portfolio-container">
                   {cardValues?.map((course) => (
@@ -84,6 +89,7 @@ const CoursePage = () => {
                       </span>
                     </div>
                   </Container>
+                   
                       <Card.Body>
                         <Card.Title>
                           <h2 className="portfolio-title">
@@ -113,6 +119,11 @@ const CoursePage = () => {
 
 </div>
 
+                  
+                        
+                      </Card.Body>
+                    </Card>
+                  ))}
                         <Modal
                           key={modalVal?.id}
                           show={show}
@@ -123,7 +134,7 @@ const CoursePage = () => {
                           <Modal.Header closeButton></Modal.Header>
                           <Modal.Body>
                             <Row className="course-modalitems">
-                              <Col xl={6} xs={12} sm={12}>
+                              <Col xl={12} xs={12} sm={12}>
                                 <Card className="faculties-cardmodal shadow-sm">
                                   <Card.Img
                                     variant="top"
@@ -132,8 +143,8 @@ const CoursePage = () => {
                                   />
                                 </Card>
                               </Col>
-                              <Col xl={6} xs={12} sm={12}>
-                                <Card.Title className="course-cardmodal-title">
+                              <Col xl={12} xs={12} sm={12}>
+                                <Card.Title className="course-cardmodal-title pt-2">
                                   {modalVal?.courseName}
                                 </Card.Title>
                                 <Card.Text className="course-cardmodal-desc">
@@ -154,9 +165,6 @@ const CoursePage = () => {
                             </Row>
                           </Modal.Body>
                         </Modal>
-                      </Card.Body>
-                    </Card>
-                  ))}
                 </div>
               </div>
             </div>

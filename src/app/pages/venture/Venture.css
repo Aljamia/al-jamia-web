@@ -69,13 +69,13 @@ h2 {
   font-size: 25px;
   font-weight: 600;
   color: #619a46;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 .content p {
   font-size: 17px;
   color: #555555;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 .btn-explore {
@@ -87,7 +87,7 @@ h2 {
   padding: 7px 20px;
   border: none;
   border-radius: 5px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 /* Add media queries for responsiveness */

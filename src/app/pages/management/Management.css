@@ -34,7 +34,7 @@
   margin-top: 1em;
   text-align: center;
   color: var(--gray, #555);
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -62,7 +62,7 @@
   top: 15px;
   color: #4f4d4d;
   background-color: rgb(237, 235, 235);
-  font-family: var(--font-inter);
+  font-family: unset;
   outline: none;
   border: none;
   font-size: 18px;
@@ -95,15 +95,15 @@
 .faculties-card-title {
   color: var(--gold, #cca65d);
   text-align: center;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 119%; /* 41.65px */
 }
 .faculties-card-text {
   color: var(--grary-2, #7d7d7d);
-  font-family: var(--font-inter);
+  font-family: unset;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -116,7 +116,7 @@
 .faculties-cardmodal-title {
   color: var(--gold, #cca65d);
   text-align: left;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -124,7 +124,7 @@
 }
 .faculties-cardmodal-text {
   color: var(--grary-2, #7d7d7d);
-  font-family: var(--font-inter);
+  font-family: unset;
   text-align: left;
   font-size: 18px;
   font-style: normal;
@@ -134,7 +134,7 @@
 }
 .faculties-cardmodal-desc {
   color: var(--gray, #555);
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 18px;
   font-style: normal;
   text-align: justify;
@@ -156,7 +156,7 @@
 .members-card-title {
   color: var(--gold, #cca65d);
   text-align: center;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -164,7 +164,7 @@
 }
 .members-card-text {
   color: var(--grary-2, #7d7d7d);
-  font-family: var(--font-inter);
+  font-family: unset;
   text-align: center;
   font-size: 16px;
   font-style: normal;

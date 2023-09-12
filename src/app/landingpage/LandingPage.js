@@ -8,7 +8,7 @@ import Footer from "../components/footer/Footer";
 import Courses from "../components/ourCourses/Courses";
 import Grades from "../components/grades/Grades";
 import Library from "../components/Events/Library";
-import "/src/app/globals.css";
+import "../globals.css";
 
 const LandingPage = () => {
   return (
@@ -19,8 +19,8 @@ const LandingPage = () => {
       <Grades />
       <Event />
       <Library />
-      <Director />
       <Deparments />
+      <Director />
       <Footer />
     </div>
   );

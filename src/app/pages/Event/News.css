@@ -76,8 +76,8 @@
   display: flex;
 }
 .event-title h1 {
-  padding-top: 4rem;
-  padding-bottom: 3rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   color: #619a46;
   font-family: var(--font-martel);
 }
@@ -123,6 +123,7 @@ span {
 .library p {
   color: #555555;
   max-width: 90%;
+  font-weight: 300;
 }
 
 .library h2 {
@@ -134,6 +135,7 @@ span {
   max-width: 90%;
   font-family: unset;
   font-size: 18px;
+  font-weight: 300;
 }
 /* --right side carouse */
 

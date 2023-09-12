@@ -18,7 +18,7 @@
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
 }
 .director-heading h1 {
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
   font-family: unset;
   font-weight: 300;
   display: flex;
@@ -30,7 +30,7 @@
    
 } */
 .director-des {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .person-detail {
   margin-top: 1rem;
@@ -50,7 +50,7 @@
 .person-detail p {
   color: #555555;
   font-size: 18px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 .facualies {
   margin-top: 6rem;
@@ -67,7 +67,7 @@
 .fac-des p {
   color: #555555;
   max-width: 80%;
-  font-family: var(--font-inter);
+  font-family: unset;
   font-size: 18px;
 }
 .fac-btn {
@@ -79,7 +79,7 @@
   padding: 7px 20px;
   border: none;
   border-radius: 5px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 
 @media (max-width: 768px) {
@@ -104,7 +104,7 @@
   .fac-des p {
     color: #555555;
     max-width: 100%;
-    font-family: var(--font-inter);
+    font-family: unset;
     font-size: 18px;
     text-align: center;
   }

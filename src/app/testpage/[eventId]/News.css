@@ -28,7 +28,7 @@
   color: #555555;
   font-weight: 600;
   padding-bottom: 40px;
-  font-family: var(--font-inter);
+  font-family: unset;
 }
 .new-img img {
   margin: auto;
@@ -57,7 +57,7 @@
 .news-para p {
   align-items: center;
   justify-content: center;
-  font-family: var(--font-inter);
+  font-family: unset;
   color: #555555;
   font-size: 19px;
   padding: 0px; /* Adjust the value as needed */

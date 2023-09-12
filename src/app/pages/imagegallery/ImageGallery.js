@@ -23,7 +23,7 @@ const ImageGallery = () => {
     <div>
       <PageHeader />
       <div className="Faculties-header">
-        <h2 className="Faculties-title">ImageGallery</h2>
+        <h2 className="Faculties-title">Gallery</h2>
       </div>
 
       <>
@@ -37,9 +37,9 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              {/* <figcaption class="gallery__caption">
                 Portrait by Jessica Felicio
-              </figcaption>
+              </figcaption> */}
             </figure>
 
             <figure class="gallery__thumb">

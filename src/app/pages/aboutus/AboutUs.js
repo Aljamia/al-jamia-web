@@ -67,7 +67,7 @@ const AboutUs = () => {
 
 
       <Director />
-
+{/* 
       <div className="AboutUspage-items">
         <div className="AboutUspage-ourMission">
           <Container>
@@ -274,10 +274,10 @@ const AboutUs = () => {
                 </p>
 
                 <div className="btn">
-                  <Link href="/about">
+                  <Link href="/Career">
                     <button>
                       {" "}
-                      <div className="icon_arrow_abt">
+                      <div className="icon_arrow_abt bg-image">
                         <span className="p-2">Careers</span>
 
                         <svg
@@ -301,7 +301,7 @@ const AboutUs = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
