@@ -356,20 +356,20 @@ const PageHeader = () => {
 
                       <ul className="dropdown">
                         <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
+                          <Nav.Link href="/Student_Development">
                             {" "}
                             <h5>Student Development</h5>{" "}
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
+                          <Nav.Link href="/Student_Counseling_Service">
                             {" "}
                             <h5>Student Counseling Service</h5>{" "}
                           </Nav.Link>
                         </li>
                       
                         <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
+                          <Nav.Link href="/Students_Centre">
                             {" "}
                             <h5>
                             Students Centre
@@ -377,7 +377,7 @@ const PageHeader = () => {
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
+                          <Nav.Link href="/Student_Housing">
                             {" "}
                             <h5>
                             Student Housing
@@ -385,7 +385,7 @@ const PageHeader = () => {
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
+                          <Nav.Link href="/Student_Life_Services">
                             {" "}
                             <h5>
                             Student Life & Services
@@ -393,7 +393,7 @@ const PageHeader = () => {
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
+                          <Nav.Link href="/Student_Representative_Board">
                             {" "}
                             <h5>
                             Student Representative Board
@@ -401,7 +401,7 @@ const PageHeader = () => {
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
+                          <Nav.Link href="/Our_Facilities">
                             {" "}
                             <h5>
                             Our Facilities and General Service
@@ -432,13 +432,13 @@ const PageHeader = () => {
 
                       <ul className="dropdown">
                         <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
+                          <Nav.Link href="/Alumni">
                             {" "}
                             <h5>Alumni Chapters</h5>{" "}
                           </Nav.Link>
                         </li>
                         <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
+                          <Nav.Link href="/Recognition_Awards">
                             {" "}
                             <h5>Recognition & Awards</h5>{" "}
                           </Nav.Link>

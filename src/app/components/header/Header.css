@@ -49,6 +49,7 @@
         line-height: normal;
         color: var(--white-color) !important;
         z-index: 1;
+        padding: 10px;
       }
       
       .nav-links:focus,

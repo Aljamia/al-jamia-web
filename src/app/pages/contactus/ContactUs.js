@@ -27,7 +27,7 @@ const ContactUs = () => {
                 <div className="contact-header-title">
                   <h1 className="h1style">Contact us</h1>
                   <p className="pb-3">
-                  our friendly team  would love to hear from you!
+                  Our friendly team  would love to hear from you!
                     {/* Al Jamia Arts and Science College (AJAS), a resourceful
                     destination for higher studies in the region, was
                     established in 2010 with the main objective of uplifting the
