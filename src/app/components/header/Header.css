@@ -1,17 +1,4 @@
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/pagesheader/PageHeader.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************/
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-  :root {
-    /* colors */
-    --white-color: #ffffff;
-    --green-color: #91cf73;
-    --goldish-color: #dbb56d;
-  
-    /* fonts */
-    --font-inter: "Inter", sans-serif;
-  }
-  
+
     /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
       !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/header/Header.css ***!
       \********************************************************************************************************************************************************************************************************************************************************************************/
@@ -38,7 +25,6 @@
       }
       
       .nav-links {
-        position: relative;
         text-transform: capitalize;
         margin: 1px;
         margin-top: 2em;
@@ -48,7 +34,6 @@
         font-weight: 300;
         line-height: normal;
         color: var(--white-color) !important;
-        z-index: 1;
         padding: 10px;
       }
       
@@ -105,7 +90,6 @@
         position: relative;
         left: -18px;
         bottom: 1px;
-        z-index: 9;
       }
       
       nav.primary-navigation li:hover {
@@ -134,36 +118,43 @@
         border-radius: 0px;
         z-index: 3;
         opacity: 1;
+        padding-left: 10px;
       }
       
       nav.primary-navigation ul li ul li {
         clear: both;
         width: 100%;
         height: auto;
+        padding: 10px;
+        margin-bottom: 5px;
         text-align: left;
         font-family: unset;
         border-style: none;
       }
       
-.nav-dropdown-links h5 {
-  font-size: 14px;
-  color: #df9000;        
-  padding-bottom: 4px;
-  padding-top: 2px;
-margin: 0px !important;
-  border-bottom: solid 1px #fff ;
-  transition: all 0.3s linear;
-font-weight: 300;
-  color: black;
-}
-.nav-dropdown-links h5:hover {
-  color: #df9000;
-  background-color: #fff;
-  padding-left: 5px;
-  border-bottom: solid 1px #df9000 ;
-  transition: all 0.3s linear;
-}
-      
+
+
+ 
+      .nav-dropdown-links h5 {
+        font-size: 14px;
+        color: #df9000;  
+        border-bottom: solid 1px #fff ;
+      font-weight: 300;
+      z-index: 9;
+      background-color: #ffffff06;
+     padding-bottom: 5px;
+      position: absolute;
+        color: black;
+      }
+      .nav-dropdown-links h5:hover {
+        color: #df9000;
+        background-color: #fff;
+        padding-left: 5px;
+        border-bottom: solid 1px #df9000 ;
+        transition: all 0.3s linear;
+      }
+            
+
       /* @media (max-width: 350px) {
         .navbar-toggler-white {
           background-color: white !important;
@@ -190,30 +181,38 @@ font-weight: 300;
         }
       
         .nav-carousel {
-          background-color: #ffffff;
+          background-color: #fff;
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           backdrop-filter: blur(4px);
           -webkit-backdrop-filter: blur(4px);
           border-radius: 10px;
           width: 250px;
-          border: 1px solid rgba(255, 255, 255, 0.18);
+          height:auto ;
+          float: right;
+          border: 0px solid rgba(255, 255, 255, 0.18);
         }
       
         .nav-links {
           color: black !important;
           margin-top: 0px;
-          height: auto;
           font-family: unset;
-          font-size: 17px;
+          font-size: 15px;
           text-transform: capitalize;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 400; 
+          left: 20px;
+          padding: 3%;
+          position: relative;
+
+
         }
       
         nav.primary-navigation ul li {
           position: relative;
           top: 0px;
-          left: -33px;
+          padding: 0%;
+
+          left: -31px;
         }
       
         nav.primary-navigation ul li ul {
@@ -232,13 +231,52 @@ font-weight: 300;
           margin-left: 20px;
         }
       
+
         nav.primary-navigation ul li:hover>ul,
         nav.primary-navigation ul li ul:hover {
-          margin-top: -5px;
+          visibility: visible;
+          display: block;
+          min-width: 250px;
+          height: auto;
+          text-align: left;
+          margin-top: -0px;
+          border-radius: 0px;
           z-index: 3;
-          margin-left: -25px;
           opacity: 1;
+          padding-left: 10px;
         }
+        
+        nav.primary-navigation ul li ul li {
+          clear: both;
+          width: 100%;
+          height: auto;
+          padding: 10px;
+          margin-bottom: 0px;
+          text-align: left;
+          font-family: unset;
+          border-style: none;
+        }
+        
+
+        
+.nav-dropdown-links h5 {
+  font-size: 14px;
+  color: #df9000;  
+  border-bottom: solid 1px #fff ;
+  transition: all 0.3s linear;
+font-weight: 300;
+z-index: 99999999;
+position: relative;
+  color: black;
+}
+.nav-dropdown-links h5:hover {
+  color: #df9000;
+  background-color: #fff;
+  padding-left: 5px;
+  border-bottom: solid 1px #df9000 ;
+  transition: all 0.3s linear;
+}
+      
       }
       
       @media (min-width: 989px) and (max-width: 1200px) {
