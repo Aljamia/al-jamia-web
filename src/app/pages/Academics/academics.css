@@ -612,7 +612,7 @@
   .box {
     background-color: #f8f8f8;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    width: 350px !important;
+    width: 100% !important;
     height: 480px;
     border-radius: 25px;
     display: flex;
@@ -1083,98 +1083,6 @@ span {
   --font-inter: "Inter", sans-serif;
 }
 
-.footer {
-  background: rgb(255,149,0);
-  background: linear-gradient(77deg, rgba(255,149,0,1) 10%, rgba(223,144,0,1) 41%);  padding: 1em 1em;
-}
-
-.footer .footer-desc {
-  padding: 5px;
-  margin-top: 5px;
-  font-family: unset;
-  font-style: normal;
-  font-weight: 250;
-  font-size: 18px;
-  color: var(--white-color);
-  text-align: justify;
-}
-
-.footer-nav {
-  margin-top: 30px;
-  margin-left: 30%;
-}
-
-.footer-nav .footer-links {
-  text-decoration: none;
-  color: var(--white-color);
-}
-
-.footer-links h5 {
-  font-family: var(--font-rubik);
-  font-size: 18px;
-  padding: 5px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  cursor: pointer;
-}
-
-.footer-contact {
-  transform: translateX(0%);   
-
-}
-
-.footer-contact h2 {
-  margin-top: 30px;
-  color: var(--white-color);
-  font-size: 25px;
-}
-
-.footer-contact p {
-  color: var(--white-color);
-  font-family: var(--font-rubik);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.footer-contact span {
-  margin-right: 5px;
-}
-
-.footer-number {
-  margin-left: 36px;
-}
-
-.footer-address {
-  margin-left: 20px;
-}
-
-.footer-line {
-  border: 1px solid var(--white-color);
-}
-
-.footer-copyright {
-  color: var(--white-color);
-}
-
-.footer-social-icons-list {
-  font-size: 18px;
-  color: var(--white-color);
-  margin: 0px 0px 20px 30px;
-  float: right;
-  cursor: pointer;
-}
-
-.footer-social-icons-list:hover {
-  color: var(--black--color);
-}
-
-.footer-address {
-  margin-top: -10px;
-}
-
 .datahex-link {
   color: #ffffff;
   text-decoration: none;
@@ -1183,48 +1091,6 @@ span {
 
 .datahex-link:hover {
   color: var(--green-color);
-}
-
-@media (max-width: 991px) {
-  .footer-contact {
-    transform: translateX(0%);
-  }
-
-  .footer-logo {
-    width: 200px !important;
-    height: auto;
-  }
-
-  .footer-nav {
-    margin-left: 0px;
-  }
-
-  .footer .footer-desc {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 500px) {
-  .footer-social-icons-list {
-    margin: 0px 0px 20px 30px;
-    float: right;
-  }
-
-  .footer-address {
-    margin-left: 0px;
-  }
-
-  .footer-location {
-    margin-top: 12px;
-  }
-
-  .footer-contact span {
-    margin-right: 5px;
-  }
-
-  .footer-number {
-    margin-left: 35px;
-  }
 }
 
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -1348,6 +1214,11 @@ span {
   padding: 0.2em;
   margin-top: 1.5em;
 }
+.portfolio-card:hover {
+  background-color: #fff;    
+  transition: all 0.3s linear;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 .portfolio-modal-images {
   position: relative;
@@ -1446,27 +1317,6 @@ span {
   font-weight: 300;
 }
 
-.portfolio-btn {
-  color: #fff;
-
-  background: rgb(255,149,0);
-  background: linear-gradient(77deg, rgba(255,149,0,1) 10%, rgba(223,144,0,1) 41%);    border-radius: 55px;
-  font-size: unset;
-  font-size: 18px;
-  font-style: normal;
-  text-align: center;
-  font-weight: 200;
-  padding: 3px 10px;
-  margin: auto;
-  width: auto;
-  outline: none;
-  border: none;
-}
-
-.portfolio-btn:hover {
-  color: #1e1e1e;
-  background-color: #ffb52b;
-}
 
 .explore-btn {
   width: 180px;
