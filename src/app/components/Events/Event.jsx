@@ -95,9 +95,9 @@ const Event = () => {
                     style={{ borderRadius: "20px", width: "100%" }}
                   />
                 </div>
-                <div className="event-btn">
+                <div className="event-btn ">
                   <button>Up Coming Events</button>
-                  <span>{new Date(events[0]?.date).toDateString()}</span>
+                  <span className="m-2"> {new Date(events[0]?.date).toDateString()}</span>
                 </div>
                 <div className="event-des">
                   <h4>{events[0]?.title}</h4>

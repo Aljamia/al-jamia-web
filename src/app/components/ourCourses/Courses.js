@@ -27,46 +27,6 @@ const Courses = () => {
     fetchCourse();
   }, []);
 
-  // const fields = [
-  //   {
-  //     title: "Certificate",
-  //     content: <p>The course is about a majid alsharia in al-ja mia</p>,
-  //     styleIn: 4,
-  //     functionName: "certificate",
-  //   },
-  //   {
-  //     title: "Diploma",
-  //     content: <p>almajia sample course page mia</p>,
-  //     styleIn: 4,
-  //     functionName: "diploma",
-  //   },
-  //   {
-  //     title: "Short Term",
-  //     content: (
-  //       <p>
-  //         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, sint.
-  //         Aspernatur excepturi consequatur, iure incidunt ut quae sed dolore
-  //         repellat maxime cum illum, magni pariatur delectus accusamus
-  //         voluptate, modi magnam!
-  //       </p>
-  //     ),
-  //     styleIn: 4,
-  //     functionName: "shortTerm",
-  //   },
-  // ];
-
-  // const handleClick = async (functionName) => {
-  //   if (functionName === "certificate") {
-  //     const data = await getFaculties();
-  //     setCardValues(data.response);
-  //   } else if (functionName === "diploma") {
-  //     const data = await getAboutUsGallery();
-  //     setCardValues(data.response);
-  //   } else {
-  //     const data = await getCourse();
-  //     setCardValues(data?.response);
-  //   }
-  // };
 
   return (
     <div className="course">
@@ -96,11 +56,11 @@ const Courses = () => {
                   <Container>
                     <div className="course-data-items">
                       <span className="course-data-category">
-                      <img className="icon_pl" src="forbox.svg" alt="photo" width="auto" /> {course.category}{" "}
+                      <img className="icon_pl p-1" src="forbox.svg" alt="photo" width="auto" /> {course.category}{" "}
                       </span>
 
                       <span className="course-data-duration">
-                      <img className="icon_pl" src="time.svg" alt="photo" width="auto" />
+                      <img className="icon_pl p-1" src="time.svg" alt="photo" width="auto" />
  {course.duration}
                       </span>
                     </div>
@@ -183,7 +143,7 @@ const Courses = () => {
 
 
           <div className="btn">
-          <Link href="/coursepage" style={{ textDecoration: "none" }}>
+          <Link href="/colleges" style={{ textDecoration: "none" }}>
             <button>
               {" "}
              <div className="icon_arrow_abt">
@@ -199,16 +159,6 @@ const Courses = () => {
         </div>
 
 
-          {/* <div className="explore-btn">
-            <Link href="/coursepage" style={{ textDecoration: "none" }}>
-              <h5>
-                Explore More{" "}
-                <i style={{ marginLeft: "10px", fontSize: "20px" }}>
-                  <FaArrowRight />{" "}
-                </i>
-              </h5>
-            </Link>
-          </div> */}
         </div>
       </Container>
     </div>
