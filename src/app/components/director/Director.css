@@ -12,18 +12,6 @@
   --font-pt-serif: "PT Serif", serif;
 }
 
-.director {
-  width: 100%;
-  background-color: #eaf6e4;
-  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
-}
-.director-heading h1 {
-  padding-bottom: 0rem;
-  font-family: unset;
-  font-weight: 300;
-  display: flex;
-  color: #619a46;
-}
 
 /* .director-img img{
     width: 100%;

@@ -9,6 +9,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { getAboutUs, getAboutUsGallery } from "@/app/hooks/UseApi";
 import Link from "next/link";
 import Director from "@/app/components/director/Director";
+import Main_navebar from "../Main_navebar/Main_navebar";
 
 const AboutUs = () => {
   const [about, setAbout] = useState([]);
@@ -36,7 +37,9 @@ const AboutUs = () => {
 
   return (
     <div className="AboutUspage">
-      <PageHeader />
+
+<Main_navebar/>
+      {/* <PageHeader /> */}
 
       <div className="AboutUspage-img">
         <Image

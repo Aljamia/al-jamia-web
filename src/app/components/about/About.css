@@ -12,15 +12,7 @@
   --font-pt-serif: "PT Serif", serif;
 }
 
-.about-Title {
-  text-align: center;
-  color: #619a46;
-  margin-top: 2rem;
-}
-.about-Title h1 {
-  font-family: unset;
-  font-weight: 300;
-}
+
 .about-description {
   display: flex;
   align-items: center;

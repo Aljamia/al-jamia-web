@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import '../../pages/Main_navebar/Main_navebar.css';
-import '../../pages/Main_navebar/Nave_Bootstrap.css';
+import './Main_navebar.css';
+import './Nave_Bootstrap.css';
 import Image from 'next/image';
 
 

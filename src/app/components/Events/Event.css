@@ -61,38 +61,6 @@ span {
   padding-bottom: 4rem !important;
 }
 
-.library {
-  margin-top: 3rem;
-}
-.library h2 {
-  color: #619a46;
-}
-.library p {
-  color: #555555;
-  max-width: 90%;
-}
-
-.library h1 {
-  color: #619a46;
-  font-family: unset;
-  margin-top: 3rem;
-  font-weight: 300;
-}
-.library p {
-  color: #555555;
-  max-width: 90%;
-  font-family: unset;
-  font-size: 18px;
-  font-weight: 300;
-}
-.library-btn {
-  color: #fff;
-  background-color: #cca65d;
-  padding: 7px 20px;
-  border: none;
-  border-radius: 5px;
-  font-family: unset;
-}
 /* --right side carouse */
 
 .carouselevent {
