@@ -952,3 +952,67 @@ margin: 0px 0px 20px 30px;
   .AboutUspage-img{
     padding-top: 60px;
   }
+
+  .director {
+    width: 100%;
+    background-color: #eaf6e4;
+    background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+  }
+  .director-heading h1 {
+    padding-bottom: 0rem;
+    font-family: unset;
+    font-weight: 300;
+    font-size: xx-large;
+    display: flex;
+    text-align: left;
+    color: #619a46;
+  }
+  
+
+  .about-Title {
+    text-align: center;
+    color: #619a46;
+    margin-top: 2rem;
+  }
+  .about-Title h1 {
+    font-family: unset;
+    font-weight: 300;
+    color: #619a46;
+
+  }
+
+  
+.library {
+  margin-top: 3rem;
+}
+.library h2 {
+  color: #619a46;
+}
+.library p {
+  color: #555555;
+  max-width: 90%;
+}
+
+.library h1 {
+  color: #619a46;
+  font-family: unset;
+  margin-top: 3rem;
+  text-align: left;
+  font-weight: 300;
+  font-size: medium;
+}
+.library p {
+  color: #555555;
+  max-width: 90%;
+  font-family: unset;
+  font-size: 18px;
+  font-weight: 300;
+}
+.library-btn {
+  color: #fff;
+  background-color: #cca65d;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: unset;
+}

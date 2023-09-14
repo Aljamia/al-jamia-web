@@ -26,14 +26,7 @@
       color: #619a46;
       margin-top: 5rem;
     }
-    
-    .about-Title h1 {
-      /* font-family: unset; */
-    
-      font-family: unset;
-      font-weight: 300;
-    }
-    
+
     
     .AboutUspage-title {
       color: var(--light-green-color);
@@ -253,13 +246,7 @@
       margin-top: 5rem;
     }
     
-    .about-Title h1 {
-      /* font-family: unset; */
-    
-      font-family: unset;
-      font-weight: 300;
-    }
-    
+   
     
     .center_aln{
       text-align: center;

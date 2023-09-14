@@ -1,466 +1,161 @@
-import { useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import Image from "next/image";
-import "./PageHeader.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useState } from 'react';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import '../../pages/Main_navebar/Main_navebar.css';
+import '../../pages/Main_navebar/Nave_Bootstrap.css';
+import Image from 'next/image';
 
-const PageHeader = () => {
+
+function Main_navebar() {
+  const [scrolling, setScrolling] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
   useEffect(() => {
-    const handleScroll = () => {
-      const nav = document.querySelector(".navbar-fixed-top");
-      if (nav) {
-        nav.classList.toggle(
-          "scrolled",
-          document.documentElement.scrollTop > 100
-        );
-      }
-    };
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
 
-    window.addEventListener("scroll", handleScroll);
+    // Cleanup the event listener when the component unmounts
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
+  const handleScroll = () => {
+    if (window.scrollY >= 10) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <div>
-      <div className="header">
-        <Navbar
-          expand="lg"
-          className="bg-body-tertiary navbar navbar-fixed-top"
-          fixed="top"
-        >
-          <Container>
-            <Navbar.Brand href="#">
-              <Image
-                src="/image 5.png"
-                width={350}
-                height={80}
-                alt="Picture of the author"
-                className="nav-logo"
-              />
-            </Navbar.Brand>
-            <Navbar.Toggle
-              aria-controls="navbarScroll"
-              className="navbar-toggler-white"
+      <div className={`start-style ${scrolling ? 'scroll-on' : ''} ${darkMode ? 'dark' : ''}`}>
+    
+      </div>
+
+      <Navbar
+        className={`navigation-wrap bg-light start-header start-style ${
+          scrolling ? 'scroll-on' : ''
+        }`}
+        expand="md"
+      >
+        <div className="container">
+          <Navbar.Brand href="/">
+          <Image   
+          src="/al_jamia_logo.png"
+              width={350}
+              height={80}
+              alt="Picture of the author"
+              className="nav-logo"
             />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav className="ms-auto my-2 my-lg-0 nav-carousel">
-                <Nav.Link href="/" className="nav-links nav-link-black">
-                  Home
-                </Nav.Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarSupportedContent" />
+          <Navbar.Collapse id="navbarSupportedContent">
+            <Nav className="ml-auto py-4 py-md-0">
+              <Nav.Link href="/" className="pl-4 pl-md-0 ml-0 ml-md-4 active">
+                Home
+              </Nav.Link>
+
+              <NavDropdown
+                title="About"
+                id="basic-nav-dropdown"
+                className="pl-4 pl-md-0 ml-0 ml-md-4"
+              >
+                <NavDropdown.Item href="/about">Al Jamia Al Islamiya</NavDropdown.Item>
+                <NavDropdown.Item href="/Director_message">Rectors welcome Message</NavDropdown.Item>
+                <NavDropdown.Item href="/Visionpage"> Our Vision</NavDropdown.Item>
+                <NavDropdown.Item href="/Missionpage">Our Mission</NavDropdown.Item>
+                <NavDropdown.Item href="/Organizational_structure">Organizational Structure</NavDropdown.Item>
+              </NavDropdown>
+
+
+
+              <NavDropdown
+                title="Academics"
+                id="basic-nav-dropdown"
+                className="pl-4 pl-md-0 ml-0 ml-md-4"
+              >
+                <NavDropdown.Item href="/about">Colleges</NavDropdown.Item>
+                <NavDropdown.Item href="/colleges">Centre for Information Technology</NavDropdown.Item>
+                <NavDropdown.Item href="/Centre_for_it">Centre for Human Resource Development</NavDropdown.Item>
+                <NavDropdown.Item href="/Centre_for_hr">Centre for Research & Academic Excellence</NavDropdown.Item>
+                <NavDropdown.Item href="/Centre_for_research">Facultye</NavDropdown.Item>
+                <NavDropdown.Item href="/Faculty">Al Jamia Students Activities Centre</NavDropdown.Item>
+                <NavDropdown.Item href="/Activities_Centre">Al Jamia World Campus (Online Program)</NavDropdown.Item>
+                <NavDropdown.Item href="/Online_Program">Al Jamia Centre for Research & Academic Excellence</NavDropdown.Item>
+                <NavDropdown.Item href="/Research_Academic">Students Council</NavDropdown.Item>
+              </NavDropdown>
+
+              
+
+              <NavDropdown
+                title="The Library"
+                id="basic-nav-dropdown"
+                className="pl-4 pl-md-0 ml-0 ml-md-4"
+              >
+                <NavDropdown.Item href="/">Digital Library</NavDropdown.Item>
+                <NavDropdown.Item href="/">Catalogue</NavDropdown.Item>
+                <NavDropdown.Item href="/">New Arrivals</NavDropdown.Item>
+                <NavDropdown.Item href="/">Library Service</NavDropdown.Item>
+                <NavDropdown.Item href="/"> Donate Books</NavDropdown.Item>
+                <NavDropdown.Item href="/">Heritage</NavDropdown.Item>
+                <NavDropdown.Item href="/">Gallery</NavDropdown.Item>
+              </NavDropdown>
+
+              
+
+              <NavDropdown
+                title="Admissions"
+                id="basic-nav-dropdown"
+                className="pl-4 pl-md-0 ml-0 ml-md-4"
+              >
+                <NavDropdown.Item href="/Preparatory_Course">Preparatory Course Admission</NavDropdown.Item>
+                <NavDropdown.Item href="/Under_Graduate">Under Graduate Admission</NavDropdown.Item>
+                <NavDropdown.Item href="/Post_Graduate">Post Graduate Admission</NavDropdown.Item>
+              </NavDropdown>
+
+
+              <NavDropdown
+                title="Students Life"
+                id="basic-nav-dropdown"
+                className="pl-4 pl-md-0 ml-0 ml-md-4"
+              >
+              <NavDropdown.Item href="/Student_Development">Student Development</NavDropdown.Item>
+              <NavDropdown.Item href="/Student_Counseling_Service">Student Counseling Service</NavDropdown.Item>
+              <NavDropdown.Item href="/Students_Centre">Students Centre</NavDropdown.Item>
+                <NavDropdown.Item href="/Student_Housing">Student Housing</NavDropdown.Item>
+                <NavDropdown.Item href="/Student_Life_Services">Student Life & Services</NavDropdown.Item>
+                <NavDropdown.Item href="/Student_Representative_Board">Student Representative Board</NavDropdown.Item>
+                <NavDropdown.Item href="/Our_Facilities">Our Facilities and General Service</NavDropdown.Item>
+              </NavDropdown>
+
+              
+
+              <NavDropdown
+                title="Alumni"
+                id="basic-nav-dropdown"
+                className="pl-4 pl-md-0 ml-0 ml-md-4"
+              >
+              <NavDropdown.Item href="/Alumni">Alumni Chapters</NavDropdown.Item>
+              <NavDropdown.Item href="/Recognition_Awards">Recognition & Awards</NavDropdown.Item>
+              </NavDropdown>
             
 
-<nav role="navigation" className="primary-navigation ">
-                  <ul>
-                    <li>
-                      <Nav.Link href="/" className="nav-links nav-link-black">
-                      About{" "}
-                        <FontAwesomeIcon
-                          icon={faChevronDown}
-                          style={{ fontSize: "10px" }}
-                        />
-                      </Nav.Link>
-
-                      <ul className="dropdown">
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/about">
-                            {" "}
-                            <h5>Al Jamia Al Islamiya</h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Director_message">
-                            {" "}
-                            <h5>Rectors welcome Message </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Visionpage">
-                            {" "}
-                            <h5>
-                            Our Vision
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Missionpage">
-                            {" "}
-                            <h5>
-                            Our Mission
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Organizational_structure">
-                            {" "}
-                            <h5>
-                            Organizational Structure
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
 
 
-
-
-                <nav role="navigation" className="primary-navigation ">
-                  <ul>
-                    <li>
-                      <Nav.Link href="/Academics" className="nav-links nav-link-black">
-                      Academics{" "}
-                        <FontAwesomeIcon
-                          icon={faChevronDown}
-                          style={{ fontSize: "10px" }}
-                        />
-                      </Nav.Link>
-
-                      <ul className="dropdown">
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Centre_for_it">
-                            {" "}
-                            <h5>Colleges</h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Centre_for_it">
-                            {" "}
-                            <h5>Centre for Information Technology </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Centre_for_hr">
-                            {" "}
-                            <h5>
-                            Centre for Human Resource Development
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Centre_for_research">
-                            {" "}
-                            <h5>
-                            Centre for Research & Academic Excellence
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Faculty">
-                            {" "}
-                            <h5>
-                            Faculty
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Activities_Centre">
-                            {" "}
-                            <h5>
-                            Al Jamia Students’ Activities Centre 
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Online_Program">
-                            {" "}
-                            <h5>
-                            Al Jamia World Campus (Online Program)
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Research_Academic">
-                            {" "}
-                            <h5>
-                            Al Jamia Centre for Research & Academic Excellence
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Students_Council">
-                            {" "}
-                            <h5>
-                            Students Council
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-
-
-                
-
-
-                <nav role="navigation" className="primary-navigation ">
-                  <ul>
-                    <li>
-                      <Nav.Link href="/centralibrary" className="nav-links nav-link-black">
-                      The Library{" "}
-                        <FontAwesomeIcon
-                          icon={faChevronDown}
-                          style={{ fontSize: "10px" }}
-                        />
-                      </Nav.Link>
-
-                      <ul className="dropdown">
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/centralibrary">
-                            {" "}
-                            <h5>Digital Library </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
-                            {" "}
-                            <h5>Catalogue</h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
-                            {" "}
-                            <h5>
-                            New Arrivals
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
-                            {" "}
-                            <h5>
-                            Library Service
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
-                            {" "}
-                            <h5>
-                            Donate Books
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
-                            {" "}
-                            <h5>
-                            Al Jamia Students’ Activities Centre 
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
-                            {" "}
-                            <h5>
-                            Heritage
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/">
-                            {" "}
-                            <h5>
-                            Gallery
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-
-                      
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-
-                
-                
-
-
-                <nav role="navigation" className="primary-navigation ">
-                  <ul>
-                    <li>
-                      <Nav.Link href="/" className="nav-links nav-link-black">
-                      Admissions{" "}
-                        <FontAwesomeIcon
-                          icon={faChevronDown}
-                          style={{ fontSize: "10px" }}
-                        />
-                      </Nav.Link>
-
-                      <ul className="dropdown">
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Preparatory_Course">
-                            {" "}
-                            <h5>Preparatory Course Admission</h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Under_Graduate">
-                            {" "}
-                            <h5>Under Graduate Admission</h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Post_Graduate">
-                            {" "}
-                            <h5>
-                            Post Graduate Admission
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-
-                
-                
-                
-
-
-                <nav role="navigation" className="primary-navigation ">
-                  <ul>
-                    <li>
-                      <Nav.Link href="/" className="nav-links nav-link-black">
-                      Students Life{" "}
-                        <FontAwesomeIcon
-                          icon={faChevronDown}
-                          style={{ fontSize: "10px" }}
-                        />
-                      </Nav.Link>
-
-                      <ul className="dropdown">
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Student_Development">
-                            {" "}
-                            <h5>Student Development</h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Student_Counseling_Service">
-                            {" "}
-                            <h5>Student Counseling Service</h5>{" "}
-                          </Nav.Link>
-                        </li>
-                      
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Students_Centre">
-                            {" "}
-                            <h5>
-                            Students Centre
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Student_Housing">
-                            {" "}
-                            <h5>
-                            Student Housing
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Student_Life_Services">
-                            {" "}
-                            <h5>
-                            Student Life & Services
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Student_Representative_Board">
-                            {" "}
-                            <h5>
-                            Student Representative Board
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Our_Facilities">
-                            {" "}
-                            <h5>
-                            Our Facilities and General Service
-                            </h5>{" "}
-                          </Nav.Link>
-                        </li>
-                      
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-
-
-              
-                
-
-
-                <nav role="navigation" className="primary-navigation ">
-                  <ul>
-                    <li>
-                      <Nav.Link href="/" className="nav-links nav-link-black">
-                      Alumni{" "}
-                        <FontAwesomeIcon
-                          icon={faChevronDown}
-                          style={{ fontSize: "10px" }}
-                        />
-                      </Nav.Link>
-
-                      <ul className="dropdown">
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Alumni">
-                            {" "}
-                            <h5>Alumni Chapters</h5>{" "}
-                          </Nav.Link>
-                        </li>
-                        <li className="nav-dropdown-links">
-                          <Nav.Link href="/Recognition_Awards">
-                            {" "}
-                            <h5>Recognition & Awards</h5>{" "}
-                          </Nav.Link>
-                        </li>
-                       
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-
-                
-                <Nav.Link href="/contact" className="nav-links nav-link-black">
-                  Contact
-                </Nav.Link>
-              </Nav>
-              
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </div>
+              <Nav.Link href="/contact" className="pl-4 pl-md-0 ml-0 ml-md-4">
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </div>
+      </Navbar>
     </div>
   );
-};
+}
 
-export default PageHeader;
+export default Main_navebar;
