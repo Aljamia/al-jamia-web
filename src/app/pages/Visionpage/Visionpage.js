@@ -61,8 +61,7 @@ function Visionpage() {
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
-                >
-                  Our Vision
+                >Our Vision
                 </div>
                 <p className="AboutUspage-mission-desc">{about[0]?.vision}</p>
               </Col>

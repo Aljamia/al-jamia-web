@@ -83,7 +83,7 @@ function Online_Program() {
                     <div class="column">
                       <div class="card">
                         <div class="icon-wrapper">
-                          <i class="fas fa-hammer"></i>
+                          <i class="fas fa-video"></i>
                         </div>
                         <h3>Pre-recorded video lessons </h3>
                       </div>
@@ -91,7 +91,7 @@ function Online_Program() {
                     <div class="column">
                       <div class="card">
                         <div class="icon-wrapper">
-                          <i class="fas fa-brush"></i>
+                          <i class="fas fa-pen"></i>
                         </div>
                         <h3>Content summary notes </h3>
                       </div>
@@ -99,7 +99,7 @@ function Online_Program() {
                     <div class="column">
                       <div class="card">
                         <div class="icon-wrapper">
-                          <i class="fas fa-wrench"></i>
+                          <i class="fas fa-book"></i>
                         </div>
                         <h3>Reference materials</h3>
                       </div>
@@ -107,7 +107,7 @@ function Online_Program() {
                     <div class="column">
                       <div class="card">
                         <div class="icon-wrapper">
-                          <i class="fas fa-truck-pickup"></i>
+                          <i class="fas fa-eye"></i>
                         </div>
                         <h3>Interactive live sessions</h3>
                       </div>
@@ -115,7 +115,7 @@ function Online_Program() {
                     <div class="column">
                       <div class="card">
                         <div class="icon-wrapper">
-                          <i class="fas fa-broom"></i>
+                          <i class="fas fa-file"></i>
                         </div>
                         <h3>Assignments and assessment modules </h3>
                       </div>
@@ -123,7 +123,7 @@ function Online_Program() {
                     <div class="column">
                       <div class="card">
                         <div class="icon-wrapper">
-                          <i class="fas fa-plug"></i>
+                          <i class="fas fa-award"></i>
                         </div>
                         <h3>Final evaluation and certification </h3>
                       </div>

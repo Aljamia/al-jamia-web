@@ -35,15 +35,15 @@ const CoursePage = () => {
       >
         <Container>
           <div className="coursePage-img pt-1 mag_top">
-            <Image
+            {/* <Image
               src="/image 15.jpg"
               layout="responsive"
               width={1000}
               height={300}
               alt="Image"
-            />
-            <div className="coursePage-text center_div">
-              <h2> Academics</h2>
+            /> */}
+            <div className="Colleges_div_bg center_div">
+              <h2>Colleges</h2>
               <p>
                 Al Jamia offers good academic programs with a few
                 specializations to meet the needs of both the Nation and

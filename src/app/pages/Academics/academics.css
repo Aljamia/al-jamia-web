@@ -981,16 +981,6 @@ span {
     display: none;
   }
 
-  .library h1 {
-    text-align: center;
-  }
-
-  .library p {
-    color: #555555;
-    max-width: 100%;
-    text-align: center;
-  }
-
   .learn-btn-lib {
     text-align: center;
     font-size: 13px;
@@ -1656,7 +1646,6 @@ span {
   font-style: normal;
   font-weight: 300;
   text-align: center;
-  width: 72%;
   margin: auto;
   line-height: 160%;
   letter-spacing: 0.52px;

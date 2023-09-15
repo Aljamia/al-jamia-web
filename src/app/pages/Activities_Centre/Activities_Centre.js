@@ -91,201 +91,194 @@ and inclusive communities.</p>
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+  
  
     <section>
-    <h1 class="TitleStyle center_aln p-5">Major Activities</h1>
+    <h1 className="TitleStyle center_aln p-5">Major Activities</h1>
 
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-book"></i>
+      <div className="row">
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-child"></i>
             </div>
             <h3>Student Parliament </h3>
                      </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-brush"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-play"></i>
             </div>
             <h3>Club activities </h3>
            
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-wrench"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+            <i className="fas fa-star"></i>
             </div>
-            <h3>Club activities</h3>
+            <h3>Literary associations </h3>
           
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-truck-pickup"></i>
-            </div>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+            <i class="fa-solid fa-gamepad"></i>
+                        </div>
             <h3> Sports and Games</h3>
            
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-broom"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-star"></i>
             </div>
             <h3>Tarbiyah</h3>
            
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-plug"></i>
             </div>
             <h3>Khutba Training </h3>
            
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-headphones"></i>
             </div>
             <h3>Public Speaking and Performance</h3>
            
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-volume-low"></i>
             </div>
             <h3>Social activism</h3>
            
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-book"></i>
             </div>
             <h3>Blogging</h3>
            
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-eye"></i>
             </div>
             <h3> Media</h3>
            
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-fire"></i>
             </div>
             <h3>Public Relations </h3>
            
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-camera"></i>
             </div>
             <h3>Photography </h3>
            
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-hospital"></i>
             </div>
             <h3>Health and fitness </h3>
            
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-pen"></i>
             </div>
             <h3>Writings and Publications </h3>
            
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-star"></i>
             </div>
             <h3> Arts & Crafts </h3>
            
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-heart"></i>
             </div>
             <h3>Social Awareness programs </h3>
            
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-tag"></i>
             </div>
             <h3> Social Service Wing </h3>
            
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-plus"></i>
             </div>
             <h3> Health Service Centre </h3>
            
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-box"></i>
             </div>
             <h3>Career Guidance </h3>
            
           </div>
         </div>
 
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
+        <div className="column">
+          <div className="card">
+            <div className="icon-wrapper">
+              <i className="fas fa-laptop"></i>
             </div>
             <h3> Soft-Skill development </h3>
            

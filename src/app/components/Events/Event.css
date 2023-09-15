@@ -251,17 +251,14 @@ span {
   .slick-dots li button {
     display: none;
   }
-  .library h1 {
-    text-align: center;
-  }
-  .library p {
-    color: #555555;
-    max-width: 100%;
-    text-align: center;
-    font-size: 14px;
-  }
   .learn-btn-lib {
     text-align: center;
     font-size: 13px;
   }
+
+  
+.headlibrary {
+  margin-top: 0rem !important;
+  padding-bottom: 4rem !important;
+}
 }

@@ -9,19 +9,26 @@
 	box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
 	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
+	color: #fff !important;
 }
 .start-header.scroll-on {
 	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
 	padding: 10px 0;
-	-webkit-transition : all 0.3s ease-out;
+	-webkit-transition : all 0.3s ease-out;	background-color: white !important;
+color: #a96601 !important;
 	transition : all 0.3s ease-out;
 }
 .start-header.scroll-on .navbar-brand img{
     height: auto;
-	width: 80%;
+	width: 70%;	color: white !important;
+
+
     	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
+
+
+
 .navigation-wrap{
 	position: fixed;
 	width: 100%;
@@ -36,7 +43,7 @@
 }
 .navbar-brand img{
 	height: auto;
-	width: 80%;
+	width: 70%;
 	display: block;
   /* filter: brightness(10%); */
 	-webkit-transition : all 0.3s ease-out;
@@ -84,7 +91,7 @@
 	border-color: transparent;
 }
 .nav-link{
-	color: #000 !important;
+	color: #a9a9a9 !important;
 	font-weight: 300;    font-size: medium;
     font-family: unset;
     transition: all 200ms linear;
@@ -105,7 +112,7 @@
 	bottom: -5px;
 	left: 0;
 	width: 100%;
-	height: 2px;
+	height: 1px;
 	content: '';
 	background-color: #a96601;
 	opacity: 0;
@@ -127,7 +134,7 @@
 ================================================== */
 
 .bg-light {
-	background-color: #fff !important;
+	background-color: transparent !important;
     transition: all 200ms linear;
 }
 .section {
@@ -379,19 +386,21 @@ body.dark p{
     transition-delay: 0ms !important;
 }
 body.dark .bg-light {
-	background-color: #fff !important;
+	background-color: white !important;
 }
 body.dark .start-header {
 	box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 body.dark .start-header.scroll-on {
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+
 }
 body.dark .nav-link{
 	color: #fff !important;
 }
 body.dark .nav-item.active .nav-link{
-	color: #999 !important;
+	color: #fff !important;
 }
 body.dark .dropdown-menu {
 	color: #fff;
@@ -472,6 +481,14 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	body.dark .dropdown-menu {
 		background-color: transparent;
 		box-shadow: none;
+	}
+	.bg-light {
+		background-color: white !important;
+		transition: all 200ms linear;
+		color: #000;
+	}
+	.nav-link{
+		color: #000 !important;
 	}
 }
 

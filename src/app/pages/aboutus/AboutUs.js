@@ -8,7 +8,6 @@ import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
 import { getAboutUs, getAboutUsGallery } from "@/app/hooks/UseApi";
 import Link from "next/link";
-import Director from "@/app/components/director/Director";
 import Main_navebar from "../Main_navebar/Main_navebar";
 
 const AboutUs = () => {
@@ -52,7 +51,7 @@ const AboutUs = () => {
       </div>
 
       <div className="AboutUspage-desc">  
-          <div className="AboutUspage-title center_aln pb-4">About Us</div>
+          <div className="AboutUspage-title center_aln pb-4">Al Jamia Al Islamiya</div>
         {" "}
       
         {about.map((item, index) => (
@@ -69,7 +68,6 @@ const AboutUs = () => {
 
 
 
-      <Director />
 {/* 
       <div className="AboutUspage-items">
         <div className="AboutUspage-ourMission">
@@ -93,8 +91,7 @@ const AboutUs = () => {
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header"
-                >
-                  Our Vision
+                >Our Vision
                 </div>
                 <p className="AboutUspage-mission-desc">{about[0]?.vision}</p>
               </Col>

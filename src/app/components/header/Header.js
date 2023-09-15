@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import '../../pages/Main_navebar/Main_navebar.css';
@@ -66,10 +67,11 @@ function Main_navebar() {
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
               >
                 <NavDropdown.Item href="/about">Al Jamia Al Islamiya</NavDropdown.Item>
-                <NavDropdown.Item href="/Director_message">Rectors welcome Message</NavDropdown.Item>
-                <NavDropdown.Item href="/Visionpage"> Our Vision</NavDropdown.Item>
+                <NavDropdown.Item href="/Director_message">Rector's welcome Message</NavDropdown.Item>
+                <NavDropdown.Item href="/Visionpage">Our Vision</NavDropdown.Item>
                 <NavDropdown.Item href="/Missionpage">Our Mission</NavDropdown.Item>
                 <NavDropdown.Item href="/Organizational_structure">Organizational Structure</NavDropdown.Item>
+                <NavDropdown.Item href="/Career">Career</NavDropdown.Item>
               </NavDropdown>
 
 
@@ -79,15 +81,15 @@ function Main_navebar() {
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
               >
-                <NavDropdown.Item href="/about">Colleges</NavDropdown.Item>
-                <NavDropdown.Item href="/colleges">Centre for Information Technology</NavDropdown.Item>
-                <NavDropdown.Item href="/Centre_for_it">Centre for Human Resource Development</NavDropdown.Item>
-                <NavDropdown.Item href="/Centre_for_hr">Centre for Research & Academic Excellence</NavDropdown.Item>
-                <NavDropdown.Item href="/Centre_for_research">Facultye</NavDropdown.Item>
-                <NavDropdown.Item href="/Faculty">Al Jamia Students Activities Centre</NavDropdown.Item>
-                <NavDropdown.Item href="/Activities_Centre">Al Jamia World Campus (Online Program)</NavDropdown.Item>
-                <NavDropdown.Item href="/Online_Program">Al Jamia Centre for Research & Academic Excellence</NavDropdown.Item>
-                <NavDropdown.Item href="/Research_Academic">Students Council</NavDropdown.Item>
+                <NavDropdown.Item href="/colleges">Colleges</NavDropdown.Item>
+                <NavDropdown.Item href="/Centre_for_it">Centre for Information Technology</NavDropdown.Item>
+                <NavDropdown.Item href="/Centre_for_hr">Centre for Human Resource Development</NavDropdown.Item>
+                <NavDropdown.Item href="/Centre_for_research">Centre for Research & Academic Excellence</NavDropdown.Item>
+                <NavDropdown.Item href="/Faculty">Faculty</NavDropdown.Item>
+                <NavDropdown.Item href="/Activities_Centre">Al Jamia Students Activities Centre</NavDropdown.Item>
+                <NavDropdown.Item href="/Online_Program">Al Jamia World Campus (Online Program)</NavDropdown.Item>
+                <NavDropdown.Item href="/Research_Academic">Al Jamia Centre for Research & Academic Excellence</NavDropdown.Item>
+                <NavDropdown.Item href="/Students_Council">Students Council</NavDropdown.Item>
               </NavDropdown>
 
               
@@ -97,13 +99,13 @@ function Main_navebar() {
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
               >
-                <NavDropdown.Item href="/">Digital Library</NavDropdown.Item>
-                <NavDropdown.Item href="/">Catalogue</NavDropdown.Item>
+                <NavDropdown.Item href="/centralibrary">Digital Library</NavDropdown.Item>
+                {/* <NavDropdown.Item href="/">Catalogue</NavDropdown.Item>
                 <NavDropdown.Item href="/">New Arrivals</NavDropdown.Item>
                 <NavDropdown.Item href="/">Library Service</NavDropdown.Item>
-                <NavDropdown.Item href="/"> Donate Books</NavDropdown.Item>
+                <NavDropdown.Item href="/">Donate Books</NavDropdown.Item>
                 <NavDropdown.Item href="/">Heritage</NavDropdown.Item>
-                <NavDropdown.Item href="/">Gallery</NavDropdown.Item>
+                <NavDropdown.Item href="/">Gallery</NavDropdown.Item> */}
               </NavDropdown>
 
               
@@ -140,8 +142,11 @@ function Main_navebar() {
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
               >
-              <NavDropdown.Item href="/Alumni">Alumni Chapters</NavDropdown.Item>
+            <NavDropdown.Item href="/Alumni">Alumni Chapters</NavDropdown.Item>
               <NavDropdown.Item href="/Recognition_Awards">Recognition & Awards</NavDropdown.Item>
+              <NavDropdown.Item href="https://docs.google.com/forms/d/e/1FAIpQLSct13Xcjv43IXJqJyH309IAzfEje8Viw4CgtNteNP6oa6FNWA/viewform" target="blank">
+              Alumni Membership
+</NavDropdown.Item>
               </NavDropdown>
             
 
