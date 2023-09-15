@@ -21,10 +21,7 @@ const Director = () => {
   }, []);
   return (
     <div>
-
-      
       <div className="director">
-       
         <Container>
           <Row>
             <Col xl={6}>
@@ -34,9 +31,9 @@ const Director = () => {
             </Col>
             <Col xl={6}>
               <div className="director-des">
-              <div className="director-heading">
-          <h1> Message From The Rector's</h1>
-        </div>
+                <div className="director-heading">
+                  <h1> Message From The Rectors</h1>
+                </div>
                 <p>{director[0]?.enDescription}</p>
               </div>
               <div className="person-detail">
@@ -47,10 +44,6 @@ const Director = () => {
           </Row>
         </Container>
       </div>
-
-
-
-
     </div>
   );
 };

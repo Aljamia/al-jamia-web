@@ -1,12 +1,11 @@
-import Link from 'next/link'
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-
+"use client";
+import Link from "next/link";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 function CareerLink() {
   return (
     <div>
-        
-        <div className="AboutUspage-ourMission pt-5 pb-5">
+      <div className="AboutUspage-ourMission pt-5 pb-5">
         <Container>
           <Row>
             <Col xl={12} lg={12} xs={12}>
@@ -53,7 +52,7 @@ function CareerLink() {
         </Container>
       </div>
     </div>
-  )
+  );
 }
 
-export default CareerLink
+export default CareerLink;
