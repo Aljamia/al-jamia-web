@@ -2,7 +2,7 @@
     /***** image gallery *****/
     .grid-wrapper > div {
       display: flex;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       align-items: center;
     }
     .grid-wrapper > div > img {

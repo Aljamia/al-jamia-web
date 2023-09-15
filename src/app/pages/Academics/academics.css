@@ -1090,7 +1090,7 @@ span {
   line-height: normal;
   cursor: pointer;
   display: inline-block;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 5px;
   padding: 8px 15px;
   text-transform: uppercase;

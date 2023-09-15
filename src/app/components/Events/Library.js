@@ -7,7 +7,7 @@ const Library = () => {
     <div className="library-event">
       <div className="event-section-2">
         <div className="event-s-img ">
-          <img src="Mask group.png" alt="" width="100%" />
+          <image src="Mask group.png" alt="" width="100%" />
         </div>
         <Container className="headlibrary">
 
@@ -56,7 +56,7 @@ const Library = () => {
           </div>
     </div>
     <div class="col-sm-6">
-    <div className="image">
+    <div className="image pt-3">
           <img src="library.png" alt="photo" width="100%" />
         </div>
     </div>

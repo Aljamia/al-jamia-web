@@ -23,7 +23,7 @@ function Alumni_Chapters() {
     />
  
     <section>
-    <h1 class="TitleStyle center_aln p-4">                 
+    <h1 class="TitleStyle center_aln pt-2 pb-2">                 
      Alumni Chapters
     
 </h1>

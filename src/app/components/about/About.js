@@ -19,7 +19,7 @@ const About = () => {
   return (
     <div>
      <div className="container">
-     <div className="about-Title">
+     <div className="about-Title pt-4">
         <h1>Welcome to Al Jamia al Islamiya</h1>
       </div>
       <div className="about-description">

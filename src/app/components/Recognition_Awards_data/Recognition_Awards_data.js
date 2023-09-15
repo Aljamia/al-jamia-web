@@ -20,7 +20,7 @@ function Recognition_Awards_data() {
             />
 
             <section>
-              <h1 class="TitleStyle center_aln p-4">Recognition Awards</h1>
+              <h1 class="TitleStyle center_aln pt-2 pb-2">Recognition Awards</h1>
               <p>
                 We take immense pride in celebrating the achievements of our
                 remarkable alumni. Our Alumni Recognition & Awards program

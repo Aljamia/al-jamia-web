@@ -75,7 +75,7 @@ function Online_Program() {
                 />
 
                 <section>
-                  <h1 class="TitleStyle center_aln p-4">
+                  <h1 class="TitleStyle center_aln  pt-2 pb-2">
                     Highlights of Programs
                   </h1>
 
@@ -136,7 +136,7 @@ function Online_Program() {
         </div>
 
         <div className="AboutUspage-items">
-          <h1 class="TitleStyle center_aln p-4">Our online Courses</h1>
+          <h1 class="TitleStyle center_aln  pt-2 pb-2">Our online Courses</h1>
 
           <div className="AboutUspage-ourMission">
             <Container>

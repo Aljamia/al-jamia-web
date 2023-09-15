@@ -61,7 +61,7 @@
 .content {
   padding: 25px;
   text-align: center;
-  justify-content: space-between; /* This separates the title and description from the button */
+  /* justify-content: space-between;  */
 }
 
 h2 {

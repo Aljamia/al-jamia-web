@@ -65,7 +65,7 @@ function Main_navebar() {
               <NavDropdown
                 title="About"
                 id="basic-nav-dropdown"
-                className="pl-4 pl-md-0 ml-0 ml-md-4"
+                className="pl-4 pl-md-0 ml-0 ml-md-4 noBordder"
               >
                 <NavDropdown.Item href="/about">Al Jamia Al Islamiya</NavDropdown.Item>
                 <NavDropdown.Item href="/Director_message">Rector's welcome Message</NavDropdown.Item>

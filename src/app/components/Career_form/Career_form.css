@@ -102,11 +102,11 @@
   }
   
   
-  .addres_box img{padding: 20px;
+  .addres_box img{padding: 10px;
     float: left;
   }
   
-  .addres_box p{padding-top: 25px;
+  .addres_box p{padding-top: 15px;
   }
   
   .cont_form{
@@ -127,5 +127,11 @@
 
 
   .CareerBox{
-    padding: 8%;
+    padding-top: 3rem;
+  }
+
+    .CareerBox h1 {
+      font-family: unset;
+      font-weight: 300;
+      color: #619a46;
   }
