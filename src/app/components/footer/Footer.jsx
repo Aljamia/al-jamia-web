@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+
 import "./Footer.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
@@ -14,7 +15,46 @@ import {
 } from "react-icons/fa6";
 
 const Footer = () => {
+  
+  const [isVisible, setIsVisible] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  <div className={`back-to-top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
+  <i className="fa fa-chevron-up"></i>
+</div>
+
   return (
+
+
+
+
+ 
+
+
+
+
     <div className="footer">
 
 <link
@@ -156,8 +196,9 @@ PATTIKKAD –679 325 MALAPPURAM DISTRICT, KERALA – INDIA.</li>
 
 
 
-
-
+    <div className={`back-to-top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
+      <i className="fa fa-chevron-up"></i>
+    </div>
 
 {/*       
       <Container className="footer-contents">

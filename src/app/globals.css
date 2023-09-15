@@ -1304,6 +1304,11 @@ text-align: center;
   border-bottom: 0px;
 }
 
+
+
+
+
+
 @media (max-width: 991px) {
  
 
@@ -1469,6 +1474,18 @@ text-align: justify;
 
 .useful-link, .social-links, .address{
   text-align: left !important;
+}
+
+
+.blog-details-list li {
+text-align: left;
+}
+
+
+
+
+.blog-details-list li::before {
+text-align: left;
 }
 
 

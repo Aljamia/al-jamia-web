@@ -192,3 +192,28 @@ a {
 /* footer section end */
 
 
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; color: #e59500;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #fff;
+
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top.visible {
+  display: block;
+}
+
+.back-to-top:hover {
+  background-color: #e59500;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
