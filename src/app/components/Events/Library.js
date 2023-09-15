@@ -14,8 +14,8 @@ const Library = () => {
   <div class="row">
     <div class="col-sm-6">
     <div className="library">
-          <div className="">
-            <h1>Central Library</h1>
+    <div class="director-heading">
+                  <h1>Central Library</h1>
           </div>
           <div>
             <p>

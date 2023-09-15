@@ -28,7 +28,7 @@ const academics = () => {
         <Container>
           <Row>
             <Col xl={6} lg={6} xs={12}>
-              <div className="AboutUspage-mission-img pt-5">
+              {/* <div className="AboutUspage-mission-img pt-5">
                 <Image
                   src="/academics.png"
                   layout="responsive" // Use layout="responsive" for responsiveness
@@ -37,10 +37,10 @@ const academics = () => {
                   alt="Image"
                   objectFit="cover"
                 />
-              </div>
+              </div> */}
             </Col>
             <Col xl={6} lg={6} xs={12} className="Academicsstyle">
-              <div className="">
+              <div className="Colleges_div_bg">
                 <h1>
                   Colleges
                 </h1>

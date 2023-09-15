@@ -13,12 +13,16 @@
 .start-header.scroll-on {
 	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
 	padding: 10px 0;
+	color: white !important;
+	background-color: white !important;
 	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
 .start-header.scroll-on .navbar-brand img{
     height: auto;
-	width: 200px;
+	width: 200px;	color: white !important;
+	background-color: white !important;
+
     	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
@@ -105,7 +109,7 @@
 	bottom: -5px;
 	left: 0;
 	width: 100%;
-	height: 2px;
+	height: 1px;
 	content: '';
 	background-color: #a96601;
 	opacity: 0;
@@ -380,19 +384,21 @@ body.dark p{
     transition-delay: 0ms !important;
 }
 body.dark .bg-light {
-	background-color: #14151a !important;
+	background-color: transparent !important;
 }
 body.dark .start-header {
 	box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
-body.dark .start-header.scroll-on {
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+body.dark .start-header.scroll-on {	color: white !important;
+
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);	background-color: white !important;
+
 }
 body.dark .nav-link{
 	color: #fff !important;
 }
 body.dark .nav-item.active .nav-link{
-	color: #999 !important;
+	color: #fff !important;
 }
 body.dark .dropdown-menu {
 	color: #fff;
@@ -419,6 +425,16 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 ================================================== */
 
 @media (max-width: 767px) { 
+
+	.nav-link{
+		color: #000 !important;
+	}
+.bg-light {
+	background-color: white !important;
+}
+body.dark .bg-light {
+	background-color: white !important;
+}
 	h1{
 		font-size: 38px;
 	}
@@ -474,9 +490,7 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 		background-color: transparent;
 		box-shadow: none;
 	}
-    .bg-light {
-        background-color: #fff !important;
-    }
+  
 }
 
 /* #Link to page

@@ -9,18 +9,22 @@ import Courses from "../components/ourCourses/Courses";
 import Grades from "../components/grades/Grades";
 import Library from "../components/Events/Library";
 import "../globals.css";
+import AlJamiaApp from "../pages/AlJamiaApp/AlJamiaApp";
+import CareerLink from "../pages/CareerLink/CareerLink";
 
 const LandingPage = () => {
   return (
     <div>
       <CarouselComponent />
       <About />
+      <AlJamiaApp/>
       <Courses />
       <Grades />
       <Event />
       <Library />
       <Deparments />
       <Director />
+      <CareerLink/>
       <Footer />
     </div>
   );

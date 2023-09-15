@@ -4054,7 +4054,7 @@
   }
   
   .navbar-dark .navbar-toggler {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255,);
     border-color: rgba(255, 255, 255, 0.1);
   }
   
@@ -5991,18 +5991,17 @@
   }
   
   .bg-light {
-    background-color: #fff !important;
     min-height: 100px;
     position: fixed;
     width: 100%;
   }
   
-  a.bg-light:hover, a.bg-light:focus,
+  /* a.bg-light:hover, a.bg-light:focus,
   button.bg-light:hover,
   button.bg-light:focus {
     background-color: #dae0e5 !important;
   }
-  
+   */
   .bg-dark {
     background-color: #343a40 !important;
   }
