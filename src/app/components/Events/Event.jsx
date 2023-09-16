@@ -71,18 +71,18 @@ const Event = () => {
     <div>
       <div className="events-section">
         <div className="event-title">
-        <div className="about-Title">
+          <div className="about-Title">
             <h1>News and Events</h1>
           </div>
-          <div className="grades-desc  p-4">
+          <div className="grades-desc pt-3 pb-3">
             <p className="page_padd">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
               quasi minus. Ut impedit voluptas excepturi aperiam iste non in
               explicabo. Tenetur inventore dolor distinctio necessitatibus vero,
               perspiciatis aliquam debitis ea.
             </p>
-          </div>       
-           </div>
+          </div>
+        </div>
         <div></div>
         <div className="event-first-section p-1">
           <Container>
@@ -97,7 +97,10 @@ const Event = () => {
                 </div>
                 <div className="event-btn ">
                   <button>Up Coming Events</button>
-                  <span className="m-2"> {new Date(events[0]?.date).toDateString()}</span>
+                  <span className="m-2">
+                    {" "}
+                    {new Date(events[0]?.date).toDateString()}
+                  </span>
                 </div>
                 <div className="event-des">
                   <h4>{events[0]?.title}</h4>

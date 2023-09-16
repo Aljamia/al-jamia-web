@@ -1090,7 +1090,7 @@ span {
   line-height: normal;
   cursor: pointer;
   display: inline-block;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 5px;
   padding: 8px 15px;
   text-transform: uppercase;
@@ -1128,8 +1128,7 @@ span {
   position: relative;
   border-radius: 20px;
   background: #fff;
-  box-shadow: 0px 18.829999923706055px 47.08000183105469px 0px
-    rgba(47, 50, 125, 0.1);
+  box-shadow: 0px 18.829999923706055px 47.08000183105469px 0px rgba(47, 50, 125, 0.1);
   border: none;
   cursor: pointer;
   outline: none;
@@ -1138,8 +1137,9 @@ span {
   padding: 0.2em;
   margin-top: 1.5em;
 }
+
 .portfolio-card:hover {
-  background-color: #fff;    
+  background-color: #fff;
   transition: all 0.3s linear;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -1434,8 +1434,7 @@ span {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url(/_next/static/media/ajax-loader.0b80f665.gif) center
-    center no-repeat;
+  background: #fff url(/_next/static/media/ajax-loader.0b80f665.gif) center center no-repeat;
 }
 
 /* Icons */
@@ -1445,8 +1444,7 @@ span {
   font-style: normal;
 
   src: url(/_next/static/media/slick.25572f22.eot);
-  src: url(/_next/static/media/slick.25572f22.eot?#iefix)
-      format("embedded-opentype"),
+  src: url(/_next/static/media/slick.25572f22.eot?#iefix) format("embedded-opentype"),
     url(/_next/static/media/slick.653a4cbb.woff) format("woff"),
     url(/_next/static/media/slick.6aa1ee46.ttf) format("truetype"),
     url(/_next/static/media/slick.f895cfdf.svg#slick) format("svg");
@@ -1695,14 +1693,14 @@ span {
   color: white;
   padding: 3%;
 }
-.Academicsstyle
-{
+
+.Academicsstyle {
   text-align: left;
   padding-top: 13%;
-  
+
 }
-.Academicsstyle p
-{
+
+.Academicsstyle p {
 
   color: #747373;
   font-size: 18px;
@@ -1716,20 +1714,22 @@ span {
 
 
 @media (max-width: 700px) {
- 
-.Academicsstyle
-{
-  text-align: center;
-}
 
-
-.AboutUspage-mission-img{
-  width: auto;
-  text-align: center;
-}
-  .PreparatoryH2 {
-   
+  .Academicsstyle {
     text-align: center;
-    font-size: 32px;  line-height: 32px;
+  }
 
-  }}
+
+  .AboutUspage-mission-img {
+    width: auto;
+    text-align: center;
+  }
+
+  .PreparatoryH2 {
+
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+
+  }
+}

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
+
 :root {
   /* color */
   --white-color: #ffffff;
@@ -15,6 +16,7 @@
 .event-first-section p {
   color: #555555;
 }
+
 .events-section {
   padding: 5%;
   padding-bottom: 50px;
@@ -29,12 +31,15 @@
   color: #619a46;
   font-family: unset;
 }
+
 .event-des {
   margin-top: 1em;
 }
+
 .event-btn {
   margin-top: 1rem;
 }
+
 .event-btn button {
   border: none;
   border-radius: 50px;
@@ -43,19 +48,23 @@
   background-color: rgba(97, 154, 70, 0.75);
   font-family: unset;
 }
+
 .event-btn-right:hover {
   color: #fff;
   background-color: #cca65d;
   border-radius: 50px;
 }
+
 span {
   font-family: unset;
 }
+
 /* ----event section -2----- */
 .event-section-2 {
   background-color: #fff;
   padding-bottom: 3rem !important;
 }
+
 .headlibrary {
   margin-top: 6rem !important;
   padding-bottom: 4rem !important;
@@ -73,6 +82,7 @@ span {
   background-color: transparent !important;
   opacity: 1;
 }
+
 .right-event-caro {
   display: flex !important;
   border-radius: none;
@@ -80,6 +90,7 @@ span {
   box-shadow: none;
   background-color: #f8f8f8;
 }
+
 .event-caro-img img {
   width: 230px;
 }
@@ -88,12 +99,14 @@ span {
   width: 100%;
   height: auto;
 }
+
 .right-event-des h4 {
   font-size: 18px;
   font-weight: 600;
   color: black;
   font-family: unset !important;
 }
+
 .right-event-des p {
   font-size: 16px;
   font-family: unset !important;
@@ -107,11 +120,13 @@ span {
   padding: 3px 15px;
   font-family: unset;
 }
+
 .right-learn-btn button:hover {
   background-color: #cca65d;
   color: #fff;
   border-radius: 50px;
 }
+
 .event-btn-right {
   border: none;
   border-radius: 50px;
@@ -135,8 +150,10 @@ span {
 
 .slick-dots li button {
   padding: 0;
-  width: 10px; /* Adjust the value as needed */
-  height: 10px; /* Adjust the value as needed */
+  width: 10px;
+  /* Adjust the value as needed */
+  height: 10px;
+  /* Adjust the value as needed */
   border-radius: 50%;
 }
 
@@ -184,12 +201,15 @@ span {
 .slick-prev {
   display: none !important;
 }
+
 .slick-next {
   display: none !important;
 }
+
 .link-event {
   padding-top: 7rem;
 }
+
 /* ----------media query for small screen */
 @media screen and (max-width: 550px) {
   .event-title h1 {
@@ -201,16 +221,19 @@ span {
     font-family: unset;
     font-weight: 300;
   }
+
   .right-event-des h4 {
     font-size: 14px;
     color: black;
     font-weight: 400;
   }
+
   .right-event-des p {
     font-size: 12px;
     text-align: left !important;
   }
 }
+
 @media (min-width: 700px) and (max-width: 1000px) {
   .event-title h1 {
     margin-left: 30px;
@@ -221,6 +244,7 @@ span {
     font-family: var(--font-pt-serif);
   }
 }
+
 @media screen and (max-width: 600px) {
   .carouselevent {
     position: relative;
@@ -234,10 +258,12 @@ span {
     box-shadow: none;
     background-color: #f8f8f8;
   }
+
   .event-caro-img img {
     width: 100px !important;
     height: auto;
   }
+
   .event-btn button {
     border: none;
     border-radius: 7px;
@@ -245,20 +271,23 @@ span {
     color: #fff;
     font-size: 10px;
   }
+
   .event-des h4 {
     font-size: 18px;
   }
+
   .slick-dots li button {
     display: none;
   }
+
   .learn-btn-lib {
     text-align: center;
     font-size: 13px;
   }
 
-  
-.headlibrary {
-  margin-top: 0rem !important;
-  padding-bottom: 4rem !important;
-}
+
+  .headlibrary {
+    margin-top: 0rem !important;
+    padding-bottom: 4rem !important;
+  }
 }

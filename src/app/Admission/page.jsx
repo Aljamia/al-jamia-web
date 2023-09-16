@@ -1,13 +1,12 @@
-import React from 'react'
-import Admission from '../pages/Admission/Admission'
+import React from "react";
+import Admission from "../pages/Admission/Admission";
 
 function page() {
   return (
     <div>
-     <Admission/>
+      <Admission />
     </div>
-  )
+  );
 }
 
-export default page
-
+export default page;

@@ -5,11 +5,7 @@ function HomePage({ eventId }) {
   // const { eventId } = router.query;
   // console.log({ eventId });
 
-  return (
-    <div>
-   
-    </div>
-  );
+  return <div></div>;
 }
 
 export default HomePage;

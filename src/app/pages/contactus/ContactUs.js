@@ -27,57 +27,68 @@ const ContactUs = () => {
                 <div className="contact-header-title">
                   <h1 className="h1style">Contact us</h1>
                   <p className="pb-3">
-                  Our friendly team  would love to hear from you!
+                    Our friendly team would love to hear from you!
                     {/* Al Jamia Arts and Science College (AJAS), a resourceful
                     destination for higher studies in the region, was
                     established in 2010 with the main objective of uplifting the
                     educationally developing Muslims and other communities. */}
                   </p>
                 </div>
-                
+
                 <form>
-  <div class="row mb-4">
-    <div class="col">
-      <div class="form-outline">
-      <label class="form-label" for="form6Example1">First name</label>
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <label class="form-label" for="form6Example1">
+                          First name
+                        </label>
 
-        <input type="text" id="" class="cont_form" />
-      </div>
-    </div>
-    <div class="col">
-      <div class="form-outline">
-      <label class="form-label" for="form6Example2">Last name</label>
+                        <input type="text" id="" class="cont_form" />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <label class="form-label" for="form6Example2">
+                          Last name
+                        </label>
 
-        <input type="text" id="form6Example2" class="cont_form" />
-      </div>
-    </div>
-  </div>
+                        <input
+                          type="text"
+                          id="form6Example2"
+                          class="cont_form"
+                        />
+                      </div>
+                    </div>
+                  </div>
 
- 
-  <div class="form-outline mb-4">
-  <label class="form-label" for="form6Example5">Email</label>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form6Example5">
+                      Email
+                    </label>
 
-    <input type="email" id="form6Example5" class="cont_form" />
-  </div>
+                    <input type="email" id="form6Example5" class="cont_form" />
+                  </div>
 
-  <div class="form-outline mb-4">
-  <label class="form-label" for="form6Example6">Phone</label>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form6Example6">
+                      Phone
+                    </label>
 
-    <input type="number" id="form6Example6" class="cont_form" />
-  </div>
+                    <input type="number" id="form6Example6" class="cont_form" />
+                  </div>
 
- 
-  <div class="form-outline mb-4">
-  <label class="form-label" for="form6Example4">Address</label>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form6Example4">
+                      Address
+                    </label>
 
-    <input type="text" id="form6Example4" class="cont_form" />
-  </div>
+                    <input type="text" id="form6Example4" class="cont_form" />
+                  </div>
 
-
-  <button type="submit" class="send_button  mb-4">Send message</button>
-</form>
-
-
+                  <button type="submit" class="send_button  mb-4">
+                    Send message
+                  </button>
+                </form>
               </div>
             </Col>
             <Col xl={6}>
@@ -98,45 +109,39 @@ const ContactUs = () => {
         </Container>
       </div>
 
-
       <div className="pt-5">
-
-
         <Container>
           <Row>
-          <Col xl={4}>
+            <Col xl={4}>
               <div className="addres_box">
-          <img src="location_icon.svg" />
-                <p>SANTHAPURAM , P.O. PATTIKKAD  679 325, MALAPPURAM ,KERALA </p>
+                <img src="location_icon.svg" />
+                <p>SANTHAPURAM , P.O. PATTIKKAD 679 325, MALAPPURAM ,KERALA </p>
               </div>
-              </Col>
-              <Col xl={4}>
+            </Col>
+            <Col xl={4}>
               <div className="addres_box">
-          <img src="mail_icon.svg" />
-                <p>aljamiaalislamia@gmail.com <br/>www.aljamiaalislamia.com </p>
+                <img src="mail_icon.svg" />
+                <p>
+                  aljamiaalislamia@gmail.com <br />
+                  www.aljamiaalislamia.com{" "}
+                </p>
               </div>
-              </Col>
-              <Col xl={4}>
+            </Col>
+            <Col xl={4}>
               <div className="addres_box">
-          <img src="call_icon.svg" />
-                <p>00914933 – 27043900 <br/> 914933 – 270565 </p>
+                <img src="call_icon.svg" />
+                <p>
+                  00914933 – 27043900 <br /> 914933 – 270565{" "}
+                </p>
               </div>
-              </Col>
-              </Row>
-              </Container>
-        </div>
-
-
-      <div className="footer-end mt-5">
-      <Footer/>
-
-
-
-        
+            </Col>
+          </Row>
+        </Container>
       </div>
 
-   
-
+      <div className="footer-end mt-5">
+        <Footer />
+      </div>
     </div>
   );
 };

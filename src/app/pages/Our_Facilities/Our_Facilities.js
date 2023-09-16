@@ -34,7 +34,7 @@ function Our_Facilities() {
         </div>
 
         <div className="AboutUspage-items">
-          <h1 className="TitleStyle center_aln p-4">
+          <h1 className="TitleStyle center_aln  pt-2 pb-2">
             Our Facilities and General Service
           </h1>
 

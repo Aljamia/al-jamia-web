@@ -1,12 +1,12 @@
-import React from 'react'
-import Missionpage from '../pages/Missionpage/Missionpage'
+import React from "react";
+import Missionpage from "../pages/Missionpage/Missionpage";
 
 function page() {
   return (
     <div>
-        <Missionpage/>
+      <Missionpage />
     </div>
-  )
+  );
 }
 
-export default page
+export default page;
