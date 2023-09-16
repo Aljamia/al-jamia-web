@@ -41,9 +41,7 @@ const academics = () => {
             </Col>
             <Col xl={6} lg={6} xs={12} className="Academicsstyle">
               <div className="Colleges_div_bg">
-                <h1>
-                  Colleges
-                </h1>
+                <h1>Colleges</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Consequatur odit ab culpa mollitia quia placeat amet Lorem

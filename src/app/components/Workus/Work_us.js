@@ -1,3 +1,1 @@
-<div className="work_box">
-    demo
-</div>
+<div className="work_box">demo</div>;

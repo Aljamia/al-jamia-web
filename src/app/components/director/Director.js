@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Director.css";
+import Image from "next/image";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faClockflip } from '@fortawesome/free-solid-svg-icons';
 
@@ -26,13 +27,19 @@ const Director = () => {
           <Row>
             <Col xl={6}>
               <div className="director-img">
-                <img src="person.png" alt="" width="100%" />
+                <Image
+                  src="/person.png"
+                  layout="intrinsic"
+                  width={1000}
+                  height={500}
+                  alt="Image"
+                />
               </div>
             </Col>
             <Col xl={6}>
               <div className="director-des">
                 <div className="director-heading">
-                  <h1> Message From The Rectors</h1>
+                  <h1> Message From The Rector</h1>
                 </div>
                 <p>{director[0]?.enDescription}</p>
               </div>

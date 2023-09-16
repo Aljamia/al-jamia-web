@@ -47,19 +47,12 @@ function Recognition_Awards() {
         />
       </div>
       <div className="AboutUspage-items">
-     
-    
-      
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
               <Col xl={12} lg={12} xs={12}>
-               
-<Recognition_Awards_data/>
-
+                <Recognition_Awards_data />
               </Col>
-
-             
             </Row>
           </Container>
         </div>
@@ -70,4 +63,4 @@ function Recognition_Awards() {
   );
 }
 
-export default Recognition_Awards
+export default Recognition_Awards;

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
+
 :root {
   /* color */
   --white-color: #ffffff;
@@ -20,9 +21,11 @@
 .director-des {
   margin-top: 3rem;
 }
+
 .person-detail {
   margin-top: 1rem;
 }
+
 .director-des p {
   max-width: 100%;
   font-size: 18px;
@@ -30,37 +33,45 @@
   padding: 0px;
   font-family: unset;
 }
+
 .person-detail h4 {
   color: #3b3b3bf9;
   font-weight: 400;
   font-family: unset;
 }
+
 .person-detail p {
   color: #555555;
   font-size: 18px;
   font-family: unset;
 }
+
 .facualies {
   margin-top: 6rem;
   padding-bottom: 6rem !important;
 }
+
 .fac-title h1 {
   color: #619a46;
   font-family: var(--font-pt-serif);
 }
+
 .fac-des {
   margin-left: auto;
   margin-right: auto;
 }
+
 .fac-des p {
   color: #555555;
   max-width: 80%;
   font-family: unset;
   font-size: 18px;
 }
+
 .fac-btn {
   margin-top: 1rem;
 }
+
 .fac-btn button {
   color: #fff;
   background-color: #cca65d;
@@ -72,23 +83,28 @@
 
 @media (max-width: 768px) {
   .fac-btn button {
-    padding: 7px 30px; /* Adjust the padding for smaller screens */
+    padding: 7px 30px;
+    /* Adjust the padding for smaller screens */
   }
 }
 
 @media (max-width: 500px) {
   .fac-btn button {
-    padding: 7px 15px; /* Adjust the padding for even smaller screens */
+    padding: 7px 15px;
+    /* Adjust the padding for even smaller screens */
   }
+
   .director-des p {
     font-size: 16px;
     margin-top: 0;
     padding: 0.5em;
     max-width: 100%;
   }
+
   .director-des {
     margin-top: 20px;
   }
+
   .fac-des p {
     color: #555555;
     max-width: 100%;
@@ -96,13 +112,16 @@
     font-size: 18px;
     text-align: center;
   }
+
   .fac-title h1 {
     text-align: center;
   }
+
   .fac-btn {
     text-align: center;
     font-size: 15px;
   }
+
   .person-detail {
     text-align: center;
   }

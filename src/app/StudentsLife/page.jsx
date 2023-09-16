@@ -1,12 +1,12 @@
-import React from 'react'
-import StudentsLife from '../pages/StudentsLife/StudentsLife'
+import React from "react";
+import StudentsLife from "../pages/StudentsLife/StudentsLife";
 
 function page() {
   return (
     <div>
-        <StudentsLife/>
+      <StudentsLife />
     </div>
-  )
+  );
 }
 
-export default page
+export default page;

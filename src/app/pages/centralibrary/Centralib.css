@@ -11,11 +11,13 @@
   --font-inter: "Inter", sans-serif;
   --font-PT-serif: "PT Serif", serif;
 }
+
 .AboutUspage-header {
   padding: 4em;
   margin-top: 8em;
   text-align: center;
 }
+
 .AboutUspage-title {
   color: var(--light-green-color);
   font-family: unset;
@@ -24,6 +26,7 @@
   font-weight: 250;
   line-height: normal;
 }
+
 .AboutUspage-desc {
   color: var(--gray, #555);
   font-family: unset;
@@ -33,12 +36,16 @@
   margin-top: 1.5em;
   padding: 1em;
   font-weight: 400;
-  line-height: 160%; /* 39px */
+  line-height: 160%;
+  /* 39px */
 }
+
 .AboutUspage-long-desc {
-  margin-top: 2em;    text-align: justify;
+  margin-top: 2em;
+  text-align: justify;
 
 }
+
 .AboutUspage-items {
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
   background-color: #f8f8f8;
@@ -47,6 +54,7 @@
   padding: 3em;
   margin-top: 3em;
 }
+
 .central-lib-title {
   text-align: center;
   font-family: unset;
@@ -55,6 +63,7 @@
   padding: 1em;
   font-weight: 200;
 }
+
 .central-lib-cards {
   padding: 1em;
   display: flex;
@@ -63,9 +72,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .central-lib__carditems {
   margin: 10px;
 }
+
 .explore-btn {
   width: 13%;
   height: auto;
@@ -76,9 +87,11 @@
   text-align: center;
   border-radius: 50px;
 }
+
 .explore-btn:hover {
   background-color: #ddae56;
 }
+
 .explore-btn h5 {
   font-family: unset;
   color: #ffffff;
@@ -90,31 +103,39 @@
   .AboutUspage-header {
     margin-top: 2em;
   }
+
   .AboutUspage-title {
     font-size: 30px;
   }
+
   .AboutUspage-vision {
     flex-direction: column;
   }
+
   .AboutUspage-vision-title {
     font-size: 30px;
     margin-top: -0.5em;
   }
+
   .AboutUspage-mission-title {
     font-size: 30px;
   }
+
   .AboutUspage-vision-desc {
     width: 100%;
     margin-left: 0px;
     margin-top: 0.2em;
     text-align: justify;
   }
+
   .AboutUspage-campus-title {
     font-size: 30px;
   }
+
   .AboutUspage-mission-img {
     margin-top: 0px;
   }
+
   .central-lib-title {
     text-align: center;
     font-family: unset;
@@ -123,6 +144,7 @@
     padding: 0.5em;
     font-weight: 200;
   }
+
   .explore-btn {
     width: 50%;
     margin: auto;
@@ -132,6 +154,7 @@
     text-align: center;
     border-radius: 5px;
   }
+
   .explore-btn h5 {
     color: #ffffff;
     font-size: 14px;

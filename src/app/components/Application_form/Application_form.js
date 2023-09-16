@@ -1,14 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "./Application_form.css";
-
-import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 
 function Application_form() {
   return (
     <div>
-      <h2 className="center_div pt-5 pb-5">Application Form</h2>
+      <h2 className="center_div pt-3 pb-1">Application Form</h2>
 
       <form>
         <Container>
@@ -20,15 +18,15 @@ function Application_form() {
                   Enter Details: <hr />{" "}
                 </b>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         Admission Year *
                       </label>
                       <select
                         name="admission_year_id"
-                        class="form-control"
+                        className="form-control"
                         id="admission_year"
                         data-rule-required="true"
                         aria-required="true"
@@ -38,14 +36,14 @@ function Application_form() {
                       </select>{" "}
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         Course *
                       </label>
                       <select
                         name="course_id"
-                        class="form-control"
+                        className="form-control"
                         id="course"
                         data-rule-required="true"
                         aria-required="true"
@@ -72,64 +70,72 @@ function Application_form() {
                   </div>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         Students Name *
                       </label>
 
-                      <input type="text" id="" class="cont_form" />
+                      <input type="text" id="" className="cont_form" />
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         Parents Name *
                       </label>
 
-                      <input type="text" id="form6Example2" class="cont_form" />
+                      <input
+                        type="text"
+                        id="form6Example2"
+                        className="cont_form"
+                      />
                     </div>
                   </div>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         Mobile Number*
                       </label>
 
-                      <input type="text" id="" class="cont_form" />
+                      <input type="text" id="" className="cont_form" />
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         Email address
                       </label>
 
-                      <input type="text" id="form6Example2" class="cont_form" />
+                      <input
+                        type="text"
+                        id="form6Example2"
+                        className="cont_form"
+                      />
                     </div>
                   </div>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         WhatsApp Number
                       </label>
 
-                      <input type="text" id="" class="cont_form" />
+                      <input type="text" id="" className="cont_form" />
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         Blood Group
                       </label>
-                      <select name="blood_group" class="form-control">
+                      <select name="blood_group" className="form-control">
                         <option value="">Select one</option>
                         <option>O +</option>
                         <option>O -</option>
@@ -144,10 +150,10 @@ function Application_form() {
                   </div>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         Date of Birth *
                       </label>
                       <input
@@ -161,15 +167,15 @@ function Application_form() {
                       ></input>{" "}
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         Gender *
                       </label>
-                      <div class="form-group">
-                        <div class="form-check form-check-inline">
+                      <div className="form-group">
+                        <div className="form-check form-check-inline">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="radio"
                             name="gender"
                             id="male"
@@ -177,13 +183,13 @@ function Application_form() {
                             data-rule-required="true"
                             aria-required="true"
                           ></input>
-                          <label class="form-check-label" for="male">
+                          <label className="form-check-label" for="male">
                             Male
                           </label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div className="form-check form-check-inline">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="radio"
                             name="gender"
                             id="female"
@@ -191,13 +197,13 @@ function Application_form() {
                             data-rule-required="true"
                             aria-required="true"
                           ></input>
-                          <label class="form-check-label" for="female">
+                          <label className="form-check-label" for="female">
                             Female
                           </label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div className="form-check form-check-inline">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="radio"
                             name="gender"
                             id="female"
@@ -205,11 +211,11 @@ function Application_form() {
                             data-rule-required="true"
                             aria-required="true"
                           ></input>
-                          <label class="form-check-label" for="female">
+                          <label className="form-check-label" for="female">
                             Unsex
                           </label>
                         </div>
-                        <span class="text-danger font-weight-bold"></span>
+                        <span className="text-danger font-weight-bold"></span>
                       </div>{" "}
                     </div>
                   </div>
@@ -222,86 +228,102 @@ function Application_form() {
                 <b>
                   Details of Address: <hr />{" "}
                 </b>
-                <div class="row">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         House Name
                       </label>
 
-                      <input type="text" id="" class="cont_form" />
+                      <input type="text" id="" className="cont_form" />
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         Street Address
                       </label>
 
-                      <input type="text" id="form6Example2" class="cont_form" />
+                      <input
+                        type="text"
+                        id="form6Example2"
+                        className="cont_form"
+                      />
                     </div>
                   </div>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         City
                       </label>
 
-                      <input type="text" id="" class="cont_form" />
+                      <input type="text" id="" className="cont_form" />
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         PO
                       </label>
 
-                      <input type="text" id="form6Example2" class="cont_form" />
+                      <input
+                        type="text"
+                        id="form6Example2"
+                        className="cont_form"
+                      />
                     </div>
                   </div>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         Pincode
                       </label>
 
-                      <input type="text" id="" class="cont_form" />
+                      <input type="text" id="" className="cont_form" />
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         District
                       </label>
 
-                      <input type="text" id="form6Example2" class="cont_form" />
+                      <input
+                        type="text"
+                        id="form6Example2"
+                        className="cont_form"
+                      />
                     </div>
                   </div>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         State
                       </label>
 
-                      <input type="text" id="" class="cont_form" />
+                      <input type="text" id="" className="cont_form" />
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         Nationality
                       </label>
 
-                      <input type="text" id="form6Example2" class="cont_form" />
+                      <input
+                        type="text"
+                        id="form6Example2"
+                        className="cont_form"
+                      />
                     </div>
                   </div>
                 </div>
@@ -314,25 +336,25 @@ function Application_form() {
                   Education Qualification
                   <hr />{" "}
                 </b>
-                <div class="row">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         Institution Last Attended
                       </label>
 
-                      <input type="text" id="" class="cont_form" />
+                      <input type="text" id="" className="cont_form" />
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         Education Qualification
                       </label>
 
                       <select
                         name="education_qualification"
-                        class="form-control"
+                        className="form-control"
                       >
                         <option value="">Select One</option>
                         <option>SSLC</option>
@@ -344,14 +366,17 @@ function Application_form() {
                   </div>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         Examination Center
                       </label>
 
-                      <select name="examination_center" class="form-control">
+                      <select
+                        name="examination_center"
+                        className="form-control"
+                      >
                         <option value="">Select One</option>
                         <option>Al Jamia Campus</option>
                         <option>Kannur</option>
@@ -377,16 +402,16 @@ function Application_form() {
                       </select>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example1">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example1">
                         {" "}
                         Request OTP *
                       </label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
+                      <div className="input-group">
+                        <div className="input-group-prepend">
                           <button
-                            class="btn btn-success btn-request request_for_otp mt-0"
+                            className="btn btn-success btn-request request_for_otp mt-0"
                             type="button"
                           >
                             Get OTP
@@ -394,7 +419,7 @@ function Application_form() {
                         </div>
                         <input
                           type="text"
-                          class="form-control mobile_otp"
+                          className="form-control mobile_otp"
                           name="otp"
                           id="otp"
                           placeholder="OTP Number*"
@@ -406,15 +431,15 @@ function Application_form() {
                   </div>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <label class="form-label" for="form6Example2">
+                <div className="row mb-4">
+                  <div className="col-xs-12 col-sm-6 col-lg-6">
+                    <div className="form-outline">
+                      <label className="form-label" for="form6Example2">
                         Upload Documents
                       </label>
                       <input
                         type="file"
-                        class="form-control-file"
+                        className="form-control-file"
                         name="photo"
                         id="photo"
                       ></input>{" "}
@@ -425,7 +450,7 @@ function Application_form() {
             </Col>
 
             <div className="center_div">
-              <button type="submit" class="send_button  m-4">
+              <button type="submit" className="send_button  m-4">
                 Apply Now
               </button>
             </div>

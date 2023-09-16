@@ -1,12 +1,12 @@
-import React from 'react'
-import Visionpage from '../pages/Visionpage/Visionpage'
+import React from "react";
+import Visionpage from "../pages/Visionpage/Visionpage";
 
 function page() {
   return (
     <div>
-        <Visionpage/>
+      <Visionpage />
     </div>
-  )
+  );
 }
 
-export default page
+export default page;

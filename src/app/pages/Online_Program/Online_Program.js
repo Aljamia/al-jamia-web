@@ -75,55 +75,55 @@ function Online_Program() {
                 />
 
                 <section>
-                  <h1 class="TitleStyle center_aln p-4">
+                  <h1 className="TitleStyle center_aln  pt-2 pb-2">
                     Highlights of Programs
                   </h1>
 
-                  <div class="row">
-                    <div class="column">
-                      <div class="card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-video"></i>
+                  <div className="row">
+                    <div className="column">
+                      <div className="card">
+                        <div className="icon-wrapper">
+                          <i className="fas fa-video"></i>
                         </div>
                         <h3>Pre-recorded video lessons </h3>
                       </div>
                     </div>
-                    <div class="column">
-                      <div class="card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-pen"></i>
+                    <div className="column">
+                      <div className="card">
+                        <div className="icon-wrapper">
+                          <i className="fas fa-pen"></i>
                         </div>
                         <h3>Content summary notes </h3>
                       </div>
                     </div>
-                    <div class="column">
-                      <div class="card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-book"></i>
+                    <div className="column">
+                      <div className="card">
+                        <div className="icon-wrapper">
+                          <i className="fas fa-book"></i>
                         </div>
                         <h3>Reference materials</h3>
                       </div>
                     </div>
-                    <div class="column">
-                      <div class="card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-eye"></i>
+                    <div className="column">
+                      <div className="card">
+                        <div className="icon-wrapper">
+                          <i className="fas fa-eye"></i>
                         </div>
                         <h3>Interactive live sessions</h3>
                       </div>
                     </div>
-                    <div class="column">
-                      <div class="card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-file"></i>
+                    <div className="column">
+                      <div className="card">
+                        <div className="icon-wrapper">
+                          <i className="fas fa-file"></i>
                         </div>
                         <h3>Assignments and assessment modules </h3>
                       </div>
                     </div>
-                    <div class="column">
-                      <div class="card">
-                        <div class="icon-wrapper">
-                          <i class="fas fa-award"></i>
+                    <div className="column">
+                      <div className="card">
+                        <div className="icon-wrapper">
+                          <i className="fas fa-award"></i>
                         </div>
                         <h3>Final evaluation and certification </h3>
                       </div>
@@ -136,7 +136,9 @@ function Online_Program() {
         </div>
 
         <div className="AboutUspage-items">
-          <h1 class="TitleStyle center_aln p-4">Our online Courses</h1>
+          <h1 className="TitleStyle center_aln  pt-2 pb-2">
+            Our online Courses
+          </h1>
 
           <div className="AboutUspage-ourMission">
             <Container>
@@ -274,14 +276,14 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={162} xs={6}>
+                <Col xl={6} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
                   >
                     <h1 className="objectives_Head"> Learning objectives:</h1>
                   </div>
-                  <ul class="blog-details-list mt-30">
+                  <ul className="blog-details-list mt-30">
                     <li>
                       To recognize the necessity of Ulum al -Qur’an in
                       understanding the Qur’an.
@@ -323,7 +325,7 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={12} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/vision.png"
@@ -364,7 +366,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={162} xs={6}>
+                <Col xl={6} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -374,7 +376,7 @@ function Online_Program() {
                       Highlights of the Diploma Program:
                     </h1>
                   </div>
-                  <ul class="blog-details-list mt-30">
+                  <ul className="blog-details-list mt-30">
                     <li>Pre-recorded video lessons</li>
                     <li>Content summary notes</li>
                     <li>Reference materials</li>
@@ -440,7 +442,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={162} xs={6}>
+                <Col xl={6} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -454,7 +456,7 @@ function Online_Program() {
                     Tradition in his life through the systematic study of the
                     following topics:
                   </div>
-                  <ul class="blog-details-list mt-4">
+                  <ul className="blog-details-list mt-4">
                     <li>
                       The Prophetic Tradition as the second authentic source of
                       Islamic Sharia.
@@ -522,7 +524,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={162} xs={6}>
+                <Col xl={6} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -536,7 +538,7 @@ function Online_Program() {
                     Tradition in his life through the systematic study of the
                     following topics:
                   </div>
-                  <ul class="blog-details-list mt-4">
+                  <ul className="blog-details-list mt-4">
                     <li>
                       Explain the basic principles related to Islamic Sharia and
                       Fiqh.
@@ -616,7 +618,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={162} xs={6}>
+                <Col xl={6} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -624,7 +626,7 @@ function Online_Program() {
                     <h1 className="objectives_Head">Course Objectives :</h1>
                   </div>
 
-                  <ul class="blog-details-list mt-4">
+                  <ul className="blog-details-list mt-4">
                     <li>
                       Explain the basic principles related to Islamic Sharia and
                       Fiqh.
@@ -652,7 +654,7 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={12} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/vision.png"
