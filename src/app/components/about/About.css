@@ -112,7 +112,7 @@
   }
 
   .about-description p {
-    font-size: 18px;
+    font-size: medium;
     font-style: normal;
     font-weight: 300;
     line-height: 160%;
@@ -130,11 +130,11 @@
   }
 
   .course-desc p {
-    font-size: 18px;
+    font-size: medium;
   }
 
   .library p {
-    font-size: 18px !important;
+    font-size: medium !important;
 
   }
 

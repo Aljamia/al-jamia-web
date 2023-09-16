@@ -75,7 +75,7 @@ function Online_Program() {
                 />
 
                 <section>
-                  <h1 className="TitleStyle center_aln  pt-2 pb-2">
+                  <h1 className="TitleStyle center_aln  pt-5 pb-5">
                     Highlights of Programs
                   </h1>
 

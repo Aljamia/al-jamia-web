@@ -1042,7 +1042,7 @@ nav.primary-navigation ul li ul li {
   }
 
   .director-des p {
-    font-size: 16px;
+    font-size: medium;
     margin-top: 0;
     padding: 0.5em;
     max-width: 100%;
@@ -1566,7 +1566,7 @@ span {
 
 .course-desc {
   color: #747373;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
@@ -1812,7 +1812,7 @@ span {
   }
 
   .course-desc {
-    font-size: 18px;
+    font-size: medium;
   }
 
   .explore-btn {
