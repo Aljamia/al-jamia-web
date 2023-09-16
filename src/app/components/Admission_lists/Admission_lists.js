@@ -23,7 +23,7 @@ function Admission_lists() {
             </p>
             <button
               variant="primary btn-primary"
-              class="portfolio-btn btn btn-primary btn-primary mb-4"
+              class="portfolio-btn btn   mb-4"
             >
               <span class="">More Details</span>
             </button>
@@ -42,7 +42,7 @@ function Admission_lists() {
             </p>
             <button
               variant="primary btn-primary"
-              class="portfolio-btn btn btn-primary btn-primary mb-4"
+              class="portfolio-btn btn   mb-4"
             >
               <span class="">More Details</span>
             </button>
@@ -61,7 +61,7 @@ function Admission_lists() {
             </p>
             <button
               variant="primary btn-primary"
-              class="portfolio-btn btn btn-primary btn-primary mb-4"
+              class="portfolio-btn btn   mb-4"
             >
               <span class="">More Details</span>
             </button>

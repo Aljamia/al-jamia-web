@@ -61,7 +61,7 @@ const Footer = () => {
       <footer id="footer">
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-xs-12 col-sm-6 col-lg-3">
               <Image
                 src="/aljamiya_logo.png"
                 width={350}
@@ -78,7 +78,7 @@ const Footer = () => {
                 </p>{" "}
               </div>
             </div>
-            <div className="col-md-3 pt-4">
+            <div className="col-xs-12 col-sm-6 col-lg-3 pt-4">
               <div className="useful-link">
                 <h2>Useful Links</h2>
                 <div className="use-links">
@@ -122,7 +122,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-2  pt-4">
+            <div className="col-xs-12 col-sm-6 col-lg-2  pt-4">
               <div className="social-links">
                 <h2>Follow Us</h2>
                 <div className="social-icons">
@@ -153,7 +153,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4  pt-4">
+            <div className="col-xs-12 col-sm-6 col-lg-4  pt-4">
               <div className="address">
                 <h2>Address</h2>
                 <div className="address-links">

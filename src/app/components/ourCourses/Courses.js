@@ -85,7 +85,7 @@ const Courses = () => {
 
                     <button
                       variant="primary btn-primary"
-                      className="portfolio-btn btn btn-primary btn-primary"
+                      className="portfolio-btn btn  "
                       onClick={() => handleShow(course)}
                     >
                       {" "}

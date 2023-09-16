@@ -79,7 +79,7 @@ function Online_Program() {
                     Highlights of Programs
                   </h1>
 
-                  <div className="row">
+                  <div className="row pb-5">
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">

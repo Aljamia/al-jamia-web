@@ -4,11 +4,11 @@ import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Footer from "@/app/components/footer/Footer";
 import { getManagementCommitee } from "@/app/hooks/UseApi";
 import Image from "next/image";
+import "../../globals.css";
 import AdministrativeCouncil from "../../components/AdministrativeCouncil/AdministrativeCouncil";
 import Succession_List from "@/app/components/Succession_List/Succession_List";
 import Offices_Department from "@/app/components/Offices_Department/Offices_Department";
 import SupremeCouncil from "@/app/components/SupremeCouncil/SupremeCouncil";
-
 const Organizational_structure = () => {
   const [commitee, Setcommitee] = useState([]);
   const [show, setShow] = useState(false);
@@ -41,7 +41,7 @@ const Organizational_structure = () => {
         />
       </div>
 
-      <div className="AboutUspage-items">
+      <div>
         <SupremeCouncil />
 
         <AdministrativeCouncil />

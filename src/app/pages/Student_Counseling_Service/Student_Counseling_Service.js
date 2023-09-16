@@ -39,7 +39,7 @@ function Student_Counseling_Service() {
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/aljamiya_clg.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller

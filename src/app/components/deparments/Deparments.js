@@ -66,7 +66,7 @@ const Departments = () => {
 
   return (
     <div>
-      <div className="department-section">
+      <div className="department-section events-section">
         <div className="container">
           <div className="row">
             <div className="about-Title">

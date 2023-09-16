@@ -16,7 +16,6 @@
 }
 
 .course {
-  margin-top: 2.5em;
   background-color: #f8f8f8;
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
   background-repeat: no-repeat;
@@ -129,6 +128,12 @@
   transition: 0.3s;
 }
 
+.portfolio-modal-images img {
+  object-fit: cover;
+
+}
+
+
 .portfolio-modal-images:hover {
   transform: translate(0, -10px);
   transition: 0.3s;
@@ -142,7 +147,7 @@
   padding: 3px;
   color: #252641;
   font-family: unset;
-  font-size: 24px;
+  font-size: inherit;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
