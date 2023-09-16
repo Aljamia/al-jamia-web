@@ -89,7 +89,7 @@ function Activities_Centre() {
           </div>
         </div>
         <div>
-          <div className="AboutUspage-ourMission">
+          <div className="AboutUspage-ourMission pb-5">
             <Container>
               <Row>
                 <section>

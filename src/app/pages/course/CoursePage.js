@@ -115,7 +115,7 @@ const CoursePage = () => {
                         <div className="center_div">
                           <button
                             variant="primary btn-primary"
-                            className="portfolio-btn btn btn-primary btn-primary"
+                            className="More_btn2"
                             onClick={() => handleShow(course)}
                           >
                             {" "}

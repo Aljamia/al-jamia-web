@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./News.css";
+import "../../globals.css";
 import Event from "@/app/components/Events/Event";
 import Footer from "@/app/components/footer/Footer";
 
@@ -44,10 +44,11 @@ function HomePage(eventId) {
                 alt=""
                 width="100%"
               />
-            </div>
-            <div className="news-para">
+               <div className="news-para pt-4">
               <p>{events.description}</p>
             </div>
+            </div>
+           
           </div>
         </Container>
 

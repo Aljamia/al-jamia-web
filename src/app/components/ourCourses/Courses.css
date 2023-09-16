@@ -16,7 +16,6 @@
 }
 
 .course {
-  margin-top: 2.5em;
   background-color: #f8f8f8;
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
   background-repeat: no-repeat;
@@ -142,7 +141,7 @@
   padding: 3px;
   color: #252641;
   font-family: unset;
-  font-size: 24px;
+  font-size: inherit;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -263,7 +262,7 @@
   }
 
   .course-desc {
-    font-size: 18px;
+    font-size: medium;
   }
 
   .explore-btn {

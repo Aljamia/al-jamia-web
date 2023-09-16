@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import Header from "@/app/components/header/Header";
 import Link from "next/link";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
+import "../../globals.css";
 
 const News = () => {
   var settings = {
@@ -92,7 +93,7 @@ const News = () => {
       <div className="news-section">
         <Container id="news-container">
           <div className="header-news">
-            <div className="news-title">
+            <div className="news-title  pt-5">
               <h1>{h1Content}</h1>
             </div>
             <div className="new-img">

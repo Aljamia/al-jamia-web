@@ -69,7 +69,7 @@ const Event = () => {
 
   return (
     <div>
-      <div className="events-section">
+      <div className="events-section ">
         <div className="event-title">
           <div className="about-Title">
             <h1>News and Events</h1>

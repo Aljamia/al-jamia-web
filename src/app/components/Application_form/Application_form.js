@@ -6,7 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 function Application_form() {
   return (
     <div>
-      <h2 className="center_div pt-3 pb-1">Application Form</h2>
+      <h2 className="TitleStyle center_div pt-5 pb-3">Application Form</h2>
 
       <form>
         <Container>

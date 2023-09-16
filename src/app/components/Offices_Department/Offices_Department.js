@@ -49,47 +49,16 @@ const Offices_Department = () => {
                   <div class="column">
                     <div class="card">
                       <div class="icon-wrapper">
-                        <i class="fas fa-hammer"></i>
+                        <i class="fas fa-building"></i>
                       </div>
                       <h3>Rector’s Office </h3>
                     </div>
                   </div>
+
                   <div class="column">
                     <div class="card">
                       <div class="icon-wrapper">
-                        <i class="fas fa-brush"></i>
-                      </div>
-                      <h3>Vice President’s Office </h3>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="card">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-wrench"></i>
-                      </div>
-                      <h3>Administrative Chairman’s Office</h3>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="card">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-truck-pickup"></i>
-                      </div>
-                      <h3>Deputy Rector’s Office</h3>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="card">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-broom"></i>
-                      </div>
-                      <h3>Dean’s Offices </h3>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="card">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-plug"></i>
+                        <i class="fas fa-face-smile"></i>
                       </div>
                       <h3>Students Affair’s Office </h3>
                     </div>
@@ -97,7 +66,23 @@ const Offices_Department = () => {
                   <div class="column">
                     <div class="card">
                       <div class="icon-wrapper">
-                        <i class="fas fa-plug"></i>
+                        <i class="fas fa-building"></i>
+                      </div>
+                      <h3>Vice President’s Office </h3>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fas fa-building"></i>
+                      </div>
+                      <h3>Administrative Chairman’s Office</h3>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fas fa-business-time"></i>
                       </div>
                       <h3>Administrative Officer </h3>
                     </div>
@@ -105,7 +90,24 @@ const Offices_Department = () => {
                   <div class="column">
                     <div class="card">
                       <div class="icon-wrapper">
-                        <i class="fas fa-plug"></i>
+                        <i class="fas fa-building"></i>
+                      </div>
+                      <h3>Deputy Rector’s Office</h3>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fas fa-building"></i>
+                      </div>
+                      <h3>Dean’s Offices </h3>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fas fa-ticket"></i>
                       </div>
                       <h3>Admission and Enrollment </h3>
                     </div>
@@ -113,7 +115,7 @@ const Offices_Department = () => {
                   <div class="column">
                     <div class="card">
                       <div class="icon-wrapper">
-                        <i class="fas fa-plug"></i>
+                        <i class="fas fa-pen"></i>
                       </div>
                       <h3>Department of Examination</h3>
                     </div>
@@ -121,7 +123,7 @@ const Offices_Department = () => {
                   <div class="column">
                     <div class="card">
                       <div class="icon-wrapper">
-                        <i class="fas fa-plug"></i>
+                        <i class="fas fa-book "></i>
                       </div>
                       <h3>Library</h3>
                     </div>
@@ -129,7 +131,7 @@ const Offices_Department = () => {
                   <div class="column">
                     <div class="card">
                       <div class="icon-wrapper">
-                        <i class="fas fa-plug"></i>
+                        <i class="fas fa-person"></i>
                       </div>
                       <h3>Human Resource </h3>
                     </div>
@@ -137,7 +139,7 @@ const Offices_Department = () => {
                   <div class="column">
                     <div class="card">
                       <div class="icon-wrapper">
-                        <i class="fas fa-plug"></i>
+                        <i class="fas fa-calculator"></i>
                       </div>
                       <h3>Accounts </h3>
                     </div>
