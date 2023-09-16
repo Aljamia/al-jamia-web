@@ -1,12 +1,12 @@
-import React from 'react'
-import Research from '../pages/Research/Research'
+import React from "react";
+import Research from "../pages/Research/Research";
 
 function page() {
   return (
     <div>
-        <Research/>
+      <Research />
     </div>
-  )
+  );
 }
 
-export default page
+export default page;

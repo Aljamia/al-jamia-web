@@ -29,14 +29,9 @@ const Organizational_structure = () => {
   }, []);
 
   return (
-
-
     <div>
-   
-        
-        
-<PageHeader/>
-<div className="AboutUspage-img">
+      <PageHeader />
+      <div className="AboutUspage-img">
         <Image
           src="/image 7.png"
           layout="responsive"
@@ -47,22 +42,18 @@ const Organizational_structure = () => {
       </div>
 
       <div className="AboutUspage-items">
+        <SupremeCouncil />
 
-        <SupremeCouncil/>
-        
-        <AdministrativeCouncil/>
+        <AdministrativeCouncil />
 
-        <Succession_List/>
+        <Succession_List />
 
-        <Offices_Department/>
-
+        <Offices_Department />
       </div>
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-
-
-export default Organizational_structure
+export default Organizational_structure;

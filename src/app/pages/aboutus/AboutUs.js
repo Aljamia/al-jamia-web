@@ -36,8 +36,7 @@ const AboutUs = () => {
 
   return (
     <div className="AboutUspage">
-
-<Main_navebar/>
+      <Main_navebar />
       {/* <PageHeader /> */}
 
       <div className="AboutUspage-img">
@@ -50,10 +49,10 @@ const AboutUs = () => {
         />
       </div>
 
-      <div className="AboutUspage-desc">  
-          <div className="AboutUspage-title center_aln pb-4">Al Jamia Al Islamiya</div>
-        {" "}
-      
+      <div className="AboutUspage-desc">
+        <div className="AboutUspage-title center_aln pb-4">
+          Al Jamia Al Islamiya
+        </div>{" "}
         {about.map((item, index) => (
           <>
             <Container className="AboutUspage-short-desc" key={index}>
@@ -66,9 +65,7 @@ const AboutUs = () => {
         ))}
       </div>
 
-
-
-{/* 
+      {/* 
       <div className="AboutUspage-items">
         <div className="AboutUspage-ourMission">
           <Container>

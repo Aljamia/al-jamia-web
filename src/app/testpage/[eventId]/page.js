@@ -52,10 +52,8 @@ function HomePage(eventId) {
         </Container>
 
         <div className="news-para">
-
-        <Event event-section-2={false} />
-                    </div>
-
+          <Event event-section-2={false} />
+        </div>
       </div>
       <Footer />
     </div>

@@ -17,14 +17,15 @@ const LandingPage = () => {
     <div>
       <CarouselComponent />
       <About />
-      <AlJamiaApp/>
       <Courses />
       <Grades />
       <Event />
       <Library />
       <Deparments />
       <Director />
-      <CareerLink/>
+      <CareerLink />
+      <AlJamiaApp />
+
       <Footer />
     </div>
   );

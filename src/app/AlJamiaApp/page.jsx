@@ -1,12 +1,12 @@
-import React from 'react'
-import AlJamiaApp from '../pages/AlJamiaApp/AlJamiaApp'
+import React from "react";
+import AlJamiaApp from "../pages/AlJamiaApp/AlJamiaApp";
 
 function page() {
   return (
     <div>
-        <AlJamiaApp/>
+      <AlJamiaApp />
     </div>
-  )
+  );
 }
 
-export default page
+export default page;

@@ -11,11 +11,13 @@
   --font-inter: "Inter", sans-serif;
   --font-PT-serif: "PT Serif", serif;
 }
+
 .Faculties-header {
   padding: 3em;
   margin-top: 5em;
   text-align: center;
 }
+
 .Faculties-title {
   color: var(--light-green-color);
   font-size: 50px;
@@ -25,14 +27,16 @@
   line-height: normal;
   margin-bottom: 20px;
 }
+
 .Faculties-img {
   margin-top: 2em;
   border-radius: 20px;
 }
 
-.Faculties-img img{
+.Faculties-img img {
   border-radius: 20px;
 }
+
 .Faculties-desc {
   margin-top: 1em;
   text-align: center;
@@ -41,13 +45,16 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 39px */
+  line-height: 160%;
+  /* 39px */
 }
+
 .Faculties-ourleader {
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .Faculties-leader-title {
   color: var(--gold, #cca65d);
   text-transform: capitalize;
@@ -61,6 +68,7 @@
 .Supreme-council-members {
   margin-top: 3em;
 }
+
 .members-cards {
   border-radius: 20px;
   border: none;
@@ -70,6 +78,7 @@
   height: auto;
   margin-top: 2.5em;
 }
+
 .members-card-title {
   color: var(--gold, #cca65d);
   text-align: center;
@@ -79,6 +88,7 @@
   font-weight: 600;
   /* 41.65px */
 }
+
 .members-card-text {
   color: var(--grary-2, #7d7d7d);
   font-family: unset;
@@ -96,6 +106,7 @@
     margin-top: 3em;
     padding: 2em;
   }
+
   .Faculties-title,
   .Faculties-leader-title {
     font-size: 24px;
@@ -108,6 +119,7 @@
     gap: 15px;
   }
 }
+
 @media (min-width: 760px) and (max-width: 1000px) {
   .members-leader-card {
     display: grid;
@@ -115,6 +127,7 @@
     padding-left: 3em;
     column-gap: 20px;
   }
+
   .members-leader-cards {
     display: grid;
     gap: 10px;
@@ -122,17 +135,20 @@
     margin-left: 60px;
     grid-template-columns: repeat(4, 1fr);
   }
+
   .members-card-img {
     width: 100%;
     padding: 0.3em;
     height: 25vh;
   }
 }
+
 @media (min-width: 1001px) {
   .members-cards {
     width: 100;
     height: auto;
   }
+
   .members-leader-cards {
     display: grid;
     gap: 10px;
@@ -140,6 +156,7 @@
     margin-left: 60px;
     grid-template-columns: repeat(7, 1fr);
   }
+
   .members-card-img {
     width: 100%;
     padding: 0.3em;

@@ -1,12 +1,12 @@
-import React from 'react'
-import Academics from '../pages/Academics/Academics';
+import React from "react";
+import Academics from "../pages/Academics/Academics";
 
 function page() {
   return (
     <div>
-        <Academics/>
+      <Academics />
     </div>
-  )
+  );
 }
 
 export default page;

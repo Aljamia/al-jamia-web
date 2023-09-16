@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
+
 :root {
   /* color */
   --white-color: #ffffff;
@@ -10,35 +11,41 @@
   --font-inter: "Inter", sans-serif;
   --font-PT-serif: "PT Serif", serif;
 }
+
 .facilities-header {
   padding: 4em;
   margin-top: 8em;
   text-align: center;
 }
+
 .facilities-title {
   color: var(--light-green-color);
- font-family: unset;
+  font-family: unset;
   font-size: 40px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.facilities-section-three img{
+
+.facilities-section-three img {
   border-radius: 30px !important;
 }
 
-.facilities-item-two img{
+.facilities-item-two img {
   border-radius: 30px !important;
 }
+
 .facilities-item {
   display: flex;
   align-items: center;
 }
+
 .facilities-section-one {
   padding: 2em;
   margin: auto;
   width: 80%;
 }
+
 .facilities-one h2 {
   color: #555;
   width: auto;
@@ -49,6 +56,7 @@
   font-weight: 400;
   line-height: normal;
 }
+
 .facilities-section-two {
   padding: 2em;
   margin: auto;
@@ -56,29 +64,35 @@
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
   background-color: var(--white-color);
 }
+
 .facilities-item-two {
   padding: 1.3em 0px;
   display: flex;
   align-items: center;
 }
+
 .facilities-section-three {
   padding: 2em;
   margin: auto;
   width: 80%;
 }
+
 @media (max-width: 500px) {
   .facilities-header {
     padding: 2em;
     margin-top: 3em;
   }
+
   .facilities-title {
     font-size: 30px;
   }
+
   .facilities-section-one {
     padding: 0em;
     margin: auto;
     width: 100%;
   }
+
   .facilities-section-two {
     padding: 0em;
     margin: auto;
@@ -86,6 +100,7 @@
     background-image: url("/Hotel\ Wallpaper\ Pattern.png");
     background-color: var(--white-color);
   }
+
   .facilities-one h2 {
     color: #555;
     width: 250px;
@@ -96,6 +111,7 @@
     font-weight: 400;
     line-height: normal;
   }
+
   .facilities-section-three {
     padding: 0em;
     margin: auto;

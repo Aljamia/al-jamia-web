@@ -116,7 +116,9 @@ function Student_Life_Services() {
         <hr />
 
         <div className="AboutUspage-items">
-          <h1 class="TitleStyle center_aln  pt-2 pb-2">Student Clubs & Union</h1>
+          <h1 class="TitleStyle center_aln  pt-2 pb-2">
+            Student Clubs & Union
+          </h1>
 
           <div className="AboutUspage-ourMission">
             <Container>

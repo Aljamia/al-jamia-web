@@ -1,16 +1,16 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-import Director from '@/app/components/director/Director'
-import Footer from '@/app/components/footer/Footer'
+import Director from "@/app/components/director/Director";
+import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 
 function Director_message() {
   return (
     <div>
-<PageHeader/>
-<div className="AboutUspage-img">
+      <PageHeader />
+      <div className="AboutUspage-img">
         <Image
           src="/image 7.png"
           layout="responsive"
@@ -20,10 +20,10 @@ function Director_message() {
         />
       </div>
 
- <Director />
+      <Director />
       <Footer />
-          </div>
-  )
+    </div>
+  );
 }
 
-export default Director_message
+export default Director_message;

@@ -136,7 +136,9 @@ function Online_Program() {
         </div>
 
         <div className="AboutUspage-items">
-          <h1 className="TitleStyle center_aln  pt-2 pb-2">Our online Courses</h1>
+          <h1 className="TitleStyle center_aln  pt-2 pb-2">
+            Our online Courses
+          </h1>
 
           <div className="AboutUspage-ourMission">
             <Container>
@@ -345,7 +347,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-              <Col xl={12} lg={12} xs={12}>
+                <Col xl={12} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"

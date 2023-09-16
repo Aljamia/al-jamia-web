@@ -1,124 +1,142 @@
-
-  
-  /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
     !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/pages/contactus/Contact.css ***!
     \*******************************************************************************************************************************************************************************************************************************************************************************/
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
-  
-  :root {
-    /* color */
-    --white-color: #ffffff;
-    --lightgreen-color: #619a46;
-    --goldish-color: #cca65d;
-  
-    /* fonts */
-    --font-inter: "Inter", sans-serif;
-    --font-PT-serif: "PT Serif", serif;
-  }
-  .contact-header-items {
-    background-color: #f7f7f7;
-    margin-top: 6em;
-    padding: 1.5em;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
+
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --lightgreen-color: #619a46;
+  --goldish-color: #cca65d;
+
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-PT-serif: "PT Serif", serif;
+}
+
+.contact-header-items {
+  background-color: #f7f7f7;
+  margin-top: 6em;
+  padding: 1.5em;
+}
+
+.contact-header-title h1 {
+  color: #619a46;
+  font-family: unset;
+  margin-top: 3rem;
+  font-weight: 300;
+}
+
+.contact-header-title p {
+  text-align: justify;
+  color: var(--gray, #555);
+  font-family: unset;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 39px */
+}
+
+.contact-header-phone {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.contact-header-mail {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.contact-header-location {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.social-details {
+  margin: 10px;
+  color: #5b5b5b;
+  font-family: unset;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.social-address {
+  text-transform: uppercase;
+}
+
+.contact-header-map {
+  margin-top: 3em;
+}
+
+.datahex-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.datahex-link:hover {
+  color: var(--green-color);
+}
+
+@media (max-width: 500px) {
   .contact-header-title h1 {
-    color: #619a46;
-      font-family: unset;
-      margin-top: 3rem;
-      font-weight: 300;
+    font-size: 30px;
   }
+
   .contact-header-title p {
-    text-align: justify;
-    color: var(--gray, #555);
-    font-family: unset;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 39px */
   }
+
   .contact-header-phone {
-    display: flex;
-    align-items: center;
-    padding: 0.5em;
+    margin-top: 2em;
   }
-  
-  .contact-header-mail {
-    display: flex;
-    align-items: center;
-    padding: 0.5em;
-  }
-  .contact-header-location {
-    display: flex;
-    align-items: center;
-    padding: 0.5em;
-  }
+
   .social-details {
-    margin: 10px;
-    color: #5b5b5b;
-    font-family: unset;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    font-size: 16px;
   }
-  .social-address {
-    text-transform: uppercase;
+
+  .contact-map {
+    width: 100%;
   }
-  .contact-header-map {
-    margin-top: 3em;
-  }
-  .datahex-link {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 3px;
-  }
-  .datahex-link:hover {
-    color: var(--green-color);
-  }
-  @media (max-width: 500px) {
-    .contact-header-title h1 {
-      font-size: 30px;
-    }
-    .contact-header-title p {
-      font-size: 18px;
-    }
-    .contact-header-phone {
-      margin-top: 2em;
-    }
-    .social-details {
-      font-size: 16px;
-    }
-    .contact-map {
-      width: 100%;
-    }
-  }
-  .addres_box{
-    border-radius: 9px;
-    margin: 3%;
+}
+
+.addres_box {
+  border-radius: 9px;
+  margin: 3%;
   border: 1px solid #D9D9D9;
   width: 94%;
   float: left;
-  }
-  
-  
-  .addres_box img{padding: 10px;
-    float: left;
-  }
-  
-  .addres_box p{padding-top: 15px;
-  }
-  
-  .cont_form{
-    border-radius: 0%;
-    border-bottom: 1px solid #c8c8c8;
-    border-top: 0px solid #fff;
-    border-left: 0px solid #fff;
-    border-right: 0px solid #fff;
-    width: 100%;
-    padding: 5px;
-    background-color: #fff;
-  }
-  .form_bg_gray{
-    background-color: #EFEFEF;
-    padding: 12%;
-  }
+}
+
+
+.addres_box img {
+  padding: 10px;
+  float: left;
+}
+
+.addres_box p {
+  padding-top: 15px;
+}
+
+.cont_form {
+  border-radius: 0%;
+  border-bottom: 1px solid #c8c8c8;
+  border-top: 0px solid #fff;
+  border-left: 0px solid #fff;
+  border-right: 0px solid #fff;
+  width: 100%;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.form_bg_gray {
+  background-color: #EFEFEF;
+  padding: 12%;
+}
