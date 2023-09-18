@@ -88,7 +88,7 @@ const Event = () => {
           <Container>
             <Row>
               <Col xl={5}>
-                <div className="event-img">
+                <div className="event-img pt-3">
                   <img
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
                     alt=""
@@ -104,53 +104,61 @@ const Event = () => {
                 </div>
                 <div className="event-des">
                   <h4>{events[0]?.title}</h4>
-                  <p>{events[0]?.description.substring(0, 150)}</p>
+                  <p>{events[0]?.description.substring(0, 100)}...</p>
                 </div>
                 <div className="learn-btn">
                   <button
-                    className="event-btn-right"
+                    className="chip m-0"
                     onClick={() => handleClick(events[0]?._id)}
                   >
                     Read More
                   </button>
                 </div>
               </Col>
+
               <Col xl={7} className="pt-3">
                 <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
                     {events.map((event) => (
-                      <div key={event._id} className="right-event-caro">
-                        <div className="right-event-des">
-                          <h4>{event.title}</h4>
-                          <p>
-                            {new Date(event.date).toDateString()}{" "}
-                            <span className="p-0">
-                              {" "}
-                              <hr style={{ color: "grey" }} />
-                            </span>
-                          </p>
-                          <p>{event.description.substring(0, 165)}</p>
-                          <div className="right-learn-btn">
-                            {/* Use Link to navigate to the dynamic event details page */}
-                            {/* <Link href={`/testpage?${event._id}`}>
-                              <button>Learn More</button>
-                            </Link> */}
-                            <button
-                              className="event-btn-right"
-                              onClick={() => handleClick(event._id)}
-                            >
-                              Read More
-                            </button>
-                          </div>
-                        </div>
-                        <div className="event-caro-img">
+                      <ul>
+                        <li className="card" key={event._id}>
                           <img
                             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                             alt=""
-                            className="event-img-items"
+                            className="event-img-items featured-image"
                           />
-                        </div>
-                      </div>
+
+                          <article className="card-body">
+                            <header>
+                              <a href="utilidata-national-governors-association-meeting">
+                                <div className="title">
+                                  <h4>{event.title}</h4>
+                                </div>
+                                <p className="meta">
+                                  <span className="author">
+                                    <p>{event.description.substring(0, 90)}...</p>
+                                  </span>
+                                  <span> | </span>
+                                  <time
+                                    className="updated"
+                                    datetime=""
+                                    itemprop="datePublished"
+                                  >
+                                    {" "}
+                                    {new Date(event.date).toDateString()}{" "}
+                                    <button
+                                      className="chip"
+                                      onClick={() => handleClick(event._id)}
+                                    >
+                                      Read More
+                                    </button>
+                                  </time>
+                                </p>
+                              </a>
+                            </header>
+                          </article>
+                        </li>
+                      </ul>
                     ))}
                   </Slider>
                 </div>
