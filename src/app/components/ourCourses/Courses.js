@@ -80,12 +80,13 @@ const Courses = () => {
                       <h2 className="portfolio-title">{course.courseName}</h2>
                     </Card.Title>
                     <Card.Text>
-                      <p className="portfolio-text">{course.description}</p>
+                      <p className="portfolio-text">{course.description.substring(0, 80)}...</p>
+
                     </Card.Text>
 
                     <button
                       variant="primary btn-primary"
-                      className="portfolio-btn btn  "
+                      className="portfolio-btn btn mt-0 mb-0"
                       onClick={() => handleShow(course)}
                     >
                       {" "}
