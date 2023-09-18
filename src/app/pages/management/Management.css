@@ -225,7 +225,7 @@
 }
 
 @media (min-width: 760px) and (max-width: 1000px) {
- 
+
   .members-leader-cards {
     display: grid;
     gap: 10px;
@@ -235,7 +235,4 @@
   }
 }
 
-@media (min-width: 1001px) {
-
- 
-}
+@media (min-width: 1001px) {}

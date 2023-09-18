@@ -1733,4 +1733,14 @@ h3 {
   }
 
 
+  .slick-list {
+  
+    margin: 0;
+    padding-bottom: 5px !important;
+  }
+
+  .box{
+    margin-bottom: 5px !important;
+
+  }
 }

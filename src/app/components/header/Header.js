@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "../../pages/Main_navebar/Main_navebar.css";
 import "../../pages/Main_navebar/Nave_Bootstrap.css";
@@ -8,16 +7,7 @@ import Image from "next/image";
 function Main_navebar() {
   const [scrolling, setScrolling] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const [hovered, setHovered] = useState(null); // Track which dropdown is hovered
 
   const handleScroll = () => {
     if (window.scrollY >= 10) {
@@ -29,6 +19,24 @@ function Main_navebar() {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+  };
+
+  useEffect(() => {
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleDropdownEnter = (eventKey) => {
+    setHovered(eventKey);
+  };
+
+  const handleDropdownLeave = () => {
+    setHovered(null);
   };
 
   return (
@@ -64,8 +72,11 @@ function Main_navebar() {
 
               <NavDropdown
                 title="About"
-                id="basic-nav-dropdown"
+                id="about-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
+                onMouseEnter={() => handleDropdownEnter("about")}
+                onMouseLeave={handleDropdownLeave}
+                show={hovered === "about"}
               >
                 <NavDropdown.Item href="/about">
                   Al Jamia Al Islamiya
@@ -89,6 +100,9 @@ function Main_navebar() {
                 title="Academics"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
+                onMouseEnter={() => handleDropdownEnter("Academics")}
+                onMouseLeave={handleDropdownLeave}
+                show={hovered === "Academics"}
               >
                 <NavDropdown.Item href="/colleges">Colleges</NavDropdown.Item>
                 <NavDropdown.Item href="/Centre_for_it">
@@ -119,6 +133,9 @@ function Main_navebar() {
                 title="The Library"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
+                onMouseEnter={() => handleDropdownEnter("The Library")}
+                onMouseLeave={handleDropdownLeave}
+                show={hovered === "The Library"}
               >
                 <NavDropdown.Item href="/centralibrary">
                   Digital Library
@@ -135,7 +152,11 @@ function Main_navebar() {
                 title="Admissions"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
+                onMouseEnter={() => handleDropdownEnter("Admissions")}
+                onMouseLeave={handleDropdownLeave}
+                show={hovered === "Admissions"}
               >
+                {" "}
                 <NavDropdown.Item href="/Preparatory_Course">
                   Preparatory Course Admission
                 </NavDropdown.Item>
@@ -151,7 +172,11 @@ function Main_navebar() {
                 title="Students Life"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
+                onMouseEnter={() => handleDropdownEnter("Students Life")}
+                onMouseLeave={handleDropdownLeave}
+                show={hovered === "Students Life"}
               >
+                {" "}
                 <NavDropdown.Item href="/Student_Development">
                   Student Development
                 </NavDropdown.Item>
@@ -179,7 +204,11 @@ function Main_navebar() {
                 title="Alumni"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
+                onMouseEnter={() => handleDropdownEnter("Alumni")}
+                onMouseLeave={handleDropdownLeave}
+                show={hovered === "Alumni"}
               >
+                {" "}
                 <NavDropdown.Item href="/Alumni">
                   Alumni Chapters
                 </NavDropdown.Item>
