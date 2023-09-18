@@ -120,45 +120,49 @@ const Event = () => {
                 <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
                     {events.map((event) => (
-                      <ul>
-                        <li className="card" key={event._id}>
-                          <img
-                            src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
-                            alt=""
-                            className="event-img-items featured-image"
-                          />
+                      <>
+                        <ul>
+                          <li className="card" key={event._id}>
+                            <img
+                              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
+                              alt=""
+                              className="event-img-items featured-image"
+                            />
 
-                          <article className="card-body">
-                            <header>
-                              <a href="utilidata-national-governors-association-meeting">
-                                <div className="title">
-                                  <h4>{event.title}</h4>
-                                </div>
-                                <p className="meta">
-                                  <span className="author">
-                                    <p>{event.description.substring(0, 90)}...</p>
-                                  </span>
-                                  <span> | </span>
-                                  <time
-                                    className="updated"
-                                    datetime=""
-                                    itemprop="datePublished"
-                                  >
-                                    {" "}
-                                    {new Date(event.date).toDateString()}{" "}
-                                    <button
-                                      className="chip"
-                                      onClick={() => handleClick(event._id)}
+                            <article className="card-body">
+                              <header>
+                                <a href="utilidata-national-governors-association-meeting">
+                                  <div className="title">
+                                    <h4>{event.title}</h4>
+                                  </div>
+                                  <p className="meta">
+                                    <span className="author">
+                                      <p>
+                                        {event.description.substring(0, 90)}...
+                                      </p>
+                                    </span>
+                                    <span> | </span>
+                                    <time
+                                      className="updated"
+                                      datetime=""
+                                      itemprop="datePublished"
                                     >
-                                      Read More
-                                    </button>
-                                  </time>
-                                </p>
-                              </a>
-                            </header>
-                          </article>
-                        </li>
-                      </ul>
+                                      {" "}
+                                      {new Date(event.date).toDateString()}{" "}
+                                      <button
+                                        className="chip"
+                                        onClick={() => handleClick(event._id)}
+                                      >
+                                        Read More
+                                      </button>
+                                    </time>
+                                  </p>
+                                </a>
+                              </header>
+                            </article>
+                          </li>
+                        </ul>
+                      </>
                     ))}
                   </Slider>
                 </div>
