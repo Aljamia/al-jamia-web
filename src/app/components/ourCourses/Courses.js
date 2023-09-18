@@ -31,15 +31,15 @@ const Courses = () => {
     <div className="course">
       <Container>
         <div className="course-headerpage">
-          <div className="about-Title">
+          <div className="about-Title pt-1">
             <h1>Academics</h1>
           </div>
           <div className="course-desc">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-              quasi minus. Ut impedit voluptas excepturi aperiam iste non in
-              explicabo. Tenetur inventore dolor distinctio necessitatibus vero,
-              perspiciatis aliquam debitis ea.
+              Al Jamia offers good academic programs with a few specializations
+              to meet the needs of both the Nation and Society. It includes the
+              Preparatory program, two Bachelor programs, three Masters programs
+              and one Diploma program.
             </p>
           </div>
 
@@ -80,8 +80,9 @@ const Courses = () => {
                       <h2 className="portfolio-title">{course.courseName}</h2>
                     </Card.Title>
                     <Card.Text>
-                      <p className="portfolio-text">{course.description.substring(0, 80)}...</p>
-
+                      <p className="portfolio-text">
+                        {course.description.substring(0, 80)}...
+                      </p>
                     </Card.Text>
 
                     <button

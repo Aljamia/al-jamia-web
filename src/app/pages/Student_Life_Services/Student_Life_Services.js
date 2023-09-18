@@ -35,7 +35,7 @@ function Student_Life_Services() {
         </div>
 
         <div className="AboutUspage-items">
-          <h1 class="TitleStyle center_aln  pt-2 pb-2">Our online Courses</h1>
+          <h1 class="TitleStyle center_aln  pt-2 pb-4">Our online Courses</h1>
 
           <div className="AboutUspage-ourMission">
             <Container>

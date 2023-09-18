@@ -37,15 +37,9 @@ const Grades = () => {
     <div className="grades">
       <div className="about-Title">
         <h1>Our Success</h1>
+        <hr/>
       </div>
-      <div className="grades-desc">
-        <p className="page_padd">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-          quasi minus. Ut impedit voluptas excepturi aperiam iste non in
-          explicabo. Tenetur inventore dolor distinctio necessitatibus vero,
-          perspiciatis aliquam debitis ea.
-        </p>
-      </div>
+   
       <div className="grades-items">
         <div className="grid-items">
           {/* <Image

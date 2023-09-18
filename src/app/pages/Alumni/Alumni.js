@@ -29,13 +29,13 @@ function Alumni() {
     fetchAbout();
     fetchGallery();
   }, []);
-  if (!gallery || gallery.length === 0) {
-    return (
-      <div className="text-left">
-        <h6>Loading...</h6>
-      </div>
-    );
-  }
+  // if (!gallery || gallery.length === 0) {
+  //   return (
+  //     <div className="text-left">
+  //       <h6>Loading...</h6>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>
