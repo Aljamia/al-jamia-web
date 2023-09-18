@@ -319,7 +319,8 @@ body p {
   background-position: 0 2.5%;
   border-radius: 15px;
   border: none !important;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  padding: 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0px;
   cursor: pointer;
   margin: 10px 0px 10px;
   transition: 0.5s;
@@ -1148,7 +1149,7 @@ h3 {
 .about-Title {
   text-align: center;
   color: #619a46;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 .about-Title h1 {
@@ -1510,10 +1511,11 @@ h3 {
     font-weight: 300;
   }
 
-  .about-description p{
+  .about-description p {
     font-size: medium !important;
 
   }
+
   .app_head {
     font-size: larger;
     text-align: center;
@@ -1572,11 +1574,11 @@ h3 {
   }
 
 
-  
-.work_box {
-  padding-top: 2rem;
 
-}
+  .work_box {
+    padding-top: 2rem;
+
+  }
 
 
   .news-title h1 {
@@ -1690,11 +1692,12 @@ h3 {
     font-size: 2rem;
 
   }
-  .director-des p{
+
+  .director-des p {
     font-size: medium;
 
   }
-  
+
   #footer p {
     text-align: justify;
     font-size: medium;
@@ -1734,12 +1737,12 @@ h3 {
 
 
   .slick-list {
-  
+
     margin: 0;
     padding-bottom: 5px !important;
   }
 
-  .box{
+  .box {
     margin-bottom: 5px !important;
 
   }

@@ -67,7 +67,9 @@ const Centralib = () => {
         <div className="AboutUspage-desc">
           <>
             <Container className="AboutUspage-short-desc">
-              <h2 className="central-lib-title"> Digital Library </h2>
+              <div className="AboutUspage-header m-0 p-3">
+                <div className="AboutUspage-title">Digital Library</div>
+              </div>
               The Library also has subscriptions to a core selection of online
               resources and databases including over 25000 E‐books and
               periodicals. All of these resources support research references.

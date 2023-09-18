@@ -15,9 +15,9 @@ const ImageGallery = () => {
     };
     fetchgallery();
   }, []);
-  if (!galleryitems || galleryitems.length === 0) {
-    return <div>Loading...</div>;
-  }
+  // if (!galleryitems || galleryitems.length === 0) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <div>

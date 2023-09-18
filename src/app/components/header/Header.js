@@ -130,7 +130,7 @@ function Main_navebar() {
               </NavDropdown>
 
               <NavDropdown
-                title="The Library"
+                title="Library"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
                 onMouseEnter={() => handleDropdownEnter("The Library")}

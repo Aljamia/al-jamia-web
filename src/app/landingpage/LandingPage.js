@@ -21,7 +21,7 @@ const LandingPage = () => {
       <Grades />
       <Event />
       <Library />
-      <Deparments />
+      {/* <Deparments /> */}
       <Director />
       <CareerLink />
       <AlJamiaApp />

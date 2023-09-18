@@ -9,6 +9,8 @@ import AdministrativeCouncil from "../../components/AdministrativeCouncil/Admini
 import Succession_List from "@/app/components/Succession_List/Succession_List";
 import Offices_Department from "@/app/components/Offices_Department/Offices_Department";
 import SupremeCouncil from "@/app/components/SupremeCouncil/SupremeCouncil";
+import Academic_Leadership from "@/app/components/Academic_Leadership/Academic_Leadership";
+import World_Campus from "@/app/components/World_Campus/World_Campus";
 const Organizational_structure = () => {
   const [commitee, Setcommitee] = useState([]);
   const [show, setShow] = useState(false);
@@ -46,9 +48,13 @@ const Organizational_structure = () => {
 
         <AdministrativeCouncil />
 
+        <Academic_Leadership />
+
         <Succession_List />
 
         <Offices_Department />
+
+        <World_Campus />
       </div>
 
       <Footer />

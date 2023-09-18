@@ -17,10 +17,11 @@ function CareerLink() {
                 </div>
 
                 <p className="p_style">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptate possimus tempore distinctio rem itaque ad totam
-                  sapiente. Saepe sunt necessitatibus vero, culpa at nobis
-                  voluptas earum, quia, illum ullam error.
+                  If you're ready to join us and contribute to our exciting
+                  journey, please submit your resume and a cover letter
+                  detailing your qualifications and why you want to work with
+                  us. You can apply for any of our open positions by visiting
+                  our Career Page.
                 </p>
 
                 <div className="btn">

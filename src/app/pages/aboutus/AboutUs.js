@@ -9,6 +9,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import { getAboutUs, getAboutUsGallery } from "@/app/hooks/UseApi";
 import Link from "next/link";
 import Main_navebar from "../Main_navebar/Main_navebar";
+import Director_message from "../Director_message/Director_message";
+import Vision from "../Visionpage/Vision";
+import Mission from "../Missionpage/Mission";
+import Director from "@/app/components/director/Director";
 
 const AboutUs = () => {
   const [about, setAbout] = useState([]);
@@ -64,6 +68,11 @@ const AboutUs = () => {
           </>
         ))}
       </div>
+
+      <Vision />
+      <Mission />
+      <Director />
+
 
       <Footer />
     </div>

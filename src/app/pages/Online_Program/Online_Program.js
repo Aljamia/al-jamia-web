@@ -136,7 +136,7 @@ function Online_Program() {
         </div>
 
         <div className="AboutUspage-items">
-          <h1 className="TitleStyle center_aln  pt-2 pb-2">
+          <h1 className="TitleStyle center_aln  pt-2 pb-4">
             Our online Courses
           </h1>
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import "./Career_form.css";
 import { Col, Container, Row } from "react-bootstrap";
@@ -5,7 +6,7 @@ function Career_form() {
   return (
     <div className="p-5">
       <div>
-        <h2 className="TitleStyle center_div pt-5 pb-3">Career Form</h2>
+        <h2 className="TitleStyle center_div pt-5 pb-3">Apply Now</h2>
 
         <form>
           <Container>
@@ -85,8 +86,8 @@ function Career_form() {
                         </label>
                         <select name="blood_group" className="form-control">
                           <option value="">Select one</option>
-                          <option value="bachelor">Bachelors Degree</option>
-                          <option value="master">Masters Degree</option>
+                          <option value="bachelor">Bachelor's Degree</option>
+                          <option value="master">Master's Degree</option>
                           <option value="doctorate">Doctorate (Ph.D.)</option>
                         </select>{" "}
                       </div>
@@ -106,7 +107,6 @@ function Career_form() {
                           data-select="datepicker"
                           placeholder="DD-MM-YYYY"
                           data-rule-required="true"
-                          aria-required="true"
                         ></input>{" "}
                       </div>
                     </div>
@@ -153,7 +153,7 @@ function Career_form() {
                               data-rule-required="true"
                             ></input>
                             <label className="form-check-label" for="female">
-                              Unsex
+                              Prefer not to say
                             </label>
                           </div>
                           <span className="text-danger font-weight-bold"></span>
