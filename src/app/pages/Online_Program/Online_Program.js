@@ -5,6 +5,7 @@ import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
+import World_Campus from "@/app/components/World_Campus/World_Campus";
 
 function Online_Program() {
   const [about, setAbout] = useState([]);
@@ -671,6 +672,7 @@ function Online_Program() {
             </Container>
           </div>
         </div>
+        <World_Campus />
 
         <Footer />
       </div>

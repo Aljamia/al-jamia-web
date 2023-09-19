@@ -10,8 +10,8 @@ function AlJamiaApp() {
       <div className="app_bg">
         <Container>
           <Row>
-            <Col xl={6} lg={12} xs={12}>
-              <h1 className="app_head">Campus7 Login</h1>
+            <Col xl={4} lg={4} xs={12}>
+              <h1 className="app_head">Login</h1>
               <div className="app_icon">
                 <Link
                   href="https://aljamia.campus7.in/login"
@@ -29,8 +29,8 @@ function AlJamiaApp() {
               </div>
             </Col>
 
-            <Col xl={6} lg={12} xs={12}>
-              <h1 className="app_head">Download now</h1>
+            <Col xl={4} lg={4} xs={12}>
+              <h1 className="app_head">Download App</h1>
               <div className="app_icon">
                 <Link
                   href="https://play.google.com/store/apps/details?id=in.ixian.campus7.aljamia.student&pcampaignid=web_share"
@@ -39,6 +39,25 @@ function AlJamiaApp() {
                 >
                   <Image
                     src="/playstor.png"
+                    layout="intrinsic"
+                    width={1000}
+                    height={500}
+                    alt="Image"
+                  />
+                </Link>{" "}
+              </div>
+            </Col>
+
+            <Col xl={4} lg={4} xs={12}>
+              <h1 className="app_head">Click</h1>
+              <div className="app_icon">
+                <Link
+                  href="https://aljamiaworldcampus.net"
+                  target="blank"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <Image
+                    src="/aljamia_worldcampus_.png"
                     layout="intrinsic"
                     width={1000}
                     height={500}

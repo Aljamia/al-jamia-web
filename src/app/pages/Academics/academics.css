@@ -28,7 +28,7 @@
 
 .about-Title h1 {
   /* font-family: unset; */
-
+  font-size: 2rem;
   font-family: unset;
   font-weight: 300;
 }
@@ -80,6 +80,7 @@
 
 .about-Title h1 {
   /* font-family: unset; */
+  font-size: 2rem;
 
   font-family: unset;
   font-weight: 300;
@@ -174,6 +175,9 @@
 .about-Title h1 {
   position: relative;
   animation: fadeLeft 1s ease-in-out forwards;
+  font-size: 2rem;
+
+
 }
 
 @keyframes fadeLeft {
@@ -261,7 +265,7 @@
 .news-alert-desc {
   color: var(--gray, #232222);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   text-transform: capitalize;
   font-weight: 400;
   line-height: 116.023%;
@@ -635,7 +639,7 @@ nav.primary-navigation ul li ul li {
     margin-top: -5px;
     height: 2px;
     font-family: var(--font-inter);
-    font-size: 18px;
+    font-size: medium;
     text-transform: capitalize;
     font-style: normal;
     font-weight: 400;
@@ -855,7 +859,7 @@ nav.primary-navigation ul li ul li {
   text-align: center;
   padding: 0.3em;
   font-family: var(--font-inter);
-  font-size: 18px;
+  font-size: medium;
   font-weight: 400;
 }
 
@@ -955,7 +959,7 @@ nav.primary-navigation ul li ul li {
   font-family: unset;
   font-weight: 300;
   display: flex;
-  font-size: 1.5rem;
+  font-size: xx-large;
 
   color: #619a46;
 }
@@ -974,7 +978,7 @@ nav.primary-navigation ul li ul li {
 
 .director-des p {
   max-width: 100%;
-  font-size: 18px;
+  font-size: medium;
   text-align: justify;
   padding: 0px;
   font-family: unset;
@@ -1398,7 +1402,7 @@ span {
   font-family: unset;
   font-style: normal;
   font-weight: 250;
-  font-size: 18px;
+  font-size: medium;
   color: var(--white-color);
   text-align: justify;
 }
@@ -1565,7 +1569,7 @@ span {
 
 .course-desc {
   color: #747373;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
@@ -1686,7 +1690,7 @@ span {
   width: 100%;
   height: 80px;
   font-family: var(--font-inter);
-  font-size: 18px;
+  font-size: medium;
   content: normal;
   overflow-y: hidden;
   font-weight: 300;
@@ -1748,7 +1752,7 @@ span {
   background-color: #d2961e;
   border-radius: 55px;
   font-size: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   text-align: center;
   font-weight: 100;

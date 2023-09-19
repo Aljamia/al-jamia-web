@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const CarouselComponent = () => {
   const sliderRef = useRef(null);
@@ -38,7 +39,15 @@ const CarouselComponent = () => {
       <Header /> {/*imported navbar from header */}
       <div className="header-contents">
         <div className="header-video">
-          <video
+          {" "}
+          <Image
+            src="/banner_main.png" // Path to your image in the public directory
+            alt="Image"
+            layout="responsive"
+            width={1920} // Adjust this width as needed for your image
+            height={1080} // Adjust this height as needed for your image
+          />{" "}
+          {/* <video
             autoPlay
             muted
             loop
@@ -51,7 +60,7 @@ const CarouselComponent = () => {
               type="video/mp4"
             />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
           <div className="carousel-overlay ">
             <Slider ref={(slider) => (slider = slider)} {...settings}>
               <div className="carousel-para">

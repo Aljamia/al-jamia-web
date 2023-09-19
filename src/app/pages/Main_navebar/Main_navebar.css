@@ -105,11 +105,14 @@
 }
 
 .nav-link {
-	color: #a9a9a9 !important;
+	color: #9b9b9b !important;
 	font-weight: 300;
 	font-size: medium;
 	font-family: unset;
 	transition: all 200ms linear;
+}
+.nav-link a {
+	color: #fff !important;
 }
 
 .nav-item:hover .nav-link {
@@ -154,9 +157,11 @@
 
 /* #Primary style
 ================================================== */
+/* navbg_index */
 
 .bg-light {
-	background-color: transparent !important;
+	/* background-color: transparent !important; */
+	background-color: #0000007d !important;
 	transition: all 200ms linear;
 }
 
