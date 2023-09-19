@@ -41,7 +41,7 @@ const CarouselComponent = () => {
         <div className="header-video">
           {" "}
           <Image
-            src="/banner_main.png" // Path to your image in the public directory
+            src="/banner2.jpeg" // Path to your image in the public directory
             alt="Image"
             layout="responsive"
             width={1920} // Adjust this width as needed for your image

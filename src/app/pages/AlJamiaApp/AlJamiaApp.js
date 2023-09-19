@@ -11,6 +11,25 @@ function AlJamiaApp() {
         <Container>
           <Row>
             <Col xl={4} lg={4} xs={12}>
+              <h1 className="app_head">Click</h1>
+              <div className="app_icon">
+                <Link
+                  href="https://aljamiaworldcampus.net"
+                  target="blank"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <Image
+                    src="/aljamia_worldcampus_logo5.png"
+                    layout="intrinsic"
+                    width={1000}
+                    height={500}
+                    alt="Image"
+                  />
+                </Link>{" "}
+              </div>
+            </Col>
+
+            <Col xl={4} lg={4} xs={12}>
               <h1 className="app_head">Login</h1>
               <div className="app_icon">
                 <Link
@@ -39,25 +58,6 @@ function AlJamiaApp() {
                 >
                   <Image
                     src="/playstor.png"
-                    layout="intrinsic"
-                    width={1000}
-                    height={500}
-                    alt="Image"
-                  />
-                </Link>{" "}
-              </div>
-            </Col>
-
-            <Col xl={4} lg={4} xs={12}>
-              <h1 className="app_head">Click</h1>
-              <div className="app_icon">
-                <Link
-                  href="https://aljamiaworldcampus.net"
-                  target="blank"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <Image
-                    src="/aljamia_worldcampus_.png"
                     layout="intrinsic"
                     width={1000}
                     height={500}

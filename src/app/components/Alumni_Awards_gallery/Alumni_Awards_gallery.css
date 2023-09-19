@@ -20,7 +20,7 @@
 
 .Faculties-title {
   color: var(--light-green-color);
-  font-size: 50px;
+  font-size: xx-large;
   font-style: normal;
   font-weight: 250;
   line-height: normal;
@@ -123,7 +123,7 @@
   }
 
   .Faculties-title {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .gallery__image {

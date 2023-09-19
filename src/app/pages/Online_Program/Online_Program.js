@@ -672,7 +672,6 @@ function Online_Program() {
             </Container>
           </div>
         </div>
-        <World_Campus />
 
         <Footer />
       </div>

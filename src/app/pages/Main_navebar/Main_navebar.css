@@ -105,12 +105,13 @@
 }
 
 .nav-link {
-	color: #9b9b9b !important;
+	color: #adadad !important;
 	font-weight: 300;
 	font-size: medium;
 	font-family: unset;
 	transition: all 200ms linear;
 }
+
 .nav-link a {
 	color: #fff !important;
 }
@@ -161,7 +162,7 @@
 
 .bg-light {
 	/* background-color: transparent !important; */
-	background-color: #0000007d !important;
+	background-color: #0000001f !important;
 	transition: all 200ms linear;
 }
 

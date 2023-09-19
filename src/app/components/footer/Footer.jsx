@@ -61,7 +61,7 @@ const Footer = () => {
       <footer id="footer">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-sm-6 col-lg-3">
+            <div className="col-xs-12 col-sm-6 col-lg-4">
               <Image
                 src="/aljamiya_logo.png"
                 width={350}
@@ -71,14 +71,18 @@ const Footer = () => {
               />
               <div className="footer-about">
                 <p>
-                  Al Jamia Arts and Science College (AJAS), a resourceful
-                  destination for higher studies in the region, was established
-                  in 2010 with the main objective of uplifting the educationally
-                  developing Muslims and other communities.
+                  AL Jamia Al Islamiya is an esteemed university, located in
+                  Santhapuram, Kerala, India, offers a wide range of academic
+                  programs that blend traditional Islamic knowledge with modern
+                  education. It has played a pivotal role in shaping Islamic
+                  education in India and beyond. With a rich history, diverse
+                  curriculum, and a focus on fostering well-rounded individuals,
+                  Al Jamia Al Islamiya University stands as a beacon of
+                  knowledge and enlightenment in the field of Islamic education.
                 </p>{" "}
               </div>
             </div>
-            <div className="col-xs-12 col-sm-6 col-lg-3 pt-4">
+            <div className="col-xs-12 col-sm-6 col-lg-2 pt-4">
               <div className="useful-link">
                 <h2>Useful Links</h2>
                 <div className="use-links">
@@ -127,29 +131,42 @@ const Footer = () => {
                 <h2>Follow Us</h2>
                 <div className="social-icons">
                   <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-facebook-f"></i> Facebook
+                    <Link
+                      href="/https://www.facebook.com/aljamiasantapuram"
+                      target="_blank"
+                    >
+                      <i className="fa-brands fa-facebook-f fb_clr"></i>{" "}
+                       Facebook
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-instagram"></i> Instagram
+                    <Link
+                      href="/https://www.instagram.com/aljamiaalislamiya/"
+                      target="_blank"
+                    >
+                     {" "} <i className="fa-brands fa-instagram insta_clr"></i>{" "}
+                      Instagram
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-linkedin-in"></i> Linkedin
+                    <Link
+                      href="/https://www.youtube.com/aljamiachannel"
+                      target="_blank"
+                    >
+                      {" "}  <i className="fa-brands fa-youtube youtube_clr"></i>{" "}
+                      youtube
                     </Link>
                   </li>
-
+{/* 
                   <li>
                     <Link
                       href="https://play.google.com/store/apps/details?id=in.ixian.campus7.aljamia.student&pcampaignid=web_share"
                       target="blank"
                     >
-                      <i className="fa-solid fa-angles-right"></i> Playstore
+                      <i className="fa-solid fa-angles-right play_clr"></i>{" "}
+                      Playstore
                     </Link>
-                  </li>
+                  </li> */}
                 </div>
               </div>
             </div>
