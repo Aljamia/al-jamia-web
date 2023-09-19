@@ -32,7 +32,7 @@
   text-align: justify;
   color: var(--gray, #555);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
@@ -61,7 +61,7 @@
   margin: 10px;
   color: #5b5b5b;
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -91,7 +91,7 @@
   }
 
   .contact-header-title p {
-    font-size: 18px;
+    font-size: medium;
   }
 
   .contact-header-phone {

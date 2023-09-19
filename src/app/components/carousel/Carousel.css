@@ -98,7 +98,7 @@
   .carousel-para p {
     color: var(--white-color);
     font-family: var(--font-PT-serif);
-    font-size: 18px;
+    font-size: medium;
     font-style: normal;
     font-weight: 450;
     line-height: 25px;

@@ -22,7 +22,7 @@
 }
 
 .about-description p {
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
@@ -56,7 +56,7 @@
 /* Apply the Inter font to <p> tags */
 
 .about-description p {
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
@@ -74,6 +74,8 @@
 .about-Title h1 {
   position: relative;
   animation: fadeLeft 1s ease-in-out forwards;
+  font-size: 2rem;
+
 }
 
 @keyframes fadeLeft {

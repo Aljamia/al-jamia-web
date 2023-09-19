@@ -30,7 +30,7 @@
 .AboutUspage-desc {
   color: var(--gray, #555);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   text-align: justify;
   margin-top: 1.5em;
@@ -140,7 +140,7 @@
     text-align: center;
     font-family: unset;
     color: var(--light-green-color);
-    font-size: 18px;
+    font-size: medium;
     padding: 0.5em;
     font-weight: 200;
   }

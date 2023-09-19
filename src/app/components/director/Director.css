@@ -28,7 +28,7 @@
 
 .director-des p {
   max-width: 100%;
-  font-size: 18px;
+  font-size: medium;
   text-align: justify;
   padding: 0px;
   font-family: unset;
@@ -42,7 +42,7 @@
 
 .person-detail p {
   color: #555555;
-  font-size: 18px;
+  font-size: medium;
   font-family: unset;
 }
 
@@ -65,7 +65,7 @@
   color: #555555;
   max-width: 80%;
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
 }
 
 .fac-btn {
@@ -109,7 +109,7 @@
     color: #555555;
     max-width: 100%;
     font-family: unset;
-    font-size: 18px;
+    font-size: medium;
     text-align: center;
   }
 

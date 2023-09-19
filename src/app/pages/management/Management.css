@@ -40,7 +40,7 @@
   text-align: center;
   color: var(--gray, #555);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
@@ -75,7 +75,7 @@
   font-family: unset;
   outline: none;
   border: none;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   text-align: center;
   font-weight: 500;
@@ -109,7 +109,7 @@
   color: var(--gold, #cca65d);
   text-align: center;
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 300;
   line-height: 119%;
@@ -120,7 +120,7 @@
   color: var(--grary-2, #7d7d7d);
   font-family: unset;
   text-align: center;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 400;
   line-height: 119%;
@@ -145,7 +145,7 @@
   color: var(--grary-2, #7d7d7d);
   font-family: unset;
   text-align: left;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   margin-top: 10px;
   font-weight: 400;
@@ -155,7 +155,7 @@
 .faculties-cardmodal-desc {
   color: var(--gray, #555);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   text-align: justify;
   font-weight: 300;

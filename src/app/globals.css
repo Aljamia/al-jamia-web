@@ -15,9 +15,10 @@
 body p {
   color: #747373;
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-weight: 300;
 }
+
 
 .TitleStyle {
   color: var(--light-green-color);
@@ -60,7 +61,7 @@ body p {
   text-align: center;
   color: var(--gray, #555);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
@@ -143,7 +144,7 @@ body p {
   color: var(--gold, #cc9020);
   text-align: center;
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 300;
   line-height: 119%;
@@ -154,7 +155,7 @@ body p {
   color: var(--grary-2, #4f4f4f);
   font-family: unset;
   text-align: center;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 400;
   line-height: 119%;
@@ -179,7 +180,7 @@ body p {
   color: var(--grary-2, #7d7d7d);
   font-family: unset;
   text-align: left;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   margin-top: 10px;
   font-weight: 400;
@@ -189,7 +190,7 @@ body p {
 .faculties-cardmodal-desc {
   color: var(--gray, #555);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   text-align: justify;
   font-weight: 300;
@@ -215,7 +216,7 @@ body p {
   color: var(--gold, #cca65d);
   text-align: center;
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 600;
   /* 41.65px */
@@ -225,7 +226,7 @@ body p {
   color: var(--grary-2, #7d7d7d);
   font-family: unset;
   text-align: center;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 400;
   line-height: 119%;
@@ -470,7 +471,7 @@ h3 {
 .AboutUspage-vision-desc {
   color: var(--gray, #555);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   width: 60%;
   text-align: left;
@@ -525,7 +526,7 @@ h3 {
 .objectives_Head {
   color: var(--black, #000);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   text-align: left;
   font-weight: 500;
@@ -963,7 +964,7 @@ h3 {
   font-family: unset;
   font-style: normal;
   font-weight: 250;
-  font-size: 18px;
+  font-size: medium;
   color: var(--white-color);
   text-align: justify;
 }
@@ -980,7 +981,7 @@ h3 {
 
 .footer-links h5 {
   font-family: var(--font-rubik);
-  font-size: 18px;
+  font-size: medium;
   padding: 5px;
   font-style: normal;
   font-weight: 400;
@@ -1124,6 +1125,8 @@ h3 {
   margin-top: 0rem;
   text-align: center;
   color: #619a46;
+  font-size: 2rem;
+
 }
 
 
@@ -1142,6 +1145,7 @@ h3 {
   font-family: unset;
   font-weight: 300;
   text-align: left;
+  font-size: xx-large;
   color: #619a46;
 }
 
@@ -1156,6 +1160,7 @@ h3 {
   font-family: unset;
   font-weight: 300;
   color: #619a46;
+  font-size: 2rem;
 
 }
 
@@ -1390,7 +1395,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-  padding: 2% 10% 1%;
+  padding: 3% 10% 1%;
   float: left;
   text-align: center;
 }
@@ -1402,7 +1407,7 @@ h3 {
 .p_style {
   color: var(--gray, #ffffff);
   text-align: center;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 300;
   margin-top: 0.3em;
@@ -1525,7 +1530,7 @@ h3 {
 
 
   .about-Title h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .about-description p {
@@ -1566,7 +1571,10 @@ h3 {
   .about-Title h1 {
     padding: 10px;
     margin: 0px;
+    font-size: 2rem;
+
   }
+
 
 
   .about-Title {
@@ -1599,7 +1607,7 @@ h3 {
     padding-bottom: 0rem;
     font-family: unset;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: xx-large;
     text-align: center;
     color: #619a46;
   }
@@ -1615,7 +1623,7 @@ h3 {
   }
 
   .director-heading h1 {
-    font-size: 1.5rem;
+    font-size: xx-large;
   }
 
   .library {

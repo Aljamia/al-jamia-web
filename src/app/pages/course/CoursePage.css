@@ -133,7 +133,7 @@
 
 .course-desc {
   color: #747373;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
@@ -160,7 +160,7 @@
   position: relative;
   color: var(--goldish-color);
   font-family: var(--font-PT-serif);
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
@@ -254,7 +254,7 @@
   width: 100%;
   height: 80px;
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   content: normal;
   overflow-y: hidden;
   font-weight: 300;
@@ -484,7 +484,7 @@
   }
 
   .grades-title {
-    font-size: 18px;
+    font-size: medium;
   }
 }
 

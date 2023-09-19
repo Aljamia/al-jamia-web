@@ -69,7 +69,7 @@
 .AboutUspage-desc {
   color: var(--gray, #555);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   text-align: justify;
   margin-top: 1.5em;
@@ -123,7 +123,7 @@
 .AboutUspage-vision-desc {
   color: var(--gray, #555);
   font-family: unset;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   width: 60%;
   margin-left: 80px;
@@ -150,7 +150,7 @@
 .AboutUspage-mission-desc {
   color: var(--gray, #555);
   text-align: justify;
-  font-size: 18px;
+  font-size: medium;
   font-style: normal;
   font-weight: 300;
   margin-top: 0.3em;
