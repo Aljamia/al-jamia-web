@@ -41,7 +41,7 @@ body p {
 
 .Faculties-title {
   color: var(--light-green-color);
-  font-size: 40px;
+  font-size: xx-large;
   font-style: normal;
   font-weight: 250;
   margin-bottom: 20px;
@@ -239,6 +239,11 @@ body p {
   border-radius: 20px;
 }
 
+.faculties-card img {
+  height: 35vh;
+
+}
+
 @media (max-width: 768px) {
   .Faculties-header {
     margin-top: 3em;
@@ -282,6 +287,8 @@ body p {
     margin-left: 60px;
     grid-template-columns: repeat(4, 1fr);
   }
+
+
 }
 
 @media (min-width: 1001px) {
@@ -815,7 +822,6 @@ h3 {
   text-align: center;
   font-weight: 300;
   padding: 10px;
-  min-height: 120px;
 }
 
 
@@ -1504,10 +1510,6 @@ h3 {
 }
 
 
-
-
-
-
 @media (max-width: 991px) {
   body p {
     color: #747373;
@@ -1752,6 +1754,13 @@ h3 {
 
   .box {
     margin-bottom: 5px !important;
+
+  }
+
+
+
+  .faculties-card img {
+    height: auto;
 
   }
 }

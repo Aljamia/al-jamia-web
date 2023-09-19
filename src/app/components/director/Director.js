@@ -38,7 +38,7 @@ const Director = () => {
             </Col>
             <Col xl={6}>
               <div className="director-des">
-                <div className="director-heading">
+                <div className="director-heading pt-4">
                   <h1> Message From The Rector</h1>
                 </div>
                 <p>{director[0]?.enDescription}</p>

@@ -1,9 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { getAboutUs } from "@/app/hooks/UseApi";
-import { Col, Container, Row } from "react-bootstrap";
+
+import Footer from "@/app/components/footer/Footer";
+import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
-function Vision() {
+import { Col, Container, Row } from "react-bootstrap";
+
+function Students_Centre_main() {
   const [about, setAbout] = useState([]);
 
   useEffect(() => {
@@ -40,18 +44,22 @@ function Vision() {
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
                   >
-                    Our Vision
-                  </div>
-                  <p className="AboutUspage-mission-desc">{about[0]?.vision}</p>
-
-                  <div
-                    className="AboutUspage-mission-title"
-                    id="our-mission-header"
-                  >
-                    Our Mission
+                    Students Centre
                   </div>
                   <p className="AboutUspage-mission-desc">
-                    {about[0]?.mission}
+                    Al Jamia provides students center facility nearby their
+                    class rooms which helps them for accessing Internet and
+                    browsing learning materials.
+                    <h1 class="Courses_Head pt-4"> Media Point </h1>
+                    Media point is one of the best platforms that trains and
+                    enhances the talent of students in the field of Information
+                    Technology as well as Instructional & Media Technologies.
+                    Media point is the sole media partner of Al Jamia wherein it
+                    leads the media related works and covers all of the
+                    important events conducted by Al Jamia. ‘Media Point’ also
+                    manages Al Jamia website and engages content management in
+                    various social media platforms timely and effectively. udent
+                    Services
                   </p>
                 </Col>
               </Row>
@@ -62,5 +70,4 @@ function Vision() {
     );
   }
 }
-
-export default Vision;
+export default Students_Centre_main;

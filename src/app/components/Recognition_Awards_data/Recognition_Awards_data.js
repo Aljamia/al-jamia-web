@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Alumni_Awards_gallery from "../Alumni_Awards_gallery/Alumni_Awards_gallery";
+import Publications_books from "./Publications_books";
 
 function Recognition_Awards_data() {
   return (
@@ -53,6 +54,8 @@ function Recognition_Awards_data() {
               community and stay informed about their diverse contributions
               across different domains
             </p>
+
+            <Publications_books />
           </Row>
         </Container>
       </div>
