@@ -38,7 +38,7 @@ const CarouselComponent = () => {
       <Header /> {/*imported navbar from header */}
       <div className="header-contents">
         <div className="header-video">
-          <video
+          {/* <video
             autoPlay
             muted
             loop
@@ -46,12 +46,27 @@ const CarouselComponent = () => {
             className="fullscreen-video"
             style={{ width: "100%" }}
           >
-            <source
-              src="/y2mate.com - ADMISSION OPEN 202223_1080pFHR.mp4"
-              type="video/mp4"
-            />
+            <source src="https://youtu.be/kGenjO4pd2E" type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+          <iframe
+            style={{ width: "100%", height: "600px" }}
+            src="https://www.youtube.com/embed/Aop2vKroDwo?autoplay=1&mute=1&loop=0&controls=0"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+
+          {/* <div class="vimeo-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/Aop2vKroDwo?autoplay=1&mute=1&loop=0&controls=0"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              class="vimeo-iframe"
+            ></iframe>
+          </div> */}
           <div className="carousel-overlay ">
             <Slider ref={(slider) => (slider = slider)} {...settings}>
               <div className="carousel-para">
