@@ -53,8 +53,6 @@ const Organizational_structure = () => {
         <Succession_List />
 
         <Offices_Department />
-
-        <World_Campus />
       </div>
 
       <Footer />

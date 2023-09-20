@@ -6,6 +6,11 @@ import { Container, Row, Col, Button, Modal, Card } from "react-bootstrap";
 import "./CoursePage.css";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { getCourse } from "@/app/hooks/UseApi";
+import Centre_for_it from "../Centre_for_it/Centre_for_it";
+import Information_Technology from "../Centre_for_it/Information_Technology";
+import Centre_for_hr_main from "../Centre_for_hr/Centre_for_hr_main";
+import Centre_for_research_main from "../Centre_for_research/Centre_for_research_main";
+import Faculty_mail from "../Faculty/Faculty_mail";
 
 const CoursePage = () => {
   const [show, setShow] = useState(false);
@@ -180,6 +185,11 @@ const CoursePage = () => {
                 </div>
               </div>
             </div>
+
+            <Information_Technology />
+            <Centre_for_hr_main />
+            <Centre_for_research_main />
+            <Faculty_mail />
           </Container>
         </div>
       </div>

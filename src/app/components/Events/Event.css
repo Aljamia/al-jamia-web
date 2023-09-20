@@ -104,7 +104,7 @@ span {
 }
 
 .right-event-des h4 {
-  font-size: 18px;
+  font-size: medium;
   font-weight: 600;
   color: black;
   font-family: unset !important;
@@ -276,7 +276,7 @@ span {
   }
 
   .event-des h4 {
-    font-size: 18px;
+    font-size: medium;
   }
 
   .slick-dots li button {

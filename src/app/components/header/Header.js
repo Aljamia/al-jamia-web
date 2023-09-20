@@ -85,11 +85,11 @@ function Main_navebar() {
                   Rectors welcome Message
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Visionpage">
-                  Our Vision
+                  Vision & Mission
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Missionpage">
+                {/* <NavDropdown.Item href="/Missionpage">
                   Our Mission
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item href="/Organizational_structure">
                   Organizational Structure
                 </NavDropdown.Item>

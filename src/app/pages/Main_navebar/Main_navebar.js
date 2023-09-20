@@ -71,9 +71,9 @@ function Main_navebar() {
               </Nav.Link>
 
               <NavDropdown
-                title="About" id="about-dropdown"
+                title="About"
+                id="about-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
-
                 onMouseEnter={() => handleDropdownEnter("about")}
                 onMouseLeave={handleDropdownLeave}
                 show={hovered === "about"}
@@ -85,11 +85,11 @@ function Main_navebar() {
                   Rectors welcome Message
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Visionpage">
-                  Our Vision
+                  Vision & Mission
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Missionpage">
+                {/* <NavDropdown.Item href="/Missionpage">
                   Our Mission
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item href="/Organizational_structure">
                   Organizational Structure
                 </NavDropdown.Item>
@@ -100,7 +100,6 @@ function Main_navebar() {
                 title="Academics"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
-                
                 onMouseEnter={() => handleDropdownEnter("Academics")}
                 onMouseLeave={handleDropdownLeave}
                 show={hovered === "Academics"}
@@ -134,7 +133,6 @@ function Main_navebar() {
                 title="Library"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
-                
                 onMouseEnter={() => handleDropdownEnter("The Library")}
                 onMouseLeave={handleDropdownLeave}
                 show={hovered === "The Library"}
@@ -154,11 +152,12 @@ function Main_navebar() {
                 title="Admissions"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
-
                 onMouseEnter={() => handleDropdownEnter("Admissions")}
                 onMouseLeave={handleDropdownLeave}
                 show={hovered === "Admissions"}
-              >                <NavDropdown.Item href="/Preparatory_Course">
+              >
+                {" "}
+                <NavDropdown.Item href="/Preparatory_Course">
                   Preparatory Course Admission
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Under_Graduate">
@@ -173,11 +172,12 @@ function Main_navebar() {
                 title="Students Life"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
-
                 onMouseEnter={() => handleDropdownEnter("Students Life")}
                 onMouseLeave={handleDropdownLeave}
                 show={hovered === "Students Life"}
-              >                <NavDropdown.Item href="/Student_Development">
+              >
+                {" "}
+                <NavDropdown.Item href="/Student_Development">
                   Student Development
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Student_Counseling_Service">
@@ -204,11 +204,12 @@ function Main_navebar() {
                 title="Alumni"
                 id="basic-nav-dropdown"
                 className="pl-4 pl-md-0 ml-0 ml-md-4"
-
                 onMouseEnter={() => handleDropdownEnter("Alumni")}
                 onMouseLeave={handleDropdownLeave}
                 show={hovered === "Alumni"}
-              >                <NavDropdown.Item href="/Alumni">
+              >
+                {" "}
+                <NavDropdown.Item href="/Alumni">
                   Alumni Chapters
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Recognition_Awards">

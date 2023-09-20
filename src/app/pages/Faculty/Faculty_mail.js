@@ -1,9 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { getAboutUs } from "@/app/hooks/UseApi";
-import { Col, Container, Row } from "react-bootstrap";
+
+import Footer from "@/app/components/footer/Footer";
+import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
-function Vision() {
+import { Col, Container, Row } from "react-bootstrap";
+
+function Faculty_mail() {
   const [about, setAbout] = useState([]);
 
   useEffect(() => {
@@ -40,18 +44,15 @@ function Vision() {
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
                   >
-                    Our Vision
-                  </div>
-                  <p className="AboutUspage-mission-desc">{about[0]?.vision}</p>
-
-                  <div
-                    className="AboutUspage-mission-title"
-                    id="our-mission-header"
-                  >
-                    Our Mission
+                    Faculty
                   </div>
                   <p className="AboutUspage-mission-desc">
-                    {about[0]?.mission}
+                    Al Jamia ensures that its teaching environment is the
+                    highest standard and selects qualified and experienced
+                    academics to its faculty which include PhD holders from
+                    various National and International universities. Visiting
+                    professors from the reputed universities outside India also
+                    bring added expertise to students’ academic experience.
                   </p>
                 </Col>
               </Row>
@@ -63,4 +64,4 @@ function Vision() {
   }
 }
 
-export default Vision;
+export default Faculty_mail;

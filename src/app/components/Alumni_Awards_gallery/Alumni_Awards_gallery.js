@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import "./Alumni_Awards_gallery.css";
 import Image from "next/image";
 import { getAboutUsGallery } from "@/app/hooks/UseApi";
-import PageHeader from "@/app/components/pagesheader/PageHeader";
-import Footer from "@/app/components/footer/Footer";
 
 const Alumni_Awards_gallery = () => {
   const [galleryitems, setGalleryItems] = useState();
@@ -21,7 +19,6 @@ const Alumni_Awards_gallery = () => {
 
   return (
     <div>
-  
       <>
         <div className="gallery">
           <div className="gallery__column">
@@ -33,9 +30,10 @@ const Alumni_Awards_gallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              {/* <figcaption class="gallery__caption">
+              
+              <figcaption class="gallery__caption">
                 Portrait by Jessica Felicio
-              </figcaption> */}
+              </figcaption>
             </figure>
 
             <figure class="gallery__thumb">
@@ -193,4 +191,4 @@ const Alumni_Awards_gallery = () => {
   );
 };
 
-export default Alumni_Awards_gallery
+export default Alumni_Awards_gallery;

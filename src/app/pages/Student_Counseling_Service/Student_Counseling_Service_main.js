@@ -1,9 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { getAboutUs } from "@/app/hooks/UseApi";
-import { Col, Container, Row } from "react-bootstrap";
+
+import Footer from "@/app/components/footer/Footer";
+import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
-function Vision() {
+import { Col, Container, Row } from "react-bootstrap";
+
+function Student_Counseling_Service_main() {
   const [about, setAbout] = useState([]);
 
   useEffect(() => {
@@ -24,7 +28,7 @@ function Vision() {
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/aljamiya_clg.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -40,18 +44,17 @@ function Vision() {
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
                   >
-                    Our Vision
-                  </div>
-                  <p className="AboutUspage-mission-desc">{about[0]?.vision}</p>
-
-                  <div
-                    className="AboutUspage-mission-title"
-                    id="our-mission-header"
-                  >
-                    Our Mission
+                    Student Counseling Service
                   </div>
                   <p className="AboutUspage-mission-desc">
-                    {about[0]?.mission}
+                    With the help of the Dean of Students Affairs, Al Jamia
+                    provides its students with a variety of counseling and
+                    psychological services and over all skill development. These
+                    services include individual and group counselling that help
+                    students to overcome challenges that affect their success.
+                    The aim of this service is to promote personal well‐being
+                    and self‐development of the students, and to help them
+                    adjust to the demands of Al Jamia life. .
                   </p>
                 </Col>
               </Row>
@@ -63,4 +66,4 @@ function Vision() {
   }
 }
 
-export default Vision;
+export default Student_Counseling_Service_main;

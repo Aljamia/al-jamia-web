@@ -70,9 +70,10 @@ const AboutUs = () => {
       </div>
 
       <Vision />
-      <Mission />
-      <Director />
 
+      <Mission />
+
+      <Director />
 
       <Footer />
     </div>
