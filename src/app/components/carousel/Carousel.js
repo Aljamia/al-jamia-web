@@ -1,92 +1,44 @@
-import "./Carousel.css";
+import React, { useRef, useState } from "react";
 import Header from "../header/Header";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
+import YouTube from "react-youtube";
+import "./Carousel.css";
 
 const CarouselComponent = () => {
-  const sliderRef = useRef(null);
-  const slideDuration = 6000; // Adjust the slide duration (in milliseconds)
+  const playerRef = useRef(null);
 
-  useEffect(() => {
-    const slideInterval = setInterval(() => {
-      if (sliderRef.current) {
-        sliderRef.current.slickNext();
-      }
-    }, slideDuration);
-
-    return () => {
-      clearInterval(slideInterval);
-    };
-  }, []);
-  const settings = {
-    dots: false,
-    fade: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    pauseOnHover: false,
-    nextArrow: false,
-    prevArrow: false,
+  const opts = {
+    playerVars: {
+      autoplay: 1,
+      loop: 1,
+      controls: 0,
+      mute: 1,
+      rel: 0,
+    },
   };
+
+  const videoId = "Aop2vKroDwo";
+
+  const onEndHandler = (event) => {
+    event.target.playVideo();
+  };
+
   return (
     <div className="header">
-      <Header /> {/*imported navbar from header */}
+      <Header />
       <div className="header-contents">
         <div className="header-video">
-          {/* <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="fullscreen-video"
-            style={{ width: "100%" }}
-          >
-            <source src="https://youtu.be/kGenjO4pd2E" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video> */}
-          <iframe
-            style={{ width: "100%", height: "600px" }}
-            src="https://www.youtube.com/embed/Aop2vKroDwo?autoplay=1&mute=1&loop=0&controls=0"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-
-          {/* <div class="vimeo-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/Aop2vKroDwo?autoplay=1&mute=1&loop=0&controls=0"
-              frameborder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowfullscreen
-              class="vimeo-iframe"
-            ></iframe>
-          </div> */}
-          <div className="carousel-overlay ">
-            <Slider ref={(slider) => (slider = slider)} {...settings}>
-              <div className="carousel-para">
-                {/* <p className="animate__bounceIn">
-                  Resolve The Campaign with our pleasure everyone
-                </p> */}
-              </div>
-              <div className="carousel-para">
-                {/* <p className="animate__bounceIn">
-                  Welcome To Al-jamia member everyone Lorem
-                </p> */}
-              </div>
-              <div className="carousel-para ">
-                {/* <p className="animate__bounceIn">
-                  This is a wonderful occation to have you all join us
-                </p> */}
-              </div>
-            </Slider>
-          </div>
+          <YouTube
+            videoId={videoId}
+            opts={{
+              ...opts,
+              playerVars: {
+                ...opts.playerVars,
+                fs: 1, // Allow fullscreen
+              },
+            }}
+            onEnd={onEndHandler}
+            ref={playerRef}
+          />
         </div>
       </div>
     </div>
