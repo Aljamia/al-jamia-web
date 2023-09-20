@@ -13,6 +13,10 @@ const CarouselComponent = () => {
       controls: 0,
       mute: 1,
       rel: 0,
+      disablekb: 1,
+      fs: 1, // Allow fullscreen
+      showinfo: 0, // Hide video title
+      modestbranding: 1, // Reduce the YouTube logo to a small watermark
     },
   };
 
