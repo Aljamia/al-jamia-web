@@ -54,15 +54,15 @@ const AboutUs = () => {
       </div>
 
       <div className="AboutUspage-desc">
-        <div className="AboutUspage-title center_aln pb-4">
+        <div className="AboutUspage-title center_aln pb-4" data-aos="fade-up">
           Al Jamia Al Islamiya
         </div>{" "}
         {about.map((item, index) => (
           <>
-            <Container className="AboutUspage-short-desc" key={index}>
+            <Container className="AboutUspage-short-desc" key={index} data-aos="fade-up">
               {item.shortDescription}
             </Container>
-            <Container className="AboutUspage-long-desc" key={index}>
+            <Container className="AboutUspage-long-desc" key={index} data-aos="fade-up">
               {item.longDescription}
             </Container>
           </>
@@ -70,8 +70,6 @@ const AboutUs = () => {
       </div>
 
       <Vision />
-
-      <Mission />
 
       <Director />
 

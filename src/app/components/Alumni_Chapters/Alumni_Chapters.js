@@ -18,8 +18,10 @@ function Alumni_Chapters() {
             />
 
             <section>
-              <h1 class="TitleStyle center_aln pt-2 pb-2">Alumni Chapters</h1>
-              <p>
+              <h1 class="TitleStyle center_aln pt-2 pb-2" data-aos="fade-up">
+                Alumni Chapters
+              </h1>
+              <p data-aos="fade-up">
                 Our global network of Al Jamia alumni chapters brings together
                 graduates from diverse backgrounds and generations. These
                 chapters serve as platforms for networking, mentorship, and
@@ -40,15 +42,15 @@ function Alumni_Chapters() {
                         <h2 class="Chapters_center_div"> GCC</h2>
                       </div>
                       <ul class="blog-details-list mt-30">
-                        <li>
+                        <li data-aos="fade-left">
                           <i class="icofont-tick-mark"></i>U.A.E Chapter
                         </li>
-                        <li>Qater Chapter</li>
-                        <li>Kuwait Chapter</li>
-                        <li>Oman Chapter.</li>
-                        <li>Jeddah Chapter</li>
-                        <li>Riyadh Chapter</li>
-                        <li>Dammam Chapter</li>
+                        <li data-aos="fade-left">Qater Chapter</li>
+                        <li data-aos="fade-left">Kuwait Chapter</li>
+                        <li data-aos="fade-left">Oman Chapter.</li>
+                        <li data-aos="fade-left">Jeddah Chapter</li>
+                        <li data-aos="fade-left">Riyadh Chapter</li>
+                        <li data-aos="fade-left">Dammam Chapter</li>
                       </ul>
                     </div>
                   </Col>
@@ -61,17 +63,17 @@ function Alumni_Chapters() {
                         <h2 class="Chapters_center_div"> District Chapters </h2>
                       </div>
                       <ul class="blog-details-list mt-30">
-                        <li>
+                        <li data-aos="fade-left">
                           <i class="icofont-tick-mark"></i>Thiruvananthapuram{" "}
                         </li>
-                        <li>Kollam </li>
-                        <li>Alappuzha </li>
-                        <li>Kottayam </li>
-                        <li>Eranamkulam </li>
-                        <li>Thrissure </li>
-                        <li>Palakkad</li>
-                        <li>Kannur</li>
-                        <li>Kozhikkode</li>
+                        <li data-aos="fade-left">Kollam </li>
+                        <li data-aos="fade-left">Alappuzha </li>
+                        <li data-aos="fade-left">Kottayam </li>
+                        <li data-aos="fade-left">Eranamkulam </li>
+                        <li data-aos="fade-left">Thrissure </li>
+                        <li data-aos="fade-left">Palakkad</li>
+                        <li data-aos="fade-left">Kannur</li>
+                        <li data-aos="fade-left">Kozhikkode</li>
                       </ul>
                     </div>
                   </Col>
@@ -84,15 +86,15 @@ function Alumni_Chapters() {
                         <h2 class="Chapters_center_div"> Taluk Chapters</h2>
                       </div>
                       <ul class="blog-details-list mt-30">
-                        <li>
+                        <li data-aos="fade-left">
                           <i class="icofont-tick-mark"></i>Eranad{" "}
                         </li>
-                        <li>Perinthalmanna </li>
-                        <li>Nilambur </li>
-                        <li>Kondotty </li>
-                        <li>Tirurangadi </li>
-                        <li>Tirur </li>
-                        <li>Ponnani </li>
+                        <li data-aos="fade-left">Perinthalmanna </li>
+                        <li data-aos="fade-left">Nilambur </li>
+                        <li data-aos="fade-left">Kondotty </li>
+                        <li data-aos="fade-left">Tirurangadi </li>
+                        <li data-aos="fade-left">Tirur </li>
+                        <li data-aos="fade-left">Ponnani </li>
                       </ul>
                     </div>
                   </Col>

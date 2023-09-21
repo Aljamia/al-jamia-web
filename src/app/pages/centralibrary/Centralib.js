@@ -13,23 +13,30 @@ const Centralib = () => {
       <div className="AboutUspage">
         <PageHeader />
         <div className="p-4"></div>
-        <div className="AboutUspage-img padimg">
-          <Image
-            src="/the library.jpg"
-            layout="responsive"
-            width={1000}
-            height={500}
-            alt="Image"
-          />
-        </div>
-        <div className="AboutUspage-desc">
-          <div className="AboutUspage-header m-0 p-3">
-            <div className="AboutUspage-title">
-              Al Jamia Al Islamiya Central Library
+
+        <div className="Faculties-header">
+          <Container>
+            <div className="AboutUspage-header m-0 p-3">
+              <div className="AboutUspage-title" data-aos="fade-up">
+                Al Jamia Al Islamiya Central Library
+              </div>
             </div>
-          </div>
+
+            <div className="Faculties-img" data-aos="fade-up">
+              <Image
+                src="/the library.jpg"
+                layout="responsive"
+                width={1000}
+                height={200}
+                alt="Image"
+              />
+            </div>
+          </Container>
+        </div>
+
+        <div className="AboutUspage-desc">
           <>
-            <Container className="AboutUspage-short-desc">
+            <Container className="AboutUspage-short-desc" data-aos="fade-up">
               Al Jamia Central Library is among the leading reference libraries
               in India. This celebrated institution, located in a three-story
               building on the campus of Santapuram al-Jamia, houses over 50,500
@@ -67,14 +74,16 @@ const Centralib = () => {
         <div className="AboutUspage-desc">
           <>
             <Container className="AboutUspage-short-desc">
-              <div className="AboutUspage-header m-0 p-3">
+              <div className="AboutUspage-header m-0 p-3" data-aos="fade-up">
                 <div className="AboutUspage-title">Digital Library</div>
               </div>
-              The Library also has subscriptions to a core selection of online
-              resources and databases including over 25000 E‐books and
-              periodicals. All of these resources support research references.
-              Most of the collections are available online and can search by
-              using the library browsing system.
+              <p data-aos="fade-up">
+                The Library also has subscriptions to a core selection of online
+                resources and databases including over 25000 E‐books and
+                periodicals. All of these resources support research references.
+                Most of the collections are available online and can search by
+                using the library browsing system.
+              </p>
             </Container>
           </>
         </div>

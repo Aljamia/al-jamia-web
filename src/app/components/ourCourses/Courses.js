@@ -31,10 +31,10 @@ const Courses = () => {
     <div className="course">
       <Container>
         <div className="course-headerpage">
-          <div className="about-Title pt-1">
+          <div className="about-Title pt-1" data-aos="fade-up">
             <h1>Academics</h1>
           </div>
-          <div className="course-desc">
+          <div className="course-desc" data-aos="fade-up">
             <p>
               Al Jamia offers good academic programs with a few specializations
               to meet the needs of both the Nation and Society. It includes the
@@ -46,7 +46,7 @@ const Courses = () => {
           <div className="portfolio">
             <div className="portfolio-container">
               {cardValues.slice(0, 3).map((course) => (
-                <Card className="portfolio-card" key={course.id}>
+                <Card className="portfolio-card" key={course.id}   data-aos="flip-left">
                   <Card.Img
                     variant="top"
                     className="portfolio-modal-images"
@@ -154,7 +154,7 @@ const Courses = () => {
             </div>
           </div>
 
-          <div className="btn">
+          <div className="btn"   data-aos="flip-left">
             <Link href="/colleges" style={{ textDecoration: "none" }}>
               <button>
                 {" "}

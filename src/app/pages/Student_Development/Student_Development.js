@@ -9,6 +9,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Academic_main from "./Academic_main";
 import Student_Counseling_Service_main from "../Student_Counseling_Service/Student_Counseling_Service_main";
 import Students_Centre_main from "../Students_Centre/Students_Centre_main";
+import Student_Representative_main from "../Student_Representative_Board/Student_Representative_main";
 
 function Student_Development() {
   const [about, setAbout] = useState([]);
@@ -39,6 +40,8 @@ function Student_Development() {
         <Student_Counseling_Service_main />
 
         <Students_Centre_main />
+
+        <Student_Representative_main />
 
         <Footer />
       </div>

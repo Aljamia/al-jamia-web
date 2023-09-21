@@ -11,6 +11,8 @@ import Information_Technology from "../Centre_for_it/Information_Technology";
 import Centre_for_hr_main from "../Centre_for_hr/Centre_for_hr_main";
 import Centre_for_research_main from "../Centre_for_research/Centre_for_research_main";
 import Faculty_mail from "../Faculty/Faculty_mail";
+import Students_Council from "../Students_Council/Students_Council";
+import Students_Council_main from "../Students_Council/Students_Council_main";
 
 const CoursePage = () => {
   const [show, setShow] = useState(false);
@@ -39,7 +41,7 @@ const CoursePage = () => {
         style={{ width: "100%", maxWidth: "100%" }}
       >
         <Container>
-          <div className="coursePage-img pt-1 mag_top">
+          <div className="coursePage-img pt-1 mag_top" data-aos="flip-left">
             {/* <Image
               src="/image 15.jpg"
               layout="responsive"
@@ -47,7 +49,7 @@ const CoursePage = () => {
               height={300}
               alt="Image"
             /> */}
-            <div className="Colleges_div_bg center_div">
+            <div className="Colleges_div_bg center_div" data-aos="fade-down">
               <h2>Colleges</h2>
               <p>
                 Al Jamia offers good academic programs with a few
@@ -77,7 +79,11 @@ const CoursePage = () => {
               <div className="portfolio">
                 <div className="portfolio-container">
                   {cardValues?.map((course) => (
-                    <Card className="portfolio-card shadow-sm" key={course.id}>
+                    <Card
+                      className="portfolio-card shadow-sm"
+                      key={course.id}
+                      data-aos="flip-left"
+                    >
                       <Card.Img
                         variant="top"
                         className="portfolio-modal-images"
@@ -190,6 +196,8 @@ const CoursePage = () => {
             <Centre_for_hr_main />
             <Centre_for_research_main />
             <Faculty_mail />
+            <Students_Council_main />
+            
           </Container>
         </div>
       </div>

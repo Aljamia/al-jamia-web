@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="about-Title pt-4">
           <h1 className="pt-5">Welcome to Al Jamia al Islamiya</h1>
         </div>
@@ -28,7 +28,7 @@ const About = () => {
       </div>
 
       <div className="school-img">
-        <div className="btn">
+        <div className="btn" data-aos="flip-left">
           <Link href="/about">
             <button>
               {" "}
@@ -52,7 +52,7 @@ const About = () => {
             </button>
           </Link>
         </div>
-        <div className="image">
+        <div className="image" data-aos="fade-up">
           <img src="image 7.png" alt="photo" width="100%" />
         </div>
       </div>
