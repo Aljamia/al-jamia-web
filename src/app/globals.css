@@ -90,16 +90,16 @@ body p {
 
 .btn-primary-faculties {
   position: relative;
-  top: 15px;
+  top: 5px;
   color: #4f4d4d;
   background-color: rgb(237, 235, 235);
   font-family: unset;
   outline: none;
   border: none;
-  font-size: 14px;
+  font-size: xx-small;
   font-style: normal;
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
   padding: 3px 10px;
   width: 50%;
   transform: translate(50%, -50%);
@@ -240,7 +240,7 @@ body p {
 }
 
 .faculties-card img {
-  height: 25vh;
+  height: 20vh;
 
 }
 

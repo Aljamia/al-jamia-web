@@ -22,7 +22,7 @@ const ContactUs = () => {
       <div className="contact-header-items">
         <Container>
           <Row>
-            <Col xl={6}>
+            <Col xl={6} data-aos="fade-right">
               <div className="contact-header-left">
                 <div className="contact-header-title">
                   <h1 className="h1style">Contact us</h1>
@@ -91,7 +91,7 @@ const ContactUs = () => {
                 </form>
               </div>
             </Col>
-            <Col xl={6}>
+            <Col xl={6} data-aos="fade-left">
               <div className="contact-header-map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2670557627926!2d76.22156737457779!3d11.018578854681394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cd2a01624cbd%3A0xacc202556b7e348d!2sAl%20Jamia%20Al%20Islamiya!5e0!3m2!1sen!2sin!4v1690781859394!5m2!1sen!2sin"
@@ -112,13 +112,13 @@ const ContactUs = () => {
       <div className="pt-5">
         <Container>
           <Row>
-            <Col xl={4}>
+            <Col xl={4} data-aos="zoom-in-down">
               <div className="addres_box">
                 <img src="location_icon.svg" />
                 <p>Santhapuram (PO). Pattikkad 673 325, Malappuram, Kerala</p>
               </div>
             </Col>
-            <Col xl={4}>
+            <Col xl={4} data-aos="zoom-in-down">
               <div className="addres_box">
                 <img src="mail_icon.svg" />
                 <p>
@@ -127,12 +127,12 @@ const ContactUs = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={4}>
+            <Col xl={4} data-aos="zoom-in-down">
               <div className="addres_box">
                 <img src="call_icon.svg" />
                 <p>
-                00914933 270439 ,
-                    <br />  00914933 270565{" "}
+                  00914933 270439 ,
+                  <br /> 00914933 270565{" "}
                 </p>
               </div>
             </Col>

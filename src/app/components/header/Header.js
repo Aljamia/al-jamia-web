@@ -108,7 +108,7 @@ function Main_navebar() {
                 show={hovered === "Academics"}
               >
                 <NavDropdown.Item href="/colleges">Colleges</NavDropdown.Item>
-                <NavDropdown.Item href="/Centre_for_it">
+                {/* <NavDropdown.Item href="/Centre_for_it">
                   Centre for Information Technology
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Centre_for_hr">
@@ -117,7 +117,7 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Centre_for_research">
                   Centre for Research & Academic Excellence
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Faculty">Faculty</NavDropdown.Item>
+                <NavDropdown.Item href="/Faculty">Faculty</NavDropdown.Item> */}
                 <NavDropdown.Item href="/Activities_Centre">
                   Al Jamia Students Activities Centre
                 </NavDropdown.Item>
@@ -127,9 +127,9 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Research_Academic">
                   Al Jamia Centre for Research & Academic Excellence
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Students_Council">
+                {/* <NavDropdown.Item href="/Students_Council">
                   Students Council
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
 
               <NavDropdown
