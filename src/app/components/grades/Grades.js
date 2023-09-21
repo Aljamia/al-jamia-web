@@ -34,13 +34,18 @@ const Grades = () => {
   }, [studentsCount, programsCount, facultiesCount, alumniCount]);
 
   return (
-    <div className="grades">
-      <div className="about-Title">
+    <div className="grades"  data-aos="fade-up">
+      <div className="about-Title" >
         <h1>Our Success</h1>
-        <hr/>
+        <hr />
       </div>
-   
-      <div className="grades-items">
+      <p className="center_div">
+        Al Jamia offers good academic programs with a few specializations to
+        meet the needs of both the Nation and Society. It includes the
+        Preparatory program, two Bachelor programs, three Masters programs and
+        one Diploma program.
+      </p>
+      <div className="grades-items"  data-aos="fade-up">
         <div className="grid-items">
           {/* <Image
             src="/Group 2059.svg"

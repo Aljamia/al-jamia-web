@@ -115,7 +115,7 @@ const ContactUs = () => {
             <Col xl={4}>
               <div className="addres_box">
                 <img src="location_icon.svg" />
-                <p>SANTHAPURAM , P.O. PATTIKKAD 679 325, MALAPPURAM ,KERALA </p>
+                <p>Santhapuram (PO). Pattikkad 673 325, Malappuram, Kerala</p>
               </div>
             </Col>
             <Col xl={4}>
@@ -131,7 +131,8 @@ const ContactUs = () => {
               <div className="addres_box">
                 <img src="call_icon.svg" />
                 <p>
-                  00914933 – 27043900 <br /> 914933 – 270565{" "}
+                00914933 270439 ,
+                    <br />  00914933 270565{" "}
                 </p>
               </div>
             </Col>

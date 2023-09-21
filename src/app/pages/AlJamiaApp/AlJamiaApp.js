@@ -10,7 +10,7 @@ function AlJamiaApp() {
       <div className="app_bg">
         <Container>
           <Row>
-            <Col xl={4} lg={4} xs={12}>
+            <Col xl={4} lg={4} xs={12}  data-aos="fade-right">
               <h1 className="app_head">Click</h1>
               <div className="app_icon">
                 <Link
@@ -29,7 +29,7 @@ function AlJamiaApp() {
               </div>
             </Col>
 
-            <Col xl={4} lg={4} xs={12}>
+            <Col xl={4} lg={4} xs={12} data-aos="fade-up">
               <h1 className="app_head">Login</h1>
               <div className="app_icon">
                 <Link
@@ -48,7 +48,7 @@ function AlJamiaApp() {
               </div>
             </Col>
 
-            <Col xl={4} lg={4} xs={12}>
+            <Col xl={4} lg={4} xs={12} data-aos="fade-left">
               <h1 className="app_head">Download App</h1>
               <div className="app_icon">
                 <Link

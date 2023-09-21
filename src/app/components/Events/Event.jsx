@@ -69,18 +69,24 @@ const Event = () => {
 
   return (
     <div>
-      <div className="events-section ">
+      <div className="events-section" >
         <div className="event-title">
-          <div className="about-Title">
+          <div className="about-Title" data-aos="fade-up">
             <h1>News and Events</h1>
           </div>
-        <hr/>
+          <hr />
+          <p className="center_div" data-aos="fade-up">
+            Al Jamia offers good academic programs with a few specializations to
+            meet the needs of both the Nation and Society. It includes the
+            Preparatory program, two Bachelor programs, three Masters programs
+            and one Diploma program.
+          </p>
         </div>
         <div></div>
         <div className="event-first-section p-1">
           <Container>
             <Row>
-              <Col xl={5}>
+              <Col xl={5} data-aos="fade-right">
                 <div className="event-img pt-3">
                   <img
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
@@ -109,7 +115,7 @@ const Event = () => {
                 </div>
               </Col>
 
-              <Col xl={7} className="pt-3">
+              <Col xl={7} className="pt-3" data-aos="fade-left">
                 <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
                     {events.map((event) => (

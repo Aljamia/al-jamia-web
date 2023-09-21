@@ -21,15 +21,11 @@ function Centre_for_research_main() {
   {
     return (
       <div>
-
-
         <div className="AboutUspage-items">
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-             
-
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -50,7 +46,7 @@ function Centre_for_research_main() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/vision.png"
@@ -63,12 +59,10 @@ function Centre_for_research_main() {
                     />
                   </div>
                 </Col>
-
               </Row>
             </Container>
           </div>
         </div>
-
       </div>
     );
   }

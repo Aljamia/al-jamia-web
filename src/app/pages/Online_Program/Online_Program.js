@@ -36,7 +36,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}>
+                <Col xl={12} lg={12} xs={12} data-aos="fade-up">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -81,7 +81,7 @@ function Online_Program() {
                   </h1>
 
                   <div className="row pb-5">
-                    <div className="column">
+                    <div className="column" data-aos="flip-down">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-video"></i>
@@ -89,7 +89,7 @@ function Online_Program() {
                         <h3>Pre-recorded video lessons </h3>
                       </div>
                     </div>
-                    <div className="column">
+                    <div className="column" data-aos="flip-down">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-pen"></i>
@@ -97,7 +97,7 @@ function Online_Program() {
                         <h3>Content summary notes </h3>
                       </div>
                     </div>
-                    <div className="column">
+                    <div className="column" data-aos="flip-down">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-book"></i>
@@ -105,7 +105,7 @@ function Online_Program() {
                         <h3>Reference materials</h3>
                       </div>
                     </div>
-                    <div className="column">
+                    <div className="column" data-aos="flip-down">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-eye"></i>
@@ -113,7 +113,7 @@ function Online_Program() {
                         <h3>Interactive live sessions</h3>
                       </div>
                     </div>
-                    <div className="column">
+                    <div className="column" data-aos="flip-down">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-file"></i>
@@ -121,7 +121,7 @@ function Online_Program() {
                         <h3>Assignments and assessment modules </h3>
                       </div>
                     </div>
-                    <div className="column">
+                    <div className="column" data-aos="flip-down">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-award"></i>
@@ -144,7 +144,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/vision.png"
@@ -158,7 +158,7 @@ function Online_Program() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -194,7 +194,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -231,7 +231,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/vision.png"
@@ -253,7 +253,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}>
+                <Col xl={12} lg={12} xs={12} data-aos="fade-left">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -277,7 +277,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}>
+                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -326,7 +326,7 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}>
+                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/vision.png"
@@ -348,7 +348,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}>
+                <Col xl={12} lg={12} xs={12} data-aos="fade-left">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -367,7 +367,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}>
+                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -387,7 +387,7 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
                   <div className="AboutUspage-mission-img mt-5">
                     <h1 className="objectives_Head"> Special offer:</h1>
                     Students who enrolled and COMPLETED five modules of the
@@ -404,7 +404,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}>
+                <Col xl={12} lg={12} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -443,7 +443,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}>
+                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -473,7 +473,7 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/vision.png"
@@ -495,7 +495,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}>
+                <Col xl={12} lg={12} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -525,7 +525,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}>
+                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -567,7 +567,7 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/vision.png"
@@ -589,7 +589,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}>
+                <Col xl={12} lg={12} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -619,7 +619,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}>
+                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -655,7 +655,7 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}>
+                <Col xl={6} lg={12} xs={12} data-aos="fade-left">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/vision.png"

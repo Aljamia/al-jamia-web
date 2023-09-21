@@ -21,10 +21,10 @@ function Recognition_Awards_data() {
             />
 
             <section>
-              <h1 class="TitleStyle center_aln pt-2 pb-2">
+              <h1 class="TitleStyle center_aln pt-2 pb-2" data-aos="fade-up">
                 Recognition Awards
               </h1>
-              <p>
+              <p data-aos="fade-up">
                 We take immense pride in celebrating the achievements of our
                 remarkable alumni. Our Alumni Recognition & Awards program
                 acknowledges outstanding accomplishments in various fields. It's
@@ -41,21 +41,6 @@ function Recognition_Awards_data() {
                 </Row>
               </Container>
             </section>
-
-            <h1 class="TitleStyle">
-              <hr />
-              Our Publications
-            </h1>
-            <p>
-              Our alumni continue to inspire through their stories, research,
-              and expertise. Alumni Publications is our way of sharing their
-              valuable insights, accomplishments, and knowledge with the world.
-              Explore these publications to stay connected with our alumni
-              community and stay informed about their diverse contributions
-              across different domains
-            </p>
-
-            <Publications_books />
           </Row>
         </Container>
       </div>

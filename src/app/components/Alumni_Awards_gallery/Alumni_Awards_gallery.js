@@ -22,7 +22,7 @@ const Alumni_Awards_gallery = () => {
       <>
         <div className="gallery">
           <div className="gallery__column">
-            <figure className="gallery__thumb">
+            <figure className="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[0]?.image}`}
                 width={300}
@@ -36,7 +36,7 @@ const Alumni_Awards_gallery = () => {
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[1]?.image}`}
                 width={270}
@@ -49,7 +49,7 @@ const Alumni_Awards_gallery = () => {
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[2]?.image}`}
                 width={350}
@@ -64,7 +64,7 @@ const Alumni_Awards_gallery = () => {
           </div>
 
           <div class="gallery__column">
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[3]?.image}`}
                 width={350}
@@ -77,7 +77,7 @@ const Alumni_Awards_gallery = () => {
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[4]?.image}`}
                 width={300}
@@ -90,7 +90,7 @@ const Alumni_Awards_gallery = () => {
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[5]?.image}`}
                 width={200}
@@ -105,7 +105,7 @@ const Alumni_Awards_gallery = () => {
           </div>
 
           <div class="gallery__column">
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[6]?.image}`}
                 width={350}
@@ -118,7 +118,7 @@ const Alumni_Awards_gallery = () => {
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[7]?.image}`}
                 width={350}
@@ -131,7 +131,7 @@ const Alumni_Awards_gallery = () => {
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[8]?.image}`}
                 width={350}
@@ -146,7 +146,7 @@ const Alumni_Awards_gallery = () => {
           </div>
 
           <div class="gallery__column">
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[9]?.image}`}
                 width={350}
@@ -159,7 +159,7 @@ const Alumni_Awards_gallery = () => {
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[10]?.image}`}
                 width={350}
@@ -172,7 +172,7 @@ const Alumni_Awards_gallery = () => {
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure class="gallery__thumb" data-aos="fade-up">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[11]?.image}`}
                 width={350}
