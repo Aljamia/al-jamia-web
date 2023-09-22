@@ -50,7 +50,7 @@ const CarouselComponent = () => {
             <source src="/videoplayback.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="carousel-overlay ">
+          {/* <div className="carousel-overlay ">
             <Slider ref={(slider) => (slider = slider)} {...settings}>
               <div className="carousel-para">
                 <p className="animate__bounceIn">
@@ -68,7 +68,7 @@ const CarouselComponent = () => {
                 </p>
               </div>
             </Slider>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
