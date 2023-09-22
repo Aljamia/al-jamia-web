@@ -23,13 +23,14 @@ const Publications_books = () => {
   };
   // Fetch the API data on component mount using Axios
   useEffect(() => {
-    axios
-      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/department")
-      .then((response) => {
-        setCardValues(response.data?.response);
-        console.log("department data", response.data?.response); // Log the data to the console
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+    const callMe = async () => {
+      const resp = await axios.get(
+        "https://aljamia-hgtgv.ondigitalocean.app/api/v1/department"
+      );
+      console.log({ resp });
+    };
+
+    callMe();
   }, []);
 
   // ... (the rest of your settings and useEffect code)

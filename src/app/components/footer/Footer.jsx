@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
-// import "./aos.css";
+import "./aos.css";
 import "./cssanimation.min.css";
 import "./all.min.css";
-// import AOS from "aos";
+import AOS from "aos";
 // import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,11 +17,12 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
-  // AOS.init({
-  //   duration: 800,
-  //   easing: "ease-in-out",
-  //   once: true,
-  // });
+
+  AOS.init({
+    duration: 800,
+    easing: "ease-in-out",
+    once: true,
+  });
 
   const handleScroll = () => {
     if (window.scrollY > 100) {

@@ -26,6 +26,7 @@ const AboutUs = () => {
     const fetchGallery = async () => {
       const data = await getAboutUsGallery();
       setGallery(data?.response);
+      console.log('ghgg',setGallery)
     };
     fetchAbout();
     fetchGallery();
