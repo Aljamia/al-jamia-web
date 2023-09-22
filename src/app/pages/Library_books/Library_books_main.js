@@ -1,16 +1,14 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import axios from "axios";
+import "./Library_books_main.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Col, Row, Card, Modal } from "react-bootstrap";
-import Main_navebar from "../header/Header";
-import Image from "next/image";
-import Footer from "../footer/Footer";
-const Publications_books = () => {
+import Link from "next/link";
+
+const Library_books_main = () => {
   const [show, setShow] = useState(false);
   const [modalVal, setModalVal] = useState(false);
   const [cardValues, setCardValues] = useState([]);
@@ -72,32 +70,18 @@ const Publications_books = () => {
   return (
     <div>
       <div className="AboutUspage">
-        <Main_navebar />
-        {/* <PageHeader /> */}
-
-        <div className="AboutUspage-img">
-          <Image
-            src="/image 7.png"
-            layout="responsive"
-            width={1000}
-            height={500}
-            alt="Image"
-          />
-        </div>
-
         <div className="department-section events-section">
           <div className="container">
             <h1 class="TitleStyle">
               <hr />
-              Our Publications
+              New Arrivals
             </h1>
             <p>
-              Our alumni continue to inspire through their stories, research,
-              and expertise. Alumni Publications is our way of sharing their
-              valuable insights, accomplishments, and knowledge with the world.
-              Explore these publications to stay connected with our alumni
-              community and stay informed about their diverse contributions
-              across different domains
+              Excitement fills the air as our library welcomes its newest
+              additions. Our collection is constantly evolving to offer you the
+              latest and greatest. Whether you're seeking inspiration,
+              information, or simply a great read, our new arrivals section is
+              the place to explore.
             </p>
 
             <Slider {...settings}>
@@ -119,13 +103,21 @@ const Publications_books = () => {
                 </div>
               ))}
             </Slider>
+          </div>{" "}
+          <div className="explore-btn ">
+            <Link
+              href="https://library.aljamia.in/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <h5>Explore More</h5>
+            </Link>
           </div>
         </div>
-        <div className="mb-5"></div>
-        <Footer />
+        <div className="mb-5"> </div>
       </div>
     </div>
   );
 };
 
-export default Publications_books;
+export default Library_books_main;
