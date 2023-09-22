@@ -7,7 +7,7 @@ import React, { useState, useEffect } from "react";
 import "./Footer.css";
 // import "./aos.css";
 // import "./cssanimation.min.css";
-// import "./all.min.css";
+import "./all.min.css";
 // import AOS from "aos";
 // import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
@@ -57,11 +57,11 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      {/* <link
+      {/*  <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       />
-      <link
+       <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
         rel="stylesheet"
       />
