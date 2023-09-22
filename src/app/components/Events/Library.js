@@ -38,7 +38,6 @@ const Library = () => {
                     target="blank"
                     style={{ textDecoration: "none", color: "white" }}
                   >
-                    {" "}
                     <button>
                       {" "}
                       <div className="icon_arrow_abt">
