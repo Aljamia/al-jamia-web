@@ -17,7 +17,6 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
-
   // AOS.init({
   //   duration: 800,
   //   easing: "ease-in-out",
