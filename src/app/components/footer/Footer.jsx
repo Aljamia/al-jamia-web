@@ -258,7 +258,6 @@ const Footer = () => {
       >
         <i className="fa fa-chevron-up"></i>
       </div>
-
       {/*       
       <Container className="footer-contents">
         <Row>
