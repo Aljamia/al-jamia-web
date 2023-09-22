@@ -69,17 +69,17 @@ const Event = () => {
 
   return (
     <div>
-      <div className="events-section" >
+      <div className="events-section">
         <div className="event-title">
           <div className="about-Title" data-aos="fade-up">
             <h1>News and Events</h1>
           </div>
           <hr />
-          <p className="center_div" data-aos="fade-up">
-            Al Jamia offers good academic programs with a few specializations to
-            meet the needs of both the Nation and Society. It includes the
-            Preparatory program, two Bachelor programs, three Masters programs
-            and one Diploma program.
+          <p className="center_div pl-4  pr-4" data-aos="fade-up">
+            Discover Al Jamia Al Islamiya latest news and events, celebrating
+            academic excellence and vibrant campus life. Stay informed about our
+            enriching activities, workshops, and more, contributing to holistic
+            education and character development
           </p>
         </div>
         <div></div>

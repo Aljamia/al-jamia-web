@@ -1,16 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useEffect, useState } from "react";
-import Slider from "react-slick";
 import axios from "axios";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Col, Row, Card, Modal } from "react-bootstrap";
-import Main_navebar from "../header/Header";
+import Main_navebar from "../Main_navebar/Main_navebar";
 import Image from "next/image";
-import Footer from "../footer/Footer";
-const Publications_books = () => {
+import Footer from "@/app/components/footer/Footer";
+import Library_books_main from "../Library_books/Library_books_main";
+
+const New_Arrivals = () => {
   const [show, setShow] = useState(false);
   const [modalVal, setModalVal] = useState(false);
   const [cardValues, setCardValues] = useState([]);
@@ -84,43 +84,8 @@ const Publications_books = () => {
             alt="Image"
           />
         </div>
+        <Library_books_main />
 
-        <div className="department-section events-section">
-          <div className="container">
-            <h1 class="TitleStyle">
-              <hr />
-              Our Publications
-            </h1>
-            <p>
-              Our alumni continue to inspire through their stories, research,
-              and expertise. Alumni Publications is our way of sharing their
-              valuable insights, accomplishments, and knowledge with the world.
-              Explore these publications to stay connected with our alumni
-              community and stay informed about their diverse contributions
-              across different domains
-            </p>
-
-            <Slider {...settings}>
-              {cardValues.map((department) => (
-                <div className="box m-2" key={department.id}>
-                  <div className="caro-img">
-                    <img src="book1.png" alt="" />
-                  </div>
-                  <div className="caro-items">
-                    <h4 className="caro-des">Book Name</h4>
-                    <p className="caro-paragraph">Joanne Schultz</p>
-                    {/* <div className="More_btn2">
-                    <button onClick={() => handleShow(department)}>
-                      More Details
-                    </button>
-
-                  </div> */}
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
         <div className="mb-5"></div>
         <Footer />
       </div>
@@ -128,4 +93,4 @@ const Publications_books = () => {
   );
 };
 
-export default Publications_books;
+export default New_Arrivals;

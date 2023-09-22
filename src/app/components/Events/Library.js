@@ -12,7 +12,7 @@ const Library = () => {
         </div>
         <Container className="headlibrary">
           <div class="row">
-            <div class="col-sm-6"  data-aos="fade-left">
+            <div class="col-sm-6" data-aos="fade-left">
               <div className="library">
                 <div class="director-heading">
                   <h1>Central Library</h1>
@@ -26,8 +26,8 @@ const Library = () => {
                     it boasts a unique digital reference library with access to
                     millions of books. The collection mainly comprises books in
                     Arabic, English, Malayalam, and Urdu, but it also includes
-                    separate shelves for books in Hindi, Bengali,
-                    Tamil, and Kannada.
+                    separate shelves for books in Hindi, Bengali, Tamil, and
+                    Kannada.
                   </p>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const Library = () => {
                 </div>
               </div>
             </div>
-            <div class="col-sm-6"  data-aos="fade-right">
+            <div class="col-sm-6" data-aos="fade-right">
               <div className="image pt-3">
                 <img src="library.png" alt="photo" width="100%" />
               </div>

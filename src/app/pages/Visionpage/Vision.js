@@ -57,7 +57,10 @@ function Vision() {
                     {/* {about[0]?.mission} */}
 
                     <ul className="blog-details-list mt-30">
-                      <li data-aos="fade-left">{about[0]?.mission}</li>
+                      <li data-aos="fade-left">
+                        To produce the sufficient number of scholars competent
+                        in Islamic as well as temporal branches of knowledge.
+                      </li>
                       <li data-aos="fade-left">
                         To produce empowered men and women with firm faith in
                         God, capable of discharging their responsibilities in
