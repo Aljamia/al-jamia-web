@@ -1,12 +1,11 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./Courses.css";
 import Link from "next/link";
 import { getCourse } from "@/app/hooks/UseApi";
 import { Modal } from "react-bootstrap";
-import { FaArrowRight } from "react-icons/fa6";
 
 const Courses = () => {
   const [show, setShow] = useState(false);
