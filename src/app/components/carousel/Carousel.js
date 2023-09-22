@@ -1,48 +1,73 @@
-import React, { useRef, useState } from "react";
-import Header from "../header/Header";
-import YouTube from "react-youtube";
 import "./Carousel.css";
+import Header from "../header/Header";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { useEffect, useRef } from "react";
 
 const CarouselComponent = () => {
-  const playerRef = useRef(null);
+  const sliderRef = useRef(null);
+  const slideDuration = 6000; // Adjust the slide duration (in milliseconds)
 
-  const opts = {
-    playerVars: {
-      autoplay: 1,
-      loop: 1,
-      controls: 0,
-      mute: 1,
-      rel: 0,
-      disablekb: 1,
-      fs: 1, // Allow fullscreen
-      showinfo: 0, // Hide video title
-      modestbranding: 1, // Reduce the YouTube logo to a small watermark
-    },
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      if (sliderRef.current) {
+        sliderRef.current.slickNext();
+      }
+    }, slideDuration);
+
+    return () => {
+      clearInterval(slideInterval);
+    };
+  }, []);
+  const settings = {
+    dots: false,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    pauseOnHover: false,
+    nextArrow: false,
+    prevArrow: false,
   };
-
-  const videoId = "Aop2vKroDwo";
-
-  const onEndHandler = (event) => {
-    event.target.playVideo();
-  };
-
   return (
     <div className="header">
-      <Header />
+      <Header /> {/*imported navbar from header */}
       <div className="header-contents">
         <div className="header-video">
-          <YouTube
-            videoId={videoId}
-            opts={{
-              ...opts,
-              playerVars: {
-                ...opts.playerVars,
-                fs: 1, // Allow fullscreen
-              },
-            }}
-            onEnd={onEndHandler}
-            ref={playerRef}
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="fullscreen-video"
+            style={{ width: "100%" }}
+          >
+            <source src="/videoplayback.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="carousel-overlay ">
+            <Slider ref={(slider) => (slider = slider)} {...settings}>
+              <div className="carousel-para">
+                <p className="animate__bounceIn">
+                  Resolve The Campaign with our pleasure everyone
+                </p>
+              </div>
+              <div className="carousel-para">
+                <p className="animate__bounceIn">
+                  Welcome To Al-jamia member everyone Lorem
+                </p>
+              </div>
+              <div className="carousel-para ">
+                <p className="animate__bounceIn">
+                  This is a wonderful occation to have you all join us
+                </p>
+              </div>
+            </Slider>
+          </div>
         </div>
       </div>
     </div>
