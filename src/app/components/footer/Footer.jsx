@@ -1,4 +1,8 @@
 "use client";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 // import "./aos.css";
@@ -10,6 +14,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
   const [isVisible, setIsVisible] = useState(false);
 
   const scrollToTop = () => {
