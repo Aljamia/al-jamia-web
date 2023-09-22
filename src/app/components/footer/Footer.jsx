@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
-// import AOS from "aos";
+import "./aos.css";
+import "./cssanimation.min.css";
+// import "./all.min.css";
+
+import AOS from "aos";
+import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,11 +19,11 @@ const Footer = () => {
     });
   };
 
-  // AOS.init({
-  //   duration: 800,
-  //   easing: "ease-in-out",
-  //   once: true,
-  // });
+  AOS.init({
+    duration: 800,
+    easing: "ease-in-out",
+    once: true,
+  });
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -45,7 +50,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <link
+      {/* <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       />
@@ -61,8 +66,7 @@ const Footer = () => {
       <link
         href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
         rel="stylesheet"
-      />
-      {/* <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js" /> */}
+      /> */}
 
       <footer id="footer">
         <div className="container">
