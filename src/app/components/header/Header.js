@@ -141,7 +141,13 @@ function Main_navebar() {
                 show={hovered === "The Library"}
               >
                 <NavDropdown.Item href="/centralibrary">
+                  Center Libary{" "}
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/Digitallibrary">
                   Digital Library
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/New_Arrivals">
+                  New Arrivals
                 </NavDropdown.Item>
                 {/* <NavDropdown.Item href="/">Catalogue</NavDropdown.Item>
                 <NavDropdown.Item href="/">New Arrivals</NavDropdown.Item>

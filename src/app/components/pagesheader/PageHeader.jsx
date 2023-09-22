@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "../../pages/Main_navebar/Main_navebar.css";
@@ -138,10 +139,16 @@ function Main_navebar() {
                 show={hovered === "The Library"}
               >
                 <NavDropdown.Item href="/centralibrary">
+                  Center Libary{" "}
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/Digitallibrary">
                   Digital Library
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/New_Arrivals">
+                  New Arrivals
+                </NavDropdown.Item>
+
                 {/* <NavDropdown.Item href="/">Catalogue</NavDropdown.Item>
-                <NavDropdown.Item href="/">New Arrivals</NavDropdown.Item>
                 <NavDropdown.Item href="/">Library Service</NavDropdown.Item>
                 <NavDropdown.Item href="/">Donate Books</NavDropdown.Item>
                 <NavDropdown.Item href="/">Heritage</NavDropdown.Item>

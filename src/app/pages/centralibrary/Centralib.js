@@ -6,6 +6,8 @@ import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Link from "next/link";
+import Library_books from "../Library_books/Library_books";
+import Library_books_main from "../Library_books/Library_books_main";
 
 const Centralib = () => {
   return (
@@ -85,11 +87,22 @@ const Centralib = () => {
                 using the library browsing system.
               </p>
             </Container>
+
+            {/* <Container className="AboutUspage-short-desc">
+              <div className="AboutUspage-header m-0 p-3" data-aos="fade-up">
+                <div className="AboutUspage-title">Catalogue</div>
+              </div>
+              <p data-aos="fade-up">
+               Our library catalogue simplifies access to a world of knowledge. It's your key to books, journals, 
+and digital resources - all at your fingertips. Explore, learn, and grow with ease
+              </p>
+            </Container> */}
           </>
         </div>
-        {/* <div className="AboutUspage-items">
-          <h2 className="central-lib-title">Explore The Our Publications</h2>
-          <Container>
+
+        <div className="AboutUspage-items">
+          <Library_books_main />
+          {/* <Container>
             <Row>
               <div className="central-lib-cards">
                 <Card
@@ -142,16 +155,8 @@ const Centralib = () => {
                 </Card>
               </div>
             </Row>
-          </Container>
-          <div className="explore-btn">
-            <Link
-              href="https://library.aljamia.in/"
-              style={{ textDecoration: "none" }}
-            >
-              <h5>Explore More</h5>
-            </Link>
-          </div>
-        </div> */}
+          </Container> */}
+        </div>
 
         <Footer />
       </div>

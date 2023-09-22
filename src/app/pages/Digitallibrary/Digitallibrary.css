@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
+
+:root {
+    /* color */
+    --white-color: #ffffff;
+    --light-green-color: #619a46;
+    --goldish-color: #cca65d;
+
+    /* fonts */
+    --font-inter: "Inter", sans-serif;
+    --font-PT-serif: "PT Serif", serif;
+}
+
+.AboutUspage-header {
+    padding: 4em;
+    margin-top: 8em;
+    text-align: center;
+}
+
+.AboutUspage-title {
+    color: var(--light-green-color);
+    font-family: unset;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
+}
+
+.AboutUspage-desc {
+    color: var(--gray, #555);
+    font-family: unset;
+    font-size: medium;
+    font-style: normal;
+    text-align: justify;
+    margin-top: 1.5em;
+    padding: 1em;
+    font-weight: 400;
+    line-height: 160%;
+    /* 39px */
+}
+
+.AboutUspage-long-desc {
+    margin-top: 2em;
+    text-align: justify;
+
+}
+
+.AboutUspage-items {
+    background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+    margin-top: 3em;
+}
+
+.central-lib-title {
+    text-align: center;
+    font-family: unset;
+    color: var(--light-green-color);
+    font-size: 40px;
+    padding: 1em;
+    font-weight: 200;
+}
+
+.central-lib-cards {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.central-lib__carditems {
+    margin: 10px;
+}
+
+.explore-btn {
+    width: 13%;
+    height: auto;
+    margin: auto;
+    background: #cca65d;
+    padding: 10px 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.explore-btn:hover {
+    background-color: #ddae56;
+}
+
+.explore-btn h5 {
+    font-family: unset;
+    color: #ffffff;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    .AboutUspage-header {
+        margin-top: 2em;
+    }
+
+    .AboutUspage-title {
+        font-size: 30px;
+    }
+
+    .AboutUspage-vision {
+        flex-direction: column;
+    }
+
+    .AboutUspage-vision-title {
+        font-size: 30px;
+        margin-top: -0.5em;
+    }
+
+    .AboutUspage-mission-title {
+        font-size: 30px;
+    }
+
+    .AboutUspage-vision-desc {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 0.2em;
+        text-align: justify;
+    }
+
+    .AboutUspage-campus-title {
+        font-size: 30px;
+    }
+
+    .AboutUspage-mission-img {
+        margin-top: 0px;
+    }
+
+    .central-lib-title {
+        text-align: center;
+        font-family: unset;
+        color: var(--light-green-color);
+        font-size: medium;
+        padding: 0.5em;
+        font-weight: 200;
+    }
+
+    .explore-btn {
+        width: 50%;
+        margin: auto;
+        background: #cca65d;
+        padding: 3px 20px;
+        margin-top: 5px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .explore-btn h5 {
+        color: #ffffff;
+        font-size: 14px;
+    }
+}

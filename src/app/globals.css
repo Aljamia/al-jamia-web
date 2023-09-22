@@ -1213,7 +1213,7 @@ h3 {
   overflow: hidden;
 
   margin: 0;
-  padding-bottom: 50px !important;
+  margin-bottom: 50px !important;
 }
 
 .slick-list:focus {

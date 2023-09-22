@@ -9,7 +9,7 @@ import Library from "@/app/components/Events/Library";
 import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 
-const academics = () => {
+const Academics = () => {
   return (
     <div>
       <PageHeader />
@@ -147,4 +147,4 @@ const academics = () => {
   );
 };
 
-export default academics;
+export default Academics;

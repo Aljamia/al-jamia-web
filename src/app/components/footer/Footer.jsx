@@ -1,15 +1,22 @@
-import React, { useState, useEffect } from "react";
-import "./Footer.css";
-import "./aos.css";
-import "./cssanimation.min.css";
-// import "./all.min.css";
+"use client";
 
 import AOS from "aos";
-import { Container, Row, Col } from "react-bootstrap";
+import "aos/dist/aos.css";
+
+import React, { useState, useEffect } from "react";
+import "./Footer.css";
+// import "./aos.css";
+// import "./cssanimation.min.css";
+import "./all.min.css";
+// import AOS from "aos";
+// import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
   const [isVisible, setIsVisible] = useState(false);
 
   const scrollToTop = () => {
@@ -50,11 +57,11 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      {/* <link
+      {/*  <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       />
-      <link
+       <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
         rel="stylesheet"
       />
@@ -259,111 +266,6 @@ const Footer = () => {
       >
         <i className="fa fa-chevron-up"></i>
       </div>
-
-      {/*       
-      <Container className="footer-contents">
-        <Row>
-          <Col lg={6}>
-            <div>
-              <Image
-                src="/aljamiya_logo.png"
-                width={350}
-                height={80}
-                alt="Picture of the author"
-                className="footer-logo"
-              />
-              <p className="footer-desc">
-                Al Jamia Arts and Science College (AJAS), a resourceful
-                destination for higher studies in the region, was established in
-                2010 with the main objective of uplifting the educationally
-                developing Muslims and other communities.
-              </p>
-            </div>
-          </Col>
-        
-          <Col lg={6}>
-            <div className="footer-contact">
-              <h2>Contact</h2>
-              <p>
-                <span className="">
-                  <FaPhone />{" "}
-                </span>
-                00914933 – 270439 - 00914933 – 270565
-              </p>
-
-              <p>
-                <span>
-                  {" "}
-                  <FaEnvelope />
-                </span>{" "}
-                mail@aljamia.net
-              </p>
-              <p className="footer-location">
-                <span>
-                  {" "}
-                  <FaLocationDot />
-                </span>
-                AL JAMIA AL ISLAMIYA SANTHAPURAM P.O.
-              </p>
-              <p className="footer-address">
-                {" "}
-                PATTIKKAD –679 325 MALAPPURAM DISTRICT, KERALA – INDIA.{" "}
-              </p>
-            </div>
-          </Col>
-        </Row>
-
-        <hr className="footer-line" />
-      </Container>
-
-      <div className="footer-end">
-        <Container>
-          <Row>
-            <Col xs={12} lg={6} sm={12}>
-              <p className="footer-copyright">
-                © 2023 Al Jamia Al Islamiya{" "}
-                <Link
-                  href="/"
-                  target="blank"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  {" "}
-                  Privacy{" "}
-                </Link>{" "}
-                | Powered by
-                <Link
-                  href="https://datahex.in/"
-                  className="datahex-link"
-                  target="blank"
-                >
-                  DataHex
-                </Link>
-              </p>
-            </Col>
-            <Col xs={12} lg={6} sm={12} className="footer-social-icons">
-              <span>
-                <Link href="/" className="footer-social-icons-list">
-                  <FaFacebook />
-                </Link>
-              </span>
-              <span>
-                <Link href="/" className="footer-social-icons-list">
-                  <FaTwitter />
-                </Link>
-              </span>
-              <span>
-                <Link href="/" className="footer-social-icons-list">
-                  <FaInstagram />
-                </Link>
-              </span>
-              <span>
-                <Link href="/" className="footer-social-icons-list">
-                  <FaLinkedin />
-                </Link>
-              </span>
-            </Col>
-          </Row>
-        </Container> */}
     </div>
   );
 };

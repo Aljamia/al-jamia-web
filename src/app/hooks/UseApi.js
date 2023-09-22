@@ -77,3 +77,7 @@ export const getNotification = async () => {
   const response = await axios.get(`${BASE_URL}/notification`);
   return response.data;
 };
+export const getpublication = async () => {
+  const response = await axios.get(`${BASE_URL}/publication`);
+  return response.data;
+};
