@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./Event.css";
@@ -26,7 +27,7 @@ const Library = () => {
                     millions of books. The collection mainly comprises books in
                     Arabic, English, Malayalam, and Urdu, but it also includes
                     separate shelves for books in Hindi, Bengali,
-                    Tamil, and Kannada.
+                    Tamil, and Kannada.
                   </p>
                 </div>
               </div>

@@ -11,7 +11,7 @@ import Library from "../components/Events/Library";
 import "../globals.css";
 import AlJamiaApp from "../pages/AlJamiaApp/AlJamiaApp";
 import CareerLink from "../pages/CareerLink/CareerLink";
-import SliderBanner from "../components/SliderBanner/SliderBanner";
+// import SliderBanner from "../components/SliderBanner/SliderBanner";
 
 const LandingPage = () => {
   return (

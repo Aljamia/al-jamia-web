@@ -1,3 +1,4 @@
+"use client";
 import "./Carousel.css";
 import Header from "../header/Header";
 import "slick-carousel/slick/slick.css";
