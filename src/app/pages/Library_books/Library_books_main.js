@@ -79,7 +79,7 @@ const Library_books_main = () => {
             <p>
               Excitement fills the air as our library welcomes its newest
               additions. Our collection is constantly evolving to offer you the
-              latest and greatest. Whether you're seeking inspiration,
+              latest and greatest. Whether you re seeking inspiration,
               information, or simply a great read, our new arrivals section is
               the place to explore.
             </p>
