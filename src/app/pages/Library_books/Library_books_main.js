@@ -92,7 +92,7 @@ const Library_books_main = () => {
                   </div>
                   <div className="caro-items">
                     <h4 className="caro-des">Book Name</h4>
-                    <p className="caro-paragraph">Joanne Schultz</p>
+                    <p className="caro-paragraph">Schultz Joanne</p>
                     {/* <div className="More_btn2">
                     <button onClick={() => handleShow(department)}>
                       More Details
