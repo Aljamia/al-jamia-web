@@ -3,7 +3,6 @@ import "./Footer.css";
 import "./aos.css";
 import "./cssanimation.min.css";
 // import "./all.min.css";
-
 import AOS from "aos";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
@@ -19,11 +18,11 @@ const Footer = () => {
     });
   };
 
-  // AOS.init({
-  //   duration: 800,
-  //   easing: "ease-in-out",
-  //   once: true,
-  // });
+  AOS.init({
+    duration: 800,
+    easing: "ease-in-out",
+    once: true,
+  });
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
