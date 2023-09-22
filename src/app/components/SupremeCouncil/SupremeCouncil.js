@@ -35,8 +35,12 @@ const SupremeCouncil = () => {
               <h1 class="TitleStyle center_aln">Supreme Council</h1>
               {commitee.map((item) => (
                 <>
-                  <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <Card className="faculties-card" key={item.id}>
+                  <div class="col-xs-12 col-sm-6 col-lg-2">
+                    <Card
+                      className="faculties-card"
+                      key={item.id}
+                      data-aos="zoom-in"
+                    >
                       <Card.Img
                         variant="top"
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}

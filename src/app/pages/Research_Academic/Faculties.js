@@ -23,7 +23,7 @@ const Faculties = () => {
   return (
     <div className="Faculties">
       <PageHeader />
-      <div className="Faculties-header">
+      <div className="Faculties-header" data-aos="fade-up">
         <Container>
           <h2 className="Faculties-title">
             Al Jamia Centre for Research & Academic Excellence
@@ -37,7 +37,7 @@ const Faculties = () => {
               alt="Image"
             />
           </div>
-          <p className="Faculties-desc">
+          <p className="Faculties-desc" data-aos="fade-up">
             The Al Jamia Centre for Research & Academic Excellence serves as an
             internal platform within Al Jamia for promoting research skills and
             academic excellence among both undergraduate and postgraduate

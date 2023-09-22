@@ -41,7 +41,7 @@ function Our_Facilities() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -58,7 +58,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -75,7 +75,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -92,7 +92,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -109,7 +109,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -127,7 +127,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -144,7 +144,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -161,7 +161,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -178,7 +178,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -195,7 +195,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -213,7 +213,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />
@@ -231,7 +231,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12}>
+                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
                       <img src="book.png" alt="" />

@@ -41,8 +41,8 @@ const academics = () => {
             </Col>
             <Col xl={6} lg={6} xs={12} className="Academicsstyle">
               <div className="Colleges_div_bg">
-                <h1>Colleges</h1>
-                <p>
+                <h1 data-aos="fade-up">Colleges</h1>
+                <p data-aos="fade-up">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Consequatur odit ab culpa mollitia quia placeat amet Lorem
                   ipsum dolor sit amet, consectetur adipisicing elit. Unde, odit
@@ -58,8 +58,10 @@ const academics = () => {
         <Courses />
 
         <div className="PreparatoryStyle">
-          <h4 className="PreparatoryH4">Preparatory Programme</h4>
-          <h2 className="PreparatoryH2">
+          <h4 className="PreparatoryH4" data-aos="fade-up">
+            Preparatory Programme
+          </h4>
+          <h2 className="PreparatoryH2" data-aos="fade-up">
             Handshake infographic mass market <br /> crowdfunding iteration.
           </h2>
 

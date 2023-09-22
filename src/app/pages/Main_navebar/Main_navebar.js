@@ -60,7 +60,7 @@ function Main_navebar() {
               width={350}
               height={80}
               alt="Picture of the author"
-              className="nav-logo"
+              className="nav-logo "
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarSupportedContent" />
@@ -105,7 +105,7 @@ function Main_navebar() {
                 show={hovered === "Academics"}
               >
                 <NavDropdown.Item href="/colleges">Colleges</NavDropdown.Item>
-                <NavDropdown.Item href="/Centre_for_it">
+                {/* <NavDropdown.Item href="/Centre_for_it">
                   Centre for Information Technology
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Centre_for_hr">
@@ -114,7 +114,7 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Centre_for_research">
                   Centre for Research & Academic Excellence
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Faculty">Faculty</NavDropdown.Item>
+                <NavDropdown.Item href="/Faculty">Faculty</NavDropdown.Item> */}
                 <NavDropdown.Item href="/Activities_Centre">
                   Al Jamia Students Activities Centre
                 </NavDropdown.Item>
@@ -124,9 +124,9 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Research_Academic">
                   Al Jamia Centre for Research & Academic Excellence
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Students_Council">
+                {/* <NavDropdown.Item href="/Students_Council">
                   Students Council
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
 
               <NavDropdown
@@ -180,21 +180,21 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Student_Development">
                   Student Development
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Student_Counseling_Service">
+                {/* <NavDropdown.Item href="/Student_Counseling_Service">
                   Student Counseling Service
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Students_Centre">
                   Students Centre
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item href="/Student_Housing">
                   Student Housing
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Student_Life_Services">
                   Student Life & Services
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Student_Representative_Board">
+                {/* <NavDropdown.Item href="/Student_Representative_Board">
                   Student Representative Board
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item href="/Our_Facilities">
                   Our Facilities and General Service
                 </NavDropdown.Item>
@@ -211,6 +211,9 @@ function Main_navebar() {
                 {" "}
                 <NavDropdown.Item href="/Alumni">
                   Alumni Chapters
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/Publications_books">
+                  Our Publications
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Recognition_Awards">
                   Recognition & Awards

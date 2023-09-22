@@ -54,7 +54,7 @@ function Alumni() {
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-              <Col xl={12} lg={12} xs={12}>
+              <Col xl={12} lg={12} xs={12} data-aos="fade-up">
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header pb-2"
