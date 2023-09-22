@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 // import "./aos.css";
-// import "./cssanimation.min.css";
-// import "./all.min.css";
+import "./cssanimation.min.css";
+import "./all.min.css";
 // import AOS from "aos";
 // import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
