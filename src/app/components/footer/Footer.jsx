@@ -1,8 +1,6 @@
 "use client";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 // import "./aos.css";
@@ -12,26 +10,22 @@ import "./all.min.css";
 // import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
-
 const Footer = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS
   }, []);
   const [isVisible, setIsVisible] = useState(false);
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
-
-  AOS.init({
-    duration: 800,
-    easing: "ease-in-out",
-    once: true,
-  });
-
+  // AOS.init({
+  //   duration: 800,
+  //   easing: "ease-in-out",
+  //   once: true,
+  // });
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsVisible(true);
@@ -39,22 +33,18 @@ const Footer = () => {
       setIsVisible(false);
     }
   };
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   <div
     className={`back-to-top ${isVisible ? "visible" : ""}`}
     onClick={scrollToTop}
   >
     <i className="fa fa-chevron-up"></i>
   </div>;
-
   return (
     <div className="footer">
       {/*  <link
@@ -69,12 +59,10 @@ const Footer = () => {
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
       />
-
       <link
         href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
         rel="stylesheet"
       /> */}
-
       <footer id="footer">
         <div className="container">
           <div className="row">
@@ -197,7 +185,7 @@ const Footer = () => {
                       youtube
                     </Link>
                   </li>
-                  {/* 
+                  {/*
                   <li>
                     <Link
                       href="https://play.google.com/store/apps/details?id=in.ixian.campus7.aljamia.student&pcampaignid=web_share"
@@ -259,7 +247,6 @@ const Footer = () => {
           </p>
         </div>
       </section>
-
       <div
         className={`back-to-top ${isVisible ? "visible" : ""}`}
         onClick={scrollToTop}
@@ -269,5 +256,4 @@ const Footer = () => {
     </div>
   );
 };
-
 export default Footer;

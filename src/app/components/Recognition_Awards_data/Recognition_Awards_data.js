@@ -1,9 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Alumni_Awards_gallery from "../Alumni_Awards_gallery/Alumni_Awards_gallery";
-import Publications_books from "./Publications_books";
 
 function Recognition_Awards_data() {
   return (
