@@ -2,34 +2,26 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import axios from "axios";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Col, Row, Card, Modal } from "react-bootstrap";
 import Main_navebar from "../header/Header";
 import Image from "next/image";
 import Footer from "../footer/Footer";
+import { getpublication } from "@/app/hooks/UseApi";
 const Publications_books = () => {
-  const [show, setShow] = useState(false);
-  const [modalVal, setModalVal] = useState(false);
-  const [cardValues, setCardValues] = useState([]);
+  const [publicbooks, setPublicbooks] = useState([]);
 
-  const handleClose = () => setShow(false);
-
-  const handleShow = (data) => {
-    setShow(true);
-    setModalVal(data);
-  };
-  // Fetch the API data on component mount using Axios
   useEffect(() => {
-    axios
-      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/department")
-      .then((response) => {
-        setCardValues(response.data?.response);
-        console.log("department data", response.data?.response); // Log the data to the console
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+    const fetchData = async () => {
+      try {
+        const data = await getpublication();
+        setPublicbooks(data?.response);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   // ... (the rest of your settings and useEffect code)
@@ -101,14 +93,19 @@ const Publications_books = () => {
             </p>
 
             <Slider {...settings}>
-              {cardValues.map((department) => (
-                <div className="box m-2" key={department.id}>
+              {publicbooks.map((books) => (
+                <div className="box m-2" key={books.id}>
                   <div className="caro-img">
-                    <img src="book1.png" alt="" />
+                    <Image
+                      src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${books.image}`} // Use the image URL from the API response
+                      alt="Image"
+                      width={1000}
+                      height={500}
+                    />
                   </div>
                   <div className="caro-items">
-                    <h4 className="caro-des">Book Name</h4>
-                    <p className="caro-paragraph">Joanne Schultz</p>
+                    <h4 className="caro-des">{books.title}</h4>
+                    <p className="caro-paragraph">{books.author}</p>
                     {/* <div className="More_btn2">
                     <button onClick={() => handleShow(department)}>
                       More Details
