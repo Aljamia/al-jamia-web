@@ -10,7 +10,7 @@ function AlJamiaApp() {
       <div className="app_bg">
         <Container>
           <Row>
-            <Col xl={4} lg={4} xs={12}  data-aos="fade-right">
+            <Col xl={4} lg={4} xs={12} data-aos="fade-right">
               <h1 className="app_head">Click</h1>
               <div className="app_icon">
                 <Link
@@ -19,7 +19,7 @@ function AlJamiaApp() {
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   <Image
-                    src="/aljamia_worldcampus_logo5.png"
+                    src="/aljamia_worldcampus_logo_blue.png"
                     layout="intrinsic"
                     width={1000}
                     height={500}

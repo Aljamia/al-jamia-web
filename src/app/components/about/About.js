@@ -53,7 +53,7 @@ const About = () => {
           </Link>
         </div>
         <div className="image" data-aos="fade-up">
-          <img src="image 7.png" alt="photo" width="100%" />
+          <img src="banner/aljamia.png" alt="photo" width="100%" />
         </div>
       </div>
       {/* <Annoucement /> */}

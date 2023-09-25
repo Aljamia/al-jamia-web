@@ -24,7 +24,7 @@ function Online_Program() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/image 7.png"
+            src="/banner/Online_Program.png"
             layout="responsive"
             width={1000}
             height={500}
@@ -147,7 +147,7 @@ function Online_Program() {
                 <Col xl={6} lg={6} xs={12} data-aos="fade-right">
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Girls_Organisation.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -158,7 +158,7 @@ function Online_Program() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -231,10 +231,10 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Faculty.JPG"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -253,7 +253,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12} data-aos="fade-left">
+                <Col xl={12} lg={12} xs={12} data-aos="fade-down-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -333,7 +333,7 @@ function Online_Program() {
                 <Col xl={6} lg={12} xs={12} data-aos="fade-right">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Excellence.jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -352,7 +352,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12} data-aos="fade-left">
+                <Col xl={12} lg={12} xs={12} data-aos="fade-down-right">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -395,7 +395,7 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
                   <div className="AboutUspage-mission-img mt-5">
                     <h1 className="objectives_Head"> Special offer:</h1>
                     Students who enrolled and COMPLETED five modules of the
@@ -489,10 +489,10 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Students_Centres.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -583,10 +583,10 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Sargasamgamam.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -671,10 +671,10 @@ function Online_Program() {
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={12} xs={12} data-aos="fade-down-right">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Faculty.JPG"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller

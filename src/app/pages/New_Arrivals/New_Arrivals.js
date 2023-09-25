@@ -70,7 +70,7 @@ const New_Arrivals = () => {
   };
 
   return (
-    <div>
+    <div id="New_Arrivals">
       <div className="AboutUspage">
         <Main_navebar />
         {/* <PageHeader /> */}

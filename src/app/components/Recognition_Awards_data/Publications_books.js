@@ -69,7 +69,7 @@ const Publications_books = () => {
 
         <div className="AboutUspage-img">
           <Image
-            src="/image 7.png"
+            src="/banner/Publications.jpg"
             layout="responsive"
             width={1000}
             height={500}

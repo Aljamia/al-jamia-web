@@ -13,11 +13,6 @@
   --font-pt-serif: "PT Serif", serif;
 }
 
-
-/* .director-img img{
-    width: 100%;
-   
-} */
 .director-des {
   margin-top: 3rem;
 }
@@ -28,7 +23,7 @@
 
 .director-des p {
   max-width: 100%;
-  font-size: medium;
+  font-size: small;
   text-align: justify;
   padding: 0px;
   font-family: unset;

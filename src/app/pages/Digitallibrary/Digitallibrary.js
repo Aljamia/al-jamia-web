@@ -8,11 +8,8 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 const Digitallibrary = () => {
   return (
-    <div>
+    <div id="Digitallibrary">
       <div className="AboutUspage">
-        <PageHeader />
-        <div className="p-4"></div>
-
         <div className="AboutUspage-desc">
           <>
             <Container className="AboutUspage-short-desc">
@@ -25,21 +22,19 @@ const Digitallibrary = () => {
                 periodicals. All of these resources support research references.
                 Most of the collections are available online and can search by
                 using the library browsing system.
-              </p>     <div className="Faculties-img" data-aos="fade-up">
-            <Image
-              src="/the library.jpg"
-              layout="responsive"
-              width={1000}
-              height={200}
-              alt="Image"
-            />
-          </div>
+              </p>{" "}
+              <div className="Faculties-img" data-aos="fade-up">
+                <Image
+                  src="/banner/Digital_Library.JPG"
+                  layout="responsive"
+                  width={1000}
+                  height={200}
+                  alt="Image"
+                />
+              </div>
             </Container>
           </>{" "}
-     
         </div>
-
-        <Footer />
       </div>
     </div>
   );

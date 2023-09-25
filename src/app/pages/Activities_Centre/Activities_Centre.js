@@ -24,7 +24,7 @@ function Activities_Centre() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/image 7.png"
+            src="/banner/Activities_Centre.png"
             layout="responsive"
             width={1000}
             height={500}
@@ -39,7 +39,7 @@ function Activities_Centre() {
                 <Col xl={6} lg={6} xs={12} data-aos="fade-right">
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Video_conference.JPG"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller

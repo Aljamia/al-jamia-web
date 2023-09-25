@@ -16,7 +16,7 @@ function Vision() {
   }, []);
   {
     return (
-      <div>
+      <div id="Visionpage">
         <div className="AboutUspage-items">
           <div className="AboutUspage-ourMission">
             <Container>
@@ -27,7 +27,7 @@ function Vision() {
                     data-aos="fade-right"
                   >
                     <Image
-                      src="/vision.png"
+                      src="/banner/Vision.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller

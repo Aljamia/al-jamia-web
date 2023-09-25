@@ -25,7 +25,7 @@ function Our_Facilities() {
 
         <div className="AboutUspage-img">
           <Image
-            src="/image 7.png"
+            src="/banner/Facilities.png"
             layout="responsive"
             width={1000}
             height={500}
@@ -44,7 +44,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="banner/class_rooms.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Smart class rooms</h4>
@@ -61,7 +61,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="/banner/Digital_labs.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Digital labs</h4>
@@ -78,7 +78,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="/banner/Wifi.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Wifi Campus</h4>
@@ -95,7 +95,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="BANNER/Conference.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Conference Halls</h4>
@@ -112,7 +112,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="banner/SeminarHalls.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Seminar Halls</h4>
@@ -130,7 +130,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="banner/Video_conference.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Video conference Hall</h4>
@@ -147,7 +147,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="banner/StudentsCorners.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Students Corners</h4>
@@ -164,7 +164,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="/banner/DigitalStudio.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Digital Studio</h4>
@@ -181,7 +181,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="/banner/MentorsHub.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mentors Hub</h4>
@@ -198,7 +198,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="banner/Hostels.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Hostels</h4>
@@ -216,7 +216,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="/banner/Messhall.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mess hall</h4>
@@ -234,7 +234,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="book.png" alt="" />
+                      <img src="banner/MedicalRooms.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Medical Rooms</h4>

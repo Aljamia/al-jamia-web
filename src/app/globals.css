@@ -19,7 +19,6 @@ body p {
   font-weight: 300;
 }
 
-
 .TitleStyle {
   color: var(--light-green-color);
   font-style: normal;
@@ -31,7 +30,6 @@ body p {
 .center_aln {
   text-align: center;
 }
-
 
 .Faculties-header {
   padding: 3em;
@@ -102,7 +100,7 @@ body p {
   font-weight: 300;
   padding: 3px 10px;
   width: 50%;
-  transform: translate(50%, -50%); 
+  transform: translate(50%, -50%);
   border-radius: 55px;
 }
 
@@ -132,7 +130,6 @@ body p {
   cursor: pointer;
   transition: 0.5s;
 }
-
 
 .faculties-card:hover {
   transform: scale(0.95);
@@ -241,7 +238,6 @@ body p {
 
 .faculties-card img {
   height: 20vh;
-
 }
 
 @media (max-width: 768px) {
@@ -287,8 +283,6 @@ body p {
     margin-left: 60px;
     grid-template-columns: repeat(4, 1fr);
   }
-
-
 }
 
 @media (min-width: 1001px) {
@@ -308,18 +302,6 @@ body p {
     grid-template-columns: repeat(7, 1fr);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .card {
   background: linear-gradient(#ffffff 100%, #fff 100%);
@@ -344,8 +326,6 @@ body p {
   font-weight: 300;
 }
 
-
-
 h3 {
   color: #3c3c3c;
   margin: 1em 0;
@@ -355,8 +335,6 @@ h3 {
   font-style: normal;
   font-weight: 300;
 }
-
-
 
 .icon-wrapper {
   background-color: #d78c00;
@@ -396,8 +374,6 @@ h3 {
   color: #000;
 }
 
-
-
 @media screen and (min-width: 768px) {
   section {
     padding: 0 2em;
@@ -419,8 +395,6 @@ h3 {
     max-width: 33.33%;
   }
 }
-
-
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
       !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/pages/aboutus/AboutUs.css ***!
@@ -489,8 +463,6 @@ h3 {
   /* 39px */
 }
 
-
-
 .AboutUspage-vision-desc p {
   text-align: left !important;
 }
@@ -500,35 +472,32 @@ h3 {
   color: var(--light-green-color);
   font-size: 40px;
   font-style: normal;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-weight: 300;
   line-height: normal;
 }
-
-
 
 .AboutUspage-mission-title,
 .AboutUspage-campus-title {
   color: var(--light-green-color);
   font-size: 40px;
   font-style: normal;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-weight: 300;
   line-height: normal;
 }
 
 .AboutUspage-mission-img {
   margin-bottom: 1rem;
-
 }
-
 
 .AboutUspage-mission-img img {
   margin-top: 0px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   border-radius: 30px;
 }
-
 
 .objectives_Head {
   color: var(--black, #000);
@@ -561,11 +530,8 @@ h3 {
   list-style: none;
 }
 
-
-
-
 .blog-details-list li::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #df9000;
   width: 8px;
@@ -607,7 +573,6 @@ h3 {
   padding-top: 20px;
 }
 
-
 .what-box {
   background: linear-gradient(#ffffff 50%, #ff9500 50%);
   background-size: 100% 200%;
@@ -630,7 +595,6 @@ h3 {
   color: #ff9500;
 }
 
-
 .Chapters_center_div {
   background-color: #cc9020;
   width: auto;
@@ -642,22 +606,7 @@ h3 {
   text-align: center;
 }
 
-
-
-
 /* timeline */
-
-
-
-
-
-
-
-
-
-
-
-
 
 .timeline {
   display: flex;
@@ -675,7 +624,8 @@ h3 {
   min-height: 180px;
 
   border-radius: 8px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
 .timeline__event__title {
@@ -761,9 +711,6 @@ h3 {
 
 /* timeline__end */
 
-
-
-
 .box {
   background-color: #f8f8f8;
   border-radius: 20px;
@@ -782,15 +729,11 @@ h3 {
   transition: all 0.3s linear;
 }
 
-
-
 .box:hover {
   background-color: #fff;
   transition: all 0.3s linear;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-
 
 .box img {
   width: 100%;
@@ -802,7 +745,6 @@ h3 {
   text-align: center;
 }
 
-
 .box .caro-des {
   font-size: unset;
   font-size: 26px;
@@ -813,8 +755,6 @@ h3 {
   margin-bottom: 0px;
 }
 
-
-
 .box .caro-paragraph {
   font-size: unset;
   font-size: medium;
@@ -822,17 +762,15 @@ h3 {
   text-align: center;
   font-weight: 300;
   padding: 10px;
+  min-height: 150px;
 }
-
-
-
 
 .send_button {
   background: linear-gradient(90deg, #3dc55d 0%, #619a46 100%);
   border-radius: 999px;
   box-shadow: #b3d3a4 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-family: unset;
   font-size: 16px;
@@ -860,7 +798,7 @@ h3 {
   border-radius: 999px;
   box-shadow: #b3d3a4 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-family: unset;
   font-size: 16px;
@@ -876,16 +814,13 @@ h3 {
   word-break: break-word;
   border: 0;
 }
-
-
-
 
 .More_btn2 button:hover {
   background: #3dc55d;
   border-radius: 999px;
   box-shadow: #619a46 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-family: unset;
   font-size: 16px;
@@ -902,15 +837,12 @@ h3 {
   border: 0;
 }
 
-
-
-
 .portfolio-btn {
   background: linear-gradient(90deg, #3dc55d 0%, #619a46 100%);
   border-radius: 999px;
   box-shadow: #b3d3a4 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-family: unset;
   font-size: 16px;
@@ -934,7 +866,7 @@ h3 {
   border-radius: 999px;
   box-shadow: #619a46 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-family: unset;
   font-size: 16px;
@@ -951,17 +883,9 @@ h3 {
   border: 0;
 }
 
-
-
-
-
-
-
-
 .footer {
   background: #619a46;
   background: linear-gradient(97deg, rgb(169, 102, 1) 3%, rgb(215, 140, 0) 41%);
-
 }
 
 .footer .footer-desc {
@@ -1074,7 +998,6 @@ h3 {
   .footer .footer-desc {
     font-size: 17px;
   }
-
 }
 
 @media (max-width: 500px) {
@@ -1098,14 +1021,15 @@ h3 {
   .footer-number {
     margin-left: 35px;
   }
-
-
-
-
 }
 
 .AboutUspage-img {
-  padding-top: 60px;
+  padding-top: 100px;
+  background-color: #000;
+}
+
+.AboutUspage-img img {
+  opacity: 0.5;
 }
 
 .director {
@@ -1123,7 +1047,6 @@ h3 {
   color: #619a46;
 }
 
-
 .event-title .about-Title h1 {
   padding: 0rem;
   font-family: unset;
@@ -1132,9 +1055,7 @@ h3 {
   text-align: center;
   color: #619a46;
   font-size: 2rem;
-
 }
-
 
 .what-box h3 {
   padding: 1rem;
@@ -1145,7 +1066,6 @@ h3 {
   color: #000;
 }
 
-
 .director-heading h1 {
   padding-bottom: 0rem;
   font-family: unset;
@@ -1154,7 +1074,6 @@ h3 {
   font-size: xx-large;
   color: #619a46;
 }
-
 
 .about-Title {
   text-align: center;
@@ -1167,9 +1086,7 @@ h3 {
   font-weight: 300;
   color: #619a46;
   font-size: 2rem;
-
 }
-
 
 .library {
   margin-top: 3rem;
@@ -1183,8 +1100,6 @@ h3 {
   color: #555555;
   max-width: 90%;
 }
-
-
 
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick.css ***!
@@ -1281,7 +1196,6 @@ h3 {
 
 .slick-initialized .slick-slide {
   display: block;
-
 }
 
 .slick-loading .slick-slide {
@@ -1300,14 +1214,10 @@ h3 {
   display: none;
 }
 
-
-
-
 .page_padd {
   padding-left: 7rem;
   padding-right: 7rem;
 }
-
 
 .Colleges_div_bg {
   width: 100%;
@@ -1318,7 +1228,7 @@ h3 {
   margin-top: 50px;
   background-image: url(/image12.png);
 
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -1326,22 +1236,22 @@ h3 {
   border-radius: 20px;
 }
 
-
 .Colleges_div_bg p {
   color: #c8c8c8 !important;
   font-size: medium;
 }
 
-
-
-
 /* apppage */
-
 
 .app_bg {
   padding: 2%;
   background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgb(200, 200, 200) 0%, rgb(241, 241, 241) 50%, rgb(197, 197, 197) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(200, 200, 200) 0%,
+    rgb(241, 241, 241) 50%,
+    rgb(197, 197, 197) 100%
+  );
 }
 
 .app_head {
@@ -1358,40 +1268,41 @@ h3 {
   color: #747373;
 }
 
-
-
 .app_head a {
   color: #619a46 !important;
 }
 
-
-
 .app_bg p {
   color: #000 !important;
 }
-
 
 .app_icon {
   width: 100%;
   text-align: center !important;
 
   border-radius: 10px;
-
-
-
 }
-
 
 .app_icon img {
   width: 200px;
   border-radius: 10px;
   text-align: center;
   margin-right: 0px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+.director-img {
+  width: 100%;
+  vertical-align: bottom;
+  bottom: 0%;
+}
 
-
+.director-img img {
+  width: 100%;
+  padding-top: 10%;
+  bottom: 0%;
+}
 
 .work_box {
   border-radius: 12px;
@@ -1449,17 +1360,14 @@ h3 {
   padding: 0px 0px 0px 20px;
 }
 
-
-
 .btn button:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #00b548;
   transition: 500ms;
   border: solid 1px #00b548;
 
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
-
 
 .btn2 {
   align-items: left;
@@ -1478,16 +1386,14 @@ h3 {
   padding: 0px 0px 0px 20px;
 }
 
-
 .btn2 button:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #00b548;
   transition: 500ms;
   border: solid 1px #00b548;
 
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
-
 
 .icon_arrow_abt {
   float: right;
@@ -1498,17 +1404,14 @@ h3 {
   padding: 15px 30px 0px 43px;
 }
 
-
 #footer p {
   color: white;
   font-size: medium;
 }
 
-
 .noBordder {
   border-bottom: 0px;
 }
-
 
 @media (max-width: 991px) {
   body p {
@@ -1520,7 +1423,6 @@ h3 {
 
   .about-description p {
     font-size: medium !important;
-
   }
 
   .app_head {
@@ -1528,8 +1430,6 @@ h3 {
     text-align: center;
     padding-top: 1rem;
   }
-
-
 
   .about-Title h1 {
     font-size: 2rem;
@@ -1549,47 +1449,35 @@ h3 {
     text-align: center;
   }
 
-
-
-
   .app_icon {
     width: 100%;
     text-align: center !important;
     padding-bottom: 50px;
     margin-right: 10px;
     border-radius: 10px;
-
-
   }
-
 
   .app_icon img {
     width: 44%;
     border-radius: 10px;
     margin: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
   .about-Title h1 {
     padding: 10px;
     margin: 0px;
     font-size: 2rem;
-
   }
-
-
 
   .about-Title {
     margin-top: 1rem;
   }
 
-
-
   .work_box {
     padding-top: 2rem;
-
   }
-
 
   .news-title h1 {
     padding-bottom: 0rem;
@@ -1621,7 +1509,6 @@ h3 {
   .btn {
     margin-top: 1rem;
     margin-bottom: 2rem;
-
   }
 
   .director-heading h1 {
@@ -1661,29 +1548,22 @@ h3 {
     background-color: white !important;
   }
 
-
   .header-video {
     margin-top: 100px;
   }
 
-
-
   .AboutUspage-campus-title {
     font-size: 1.5rem;
   }
-
-
 
   #footer {
     text-align: center;
     padding-top: 2rem !important;
   }
 
-
   .AboutUspage-items {
     text-align: justify;
   }
-
 
   .AboutUspage-mission-title {
     font-size: 1.5rem;
@@ -1700,12 +1580,10 @@ h3 {
 
   .TitleStyle {
     font-size: 2rem;
-
   }
 
   .director-des p {
     font-size: medium;
-
   }
 
   #footer p {
@@ -1719,13 +1597,11 @@ h3 {
 
   .Courses_Head {
     text-align: center;
-
   }
 
   .timeline__event__title {
     text-align: center;
   }
-
 
   .useful-link,
   .social-links,
@@ -1733,34 +1609,24 @@ h3 {
     text-align: left !important;
   }
 
-
   .blog-details-list li {
     text-align: left;
   }
-
-
-
 
   .blog-details-list li::before {
     text-align: left;
   }
 
-
   .slick-list {
-
     margin: 0;
     padding-bottom: 5px !important;
   }
 
   .box {
     margin-bottom: 5px !important;
-
   }
-
-
 
   .faculties-card img {
     height: auto;
-
   }
 }

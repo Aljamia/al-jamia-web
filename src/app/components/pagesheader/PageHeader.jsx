@@ -85,7 +85,7 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Director_message">
                   Rectors welcome Message
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Visionpage">
+                <NavDropdown.Item href="/about#Visionpage">
                   Vision & Mission
                 </NavDropdown.Item>
                 {/* <NavDropdown.Item href="/Missionpage">
@@ -106,16 +106,18 @@ function Main_navebar() {
                 show={hovered === "Academics"}
               >
                 <NavDropdown.Item href="/colleges">Colleges</NavDropdown.Item>
-                {/* <NavDropdown.Item href="/Centre_for_it">
+                <NavDropdown.Item href="/colleges#Centre_for_it">
                   Centre for Information Technology
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Centre_for_hr">
+                <NavDropdown.Item href="/colleges#Centre_for_hr">
                   Centre for Human Resource Development
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Centre_for_research">
+                <NavDropdown.Item href="/colleges#Centre_for_research">
                   Centre for Research & Academic Excellence
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Faculty">Faculty</NavDropdown.Item> */}
+                <NavDropdown.Item href="/colleges#Faculty">
+                  Faculty
+                </NavDropdown.Item>
                 <NavDropdown.Item href="/Activities_Centre">
                   Al Jamia Students Activities Centre
                 </NavDropdown.Item>
@@ -125,9 +127,9 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Research_Academic">
                   Al Jamia Centre for Research & Academic Excellence
                 </NavDropdown.Item>
-                {/* <NavDropdown.Item href="/Students_Council">
+                <NavDropdown.Item href="/colleges#Students_Council">
                   Students Council
-                </NavDropdown.Item> */}
+                </NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown
@@ -138,17 +140,17 @@ function Main_navebar() {
                 onMouseLeave={handleDropdownLeave}
                 show={hovered === "The Library"}
               >
-                <NavDropdown.Item href="/centralibrary">
-                  Center Libary{" "}
+                <NavDropdown.Item href="/centralibrary#centralibrary">
+                  Central Libary{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Digitallibrary">
+                <NavDropdown.Item href="/centralibrary#Digitallibrary">
                   Digital Library
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/New_Arrivals">
+                <NavDropdown.Item href="/centralibrary#New_Arrivals">
                   New Arrivals
                 </NavDropdown.Item>
-
                 {/* <NavDropdown.Item href="/">Catalogue</NavDropdown.Item>
+                <NavDropdown.Item href="/">New Arrivals</NavDropdown.Item>
                 <NavDropdown.Item href="/">Library Service</NavDropdown.Item>
                 <NavDropdown.Item href="/">Donate Books</NavDropdown.Item>
                 <NavDropdown.Item href="/">Heritage</NavDropdown.Item>

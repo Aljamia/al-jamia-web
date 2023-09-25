@@ -43,7 +43,7 @@ function Alumni() {
 
       <div className="AboutUspage-img">
         <Image
-          src="/image 7.png"
+          src="/banner/Alumni_head.jpg"
           layout="responsive"
           width={1000}
           height={500}

@@ -25,7 +25,7 @@ function Preparatory_Course() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/image 7.png"
+            src="/banner/Preparatory_Course.png"
             layout="responsive"
             width={1000}
             height={500}
@@ -41,10 +41,14 @@ function Preparatory_Course() {
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up">
+                    data-aos="fade-up"
+                  >
                     Preparatory Course Admission
                   </div>
-                  <p className="AboutUspage-mission-desc pt-2" data-aos="fade-up">
+                  <p
+                    className="AboutUspage-mission-desc pt-2"
+                    data-aos="fade-up"
+                  >
                     The Preparatory Course is a three-year program that
                     encompasses the Al Jamia syllabus with a strong focus on
                     Arabic and English language proficiency. It also covers
@@ -57,7 +61,8 @@ function Preparatory_Course() {
                   <div
                     class="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up">
+                    data-aos="fade-up"
+                  >
                     <h1 class="Courses_Head">Admission Requirements</h1>
                   </div>
                   <p data-aos="fade-up">
@@ -73,7 +78,8 @@ function Preparatory_Course() {
                   <div
                     class="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up" >
+                    data-aos="fade-up"
+                  >
                     <h1 class="Courses_Head">Fees structure </h1>
                   </div>
                   <p data-aos="fade-up">

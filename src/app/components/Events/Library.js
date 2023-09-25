@@ -35,7 +35,6 @@ const Library = () => {
                 <div className="btn2">
                   <Link
                     href="/centralibrary"
-                    target="blank"
                     style={{ textDecoration: "none", color: "white" }}
                   >
                     {" "}

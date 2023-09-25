@@ -26,7 +26,7 @@ const AboutUs = () => {
     const fetchGallery = async () => {
       const data = await getAboutUsGallery();
       setGallery(data?.response);
-      console.log('ghgg',setGallery)
+      console.log("ghgg", setGallery);
     };
     fetchAbout();
     fetchGallery();
@@ -44,9 +44,9 @@ const AboutUs = () => {
       <Main_navebar />
       {/* <PageHeader /> */}
 
-      <div className="AboutUspage-img">
+      <div className="AboutUspage-img overlay">
         <Image
-          src="/image 7.png"
+          src="/banner/about_banner.png"
           layout="responsive"
           width={1000}
           height={500}
@@ -60,10 +60,18 @@ const AboutUs = () => {
         </div>{" "}
         {about.map((item, index) => (
           <>
-            <Container className="AboutUspage-short-desc" key={index} data-aos="fade-up">
+            <Container
+              className="AboutUspage-short-desc"
+              key={index}
+              data-aos="fade-up"
+            >
               {item.shortDescription}
             </Container>
-            <Container className="AboutUspage-long-desc" key={index} data-aos="fade-up">
+            <Container
+              className="AboutUspage-long-desc"
+              key={index}
+              data-aos="fade-up"
+            >
               {item.longDescription}
             </Container>
           </>

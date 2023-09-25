@@ -47,7 +47,7 @@ const CarouselComponent = () => {
             className="fullscreen-video"
             style={{ width: "100%" }}
           >
-            <source src="/videoplayback.mp4" type="video/mp4" />
+            <source src="/Video_banner.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           {/* <div className="carousel-overlay ">

@@ -25,7 +25,7 @@ function Under_Graduate() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/image 7.png"
+            src="/banner/Alumni_head.jpg"
             layout="responsive"
             width={1000}
             height={500}
@@ -41,10 +41,14 @@ function Under_Graduate() {
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up">
+                    data-aos="fade-up"
+                  >
                     Under Graduate Admission
                   </div>
-                  <p className="AboutUspage-mission-desc pt-2" data-aos="fade-up">
+                  <p
+                    className="AboutUspage-mission-desc pt-2"
+                    data-aos="fade-up"
+                  >
                     After completing the preparatory course, students can pursue
                     one of two three-year degree programs:
                     <br />
@@ -71,7 +75,8 @@ function Under_Graduate() {
                   <div
                     class="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up">
+                    data-aos="fade-up"
+                  >
                     <h1 class="Courses_Head">Admission Requirements</h1>
                   </div>
                   <p data-aos="fade-up">
@@ -86,7 +91,8 @@ function Under_Graduate() {
                   <div
                     class="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up">
+                    data-aos="fade-up"
+                  >
                     <h1 class="Courses_Head">Fees structure </h1>
                   </div>
                   <p data-aos="fade-up">

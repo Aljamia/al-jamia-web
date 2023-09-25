@@ -8,10 +8,11 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import Link from "next/link";
 import Library_books from "../Library_books/Library_books";
 import Library_books_main from "../Library_books/Library_books_main";
+import Digitallibrary from "../Digitallibrary/Digitallibrary";
 
 const Centralib = () => {
   return (
-    <div>
+    <div id="centralibrary">
       <div className="AboutUspage">
         <PageHeader />
         <div className="p-4"></div>
@@ -26,7 +27,7 @@ const Centralib = () => {
 
             <div className="Faculties-img" data-aos="fade-up">
               <Image
-                src="/the library.jpg"
+                src="/banner/Central_Library.JPG"
                 layout="responsive"
                 width={1000}
                 height={200}
@@ -73,9 +74,10 @@ const Centralib = () => {
           </>
         </div>
 
-        <div className="AboutUspage-desc">
+        <div className="AboutUspage-desc" id="Digitallibrary">
+          <Digitallibrary />
           <>
-            <Container className="AboutUspage-short-desc">
+            {/* <Container className="AboutUspage-short-desc">
               <div className="AboutUspage-header m-0 p-3" data-aos="fade-up">
                 <div className="AboutUspage-title">Digital Library</div>
               </div>
@@ -86,7 +88,7 @@ const Centralib = () => {
                 Most of the collections are available online and can search by
                 using the library browsing system.
               </p>
-            </Container>
+            </Container> */}
 
             {/* <Container className="AboutUspage-short-desc">
               <div className="AboutUspage-header m-0 p-3" data-aos="fade-up">

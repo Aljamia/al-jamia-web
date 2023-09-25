@@ -21,14 +21,14 @@ function Faculty_mail() {
   {
     return (
       <div>
-        <div className="AboutUspage-items">
+        <div className="AboutUspage-items" data-aos="fade-right" id="Faculty">
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
+                <Col xl={12} lg={12} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Faculty.JPG"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -39,7 +39,7 @@ function Faculty_mail() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={12} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"

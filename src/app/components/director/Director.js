@@ -21,11 +21,11 @@ const Director = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
   return (
-    <div>
+    <div id="Director_message">
       <div className="director">
         <Container>
           <Row>
-            <Col xl={6}  data-aos="fade-left">
+            <Col xl={6} data-aos="fade-left">
               <div className="director-img">
                 <Image
                   src="/person.png"
@@ -36,14 +36,14 @@ const Director = () => {
                 />
               </div>
             </Col>
-            <Col xl={6}  data-aos="fade-right">
+            <Col xl={6} data-aos="fade-right">
               <div className="director-des">
                 <div className="director-heading pt-4">
                   <h1> Message From The Rector</h1>
                 </div>
                 <p>{director[0]?.enDescription}</p>
               </div>
-              <div className="person-detail">
+              <div className="person-detail mb-5">
                 <h4>{director[0]?.enName}</h4>
                 <p>Rector Al Jamia Al Islamiya</p>
               </div>

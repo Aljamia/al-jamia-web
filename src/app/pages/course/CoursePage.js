@@ -195,9 +195,15 @@ const CoursePage = () => {
             <Information_Technology />
             <Centre_for_hr_main />
             <Centre_for_research_main />
-            <Faculty_mail />
-            <Students_Council_main />
-            
+
+            <Row className="course-modalitems">
+              <Col xl={6} xs={6} sm={12}>
+                <Faculty_mail />
+              </Col>
+              <Col xl={6} xs={6} sm={6}>
+                <Students_Council_main />
+              </Col>
+            </Row>
           </Container>
         </div>
       </div>

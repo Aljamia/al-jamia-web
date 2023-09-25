@@ -21,7 +21,7 @@ const Faculties = () => {
   }, []);
 
   return (
-    <div className="Faculties">
+    <div className="Faculties" id="Centre_for_research">
       <PageHeader />
       <div className="Faculties-header" data-aos="fade-up">
         <Container>
@@ -30,7 +30,7 @@ const Faculties = () => {
           </h2>
           <div className="Faculties-img">
             <Image
-              src="/Mask group.png"
+              src="/banner/Facilities.png"
               layout="responsive"
               width={1000}
               height={200}

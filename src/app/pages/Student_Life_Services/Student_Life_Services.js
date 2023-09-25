@@ -26,7 +26,7 @@ function Student_Life_Services() {
 
         <div className="AboutUspage-img">
           <Image
-            src="/image 7.png"
+            src="/banner/Student_Life1.png"
             layout="responsive"
             width={1000}
             height={500}
@@ -35,15 +35,17 @@ function Student_Life_Services() {
         </div>
 
         <div className="AboutUspage-items">
-          <h1 class="TitleStyle center_aln  pt-2 pb-4">Our online Courses</h1>
+          <h1 class="TitleStyle center_aln  pt-2 pb-4">
+            Student Life Services
+          </h1>
 
-          <div className="AboutUspage-ourMission">
+          <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
                 <Col xl={6} lg={6} xs={12} data-aos="fade-right">
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Sargasamgamam.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -75,7 +77,7 @@ function Student_Life_Services() {
             </Container>
           </div>
 
-          <div className="AboutUspage-ourMission">
+          <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
                 <Col xl={6} lg={6} xs={12} data-aos="fade-right">
@@ -98,7 +100,7 @@ function Student_Life_Services() {
                 <Col xl={6} lg={6} xs={12} data-aos="fade-left">
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/banner/PlayOff.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -120,13 +122,13 @@ function Student_Life_Services() {
             Student Clubs & Union
           </h1>
 
-          <div className="AboutUspage-ourMission">
+          <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
                 <Col xl={6} lg={6} xs={12} data-aos="fade-right">
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/banner/slamic_Organisation.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -166,7 +168,7 @@ function Student_Life_Services() {
             </Container>
           </div>
 
-          <div className="AboutUspage-ourMission">
+          <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
                 <Col xl={6} lg={6} xs={12} data-aos="fade-right">
@@ -197,7 +199,7 @@ function Student_Life_Services() {
                 <Col xl={6} lg={6} xs={12} data-aos="fade-left">
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Girls_Organisation.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -211,13 +213,13 @@ function Student_Life_Services() {
             </Container>
           </div>
 
-          <div className="AboutUspage-ourMission">
+          <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
                 <Col xl={6} lg={6} xs={12} data-aos="fade-right">
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/vision.png"
+                      src="/banner/Volunteer.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller

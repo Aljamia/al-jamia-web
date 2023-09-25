@@ -8,11 +8,11 @@ const Grades = () => {
   const [facultiesCount, setFacultiesCount] = useState(0);
   const [alumniCount, setAlumniCount] = useState(0);
 
-  const targetStudents = 200;
-  const targetPrograms = 350;
-  const targetFaculties = 400;
-  const targetAlumni = 350;
-  const speed = 150; // Change the speed as desired (milliseconds)
+  const targetStudents = 700;
+  const targetPrograms = 10;
+  const targetFaculties = 50;
+  const targetAlumni = 10;
+  const speed = 50; // Change the speed as desired (milliseconds)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,7 +55,7 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits">{studentsCount}K+</h2>
+          <h2 className="grades-digits">{studentsCount}+</h2>
           <h3 className="grades-title">Students</h3>
         </div>
         <div className="grid-items">
@@ -66,7 +66,7 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits">{programsCount}K+</h2>
+          <h2 className="grades-digits">{programsCount}+</h2>
           <h3 className="grades-title">Programs</h3>
         </div>
         <div className="grid-items">
@@ -77,7 +77,7 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits">{facultiesCount}K+</h2>
+          <h2 className="grades-digits">{facultiesCount}+</h2>
           <h3 className="grades-title">Faculties</h3>
         </div>
         <div className="grid-items">

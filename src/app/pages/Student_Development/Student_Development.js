@@ -28,7 +28,7 @@ function Student_Development() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/image 7.png"
+            src="/banner/Student_Development.png"
             layout="responsive"
             width={1000}
             height={500}
