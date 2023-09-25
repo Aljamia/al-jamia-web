@@ -1,0 +1,303 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/footer/Footer.css ***!
+    \********************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@import url("https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css");
+
+:root {
+  /* color */
+  --black-color: #2c2c2c;
+  --white-color: #ffffff;
+  --gold--color: #cea553;
+  --green-color: #91cf73;
+
+  /* fonts */
+  --font-rubik: "Rubik", sans-serif;
+  --font-martel: "Martel", serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+.datahex-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.datahex-link:hover {
+  color: var(--green-color);
+}
+
+
+#footer {
+  padding-top: 2rem;
+  padding-bottom: 20px;
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+  color: white;
+}
+
+#footer2 {
+
+  padding-top: 7rem;
+  padding-bottom: 80px;
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+}
+
+section {
+  padding: 0% !important;
+}
+
+.footer-logo {
+  width: 200px !important;
+  height: auto;
+  padding: 10px;
+}
+
+
+
+.social-links h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  text-decoration: underline;
+
+  font-weight: 300;
+  font-family: unset;
+
+}
+
+.social-links img {
+  padding-bottom: 10px;
+}
+
+.social-icons {
+  /* display: flex;
+    gap: 3rem; */
+  flex-direction: column;
+  gap: 0rem;
+  color: #fff;
+}
+
+.social-icons img {
+  width: 50px !important;
+}
+
+.social-icons a {
+  /* font-size: medium; */
+  /* background: #ffffff; */
+  /* box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 3px;
+	color: #82074a; */
+  /* margin-right: 18px; */
+  color: #fff;
+}
+
+.social-icons a:hover {
+  color: #000;
+  text-decoration: none !important;
+}
+
+
+
+
+
+.fb_clr {
+  background-color: #1877F2;
+  padding: 2px;
+  width: 50px;
+}
+
+.insta_clr {
+  background-color: #ff1980;
+  padding: 2px;
+  width: 50px;
+
+}
+
+.youtube_clr {
+  background-color: #CD201F;
+  padding: 2px;
+  width: 50px;
+
+}
+
+.play_clr {
+  background-color: #1fcd2d;
+  padding: 2px;
+  width: 50px;
+
+}
+
+
+
+
+
+.social-icons a i {
+  /* box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px; */
+  padding: 11px;
+  border-radius: 41px;
+  width: 38px;
+  height: 35px;
+  color: #fff;
+  font-size: medium;
+  margin-right: 1px;
+}
+
+li {
+  list-style: none;
+}
+
+.useful-link h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: underline;
+
+  font-family: unset;
+}
+
+.useful-link img {
+  padding-bottom: 15px;
+}
+
+.use-links {
+  line-height: 32px;
+}
+
+.use-links li i {
+  font-size: medium;
+  padding-right: 8px;
+  color: #fff;
+}
+
+.use-links li a {
+  color: #fff;
+  font-size: medium;
+  font-weight: 300;
+  color: #fff;
+}
+
+.use-links li a:hover {
+  color: #000;
+  text-decoration: none !important;
+}
+
+.address h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: underline;
+
+  font-family: unset;
+}
+
+.address img {
+  padding-bottom: 15px;
+}
+
+.address-links li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.address-links li i {
+  font-size: 16px;
+  padding-right: 8px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.address-links li i:nth-child(1) {
+  padding-top: 9px;
+}
+
+.address-links .address1 {
+  font-weight: 300;
+  font-size: medium;
+  display: flex;
+  text-decoration: none;
+
+}
+
+.address-links {
+  line-height: 32px;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.copy-right-sec {
+  padding: 0.8rem;
+  background: #916c00;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.copy-right-sec a {
+  color: #fcd462;
+  font-weight: 500;
+  text-decoration: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* footer section end */
+
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: #e59500;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #fff;
+
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top.visible {
+  display: block;
+}
+
+.back-to-top:hover {
+  background-color: #e59500;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@media (max-width: 991px) {
+
+
+  .use-links li a {
+    color: #fff;
+    font-size: small;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .social-icons {
+    font-size: small;
+  }
+
+}

@@ -1,0 +1,23 @@
+.accordion {
+    margin-top: 50px !important;
+}
+
+.accordion-header {
+    border-bottom: solid 1px #C4C4C4 !important;
+
+}
+
+.accordion-body {
+    text-align: justify !important;
+    border-bottom: solid 1px #C4C4C4 !important;
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+}
+
+.accordion-item {
+    border: solid 0px #000 !important;
+    border-radius: 0px !important;
+}

@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
+
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --green-color: green;
+  --goldish-color: #cca65d;
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+  --font-pt-serif: "PT Serif", serif;
+}
+
+.event-first-section p {
+  color: #555555;
+}
+
+.events-section {
+  padding: 5%;
+  padding-bottom: 5rem;
+
+  padding-top: 2rem;
+
+  background-color: #f8f8f8;
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+}
+
+.event-title h1 {
+  padding-top: 0rem;
+  font-size: 40px;
+  padding-bottom: 0rem;
+  color: #619a46;
+  font-family: unset;
+}
+
+.event-des {
+  margin-top: 1em;
+}
+
+.event-btn {
+  margin-top: 1rem;
+}
+
+.event-btn button {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 7px 5px;
+  color: #fff;
+  background-color: rgba(97, 154, 70, 0.75);
+  font-family: unset;
+}
+
+.event-btn-right:hover {
+  color: #fff;
+  background-color: #cca65d;
+  border-radius: 50px;
+}
+
+span {
+  font-family: unset;
+}
+
+/* ----event section -2----- */
+.event-section-2 {
+  background-color: #fff;
+  padding-bottom: 3rem !important;
+}
+
+.headlibrary {
+  margin-top: 6rem !important;
+  padding-bottom: 4rem !important;
+}
+
+/* --right side carouse */
+
+.carouselevent {
+  position: relative;
+  bottom: 0px;
+}
+
+.event-slick div {
+  margin: 0;
+  background-color: transparent !important;
+  opacity: 1;
+}
+
+.right-event-caro {
+  display: flex !important;
+  border-radius: none;
+  margin-top: 0rem !important;
+  box-shadow: none;
+  background-color: #f8f8f8;
+}
+
+.event-caro-img img {
+  width: 230px;
+}
+
+.right-event-des {
+  width: 100%;
+  height: auto;
+}
+
+.right-event-des h4 {
+  font-size: medium;
+  font-weight: 600;
+  color: black;
+  font-family: unset !important;
+}
+
+.right-event-des p {
+  font-size: 16px;
+  font-family: unset !important;
+}
+
+.right-learn-btn button {
+  border: none;
+  border-radius: 50px;
+  background-color: #b6acac93;
+  font-size: 13px;
+  padding: 3px 15px;
+  font-family: unset;
+}
+
+.right-learn-btn button:hover {
+  background-color: #cca65d;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.event-btn-right {
+  border: none;
+  border-radius: 50px;
+  background-color: #b6acac93;
+  font-size: 13px;
+  padding: 3px 15px;
+  font-family: unset;
+}
+
+.slick-dots {
+  position: absolute;
+  top: 40%;
+  right: -30%;
+  transform: translateY(-50%) rotate(90deg);
+  display: none !important;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.slick-dots li button {
+  padding: 0;
+  width: 10px;
+  /* Adjust the value as needed */
+  height: 10px;
+  /* Adjust the value as needed */
+  border-radius: 50%;
+}
+
+
+.btn button {
+  color: #619a46;
+  background-color: #ffffff;
+  /* padding: 7px 20px; */
+  border: solid 1px #619a46;
+  border-radius: 55px;
+  width: auto;
+  padding: 0px 0px 0px 20px;
+}
+
+.btn2 {
+  align-items: left;
+  justify-content: center;
+  margin-top: 2rem;
+  border: 0px;
+}
+
+.btn2 button {
+  color: #619a46;
+  background-color: #ffffff;
+  /* padding: 7px 20px; */
+  border: solid 1px #619a46;
+  border-radius: 55px;
+  width: auto;
+  padding: 0px 0px 0px 20px;
+}
+
+.icon_arrow_abt {
+  float: right;
+}
+
+.icon_arrow {
+  float: left;
+  padding: 15px 30px 0px 43px;
+}
+
+
+
+/* Optional: Add styling to the active dot */
+
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.link-event {
+  padding-top: 7rem;
+}
+
+/* ----------media query for small screen */
+@media screen and (max-width: 550px) {
+  .event-title h1 {
+    margin-left: 20px;
+    font-size: 30px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    color: #619a46;
+    font-family: unset;
+    font-weight: 300;
+  }
+
+  .right-event-des h4 {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+  }
+
+  .right-event-des p {
+    font-size: 12px;
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  .event-title h1 {
+    margin-left: 30px;
+    font-size: 40px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    color: #619a46;
+    font-family: var(--font-pt-serif);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carouselevent {
+    position: relative;
+    bottom: 0px;
+  }
+
+  .right-event-caro {
+    display: flex !important;
+    border-radius: none;
+    margin-top: 0rem;
+    box-shadow: none;
+    background-color: #f8f8f8;
+  }
+
+  .event-caro-img img {
+    width: 100px !important;
+    height: auto;
+  }
+
+  .event-btn button {
+    border: none;
+    border-radius: 7px;
+    padding: 5px 7px 5px;
+    color: #fff;
+    font-size: 10px;
+  }
+
+  .event-des h4 {
+    font-size: medium;
+  }
+
+  .slick-dots li button {
+    display: none;
+  }
+
+  .learn-btn-lib {
+    text-align: center;
+    font-size: 13px;
+  }
+
+
+  .headlibrary {
+    margin-top: 0rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
+
+
+
+
+
+
+
+
+.card {
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-body {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+}
+
+.card header {
+  flex: 100%;
+}
+
+.card .meta {
+  margin-bottom: 12px;
+}
+
+.card .chips {
+  align-self: flex-end;
+}
+
+.card .featured-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    height: auto;
+  }
+
+
+
+  .card .featured-image {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    max-width: 30%;
+    height: auto;
+  }
+}
+
+
+
+
+
+.title h4 {
+  font-size: larger;
+  color: #000 !important; 
+  font-family: unset;
+  margin-top: 1%;
+  font-weight: 400;
+}
+.pre-heading {
+  color: #444;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.meta {
+  color: #555;
+  font-size: 14px;
+  font-family: unset;
+}
+
+.author {
+  font-size: 14px;
+  font-family: unset;
+}
+
+ul {
+  display: block;
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.chips {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;
+}
+
+.chips::-webkit-scrollbar {
+  display: none;
+}
+
+
+.chip {
+  background: linear-gradient(90deg, #3dc55d 0%, #619a46 100%);
+  border-radius: 999px;
+  box-shadow: #b3d3a4 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: unset;
+  font-size: 12px;
+  font-weight: 300;
+  opacity: 1;
+  text-align: right;
+  outline: 0 solid transparent;
+  padding: 5px 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-left: 20px;
+}
+
+.chip:hover {
+  background: #01a226;
+  border-radius: 999px;
+  box-shadow: #407029 0 10px 20px -10px;
+}
+
+.chip.large {
+  text-transform: uppercase;
+  color: black;
+  border: 1px solid #e0e0e0;
+  background: white;
+  padding: 10px 15px;
+  max-height: 44px;
+}
+
+.chip input {
+  margin-bottom: 0 !important;
+  height: 22px !important;
+  background-color: transparent !important;
+  padding: 3px 0 0 0 !important;
+}
+
+.chip input::placeholder {
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: unset;
+}
+
+a.chip {
+  cursor: pointer;
+}
+
+a.chip:hover,
+a.chip:visited,
+a.chip:active {
+  color: white;
+}
+
+a.chip.large:visited,
+a.chip.large:hover,
+a.chip.large:active {
+  color: black;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+
+  
+.chip {text-align: center;
+  margin-left: 5px;
+
+  margin-top: 20px;
+}
+}

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
+
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --green-color: green;
+  --goldish-color: #cca65d;
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-martel: "Martel", serif;
+  --font-pt-serif: "PT Serif", serif;
+}
+
+
+.about-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.about-description p {
+  font-size: medium;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0.52px;
+  color: var(--half-dark-text-color, rgba(1, 5, 20, 0.80));
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.btn button {
+  color: #619a46;
+  background-color: #ffffff;
+  /* padding: 7px 20px; */
+  border: solid 1px #619a46;
+  border-radius: 55px;
+  width: auto;
+  padding: 0px 0px 0px 20px;
+}
+
+/* --------------------font family-------------------------------- */
+
+/* Import the Inter font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+/* Apply the Inter font to <p> tags */
+
+.about-description p {
+  font-size: medium;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0.52px;
+  color: var(--half-dark-text-color, rgba(1, 5, 20, 0.80));
+}
+
+/* Apply the Inter font to <button> tags */
+.btn button {
+  font-family: "Inter", sans-serif;
+}
+
+/* about section animations----------- */
+
+.about-Title h1 {
+  position: relative;
+  animation: fadeLeft 1s ease-in-out forwards;
+  font-size: 2rem;
+
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-description p {
+  position: relative;
+  animation: fadeBottom 1s ease-in-out forwards;
+}
+
+@keyframes fadeBottom {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .btn button {
+    font-size: 13px;
+  }
+
+  .about-description p {
+    font-size: medium;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    padding: 5%;
+    letter-spacing: 0.52px;
+    color: var(--half-dark-text-color, rgba(1, 5, 20, 0.80));
+  }
+
+
+  .about-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0rem;
+  }
+
+  .course-desc p {
+    font-size: medium;
+  }
+
+  .library p {
+    font-size: medium !important;
+
+  }
+
+
+}

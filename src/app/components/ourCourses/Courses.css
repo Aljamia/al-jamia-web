@@ -1,0 +1,406 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/ourCourses/Courses.css ***!
+    \*************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
+
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --lightgreen-color: #619a46;
+  --goldish-color: #d2961e;
+
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-PT-serif: "PT Serif", serif;
+}
+
+.course {
+  background-color: #f8f8f8;
+  background-image: url("/Hotel\ Wallpaper\ Pattern.png");
+  background-repeat: no-repeat;
+}
+
+.course-headerpage {
+  padding: 2em;
+}
+
+.course-header h1 {
+  color: var(--lightgreen-color);
+  font-family: unset;
+  font-weight: 300;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.course-desc {
+  color: #747373;
+  font-size: medium;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0.52px;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+
+.portfolio {
+  padding: 0px;
+  margin-top: -30px;
+}
+
+#portfolio-flters {
+  padding: 0;
+  margin: -15px 0 25px 0;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+  background-color: var(--white-color);
+}
+
+#portfolio-flters li {
+  position: relative;
+  color: var(--goldish-color);
+  font-family: var(--font-PT-serif);
+  font-size: medium;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  cursor: pointer;
+  display: inline-block;
+  /* justify-content: space-between; */
+  margin: 5px;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+#portfolio-flters li::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 42px;
+  width: 90%;
+  height: 5px;
+  background-color: var(--lightgreen-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+#portfolio-flters li:hover::after {
+  transform: scaleX(1);
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+.portfolio-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 18.829999923706055px 47.08000183105469px 0px rgba(47, 50, 125, 0.1);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 21em;
+  height: auto;
+  padding: 0.2em;
+  margin-top: 1.5em;
+}
+
+.portfolio-modal-images {
+  position: relative;
+  width: auto;
+  height: 15em;
+  padding: 10px;
+  border-radius: 20px;
+  transform: translate(0, 0);
+  transition: 0.3s;
+}
+
+.portfolio-modal-images:hover {
+  transform: translate(0, -10px);
+  transition: 0.3s;
+}
+
+.portfolio-title,
+.course-cardmodal-title {
+  position: relative;
+  height: auto;
+  overflow-y: hidden;
+  padding: 3px;
+  color: #252641;
+  font-family: unset;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.portfolio-title:hover {
+  color: black;
+}
+
+.portfolio-text {
+  color: #747373;
+  text-align: left;
+  padding: auto;
+  width: 100%;
+  height: 80px;
+  font-family: unset;
+  font-size: medium;
+  content: normal;
+  overflow-y: hidden;
+  font-weight: 300;
+}
+
+.course-modalitems {
+  padding: 1em;
+}
+
+.course-cardmodal-desc {
+  margin-top: 10px;
+  margin: 5px;
+  font-size: 16px;
+  font-family: unset;
+  font-weight: lighter;
+}
+
+.course-data-items {
+  margin: 2px;
+  margin-left: 8px;
+}
+
+.course-data-category,
+.course-modal-category {
+  font-family: unset;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  float: left;
+  color: gray;
+  width: auto;
+}
+
+.course-data-duration,
+.course-modal-duration {
+  font-family: unset;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+
+  float: right;
+  width: auto;
+}
+
+.course-cardmodal-text {
+  color: #747373;
+  text-align: left;
+  padding: auto;
+  width: 100%;
+  font-family: unset;
+  font-size: 17px;
+  content: normal;
+  font-weight: 300;
+}
+
+.explore-btn {
+  width: 180px;
+  height: auto;
+  margin: auto;
+  background: #d2961e;
+  padding: 3px 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.explore-btn:hover {
+  background-color: #dbb061;
+}
+
+.explore-btn h5 {
+  font-family: unset;
+  color: #ffffff;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 759px) {
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1em;
+    grid-gap: 20px;
+    gap: 20px;
+  }
+
+  .portfolio-card {
+    width: 20em;
+  }
+
+  .course-header h1 {
+    font-size: 30px;
+  }
+
+  .course-desc {
+    font-size: medium;
+  }
+
+  .explore-btn {
+    width: 150px;
+    height: auto;
+    margin: auto;
+    margin-top: auto;
+    background: #d2961e;
+    padding: 4px 0px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .explore-btn h5 {
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1200px) {
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    gap: 20px;
+  }
+
+  .explore-btn {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    background: #d2961e;
+    padding: 5px 20px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .explore-btn h5 {
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    gap: 20px;
+  }
+}
+
+:root {
+  /* colors */
+  --grey-color: #7d7d7d;
+  /* fonts */
+  --font-inter: "Inter", sans-serif;
+}
+
+.grades {
+  padding: 5em;
+}
+
+.grades-digits {
+  background: linear-gradient(90deg, #3dc55d 0%, #df9000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: unset;
+
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+  /* 96px */
+}
+
+.grades-title {
+  color: var(--grary-2, #7d7d7d);
+  font-family: unset;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+.grades-items {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  gap: 10px;
+}
+
+.grid-items {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grade-logo {
+  width: 80%;
+}
+
+@media (max-width: 500px) {
+  .grades {
+    padding: 0px;
+  }
+
+  .grades-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .grades-digits {
+    font-size: 25px;
+    font-family: unset;
+
+  }
+
+  .grades-title {
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .grades-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    gap: 10px;
+  }
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+      !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick.css ***!
+      \***************************************************************************************************************************************************************************************************************************************************************************************/
+/* Slider */
