@@ -216,8 +216,8 @@ function Student_Life_Services() {
           <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
-                  <div className="AboutUspage-mission-img">
+                <Col xl={6} lg={6} xs={12}>
+                  <div className="AboutUspage-mission-img" data-aos="fade-right">
                     <Image
                       src="/banner/Volunteer.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
@@ -230,10 +230,10 @@ function Student_Life_Services() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
-                    id="our-mission-header"
+                    id="our-mission-header" data-aos="fade-left"
                   >
                     <h1 className="Courses_Head">Volunteer Service SRW: </h1>
                   </div>
