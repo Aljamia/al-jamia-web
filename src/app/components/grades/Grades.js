@@ -2,13 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Grades.css";
 import Image from "next/image";
 
-
-
-
-
-
 const Grades = () => {
-  
   const [count1, setCount1] = useState(700);
   const [count2, setCount2] = useState(10);
   const [count3, setCount3] = useState(50);
@@ -40,7 +34,7 @@ const Grades = () => {
     const step2 = (timestamp) => {
       if (!startTimestamp2) startTimestamp2 = timestamp;
       const progress = Math.min((timestamp - startTimestamp2) / duration2, 1);
-      setCount2(Math.floor(progress * (10 - 5000) + 5000));
+      setCount2(Math.floor(progress * (10 - 50) + 50));
       if (progress < 1) {
         window.requestAnimationFrame(step2);
       }
@@ -49,7 +43,7 @@ const Grades = () => {
     const step3 = (timestamp) => {
       if (!startTimestamp3) startTimestamp3 = timestamp;
       const progress = Math.min((timestamp - startTimestamp3) / duration3, 1);
-      setCount3(Math.floor(progress * (50 - (-1000)) + (-1000)));
+      setCount3(Math.floor(progress * (50 - -10) + -10));
       if (progress < 1) {
         window.requestAnimationFrame(step3);
       }
@@ -58,7 +52,7 @@ const Grades = () => {
     const step4 = (timestamp) => {
       if (!startTimestamp4) startTimestamp4 = timestamp;
       const progress = Math.min((timestamp - startTimestamp4) / duration4, 1);
-      setCount4(Math.floor(progress * (10 - 500) + 500));
+      setCount4(Math.floor(progress * (10 - 50) + 50));
       if (progress < 1) {
         window.requestAnimationFrame(step4);
       }
@@ -77,8 +71,6 @@ const Grades = () => {
         <hr />
       </div>
 
-
-
       <p className="center_div pr-4 pl-4">
         It will exceed more than ten thousand the number of students who studied
         in Al Jamia during different periods which includes eminent
@@ -87,9 +79,7 @@ const Grades = () => {
         commendable services in various fields throughout India and abroad.
       </p>
       <div className="grades-items" data-aos="fade-up">
-      
-
-    <div className="grid-items">
+        <div className="grid-items">
           {/* <Image
             src="/Group 2062.svg"
             width={280}
@@ -97,7 +87,13 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits" id="count1" onMouseEnter={handleMouseEnter}>{count1}+</h2>
+          <h2
+            className="grades-digits"
+            id="count1"
+            onMouseEnter={handleMouseEnter}
+          >
+            {count1}+
+          </h2>
           <h3 className="grades-title">Programs</h3>
         </div>
 
@@ -109,7 +105,13 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits" id="count2" onMouseEnter={handleMouseEnter}>{count2}+</h2>
+          <h2
+            className="grades-digits"
+            id="count2"
+            onMouseEnter={handleMouseEnter}
+          >
+            {count2}+
+          </h2>
           <h3 className="grades-title">Programs</h3>
         </div>
         <div className="grid-items">
@@ -120,7 +122,13 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits" id="count3" onMouseEnter={handleMouseEnter}>{count3}+</h2>
+          <h2
+            className="grades-digits"
+            id="count3"
+            onMouseEnter={handleMouseEnter}
+          >
+            {count3}+
+          </h2>
           <h3 className="grades-title">Faculties</h3>
         </div>
         <div className="grid-items">
@@ -131,26 +139,18 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits" id="count4" onMouseEnter={handleMouseEnter}>{count4}K+</h2>
+          <h2
+            className="grades-digits"
+            id="count4"
+            onMouseEnter={handleMouseEnter}
+          >
+            {count4}K+
+          </h2>
           <h3 className="grades-title">Alumni</h3>
         </div>
       </div>
     </div>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export default Grades;
