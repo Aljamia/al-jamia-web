@@ -94,7 +94,7 @@ const Grades = () => {
           >
             {count1}+
           </h2>
-          <h3 className="grades-title">Programs</h3>
+          <h3 className="grades-title">Students</h3>
         </div>
 
         <div className="grid-items">

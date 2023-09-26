@@ -1703,7 +1703,7 @@ span {
 .course-modal-category {
   font-family: var(--font-inter);
   padding: 5px;
-  font-size: 16px;
+  font-size: small;
   font-weight: 400;
   float: left;
   color: gray;
@@ -1713,8 +1713,8 @@ span {
 .course-data-duration,
 .course-modal-duration {
   font-family: var(--font-inter);
-  padding: 5px;
-  font-size: 16px;
+  padding-top: 5px;
+  font-size: small;
   font-weight: 400;
   color: gray;
 

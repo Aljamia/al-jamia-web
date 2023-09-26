@@ -80,7 +80,7 @@ const Courses = () => {
                     </Card.Title>
                     <Card.Text>
                       <p className="portfolio-text">
-                        {course.description.substring(0, 80)}...
+                        {course.description.substring(0, 150)}...
                       </p>
                     </Card.Text>
 
