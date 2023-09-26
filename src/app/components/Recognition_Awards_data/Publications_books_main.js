@@ -1,27 +1,32 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
+import axios from "axios";
+import "./Publications_books_main.css";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Main_navebar from "../header/Header";
-import Image from "next/image";
-import Footer from "../footer/Footer";
+import Link from "next/link";
 import { getpublication } from "@/app/hooks/UseApi";
+
 const Publications_books_main = () => {
-  const [publicbooks, setPublicbooks] = useState([]);
+  const [publication, setpublication] = useState([]);
 
+  // Fetch the API data on component mount using Axios
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await getpublication();
-        setPublicbooks(data?.response);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
+    const fetchpublication = async () => {
+      const data = await getpublication();
+      setpublication(data?.response);
     };
+    fetchpublication();
 
-    fetchData();
+    // axios
+    //   .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/department")
+    //   .then((response) => {
+    //     setCardValues(response.data?.response);
+    //     console.log("department data", response.data?.response); // Log the data to the console
+    //   })
+    //   .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   // ... (the rest of your settings and useEffect code)
@@ -29,7 +34,7 @@ const Publications_books_main = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true, // Add this property to enable autoplay
@@ -38,8 +43,8 @@ const Publications_books_main = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 1,
+          slidesToScroll: 0,
           infinite: true,
           dots: true,
         },
@@ -62,10 +67,8 @@ const Publications_books_main = () => {
   };
 
   return (
-    <div>
+    <div id="New_Arrivals">
       <div className="AboutUspage">
-
-
         <div className="department-section events-section">
           <div className="container">
             <h1 class="TitleStyle">
@@ -82,37 +85,33 @@ const Publications_books_main = () => {
             </p>
 
             <Slider {...settings}>
-              {publicbooks.map((books) => (
-                <div className="box m-2" key={books.id}>
+              {publication.map((item, index) => (
+                <div className="box m-2">
                   <div className="caro-img">
-                    <Image
-                      src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${books.image}`} // Use the image URL from the API response
-                      alt="Image"
-                      width={1000}
-                      height={500}
+                    <img
+                      src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
+                      alt=""
                     />
                   </div>
                   <div className="caro-items">
-                    <h4 className="caro-des">{books.title}</h4>
-                    <p className="caro-paragraph">{books.author}</p>
+                    <h4 className="caro-des"> {item.title}</h4>
+                    <p className="caro-paragraph"> {item.author}</p>
                     {/* <div className="More_btn2">
-                    <button onClick={() => handleShow(department)}>
-                      More Details
-                    </button>
+                  <button onClick={() => handleShow(department)}>
+                    More Details
+                  </button>
 
-                  </div> */}
+                </div> */}
                   </div>
                 </div>
               ))}
             </Slider>
           </div>
         </div>
-
-        
-        <div className="mb-5"></div>
+        <div className="mb-5"> </div>
       </div>
     </div>
   );
 };
 
-export default Publications_books_main
+export default Publications_books_main;

@@ -139,7 +139,7 @@ const Footer = () => {
                 <div className="social-icons">
                   <li>
                     <Link
-                      href="/https://www.facebook.com/aljamiasantapuram"
+                      href="https://www.facebook.com/aljamiasantapuram"
                       target="_blank"
                     >
                       <Image
@@ -155,7 +155,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/https://www.instagram.com/aljamiaalislamiya/"
+                      href="https://www.instagram.com/aljamiaalislamiya/"
                       target="_blank"
                     >
                       <Image
@@ -171,7 +171,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/https://www.youtube.com/aljamiachannel"
+                      href="https://www.youtube.com/aljamiachannel"
                       target="_blank"
                     >
                       <Image
