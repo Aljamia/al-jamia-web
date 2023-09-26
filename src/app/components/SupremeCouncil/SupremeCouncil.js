@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
-import { getManagementCommitee } from "@/app/hooks/UseApi";
+import { getSupreamCouncil } from "@/app/hooks/UseApi";
 import Image from "next/image";
 
 const SupremeCouncil = () => {
@@ -47,11 +47,11 @@ const SupremeCouncil = () => {
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">
-                        {item.enName}
+                          {item.enName}
                         </Card.Title>
 
                         <Card.Text className="faculties-card-text">
-                        {item.enDesignation}
+                          {item.enDesignation}
                         </Card.Text>
 
                         <Button
