@@ -804,20 +804,6 @@ nav.primary-navigation ul li ul li {
   background-color: #f8f8f8;
 }
 
-.box {
-  background-color: #f8f8f8;
-  border-radius: 20px;
-  box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
-  width: 300px !important;
-  height: 480px;
-  display: flex;
-  padding: 0.2em;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px !important;
-}
 
 .box h3 {
   text-align: center;
@@ -896,7 +882,7 @@ nav.primary-navigation ul li ul li {
     background-color: #f8f8f8;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     width: 310px !important;
-    height: 480px;
+    height: auto;
     border-radius: 25px;
     display: flex;
     padding: 0.2em;
@@ -919,7 +905,7 @@ nav.primary-navigation ul li ul li {
     background-color: #f8f8f8;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     width: 350px !important;
-    height: 480px;
+    height: auto;
     border-radius: 25px;
     display: flex;
     padding: 0.2em;
@@ -1688,7 +1674,7 @@ span {
   text-align: left;
   padding: auto;
   width: 100%;
-  height: 80px;
+  height: 100px;
   font-family: var(--font-inter);
   font-size: medium;
   content: normal;

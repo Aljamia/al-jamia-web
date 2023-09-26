@@ -47,11 +47,11 @@ const SupremeCouncil = () => {
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">
-                          Dr. Kootil Mohammed Ali
+                          {modalVal?.enName}
                         </Card.Title>
 
                         <Card.Text className="faculties-card-text">
-                          (Chairman)
+                        {modalVal?.enDesignation}
                         </Card.Text>
 
                         <Button

@@ -35,7 +35,7 @@ const Organizational_structure = () => {
       <PageHeader />
       <div className="AboutUspage-img">
         <Image
-          src="/banner/Career.png"
+          src="/banner/Facilities.png"
           layout="responsive"
           width={1000}
           height={500}
