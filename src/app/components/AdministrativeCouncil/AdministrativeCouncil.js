@@ -35,7 +35,7 @@ const AdministrativeCouncil = () => {
               <h1 class="TitleStyle center_aln">Administrative Council</h1>
               {commitee.map((item) => (
                 <>
-                  <div class="col-xs-12 col-sm-6 col-lg-2">
+                  <div class="col-6 col-sm-4 col-lg-2">
                     <Card
                       className="faculties-card"
                       key={item.id}

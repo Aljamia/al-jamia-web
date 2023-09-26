@@ -24,7 +24,7 @@ function Online_Program() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/banner/Online_Program.png"
+            src="/banner/WorldCampus.png"
             layout="responsive"
             width={1000}
             height={500}

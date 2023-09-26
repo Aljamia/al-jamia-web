@@ -191,7 +191,7 @@
 .course-modal-category {
   font-family: unset;
   padding: 5px;
-  font-size: 16px;
+  font-size: small;
   font-weight: 400;
   float: left;
   color: gray;
@@ -201,8 +201,8 @@
 .course-data-duration,
 .course-modal-duration {
   font-family: unset;
-  padding: 5px;
-  font-size: 16px;
+  padding-top: 5px;
+  font-size: small;
   font-weight: 400;
   color: gray;
 
