@@ -107,8 +107,6 @@ const Publications_books_main = () => {
             </Slider>
           </div>
         </div>
-
-        
         <div className="mb-5"></div>
       </div>
     </div>
