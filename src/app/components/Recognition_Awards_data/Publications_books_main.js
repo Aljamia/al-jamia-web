@@ -83,7 +83,6 @@ const Publications_books_main = () => {
               community and stay informed about their diverse contributions
               across different domains
             </p>
-
             <Slider {...settings}>
               {publication.map((item, index) => (
                 <>
