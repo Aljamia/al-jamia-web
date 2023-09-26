@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
-import { getManagementCommitee } from "@/app/hooks/UseApi";
+import { getFacultie } from "@/app/hooks/UseApi";
 import Image from "next/image";
 
 const Academic_Leadership = () => {
@@ -18,12 +18,12 @@ const Academic_Leadership = () => {
     setModalVal(data);
   };
   useEffect(() => {
-    const fetchCommitee = async () => {
-      const data = await getManagementCommitee();
+    const fetchFacultie = async () => {
+      const data = await getFacultie();
       console.log(data);
       Setcommitee(data?.response);
     };
-    fetchCommitee();
+    fetchFacultie();
   }, []);
 
   return (
@@ -36,18 +36,22 @@ const Academic_Leadership = () => {
               {commitee.map((item) => (
                 <>
                   <div class="col-xs-12 col-sm-6 col-lg-2">
-                    <Card className="faculties-card" key={item.id} data-aos="zoom-in">
+                    <Card
+                      className="faculties-card"
+                      key={item.id}
+                      data-aos="zoom-in"
+                    >
                       <Card.Img
                         variant="top"
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">
-                          A Muneerudheen
+                        {item.enName}
                         </Card.Title>
 
                         <Card.Text className="faculties-card-text">
-                          (Controller of Examination)
+                        {item.enDesignation}
                         </Card.Text>
 
                         <Button

@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
-import { getManagementCommitee } from "@/app/hooks/UseApi";
+import { getSuccessionlist } from "@/app/hooks/UseApi";
 import Image from "next/image";
 
 const Succession_List = () => {
@@ -18,12 +18,12 @@ const Succession_List = () => {
     setModalVal(data);
   };
   useEffect(() => {
-    const fetchCommitee = async () => {
-      const data = await getManagementCommitee();
+    const fetchSuccessionlist = async () => {
+      const data = await getSuccessionlist();
       console.log(data);
       Setcommitee(data?.response);
     };
-    fetchCommitee();
+    fetchSuccessionlist();
   }, []);
 
   return (
@@ -38,18 +38,22 @@ const Succession_List = () => {
               {commitee.map((item) => (
                 <>
                   <div class="col-xs-12 col-sm-6 col-lg-2">
-                    <Card className="faculties-card" key={item.id} data-aos="zoom-in">
+                    <Card
+                      className="faculties-card"
+                      key={item.id}
+                      data-aos="zoom-in"
+                    >
                       <Card.Img
                         variant="top"
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">
-                          Dr. Kootil Mohammed Ali
+                          {item.enName}
                         </Card.Title>
 
                         <Card.Text className="faculties-card-text">
-                          (Chairman)
+                          {item.enDesignation}
                         </Card.Text>
 
                         <Button
