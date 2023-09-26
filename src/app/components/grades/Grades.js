@@ -3,35 +3,66 @@ import "./Grades.css";
 import Image from "next/image";
 
 const Grades = () => {
-  const [studentsCount, setStudentsCount] = useState(0);
-  const [programsCount, setProgramsCount] = useState(0);
-  const [facultiesCount, setFacultiesCount] = useState(0);
-  const [alumniCount, setAlumniCount] = useState(0);
+  const [count1, setCount1] = useState(700);
+  const [count2, setCount2] = useState(10);
+  const [count3, setCount3] = useState(50);
+  const [count4, setCount4] = useState(10);
 
-  const targetStudents = 700;
-  const targetPrograms = 10;
-  const targetFaculties = 50;
-  const targetAlumni = 10;
-  const speed = 50; // Change the speed as desired (milliseconds)
+  const handleMouseEnter = () => {
+    startAnimations();
+  };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (studentsCount < targetStudents) {
-        setStudentsCount(studentsCount + 1);
-      }
-      if (programsCount < targetPrograms) {
-        setProgramsCount(programsCount + 1);
-      }
-      if (facultiesCount < targetFaculties) {
-        setFacultiesCount(facultiesCount + 1);
-      }
-      if (alumniCount < targetAlumni) {
-        setAlumniCount(alumniCount + 1);
-      }
-    }, speed);
+  const startAnimations = () => {
+    const duration1 = 1000;
+    const duration2 = 1500;
+    const duration3 = 2000;
+    const duration4 = 2500;
+    let startTimestamp1 = null;
+    let startTimestamp2 = null;
+    let startTimestamp3 = null;
+    let startTimestamp4 = null;
 
-    return () => clearInterval(interval);
-  }, [studentsCount, programsCount, facultiesCount, alumniCount]);
+    const step1 = (timestamp) => {
+      if (!startTimestamp1) startTimestamp1 = timestamp;
+      const progress = Math.min((timestamp - startTimestamp1) / duration1, 1);
+      setCount1(Math.floor(progress * (700 - 500) + 500));
+      if (progress < 1) {
+        window.requestAnimationFrame(step1);
+      }
+    };
+
+    const step2 = (timestamp) => {
+      if (!startTimestamp2) startTimestamp2 = timestamp;
+      const progress = Math.min((timestamp - startTimestamp2) / duration2, 1);
+      setCount2(Math.floor(progress * (10 - 50) + 50));
+      if (progress < 1) {
+        window.requestAnimationFrame(step2);
+      }
+    };
+
+    const step3 = (timestamp) => {
+      if (!startTimestamp3) startTimestamp3 = timestamp;
+      const progress = Math.min((timestamp - startTimestamp3) / duration3, 1);
+      setCount3(Math.floor(progress * (50 - -10) + -10));
+      if (progress < 1) {
+        window.requestAnimationFrame(step3);
+      }
+    };
+
+    const step4 = (timestamp) => {
+      if (!startTimestamp4) startTimestamp4 = timestamp;
+      const progress = Math.min((timestamp - startTimestamp4) / duration4, 1);
+      setCount4(Math.floor(progress * (10 - 50) + 50));
+      if (progress < 1) {
+        window.requestAnimationFrame(step4);
+      }
+    };
+
+    window.requestAnimationFrame(step1);
+    window.requestAnimationFrame(step2);
+    window.requestAnimationFrame(step3);
+    window.requestAnimationFrame(step4);
+  };
 
   return (
     <div className="grades" data-aos="fade-up">
@@ -39,6 +70,7 @@ const Grades = () => {
         <h1>Our Success</h1>
         <hr />
       </div>
+
       <p className="center_div pr-4 pl-4">
         It will exceed more than ten thousand the number of students who studied
         in Al Jamia during different periods which includes eminent
@@ -49,15 +81,22 @@ const Grades = () => {
       <div className="grades-items" data-aos="fade-up">
         <div className="grid-items">
           {/* <Image
-            src="/Group 2059.svg"
+            src="/Group 2062.svg"
             width={280}
             height={80}
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits">{studentsCount}+</h2>
-          <h3 className="grades-title">Students</h3>
+          <h2
+            className="grades-digits"
+            id="count1"
+            onMouseEnter={handleMouseEnter}
+          >
+            {count1}+
+          </h2>
+          <h3 className="grades-title">Programs</h3>
         </div>
+
         <div className="grid-items">
           {/* <Image
             src="/Group 2062.svg"
@@ -66,7 +105,13 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits">{programsCount}+</h2>
+          <h2
+            className="grades-digits"
+            id="count2"
+            onMouseEnter={handleMouseEnter}
+          >
+            {count2}+
+          </h2>
           <h3 className="grades-title">Programs</h3>
         </div>
         <div className="grid-items">
@@ -77,7 +122,13 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits">{facultiesCount}+</h2>
+          <h2
+            className="grades-digits"
+            id="count3"
+            onMouseEnter={handleMouseEnter}
+          >
+            {count3}+
+          </h2>
           <h3 className="grades-title">Faculties</h3>
         </div>
         <div className="grid-items">
@@ -88,7 +139,13 @@ const Grades = () => {
             alt="Picture of the author"
             className="grade-logo"
           /> */}
-          <h2 className="grades-digits">{alumniCount}K+</h2>
+          <h2
+            className="grades-digits"
+            id="count4"
+            onMouseEnter={handleMouseEnter}
+          >
+            {count4}K+
+          </h2>
           <h3 className="grades-title">Alumni</h3>
         </div>
       </div>

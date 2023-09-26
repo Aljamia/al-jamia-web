@@ -78,7 +78,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Wifi.JPG" alt="" />
+                      <img src="/banner/Wifi Campus.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Wifi Campus</h4>
@@ -112,7 +112,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/SeminarHalls.JPG" alt="" />
+                      <img src="banner/SeminarHalls.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Seminar Halls</h4>
@@ -147,7 +147,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/StudentsCorners.JPG" alt="" />
+                      <img src="banner/Students_Centres2.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Students Corners</h4>
@@ -216,7 +216,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Messhall.JPG" alt="" />
+                      <img src="/banner/Sargasamgamam.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mess hall</h4>
