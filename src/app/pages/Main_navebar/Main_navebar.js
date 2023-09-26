@@ -114,17 +114,22 @@ function Main_navebar() {
                 <NavDropdown.Item href="/colleges#Centre_for_research">
                   Centre for Research & Academic Excellence
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/colleges#Faculty">
-                  Faculty
-                </NavDropdown.Item>
+               
                 <NavDropdown.Item href="/Activities_Centre">
                   Al Jamia Students Activities Centre
+                </NavDropdown.Item>
+                
+                <NavDropdown.Item href="/OffCampus">
+                  Off-Campus
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Online_Program">
                   Al Jamia World Campus (Online Program)
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Research_Academic">
                   Al Jamia Centre for Research & Academic Excellence
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/colleges#Faculty">
+                  Faculty
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/colleges#Students_Council">
                   Students Council

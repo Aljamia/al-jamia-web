@@ -19,6 +19,9 @@ body p {
   font-weight: 300;
 }
 
+img{
+  object-fit: cover;
+}
 .TitleStyle {
   color: var(--light-green-color);
   font-style: normal;
@@ -144,18 +147,23 @@ body p {
   font-size: small;
   font-style: normal;
   font-weight: 300;
-  line-height: 119%;
+  padding-top: 4%;
+
   /* 41.65px */
+}
+
+.card-body {
+  padding: 10px;
+  min-height: 120px;
 }
 
 .faculties-card-text {
   color: var(--grary-2, #4f4f4f);
   font-family: unset;
   text-align: center;
-  font-size: smaller;
+  font-size: xx-small;
   font-style: normal;
   font-weight: 400;
-  line-height: 119%;
 }
 
 .faculties-modalitems {
@@ -237,7 +245,9 @@ body p {
 }
 
 .faculties-card img {
-  height: 20vh;
+  height: 25vh;
+  object-fit: cover;
+
 }
 
 @media (max-width: 768px) {
@@ -700,6 +710,9 @@ h3 {
 }
 
 @media (max-width: 786px) {
+
+
+
   .timeline__event {
     flex-direction: column;
   }
@@ -1245,12 +1258,10 @@ h3 {
 .app_bg {
   padding: 2%;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgb(200, 200, 200) 0%,
-    rgb(241, 241, 241) 50%,
-    rgb(197, 197, 197) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(200, 200, 200) 0%,
+      rgb(241, 241, 241) 50%,
+      rgb(197, 197, 197) 100%);
 }
 
 .app_head {
@@ -1335,6 +1346,19 @@ h3 {
   color: white;
 }
 
+.icon_pl {
+  width: 23px;
+  padding-top: 2px !important;
+}
+
+
+.icon_pl img {
+  width: 20px;
+  margin-top: 22px;
+}
+
+
+
 .icon_arrow_abt {
   border: none;
 }
@@ -1411,6 +1435,74 @@ h3 {
 .noBordder {
   border-bottom: 0px;
 }
+
+
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 967px) {
+  img{
+    object-fit: cover;
+    
+  }
+  .faculties-card img{
+    height: 35vh !important;
+  }
+
+
+
+  .container {
+    width: 100%;
+    /* Set the desired width of the container */
+    height: auto;
+    /* Set the desired height of the container */
+    overflow: auto;
+    /* Add a scrollbar if content overflows */
+    padding: 10px;
+  }
+
+  
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  img{
+    object-fit: cover;
+    
+  }
+  .faculties-card img{
+    height: 35vh !important;
+  }
+
+
+
+  .container {
+    width: 100%;
+    /* Set the desired width of the container */
+    height: auto;
+    /* Set the desired height of the container */
+    overflow: auto;
+    /* Add a scrollbar if content overflows */
+    padding: 10px;
+  }
+
+  
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
 
 @media (max-width: 991px) {
   body p {
@@ -1627,5 +1719,7 @@ h3 {
 
   .faculties-card img {
     height: auto;
+    object-fit: cover;
+
   }
 }

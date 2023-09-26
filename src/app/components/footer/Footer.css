@@ -61,9 +61,10 @@ section {
 
 
 .social-links h2 {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+  padding-top: 10px;
   font-size: 20px;
-  text-decoration: underline;
+  border-bottom: solid 1px #fff;
 
   font-weight: 300;
   font-family: unset;
@@ -153,11 +154,12 @@ li {
 }
 
 .useful-link h2 {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+
   font-size: 20px;
   font-weight: 300;
-  text-decoration: underline;
-
+ border-bottom: solid 1px #fff;
   font-family: unset;
 }
 
@@ -188,10 +190,12 @@ li {
 }
 
 .address h2 {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+
   font-size: 20px;
   font-weight: 300;
-  text-decoration: underline;
+  border-bottom: solid 1px #fff;
 
   font-family: unset;
 }

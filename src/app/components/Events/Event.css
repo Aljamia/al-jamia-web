@@ -310,10 +310,13 @@ span {
   flex-direction: column;
 }
 
+.card-body{
+  padding: 10px !important;
+}
 .card .card-body {
   display: flex;
   flex-flow: row wrap;
-  padding: 20px;
+  padding: 15px;
 }
 
 .card header {
