@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
-import { getManagementCommitee } from "@/app/hooks/UseApi";
+import { getAdministrativeCouncil } from "@/app/hooks/UseApi";
 import Image from "next/image";
 
 const AdministrativeCouncil = () => {
@@ -19,7 +19,7 @@ const AdministrativeCouncil = () => {
   };
   useEffect(() => {
     const fetchCommitee = async () => {
-      const data = await getManagementCommitee();
+      const data = await getAdministrativeCouncil();
       console.log(data);
       Setcommitee(data?.response);
     };
@@ -47,11 +47,11 @@ const AdministrativeCouncil = () => {
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">
-                          Dr. Kootil Mohammed Ali
+                        {item.enName}
                         </Card.Title>
 
                         <Card.Text className="faculties-card-text">
-                          (Chairman)
+                        {item.enDesignation}
                         </Card.Text>
 
                         <Button

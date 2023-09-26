@@ -48,7 +48,34 @@ export const getBoardOfDirector = async () => {
   return response.data;
 };
 
-export const getManagementCommitee = async () => {
+// export const getManagementCommitee = async () => {
+//   const response = await axios.get(`${BASE_URL}/administrative-council`);
+//   return response.data;
+// };
+
+export const getSupreamCouncil = async () => {
+  const response = await axios.get(`${BASE_URL}/supream-council`);
+  return response.data;
+};
+
+export const getAdministrativeCouncil = async () => {
+  const response = await axios.get(`${BASE_URL}/administrative-council`);
+  return response.data;
+};
+
+export const getFacultie = async () => {
+  const response = await axios.get(`${BASE_URL}/faculties`);
+  return response.data;
+};
+
+export const getSuccessionlist = async () => {
+  const response = await axios.get(`${BASE_URL}/Succession-List`);
+  return response.data;
+};
+
+
+
+export const certificate = async () => {
   const response = await axios.get(`${BASE_URL}/administrative-council`);
   return response.data;
 };
@@ -56,11 +83,6 @@ export const getManagementCommitee = async () => {
 export const getCourse = async () => {
   const response = await axios.get(`${BASE_URL}/course`);
   console.log(response.data, "coursepage api");
-  return response.data;
-};
-
-export const certificate = async () => {
-  const response = await axios.get(`${BASE_URL}/administrative-council`);
   return response.data;
 };
 

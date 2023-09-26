@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
-import { getManagementCommitee } from "@/app/hooks/UseApi";
+import { getSupreamCouncil } from "@/app/hooks/UseApi";
 import Image from "next/image";
 
 const SupremeCouncil = () => {
@@ -18,12 +18,12 @@ const SupremeCouncil = () => {
     setModalVal(data);
   };
   useEffect(() => {
-    const fetchCommitee = async () => {
-      const data = await getManagementCommitee();
+    const fetchSupreamCouncil = async () => {
+      const data = await getSupreamCouncil();
       console.log(data);
       Setcommitee(data?.response);
     };
-    fetchCommitee();
+    fetchSupreamCouncil();
   }, []);
 
   return (
@@ -47,11 +47,11 @@ const SupremeCouncil = () => {
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">
-                          {modalVal?.enName}
+                          {item.enName}
                         </Card.Title>
 
                         <Card.Text className="faculties-card-text">
-                        {modalVal?.enDesignation}
+                          {item.enDesignation}
                         </Card.Text>
 
                         <Button
