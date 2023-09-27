@@ -12,7 +12,7 @@ function Director_message() {
       <PageHeader />
       <div className="AboutUspage-img">
         <Image
-          src="/banner/DirectorBg.png"
+          src="/banner/DirectorBG.png"
           layout="responsive"
           width={1000}
           height={500}

@@ -83,7 +83,7 @@ function Main_navebar() {
                 <NavDropdown.Item href="/about">
                   Al Jamia Al Islamiya
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Director_message">
+                <NavDropdown.Item href="/about#Director_message">
                   Rector's Message
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/about#Visionpage">
