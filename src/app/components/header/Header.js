@@ -85,7 +85,7 @@ function Main_navebar() {
                   Al Jamia Al Islamiya
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/about#Director_message">
-                  Rectors welcome Message
+                  Rector's Message
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/about#Visionpage">
                   Vision & Mission

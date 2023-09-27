@@ -19,9 +19,23 @@ body p {
   font-weight: 300;
 }
 
-img{
+img {
   object-fit: cover;
 }
+
+
+
+.Visionpage .container {
+  width: 100%;
+  /* Set the desired width of the container */
+  height: auto;
+  /* Set the desired height of the container */
+  overflow: auto;
+  /* Add a scrollbar if content overflows */
+  padding: 10px;
+}
+
+
 .TitleStyle {
   color: var(--light-green-color);
   font-style: normal;
@@ -1238,7 +1252,7 @@ h3 {
   background-color: #000;
   padding: 5%;
   margin-top: 50px;
-  background-image: url(/image12.png);
+  background-image: url(/banner/CollegesBG.png);
 
   color: #ffffff !important;
   background-repeat: no-repeat;
@@ -1445,11 +1459,12 @@ h3 {
 }
 
 @media (max-width: 967px) {
-  img{
+  img {
     object-fit: cover;
-    
+
   }
-  .faculties-card img{
+
+  .faculties-card img {
     height: 35vh !important;
   }
 
@@ -1465,7 +1480,7 @@ h3 {
     padding: 10px;
   }
 
-  
+
 
   ::-webkit-scrollbar {
     display: none;
@@ -1475,11 +1490,12 @@ h3 {
 
 
 @media (max-width: 767px) {
-  img{
+  img {
     object-fit: cover;
-    
+
   }
-  .faculties-card img{
+
+  .faculties-card img {
     height: 35vh !important;
   }
 
@@ -1495,7 +1511,7 @@ h3 {
     padding: 10px;
   }
 
-  
+
 
   ::-webkit-scrollbar {
     display: none;
