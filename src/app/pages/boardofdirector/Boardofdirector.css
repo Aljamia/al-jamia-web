@@ -82,7 +82,7 @@
   color: var(--gold, #cca65d);
   text-align: center;
   font-family: unset;
-  font-size: 16px;
+  font-size: smaller;
   font-style: normal;
   font-weight: 600;
   /* 41.65px */
@@ -92,7 +92,7 @@
   color: var(--grary-2, #7d7d7d);
   font-family: unset;
   text-align: center;
-  font-size: 16px;
+  font-size: smaller;
   height: 40px;
   overflow: hidden;
   font-style: normal;

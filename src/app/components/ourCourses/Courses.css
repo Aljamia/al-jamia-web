@@ -141,7 +141,7 @@
   padding: 3px;
   color: #252641;
   font-family: unset;
-  font-size: inherit;
+  font-size: medium;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -158,7 +158,7 @@
   width: 100%;
   height: 100px;
   font-family: unset;
-  font-size: medium;
+  font-size: small;
   content: normal;
   overflow-y: hidden;
   font-weight: 300;
@@ -171,7 +171,7 @@
 .course-cardmodal-desc {
   margin-top: 10px;
   margin: 5px;
-  font-size: 16px;
+  font-size: smaller;
   font-family: unset;
   font-weight: lighter;
 }
@@ -234,7 +234,7 @@
   font-family: unset;
   color: #ffffff;
   margin-top: 5px;
-  font-size: 16px;
+  font-size: smaller;
 }
 
 @media (max-width: 759px) {

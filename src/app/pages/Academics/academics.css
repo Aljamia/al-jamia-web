@@ -28,7 +28,7 @@
 
 .about-Title h1 {
   /* font-family: unset; */
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: unset;
   font-weight: 300;
 }
@@ -80,7 +80,7 @@
 
 .about-Title h1 {
   /* font-family: unset; */
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   font-family: unset;
   font-weight: 300;
@@ -175,7 +175,7 @@
 .about-Title h1 {
   position: relative;
   animation: fadeLeft 1s ease-in-out forwards;
-  font-size: 2rem;
+  font-size: 1.5rem;
 
 
 }
@@ -257,7 +257,7 @@
 
 .news-alert-title {
   color: #3d3d3d;
-  font-size: 16px;
+  font-size: smaller;
   text-transform: capitalize;
   font-family: var(--font-inter);
 }
@@ -304,7 +304,7 @@
   .news-alert-desc {
     color: var(--gray, #232222);
     font-family: var(--font-inter);
-    font-size: 16px;
+    font-size: smaller;
     font-style: normal;
     text-align: center;
     font-weight: 400;
@@ -484,7 +484,7 @@
   margin: 10px;
   margin-top: 2em;
   font-family: var(--font-inter);
-  font-size: 16px;
+  font-size: smaller;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -585,7 +585,7 @@ nav.primary-navigation ul li ul li {
 }
 
 .nav-dropdown-links h5 {
-  font-size: 16px;
+  font-size: smaller;
   font-weight: 400;
   margin-top: 3px;
   padding: 0.3em;
@@ -860,7 +860,7 @@ nav.primary-navigation ul li ul li {
   border: none;
   border-radius: 55px;
   background-color: #d2961e;
-  font-size: 16px;
+  font-size: smaller;
   padding: 3px 20px;
   color: white;
   font-family: var(--font-inter);
@@ -1211,7 +1211,7 @@ span {
 }
 
 .right-event-des p {
-  font-size: 16px;
+  font-size: smaller;
 }
 
 .right-learn-btn button {
@@ -1426,7 +1426,7 @@ span {
 .footer-contact p {
   color: var(--white-color);
   font-family: var(--font-rubik);
-  font-size: 16px;
+  font-size: smaller;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 10px;
@@ -1659,7 +1659,7 @@ span {
   padding: 3px;
   color: #252641;
   font-family: unset;
-  font-size: inherit;
+  font-size: medium;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1676,7 +1676,7 @@ span {
   width: 100%;
   height: 100px;
   font-family: var(--font-inter);
-  font-size: medium;
+  font-size: small;
   content: normal;
   overflow-y: hidden;
   font-weight: 300;
@@ -1689,7 +1689,7 @@ span {
 .course-cardmodal-desc {
   margin-top: 10px;
   margin: 5px;
-  font-size: 16px;
+  font-size: smaller;
   font-family: var(--font-inter);
   font-weight: lighter;
 }
@@ -1773,7 +1773,7 @@ span {
   font-family: var(--font-inter);
   color: #ffffff;
   margin-top: 5px;
-  font-size: 16px;
+  font-size: smaller;
 }
 
 @media (max-width: 759px) {

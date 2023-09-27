@@ -39,7 +39,7 @@ function Our_Facilities() {
             Our Facilities and General Service
           </h1>
 
-          <div className="AboutUspage-ourMission">
+          <div className="AboutUspage-ourMission Facilities">
             <Container>
               <Row>
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">

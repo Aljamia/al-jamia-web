@@ -96,7 +96,7 @@
     font-family: unset;
     color: #ffffff;
     margin-top: 5px;
-    font-size: 16px;
+    font-size: smaller;
 }
 
 @media (max-width: 800px) {

@@ -37,7 +37,7 @@
 
 .news-alert-title {
   color: #3d3d3d;
-  font-size: 16px;
+  font-size: smaller;
   text-transform: capitalize;
   font-family: unset;
 }
@@ -84,7 +84,7 @@
   .news-alert-desc {
     color: var(--gray, #232222);
     font-family: unset;
-    font-size: 16px;
+    font-size: smaller;
     font-style: normal;
     text-align: center;
     font-weight: 400;
