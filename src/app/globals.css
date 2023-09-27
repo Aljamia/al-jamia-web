@@ -168,7 +168,7 @@ img {
 
 .card-body {
   padding: 10px;
-  min-height: 120px;
+  min-height: 110px;
 }
 
 .faculties-card-text {
@@ -494,7 +494,7 @@ h3 {
 .AboutUspage-mission-title,
 .AboutUspage-campus-title {
   color: var(--light-green-color);
-  font-size: 40px;
+  font-size: 2rem;
   font-style: normal;
   padding-bottom: 0.5rem;
   font-weight: 300;
@@ -504,7 +504,7 @@ h3 {
 .AboutUspage-mission-title,
 .AboutUspage-campus-title {
   color: var(--light-green-color);
-  font-size: 40px;
+  font-size: 2rem;
   font-style: normal;
   padding-bottom: 0.5rem;
   font-weight: 300;
@@ -1459,15 +1459,56 @@ h3 {
 }
 
 @media (max-width: 967px) {
+
+
+
+  body p {
+    color: #747373;
+    font-family: unset;
+    font-size: small !important;
+    font-weight: 300;
+  }
+
+
   img {
     object-fit: cover;
 
+  }
+
+  .about-Title h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .TitleStyle {
+    font-size: 1.5rem !important;
   }
 
   .faculties-card img {
     height: 35vh !important;
   }
 
+
+  .faculties-card-title {
+    font-size: small !important;
+    font-style: normal;
+    font-weight: 300;
+    padding-top: 2%;
+
+  }
+
+  .btn {
+    margin-bottom: 0rem !important;
+  }
+
+  .card-body {
+    padding: 2px;
+    min-height: 160px !;
+  }
+
+  .faculties-card-text {
+
+    font-size: small !important;
+  }
 
 
   .container {
@@ -1615,7 +1656,7 @@ h3 {
 
   .btn {
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .director-heading h1 {

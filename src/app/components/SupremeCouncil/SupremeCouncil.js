@@ -47,11 +47,11 @@ const SupremeCouncil = () => {
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">
-                          {item.enName}
+                          {item.name}
                         </Card.Title>
 
                         <Card.Text className="faculties-card-text">
-                          {item.enDesignation}
+                          {item.designation}
                         </Card.Text>
 
                         <Button
@@ -81,13 +81,13 @@ const SupremeCouncil = () => {
                             </Col>
                             <Col xl={6} xs={12} sm={12}>
                               <Card.Title className="faculties-cardmodal-title">
-                                {modalVal?.enName}
+                                {modalVal?.name}
                               </Card.Title>
                               <Card.Text className="faculties-cardmodal-text">
-                                {modalVal?.enDesignation}
+                                {modalVal?.designation}
                               </Card.Text>
                               <Card.Text className="faculties-cardmodal-desc">
-                                {modalVal?.enDescription}
+                                {modalVal?.description}
                               </Card.Text>
                             </Col>
                           </Row>

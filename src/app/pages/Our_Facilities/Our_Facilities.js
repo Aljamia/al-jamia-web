@@ -198,7 +198,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Hostels.JPG" alt="" />
+                      <img src="banner/Hostels.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Hostels</h4>
@@ -216,7 +216,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Sargasamgamam.png" alt="" />
+                      <img src="/banner/Mess.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mess hall</h4>
@@ -234,7 +234,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/MedicalRooms.JPG" alt="" />
+                      <img src="banner/Medical_Rooms.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Medical Rooms</h4>
