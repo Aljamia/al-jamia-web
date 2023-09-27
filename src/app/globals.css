@@ -166,6 +166,18 @@ img {
   /* 41.65px */
 }
 
+.icon_pl {
+  width: 15px;
+  padding-top: 0px !important;
+}
+
+
+.icon_pl svg {
+  width: 15px;
+  margin: 10px !important;
+}
+
+
 .card-body {
   padding: 10px;
   min-height: 110px;
@@ -1363,22 +1375,13 @@ h3 {
   color: white;
 }
 
-.icon_pl {
-  width: 23px;
-  padding-top: 2px !important;
-}
-
-
-.icon_pl img {
-  width: 20px;
-  margin-top: 22px;
-}
 
 
 
 .icon_arrow_abt {
   border: none;
 }
+
 /* .icon_arrow_abt svg {
   width: 30px !important;
 } */

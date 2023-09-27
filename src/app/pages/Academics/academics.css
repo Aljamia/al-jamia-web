@@ -2256,9 +2256,6 @@ span {
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[3]!./src/app/page.module.css ***!
         \*****************************************************************************************************************************************************************************************************************************************************************/
 
-.icon_pl {
-  padding-right: 5px;
-}
 
 .grades-desc {
   color: #747373;
