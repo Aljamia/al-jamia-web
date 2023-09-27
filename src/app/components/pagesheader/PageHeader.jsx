@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
