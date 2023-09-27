@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { Container } from "react-bootstrap";
@@ -12,6 +13,11 @@ const Library = () => {
         </div>
         <Container className="headlibrary">
           <div class="row">
+            <div class="col-sm-6" data-aos="fade-right">
+              <div className="image pt-3">
+                <img src="library.png" alt="photo" width="100%" />
+              </div>
+            </div>
             <div class="col-sm-6" data-aos="fade-left">
               <div className="library">
                 <div class="director-heading">
@@ -60,11 +66,6 @@ const Library = () => {
                     </button>
                   </Link>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6" data-aos="fade-right">
-              <div className="image pt-3">
-                <img src="library.png" alt="photo" width="100%" />
               </div>
             </div>
           </div>

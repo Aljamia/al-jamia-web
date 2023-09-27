@@ -66,7 +66,7 @@ const Footer = () => {
       <footer id="footer">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-sm-6 col-lg-3" data-aos="fade-up">
+            <div className="col-xs-12 col-sm-6 col-lg-3">
               <Image
                 src="/aljamiya_logo.png"
                 width={350}

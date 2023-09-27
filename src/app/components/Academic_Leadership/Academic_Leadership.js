@@ -47,11 +47,11 @@ const Academic_Leadership = () => {
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">
-                        {item.enName}
+                          {item.enName}
                         </Card.Title>
 
                         <Card.Text className="faculties-card-text">
-                        {item.enDesignation}
+                          {item.enDesignation}
                         </Card.Text>
 
                         <Button

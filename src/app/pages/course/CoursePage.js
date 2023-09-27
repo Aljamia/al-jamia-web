@@ -1,17 +1,16 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Footer from "@/app/components/footer/Footer";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import { Container, Row, Col, Button, Modal, Card } from "react-bootstrap";
 import "./CoursePage.css";
+
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { getCourse } from "@/app/hooks/UseApi";
-import Centre_for_it from "../Centre_for_it/Centre_for_it";
 import Information_Technology from "../Centre_for_it/Information_Technology";
 import Centre_for_hr_main from "../Centre_for_hr/Centre_for_hr_main";
 import Centre_for_research_main from "../Centre_for_research/Centre_for_research_main";
 import Faculty_mail from "../Faculty/Faculty_mail";
-import Students_Council from "../Students_Council/Students_Council";
 import Students_Council_main from "../Students_Council/Students_Council_main";
 
 const CoursePage = () => {
@@ -49,7 +48,7 @@ const CoursePage = () => {
               height={300}
               alt="Image"
             /> */}
-            <div className="Colleges_div_bg center_div" data-aos="fade-down">
+            <div className="Colleges_div_bg center_div " data-aos="fade-down">
               <h2>Colleges</h2>
               <p>
                 Al Jamia offers good academic programs with a few
@@ -65,22 +64,11 @@ const CoursePage = () => {
         <div className="course">
           <Container>
             <div className="course-headerpage">
-              {/* <div className="course-header">
-                <h1>Academics</h1>
-              </div>
-              <div className="course-desc">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione, quasi minus. Ut impedit voluptas excepturi aperiam
-                  iste non in explicabo. Tenetur inventore dolor distinctio
-                  necessitatibus vero, perspiciatis aliquam debitis ea.
-                </p>
-              </div> */}
               <div className="portfolio">
                 <div className="portfolio-container">
-                  {cardValues?.map((course) => (
+                  {cardValues.map((course) => (
                     <Card
-                      className="portfolio-card shadow-sm"
+                      className="portfolio-card"
                       key={course.id}
                       data-aos="flip-left"
                     >
@@ -93,7 +81,7 @@ const CoursePage = () => {
                         <div className="course-data-items">
                           <span className="course-data-category">
                             <img
-                              className="icon_pl"
+                              className="icon_pl p-1"
                               src="forbox.svg"
                               alt="photo"
                               width="auto"
@@ -103,7 +91,7 @@ const CoursePage = () => {
 
                           <span className="course-data-duration">
                             <img
-                              className="icon_pl"
+                              className="icon_pl p-1"
                               src="time.svg"
                               alt="photo"
                               width="auto"
@@ -112,7 +100,6 @@ const CoursePage = () => {
                           </span>
                         </div>
                       </Container>
-
                       <Card.Body>
                         <Card.Title>
                           <h2 className="portfolio-title">
@@ -120,20 +107,23 @@ const CoursePage = () => {
                           </h2>
                         </Card.Title>
                         <Card.Text>
-                          <p className="portfolio-text">{course.description}</p>
-                        </Card.Text>
-
-                        <div className="center_div">
-                          <button
-                            variant="primary btn-primary"
-                            className="More_btn2"
-                            onClick={() => handleShow(course)}
-                          >
-                            {" "}
-                            <span className="">More Details</span>{" "}
-                          </button>
-                        </div>
+                          <p className="portfolio-text">
+                            {course.description.substring(0, 150)}...
+                          </p>
+                        </Card.Text>  
+                      
+                      
                       </Card.Body>
+                      <div className="center_div mb-4">
+                        <button
+                        variant="primary btn-primary"
+                        className="portfolio-btn More_btn"
+                        onClick={() => handleShow(course)}
+                      >
+                        {" "}
+                        <span className="">More Details</span>{" "}
+                      </button>
+                        </div>
                     </Card>
                   ))}
                   <Modal
@@ -157,7 +147,7 @@ const CoursePage = () => {
                         </Col>
                         <Col xl={12} xs={12} sm={12}>
                           <Card.Title className="course-cardmodal-title pt-2">
-                            {modalVal?.courseName}
+                            <h2 class="portfolio-title">{modalVal?.courseName} </h2>
                           </Card.Title>
                           <Card.Text className="course-cardmodal-desc">
                             <span className="course-modal-category">
@@ -179,6 +169,7 @@ const CoursePage = () => {
                               {modalVal?.duration}
                             </span>
                           </Card.Text>
+
                           <br />
                           <Card.Text className="course-cardmodal-text">
                             <br />
@@ -191,8 +182,12 @@ const CoursePage = () => {
                 </div>
               </div>
             </div>
+          </Container>
 
-            <Information_Technology />
+          
+    
+      <Container>
+      <Information_Technology />
             <Centre_for_hr_main />
             <Centre_for_research_main />
 
@@ -207,9 +202,13 @@ const CoursePage = () => {
           </Container>
         </div>
       </div>
+          
       <Footer />
     </div>
   );
 };
+
+
+         
 
 export default CoursePage;

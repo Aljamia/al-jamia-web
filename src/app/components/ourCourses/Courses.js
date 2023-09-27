@@ -30,7 +30,7 @@ const Courses = () => {
     <div className="course">
       <Container>
         <div className="course-headerpage">
-          <div className="about-Title pt-1" data-aos="fade-up">
+          <div className="about-Title" data-aos="fade-up">
             <h1>Academics</h1>
           </div>
           <div className="course-desc" data-aos="fade-up">
@@ -90,9 +90,9 @@ const Courses = () => {
                       onClick={() => handleShow(course)}
                     >
                       {" "}
-                      <span>
+                      
                         <span className="">More Details</span>
-                      </span>{" "}
+                     {" "}
                     </button>
                   </Card.Body>
                 </Card>

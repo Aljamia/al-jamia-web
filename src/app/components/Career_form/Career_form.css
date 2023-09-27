@@ -21,13 +21,6 @@
   padding: 1.5em;
 }
 
-.contact-header-title h1 {
-  color: #619a46;
-  font-family: unset;
-  margin-top: 3rem;
-  font-weight: 300;
-}
-
 .contact-header-title p {
   text-align: justify;
   color: var(--gray, #555);
@@ -85,46 +78,8 @@
   color: var(--green-color);
 }
 
-@media (max-width: 500px) {
-  .contact-header-title h1 {
-    font-size: 30px;
-  }
-
-  .contact-header-title p {
-    font-size: medium;
-  }
-
-  .contact-header-phone {
-    margin-top: 2em;
-  }
-
-  .social-details {
-    font-size: smaller;
-  }
-
-  .contact-map {
-    width: 100%;
-  }
-}
 
 
-.addres_box {
-  border-radius: 9px;
-  margin: 3%;
-  border: 1px solid #D9D9D9;
-  width: 94%;
-  float: left;
-}
-
-
-.addres_box img {
-  padding: 10px;
-  float: left;
-}
-
-.addres_box p {
-  padding-top: 15px;
-}
 
 .cont_form {
   border-radius: 0%;

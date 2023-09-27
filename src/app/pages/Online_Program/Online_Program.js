@@ -144,7 +144,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down">
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Girls_Organisation.png"
@@ -158,7 +158,7 @@ function Online_Program() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -194,7 +194,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -231,7 +231,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down">
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Faculty.JPG"
@@ -253,7 +253,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12} data-aos="fade-down-right">
+                <Col xl={12} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -277,7 +277,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -285,52 +285,52 @@ function Online_Program() {
                     <h1 className="objectives_Head"> Learning objectives:</h1>
                   </div>
                   <ul className="blog-details-list mt-30">
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       To recognize the necessity of Ulum al -Qur’an in
                       understanding the Qur’an.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       To introduce Ulum al -Qur’an with its definition, history,
                       and significance
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       To get the basic knowledge of various subjects related to
                       Ulum al -Qur’an
                     </li>
 
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       To get a tool for the general understanding of the Qur’an
                       with Ulum al-Qur’an
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       To analyse the interpretations of the Qur’an with the
                       basics of Ulum al-Qur’an
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       What do you learn from the course?
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       On completion of this course, a student will be able to:
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Realize the historical and conceptual significance of the
                       Qur’an.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Understand the proper way of learning the Qur’an.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Get a proper understanding of the different aspects of
                       Ulum al-Qur’an.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Recognize the primary and secondary sources of Ulum
                       al-Qur’an
                     </li>
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={12} xs={12} data-aos="fade-down">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/banner/Excellence.jpg"
@@ -352,7 +352,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12} data-aos="fade-down-right">
+                <Col xl={12} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -371,7 +371,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -382,20 +382,20 @@ function Online_Program() {
                     </h1>
                   </div>
                   <ul className="blog-details-list mt-30">
-                    <li data-aos="fade-right">Pre-recorded video lessons</li>
-                    <li data-aos="fade-right">Content summary notes</li>
-                    <li data-aos="fade-right">Reference materials</li>
-                    <li data-aos="fade-right">Interactive live sessions</li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">Pre-recorded video lessons</li>
+                    <li data-aos="fade-down">Content summary notes</li>
+                    <li data-aos="fade-down">Reference materials</li>
+                    <li data-aos="fade-down">Interactive live sessions</li>
+                    <li data-aos="fade-down">
                       Assignments and assessment modules
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Final evaluation and certification
                     </li>
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down">
                   <div className="AboutUspage-mission-img mt-5">
                     <h1 className="objectives_Head"> Special offer:</h1>
                     Students who enrolled and COMPLETED five modules of the
@@ -412,7 +412,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12} data-aos="fade-right">
+                <Col xl={12} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -451,7 +451,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -466,30 +466,30 @@ function Online_Program() {
                     following topics:
                   </div>
                   <ul className="blog-details-list mt-4">
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       The Prophetic Tradition as the second authentic source of
                       Islamic Sharia.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       The definition of Prophetic Tradition in various areas of
                       Islamic knowledge
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Categories of Prophetic Tradition
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       The authenticity of Prophetic Tradition
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       The features of Prophetic Tradition
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       The relation between Qur’an and Prophetic Tradition
                     </li>
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/banner/Students_Centres.png"
@@ -511,7 +511,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12} data-aos="fade-right">
+                <Col xl={12} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -541,7 +541,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -556,34 +556,34 @@ function Online_Program() {
                     following topics:
                   </div>
                   <ul className="blog-details-list mt-4">
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Explain the basic principles related to Islamic Sharia and
                       Fiqh.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Introduce the definition, history, and authenticity of
                       Maqasid al-Sharia.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Understand contemporary studies and researches on Maqasid
                       al-Sharia.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Familiarize the methods and ways of determining the
                       Maqasid al-Sharia.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Understand the execution of Maqasid al-Sharia in
                       contemporary issues.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Explore a broad knowledge about five Dharuriyyat in the
                       light of Maqasid
                     </li>
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-down-right">
+                <Col xl={6} lg={6} xs={12} data-aos="fade-down">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/banner/Sargasamgamam.png"
@@ -605,7 +605,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12} data-aos="fade-right">
+                <Col xl={12} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -635,7 +635,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={12} xs={12} data-aos="fade-down">
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -644,34 +644,34 @@ function Online_Program() {
                   </div>
 
                   <ul className="blog-details-list mt-4">
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Explain the basic principles related to Islamic Sharia and
                       Fiqh.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Introduce the definition, history, and authenticity of
                       Maqasid al-Sharia.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Understand contemporary studies and researches on Maqasid
                       al-Sharia.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Familiarize the methods and ways of determining the
                       Maqasid al-Sharia.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Understand the execution of Maqasid al-Sharia in
                       contemporary issues.
                     </li>
-                    <li data-aos="fade-right">
+                    <li data-aos="fade-down">
                       Explore a broad knowledge about the five Dharuriyyat in
                       the light of Maqasid
                     </li>
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12} data-aos="fade-down-right">
+                <Col xl={6} lg={12} xs={12} data-aos="fade-down">
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/banner/Faculty.JPG"

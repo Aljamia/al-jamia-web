@@ -71,13 +71,6 @@
 
 /* about section animations----------- */
 
-.about-Title h1 {
-  position: relative;
-  animation: fadeLeft 1s ease-in-out forwards;
-  font-size: 1.5rem;
-
-}
-
 @keyframes fadeLeft {
   from {
     opacity: 0;

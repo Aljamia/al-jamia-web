@@ -46,7 +46,7 @@ const AboutUs = () => {
 
       <div className="AboutUspage-img overlay">
         <Image
-          src="/banner/about_banner.png"
+          src="/banner/about_banner2.png"
           layout="responsive"
           width={1000}
           height={500}
@@ -65,14 +65,14 @@ const AboutUs = () => {
               key={index}
               data-aos="fade-up"
             >
-              {item.shortDescription}
+              <p className="about-description"> {item.shortDescription}</p>
             </Container>
             <Container
               className="AboutUspage-long-desc"
               key={index}
               data-aos="fade-up"
             >
-              {item.longDescription}
+              <p className="about-description">{item.longDescription}</p>
             </Container>
           </>
         ))}
