@@ -21,9 +21,7 @@ function Faculty_mail() {
   {
     return (
       <div>
-        <div className="AboutUspage-items" data-aos="fade-right" id="Faculty">
-          <div className="AboutUspage-ourMission">
-            <Container>
+          <Container>
               <Row>
                 <Col xl={12} lg={12} xs={12}>
                   <div className="AboutUspage-mission-img">
@@ -57,8 +55,7 @@ function Faculty_mail() {
                 </Col>
               </Row>
             </Container>
-          </div>
-        </div>
+       
       </div>
     );
   }

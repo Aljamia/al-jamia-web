@@ -21,8 +21,6 @@ function Students_Council_main() {
   {
     return (
       <div>
-        <div className="AboutUspage-items" data-aos="fade-left">
-          <div className="AboutUspage-ourMission">
             <Container>
               <Row>
                 <Col xl={12} lg={12} xs={12}>
@@ -55,8 +53,6 @@ function Students_Council_main() {
                 </Col>
               </Row>
             </Container>
-          </div>
-        </div>
       </div>
     );
   }

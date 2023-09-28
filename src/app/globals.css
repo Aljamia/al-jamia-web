@@ -1180,7 +1180,7 @@ h3 {
 }
 
 .box .caro-img img {
- border-radius: 22px;
+  border-radius: 22px;
 }
 
 
@@ -1888,6 +1888,14 @@ h3 {
 /* .icon_arrow_abt svg {
   width: 30px !important;
 } */
+.btn2 {
+  border: none !important;
+
+}
+
+.btn {
+  border: none !important;
+}
 
 .btn {
   display: flex;
@@ -2005,19 +2013,20 @@ h3 {
     margin-bottom: 0rem !important;
   }
 
-  .event-des h4{
+  .event-des h4 {
     text-align: center;
   }
-.card-body {
-  padding: 10px !important;
-  text-align: center;
 
-}
+  .card-body {
+    padding: 10px !important;
+    text-align: center;
 
-.card-body p {
-  text-align: center;
+  }
 
-}
+  .card-body p {
+    text-align: center;
+
+  }
 
 
 
@@ -2064,7 +2073,7 @@ h3 {
   .footer .container {
     overflow: visible !important;
   }
-  
+
 
   .container {
     width: 100%;

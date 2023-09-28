@@ -14,11 +14,18 @@ const Footer = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS
   }, []);
+
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
+    });
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 200,
+      once: true,
     });
   };
   // AOS.init({
@@ -63,6 +70,7 @@ const Footer = () => {
         href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
         rel="stylesheet"
       /> */}
+
       <footer id="footer">
         <div className="container">
           <div className="row">

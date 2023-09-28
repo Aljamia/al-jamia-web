@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRouter } from "next/navigation";
 import { getNews } from "@/app/hooks/UseApi";
+import Image from "next/image";
 
 const Event = () => {
   const router = useRouter();
@@ -88,10 +89,13 @@ const Event = () => {
             <Row>
               <Col xl={5} data-aos="fade-right">
                 <div className="event-img pt-3">
-                  <img
+                  <Image
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
                     alt=""
-                    style={{ borderRadius: "20px", width: "100%" }}
+                    width={1000}
+                    layout="responsive"
+                    height={1000}
+                    style={{ borderRadius: "20px" }}
                   />
                 </div>
                 <div className="event-btn ">

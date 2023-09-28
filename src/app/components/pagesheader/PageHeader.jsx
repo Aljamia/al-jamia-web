@@ -6,6 +6,8 @@ import "../../pages/Main_navebar/Main_navebar.css";
 import "../../pages/Main_navebar/Nave_Bootstrap.css";
 import Image from "next/image";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Main_navebar() {
   const [scrolling, setScrolling] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
@@ -22,7 +24,12 @@ function Main_navebar() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
-
+  AOS.init({
+    easing: "ease-out-quart",
+    delay: 0,
+    duration: 750,
+    once: true,
+  });
   useEffect(() => {
     // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
@@ -121,10 +128,6 @@ function Main_navebar() {
                   Al Jamia Students Activities Centre
                 </NavDropdown.Item>
 
-                <NavDropdown.Item href="/OffCampus">
-                  Off-Campus
-                </NavDropdown.Item>
-
                 <NavDropdown.Item href="/Online_Program">
                   Al Jamia World Campus (Online Program)
                 </NavDropdown.Item>
@@ -136,6 +139,13 @@ function Main_navebar() {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/colleges#Students_Council">
                   Students Council
+                </NavDropdown.Item>
+
+                <NavDropdown.Item href="/OffCampus">
+                  Off-Campus
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/AljamiaArts_Science">
+                  Aljamia Arts & Science College
                 </NavDropdown.Item>
               </NavDropdown>
 
