@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Grades.css";
+import "../../globals.css";
 
 const Grades = () => {
   const [count1, setCount1] = useState(700);
@@ -70,13 +70,18 @@ const Grades = () => {
         <hr />
       </div>
 
-      <p className="center_div pr-4 pl-4">
-        It will exceed more than ten thousand the number of students who studied
-        in Al Jamia during different periods which includes eminent
-        personalities such as prominent Islamic scholars, leaders of Islamic
-        Movement, writers, academicians and media persons who are rendering
-        commendable services in various fields throughout India and abroad.
-      </p>
+      <div className="course-desc aos-init">
+        <p>
+          It will exceed more than ten thousand the number of students who
+          studied in Al Jamia during different periods which includes eminent
+          personalities such as prominent Islamic scholars, leaders of Islamic
+          Movement, writers, academicians and media persons who are rendering
+          commendable services in various fields throughout India and abroad.
+        </p>
+      </div>
+      {/* <p className="center_div pr-4 pl-4">
+     
+      </p> */}
       <div className="grades-items" data-aos="fade-up">
         <div className="grid-items">
           {/* <Image
