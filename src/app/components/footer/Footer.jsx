@@ -3,11 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
-// import "./aos.css";
-// import "./cssanimation.min.css";
 import "./all.min.css";
-// import AOS from "aos";
-// import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
@@ -21,18 +17,14 @@ const Footer = () => {
       top: 0,
       behavior: "smooth",
     });
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      offset: 200,
-      once: true,
-    });
+    // AOS.init({
+    //   duration: 800,
+    //   easing: "ease-in-out",
+    //   offset: 200,
+    //   once: true,
+    // });
   };
-  // AOS.init({
-  //   duration: 800,
-  //   easing: "ease-in-out",
-  //   once: true,
-  // });
+
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsVisible(true);

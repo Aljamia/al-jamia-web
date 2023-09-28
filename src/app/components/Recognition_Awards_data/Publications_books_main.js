@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import { getpublication } from "@/app/hooks/UseApi";
+import Image from "next/image";
 
 const Publications_books_main = () => {
   const [publication, setpublication] = useState([]);
@@ -88,9 +89,12 @@ const Publications_books_main = () => {
                 <>
                   <div className="box m-2" key={index}>
                     <div className="caro-img">
-                      <img
+                      <Image
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
                         alt=""
+                        width={100}
+                        height={100}
+                        layout="responsive"
                       />
                     </div>
                     <div className="caro-items">

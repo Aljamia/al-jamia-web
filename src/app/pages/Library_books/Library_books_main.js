@@ -1,12 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import axios from "axios";
 import "./Library_books_main.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import Image from "next/image";
+import { getNewArrivals } from "@/app/hooks/UseApi";
 
 const Library_books_main = () => {
   const [show, setShow] = useState(false);
@@ -21,13 +22,12 @@ const Library_books_main = () => {
   };
   // Fetch the API data on component mount using Axios
   useEffect(() => {
-    axios
-      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/department")
-      .then((response) => {
-        setCardValues(response.data?.response);
-        console.log("department data", response.data?.response); // Log the data to the console
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+    const fetchNewArrivals = async () => {
+      const data = await getNewArrivals();
+      console.log(data);
+      Setcommitee(data?.response);
+    };
+    fetchNewArrivals();
   }, []);
 
   // ... (the rest of your settings and useEffect code)
@@ -85,22 +85,28 @@ const Library_books_main = () => {
             </p>
 
             <Slider {...settings}>
-              {cardValues.map((department) => (
-                <div className="box m-2" key={department.id}>
-                  <div className="caro-img">
-                    <img src="book1.png" alt="" />
+              {cardValues.map((item,index) => (
+                <>
+                  <div className="box m-2" key={index}>
+                    <Image
+                      src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
+                      alt=""
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                    />
                   </div>
                   <div className="caro-items">
-                    <h4 className="caro-des">Book Name</h4>
-                    <p className="caro-paragraph">Schultz Joanne</p>
+                    <h4 className="caro-des"> {item.title}</h4>
+                    <p className="caro-paragraph"> {item.author}</p>
                     {/* <div className="More_btn2">
-                    <button onClick={() => handleShow(department)}>
-                      More Details
-                    </button>
+<button onClick={() => handleShow(department)}>
+More Details
+</button>
 
-                  </div> */}
+</div> */}
                   </div>
-                </div>
+                </>
               ))}
             </Slider>
           </div>{" "}

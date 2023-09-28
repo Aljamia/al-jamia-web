@@ -53,6 +53,11 @@ export const getBoardOfDirector = async () => {
 //   return response.data;
 // };
 
+export const getNewArrivals = async () => {
+  const response = await axios.get(`${BASE_URL}/new-arrivals`);
+  return response.data;
+};
+
 export const getSupreamCouncil = async () => {
   const response = await axios.get(`${BASE_URL}/supream-council`);
   return response.data;
@@ -72,8 +77,6 @@ export const getSuccessionlist = async () => {
   const response = await axios.get(`${BASE_URL}/Succession-List`);
   return response.data;
 };
-
-
 
 export const certificate = async () => {
   const response = await axios.get(`${BASE_URL}/administrative-council`);

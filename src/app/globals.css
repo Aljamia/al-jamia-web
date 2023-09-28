@@ -1317,8 +1317,8 @@ h3 {
 }
 
 .footer {
-  background: #619a46;
-  background: linear-gradient(97deg, rgb(169, 102, 1) 3%, rgb(215, 140, 0) 41%);
+  background-color: #cea553;
+  background: linear-gradient(97deg, rgb(169, 102, 1) 3%, rgb(176, 115, 0) 41%);
 }
 
 .footer .footer-desc {
