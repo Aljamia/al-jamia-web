@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
@@ -35,17 +36,21 @@ const Courses = () => {
           </div>
           <div className="course-desc" data-aos="fade-up">
             <p>
-              Al Jamia offers good academic programs with a few specializations
-              to meet the needs of both the Nation and Society. It includes the
-              Preparatory program, two Bachelor programs, three Masters programs
-              and one Diploma program.
+              Al Jamia offers excellent academic programs with specializations
+              designed to address the needs of both the nation and society.
+              These programs encompass the Preparatory Program, Bachelor's
+              Programs, Master's Programs, Diplomas, and Certificates.
             </p>
           </div>
 
           <div className="portfolio">
             <div className="portfolio-container">
               {cardValues.slice(0, 3).map((course) => (
-                <Card className="portfolio-card" key={course.id}   data-aos="flip-left">
+                <Card
+                  className="portfolio-card"
+                  key={course.id}
+                  data-aos="flip-left"
+                >
                   <Card.Img
                     variant="top"
                     className="portfolio-modal-images"
@@ -90,9 +95,7 @@ const Courses = () => {
                       onClick={() => handleShow(course)}
                     >
                       {" "}
-                      
-                        <span className="">More Details</span>
-                     {" "}
+                      <span className="">More Details</span>{" "}
                     </button>
                   </Card.Body>
                 </Card>
@@ -153,7 +156,7 @@ const Courses = () => {
             </div>
           </div>
 
-          <div className="btn"   data-aos="flip-left">
+          <div className="btn" data-aos="flip-left">
             <Link href="/colleges" style={{ textDecoration: "none" }}>
               <button>
                 {" "}

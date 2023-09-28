@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React from "react";
 import "./academics.css";
@@ -43,12 +44,11 @@ const Academics = () => {
               <div className="Colleges_div_bg">
                 <h1 data-aos="fade-up">Colleges</h1>
                 <p data-aos="fade-up">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Consequatur odit ab culpa mollitia quia placeat amet Lorem
-                  ipsum dolor sit amet, consectetur adipisicing elit. Unde, odit
-                  dolor harum ad odio, provident quod temporibus magnam dolore
-                  quidem facilis ratione expedita natus sequi molestiae ducimus
-                  iure architecto minus.
+                  Al Jamia offers excellent academic programs with
+                  specializations designed to address the needs of both the
+                  nation and society. These programs encompass the Preparatory
+                  Program, Bachelor's Programs, Master's Programs, Diplomas, and
+                  Certificates.
                 </p>
               </div>
             </Col>

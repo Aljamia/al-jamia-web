@@ -10,22 +10,14 @@ import Image from "next/image";
 import { getNewArrivals } from "@/app/hooks/UseApi";
 
 const Library_books_main = () => {
-  const [show, setShow] = useState(false);
-  const [modalVal, setModalVal] = useState(false);
   const [cardValues, setCardValues] = useState([]);
 
-  const handleClose = () => setShow(false);
-
-  const handleShow = (data) => {
-    setShow(true);
-    setModalVal(data);
-  };
   // Fetch the API data on component mount using Axios
   useEffect(() => {
     const fetchNewArrivals = async () => {
       const data = await getNewArrivals();
       console.log(data);
-      Setcommitee(data?.response);
+      setCardValues(data?.response);
     };
     fetchNewArrivals();
   }, []);
@@ -35,7 +27,7 @@ const Library_books_main = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true, // Add this property to enable autoplay
@@ -85,26 +77,28 @@ const Library_books_main = () => {
             </p>
 
             <Slider {...settings}>
-              {cardValues.map((item,index) => (
+              {cardValues.map((item, index) => (
                 <>
                   <div className="box m-2" key={index}>
-                    <Image
-                      src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
-                      alt=""
-                      width={100}
-                      height={100}
-                      layout="responsive"
-                    />
-                  </div>
-                  <div className="caro-items">
-                    <h4 className="caro-des"> {item.title}</h4>
-                    <p className="caro-paragraph"> {item.author}</p>
-                    {/* <div className="More_btn2">
-<button onClick={() => handleShow(department)}>
-More Details
-</button>
+                    <div className="caro-img">
+                      <Image
+                        src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
+                        alt=""
+                        width={100}
+                        height={100}
+                        layout="responsive"
+                      />
+                    </div>
+                    <div className="caro-items">
+                      <h4 className="caro-des"> {item.title}</h4>
+                      <p className="caro-paragraph"> {item.author}</p>
+                      {/* <div className="More_btn2">
+                  <button onClick={() => handleShow(department)}>
+                    More Details
+                  </button>
 
-</div> */}
+                </div> */}
+                    </div>
                   </div>
                 </>
               ))}

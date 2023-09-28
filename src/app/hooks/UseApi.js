@@ -48,10 +48,10 @@ export const getBoardOfDirector = async () => {
   return response.data;
 };
 
-// export const getManagementCommitee = async () => {
-//   const response = await axios.get(`${BASE_URL}/administrative-council`);
-//   return response.data;
-// };
+export const getManagementCommitee = async () => {
+  const response = await axios.get(`${BASE_URL}/administrative-council`);
+  return response.data;
+};
 
 export const getNewArrivals = async () => {
   const response = await axios.get(`${BASE_URL}/new-arrivals`);

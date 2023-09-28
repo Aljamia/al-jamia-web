@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Grades.css";
-import Image from "next/image";
 
 const Grades = () => {
   const [count1, setCount1] = useState(700);
@@ -25,7 +24,7 @@ const Grades = () => {
     const step1 = (timestamp) => {
       if (!startTimestamp1) startTimestamp1 = timestamp;
       const progress = Math.min((timestamp - startTimestamp1) / duration1, 1);
-      setCount1(Math.floor(progress * (700 - 500) + 500));
+      setCount1(Math.floor(progress * (1600 - 500) + 500));
       if (progress < 1) {
         window.requestAnimationFrame(step1);
       }
@@ -34,7 +33,7 @@ const Grades = () => {
     const step2 = (timestamp) => {
       if (!startTimestamp2) startTimestamp2 = timestamp;
       const progress = Math.min((timestamp - startTimestamp2) / duration2, 1);
-      setCount2(Math.floor(progress * (10 - 50) + 50));
+      setCount2(Math.floor(progress * (20 - 50) + 50));
       if (progress < 1) {
         window.requestAnimationFrame(step2);
       }
@@ -43,7 +42,7 @@ const Grades = () => {
     const step3 = (timestamp) => {
       if (!startTimestamp3) startTimestamp3 = timestamp;
       const progress = Math.min((timestamp - startTimestamp3) / duration3, 1);
-      setCount3(Math.floor(progress * (50 - -10) + -10));
+      setCount3(Math.floor(progress * (90 - -10) + -10));
       if (progress < 1) {
         window.requestAnimationFrame(step3);
       }
@@ -52,7 +51,7 @@ const Grades = () => {
     const step4 = (timestamp) => {
       if (!startTimestamp4) startTimestamp4 = timestamp;
       const progress = Math.min((timestamp - startTimestamp4) / duration4, 1);
-      setCount4(Math.floor(progress * (10 - 50) + 50));
+      setCount4(Math.floor(progress * (12 - 50) + 50));
       if (progress < 1) {
         window.requestAnimationFrame(step4);
       }

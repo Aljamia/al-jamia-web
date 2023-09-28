@@ -568,6 +568,7 @@ img {
   padding: 10px;
   min-height: 110px;
   margin: 2% !important;
+  padding-top: 0px !important;
 }
 
 .faculties-card-text {
@@ -849,7 +850,7 @@ h3 {
   background-color: #f8f8f8;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3em;
+  padding: 2em;
   margin-top: 0em;
 }
 
@@ -1534,6 +1535,11 @@ h3 {
   max-width: 90%;
 }
 
+.about-description {
+  padding: 0rem 2rem 0rem 2rem;
+
+
+}
 
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/ourCourses/Courses.css ***!
@@ -2105,6 +2111,7 @@ h3 {
 
   .about-description p {
     font-size: medium !important;
+
   }
 
   .app_head {

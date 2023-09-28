@@ -3,8 +3,6 @@
 import Footer from "@/app/components/footer/Footer";
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Modal, Card } from "react-bootstrap";
-import "./CoursePage.css";
-
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { getCourse } from "@/app/hooks/UseApi";
 import Information_Technology from "../Centre_for_it/Information_Technology";
@@ -12,6 +10,7 @@ import Centre_for_hr_main from "../Centre_for_hr/Centre_for_hr_main";
 import Centre_for_research_main from "../Centre_for_research/Centre_for_research_main";
 import Faculty_mail from "../Faculty/Faculty_mail";
 import Students_Council_main from "../Students_Council/Students_Council_main";
+import Image from "next/image";
 
 const CoursePage = () => {
   const [show, setShow] = useState(false);
@@ -35,33 +34,49 @@ const CoursePage = () => {
   return (
     <div className="coursePage">
       <PageHeader />
-      <div
+
+      <div className="AboutUspage-img overlay">
+        <Image
+          src="/banner/about_banner2.png"
+          layout="responsive"
+          width={1000}
+          height={500}
+          alt="Image"
+        />
+      </div>
+
+      {/* <div
         className="coursePage-header"
         style={{ width: "100%", maxWidth: "100%" }}
       >
         <Container>
           <div className="coursePage-img pt-1 mag_top" data-aos="flip-left">
-            {/* <Image
-              src="/image 15.jpg"
-              layout="responsive"
-              width={1000}
-              height={300}
-              alt="Image"
-            /> */}
             <div className="Colleges_div_bg center_div " data-aos="fade-down">
               <h2>Colleges</h2>
-              <p>
-                Al Jamia offers good academic programs with a few
-                specializations to meet the needs of both the Nation and
-                Society. It includes the Preparatory program, two Bachelor
-                programs, three Masters programs and one Diploma program.
-              </p>
+              <p></p>
             </div>
           </div>
         </Container>
-      </div>
+      </div> */}
+
       <div>
-        <div className="course">
+        <div className="course pt-5">
+          <div className="AboutUspage-desc">
+            <>
+              <Container className="AboutUspage-short-desc" data-aos="fade-up">
+                <div class="about-Title m-0">
+                  <h1>Colleges</h1>
+                </div>
+                <p className="about-description">
+                  Al Jamia offers good academic programs with a few
+                  specializations to meet the needs of both the Nation and
+                  Society. It includes the Preparatory program, two Bachelor
+                  programs, three Masters programs and one Diploma program.
+                </p>
+              </Container>
+            </>
+          </div>
+
           <Container>
             <div className="course-headerpage">
               <div className="portfolio">

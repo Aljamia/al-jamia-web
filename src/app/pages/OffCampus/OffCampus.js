@@ -95,20 +95,19 @@ function OffCampus() {
                       Al Jamia Malda
                     </div>
                     <p className="AboutUspage-mission-desc">
-                      <b>HWF Malda Campus An innovative and empowering educational
-                      approach</b> The Human Welfare Foundation Malda Campus is
-                      committed to serving as a valuable resource in the region
-                      by conducting relevant research and investing in the
-                      development of human capital. The institution aims to
-                      provide value-based education to all members of society,
-                      with a special emphasis on bright minds from
-                      socio-economically disadvantaged background. <br/><br/>The
-                      Foundation envisions an innovative and empowering
+                      Al Jamia Malda Campus is committed to serving as a
+                      valuable resource in the region by conducting relevant
+                      research and investing in the development of human
+                      capital. The institution aims to provide value-based
+                      education to all members of society, with a special
+                      emphasis on bright minds from socio-economically
+                      disadvantaged background. <br />
+                      <br />
+                      The Foundation envisions an innovative and empowering
                       educational approach that equips the younger generation
                       with the skills and knowledge to build a better future for
                       humanity, guided by principles of justice and ethical
                       values.
-                      
                     </p>
                   </Col>
                 </Row>

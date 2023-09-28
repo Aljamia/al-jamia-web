@@ -7,10 +7,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 
 import "./Alumni.css";
-import Event from "@/app/components/Events/Event";
 
 import { getAboutUs, getAboutUsGallery } from "@/app/hooks/UseApi";
-import Link from "next/link";
 import Alumni_Chapters from "@/app/components/Alumni_Chapters/Alumni_Chapters";
 
 function Alumni() {
