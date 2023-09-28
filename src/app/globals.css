@@ -664,7 +664,21 @@ img {
 
 }
 
+
+
 @media (max-width: 768px) {
+
+
+
+  .card-body {
+    padding: 10px;
+    min-height: 110px;
+    margin: 0% !important;
+    padding-top: 0px !important;
+  }
+
+
+
   .Faculties-header {
     margin-top: 3em;
     padding: 2em;

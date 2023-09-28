@@ -35,7 +35,7 @@ const CoursePage = () => {
     <div className="coursePage">
       <PageHeader />
 
-      <div className="AboutUspage-img overlay">
+      <div className="AboutUspage-img">
         <Image
           src="/banner/about_banner2.png"
           layout="responsive"
@@ -44,20 +44,6 @@ const CoursePage = () => {
           alt="Image"
         />
       </div>
-
-      {/* <div
-        className="coursePage-header"
-        style={{ width: "100%", maxWidth: "100%" }}
-      >
-        <Container>
-          <div className="coursePage-img pt-1 mag_top" data-aos="flip-left">
-            <div className="Colleges_div_bg center_div " data-aos="fade-down">
-              <h2>Colleges</h2>
-              <p></p>
-            </div>
-          </div>
-        </Container>
-      </div> */}
 
       <div>
         <div className="course pt-5">
