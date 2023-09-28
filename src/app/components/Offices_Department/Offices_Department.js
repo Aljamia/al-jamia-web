@@ -43,103 +43,105 @@ const Offices_Department = () => {
               />
 
               <section>
-                <h1 class="TitleStyle center_aln p-5">Offices & Department</h1>
+                <h1 className="TitleStyle center_aln p-5">
+                  Offices & Department
+                </h1>
 
-                <div class="row">
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-building"></i>
+                <div className="row">
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-building"></i>
                       </div>
                       <h3>Rector’s Office </h3>
                     </div>
                   </div>
 
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-face-smile"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-face-smile"></i>
                       </div>
                       <h3>Students Affair’s Office </h3>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-building"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-building"></i>
                       </div>
                       <h3>Vice President’s Office </h3>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-building"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-building"></i>
                       </div>
                       <h3>Administrative Chairman’s Office</h3>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-business-time"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-business-time"></i>
                       </div>
                       <h3>Administrative Officer </h3>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-building"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-building"></i>
                       </div>
                       <h3>Deputy Rector’s Office</h3>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-building"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-building"></i>
                       </div>
                       <h3>Dean’s Offices </h3>
                     </div>
                   </div>
 
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-ticket"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-ticket"></i>
                       </div>
                       <h3>Admission and Enrollment </h3>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-pen"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-pen"></i>
                       </div>
                       <h3>Department of Examination</h3>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-book "></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-book "></i>
                       </div>
                       <h3>Library</h3>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-person"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-person"></i>
                       </div>
                       <h3>Human Resource </h3>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="card" data-aos="flip-down">
-                      <div class="icon-wrapper">
-                        <i class="fas fa-calculator"></i>
+                  <div className="column">
+                    <div className="card" data-aos="flip-down">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-calculator"></i>
                       </div>
                       <h3>Accounts </h3>
                     </div>

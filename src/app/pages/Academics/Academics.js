@@ -79,8 +79,8 @@ const Academics = () => {
                   />
 
                   <p className="PreparatoryTittle">CHRD</p>
-                  <div class="right-learn-btn">
-                    <button class="event-btn-right">Read More</button>
+                  <div className="right-learn-btn">
+                    <button className="event-btn-right">Read More</button>
                   </div>
                 </div>
               </Col>
@@ -96,8 +96,8 @@ const Academics = () => {
                   />
 
                   <p className="PreparatoryTittle">Registration</p>
-                  <div class="right-learn-btn">
-                    <button class="event-btn-right">Read More</button>
+                  <div className="right-learn-btn">
+                    <button className="event-btn-right">Read More</button>
                   </div>
                 </div>
               </Col>
@@ -113,8 +113,8 @@ const Academics = () => {
                   />
 
                   <p className="PreparatoryTittle">Online Programmes</p>
-                  <div class="right-learn-btn">
-                    <button class="event-btn-right">Read More</button>
+                  <div className="right-learn-btn">
+                    <button className="event-btn-right">Read More</button>
                   </div>
                 </div>
               </Col>
@@ -130,8 +130,8 @@ const Academics = () => {
                   />
 
                   <p className="PreparatoryTittle">Research</p>
-                  <div class="right-learn-btn">
-                    <button class="event-btn-right">Read More</button>
+                  <div className="right-learn-btn">
+                    <button className="event-btn-right">Read More</button>
                   </div>
                 </div>
               </Col>

@@ -31,11 +31,11 @@ const Academic_Leadership = () => {
       <div className="AboutUspage-items">
         <div className="AboutUspage-ourMission">
           <Container>
-            <div class="row">
-              <h1 class="TitleStyle center_aln">Academic Leadership</h1>
+            <div className="row">
+              <h1 className="TitleStyle center_aln">Academic Leadership</h1>
               {commitee.map((item) => (
                 <>
-                  <div class="col-6 col-sm-4 col-lg-2">
+                  <div className="col-6 col-sm-4 col-lg-2">
                     <Card
                       className="faculties-card"
                       key={item.id}

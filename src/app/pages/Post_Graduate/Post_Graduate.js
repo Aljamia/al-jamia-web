@@ -94,8 +94,8 @@ function Post_Graduate() {
               <Row>
                 <Col xl={12} lg={12} xs={12} data-aos="flip-down">
                   <hr />
-                  <div class="center_div">
-                    <p class="center_div">
+                  <div className="center_div">
+                    <p className="center_div">
                       <Nav.Link href="/Under_Graduate">
                         <h5> World Campus (Online Programs) </h5>
                       </Nav.Link>

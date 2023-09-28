@@ -35,7 +35,7 @@ function Student_Life_Services() {
         </div>
 
         <div className="AboutUspage-items">
-          <h1 class="TitleStyle center_aln  pt-2 pb-4">
+          <h1 className="TitleStyle center_aln  pt-2 pb-4">
             Student Life Services
           </h1>
 
@@ -118,7 +118,7 @@ function Student_Life_Services() {
         <hr />
 
         <div className="AboutUspage-items">
-          <h1 class="TitleStyle center_aln  pt-2 pb-2">
+          <h1 className="TitleStyle center_aln  pt-2 pb-2">
             Student Clubs & Union
           </h1>
 
@@ -217,7 +217,7 @@ function Student_Life_Services() {
             <Container>
               <Row>
                 <Col xl={6} lg={6} xs={12}>
-                  <div className="AboutUspage-mission-img"  >
+                  <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Volunteer.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
@@ -233,7 +233,8 @@ function Student_Life_Services() {
                 <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
-                    id="our-mission-header" >
+                    id="our-mission-header"
+                  >
                     <h1 className="Courses_Head">Volunteer Service SRW: </h1>
                   </div>
                   <p className="AboutUspage-mission-desc">

@@ -72,7 +72,7 @@ const Library_books_main = () => {
       <div className="AboutUspage">
         <div className="department-section events-section">
           <div className="container">
-            <h1 class="TitleStyle">
+            <h1 className="TitleStyle">
               <hr />
               New Arrivals
             </h1>

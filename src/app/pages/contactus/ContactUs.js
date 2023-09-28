@@ -36,56 +36,68 @@ const ContactUs = () => {
                 </div>
 
                 <form>
-                  <div class="row mb-4">
-                    <div class="col">
-                      <div class="form-outline">
-                        <label class="form-label" for="form6Example1">
+                  <div className="row mb-4">
+                    <div className="col">
+                      <div className="form-outline">
+                        <label className="form-label" for="form6Example1">
                           First name
                         </label>
 
-                        <input type="text" id="" class="cont_form" />
+                        <input type="text" id="" className="cont_form" />
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="form-outline">
-                        <label class="form-label" for="form6Example2">
+                    <div className="col">
+                      <div className="form-outline">
+                        <label className="form-label" for="form6Example2">
                           Last name
                         </label>
 
                         <input
                           type="text"
                           id="form6Example2"
-                          class="cont_form"
+                          className="cont_form"
                         />
                       </div>
                     </div>
                   </div>
 
-                  <div class="form-outline mb-4">
-                    <label class="form-label" for="form6Example5">
+                  <div className="form-outline mb-4">
+                    <label className="form-label" for="form6Example5">
                       Email
                     </label>
 
-                    <input type="email" id="form6Example5" class="cont_form" />
+                    <input
+                      type="email"
+                      id="form6Example5"
+                      className="cont_form"
+                    />
                   </div>
 
-                  <div class="form-outline mb-4">
-                    <label class="form-label" for="form6Example6">
+                  <div className="form-outline mb-4">
+                    <label className="form-label" for="form6Example6">
                       Phone
                     </label>
 
-                    <input type="number" id="form6Example6" class="cont_form" />
+                    <input
+                      type="number"
+                      id="form6Example6"
+                      className="cont_form"
+                    />
                   </div>
 
-                  <div class="form-outline mb-4">
-                    <label class="form-label" for="form6Example4">
+                  <div className="form-outline mb-4">
+                    <label className="form-label" for="form6Example4">
                       Address
                     </label>
 
-                    <input type="text" id="form6Example4" class="cont_form" />
+                    <input
+                      type="text"
+                      id="form6Example4"
+                      className="cont_form"
+                    />
                   </div>
 
-                  <button type="submit" class="send_button  mb-4">
+                  <button type="submit" className="send_button  mb-4">
                     Send message
                   </button>
                 </form>

@@ -110,20 +110,18 @@ const CoursePage = () => {
                           <p className="portfolio-text">
                             {course.description.substring(0, 150)}...
                           </p>
-                        </Card.Text>  
-                      
-                      
+                        </Card.Text>
                       </Card.Body>
                       <div className="center_div mb-4">
                         <button
-                        variant="primary btn-primary"
-                        className="portfolio-btn More_btn"
-                        onClick={() => handleShow(course)}
-                      >
-                        {" "}
-                        <span className="">More Details</span>{" "}
-                      </button>
-                        </div>
+                          variant="primary btn-primary"
+                          className="portfolio-btn More_btn"
+                          onClick={() => handleShow(course)}
+                        >
+                          {" "}
+                          <span className="">More Details</span>{" "}
+                        </button>
+                      </div>
                     </Card>
                   ))}
                   <Modal
@@ -147,7 +145,9 @@ const CoursePage = () => {
                         </Col>
                         <Col xl={12} xs={12} sm={12}>
                           <Card.Title className="course-cardmodal-title pt-2">
-                            <h2 class="portfolio-title">{modalVal?.courseName} </h2>
+                            <h2 className="portfolio-title">
+                              {modalVal?.courseName}{" "}
+                            </h2>
                           </Card.Title>
                           <Card.Text className="course-cardmodal-desc">
                             <span className="course-modal-category">
@@ -184,10 +184,8 @@ const CoursePage = () => {
             </div>
           </Container>
 
-          
-    
-      <Container>
-      <Information_Technology />
+          <Container>
+            <Information_Technology />
             <Centre_for_hr_main />
             <Centre_for_research_main />
 
@@ -202,13 +200,10 @@ const CoursePage = () => {
           </Container>
         </div>
       </div>
-          
+
       <Footer />
     </div>
   );
 };
-
-
-         
 
 export default CoursePage;

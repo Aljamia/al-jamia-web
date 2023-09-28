@@ -31,13 +31,13 @@ const Succession_List = () => {
       <div className="AboutUspage-items">
         <div className="AboutUspage-ourMission">
           <Container>
-            <div class="row">
-              <h1 class="TitleStyle center_aln">
+            <div className="row">
+              <h1 className="TitleStyle center_aln">
                 Succession List of Heads of the University
               </h1>
               {commitee.map((item) => (
                 <>
-                  <div class="col-6 col-sm-4 col-lg-2">
+                  <div className="col-6 col-sm-4 col-lg-2">
                     <Card
                       className="faculties-card"
                       key={item.id}
@@ -89,7 +89,7 @@ const Succession_List = () => {
                                 {modalVal?.designation}
                               </Card.Text>
                               <Card.Text className="faculties-cardmodal-desc">
-                                {modalVal?.designation}  ({modalVal?.year})
+                                {modalVal?.designation} ({modalVal?.year})
                               </Card.Text>
                             </Col>
                           </Row>

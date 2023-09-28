@@ -23,9 +23,9 @@ function Admission_lists() {
             </p>
             <button
               variant="primary btn-primary"
-              class="portfolio-btn btn   mb-4"
+              className="portfolio-btn btn   mb-4"
             >
-              <span class="">More Details</span>
+              <span className="">More Details</span>
             </button>
           </Card>
 
@@ -42,9 +42,9 @@ function Admission_lists() {
             </p>
             <button
               variant="primary btn-primary"
-              class="portfolio-btn btn   mb-4"
+              className="portfolio-btn btn   mb-4"
             >
-              <span class="">More Details</span>
+              <span className="">More Details</span>
             </button>
           </Card>
 
@@ -61,9 +61,9 @@ function Admission_lists() {
             </p>
             <button
               variant="primary btn-primary"
-              class="portfolio-btn btn   mb-4"
+              className="portfolio-btn btn   mb-4"
             >
-              <span class="">More Details</span>
+              <span className="">More Details</span>
             </button>
           </Card>
         </div>

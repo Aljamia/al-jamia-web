@@ -26,7 +26,7 @@ const Facilities = () => {
         <Container>
           <Row>
             <Col xl={4} xs={12}>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -40,7 +40,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -56,7 +56,7 @@ const Facilities = () => {
               </div>
             </Col>
             <Col xl={4} xs={12}>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -70,7 +70,7 @@ const Facilities = () => {
                   <h2>5 digital labs with 70 Computers</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -86,7 +86,7 @@ const Facilities = () => {
               </div>
             </Col>
             <Col xl={4} xs={6}>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -100,7 +100,7 @@ const Facilities = () => {
                   <h2>6 Hostels </h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -122,7 +122,7 @@ const Facilities = () => {
         <Container>
           <Row>
             <Col>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -136,7 +136,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -150,7 +150,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -164,7 +164,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -181,7 +181,7 @@ const Facilities = () => {
             </Col>
             <Col>
               {" "}
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -195,7 +195,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -209,7 +209,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -251,7 +251,7 @@ const Facilities = () => {
               />
             </Col>
             <Col>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -265,7 +265,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -279,7 +279,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -293,7 +293,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -310,7 +310,7 @@ const Facilities = () => {
             </Col>
             <Col>
               {" "}
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -324,7 +324,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -338,7 +338,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image
@@ -352,7 +352,7 @@ const Facilities = () => {
                   <h2>40+ Smart class rooms</h2>
                 </div>
               </div>
-              <div class="facilities-item-two">
+              <div className="facilities-item-two">
                 <div>
                   {" "}
                   <Image

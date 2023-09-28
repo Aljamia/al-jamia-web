@@ -50,7 +50,7 @@ function Students_Centre_main() {
                     Al Jamia provides students center facility nearby their
                     class rooms which helps them for accessing Internet and
                     browsing learning materials.
-                    <h1 class="Courses_Head pt-4"> Media Point </h1>
+                    <h1 className="Courses_Head pt-4"> Media Point </h1>
                     Media point is one of the best platforms that trains and
                     enhances the talent of students in the field of Information
                     Technology as well as Instructional & Media Technologies.

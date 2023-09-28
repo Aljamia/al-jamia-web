@@ -19,7 +19,10 @@ function Recognition_Awards_data() {
             />
 
             <section>
-              <h1 class="TitleStyle center_aln pt-2 pb-2" data-aos="fade-up">
+              <h1
+                className="TitleStyle center_aln pt-2 pb-2"
+                data-aos="fade-up"
+              >
                 Recognition & Awards
               </h1>
               <p data-aos="fade-up">

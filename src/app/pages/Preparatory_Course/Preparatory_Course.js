@@ -59,11 +59,11 @@ function Preparatory_Course() {
                   </p>
 
                   <div
-                    class="AboutUspage-mission-title"
+                    className="AboutUspage-mission-title"
                     id="our-mission-header"
                     data-aos="fade-up"
                   >
-                    <h1 class="Courses_Head">Admission Requirements</h1>
+                    <h1 className="Courses_Head">Admission Requirements</h1>
                   </div>
                   <p data-aos="fade-up">
                     Those who pass the Al Jamia entrance test will be invited
@@ -76,11 +76,11 @@ function Preparatory_Course() {
                   </p>
 
                   <div
-                    class="AboutUspage-mission-title"
+                    className="AboutUspage-mission-title"
                     id="our-mission-header"
                     data-aos="fade-up"
                   >
-                    <h1 class="Courses_Head">Fees structure </h1>
+                    <h1 className="Courses_Head">Fees structure </h1>
                   </div>
                   <p data-aos="fade-up">
                     The annual fee for each student is Rs 50,000, which covers

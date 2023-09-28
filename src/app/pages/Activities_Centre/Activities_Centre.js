@@ -125,7 +125,7 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card" data-aos="flip-up">
                         <div className="icon-wrapper">
-                          <i class="fa-solid fa-gamepad"></i>
+                          <i className="fa-solid fa-gamepad"></i>
                         </div>
                         <h3> Sports and Games</h3>
                       </div>

@@ -12,15 +12,15 @@ const Library = () => {
           <image src="Mask group.png" alt="" width="100%" />
         </div>
         <Container className="headlibrary">
-          <div class="row">
-            <div class="col-sm-6" data-aos="fade-right">
+          <div className="row">
+            <div className="col-sm-6" data-aos="fade-right">
               <div className="image pt-3">
                 <img src="library.png" alt="photo" width="100%" />
               </div>
             </div>
-            <div class="col-sm-6" data-aos="fade-left">
+            <div className="col-sm-6" data-aos="fade-left">
               <div className="library">
-                <div class="director-heading">
+                <div className="director-heading">
                   <h1>Central Library</h1>
                 </div>
                 <div>

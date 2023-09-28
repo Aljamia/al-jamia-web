@@ -18,7 +18,10 @@ function Alumni_Chapters() {
             />
 
             <section>
-              <h1 class="TitleStyle center_aln pt-2 pb-2" data-aos="fade-up">
+              <h1
+                className="TitleStyle center_aln pt-2 pb-2"
+                data-aos="fade-up"
+              >
                 Alumni Chapters
               </h1>
               <p data-aos="fade-up">
@@ -36,14 +39,14 @@ function Alumni_Chapters() {
                   <Col xl={4} lg={4} xs={12}>
                     <div>
                       <div
-                        class="AboutUspage-mission-title"
+                        className="AboutUspage-mission-title"
                         id="our-mission-header"
                       >
-                        <h2 class="Chapters_center_div"> GCC</h2>
+                        <h2 className="Chapters_center_div"> GCC</h2>
                       </div>
-                      <ul class="blog-details-list mt-30">
+                      <ul className="blog-details-list mt-30">
                         <li data-aos="fade-left">
-                          <i class="icofont-tick-mark"></i>U.A.E Chapter
+                          <i className="icofont-tick-mark"></i>U.A.E Chapter
                         </li>
                         <li data-aos="fade-left">Qater Chapter</li>
                         <li data-aos="fade-left">Kuwait Chapter</li>
@@ -57,14 +60,18 @@ function Alumni_Chapters() {
                   <Col xl={4} lg={4} xs={12}>
                     <div>
                       <div
-                        class="AboutUspage-mission-title"
+                        className="AboutUspage-mission-title"
                         id="our-mission-header"
                       >
-                        <h2 class="Chapters_center_div"> District Chapters </h2>
+                        <h2 className="Chapters_center_div">
+                          {" "}
+                          District Chapters{" "}
+                        </h2>
                       </div>
-                      <ul class="blog-details-list mt-30">
+                      <ul className="blog-details-list mt-30">
                         <li data-aos="fade-left">
-                          <i class="icofont-tick-mark"></i>Thiruvananthapuram{" "}
+                          <i className="icofont-tick-mark"></i>
+                          Thiruvananthapuram{" "}
                         </li>
                         <li data-aos="fade-left">Kollam </li>
                         <li data-aos="fade-left">Alappuzha </li>
@@ -80,14 +87,14 @@ function Alumni_Chapters() {
                   <Col xl={4} lg={4} xs={12}>
                     <div>
                       <div
-                        class="AboutUspage-mission-title"
+                        className="AboutUspage-mission-title"
                         id="our-mission-header"
                       >
-                        <h2 class="Chapters_center_div"> Taluk Chapters</h2>
+                        <h2 className="Chapters_center_div"> Taluk Chapters</h2>
                       </div>
-                      <ul class="blog-details-list mt-30">
+                      <ul className="blog-details-list mt-30">
                         <li data-aos="fade-left">
-                          <i class="icofont-tick-mark"></i>Eranad{" "}
+                          <i className="icofont-tick-mark"></i>Eranad{" "}
                         </li>
                         <li data-aos="fade-left">Perinthalmanna </li>
                         <li data-aos="fade-left">Nilambur </li>

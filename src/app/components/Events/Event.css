@@ -315,10 +315,16 @@ span {
 
 .card-body {
   padding: 10px !important;
+  text-align: left;
+
+}
+
+.card-body p {
+  text-align: left;
+
 }
 
 .card .card-body {
-  display: flex;
   flex-flow: row wrap;
   padding: 15px;
 }
@@ -347,6 +353,11 @@ span {
 }
 
 @media only screen and (min-width: 768px) {
+
+
+
+
+
   .card {
     flex-direction: row;
     height: auto;

@@ -37,12 +37,12 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              {/* <figcaption class="gallery__caption">
+              {/* <figcaption className="gallery__caption">
                 Portrait by Jessica Felicio
               </figcaption> */}
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[1]?.image}`}
                 width={270}
@@ -50,12 +50,12 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Oladimeji Odunsi
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[2]?.image}`}
                 width={350}
@@ -63,14 +63,14 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Alex Perez
               </figcaption>
             </figure>
           </div>
 
-          <div class="gallery__column">
-            <figure class="gallery__thumb">
+          <div className="gallery__column">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[3]?.image}`}
                 width={350}
@@ -78,12 +78,12 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Hikiapp
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[4]?.image}`}
                 width={300}
@@ -91,12 +91,12 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Ivana Cajina
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[5]?.image}`}
                 width={200}
@@ -104,14 +104,14 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Jeffery Erhunse
               </figcaption>
             </figure>
           </div>
 
-          <div class="gallery__column">
-            <figure class="gallery__thumb">
+          <div className="gallery__column">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[6]?.image}`}
                 width={350}
@@ -119,12 +119,12 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Mari Lezhava
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[7]?.image}`}
                 width={350}
@@ -132,12 +132,12 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Ethan Haddox
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[8]?.image}`}
                 width={350}
@@ -145,14 +145,14 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Amir Geshani
               </figcaption>
             </figure>
           </div>
 
-          <div class="gallery__column">
-            <figure class="gallery__thumb">
+          <div className="gallery__column">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[9]?.image}`}
                 width={350}
@@ -160,12 +160,12 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Tyler Nix
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[10]?.image}`}
                 width={350}
@@ -173,12 +173,12 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Jasmin Chew
               </figcaption>
             </figure>
 
-            <figure class="gallery__thumb">
+            <figure className="gallery__thumb">
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[11]?.image}`}
                 width={350}
@@ -186,7 +186,7 @@ const ImageGallery = () => {
                 alt="Picture of the author"
                 className="gallery__image"
               />
-              <figcaption class="gallery__caption">
+              <figcaption className="gallery__caption">
                 Portrait by Dima DallAcqua
               </figcaption>
             </figure>

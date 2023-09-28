@@ -131,7 +131,7 @@
 
 .fa-border {
     border-radius: var(--fa-border-radius, .1em);
-    border: var(--fa-border-width, .08em) var(--fa-border-style, solid) var(--fa-border-color, #eee);
+    border:none;
     padding: var(--fa-border-padding, .2em .25em .15em)
 }
 
