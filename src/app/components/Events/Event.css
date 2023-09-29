@@ -302,6 +302,18 @@ span {
 
 
 
+.news_card {
+  flex-direction: row;
+  height: auto;
+}
+
+.news_card p {
+  text-align: left;
+}
+
+.event-des p {
+  text-align: left;
+}
 
 
 /* 
@@ -357,7 +369,13 @@ span {
 
 
 
-
+  .news_card p {
+    text-align: left;
+  }
+  
+  .event-des p {
+    text-align: left;
+  }
   .card {
     height: auto;
   }
