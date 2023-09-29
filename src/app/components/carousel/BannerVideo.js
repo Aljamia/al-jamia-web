@@ -48,7 +48,7 @@ function BannerVideo() {
           height: "auto", // Maintain the aspect ratio
         }}
       >
-        <source src="/Video_banner.mp4" type="video/mp4" />
+        <source src="/banner/main_banner_video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
