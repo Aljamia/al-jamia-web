@@ -120,7 +120,7 @@
   color: var(--grary-2, #7d7d7d);
   font-family: unset;
   text-align: center;
-  font-size: xx-small;
+  font-size: xx-small !important;
   font-style: normal;
   font-weight: 400;
 }

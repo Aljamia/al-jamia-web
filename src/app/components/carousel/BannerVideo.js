@@ -27,8 +27,8 @@ function BannerVideo() {
             src="/banner/banner_Placeholder2.png"
             alt="Placeholder Image"
             width={1000}
-            style={{ width: "100%" }}
-            height={800}
+            height={1000}
+            style={{ width: "100%", height: "auto" }}
             //   layout="fill"
             objectFit="cover"
           />
@@ -48,7 +48,7 @@ function BannerVideo() {
           height: "auto", // Maintain the aspect ratio
         }}
       >
-        <source src="/banner/main_banner_video.mp4" type="video/mp4" />
+        <source src="/Video_banner.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>

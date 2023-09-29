@@ -64,10 +64,10 @@ const Library_books_main = () => {
       <div className="AboutUspage">
         <div className="department-section events-section">
           <div className="container">
-            <h1 className="TitleStyle">
-              <hr />
-              New Arrivals
-            </h1>
+          <div className="AboutUspage-title center_div"> <hr />
+              New Arrivals</div>
+
+          
             <p>
               Excitement fills the air as our library welcomes its newest
               additions. Our collection is constantly evolving to offer you the
