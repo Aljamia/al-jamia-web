@@ -1568,7 +1568,8 @@ h3 {
 
 
 }
-.about-description{
+
+.about-description {
   text-align: justify
 }
 
@@ -2375,6 +2376,9 @@ h3 {
   .header-video {
     margin-top: 100px;
   }
+
+
+
 
   .AboutUspage-campus-title {
     font-size: 1.5rem;
