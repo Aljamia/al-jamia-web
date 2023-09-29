@@ -41,14 +41,10 @@ function Preparatory_Course() {
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up"
                   >
                     Preparatory Course Admission
                   </div>
-                  <p
-                    className="AboutUspage-mission-desc pt-2"
-                    data-aos="fade-up"
-                  >
+                  <p className="AboutUspage-mission-desc pt-2">
                     The Preparatory Course is a three-year program that
                     encompasses the Al Jamia syllabus with a strong focus on
                     Arabic and English language proficiency. It also covers
@@ -61,11 +57,10 @@ function Preparatory_Course() {
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up"
                   >
                     <h1 className="Courses_Head">Admission Requirements</h1>
                   </div>
-                  <p data-aos="fade-up">
+                  <p>
                     Those who pass the Al Jamia entrance test will be invited
                     for an interview. Selection of candidates will be based on
                     their performance in the interview as well as their SSLC
@@ -78,11 +73,10 @@ function Preparatory_Course() {
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up"
                   >
                     <h1 className="Courses_Head">Fees structure </h1>
                   </div>
-                  <p data-aos="fade-up">
+                  <p>
                     The annual fee for each student is Rs 50,000, which covers
                     food, lodging, and tuition fees. Newly admitted students are
                     also required to pay a separate admission fee of Rs 5,000.

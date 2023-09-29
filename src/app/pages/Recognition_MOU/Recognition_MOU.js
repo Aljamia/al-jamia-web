@@ -36,7 +36,7 @@ function Recognition_MOU() {
             <div className="AboutUspage-ourMission Recognition_img Recognitionhead">
               <Container>
                 <Row>
-                  <Col xl={12} lg={12} xs={12} data-aos="fade-left">
+                  <Col xl={12} lg={12} xs={12}>
                     <div
                       className="AboutUspage-mission-title"
                       id="our-mission-header"
@@ -152,7 +152,7 @@ function Recognition_MOU() {
                       />
                       <div class="card-content">
                         <h1 class="app_head p-3">
-                          Kuwait <br/>  University <br />{" "}
+                          Kuwait <br /> University <br />{" "}
                         </h1>
                       </div>
                     </div>
@@ -185,7 +185,9 @@ function Recognition_MOU() {
                         alt="Image"
                       />
                       <div class="card-content">
-                        <h1 class="app_head p-3">Qatar <br/>  University</h1>
+                        <h1 class="app_head p-3">
+                          Qatar <br /> University
+                        </h1>
                       </div>
                     </div>
                   </Col>

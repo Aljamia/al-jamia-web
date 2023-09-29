@@ -36,7 +36,7 @@ function Activities_Centre() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Video_conference.JPG"
@@ -50,7 +50,7 @@ function Activities_Centre() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -99,7 +99,7 @@ function Activities_Centre() {
 
                   <div className="row">
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-child"></i>
                         </div>
@@ -107,7 +107,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-play"></i>
                         </div>
@@ -115,7 +115,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-star"></i>
                         </div>
@@ -123,7 +123,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fa-solid fa-gamepad"></i>
                         </div>
@@ -131,7 +131,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-star"></i>
                         </div>
@@ -139,7 +139,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-plug"></i>
                         </div>
@@ -147,7 +147,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-headphones"></i>
                         </div>
@@ -155,7 +155,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-volume-low"></i>
                         </div>
@@ -163,7 +163,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-book"></i>
                         </div>
@@ -171,7 +171,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-eye"></i>
                         </div>
@@ -179,7 +179,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-fire"></i>
                         </div>
@@ -187,7 +187,7 @@ function Activities_Centre() {
                       </div>
                     </div>
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-camera"></i>
                         </div>
@@ -196,7 +196,7 @@ function Activities_Centre() {
                     </div>
 
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-hospital"></i>
                         </div>
@@ -205,7 +205,7 @@ function Activities_Centre() {
                     </div>
 
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-pen"></i>
                         </div>
@@ -214,7 +214,7 @@ function Activities_Centre() {
                     </div>
 
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-star"></i>
                         </div>
@@ -223,7 +223,7 @@ function Activities_Centre() {
                     </div>
 
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-heart"></i>
                         </div>
@@ -232,7 +232,7 @@ function Activities_Centre() {
                     </div>
 
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-tag"></i>
                         </div>
@@ -241,7 +241,7 @@ function Activities_Centre() {
                     </div>
 
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-plus"></i>
                         </div>
@@ -250,7 +250,7 @@ function Activities_Centre() {
                     </div>
 
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-box"></i>
                         </div>
@@ -259,7 +259,7 @@ function Activities_Centre() {
                     </div>
 
                     <div className="column">
-                      <div className="card" data-aos="flip-up">
+                      <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-laptop"></i>
                         </div>

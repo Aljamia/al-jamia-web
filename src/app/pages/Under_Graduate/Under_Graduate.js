@@ -41,14 +41,10 @@ function Under_Graduate() {
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up"
                   >
                     Under Graduate Admission
                   </div>
-                  <p
-                    className="AboutUspage-mission-desc pt-2"
-                    data-aos="fade-up"
-                  >
+                  <p className="AboutUspage-mission-desc pt-2">
                     After completing the preparatory course, students can pursue
                     one of two three-year degree programs:
                     <br />
@@ -75,11 +71,10 @@ function Under_Graduate() {
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up"
                   >
                     <h1 className="Courses_Head">Admission Requirements</h1>
                   </div>
-                  <p data-aos="fade-up">
+                  <p>
                     Those who pass Plus Two with Arabic language can apply for
                     entrance test will be invited for an interview. Selection of
                     candidates will be based on their performance in the
@@ -91,11 +86,10 @@ function Under_Graduate() {
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
-                    data-aos="fade-up"
                   >
                     <h1 className="Courses_Head">Fees structure </h1>
                   </div>
-                  <p data-aos="fade-up">
+                  <p>
                     The annual fee for each student is Rs 50,000, which covers
                     food, lodging, and tuition fees. Newly admitted students are
                     also required to pay a separate admission fee of Rs 5,000.

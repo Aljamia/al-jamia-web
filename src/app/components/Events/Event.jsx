@@ -72,11 +72,11 @@ const Event = () => {
     <div>
       <div className="events-section">
         <div className="event-title">
-          <div className="about-Title" data-aos="fade-up">
+          <div className="about-Title">
             <h1>News and Events</h1>
           </div>
           <hr />
-          <p className="center_div pl-4  pr-4" data-aos="fade-up">
+          <p className="center_div pl-4  pr-4">
             Discover Al Jamia Al Islamiya latest news and events, celebrating
             academic excellence and vibrant campus life. Stay informed about our
             enriching activities, workshops, and more, contributing to holistic
@@ -87,7 +87,7 @@ const Event = () => {
         <div className="event-first-section p-1">
           <Container>
             <Row>
-              <Col xl={5} data-aos="fade-right">
+              <Col xl={5}>
                 <div className="event-img pt-3">
                   <Image
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
@@ -119,7 +119,7 @@ const Event = () => {
                 </div>
               </Col>
 
-              <Col xl={7} className="pt-3" data-aos="fade-left">
+              <Col xl={7} className="pt-3">
                 <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
                     {events.map((event) => (

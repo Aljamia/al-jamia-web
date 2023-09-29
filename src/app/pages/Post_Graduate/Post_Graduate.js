@@ -46,25 +46,25 @@ function Post_Graduate() {
                   </div>
 
                   <Row>
-                    <Col xl={6} lg={6} xs={12} data-aos="zoom-in-up">
+                    <Col xl={6} lg={6} xs={12}>
                       <div className="what-box mt-3">
                         <h3>PG in Contemporary Islamic Fiq’h </h3>
                       </div>
                     </Col>
 
-                    <Col xl={6} lg={6} xs={12} data-aos="zoom-in-up">
+                    <Col xl={6} lg={6} xs={12}>
                       <div className="what-box mt-3">
                         <h3>PG in Contemporary Islamic Thought </h3>
                       </div>
                     </Col>
 
-                    <Col xl={6} lg={6} xs={12} data-aos="zoom-in-up">
+                    <Col xl={6} lg={6} xs={12}>
                       <div className="what-box mt-3">
                         <h3>PG in Contemporary Islamic Thought </h3>
                       </div>
                     </Col>
 
-                    <Col xl={6} lg={6} xs={12} data-aos="zoom-in-up">
+                    <Col xl={6} lg={6} xs={12}>
                       <div className="what-box mt-3">
                         <h3>Faculty of Languages and Translation (FOLT)</h3>
                       </div>
@@ -92,7 +92,7 @@ function Post_Graduate() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12} data-aos="flip-down">
+                <Col xl={12} lg={12} xs={12}>
                   <hr />
                   <div className="center_div">
                     <p className="center_div">

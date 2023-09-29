@@ -34,7 +34,7 @@ function Student_Representative_main() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="flip-right">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="timeline">
                     <div className="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
                       <div className="timeline__event__icon "></div>
@@ -54,7 +54,7 @@ function Student_Representative_main() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="timeline">
                     <div className="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
                       <div className="timeline__event__icon "></div>

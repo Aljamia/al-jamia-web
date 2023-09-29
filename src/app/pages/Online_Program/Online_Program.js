@@ -36,7 +36,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12} data-aos="fade-up">
+                <Col xl={12} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -81,7 +81,7 @@ function Online_Program() {
                   </h1>
 
                   <div className="row pb-5">
-                    <div className="column" data-aos="flip-down">
+                    <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-video"></i>
@@ -89,7 +89,7 @@ function Online_Program() {
                         <h3>Pre-recorded video lessons </h3>
                       </div>
                     </div>
-                    <div className="column" data-aos="flip-down">
+                    <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-pen"></i>
@@ -97,7 +97,7 @@ function Online_Program() {
                         <h3>Content summary notes </h3>
                       </div>
                     </div>
-                    <div className="column" data-aos="flip-down">
+                    <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-book"></i>
@@ -105,7 +105,7 @@ function Online_Program() {
                         <h3>Reference materials</h3>
                       </div>
                     </div>
-                    <div className="column" data-aos="flip-down">
+                    <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-eye"></i>
@@ -113,7 +113,7 @@ function Online_Program() {
                         <h3>Interactive live sessions</h3>
                       </div>
                     </div>
-                    <div className="column" data-aos="flip-down">
+                    <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-file"></i>
@@ -121,7 +121,7 @@ function Online_Program() {
                         <h3>Assignments and assessment modules </h3>
                       </div>
                     </div>
-                    <div className="column" data-aos="flip-down">
+                    <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
                           <i className="fas fa-award"></i>
@@ -144,7 +144,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12}  data-aos="">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Girls_Organisation.png"
@@ -158,7 +158,7 @@ function Online_Program() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}  data-aos="">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -194,7 +194,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12}  data-aos="">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -231,7 +231,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}  data-aos="">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Faculty.JPG"
@@ -253,7 +253,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}  data-aos="">
+                <Col xl={12} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -277,7 +277,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}  data-aos="">
+                <Col xl={6} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -285,52 +285,48 @@ function Online_Program() {
                     <h1 className="objectives_Head"> Learning objectives:</h1>
                   </div>
                   <ul className="blog-details-list mt-30">
-                    <li  data-aos="">
+                    <li>
                       To recognize the necessity of Ulum al -Qur’an in
                       understanding the Qur’an.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       To introduce Ulum al -Qur’an with its definition, history,
                       and significance
                     </li>
-                    <li  data-aos="">
+                    <li>
                       To get the basic knowledge of various subjects related to
                       Ulum al -Qur’an
                     </li>
 
-                    <li  data-aos="">
+                    <li>
                       To get a tool for the general understanding of the Qur’an
                       with Ulum al-Qur’an
                     </li>
-                    <li  data-aos="">
+                    <li>
                       To analyse the interpretations of the Qur’an with the
                       basics of Ulum al-Qur’an
                     </li>
-                    <li  data-aos="">
-                      What do you learn from the course?
-                    </li>
-                    <li  data-aos="">
+                    <li>What do you learn from the course?</li>
+                    <li>
                       On completion of this course, a student will be able to:
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Realize the historical and conceptual significance of the
                       Qur’an.
                     </li>
-                    <li  data-aos="">
-                      Understand the proper way of learning the Qur’an.
-                    </li>
-                    <li  data-aos="">
+                    <li>Understand the proper way of learning the Qur’an.</li>
+                    <li>
                       Get a proper understanding of the different aspects of
                       Ulum al-Qur’an.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Recognize the primary and secondary sources of Ulum
                       al-Qur’an
                     </li>
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}  data-aos="">
+                <Col xl={6} lg={12} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/banner/Excellence.jpg"
@@ -352,7 +348,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}  data-aos="">
+                <Col xl={12} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -371,7 +367,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}  data-aos="">
+                <Col xl={6} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -382,20 +378,16 @@ function Online_Program() {
                     </h1>
                   </div>
                   <ul className="blog-details-list mt-30">
-                    <li  data-aos="">Pre-recorded video lessons</li>
-                    <li  data-aos="">Content summary notes</li>
-                    <li  data-aos="">Reference materials</li>
-                    <li  data-aos="">Interactive live sessions</li>
-                    <li  data-aos="">
-                      Assignments and assessment modules
-                    </li>
-                    <li  data-aos="">
-                      Final evaluation and certification
-                    </li>
+                    <li>Pre-recorded video lessons</li>
+                    <li>Content summary notes</li>
+                    <li>Reference materials</li>
+                    <li>Interactive live sessions</li>
+                    <li>Assignments and assessment modules</li>
+                    <li>Final evaluation and certification</li>
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}  data-aos="">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
                     <h1 className="objectives_Head"> Special offer:</h1>
                     Students who enrolled and COMPLETED five modules of the
@@ -412,7 +404,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}  data-aos="">
+                <Col xl={12} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -451,7 +443,7 @@ function Online_Program() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={12} xs={12}  data-aos="">
+                <Col xl={6} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -466,30 +458,22 @@ function Online_Program() {
                     following topics:
                   </div>
                   <ul className="blog-details-list mt-4">
-                    <li  data-aos="">
+                    <li>
                       The Prophetic Tradition as the second authentic source of
                       Islamic Sharia.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       The definition of Prophetic Tradition in various areas of
                       Islamic knowledge
                     </li>
-                    <li  data-aos="">
-                      Categories of Prophetic Tradition
-                    </li>
-                    <li  data-aos="">
-                      The authenticity of Prophetic Tradition
-                    </li>
-                    <li  data-aos="">
-                      The features of Prophetic Tradition
-                    </li>
-                    <li  data-aos="">
-                      The relation between Qur’an and Prophetic Tradition
-                    </li>
+                    <li>Categories of Prophetic Tradition</li>
+                    <li>The authenticity of Prophetic Tradition</li>
+                    <li>The features of Prophetic Tradition</li>
+                    <li>The relation between Qur’an and Prophetic Tradition</li>
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}  data-aos="">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/banner/Students_Centres.png"
@@ -511,7 +495,7 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={12} lg={12} xs={12}  data-aos="">
+                <Col xl={12} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -556,34 +540,34 @@ function Online_Program() {
                     following topics:
                   </div>
                   <ul className="blog-details-list mt-4">
-                    <li  data-aos="">
+                    <li>
                       Explain the basic principles related to Islamic Sharia and
                       Fiqh.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Introduce the definition, history, and authenticity of
                       Maqasid al-Sharia.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Understand contemporary studies and researches on Maqasid
                       al-Sharia.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Familiarize the methods and ways of determining the
                       Maqasid al-Sharia.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Understand the execution of Maqasid al-Sharia in
                       contemporary issues.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Explore a broad knowledge about five Dharuriyyat in the
                       light of Maqasid
                     </li>
                   </ul>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}  data-aos="">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
                     <Image
                       src="/banner/Sargasamgamam.png"
@@ -648,23 +632,23 @@ function Online_Program() {
                       Explain the basic principles related to Islamic Sharia and
                       Fiqh.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Introduce the definition, history, and authenticity of
                       Maqasid al-Sharia.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Understand contemporary studies and researches on Maqasid
                       al-Sharia.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Familiarize the methods and ways of determining the
                       Maqasid al-Sharia.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Understand the execution of Maqasid al-Sharia in
                       contemporary issues.
                     </li>
-                    <li  data-aos="">
+                    <li>
                       Explore a broad knowledge about the five Dharuriyyat in
                       the light of Maqasid
                     </li>

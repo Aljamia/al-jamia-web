@@ -42,8 +42,8 @@ const Academics = () => {
             </Col>
             <Col xl={6} lg={6} xs={12} className="Academicsstyle">
               <div className="Colleges_div_bg">
-                <h1 data-aos="fade-up">Colleges</h1>
-                <p data-aos="fade-up">
+                <h1>Colleges</h1>
+                <p>
                   Al Jamia offers excellent academic programs with
                   specializations designed to address the needs of both the
                   nation and society. These programs encompass the Preparatory
@@ -58,10 +58,8 @@ const Academics = () => {
         <Courses />
 
         <div className="PreparatoryStyle">
-          <h4 className="PreparatoryH4" data-aos="fade-up">
-            Preparatory Programme
-          </h4>
-          <h2 className="PreparatoryH2" data-aos="fade-up">
+          <h4 className="PreparatoryH4">Preparatory Programme</h4>
+          <h2 className="PreparatoryH2">
             Handshake infographic mass market <br /> crowdfunding iteration.
           </h2>
 

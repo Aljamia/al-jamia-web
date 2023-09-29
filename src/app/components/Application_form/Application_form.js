@@ -12,7 +12,7 @@ function Application_form() {
         <Container>
           <Row>
             <Col xl={6} lg={6} xs={12}>
-              <div className="formbox" data-aos="fade-up">
+              <div className="formbox">
                 <b>
                   {" "}
                   Enter Details: <hr />{" "}
@@ -224,7 +224,7 @@ function Application_form() {
             </Col>
 
             <Col xl={6} lg={6} xs={12}>
-              <div className="formbox" data-aos="fade-up">
+              <div className="formbox">
                 <b>
                   Details of Address: <hr />{" "}
                 </b>
@@ -330,7 +330,7 @@ function Application_form() {
               </div>
             </Col>
 
-            <Col xl={12} lg={12} xs={12} data-aos="fade-up">
+            <Col xl={12} lg={12} xs={12}>
               <div className="formbox unheight">
                 <b>
                   Education Qualification
@@ -449,7 +449,7 @@ function Application_form() {
               </div>
             </Col>
 
-            <div className="center_div" data-aos="flip-left">
+            <div className="center_div">
               <button type="submit" className="send_button  m-4">
                 Apply Now
               </button>

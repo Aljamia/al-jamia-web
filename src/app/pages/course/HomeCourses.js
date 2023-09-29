@@ -35,7 +35,7 @@ const HomeCourses = () => {
     <div className="portfolio">
       <div className="portfolio-container">
         {cardValues.slice(0, 3).map((course) => (
-          <Card className="portfolio-card" key={course.id} data-aos="flip-left">
+          <Card className="portfolio-card" key={course.id}>
             <Card.Img
               variant="top"
               className="portfolio-modal-images"
