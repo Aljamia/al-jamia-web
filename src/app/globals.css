@@ -428,7 +428,7 @@ img {
   text-align: left;
   padding: auto;
   width: 100%;
-  height: 100px;
+  height: 110px;
   font-family: unset;
   font-size: medium;
   content: normal;
@@ -1649,7 +1649,7 @@ h3 {
 }
 
 .about-description {
-  padding: 0rem 2rem 0rem 2rem;
+ padding: 0rem 2rem 0rem 2rem; 
 
 
 }
