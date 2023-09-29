@@ -5,7 +5,6 @@ import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
-import World_Campus from "@/app/components/World_Campus/World_Campus";
 
 function Recognition_MOU() {
   const [about, setAbout] = useState([]);
@@ -24,7 +23,7 @@ function Recognition_MOU() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/banner/OffCampus.png"
+            src="/banner/WorldCampus.png"
             layout="responsive"
             width={1000}
             height={500}
@@ -33,66 +32,16 @@ function Recognition_MOU() {
         </div>
 
         <div>
-          <div className="AboutUspage-items">
-            <div className="AboutUspage-ourMission">
+          <div className="AboutUspage-items center_div">
+            <div className="AboutUspage-ourMission Recognition_img Recognitionhead">
               <Container>
                 <Row>
-                  <Col xl={6} lg={6} xs={12} data-aos="fade-right">
-                    <div className="AboutUspage-mission-img">
-                      <Image
-                        src="/banner/AlamiaMewat.jpg"
-                        layout="responsive" // Use layout="responsive" for responsiveness
-                        width={500} // Provide the width of the image
-                        height={800} // Adjust the height as needed to make it taller
-                        alt="Image"
-                        objectFit="cover"
-                        className="AboutUspage-vision-img2"
-                      />
-                    </div>
-                  </Col>
-
-                  <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                  <Col xl={12} lg={12} xs={12} data-aos="fade-left">
                     <div
                       className="AboutUspage-mission-title"
                       id="our-mission-header"
                     >
-                      Al Jamia Mewat
-                    </div>
-                    <p className="AboutUspage-mission-desc">
-                      Get insights about Al Jamia Mewat Campus Company Profile,
-                      reviews, salaries, interviews questions, offices,
-                      locations, headquarters, employee benefits and ...
-                    </p>
-                  </Col>
-                </Row>
-              </Container>
-            </div>
-          </div>
-
-          <div className="AboutUspage-items">
-            <div className="AboutUspage-ourMission">
-              <Container>
-                <Row>
-                  <Col xl={6} lg={6} xs={12} data-aos="fade-right">
-                    <div className="AboutUspage-mission-img">
-                      <Image
-                        src="/banner/AlamiaMewat.png"
-                        layout="responsive" // Use layout="responsive" for responsiveness
-                        width={500} // Provide the width of the image
-                        height={800} // Adjust the height as needed to make it taller
-                        alt="Image"
-                        objectFit="cover"
-                        className="AboutUspage-vision-img2"
-                      />
-                    </div>
-                  </Col>
-
-                  <Col xl={6} lg={6} xs={12} data-aos="fade-left">
-                    <div
-                      className="AboutUspage-mission-title"
-                      id="our-mission-header"
-                    >
-                      Al Jamia Malda
+                      Recognition & MOU
                     </div>
                     <p className="AboutUspage-mission-desc">
                       Al Jamia Malda Campus is committed to serving as a
@@ -101,14 +50,161 @@ function Recognition_MOU() {
                       capital. The institution aims to provide value-based
                       education to all members of society, with a special
                       emphasis on bright minds from socio-economically
-                      disadvantaged background. <br />
-                      <br />
-                      The Foundation envisions an innovative and empowering
-                      educational approach that equips the younger generation
-                      with the skills and knowledge to build a better future for
-                      humanity, guided by principles of justice and ethical
-                      values.
+                      disadvantaged background.
                     </p>
+                  </Col>
+
+                  <Col xl={4} lg={4} xs={12}>
+                    <div class="card">
+                      <Image
+                        src="/banner/Al-Imam Mohammad bin Saud Islamic University,Riyadh.jpg"
+                        layout="responsive"
+                        width={1000}
+                        height={500}
+                        alt="Image"
+                      />
+                      <div class="card-content">
+                        <h1 class="p-3">
+                          Al-Imam Mohammad bin Saud Islamic <br />
+                          University Riyadh
+                        </h1>
+                      </div>
+                    </div>
+                  </Col>
+
+                  <Col xl={4} lg={4} xs={12}>
+                    <div class="card">
+                      <Image
+                        src="/banner/International Islamic University, Malaysia.jpg"
+                        layout="responsive"
+                        width={1000}
+                        height={500}
+                        alt="Image"
+                      />
+                      <div class="card-content">
+                        <h1 class="app_head p-3">
+                          International Islamic University <br /> Malaysia
+                        </h1>
+                      </div>
+                    </div>
+                  </Col>
+
+                  <Col xl={4} lg={4} xs={12}>
+                    <div class="card">
+                      <Image
+                        src="/banner/Hamad Bin Khalifa University, Qatar.jpg"
+                        layout="responsive"
+                        width={1000}
+                        height={500}
+                        alt="Image"
+                      />
+                      <div class="card-content">
+                        <h1 class="app_head p-3">
+                          Hamad Bin Khalifa University <br /> Qatar
+                        </h1>
+                      </div>
+                    </div>
+                  </Col>
+
+                  <Col xl={4} lg={4} xs={12}>
+                    <div class="card">
+                      <Image
+                        src="/banner/Fatih Sultan Mehmet Foundation University,Turkey.jpeg"
+                        layout="responsive"
+                        width={1000}
+                        height={500}
+                        alt="Image"
+                      />
+                      <div class="card-content">
+                        <h1 class="app_head p-3">
+                          Fatih Sultan Mehmet Foundation
+                          <br /> University Turkey
+                        </h1>
+                      </div>
+                    </div>
+                  </Col>
+
+                  <Col xl={4} lg={4} xs={12}>
+                    <div class="card">
+                      <Image
+                        src="/banner/Ataturk University,Erzurum, turkey.jpeg"
+                        layout="responsive"
+                        width={1000}
+                        height={500}
+                        alt="Image"
+                      />
+                      <div class="card-content">
+                        <h1 class="app_head p-3">
+                          Ataturk University,Erzurum <br /> Turkey
+                        </h1>
+                      </div>
+                    </div>
+                  </Col>
+
+                  <Col xl={4} lg={4} xs={12}>
+                    <div class="card">
+                      <Image
+                        src="/banner/Kuwait University.jpg"
+                        layout="responsive"
+                        width={1000}
+                        height={500}
+                        alt="Image"
+                      />
+                      <div class="card-content">
+                        <h1 class="app_head p-3">
+                          Kuwait <br/>  University <br />{" "}
+                        </h1>
+                      </div>
+                    </div>
+                  </Col>
+
+                  <Col xl={4} lg={4} xs={12}>
+                    <div class="card">
+                      <Image
+                        src="/banner/Istanbul Sabahattin Zaim UniversityTurkey.jpeg"
+                        layout="responsive"
+                        width={1000}
+                        height={500}
+                        alt="Image"
+                      />
+                      <div class="card-content">
+                        <h1 class="app_head p-3">
+                          Istanbul Sabahattin Zaim University <br /> Turkey
+                        </h1>
+                      </div>
+                    </div>
+                  </Col>
+
+                  <Col xl={4} lg={4} xs={12}>
+                    <div class="card">
+                      <Image
+                        src="/banner/Qatar University.jpg"
+                        layout="responsive"
+                        width={1000}
+                        height={500}
+                        alt="Image"
+                      />
+                      <div class="card-content">
+                        <h1 class="app_head p-3">Qatar <br/>  University</h1>
+                      </div>
+                    </div>
+                  </Col>
+
+                  <Col xl={4} lg={4} xs={12}>
+                    <div class="card">
+                      <Image
+                        src="/banner/Selcuk University,Turkey.jpg"
+                        layout="responsive"
+                        width={1000}
+                        height={500}
+                        alt="Image"
+                      />
+                      <div class="card-content">
+                        <h1 class="app_head p-3">
+                          Selcuk University <br /> Turkey
+                        </h1>
+                      </div>
+                    </div>
                   </Col>
                 </Row>
               </Container>
@@ -121,6 +217,5 @@ function Recognition_MOU() {
     );
   }
 }
-
 
 export default Recognition_MOU;

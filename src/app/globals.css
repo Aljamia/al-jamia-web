@@ -269,7 +269,7 @@ img {
 }
 
 .course-headerpage {
-  padding:2em;
+  padding: 2em;
 }
 
 .course-header h1 {
@@ -1158,7 +1158,21 @@ h3 {
   min-height: 500px;
 }
 
+.Recognitionhead h1 {
+  width: auto;
+  padding: 1%;
+  text-align: center;
+  font-size: medium;
+  color: #000;
+  font-family: unset;
+  font-weight: 300;
+}
 
+.Recognition_img img {
+  max-height: 300px;
+  min-height: 300px;
+
+}
 
 .box {
   background-color: #f8f8f8;
@@ -1554,6 +1568,9 @@ h3 {
 
 
 }
+.about-description{
+  text-align: justify
+}
 
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/ourCourses/Courses.css ***!
@@ -1580,7 +1597,7 @@ h3 {
 }
 
 .grades {
-  padding: 0em 5em 0em;
+  padding: 0em 10em 0em;
 }
 
 .grades-digits {
