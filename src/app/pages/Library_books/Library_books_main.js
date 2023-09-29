@@ -80,7 +80,7 @@ const Library_books_main = () => {
               {cardValues.map((item, index) => (
                 <>
                   <div className="box m-2" key={index}>
-                    <div className="caro-img">
+                    <div className="caro-img books">
                       <Image
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
                         alt=""

@@ -74,7 +74,7 @@ function Under_Graduate() {
                   >
                     <h1 className="Courses_Head">Admission Requirements</h1>
                   </div>
-                  <p>
+                  <p className="AboutUspage-mission-desc">
                     Those who pass Plus Two with Arabic language can apply for
                     entrance test will be invited for an interview. Selection of
                     candidates will be based on their performance in the
@@ -89,7 +89,7 @@ function Under_Graduate() {
                   >
                     <h1 className="Courses_Head">Fees structure </h1>
                   </div>
-                  <p>
+                  <p className="AboutUspage-mission-desc">
                     The annual fee for each student is Rs 50,000, which covers
                     food, lodging, and tuition fees. Newly admitted students are
                     also required to pay a separate admission fee of Rs 5,000.
