@@ -43,7 +43,6 @@ const Courses = () => {
               Programs, Master's Programs, Diplomas, and Certificates.
             </p>
           </div>
-
           <HomeCourses />
           {/* <div className="portfolio">
             <div className="portfolio-container">
