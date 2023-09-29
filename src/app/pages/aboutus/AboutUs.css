@@ -158,6 +158,11 @@
   /* 39px */
 }
 
+
+.AboutUspage-mission-desc  p{
+  text-align: left;
+}
+
 #our-mission-header {
   margin-top: 30px;
 }

@@ -922,6 +922,9 @@ h3 {
   text-align: left !important;
 
 }
+.AboutUspage-mission-desc  p{
+  text-align: left !important;
+}
 
 .library p {
   text-align: left !important;
@@ -1132,6 +1135,10 @@ h3 {
   flex-basis: 60%;
 }
 
+.timeline__event__description p {
+  text-align: left;
+}
+
 .timeline__event:after {
   content: "";
   width: 2px;
@@ -1164,6 +1171,9 @@ h3 {
 @media (max-width: 786px) {
 
 
+  .timeline__event__description p {
+    text-align: center;
+  }
 
   .timeline__event {
     flex-direction: column;
@@ -2463,6 +2473,7 @@ h3 {
     font-size: 1.5rem;
     text-align: center;
   }
+  
 
   .AboutUspage-mission-desc {
     text-align: justify;
