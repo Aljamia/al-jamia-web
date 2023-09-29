@@ -301,10 +301,18 @@ span {
 
 
 
-
 .news_card {
   flex-direction: row;
   height: auto;
+  width: 100% !important;
+
+}
+
+
+
+.news_card img {
+  height: auto;
+  width: 100% !important;
 }
 
 .news_card p {
@@ -369,13 +377,25 @@ span {
 
 
 
+  .news_card {
+    height: auto !;
+    width: 100% !important;
+  }
+
+
+  .news_card img {
+    height: auto;
+    width: 100% !important;
+  }
+
   .news_card p {
     text-align: left;
   }
-  
+
   .event-des p {
     text-align: left;
   }
+
   .card {
     height: auto;
   }

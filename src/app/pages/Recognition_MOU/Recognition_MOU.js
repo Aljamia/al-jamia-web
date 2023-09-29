@@ -44,13 +44,18 @@ function Recognition_MOU() {
                       Recognition & MOU
                     </div>
                     <p className="AboutUspage-mission-desc">
-                      Al Jamia Malda Campus is committed to serving as a
-                      valuable resource in the region by conducting relevant
-                      research and investing in the development of human
-                      capital. The institution aims to provide value-based
-                      education to all members of society, with a special
-                      emphasis on bright minds from socio-economically
-                      disadvantaged background.
+                      Al Jamia Al Islamiya holds prestigious recognition for its
+                      commitment to excellence in Islamic education. Our
+                      institution has established Memorandums of Understanding
+                      (MOUs) with esteemed Int’l universities and research
+                      organizations globally. These collaborations serve as a
+                      testament to our dedication to fostering academic
+                      partnerships and expanding our horizons in the pursuit of
+                      knowledge and enlightenment. Through these MOUs, we aim to
+                      advance our academic programs, research endeavors, and
+                      global outreach, enhancing the educational experience for
+                      our students and strengthening our position as a leader in
+                      Islamic education.
                     </p>
                   </Col>
 
