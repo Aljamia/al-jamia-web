@@ -48,7 +48,7 @@ const CoursePage = () => {
       </div>
 
       <div>
-        <div className="course pt-5">
+        <div className="course pt-1">
           <div className="AboutUspage-desc">
             <>
               <Container className="AboutUspage-short-desc">
@@ -80,7 +80,7 @@ const CoursePage = () => {
                         <div className="course-data-items">
                           <span className="course-data-category">
                             <img
-                              className="icon_pl p-1"
+                              className="icon_pl"
                               src="forbox.svg"
                               alt="photo"
                               width="auto"
@@ -90,7 +90,7 @@ const CoursePage = () => {
 
                           <span className="course-data-duration">
                             <img
-                              className="icon_pl p-1"
+                              className="icon_pl"
                               src="time.svg"
                               alt="photo"
                               width="auto"

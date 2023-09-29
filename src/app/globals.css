@@ -15,11 +15,16 @@
 
 
 body p {
-  color: #747373;
+  color: #474747;
   font-family: unset;
   font-size: medium !important;
   font-weight: 300;
   text-align: center;
+}
+
+.container p {
+  font-size: medium !important;
+
 }
 
 img {
@@ -181,6 +186,11 @@ img {
   float: left;
 }
 
+.addres_box p {
+  
+  text-align: left;
+}
+
 
 .addres_box img {
   padding: 10px;
@@ -286,7 +296,7 @@ img {
 }
 
 .course-desc {
-  color: #747373;
+  color: #474747;
   font-size: medium;
   font-style: normal;
   font-weight: 300;
@@ -294,7 +304,7 @@ img {
   letter-spacing: 0.52px;
   line-height: 160%;
   margin-bottom: 30px;
-  padding:  0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
 }
 
 .portfolio {
@@ -411,7 +421,7 @@ img {
 }
 
 .portfolio-text {
-  color: #747373;
+  color: #474747;
   text-align: left;
   padding: auto;
   width: 100%;
@@ -460,7 +470,7 @@ img {
 }
 
 .course-cardmodal-text {
-  color: #747373;
+  color: #474747;
   text-align: left;
   padding: auto;
   width: 100%;
@@ -938,7 +948,7 @@ h3 {
   color: var(--light-green-color);
   font-size: 1.5rem;
   font-style: normal;
-  padding-bottom: 0.5rem;
+  padding-bottom: 10px;
   font-weight: 300;
   line-height: normal;
 }
@@ -948,7 +958,6 @@ h3 {
   color: var(--light-green-color);
   font-size: 1.5rem;
   font-style: normal;
-  padding-bottom: 0.5rem;
   font-weight: 300;
   line-height: normal;
 }
@@ -973,7 +982,6 @@ h3 {
   font-style: normal;
   text-align: left;
   font-weight: 500;
-  line-height: 160%;
   /* 39px */
 }
 
@@ -1588,18 +1596,20 @@ h3 {
 .about-Title {
   text-align: center;
   color: #619a46;
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .about-Title h1 {
   font-family: unset;
   font-weight: 300;
   color: #619a46;
+  margin-top: 2rem !important;
+
   font-size: 2rem;
 }
 
 .library {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .library h2 {
@@ -1887,7 +1897,7 @@ h3 {
 }
 
 .app_head p {
-  color: #747373;
+  color: #474747;
 }
 
 .app_head a {
@@ -1959,13 +1969,13 @@ h3 {
 }
 
 .icon_pl {
-  width: 23px;
-  padding-top: 2px !important;
+  width: 20px;
+  padding-right: 3px !important;
 }
 
 
 .icon_pl img {
-  width: 20px;
+  width: 15px;
   margin-top: 22px;
 }
 
@@ -2167,15 +2177,20 @@ h3 {
   }
 
 
+
+  .addres_box p {
+  
+    text-align: center;
+  }
   
   .card-text {
     padding: 0rem 1rem 0rem 1rem !important;
   }
-  
-.course-desc {
-  
-  padding:  2% 2% 2% 2%;
-}
+
+  .course-desc {
+
+    padding: 2% 2% 2% 2%;
+  }
 
 
   .about-description p {
@@ -2239,13 +2254,6 @@ h3 {
 
 
 @media (max-width: 991px) {
-  body p {
-    color: #747373;
-    font-family: unset;
-    font-size: medium !important;
-    font-weight: 300;
-    text-align: center;
-  }
 
 
   .app_head {

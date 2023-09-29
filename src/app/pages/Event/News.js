@@ -93,7 +93,7 @@ const News = () => {
       <div className="news-section">
         <Container id="news-container">
           <div className="header-news">
-            <div className="news-title  pt-5">
+            <div className="news-title  pt-2">
               <h1>{h1Content}</h1>
             </div>
             <div className="new-img">

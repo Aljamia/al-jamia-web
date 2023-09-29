@@ -40,7 +40,7 @@ const HomeCourses = () => {
             <div className="course-data-items">
               <span className="course-data-category">
                 <img
-                  className="icon_pl p-1"
+                  className="icon_pl"
                   src="forbox.svg"
                   alt="photo"
                   width="auto"
@@ -50,7 +50,7 @@ const HomeCourses = () => {
 
               <span className="course-data-duration">
                 <img
-                  className="icon_pl p-1"
+                  className="icon_pl"
                   src="time.svg"
                   alt="photo"
                   width="auto"

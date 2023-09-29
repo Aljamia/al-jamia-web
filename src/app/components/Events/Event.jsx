@@ -125,7 +125,7 @@ const Event = () => {
                     {events.map((event) => (
                       <>
                         <ul>
-                          <li className="card" key={event._id}>
+                          <li className="card news_card" key={event._id}>
                             <img
                               src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                               alt=""
