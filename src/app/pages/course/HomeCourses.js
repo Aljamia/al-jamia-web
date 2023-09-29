@@ -1,17 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Footer from "@/app/components/footer/Footer";
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Modal, Card } from "react-bootstrap";
-import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { getCourse } from "@/app/hooks/UseApi";
-import Information_Technology from "../Centre_for_it/Information_Technology";
-import Centre_for_hr_main from "../Centre_for_hr/Centre_for_hr_main";
-import Centre_for_research_main from "../Centre_for_research/Centre_for_research_main";
-import Faculty_mail from "../Faculty/Faculty_mail";
-import Students_Council_main from "../Students_Council/Students_Council_main";
 import Image from "next/image";
-import "./CoursePage.css";
+// import "./CoursePage.css";
 const HomeCourses = () => {
   const [show, setShow] = useState(false);
   const [modalVal, setModalVal] = useState({});
@@ -32,7 +25,6 @@ const HomeCourses = () => {
     fetchCourse();
   }, []);
   return (
-    <div className="portfolio">
       <div className="portfolio-container">
         {cardValues.slice(0, 3).map((course) => (
           <Card className="portfolio-card" key={course.id}>
@@ -139,7 +131,6 @@ const HomeCourses = () => {
             </Row>
           </Modal.Body>
         </Modal>
-      </div>
     </div>
   );
 };
