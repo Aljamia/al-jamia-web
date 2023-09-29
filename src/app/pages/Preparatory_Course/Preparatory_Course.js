@@ -51,7 +51,7 @@ function Preparatory_Course() {
                     fundamental Islamic knowledge, including the study of the
                     Hadith, Fiqh, Islamic History, and Aqeedah. Additionally, it
                     aligns with the Kerala Government Examination Board (SCHOL)
-                    Plus Tow Humanities curriculum.{" "}
+                    Plus Tow Humanities curriculum.
                   </p>
 
                   <div
