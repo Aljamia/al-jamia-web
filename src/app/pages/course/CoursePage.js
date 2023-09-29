@@ -69,8 +69,8 @@ const CoursePage = () => {
             <div className="course-headerpage">
               <div className="portfolio-container">
                 {cardValues.map((course) => (
-                  <div key={course.id}>
-                    <Card className="portfolio-card" >
+                  <>
+                    <Card className="portfolio-card" key={course.id}>
                       <Card.Img
                         variant="top"
                         className="portfolio-modal-images"
@@ -122,7 +122,7 @@ const CoursePage = () => {
                         </button>
                       </div>
                     </Card>
-                  </div>
+                  </>
                 ))}
                 <Modal
                   key={modalVal?.id}
