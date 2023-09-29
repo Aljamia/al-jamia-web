@@ -25,7 +25,7 @@ const Digitallibrary = () => {
               </p>{" "}
               <div className="Faculties-img" data-aos="fade-up">
                 <Image
-                  src="/banner/Digital_Library.JPG"
+                  src="/banner/Wifi Campus.JPG"
                   layout="responsive"
                   width={1000}
                   height={200}

@@ -15,7 +15,7 @@ const Library = () => {
           <div className="row">
             <div className="col-sm-6" data-aos="fade-right">
               <div className="image pt-3">
-                <img src="library.png" alt="photo" width="100%" />
+                <img src="libraryHome.png" alt="photo" width="100%" />
               </div>
             </div>
             <div className="col-sm-6" data-aos="fade-left">

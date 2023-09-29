@@ -98,23 +98,25 @@ function AljamiaArts_Science() {
                   </div>
                   <ul className="blog-details-list mt-30">
                     <li data-aos="fade-left">
-                      <b>B.SC </b>
-                      <br />
-                      Food Technology Microbiology <br />
-                      Psychology Geography <br />
-                      Computer Science{" "}
+                      BSC Food Technology <br />
                     </li>
                     <li data-aos="fade-left">
-                      <b>BCA</b>
-                      <br />
-                      B. A. English Language and Literature <br />
-                      B. A. Islamic Studies <br />
-                      B. Com Computer Application{" "}
+                    BSC Microbiology <br />
                     </li>
                     <li data-aos="fade-left">
-                      <b>BBA</b> <br />
-                      Finance{" "}
+                    BSC Psychology <br />
                     </li>
+                    <li data-aos="fade-left">
+                    BSC Geography <br />
+                    </li>
+                    <li data-aos="fade-left">BSC Computer Science </li>
+                    <li data-aos="fade-left">BCA</li>
+                    <li data-aos="fade-left">
+                      B. A. English Language and Literature
+                    </li>
+                    <li data-aos="fade-left">B. A. Islamic Studies</li>
+                    <li data-aos="fade-left">B. Com Computer Application </li>
+                    <li data-aos="fade-left">BBA Finance </li>
                   </ul>
                 </div>
               </Col>

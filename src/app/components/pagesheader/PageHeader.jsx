@@ -95,6 +95,9 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Organizational_structure">
                   Organizational Structure
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/Recognition_MOU">
+                  Recognition & MOU
+                </NavDropdown.Item>
                 <NavDropdown.Item href="/Career">Career</NavDropdown.Item>
               </NavDropdown>
 

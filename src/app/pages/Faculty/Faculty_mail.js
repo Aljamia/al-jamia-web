@@ -24,7 +24,7 @@ function Faculty_mail() {
                 <Col xl={12} lg={12} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/banner/Facultys.JPG"
+                      src="/banner/Faculty.jpeg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller

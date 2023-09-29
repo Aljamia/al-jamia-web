@@ -7,6 +7,7 @@ import Link from "next/link";
 import { getCourse } from "@/app/hooks/UseApi";
 import { Modal } from "react-bootstrap";
 import "../../globals.css";
+import HomeCourses from "@/app/pages/course/HomeCourses";
 
 const Courses = () => {
   const [show, setShow] = useState(false);
@@ -42,7 +43,9 @@ const Courses = () => {
               Programs, Master's Programs, Diplomas, and Certificates.
             </p>
           </div>
-          <div className="portfolio">
+
+          <HomeCourses/>
+          {/* <div className="portfolio">
             <div className="portfolio-container">
               {cardValues.slice(0, 3).map((course) => (
                 <Card
@@ -155,7 +158,7 @@ const Courses = () => {
                 </Modal.Body>
               </Modal>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className="portfolio">
             <div className="portfolio-container">
