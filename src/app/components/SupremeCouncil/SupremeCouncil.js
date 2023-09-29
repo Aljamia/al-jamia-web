@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
 import { getSupreamCouncil } from "@/app/hooks/UseApi";
-import Image from "next/image";
 
 const SupremeCouncil = () => {
   const [commitee, Setcommitee] = useState([]);

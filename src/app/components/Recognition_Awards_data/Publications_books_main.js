@@ -97,16 +97,16 @@ const Publications_books_main = () => {
                         layout="responsive"
                       />
                     </div>
-                    <div className="caro-items">
+                    {/* <div className="caro-items">
                       <h4 className="caro-des"> {item.title}</h4>
                       <p className="caro-paragraph"> {item.author}</p>
-                      {/* <div className="More_btn2">
+                      <div className="More_btn2">
                   <button onClick={() => handleShow(department)}>
                     More Details
                   </button>
 
-                </div> */}
-                    </div>
+                </div> 
+                    </div> */}
                   </div>
                 </>
               ))}

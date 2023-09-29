@@ -26,7 +26,7 @@ function Our_Facilities() {
 
         <div className="AboutUspage-img">
           <Image
-            src="/banner/Facilities.png"
+            src="/banner/Facilities_bg.png"
             layout="responsive"
             width={1000}
             height={500}
@@ -96,7 +96,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12} data-aos="flip-left">
                   <div className="box">
                     <div className="caro-img">
-                    <img src="/banner/Conference2.JPG" alt="" />
+                      <img src="/banner/Conference2.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Conference Halls</h4>

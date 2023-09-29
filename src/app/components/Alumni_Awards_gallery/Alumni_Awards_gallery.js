@@ -36,9 +36,9 @@ const Alumni_Awards_gallery = () => {
                 alt={`Picture ${index + 1}`}
                 className="gallery__image"
               />
-              <figcaption className="gallery__caption">
-                Portrait by {item.title}
-              </figcaption>
+              {/* <figcaption className="gallery__caption">
+               {item.title}
+              </figcaption> */}
             </figure>
           </>
         ))}
