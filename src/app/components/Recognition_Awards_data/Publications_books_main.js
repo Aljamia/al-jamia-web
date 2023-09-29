@@ -73,7 +73,6 @@ const Publications_books_main = () => {
         <div className="department-section events-section">
           <div className="container">
             <h1 className="TitleStyle">
-              <hr />
               Our Publications
             </h1>
             <p>
