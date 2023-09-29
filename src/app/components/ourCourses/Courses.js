@@ -49,8 +49,7 @@ const Courses = () => {
               {cardValues.slice(0, 3).map((course) => (
                 <Card
                   className="portfolio-card"
-                  key={course.id}
-                  
+                  key={course.id}          
                 >
                   <Card.Img
                     variant="top"
