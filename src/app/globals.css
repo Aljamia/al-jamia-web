@@ -187,7 +187,7 @@ img {
 }
 
 .addres_box p {
-  
+
   text-align: left;
 }
 
@@ -264,12 +264,15 @@ img {
   }
 
   .addres_box img {
-    padding-top: 30px;
+    padding-top: 20px;
     width: 50px;
     float: none;
     text-align: center;
   }
 
+  .contact-header-title h1 {
+    margin-top: 0%;
+  }
 }
 
 
@@ -503,6 +506,22 @@ img {
 }
 
 @media (max-width: 759px) {
+
+  .portfolio-title {
+    text-align: center;
+  }
+
+  .course-cardmodal-text {
+    color: #474747;
+    text-align: center;
+    padding: auto;
+    width: 100%;
+    font-family: unset;
+    font-size: 17px;
+    content: normal;
+    font-weight: 300;
+  }
+
   .portfolio-container {
     display: flex;
     flex-wrap: wrap;
@@ -590,19 +609,21 @@ img {
   padding-top: 0px !important;
 }
 
-.faculties-card-text {
+.card-body .card-text {
   color: var(--grary-2, #4f4f4f);
   font-family: unset;
   text-align: center;
-  font-size: xx-small;
+  font-size: x-small !important;
   font-style: normal;
   font-weight: 400;
 }
 
-.faculties-card-text {
+.card-text {
 
-  font-size: small !important;
+  font-size: xx-small !important;
+
 }
+
 
 .faculties-modalitems {
   padding: 1.5em;
@@ -702,10 +723,15 @@ img {
   }
 
 
+  .Digitallibrary,
+  .AboutUspage-desc {
+    padding: 10px;
+    margin-top: 0px;
+  }
 
   .Faculties-header {
     margin-top: 3em;
-    padding: 2em;
+    padding: 1em;
   }
 
   .Faculties-title,
@@ -992,7 +1018,8 @@ h3 {
   font-style: normal;
   text-align: left;
   font-weight: 400;
-  line-height: 160%;
+  padding: 0px;
+  margin: 0px;
   /* 39px */
 }
 
@@ -2176,13 +2203,47 @@ h3 {
     padding: 0px !important;
   }
 
+  .about-Title {
+    margin-top: 1rem !important;
+  }
 
-
-  .addres_box p {
-  
+  .person-detail p {
     text-align: center;
   }
-  
+
+  .row>* {
+    width: 98% !important;
+    padding: 1%;
+  }
+
+  .library p {
+    text-align: center !important;
+    padding: 10px !important;
+  }
+
+  .column {
+    margin: 5%;
+  }
+
+  .about-Title h1 {
+
+    margin-top: 0rem !important;
+
+  }
+
+  .AboutUspage-mission-desc {
+    text-align: center !important;
+  }
+
+  .AboutUspage-mission-desc p {
+    text-align: center !important;
+  }
+
+  .addres_box p {
+
+    text-align: center;
+  }
+
   .card-text {
     padding: 0rem 1rem 0rem 1rem !important;
   }
@@ -2507,7 +2568,7 @@ h3 {
 
 
   .AboutUspage-mission-desc {
-    text-align: justify;
+    text-align: center;
   }
 
   .AboutUspage-items {

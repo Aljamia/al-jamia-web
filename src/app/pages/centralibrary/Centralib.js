@@ -19,11 +19,9 @@ const Centralib = () => {
 
         <div className="Faculties-header">
           <Container>
-            <div className="AboutUspage-header m-0 p-3">
               <div className="AboutUspage-title">
                 Al Jamia Al Islamiya Central Library
               </div>
-            </div>
 
             <div className="Faculties-img">
               <Image
@@ -37,7 +35,7 @@ const Centralib = () => {
           </Container>
         </div>
 
-        <div className="AboutUspage-desc">
+        <div className="AboutUspage-desc pt-0">
           <>
             <Container className="AboutUspage-short-desc">
               Al Jamia Central Library is among the leading reference libraries
@@ -74,7 +72,7 @@ const Centralib = () => {
           </>
         </div>
 
-        <div className="AboutUspage-desc" id="Digitallibrary">
+        <div className="" id="Digitallibrary">
           <Digitallibrary />
           <>
             {/* <Container className="AboutUspage-short-desc">
@@ -102,7 +100,7 @@ and digital resources - all at your fingertips. Explore, learn, and grow with ea
           </>
         </div>
 
-        <div className="AboutUspage-items">
+        <div className="">
           <Library_books_main />
           {/* <Container>
             <Row>

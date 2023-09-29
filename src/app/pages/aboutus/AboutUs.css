@@ -147,7 +147,7 @@
   margin-top: 2rem;
 }
 
-.AboutUspage-mission-desc {
+/* .AboutUspage-mission-desc {
   color: var(--gray, #555);
   text-align: justify;
   font-size: medium;
@@ -155,13 +155,9 @@
   font-weight: 300;
   margin-top: 0.3em;
   line-height: 160%;
-  /* 39px */
-}
+} */
 
 
-.AboutUspage-mission-desc  p{
-  text-align: left;
-}
 
 #our-mission-header {
   margin-top: 30px;
@@ -268,7 +264,7 @@
   }
 
   .AboutUspage-title {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .AboutUspage-vision-title {
@@ -286,17 +282,6 @@
 
   .AboutUspage-mission-img {
     margin-top: 0px;
-  }
-
-  .AboutUspage-mission-desc {
-    color: var(--gray, #555);
-    text-align: justify;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    margin-top: 0;
-    line-height: 160%;
-    /* 39px */
   }
 
   .AboutUspage-mission-title,

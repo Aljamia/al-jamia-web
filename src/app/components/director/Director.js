@@ -25,7 +25,7 @@ const Director = () => {
       <div className="director">
         <Container>
           <Row>
-            <Col xl={6}>
+            <Col xl={5}>
               <div className="director-img">
                 <Image
                   src="/person.png"
@@ -36,7 +36,7 @@ const Director = () => {
                 />
               </div>
             </Col>
-            <Col xl={6}>
+            <Col xl={7}>
               <div className="director-des">
                 <div className="director-heading pt-4">
                   <h1> Message From The Rector</h1>

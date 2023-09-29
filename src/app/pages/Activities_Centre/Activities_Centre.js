@@ -93,7 +93,7 @@ function Activities_Centre() {
             <Container>
               <Row>
                 <section>
-                  <h1 className="TitleStyle center_aln p-5">
+                  <h1 className="TitleStyle center_aln p-4">
                     Major Activities
                   </h1>
 

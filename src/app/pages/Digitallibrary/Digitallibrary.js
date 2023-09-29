@@ -10,12 +10,10 @@ const Digitallibrary = () => {
   return (
     <div id="Digitallibrary">
       <div className="AboutUspage">
-        <div className="AboutUspage-desc">
+        <div className="">
           <>
-            <Container className="AboutUspage-short-desc">
-              <div className="AboutUspage-header m-0 p-3">
-                <div className="AboutUspage-title pt-5">Digital Library</div>
-              </div>
+            <Container className="pt-4">
+              <div className="AboutUspage-title center_div">Digital Library</div>
               <p>
                 The Library also has subscriptions to a core selection of online
                 resources and databases including over 25000 E‐books and

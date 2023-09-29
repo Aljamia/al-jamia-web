@@ -43,7 +43,7 @@ const Offices_Department = () => {
               />
 
               <section>
-                <h1 className="TitleStyle center_aln p-5">
+                <h1 className="TitleStyle center_aln p-1">
                   Offices & Department
                 </h1>
 

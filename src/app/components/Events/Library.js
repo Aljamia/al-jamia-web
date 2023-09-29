@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
 import "./Event.css";
 import Link from "next/link";
 const Library = () => {
@@ -13,12 +13,29 @@ const Library = () => {
         </div>
         <Container className="headlibrary">
           <div className="row">
-            <div className="col-sm-6">
+          <Col xl={6} lg={6} xs={12}>
+
               <div className="image pt-3">
-                <img src="libraryHome.png" alt="photo" width="100%" />
+                <video
+                  id="banner-video"
+                  className={`library_video`}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  style={{
+                    width: "100%", // Set the width to 100% of its container
+                    height: "auto", // Maintain the aspect ratio
+                  }}
+                >
+                  <source src="banner/Library_video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                {/* <img src="libraryHome.png" alt="photo" width="100%" /> */}
               </div>
-            </div>
-            <div className="col-sm-6">
+            </Col>
+            <Col xl={6} lg={6} xs={12}>
+
               <div className="library">
                 <div className="director-heading">
                   <h1>Central Library</h1>
@@ -67,7 +84,7 @@ const Library = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </Col>
           </div>
         </Container>
       </div>

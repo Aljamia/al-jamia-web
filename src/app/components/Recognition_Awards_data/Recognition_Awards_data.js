@@ -19,7 +19,7 @@ function Recognition_Awards_data() {
             />
 
             <section>
-              <h1 className="TitleStyle center_aln pt-2 pb-2">
+              <h1 className="TitleStyle center_aln">
                 Recognition & Awards
               </h1>
               <p>

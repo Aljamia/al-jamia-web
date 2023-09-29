@@ -39,7 +39,7 @@ const CoursePage = () => {
 
       <div className="AboutUspage-img">
         <Image
-          src="/banner/about_banner2.png"
+          src="/banner/aljamia.png"
           layout="responsive"
           width={1000}
           height={500}

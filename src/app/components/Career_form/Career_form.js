@@ -4,7 +4,7 @@ import "./Career_form.css";
 import { Col, Container, Row } from "react-bootstrap";
 function Career_form() {
   return (
-    <div className="p-5">
+    <div className="">
       <div>
         <h2 className="TitleStyle center_div pt-5 pb-3">Apply Now</h2>
 
