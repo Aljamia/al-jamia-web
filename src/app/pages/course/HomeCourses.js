@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Modal, Card } from "react-bootstrap";
 import { getCourse } from "@/app/hooks/UseApi";
-import "./CoursePage.css";
+// import "./CoursePage.css";
 import "../../globals.css";
 import Image from "next/image";
 

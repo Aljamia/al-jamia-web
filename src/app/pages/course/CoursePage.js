@@ -11,7 +11,7 @@ import Centre_for_research_main from "../Centre_for_research/Centre_for_research
 import Faculty_mail from "../Faculty/Faculty_mail";
 import Students_Council_main from "../Students_Council/Students_Council_main";
 import Image from "next/image";
-import "./CoursePage.css";
+// import "./CoursePage.css";
 import "../../globals.css";
 
 const CoursePage = () => {
