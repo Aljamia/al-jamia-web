@@ -13,12 +13,12 @@ const Library = () => {
         </div>
         <Container className="headlibrary">
           <div className="row">
-            <div className="col-sm-6" data-aos="fade-right">
+            <div className="col-sm-6">
               <div className="image pt-3">
                 <img src="libraryHome.png" alt="photo" width="100%" />
               </div>
             </div>
-            <div className="col-sm-6" data-aos="fade-left">
+            <div className="col-sm-6">
               <div className="library">
                 <div className="director-heading">
                   <h1>Central Library</h1>

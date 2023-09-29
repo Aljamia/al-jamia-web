@@ -28,7 +28,7 @@ const Alumni_Awards_gallery = () => {
       <div className="gallery__column">
         {galleryItems.slice(0, 27).map((item, index) => (
           <>
-            <figure className="gallery__thumb" data-aos="fade-up" key={index}>
+            <figure className="gallery__thumb" key={index}>
               <Image
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
                 width={350}

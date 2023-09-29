@@ -36,11 +36,7 @@ const Academic_Leadership = () => {
               {commitee.map((item) => (
                 <>
                   <div className="col-6 col-sm-4 col-lg-2">
-                    <Card
-                      className="faculties-card"
-                      key={item.id}
-                      data-aos="zoom-in"
-                    >
+                    <Card className="faculties-card" key={item.id}>
                       <Card.Img
                         variant="top"
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}

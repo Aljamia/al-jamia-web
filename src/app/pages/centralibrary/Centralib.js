@@ -20,12 +20,12 @@ const Centralib = () => {
         <div className="Faculties-header">
           <Container>
             <div className="AboutUspage-header m-0 p-3">
-              <div className="AboutUspage-title" data-aos="fade-up">
+              <div className="AboutUspage-title">
                 Al Jamia Al Islamiya Central Library
               </div>
             </div>
 
-            <div className="Faculties-img" data-aos="fade-up">
+            <div className="Faculties-img">
               <Image
                 src="/banner/Central_Library.JPG"
                 layout="responsive"
@@ -39,7 +39,7 @@ const Centralib = () => {
 
         <div className="AboutUspage-desc">
           <>
-            <Container className="AboutUspage-short-desc" data-aos="fade-up">
+            <Container className="AboutUspage-short-desc">
               Al Jamia Central Library is among the leading reference libraries
               in India. This celebrated institution, located in a three-story
               building on the campus of Santapuram al-Jamia, houses over 50,500
@@ -78,10 +78,10 @@ const Centralib = () => {
           <Digitallibrary />
           <>
             {/* <Container className="AboutUspage-short-desc">
-              <div className="AboutUspage-header m-0 p-3" data-aos="fade-up">
+              <div className="AboutUspage-header m-0 p-3" >
                 <div className="AboutUspage-title">Digital Library</div>
               </div>
-              <p data-aos="fade-up">
+              <p >
                 The Library also has subscriptions to a core selection of online
                 resources and databases including over 25000 E‐books and
                 periodicals. All of these resources support research references.
@@ -91,10 +91,10 @@ const Centralib = () => {
             </Container> */}
 
             {/* <Container className="AboutUspage-short-desc">
-              <div className="AboutUspage-header m-0 p-3" data-aos="fade-up">
+              <div className="AboutUspage-header m-0 p-3" >
                 <div className="AboutUspage-title">Catalogue</div>
               </div>
-              <p data-aos="fade-up">
+              <p >
                Our library catalogue simplifies access to a world of knowledge. It's your key to books, journals, 
 and digital resources - all at your fingertips. Explore, learn, and grow with ease
               </p>

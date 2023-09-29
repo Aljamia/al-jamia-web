@@ -19,13 +19,10 @@ function Recognition_Awards_data() {
             />
 
             <section>
-              <h1
-                className="TitleStyle center_aln pt-2 pb-2"
-                data-aos="fade-up"
-              >
+              <h1 className="TitleStyle center_aln pt-2 pb-2">
                 Recognition & Awards
               </h1>
-              <p data-aos="fade-up">
+              <p>
                 We take immense pride in celebrating the achievements of our
                 remarkable alumni. Our Alumni Recognition & Awards program
                 acknowledges outstanding accomplishments in various fields. It's

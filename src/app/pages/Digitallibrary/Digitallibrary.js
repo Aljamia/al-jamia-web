@@ -13,17 +13,17 @@ const Digitallibrary = () => {
         <div className="AboutUspage-desc">
           <>
             <Container className="AboutUspage-short-desc">
-              <div className="AboutUspage-header m-0 p-3" data-aos="fade-up">
+              <div className="AboutUspage-header m-0 p-3">
                 <div className="AboutUspage-title pt-5">Digital Library</div>
               </div>
-              <p data-aos="fade-up">
+              <p>
                 The Library also has subscriptions to a core selection of online
                 resources and databases including over 25000 E‐books and
                 periodicals. All of these resources support research references.
                 Most of the collections are available online and can search by
                 using the library browsing system.
               </p>{" "}
-              <div className="Faculties-img" data-aos="fade-up">
+              <div className="Faculties-img">
                 <Image
                   src="/banner/Wifi Campus.JPG"
                   layout="responsive"

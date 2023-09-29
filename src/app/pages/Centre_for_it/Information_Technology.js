@@ -23,7 +23,7 @@ function Information_Technology() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -48,7 +48,7 @@ function Information_Technology() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Digital_labs.JPG"

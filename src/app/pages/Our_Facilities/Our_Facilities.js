@@ -42,7 +42,7 @@ function Our_Facilities() {
           <div className="AboutUspage-ourMission Facilities">
             <Container>
               <Row>
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="banner/class_rooms.JPG" alt="" />
@@ -59,7 +59,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="/banner/Digital_labs.JPG" alt="" />
@@ -76,7 +76,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="/banner/Wifi Campus.JPG" alt="" />
@@ -93,7 +93,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="/banner/Conference2.JPG" alt="" />
@@ -110,7 +110,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="banner/SeminarHalls.png" alt="" />
@@ -128,7 +128,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="banner/Video_conference.JPG" alt="" />
@@ -145,7 +145,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="banner/Students_Centres2.png" alt="" />
@@ -162,7 +162,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="/banner/DigitalStudio.JPG" alt="" />
@@ -179,7 +179,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="/banner/MentorsHub.JPG" alt="" />
@@ -196,7 +196,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="banner/Hostels.png" alt="" />
@@ -214,7 +214,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="/banner/Mess.png" alt="" />
@@ -232,7 +232,7 @@ function Our_Facilities() {
                   </div>
                 </Col>
 
-                <Col xl={4} lg={6} xs={12} data-aos="flip-left">
+                <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
                       <img src="banner/Medical_Rooms.png" alt="" />

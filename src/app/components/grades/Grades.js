@@ -64,7 +64,7 @@ const Grades = () => {
   };
 
   return (
-    <div className="grades" data-aos="fade-up">
+    <div className="grades">
       <div className="about-Title">
         <h1>Our Success</h1>
         <hr />
@@ -82,7 +82,7 @@ const Grades = () => {
       {/* <p className="center_div pr-4 pl-4">
      
       </p> */}
-      <div className="grades-items" data-aos="fade-up">
+      <div className="grades-items">
         <div className="grid-items">
           {/* <Image
             src="/Group 2062.svg"

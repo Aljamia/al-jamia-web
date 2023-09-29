@@ -49,7 +49,7 @@ const Offices_Department = () => {
 
                 <div className="row">
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-building"></i>
                       </div>
@@ -58,7 +58,7 @@ const Offices_Department = () => {
                   </div>
 
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-face-smile"></i>
                       </div>
@@ -66,7 +66,7 @@ const Offices_Department = () => {
                     </div>
                   </div>
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-building"></i>
                       </div>
@@ -74,7 +74,7 @@ const Offices_Department = () => {
                     </div>
                   </div>
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-building"></i>
                       </div>
@@ -82,7 +82,7 @@ const Offices_Department = () => {
                     </div>
                   </div>
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-business-time"></i>
                       </div>
@@ -90,7 +90,7 @@ const Offices_Department = () => {
                     </div>
                   </div>
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-building"></i>
                       </div>
@@ -98,7 +98,7 @@ const Offices_Department = () => {
                     </div>
                   </div>
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-building"></i>
                       </div>
@@ -107,7 +107,7 @@ const Offices_Department = () => {
                   </div>
 
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-ticket"></i>
                       </div>
@@ -115,7 +115,7 @@ const Offices_Department = () => {
                     </div>
                   </div>
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-pen"></i>
                       </div>
@@ -123,7 +123,7 @@ const Offices_Department = () => {
                     </div>
                   </div>
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-book "></i>
                       </div>
@@ -131,7 +131,7 @@ const Offices_Department = () => {
                     </div>
                   </div>
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-person"></i>
                       </div>
@@ -139,7 +139,7 @@ const Offices_Department = () => {
                     </div>
                   </div>
                   <div className="column">
-                    <div className="card" data-aos="flip-down">
+                    <div className="card">
                       <div className="icon-wrapper">
                         <i className="fas fa-calculator"></i>
                       </div>

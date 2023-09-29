@@ -83,10 +83,7 @@ const Footer = () => {
                 </p>{" "}
               </div>
             </div>
-            <div
-              className="col-6 col-xs-12 col-sm-3 col-lg-3"
-              data-aos="fade-up"
-            >
+            <div className="col-6 col-xs-12 col-sm-3 col-lg-3">
               <div className="useful-link">
                 <h2>Useful Links</h2>
                 <div className="use-links">
@@ -130,10 +127,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="col-6 col-xs-12 col-sm-3 col-lg-2"
-              data-aos="fade-up"
-            >
+            <div className="col-6 col-xs-12 col-sm-3 col-lg-2">
               <div className="social-links">
                 <h2>Follow Us</h2>
                 <div className="social-icons">
@@ -198,7 +192,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xs-12 col-sm-6 col-lg-4" data-aos="fade-up">
+            <div className="col-xs-12 col-sm-6 col-lg-4">
               <div className="address">
                 <h2>Address</h2>
                 <div className="address-links">

@@ -32,10 +32,10 @@ const Courses = () => {
     <div className="course">
       <Container>
         <div className="course-headerpage">
-          <div className="about-Title" data-aos="fade-up">
+          <div className="about-Title">
             <h1>Academics</h1>
           </div>
-          <div className="course-desc" data-aos="fade-up">
+          <div className="course-desc">
             <p>
               Al Jamia offers excellent academic programs with specializations
               designed to address the needs of both the nation and society.
@@ -44,15 +44,11 @@ const Courses = () => {
             </p>
           </div>
 
-          <HomeCourses/>
-          {/* <div className="portfolio">
+          <HomeCourses />
+          <div className="portfolio">
             <div className="portfolio-container">
               {cardValues.slice(0, 3).map((course) => (
-                <Card
-                  className="portfolio-card"
-                  key={course.id}
-                  data-aos="flip-left"
-                >
+                <Card className="portfolio-card" key={course.id}>
                   <Card.Img
                     variant="top"
                     className="portfolio-modal-images"
@@ -158,16 +154,12 @@ const Courses = () => {
                 </Modal.Body>
               </Modal>
             </div>
-          </div> */}
+          </div>
 
-          {/* <div className="portfolio">
+          <div className="portfolio">
             <div className="portfolio-container">
               {cardValues.slice(0, 3).map((course) => (
-                <Card
-                  className="portfolio-card"
-                  key={course.id}
-                  data-aos="flip-left"
-                >
+                <Card className="portfolio-card" key={course.id}>
                   <Card.Img
                     variant="top"
                     className="portfolio-modal-images"
@@ -271,9 +263,9 @@ const Courses = () => {
                 </Modal.Body>
               </Modal>
             </div>
-          </div> */}
+          </div>
 
-          <div className="btn" data-aos="flip-left">
+          <div className="btn">
             <Link href="/colleges" style={{ textDecoration: "none" }}>
               <button>
                 {" "}

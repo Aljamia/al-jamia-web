@@ -42,7 +42,7 @@ function Student_Life_Services() {
           <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Sargasamgamam2.png"
@@ -56,7 +56,7 @@ function Student_Life_Services() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -80,7 +80,7 @@ function Student_Life_Services() {
           <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -97,7 +97,7 @@ function Student_Life_Services() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/PlayOff.png"
@@ -125,7 +125,7 @@ function Student_Life_Services() {
           <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/slamic_Organisation.png"
@@ -139,7 +139,7 @@ function Student_Life_Services() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -171,7 +171,7 @@ function Student_Life_Services() {
           <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -196,7 +196,7 @@ function Student_Life_Services() {
                   </p>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Girls_Organisation.png"

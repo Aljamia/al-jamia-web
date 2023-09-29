@@ -21,11 +21,8 @@ function Vision() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12} data-aos="fade-right">
-                  <div
-                    className="AboutUspage-mission-img"
-                    data-aos="fade-right"
-                  >
+                <Col xl={6} lg={6} xs={12}>
+                  <div className="AboutUspage-mission-img">
                     <Image
                       src="/banner/Vision.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
@@ -38,7 +35,7 @@ function Vision() {
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12} data-aos="fade-left">
+                <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -57,23 +54,23 @@ function Vision() {
                     {/* {about[0]?.mission} */}
 
                     <ul className="blog-details-list mt-30">
-                      <li data-aos="fade-left">
+                      <li>
                         To produce the sufficient number of scholars competent
                         in Islamic as well as temporal branches of knowledge.
                       </li>
-                      <li data-aos="fade-left">
+                      <li>
                         To produce empowered men and women with firm faith in
                         God, capable of discharging their responsibilities in
                         the present dynamic world.
                       </li>
-                      <li data-aos="fade-left">
+                      <li>
                         To design and develop a cohesive, contextually relevant,
                         and comprehensive curriculum combining the best of the
                         old and new aspects of knowledge as practiced in
                         universities around the world.
                       </li>
 
-                      <li data-aos="fade-left">
+                      <li>
                         To conceive, design and conduct tailor-made courses and
                         programs for men and women to help them hone their
                         skills in the field of Islamic thought and social

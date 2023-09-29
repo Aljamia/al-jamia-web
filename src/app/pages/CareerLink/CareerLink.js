@@ -7,11 +7,11 @@ import { Col, Container, Row } from "react-bootstrap";
 function CareerLink() {
   return (
     <div>
-      <div className="AboutUspage-ourMission pt-5 pb-5" data-aos="fade-up">
+      <div className="AboutUspage-ourMission pt-5 pb-5">
         <Container>
           <Row>
             <Col xl={12} lg={12} xs={12}>
-              <div className="work_box"  data-aos="fade-do">
+              <div className="work_box">
                 <div className="AboutUspage-campus-title center_aln white">
                   {" "}
                   Work with us
@@ -25,7 +25,7 @@ function CareerLink() {
                   our Career Page.
                 </p>
 
-                <div className="btn"  data-aos="fade-up">
+                <div className="btn">
                   <Link href="/Career">
                     <button>
                       {" "}

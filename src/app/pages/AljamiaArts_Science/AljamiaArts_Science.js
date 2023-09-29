@@ -51,7 +51,7 @@ function AljamiaArts_Science() {
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
-              <Col xl={12} lg={12} xs={12} data-aos="fade-up">
+              <Col xl={12} lg={12} xs={12}>
                 <div
                   className="AboutUspage-mission-title"
                   id="our-mission-header pb-2"
@@ -97,26 +97,24 @@ function AljamiaArts_Science() {
                     <h2 className="Chapters_center_div"> UG programs</h2>
                   </div>
                   <ul className="blog-details-list mt-30">
-                    <li data-aos="fade-left">
+                    <li>
                       BSC Food Technology <br />
                     </li>
-                    <li data-aos="fade-left">
-                    BSC Microbiology <br />
+                    <li>
+                      BSC Microbiology <br />
                     </li>
-                    <li data-aos="fade-left">
-                    BSC Psychology <br />
+                    <li>
+                      BSC Psychology <br />
                     </li>
-                    <li data-aos="fade-left">
-                    BSC Geography <br />
+                    <li>
+                      BSC Geography <br />
                     </li>
-                    <li data-aos="fade-left">BSC Computer Science </li>
-                    <li data-aos="fade-left">BCA</li>
-                    <li data-aos="fade-left">
-                      B. A. English Language and Literature
-                    </li>
-                    <li data-aos="fade-left">B. A. Islamic Studies</li>
-                    <li data-aos="fade-left">B. Com Computer Application </li>
-                    <li data-aos="fade-left">BBA Finance </li>
+                    <li>BSC Computer Science </li>
+                    <li>BCA</li>
+                    <li>B. A. English Language and Literature</li>
+                    <li>B. A. Islamic Studies</li>
+                    <li>B. Com Computer Application </li>
+                    <li>BBA Finance </li>
                   </ul>
                 </div>
               </Col>
@@ -129,8 +127,8 @@ function AljamiaArts_Science() {
                     <h2 className="Chapters_center_div"> PG programs</h2>
                   </div>
                   <ul className="blog-details-list mt-30">
-                    <li data-aos="fade-left">M.A. Islamic Finance </li>
-                    <li data-aos="fade-left">M. A. Arabic</li>
+                    <li>M.A. Islamic Finance </li>
+                    <li>M. A. Arabic</li>
                   </ul>
                 </div>
               </Col>
