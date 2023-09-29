@@ -65,7 +65,6 @@ const CoursePage = () => {
 
           <Container>
             <div className="course-headerpage">
-              <div className="portfolio">
                 <div className="portfolio-container">
                   {cardValues.map((course) => (
                     <Card className="portfolio-card" key={course.id}>
@@ -176,7 +175,6 @@ const CoursePage = () => {
                       </Row>
                     </Modal.Body>
                   </Modal>
-                </div>
               </div>
             </div>
           </Container>

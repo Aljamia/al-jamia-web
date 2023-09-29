@@ -45,10 +45,14 @@ const Courses = () => {
           </div>
 
           <HomeCourses />
-          <div className="portfolio">
+          {/* <div className="portfolio">
             <div className="portfolio-container">
               {cardValues.slice(0, 3).map((course) => (
-                <Card className="portfolio-card" key={course.id}>
+                <Card
+                  className="portfolio-card"
+                  key={course.id}
+                  
+                >
                   <Card.Img
                     variant="top"
                     className="portfolio-modal-images"
@@ -154,12 +158,16 @@ const Courses = () => {
                 </Modal.Body>
               </Modal>
             </div>
-          </div>
+          </div> */}
 
-          <div className="portfolio">
+          {/* <div className="portfolio">
             <div className="portfolio-container">
               {cardValues.slice(0, 3).map((course) => (
-                <Card className="portfolio-card" key={course.id}>
+                <Card
+                  className="portfolio-card"
+                  key={course.id}
+                  
+                >
                   <Card.Img
                     variant="top"
                     className="portfolio-modal-images"
@@ -263,7 +271,7 @@ const Courses = () => {
                 </Modal.Body>
               </Modal>
             </div>
-          </div>
+          </div> */}
 
           <div className="btn">
             <Link href="/colleges" style={{ textDecoration: "none" }}>
