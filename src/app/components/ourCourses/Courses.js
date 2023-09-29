@@ -69,7 +69,6 @@ const Courses = () => {
                         />{" "}
                         {course.category}{" "}
                       </span>
-
                       <span className="course-data-duration">
                         <img
                           className="icon_pl p-1"
