@@ -76,7 +76,7 @@ const Event = () => {
             <h1>News and Events</h1>
           </div>
           <hr />
-          <p className="center_div pl-4  pr-4">
+          <p className="center_div">
             Discover Al Jamia Al Islamiya latest news and events, celebrating
             academic excellence and vibrant campus life. Stay informed about our
             enriching activities, workshops, and more, contributing to holistic

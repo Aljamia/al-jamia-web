@@ -28,60 +28,58 @@ const HomeCourses = () => {
     fetchCourse();
   }, []);
   return (
-    <div >
+    <div className="portfolio-container">
       {cardValues.slice(0, 3).map((course) => (
-        <div key={course.id} className="portfolio-container">
-          <Card className="portfolio-card">
-            <Card.Img
-              variant="top"
-              className="portfolio-modal-images"
-              src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
-            />
-            <Container>
-              <div className="course-data-items">
-                <span className="course-data-category">
-                  <img
-                    className="icon_pl p-1"
-                    src="forbox.svg"
-                    alt="photo"
-                    width="auto"
-                  />{" "}
-                  {course.category}{" "}
-                </span>
+        <Card className="portfolio-card" key={course.id}>
+          <Card.Img
+            variant="top"
+            className="portfolio-modal-images"
+            src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
+          />
+          <Container>
+            <div className="course-data-items">
+              <span className="course-data-category">
+                <img
+                  className="icon_pl p-1"
+                  src="forbox.svg"
+                  alt="photo"
+                  width="auto"
+                />{" "}
+                {course.category}{" "}
+              </span>
 
-                <span className="course-data-duration">
-                  <img
-                    className="icon_pl p-1"
-                    src="time.svg"
-                    alt="photo"
-                    width="auto"
-                  />
-                  {course.duration}
-                </span>
-              </div>
-            </Container>
-            <Card.Body>
-              <Card.Title>
-                <h2 className="portfolio-title">{course.courseName}</h2>
-              </Card.Title>
-              <Card.Text>
-                <p className="portfolio-text">
-                  {course.description.substring(0, 150)}...
-                </p>
-              </Card.Text>
-            </Card.Body>
-            <div className="center_div mb-4">
-              <button
-                variant="primary btn-primary"
-                className="portfolio-btn More_btn"
-                onClick={() => handleShow(course)}
-              >
-                {" "}
-                <span className="">More Details</span>{" "}
-              </button>
+              <span className="course-data-duration">
+                <img
+                  className="icon_pl p-1"
+                  src="time.svg"
+                  alt="photo"
+                  width="auto"
+                />
+                {course.duration}
+              </span>
             </div>
-          </Card>
-        </div>
+          </Container>
+          <Card.Body>
+            <Card.Title>
+              <h2 className="portfolio-title">{course.courseName}</h2>
+            </Card.Title>
+            <Card.Text>
+              <p className="portfolio-text">
+                {course.description.substring(0, 150)}...
+              </p>
+            </Card.Text>
+          </Card.Body>
+          <div className="center_div mb-4">
+            <button
+              variant="primary btn-primary"
+              className="portfolio-btn More_btn"
+              onClick={() => handleShow(course)}
+            >
+              {" "}
+              <span className="">More Details</span>{" "}
+            </button>
+          </div>
+        </Card>
       ))}
       <Modal
         key={modalVal?.id}
