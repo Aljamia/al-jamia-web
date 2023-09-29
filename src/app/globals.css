@@ -17,13 +17,13 @@
 body p {
   color: #474747;
   font-family: unset;
-  font-size: medium !important;
+  font-size: large !important;
   font-weight: 300;
   text-align: center;
 }
 
 .container p {
-  font-size: medium !important;
+  font-size: large !important;
 
 }
 
