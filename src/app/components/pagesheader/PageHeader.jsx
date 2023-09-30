@@ -127,9 +127,9 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Online_Program">
                   Al Jamia World Campus (Online Program)
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Research_Academic">
+                {/* <NavDropdown.Item href="/Research_Academic">
                   Al Jamia Centre for Research & Academic Excellence
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item href="/colleges#Faculty">
                   Faculty
                 </NavDropdown.Item>

@@ -927,9 +927,7 @@ nav.primary-navigation ul li ul li {
   margin-top: 3rem;
 }
 
-.person-detail {
-  margin-top: 1rem;
-}
+
 
 .director-des p {
   max-width: 100%;
@@ -939,17 +937,7 @@ nav.primary-navigation ul li ul li {
   font-family: unset;
 }
 
-.person-detail h4 {
-  color: #3b3b3bf9;
-  font-family: unset;
-  font-weight: 300;
-}
 
-.person-detail p {
-  color: #555555;
-  font-size: 17px;
-  font-family: var(--font-inter);
-}
 
 .facualies {
   margin-top: 6rem;
@@ -1027,9 +1015,7 @@ nav.primary-navigation ul li ul li {
     font-size: 15px;
   }
 
-  .person-detail {
-    text-align: center;
-  }
+  
 }
 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\

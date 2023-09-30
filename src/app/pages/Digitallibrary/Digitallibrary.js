@@ -12,24 +12,60 @@ const Digitallibrary = () => {
       <div className="AboutUspage">
         <div className="">
           <>
-            <Container className="pt-4">
-              <div className="AboutUspage-title center_div">Digital Library</div>
-              <p>
-                The Library also has subscriptions to a core selection of online
-                resources and databases including over 25000 E‐books and
-                periodicals. All of these resources support research references.
-                Most of the collections are available online and can search by
-                using the library browsing system.
-              </p>{" "}
+
+
+          <Container>
+          <div className="AboutUspage-title center_div pt-2">Digital Library</div>
+
+          <Row>
+            <Col xl={4} lg={4} xs={12}>
+              
+            <div className="Faculties-img">
+              <Image
+                src="/banner/Wifi Campus.JPG"
+                layout="responsive"
+                width={1000}
+                height={200}
+                alt="Image"
+              />
+            </div>
+            </Col>
+            <Col xl={4} lg={4} xs={12}>
+              
+            <div className="Faculties-img">
+              <Image
+                src="/banner/Digital_labs.jpg"
+                layout="responsive"
+                width={1000}
+                height={200}
+                alt="Image"
+              />
+            </div>
+            </Col>
+            <Col xl={4} lg={4} xs={12}>
+              
               <div className="Faculties-img">
                 <Image
-                  src="/banner/Wifi Campus.JPG"
+                  src="/banner/Digital_labs3.png"
                   layout="responsive"
                   width={1000}
                   height={200}
                   alt="Image"
                 />
               </div>
+              </Col>
+          </Row>
+        </Container>
+            <Container className="pt-4">
+              
+             <p>
+                The Library also has subscriptions to a core selection of online
+                resources and databases including over 25000 E‐books and
+                periodicals. All of these resources support research references.
+                Most of the collections are available online and can search by
+                using the library browsing system.
+              </p>{" "}
+            
             </Container>
           </>{" "}
         </div>
