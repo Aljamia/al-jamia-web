@@ -19,10 +19,16 @@ const Centralib = () => {
 
         <div className="Faculties-header">
           <Container>
-              <div className="AboutUspage-title">
-                Al Jamia Al Islamiya Central Library
-              </div>
+            <div className="AboutUspage-title">
+              Al Jamia Al Islamiya Central Library
+            </div>
 
+          </Container>
+
+          <Container>
+          <Row>
+            <Col xl={4} lg={4} xs={12}>
+              
             <div className="Faculties-img">
               <Image
                 src="/banner/Central_Library.JPG"
@@ -32,7 +38,33 @@ const Centralib = () => {
                 alt="Image"
               />
             </div>
-          </Container>
+            </Col>
+            <Col xl={4} lg={4} xs={12}>
+              
+            <div className="Faculties-img">
+              <Image
+                src="/banner/Central_Library2.png"
+                layout="responsive"
+                width={1000}
+                height={200}
+                alt="Image"
+              />
+            </div>
+            </Col>
+            <Col xl={4} lg={4} xs={12}>
+              
+              <div className="Faculties-img">
+                <Image
+                  src="/banner/Central_Library3.png"
+                  layout="responsive"
+                  width={1000}
+                  height={200}
+                  alt="Image"
+                />
+              </div>
+              </Col>
+          </Row>
+        </Container>
         </div>
 
         <div className="AboutUspage-desc pt-0">

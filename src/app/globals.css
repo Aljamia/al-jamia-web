@@ -17,13 +17,13 @@
 body p {
   color: #474747;
   font-family: unset;
-  font-size: large !important;
+  font-size: medium !important;
   font-weight: 300;
   text-align: center;
 }
 
 .container p {
-  font-size: large !important;
+  font-size: medium !important;
 
 }
 
@@ -414,7 +414,7 @@ img {
   overflow-y: hidden;
   color: #252641;
   font-family: unset;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 300;
 }
@@ -428,7 +428,7 @@ img {
   text-align: left;
   padding: auto;
   width: 100%;
-  height: 110px;
+  height: 125px;
   font-family: unset;
   font-size: medium;
   content: normal;
@@ -1131,7 +1131,7 @@ h3 {
 }
 
 .timeline__event__title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   /* text-transform: uppercase; */
   font-weight: 400;
@@ -1606,7 +1606,7 @@ h3 {
   padding: 1rem;
   font-family: unset;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   color: #000;
 }
@@ -1649,7 +1649,7 @@ h3 {
 }
 
 .about-description {
- padding: 0rem 2rem 0rem 2rem; 
+  padding: 0rem 2rem 0rem 2rem;
 
 
 }

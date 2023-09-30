@@ -19,6 +19,7 @@
 
 .person-detail {
   margin-top: 1rem;
+
 }
 
 
@@ -28,7 +29,7 @@
 
 .director-des p {
   max-width: 100%;
-  font-size: small;
+  font-size: small !important;
   text-align: justify;
   padding: 0px;
   font-family: unset;
@@ -44,6 +45,8 @@
   color: #555555;
   font-size: medium;
   font-family: unset;
+  font-size: x-small !important;
+
 }
 
 .facualies {

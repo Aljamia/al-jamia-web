@@ -108,8 +108,7 @@ function Alumni() {
                   of education. Like all of you, I am proud to be a part of it.
                   <br />
                   <br />
-                  Al Jamia Alumni Association It will exceed more than ten
-                  thousand the number of students who studied in Al Jamia during
+                  Al Jamia Alumni Association It will exceed more than Twelve thousand the number of students who studied in Al Jamia during
                   different periods which includes eminent personalities such as
                   prominent Islamic scholars, leaders of Islamic Movement,
                   writers, academicians and media persons who are rendering
