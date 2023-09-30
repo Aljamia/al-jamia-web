@@ -1,28 +1,15 @@
 "use client";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
-import "./all.min.css";
 import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
-  useEffect(() => {
-    AOS.init(); // Initialize AOS
-  }, []);
-
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-    // AOS.init({
-    //   duration: 800,
-    //   easing: "ease-in-out",
-    //   offset: 200,
-    //   once: true,
-    // });
   };
 
   const handleScroll = () => {
@@ -46,23 +33,6 @@ const Footer = () => {
   </div>;
   return (
     <div className="footer">
-      {/*  <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      />
-       <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
-      />
-      <link
-        href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
-        rel="stylesheet"
-      /> */}
-
       <footer id="footer">
         <div className="container">
           <div className="row">
