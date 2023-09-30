@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 // import { useRouter } from "next/router";
 //
@@ -86,7 +87,7 @@ const Event = () => {
         <div className="event-first-section p-1">
           <Container>
             <Row>
-              <Col xl={5}>
+              <Col xl={4}>
                 <div className="event-img pt-3">
                   <Image
                     src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
@@ -94,7 +95,7 @@ const Event = () => {
                     width={1000}
                     layout="responsive"
                     height={1000}
-                    style={{ borderRadius: "20px" }}
+                    style={{ borderRadius: "20px"}}
                   />
                 </div>
                 <div className="event-btn ">
@@ -118,7 +119,7 @@ const Event = () => {
                 </div>
               </Col>
 
-              <Col xl={7} className="pt-3">
+              <Col xl={8} className="pt-3">
                 <div className="carouselevent">
                   <Slider {...settings} className="event-slick">
                     {events.map((event) => (

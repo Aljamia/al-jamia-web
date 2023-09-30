@@ -25,7 +25,7 @@ function Under_Graduate() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/banner/Under_Graduate.png"
+            src="/banner/Under_Graduate1.jpg"
             layout="responsive"
             width={1000}
             height={500}

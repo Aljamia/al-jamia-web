@@ -31,7 +31,7 @@ const Centralib = () => {
               
             <div className="Faculties-img">
               <Image
-                src="/banner/Central_Library.JPG"
+                src="/banner/Central_Library4.png"
                 layout="responsive"
                 width={1000}
                 height={200}
@@ -106,88 +106,12 @@ const Centralib = () => {
 
         <div className="" id="Digitallibrary">
           <Digitallibrary />
-          <>
-            {/* <Container className="AboutUspage-short-desc">
-              <div className="AboutUspage-header m-0 p-3" >
-                <div className="AboutUspage-title">Digital Library</div>
-              </div>
-              <p >
-                The Library also has subscriptions to a core selection of online
-                resources and databases including over 25000 E‐books and
-                periodicals. All of these resources support research references.
-                Most of the collections are available online and can search by
-                using the library browsing system.
-              </p>
-            </Container> */}
-
-            {/* <Container className="AboutUspage-short-desc">
-              <div className="AboutUspage-header m-0 p-3" >
-                <div className="AboutUspage-title">Catalogue</div>
-              </div>
-              <p >
-               Our library catalogue simplifies access to a world of knowledge. It's your key to books, journals, 
-and digital resources - all at your fingertips. Explore, learn, and grow with ease
-              </p>
-            </Container> */}
-          </>
+         
         </div>
 
         <div className="">
           <Library_books_main />
-          {/* <Container>
-            <Row>
-              <div className="central-lib-cards">
-                <Card
-                  style={{ width: "18rem" }}
-                  className="central-lib__carditems"
-                >
-                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
-                </Card>{" "}
-                <Card
-                  style={{ width: "18rem" }}
-                  className="central-lib__carditems"
-                >
-                  <Card.Img variant="top" src="/Rectangle 993.png" />
-                </Card>
-                <Card
-                  style={{ width: "18rem" }}
-                  className="central-lib__carditems"
-                >
-                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
-                </Card>
-                <Card
-                  style={{ width: "18rem" }}
-                  className="central-lib__carditems"
-                >
-                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
-                </Card>
-                <Card
-                  style={{ width: "18rem" }}
-                  className="central-lib__carditems"
-                >
-                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
-                </Card>
-                <Card
-                  style={{ width: "18rem" }}
-                  className="central-lib__carditems"
-                >
-                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
-                </Card>
-                <Card
-                  style={{ width: "18rem" }}
-                  className="central-lib__carditems"
-                >
-                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
-                </Card>
-                <Card
-                  style={{ width: "18rem" }}
-                  className="central-lib__carditems"
-                >
-                  <Card.Img variant="top" src="/Rectangle 994.jpg" />
-                </Card>
-              </div>
-            </Row>
-          </Container> */}
+         
         </div>
 
         <Footer />

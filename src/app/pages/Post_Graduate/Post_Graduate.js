@@ -25,7 +25,7 @@ function Post_Graduate() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/banner/Post_Graduate.png"
+            src="/banner/Post_Graduate2.jpg"
             layout="responsive"
             width={1000}
             height={500}

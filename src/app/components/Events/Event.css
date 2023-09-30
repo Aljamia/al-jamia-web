@@ -299,9 +299,10 @@ span {
 }
 
 .library_video {
-  border-radius: 22px;  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-  rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-  rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-radius: 22px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   border: 0px solid #fff;
 }
 
@@ -384,9 +385,13 @@ span {
   height: 300px;
 } */
 
+
+
+.carouselevent {
+  display: block;
+}
+
 @media only screen and (min-width: 768px) {
-
-
 
 
   .news_card {
@@ -412,26 +417,35 @@ span {
     height: auto;
   }
 
-
+  .carouselevent .card {
+    margin: 0px;
+    padding: 0px;
+  }
 
   .card .featured-image {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 0;
-    max-width: 30%;
+    max-width: 21%;
     height: auto;
   }
 }
 
 
 
-
-
-.title h4 {
-  font-size: larger;
+.event-des h4 {
+  font-size: medium;
   color: #000 !important;
   font-family: unset;
-  margin-top: 1%;
+  margin-top: 0%;
+  font-weight: 400;
+}
+
+.title h4 {
+  font-size: medium;
+  color: #000 !important;
+  font-family: unset;
+  margin-top: 0%;
   font-weight: 400;
 }
 
@@ -549,6 +563,7 @@ a.chip.large:active {
 
 
 @media (max-width: 991px) {
+
 
 
   .chip {

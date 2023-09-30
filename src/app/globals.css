@@ -1279,6 +1279,25 @@ h3 {
   text-align: center;
 }
 
+.center_div h5 {
+  font-weight: 300;
+}
+
+.caro-img {
+  background-image: url("/bookbgimg.png");
+  /* The image used */
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: auto;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: auto;
+  /* Resize the background image to cover the entire container */
+}
+
 .box .caro-img img {
   border-radius: 2px;
   min-height: 300px;
@@ -1955,11 +1974,16 @@ h3 {
   width: 100%;
   vertical-align: bottom;
   bottom: 0%;
+
+  border-radius: 30px;
+  width: 86%;
+  margin: 12%;
+  vertical-align: bottom;
+  background-color: azure;
 }
 
 .director-img img {
   width: 100%;
-  padding-top: 10%;
   bottom: 0%;
 }
 
@@ -2196,11 +2220,34 @@ h3 {
 }
 
 
+.carouselevent {
+  display: block;
+}
 
 @media (max-width: 767px) {
 
   body p {
     padding: 0px !important;
+  }
+
+
+
+  .director-img {
+    width: 100%;
+    vertical-align: bottom;
+    bottom: 0%;
+
+    border-radius: 30px;
+    width: 98%;
+    margin: 2%;
+    vertical-align: bottom;
+    background-color: azure;
+  }
+
+
+
+  .carouselevent {
+    display: none;
   }
 
   .about-Title {
@@ -2341,7 +2388,7 @@ h3 {
   .app_icon {
     width: 100%;
     text-align: center !important;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     margin-right: 10px;
     border-radius: 10px;
   }
@@ -2386,7 +2433,7 @@ h3 {
     padding-bottom: 0rem;
     font-family: unset;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.5rem !important;
     text-align: center;
     color: #619a46;
   }

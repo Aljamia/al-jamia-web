@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight, faChevronUp, faEnvelope, faLocation, faPhone } from '@fortawesome/free-solid-svg-icons';
+
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
@@ -59,39 +62,39 @@ const Footer = () => {
                 <div className="use-links">
                   <li>
                     <Link href="/">
-                      <i className="fa-solid fa-angles-right"></i> Home
+                    <FontAwesomeIcon icon={faAngleRight} /> Home
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/about">
-                      <i className="fa-solid fa-angles-right"></i> Al Jamia Al
+                    <FontAwesomeIcon icon={faAngleRight} /> Al Jamia Al
                       Islamiya
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/Career">
-                      <i className="fa-solid fa-angles-right"></i> Career
+                    <FontAwesomeIcon icon={faAngleRight} /> Career
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/colleges">
-                      <i className="fa-solid fa-angles-right"></i> Colleges
+                    <FontAwesomeIcon icon={faAngleRight} /> Colleges
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/Alumni">
-                      <i className="fa-solid fa-angles-right"></i> Alumni
+                    <FontAwesomeIcon icon={faAngleRight} /> Alumni
                       Chapters
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/contact">
-                      <i className="fa-solid fa-angles-right"></i> Contact Us
+                    <FontAwesomeIcon icon={faAngleRight} />Contact Us
                     </Link>
                   </li>
                 </div>
@@ -167,19 +170,23 @@ const Footer = () => {
                 <h2>Address</h2>
                 <div className="address-links">
                   <li className="address1">
-                    <i className="fa-solid fa-location-dot"></i> Al Jamia Al
+                  
+                  <FontAwesomeIcon icon={faLocation} className="pt-2 pr-2" />
+                    Al Jamia Al
                     Islamiya Santhapuram (PO). Pattikkad 673 325, Malappuram,
                     Kerala
                   </li>
                   <li>
                     <a href="">
-                      <i className="fa-solid fa-phone"></i> 00914933 270439 ,
+                    <FontAwesomeIcon icon={faPhone} className="pt-2 pr-2" />
+                      00914933 270439 ,
                       00914933 270565
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i className="fa-solid fa-envelope"></i> mail@aljamia.net
+                    <FontAwesomeIcon icon={faEnvelope} className="pt-2 pr-2" />
+                      mail@aljamia.net
                     </a>
                   </li>
                 </div>
@@ -211,11 +218,12 @@ const Footer = () => {
           </p>
         </div>
       </section>
+      {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> */}
       <div
         className={`back-to-top ${isVisible ? "visible" : ""}`}
         onClick={scrollToTop}
       >
-        <i className="fa fa-chevron-up"></i>
+           <FontAwesomeIcon icon={faChevronUp} />
       </div>
     </div>
   );

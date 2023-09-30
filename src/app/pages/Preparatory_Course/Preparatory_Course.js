@@ -25,7 +25,7 @@ function Preparatory_Course() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/banner/Preparatory_Course2.png"
+            src="/banner/Preparatory_Course13.jpg"
             layout="responsive"
             width={1000}
             height={500}

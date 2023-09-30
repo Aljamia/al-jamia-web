@@ -13,7 +13,7 @@ function Career() {
 
       <div className="AboutUspage-img">
         <Image
-          src="/banner/Career.png"
+          src="/banner/applynow2.png"
           layout="responsive"
           width={1000}
           height={500}

@@ -1,71 +1,74 @@
 import React, { useState, useEffect } from "react";
 import "../../globals.css";
-import Counter from "./Counter";
 
 const Grades = () => {
-  const [count1, setCount1] = useState(700);
-  const [count2, setCount2] = useState(10);
-  const [count3, setCount3] = useState(50);
-  const [count4, setCount4] = useState(10);
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
+  const [count4, setCount4] = useState(0);
+  const [isInView, setIsInView] = useState(false);
 
-  const handleMouseEnter = () => {
-    startAnimations();
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.getElementById("grades");
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        setIsInView(rect.top < window.innerHeight && rect.bottom >= 0);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isInView) {
+      startAnimations();
+    }
+  }, [isInView]);
 
   const startAnimations = () => {
+    // Animation logic to update the counts
     const duration1 = 1000;
-    const duration2 = 1500;
+    const duration2 = 2600;
     const duration3 = 2000;
     const duration4 = 2500;
-    let startTimestamp1 = null;
-    let startTimestamp2 = null;
-    let startTimestamp3 = null;
-    let startTimestamp4 = null;
 
-    const step1 = (timestamp) => {
-      if (!startTimestamp1) startTimestamp1 = timestamp;
-      const progress = Math.min((timestamp - startTimestamp1) / duration1, 1);
-      setCount1(Math.floor(progress * (1600 - 500) + 500));
-      if (progress < 1) {
-        window.requestAnimationFrame(step1);
+    const startTimestamp = performance.now();
+
+    const animateCounts = () => {
+      const elapsed = performance.now() - startTimestamp;
+
+      setCount1((prevCount) =>
+        Math.min(Math.floor((elapsed / duration1) * (1600 - 500) + 500), 1600)
+      );
+
+      setCount2((prevCount) =>
+        Math.min(Math.floor((elapsed / duration2) * (21 - 50) + 50), 21)
+      );
+
+      setCount3((prevCount) =>
+        Math.min(Math.floor((elapsed / duration3) * (90 - 10) + 10), 90)
+      );
+
+      setCount4((prevCount) =>
+        Math.min(Math.floor((elapsed / duration4) * (14 - 50) + 50), 14)
+      );
+
+      if (elapsed < Math.max(duration1, duration2, duration3, duration4)) {
+        requestAnimationFrame(animateCounts);
       }
     };
 
-    const step2 = (timestamp) => {
-      if (!startTimestamp2) startTimestamp2 = timestamp;
-      const progress = Math.min((timestamp - startTimestamp2) / duration2, 1);
-      setCount2(Math.floor(progress * (20 - 50) + 50));
-      if (progress < 1) {
-        window.requestAnimationFrame(step2);
-      }
-    };
-
-    const step3 = (timestamp) => {
-      if (!startTimestamp3) startTimestamp3 = timestamp;
-      const progress = Math.min((timestamp - startTimestamp3) / duration3, 1);
-      setCount3(Math.floor(progress * (90 - -10) + -10));
-      if (progress < 1) {
-        window.requestAnimationFrame(step3);
-      }
-    };
-
-    const step4 = (timestamp) => {
-      if (!startTimestamp4) startTimestamp4 = timestamp;
-      const progress = Math.min((timestamp - startTimestamp4) / duration4, 1);
-      setCount4(Math.floor(progress * (12 - 50) + 50));
-      if (progress < 1) {
-        window.requestAnimationFrame(step4);
-      }
-    };
-
-    window.requestAnimationFrame(step1);
-    window.requestAnimationFrame(step2);
-    window.requestAnimationFrame(step3);
-    window.requestAnimationFrame(step4);
+    animateCounts();
   };
 
   return (
-    <div className="grades">
+    <div id="grades" className="grades">
       <div className="about-Title">
         <h1>Our Success</h1>
         <hr />
@@ -80,76 +83,28 @@ const Grades = () => {
           commendable services in various fields throughout India and abroad.
         </p>
       </div>
-
-      {/* <p className="center_div pr-4 pl-4">
-     
-      </p> */}
       <div className="grades-items">
         <div className="grid-items">
-          {/* <Image
-            src="/Group 2062.svg"
-            width={280}
-            height={80}
-            alt="Picture of the author"
-            className="grade-logo"
-          /> */}
-          <h2
-            className="grades-digits"
-            id="count1"
-            onMouseEnter={handleMouseEnter}
-          >
+          <h2 className="grades-digits" id="count1">
             {count1}+
           </h2>
           <h3 className="grades-title">Students</h3>
         </div>
 
         <div className="grid-items">
-          {/* <Image
-            src="/Group 2062.svg"
-            width={280}
-            height={80}
-            alt="Picture of the author"
-            className="grade-logo"
-          /> */}
-          <h2
-            className="grades-digits"
-            id="count2"
-            onMouseEnter={handleMouseEnter}
-          >
+          <h2 className="grades-digits" id="count2">
             {count2}+
           </h2>
           <h3 className="grades-title">Programs</h3>
         </div>
         <div className="grid-items">
-          {/* <Image
-            src="/Group 2059.svg"
-            width={280}
-            height={80}
-            alt="Picture of the author"
-            className="grade-logo"
-          /> */}
-          <h2
-            className="grades-digits"
-            id="count3"
-            onMouseEnter={handleMouseEnter}
-          >
+          <h2 className="grades-digits" id="count3">
             {count3}+
           </h2>
           <h3 className="grades-title">Faculties</h3>
         </div>
         <div className="grid-items">
-          {/* <Image
-            src="/Group 2060.svg"
-            width={280}
-            height={80}
-            alt="Picture of the author"
-            className="grade-logo"
-          /> */}
-          <h2
-            className="grades-digits"
-            id="count4"
-            onMouseEnter={handleMouseEnter}
-          >
+          <h2 className="grades-digits" id="count4">
             {count4}K+
           </h2>
           <h3 className="grades-title">Alumni</h3>

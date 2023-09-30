@@ -34,7 +34,7 @@ const Digitallibrary = () => {
               
             <div className="Faculties-img">
               <Image
-                src="/banner/Digital_labs.jpg"
+                src="/banner/Digital_labs.JPG"
                 layout="responsive"
                 width={1000}
                 height={200}
