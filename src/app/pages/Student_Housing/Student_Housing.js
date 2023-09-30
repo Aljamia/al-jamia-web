@@ -24,7 +24,7 @@ function Student_Housing() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/banner/Student_Housing1.png"
+            src="/banner/Hostels1.png"
             layout="responsive"
             width={1000}
             height={500}
