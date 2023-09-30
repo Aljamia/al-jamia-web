@@ -15,7 +15,6 @@ const Event = () => {
   const [events, setEvents] = useState([]);
 
   // Fetch the API data on component mount using Axios
-
   useEffect(() => {
     const fetchNews = async () => {
       const data = await getNews();
