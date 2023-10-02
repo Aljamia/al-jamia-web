@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { getAboutUs } from "@/app/hooks/UseApi";
 
-import Footer from "@/app/components/footer/Footer";
-import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -28,7 +26,7 @@ function Student_Counseling_Service_main() {
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/banner/Student_Counseling.png"
+                      src="/banner/Student_CounselingService.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller

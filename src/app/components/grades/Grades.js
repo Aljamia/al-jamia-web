@@ -68,7 +68,8 @@ const Grades = () => {
   };
 
   return (
-    <div id="grades" className="grades">
+   <div className="container">
+     <div id="grades" className="grades">
       <div className="about-Title">
         <h1>Our Success</h1>
         <hr />
@@ -111,6 +112,8 @@ const Grades = () => {
         </div>
       </div>
     </div>
+
+   </div>
   );
 };
 

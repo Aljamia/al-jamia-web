@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "./Admission_lists.css";
 import { Card } from "react-bootstrap";
 
 function Admission_lists() {

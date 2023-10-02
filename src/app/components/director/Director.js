@@ -41,7 +41,7 @@ const Director = () => {
                 <div className="director-heading">
                   <h1> Message From The Rector</h1>
                 </div>
-                <p>{director[0]?.enDescription}</p>
+                <p className="director-des">{director[0]?.enDescription}</p>
               </div>
               <div className="person-detail mb-5">
                 <h4>{director[0]?.enName}</h4>

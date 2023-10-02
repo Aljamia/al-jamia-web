@@ -19,7 +19,6 @@ body p {
   font-family: unset;
   font-size: medium !important;
   font-weight: 300;
-  text-align: center;
 }
 
 .container p {
@@ -302,6 +301,7 @@ img {
   color: #474747;
   font-size: medium;
   font-style: normal;
+  text-align: center;
   font-weight: 300;
   line-height: 160%;
   letter-spacing: 0.52px;
@@ -532,7 +532,7 @@ img {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: 1em;
+    padding: 0em;
     grid-gap: 20px;
     gap: 20px;
   }
@@ -547,7 +547,11 @@ img {
 
   .course-desc {
     font-size: medium;
+    text-align: center;
+    padding: 0%;
   }
+
+
 
   .explore-btn {
     width: 150px;
@@ -609,10 +613,11 @@ img {
   padding-top: 0px !important;
 }
 
+
 .card-body .card-text {
   color: var(--grary-2, #4f4f4f);
   font-family: unset;
-  text-align: center;
+  text-align: center !important;
   font-size: x-small !important;
   font-style: normal;
   font-weight: 400;
@@ -709,12 +714,28 @@ img {
 
 }
 
-
+.modal-content{
+  text-align: center !important;
+}
+.faculties-cardmodal-title {
+ 
+  text-align: left;
+}
+.card-text{
+  text-align: left !important;
+}
 
 @media (max-width: 768px) {
 
 
 
+  .faculties-cardmodal-title {
+ 
+    text-align: center;
+  }
+  .card-text{
+    text-align: center !important;
+  }
   .card-body {
     padding: 0px;
     min-height: 110px;
@@ -722,7 +743,12 @@ img {
     padding-top: 0px !important;
   }
 
-
+.faculties-cardmodal-title .card-title h5{
+  text-align: center;
+}
+.faculties-cardmodal-text .card-text{
+  text-align: center !important;
+}
   .Digitallibrary,
   .AboutUspage-desc {
     padding: 10px;
@@ -800,7 +826,7 @@ img {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 0px;
   cursor: pointer;
-  margin: 10px 0px 10px;
+  margin: 0px 0px 20px;
   transition: 0.5s;
 }
 
@@ -899,10 +925,6 @@ h3 {
   /* fonts */
   --font-inter: "Inter", sans-serif;
   --font-PT-serif: "unse";
-}
-
-.course-desc {
-  text-align: center;
 }
 
 .page_padd {
@@ -1333,6 +1355,11 @@ h3 {
   padding: 10px;
 }
 
+
+.caro-paragraph p{
+  
+  padding: 30px !important;
+}
 .send_button {
   background: linear-gradient(90deg, #3dc55d 0%, #619a46 100%);
   border-radius: 999px;
@@ -1621,8 +1648,13 @@ h3 {
   font-size: 2rem;
 }
 
+.event-img img {
+  border: solid 1px #fff;
+  padding: 5px;
+}
+
 .what-box h3 {
-  padding: 1rem;
+  padding: 0rem;
   font-family: unset;
   font-weight: 300;
   font-size: 1.2rem;
@@ -1632,6 +1664,8 @@ h3 {
 
 .director-heading h1 {
   padding-bottom: 0rem;
+  margin-top: 3.5rem;
+
   font-family: unset;
   font-weight: 300;
   text-align: left;
@@ -1669,17 +1703,19 @@ h3 {
 
 .about-description {
   padding: 0rem 2rem 0rem 2rem;
+  text-align: center;
 
 
+}
+
+.about-description p {
+  text-align: justify
 }
 
 .card-text {
   padding: 0rem 0rem 0rem 0rem !important;
 }
 
-.about-description {
-  text-align: justify
-}
 
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/ourCourses/Courses.css ***!
@@ -1707,6 +1743,7 @@ h3 {
 
 .grades {
   padding: 0em 10em 0em;
+  text-align: center;
 }
 
 .grades-digits {
@@ -2139,9 +2176,68 @@ h3 {
   display: none;
 }
 
-@media (max-width: 967px) {
+
+.carouselevent {
+  display: block;
+}
 
 
+.director-des p {
+  font-size: small !important;
+}
+
+.person-detail {
+  margin-top: 1rem;
+
+}
+
+.person-detail p {
+  text-align: left !important;
+}
+
+
+.person-detail p {
+  color: #555555;
+  text-align: left !important;
+  font-family: unset;
+  font-size: medium !important;
+
+}
+
+
+
+
+.person-detail h4 {
+  color: #3b3b3bf9;
+  font-weight: 400;
+  font-family: unset;
+}
+
+@media (max-width: 767px) {
+
+
+
+  .container {
+    width: 98%;
+    /* Set the desired width of the container */
+    height: auto;
+    /* Set the desired height of the container */
+    overflow: auto;
+    /* Add a scrollbar if content overflows */
+    padding: 2%;
+  }
+
+
+
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  body p {
+    text-align: justify !important;
+  }
 
 
   img {
@@ -2175,7 +2271,11 @@ h3 {
   }
 
   .event-des h4 {
-    text-align: center;
+    text-align: left;
+  }
+
+  .event-des p {
+    text-align: left !important;
   }
 
   .card-body {
@@ -2196,41 +2296,32 @@ h3 {
     min-height: 160px !;
   }
 
+
+.caro-paragraph p{
+  
+    padding: 30px;
+  }
+  .what-box h3 {
+    padding: 0rem !important;
+    font-family: unset;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+  }
+
+  
   .faculties-card-text {
 
     font-size: small !important;
   }
 
 
-  .container {
-    width: 100%;
-    /* Set the desired width of the container */
-    height: auto;
-    /* Set the desired height of the container */
-    overflow: auto;
-    /* Add a scrollbar if content overflows */
-    padding: 10px;
+
+  .events-section {
+    padding: 4% !important;
+
   }
-
-
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-
-.carouselevent {
-  display: block;
-}
-
-@media (max-width: 767px) {
-
-  body p {
-    padding: 0px !important;
-  }
-
-
 
   .director-img {
     width: 100%;
@@ -2245,7 +2336,26 @@ h3 {
   }
 
 
+  .AboutUspage-items {
+    text-align: justify;
+  }
 
+  .AboutUspage-mission-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .AboutUspage-mission-desc p {
+    text-align: justify !important;
+  }
+
+  .AboutUspage-mission-desc {
+    text-align: justify !important;
+  }
+
+  .AboutUspage-items {
+    padding: 1em;
+  }
   .carouselevent {
     display: none;
   }
@@ -2255,18 +2365,19 @@ h3 {
   }
 
   .person-detail p {
+    text-align: center !important;
+  }
+
+  .person-detail h4 {
     text-align: center;
   }
 
   .row>* {
-    width: 98% !important;
+    width: 100% !important;
     padding: 1%;
   }
 
-  .library p {
-    text-align: center !important;
-    padding: 10px !important;
-  }
+
 
   .column {
     margin: 5%;
@@ -2278,14 +2389,6 @@ h3 {
 
   }
 
-  .AboutUspage-mission-desc {
-    text-align: center !important;
-  }
-
-  .AboutUspage-mission-desc p {
-    text-align: center !important;
-  }
-
   .addres_box p {
 
     text-align: center;
@@ -2293,11 +2396,6 @@ h3 {
 
   .card-text {
     padding: 0rem 1rem 0rem 1rem !important;
-  }
-
-  .course-desc {
-
-    padding: 2% 2% 2% 2%;
   }
 
 
@@ -2341,22 +2439,6 @@ h3 {
     overflow: visible !important;
   }
 
-
-  .container {
-    width: 100%;
-    /* Set the desired width of the container */
-    height: auto;
-    /* Set the desired height of the container */
-    overflow: auto;
-    /* Add a scrollbar if content overflows */
-    padding: 10px;
-  }
-
-
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 
@@ -2571,8 +2653,8 @@ h3 {
   .library p {
     color: #555555;
     max-width: 100%;
-    text-align: center;
-    font-size: 14px;
+    text-align: justify !important;
+    padding: 0px !important;
   }
 
   .library-btn {
@@ -2604,31 +2686,11 @@ h3 {
     padding-top: 2rem !important;
   }
 
-  .AboutUspage-items {
-    text-align: justify;
-  }
-
-  .AboutUspage-mission-title {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-
-  .AboutUspage-mission-desc {
-    text-align: center;
-  }
-
-  .AboutUspage-items {
-    padding: 1em;
-  }
 
   .TitleStyle {
     font-size: 1.5rem;
   }
 
-  .director-des p {
-    font-size: medium;
-  }
 
   #footer p {
     text-align: center !important;

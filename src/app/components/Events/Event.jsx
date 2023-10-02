@@ -69,22 +69,35 @@ const Event = () => {
   };
 
   return (
-    <div>
+
+  
+
+
       <div className="events-section">
         <div className="event-title">
           <div className="about-Title">
             <h1>News and Events</h1>
+            <hr />
           </div>
-          <hr />
-          <p className="center_div">
-            Discover Al Jamia Al Islamiya latest news and events, celebrating
+          <div id="grades" className="grades">
+    
+
+    <div className="course-desc aos-init">
+      <p>
+      Discover Al Jamia Al Islamiya latest news and events, celebrating
             academic excellence and vibrant campus life. Stay informed about our
             enriching activities, workshops, and more, contributing to holistic
             education and character development
-          </p>
+      </p>
+    </div>
+   
+   
+  </div>
+      
+        
         </div>
         <div></div>
-        <div className="event-first-section p-1">
+        <div className="event-first-section">
           <Container>
             <Row>
               <Col xl={4}>
@@ -174,7 +187,6 @@ const Event = () => {
           </Container>
         </div>
       </div>
-    </div>
   );
 };
 
