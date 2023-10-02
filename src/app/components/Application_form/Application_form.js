@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/role-supports-aria-props */
 "use client";
 import React, { useEffect, useState } from "react";
 import "./Application_form.css";

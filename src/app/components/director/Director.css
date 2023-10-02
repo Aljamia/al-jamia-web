@@ -13,41 +13,6 @@
   --font-pt-serif: "PT Serif", serif;
 }
 
-.director-des {
-  margin-top: 3rem;
-}
-
-.person-detail {
-  margin-top: 1rem;
-
-}
-
-
-.person-detail p {
-  text-align: left;
-}
-
-.director-des p {
-  max-width: 100%;
-  font-size: small !important;
-  text-align: justify;
-  padding: 0px;
-  font-family: unset;
-}
-
-.person-detail h4 {
-  color: #3b3b3bf9;
-  font-weight: 400;
-  font-family: unset;
-}
-
-.person-detail p {
-  color: #555555;
-  font-size: medium;
-  font-family: unset;
-  font-size: x-small !important;
-
-}
 
 .facualies {
   margin-top: 6rem;
@@ -89,23 +54,24 @@
     padding: 7px 30px;
     /* Adjust the padding for smaller screens */
   }
+  
+  .director-des p {
+    font-size:  small !important;
+    margin-top: 0;
+  text-align: justify;
+  }
+
+  
+  .director-des {
+    margin-top: 20px;
+  }
+
 }
 
 @media (max-width: 500px) {
   .fac-btn button {
     padding: 7px 15px;
     /* Adjust the padding for even smaller screens */
-  }
-
-  .director-des p {
-    font-size: medium;
-    margin-top: 0;
-    padding: 0.5em;
-    max-width: 100%;
-  }
-
-  .director-des {
-    margin-top: 20px;
   }
 
   .fac-des p {
@@ -125,7 +91,5 @@
     font-size: 15px;
   }
 
-  .person-detail {
-    text-align: center;
-  }
+
 }
