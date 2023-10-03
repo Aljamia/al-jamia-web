@@ -100,7 +100,7 @@ function Main_navebar() {
                   Organizational Structure
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Recognition_MOU">
-                Recognition & MOU
+                  Recognition & MOU
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Career">Career</NavDropdown.Item>
               </NavDropdown>
@@ -253,6 +253,29 @@ function Main_navebar() {
 
               <Nav.Link href="/contact" className="pl-4 pl-md-0 ml-0 ml-md-4">
                 Contact
+              </Nav.Link>
+              <Nav.Link className="pl-1 pl-md-0 ml-0 ml-md-1"></Nav.Link>
+
+              <Nav.Link href="/contact" className="pl-4 pl-md-0 ml-0 ml-md-4">
+                <div className="sl-nav">
+                  <ul>
+                    <li>
+                      EN
+                      <div className="triangle"></div>
+                      <ul>
+                        <li>
+                          <span>العربية</span>
+                        </li>
+                        <li>
+                          <span>Urdu</span>
+                        </li>
+                        <li>
+                          <span className="active">English</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

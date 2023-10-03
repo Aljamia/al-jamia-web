@@ -52,7 +52,7 @@ const CoursePage = () => {
           <div className="AboutUspage-desc">
             <>
               <Container className="AboutUspage-short-desc">
-                <div class="about-Title m-0">
+                <div className="about-Title m-0">
                   <h1>Colleges</h1>
                 </div>
                 <p className="about-description">

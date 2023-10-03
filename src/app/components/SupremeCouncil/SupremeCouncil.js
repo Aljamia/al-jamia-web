@@ -89,8 +89,12 @@ const SupremeCouncil = () => {
                         </Modal.Body>
                       </Modal>
                     </Card>
+                 
                   </div>
+
+
                 </>
+
               ))}
             </div>
           </Container>
