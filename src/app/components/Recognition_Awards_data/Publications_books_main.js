@@ -22,7 +22,7 @@ const Publications_books_main = () => {
     fetchpublication();
 
     // axios
-    //   .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/department")
+    //   .get("https://aljamia-api-ztjhx.ondigitalocean.app/api/v1/department")
     //   .then((response) => {
     //     setCardValues(response.data?.response);
     //     console.log("department data", response.data?.response); // Log the data to the console
@@ -72,9 +72,7 @@ const Publications_books_main = () => {
       <div className="AboutUspage">
         <div className="department-section events-section">
           <div className="container">
-            <h1 className="TitleStyle pt-5">
-              Our Publications
-            </h1>
+            <h1 className="TitleStyle pt-5">Our Publications</h1>
             <p>
               Our alumni continue to inspire through their stories, research,
               and expertise. Alumni Publications is our way of sharing their

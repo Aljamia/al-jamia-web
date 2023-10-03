@@ -10,7 +10,7 @@ const events = [
 function HomePage(callDate) {
   console.log({ callDate });
   const response = axios.get(
-    `https://aljamia-hgtgv.ondigitalocean.app/api/v1/news${eventId}`
+    `https://aljamia-api-ztjhx.ondigitalocean.app/api/v1/news${eventId}`
   );
 
   return (

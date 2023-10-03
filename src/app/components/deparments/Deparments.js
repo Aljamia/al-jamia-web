@@ -20,7 +20,7 @@ const Departments = () => {
   // Fetch the API data on component mount using Axios
   useEffect(() => {
     axios
-      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/department")
+      .get("https://aljamia-api-ztjhx.ondigitalocean.app/api/v1/department")
       .then((response) => {
         setCardValues(response.data?.response);
         console.log("department data", response.data?.response); // Log the data to the console

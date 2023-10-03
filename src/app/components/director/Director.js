@@ -13,7 +13,9 @@ const Director = () => {
   // Fetch the API data on component mount using Axios
   useEffect(() => {
     axios
-      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/boardof-director")
+      .get(
+        "https://aljamia-api-ztjhx.ondigitalocean.app/api/v1/boardof-director"
+      )
       .then((response) => {
         setDirector(response.data.response);
         console.log("director data", response.data.response); // Log the data to the console

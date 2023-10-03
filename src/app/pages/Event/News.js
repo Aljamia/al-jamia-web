@@ -71,7 +71,7 @@ const News = () => {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://aljamia-hgtgv.ondigitalocean.app/api/v1/news"
+          "https://aljamia-api-ztjhx.ondigitalocean.app/api/v1/news"
         );
         const data = await response.json();
         setNewsData(data.response.slice(0, 4)); // Slice the array to extract the first 4 elements

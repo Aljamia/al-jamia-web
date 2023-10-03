@@ -17,7 +17,7 @@ function HomePage(eventId) {
   // Fetch the API data on component mount using Axios
   useEffect(() => {
     axios
-      .get("https://aljamia-hgtgv.ondigitalocean.app/api/v1/news", {
+      .get("https://aljamia-api-ztjhx.ondigitalocean.app/api/v1/news", {
         params: {
           id: eventId.params.eventId,
         },
@@ -45,11 +45,10 @@ function HomePage(eventId) {
                 alt=""
                 width="100%"
               />
-               <div className="news-para pt-4">
-              <p>{events.description}</p>
+              <div className="news-para pt-4">
+                <p>{events.description}</p>
+              </div>
             </div>
-            </div>
-           
           </div>
         </Container>
 
