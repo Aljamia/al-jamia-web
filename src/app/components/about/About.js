@@ -16,7 +16,6 @@ const About = () => {
 
     fetchAboutus();
   }, []);
-
   return (
     <div>
       <div className="container">
