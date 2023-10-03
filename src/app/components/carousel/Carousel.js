@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useEffect, useRef } from "react";
 import BannerVideo from "./BannerVideo";
+import Videoslider from "./Videoslider";
 
 const CarouselComponent = () => {
   const sliderRef = useRef(null);
@@ -37,17 +38,17 @@ const CarouselComponent = () => {
   };
   return (
     <div className="header">
-      <Header /> {/*imported navbar from header */}
+      <Header /> 
+      {/*imported navbar from header */}
       <div className="header-contents">
         <div className="header-video">
+          <div>
+            <Videoslider />
+            <BannerVideo />     
+            
 
-        <div>
-      {/* Other content */}
-      <BannerVideo />
-      {/* Other content */}
-    </div>
+          </div>
 
-          
           {/* <video
             autoPlay
             muted

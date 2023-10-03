@@ -15,7 +15,17 @@ const Centralib = () => {
     <div id="centralibrary">
       <div className="AboutUspage">
         <PageHeader />
-        <div className="p-4"></div>
+        
+        <div className="AboutUspage-img">
+          <Image
+            src="/banner/Publications.jpg"
+            layout="responsive"
+            width={1000}
+            height={500}
+            alt="Image"
+          />
+        </div>
+        
 
         <div className="Faculties-header">
           <Container>
@@ -31,7 +41,7 @@ const Centralib = () => {
               
             <div className="Faculties-img">
               <Image
-                src="/banner/Central_Library4.png"
+                src="/banner/Central_Library5.JPG"
                 layout="responsive"
                 width={1000}
                 height={200}

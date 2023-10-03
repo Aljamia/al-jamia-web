@@ -60,7 +60,7 @@ function Recognition_MOU() {
                   </Col>
 
                   <Col xl={4} lg={4} xs={12}>
-                    <div class="card">
+                    <div className="card">
                       <Image
                         src="/banner/Al-Imam Mohammad bin Saud Islamic University,Riyadh.jpg"
                         layout="responsive"
@@ -68,8 +68,8 @@ function Recognition_MOU() {
                         height={500}
                         alt="Image"
                       />
-                      <div class="card-content">
-                        <h1 class="p-3">
+                      <div className="card-content">
+                        <h1 className="p-3">
                           Al-Imam Mohammad bin Saud Islamic <br />
                           University Riyadh
                         </h1>
@@ -78,7 +78,7 @@ function Recognition_MOU() {
                   </Col>
 
                   <Col xl={4} lg={4} xs={12}>
-                    <div class="card">
+                    <div className="card">
                       <Image
                         src="/banner/International Islamic University, Malaysia.jpg"
                         layout="responsive"
@@ -86,8 +86,8 @@ function Recognition_MOU() {
                         height={500}
                         alt="Image"
                       />
-                      <div class="card-content">
-                        <h1 class="app_head p-3">
+                      <div className="card-content">
+                        <h1 className="app_head p-3">
                           International Islamic University <br /> Malaysia
                         </h1>
                       </div>
@@ -95,7 +95,7 @@ function Recognition_MOU() {
                   </Col>
 
                   <Col xl={4} lg={4} xs={12}>
-                    <div class="card">
+                    <div className="card">
                       <Image
                         src="/banner/Hamad Bin Khalifa University, Qatar.jpg"
                         layout="responsive"
@@ -103,8 +103,8 @@ function Recognition_MOU() {
                         height={500}
                         alt="Image"
                       />
-                      <div class="card-content">
-                        <h1 class="app_head p-3">
+                      <div className="card-content">
+                        <h1 className="app_head p-3">
                           Hamad Bin Khalifa University <br /> Qatar
                         </h1>
                       </div>
@@ -112,7 +112,7 @@ function Recognition_MOU() {
                   </Col>
 
                   <Col xl={4} lg={4} xs={12}>
-                    <div class="card">
+                    <div className="card">
                       <Image
                         src="/banner/Fatih Sultan Mehmet Foundation University,Turkey.jpeg"
                         layout="responsive"
@@ -120,8 +120,8 @@ function Recognition_MOU() {
                         height={500}
                         alt="Image"
                       />
-                      <div class="card-content">
-                        <h1 class="app_head p-3">
+                      <div className="card-content">
+                        <h1 className="app_head p-3">
                           Fatih Sultan Mehmet Foundation
                           <br /> University Turkey
                         </h1>
@@ -130,7 +130,7 @@ function Recognition_MOU() {
                   </Col>
 
                   <Col xl={4} lg={4} xs={12}>
-                    <div class="card">
+                    <div className="card">
                       <Image
                         src="/banner/Ataturk University,Erzurum, turkey.jpeg"
                         layout="responsive"
@@ -138,8 +138,8 @@ function Recognition_MOU() {
                         height={500}
                         alt="Image"
                       />
-                      <div class="card-content">
-                        <h1 class="app_head p-3">
+                      <div className="card-content">
+                        <h1 className="app_head p-3">
                           Ataturk University,Erzurum <br /> Turkey
                         </h1>
                       </div>
@@ -147,7 +147,7 @@ function Recognition_MOU() {
                   </Col>
 
                   <Col xl={4} lg={4} xs={12}>
-                    <div class="card">
+                    <div className="card">
                       <Image
                         src="/banner/Kuwait University.jpg"
                         layout="responsive"
@@ -155,8 +155,8 @@ function Recognition_MOU() {
                         height={500}
                         alt="Image"
                       />
-                      <div class="card-content">
-                        <h1 class="app_head p-3">
+                      <div className="card-content">
+                        <h1 className="app_head p-3">
                           Kuwait <br /> University <br />{" "}
                         </h1>
                       </div>
@@ -164,7 +164,7 @@ function Recognition_MOU() {
                   </Col>
 
                   <Col xl={4} lg={4} xs={12}>
-                    <div class="card">
+                    <div className="card">
                       <Image
                         src="/banner/Istanbul Sabahattin Zaim UniversityTurkey.jpeg"
                         layout="responsive"
@@ -172,8 +172,8 @@ function Recognition_MOU() {
                         height={500}
                         alt="Image"
                       />
-                      <div class="card-content">
-                        <h1 class="app_head p-3">
+                      <div className="card-content">
+                        <h1 className="app_head p-3">
                           Istanbul Sabahattin Zaim University <br /> Turkey
                         </h1>
                       </div>
@@ -181,7 +181,7 @@ function Recognition_MOU() {
                   </Col>
 
                   <Col xl={4} lg={4} xs={12}>
-                    <div class="card">
+                    <div className="card">
                       <Image
                         src="/banner/Qatar University.jpg"
                         layout="responsive"
@@ -189,8 +189,8 @@ function Recognition_MOU() {
                         height={500}
                         alt="Image"
                       />
-                      <div class="card-content">
-                        <h1 class="app_head p-3">
+                      <div className="card-content">
+                        <h1 className="app_head p-3">
                           Qatar <br /> University
                         </h1>
                       </div>
@@ -198,7 +198,7 @@ function Recognition_MOU() {
                   </Col>
 
                   <Col xl={4} lg={4} xs={12}>
-                    <div class="card">
+                    <div className="card">
                       <Image
                         src="/banner/Selcuk University,Turkey.jpg"
                         layout="responsive"
@@ -206,8 +206,8 @@ function Recognition_MOU() {
                         height={500}
                         alt="Image"
                       />
-                      <div class="card-content">
-                        <h1 class="app_head p-3">
+                      <div className="card-content">
+                        <h1 className="app_head p-3">
                           Selcuk University <br /> Turkey
                         </h1>
                       </div>
