@@ -14,7 +14,7 @@ const Publications_books = () => {
 
         <div className="AboutUspage-img">
           <Image
-            src="/banner/Publications.jpg"
+            src="/banner/Publications_books.jpg"
             layout="responsive"
             width={1000}
             height={500}
