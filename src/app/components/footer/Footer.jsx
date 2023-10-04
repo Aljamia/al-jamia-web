@@ -2,11 +2,21 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faChevronUp, faEnvelope, faLocation, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleRight,
+  faChevronUp,
+  faEnvelope,
+  faLocation,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+  AOS.init();
+
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
     window.scrollTo({
@@ -62,39 +72,39 @@ const Footer = () => {
                 <div className="use-links">
                   <li>
                     <Link href="/">
-                    <FontAwesomeIcon icon={faAngleRight} /> Home
+                      <FontAwesomeIcon icon={faAngleRight} /> Home
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/about">
-                    <FontAwesomeIcon icon={faAngleRight} /> Al Jamia Al
+                      <FontAwesomeIcon icon={faAngleRight} /> Al Jamia Al
                       Islamiya
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/Career">
-                    <FontAwesomeIcon icon={faAngleRight} /> Career
+                      <FontAwesomeIcon icon={faAngleRight} /> Career
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/colleges">
-                    <FontAwesomeIcon icon={faAngleRight} /> Colleges
+                      <FontAwesomeIcon icon={faAngleRight} /> Colleges
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/Alumni">
-                    <FontAwesomeIcon icon={faAngleRight} /> Alumni
-                      Chapters
+                      <FontAwesomeIcon icon={faAngleRight} /> Alumni Chapters
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link href="/contact">
-                    <FontAwesomeIcon icon={faAngleRight} />Contact Us
+                      <FontAwesomeIcon icon={faAngleRight} />
+                      Contact Us
                     </Link>
                   </li>
                 </div>
@@ -170,22 +180,22 @@ const Footer = () => {
                 <h2>Address</h2>
                 <div className="address-links">
                   <li className="address1">
-                  
-                  <FontAwesomeIcon icon={faLocation} className="pt-2 pr-2" />
-                    Al Jamia Al
-                    Islamiya Santhapuram (PO). Pattikkad 673 325, Malappuram,
-                    Kerala
+                    <FontAwesomeIcon icon={faLocation} className="pt-2 pr-2" />
+                    Al Jamia Al Islamiya Santhapuram (PO). Pattikkad 673 325,
+                    Malappuram, Kerala
                   </li>
                   <li>
                     <a href="">
-                    <FontAwesomeIcon icon={faPhone} className="pt-2 pr-2" />
-                      00914933 270439 ,
-                      00914933 270565
+                      <FontAwesomeIcon icon={faPhone} className="pt-2 pr-2" />
+                      00914933 270439 , 00914933 270565
                     </a>
                   </li>
                   <li>
                     <a href="">
-                    <FontAwesomeIcon icon={faEnvelope} className="pt-2 pr-2" />
+                      <FontAwesomeIcon
+                        icon={faEnvelope}
+                        className="pt-2 pr-2"
+                      />
                       mail@aljamia.net
                     </a>
                   </li>
@@ -223,7 +233,7 @@ const Footer = () => {
         className={`back-to-top ${isVisible ? "visible" : ""}`}
         onClick={scrollToTop}
       >
-           <FontAwesomeIcon icon={faChevronUp} />
+        <FontAwesomeIcon icon={faChevronUp} />
       </div>
     </div>
   );

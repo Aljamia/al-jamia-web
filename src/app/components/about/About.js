@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import "./About.css";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 import Annoucement from "../annoucement/Annoucement";
 import { getAboutUs } from "@/app/hooks/UseApi";
 
@@ -19,6 +21,11 @@ const About = () => {
 
   return (
     <div>
+      <motion.container
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
       <div className="container">
         <div className="about-Title">
           <h1 className="pt-1">Welcome to Al Jamia al Islamiya</h1>
@@ -27,11 +34,18 @@ const About = () => {
           <p>{aboutdata && aboutdata[0]?.shortDescription}</p>
         </div>
       </div>
+      </motion.container>
 
       <div className="school-img">
         <div className="btn">
+          {" "}
+       
           <Link href="/about">
-            <button>
+              <motion.button
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          > 
               {" "}
               <div className="icon_arrow_abt">
                 <span className="p-3">Read More</span>
@@ -50,8 +64,9 @@ const About = () => {
                   />
                 </svg>
               </div>{" "}
-            </button>
-          </Link>
+             </motion.button>
+            </Link>
+           
         </div>
         <div className="image">
           <img src="banner/aljamia.png" alt="photo" width="100%" />

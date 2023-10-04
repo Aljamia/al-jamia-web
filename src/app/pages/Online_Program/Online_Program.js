@@ -6,6 +6,7 @@ import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 import World_Campus from "@/app/components/World_Campus/World_Campus";
+import Link from "next/link";
 
 function Online_Program() {
   const [about, setAbout] = useState([]);
@@ -684,8 +685,36 @@ function Online_Program() {
                 </Col>
               </Row>
             </Container>
+
+          
+
           </div>
         </div>
+        <div className="app_bg">
+        <Container>
+          <Row>
+            <Col xl={12} lg={12} xs={12}>
+              {/* <h1 className="app_head">Click</h1> */}
+              <div className="app_icon">
+                <Link
+                  href="https://aljamiaworldcampus.net"
+                  target="blank"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <Image
+                    src="/aljamia_worldcampus_logo_blue.png"
+                    layout="intrinsic"
+                    width={1000}
+                    height={500}
+                    alt="Image"
+                  />
+                </Link>{" "}
+              </div>
+            </Col>
+
+          </Row>
+        </Container>
+      </div>
 
         <Footer />
       </div>

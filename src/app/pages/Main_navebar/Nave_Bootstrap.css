@@ -4156,6 +4156,7 @@ input[type="button"].btn-block {
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
+    padding-top: 10px;
   }
 
   .navbar-expand-md .navbar-toggler {
@@ -6434,7 +6435,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  min-height: 100px;
+  /* min-height: 100px; */
   position: fixed;
   width: 100%;
 }
