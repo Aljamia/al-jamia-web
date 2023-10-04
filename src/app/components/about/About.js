@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import "./About.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
 import Annoucement from "../annoucement/Annoucement";
 import { getAboutUs } from "@/app/hooks/UseApi";
 

@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,7 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
-  AOS.init();
+  // AOS.init();
 
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
