@@ -113,13 +113,12 @@ function Main_navebar() {
                 <NavDropdown.Item href="/colleges#Centre_for_it">
                   Centre for Information Technology
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/colleges#Centre_for_hr">
-                  Centre for Human Resource Development
-                </NavDropdown.Item>
                 <NavDropdown.Item href="/colleges#Centre_for_research">
                   Centre for Research & Academic Excellence
                 </NavDropdown.Item>
-
+                <NavDropdown.Item href="/colleges#Centre_for_hr">
+                  Centre for Human Resource Development
+                </NavDropdown.Item>
                 <NavDropdown.Item href="/Activities_Centre">
                   Al Jamia Students Activities Centre
                 </NavDropdown.Item>
@@ -131,7 +130,7 @@ function Main_navebar() {
                   Al Jamia Centre for Research & Academic Excellence
                 </NavDropdown.Item> */}
                 <NavDropdown.Item href="/colleges#Faculty">
-                  Faculty
+                  Our Faculties
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/colleges#Students_Council">
                   Students Council

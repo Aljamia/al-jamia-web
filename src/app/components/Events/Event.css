@@ -161,7 +161,6 @@ span {
   border-radius: 50%;
 }
 
-
 .btn button {
   color: #619a46;
   background-color: #ffffff;
@@ -197,8 +196,6 @@ span {
   float: left;
   padding: 15px 30px 0px 43px;
 }
-
-
 
 /* Optional: Add styling to the active dot */
 
@@ -291,7 +288,6 @@ span {
     font-size: 13px;
   }
 
-
   .headlibrary {
     margin-top: 0rem !important;
     padding-bottom: 4rem !important;
@@ -299,7 +295,8 @@ span {
 }
 
 .library_video {
-  border-radius: 22px;
+  border-radius: 15px;
+  filter: brightness(1.3);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
@@ -307,21 +304,18 @@ span {
 }
 
 .library_video video {
-  border-radius: 25px;
+  border-radius: 15px;
+  filter: brightness(1.3);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
-
 .news_card {
   flex-direction: row;
   height: auto;
   width: 100% !important;
-
 }
-
-
 
 .news_card img {
   height: auto;
@@ -335,7 +329,6 @@ span {
 .event-des p {
   text-align: left;
 }
-
 
 /* 
 .card {
@@ -385,20 +378,15 @@ span {
   height: 300px;
 } */
 
-
-
 .carouselevent {
   display: block;
 }
 
 @media only screen and (min-width: 768px) {
-
-
   .news_card {
     height: auto !;
     width: 100% !important;
   }
-
 
   .news_card img {
     height: auto;
@@ -430,8 +418,6 @@ span {
     height: auto;
   }
 }
-
-
 
 .event-des h4 {
   font-size: medium;
@@ -489,13 +475,12 @@ a {
   display: none;
 }
 
-
 .chip {
   background: linear-gradient(90deg, #3dc55d 0%, #619a46 100%);
   border-radius: 999px;
   box-shadow: #b3d3a4 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-family: unset;
   font-size: 12px;
@@ -558,14 +543,7 @@ a.chip.large:active {
   color: black;
 }
 
-
-
-
-
 @media (max-width: 991px) {
-
-
-
   .chip {
     text-align: center;
     margin-left: 5px;

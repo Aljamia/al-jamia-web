@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import "../../globals.css";
 
 const Grades = () => {
@@ -19,7 +20,6 @@ const Grades = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -32,7 +32,6 @@ const Grades = () => {
   }, [isInView]);
 
   const startAnimations = () => {
-    // Animation logic to update the counts
     const duration1 = 1000;
     const duration2 = 2600;
     const duration3 = 2000;
@@ -68,8 +67,7 @@ const Grades = () => {
   };
 
   return (
-   <div className="container">
-     <div id="grades" className="grades">
+    <Container id="grades" className="grades">
       <div className="about-Title">
         <h1>Our Success</h1>
         <hr />
@@ -84,36 +82,44 @@ const Grades = () => {
           commendable services in various fields throughout India and abroad.
         </p>
       </div>
-      <div className="grades-items">
-        <div className="grid-items">
-          <h2 className="grades-digits" id="count1">
-            {count1}+
-          </h2>
-          <h3 className="grades-title">Students</h3>
-        </div>
+      <Row className="grades-items">
+        <Col xs={6} md={6} lg={2}>
+          <div className="grid-items">
+            <h2 className="grades-digits" id="count1">
+              {count1}+
+            </h2>
+            <h3 className="grades-title">Students</h3>
+          </div>
+        </Col>
 
-        <div className="grid-items">
-          <h2 className="grades-digits" id="count2">
-            {count2}+
-          </h2>
-          <h3 className="grades-title">Programs</h3>
-        </div>
-        <div className="grid-items">
-          <h2 className="grades-digits" id="count3">
-            {count3}+
-          </h2>
-          <h3 className="grades-title">Faculties</h3>
-        </div>
-        <div className="grid-items">
-          <h2 className="grades-digits" id="count4">
-            {count4}K+
-          </h2>
-          <h3 className="grades-title">Alumni</h3>
-        </div>
-      </div>
-    </div>
+        <Col xs={6} md={6} lg={2}>
+          <div className="grid-items">
+            <h2 className="grades-digits" id="count2">
+              {count2}+
+            </h2>
+            <h3 className="grades-title">Programs</h3>
+          </div>
+        </Col>
 
-   </div>
+        <Col xs={6} md={6} lg={2}>
+          <div className="grid-items">
+            <h2 className="grades-digits" id="count3">
+              {count3}+
+            </h2>
+            <h3 className="grades-title">Faculties</h3>
+          </div>
+        </Col>
+
+        <Col xs={6} md={6} lg={2}>
+          <div className="grid-items">
+            <h2 className="grades-digits" id="count4">
+              {count4}K+
+            </h2>
+            <h3 className="grades-title">Alumni</h3>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

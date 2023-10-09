@@ -103,8 +103,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <Link href="/contact">
-                      <FontAwesomeIcon icon={faAngleRight} />
-                      Contact Us
+                      <FontAwesomeIcon icon={faAngleRight} /> Contact Us
                     </Link>
                   </li>
                 </div>
@@ -187,7 +186,7 @@ const Footer = () => {
                   <li>
                     <a href="">
                       <FontAwesomeIcon icon={faPhone} className="pt-2 pr-2" />
-                      00914933 270439 , 00914933 270565
+                      +91 4933270439 , +91 4933270565
                     </a>
                   </li>
                   <li>

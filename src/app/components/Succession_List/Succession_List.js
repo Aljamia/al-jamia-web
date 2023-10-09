@@ -37,10 +37,11 @@ const Succession_List = () => {
               </h1>
               {commitee.map((item) => (
                 <>
-                  <div className="col-6 col-sm-4 col-lg-2">
+                  <div className="col-xl-2 col-lg-2 col-md-4 col-6">
                     <Card className="faculties-card" key={item.id}>
                       <Card.Img
                         variant="top"
+                        className="facluties_fac_images_fill"
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
                       />
                       <Card.Body>

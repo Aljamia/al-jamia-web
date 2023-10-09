@@ -38,7 +38,7 @@ const Offices_Department = () => {
                       <div className="icon-wrapper">
                         <i className="fas fa-face-smile"></i>
                       </div>
-                      <h3>Students Affair’s Office </h3>
+                      <h3>Deputy Rector’s Office</h3>
                     </div>
                   </div>
                   <div className="column">
@@ -70,7 +70,7 @@ const Offices_Department = () => {
                       <div className="icon-wrapper">
                         <i className="fas fa-building"></i>
                       </div>
-                      <h3>Deputy Rector’s Office</h3>
+                      <h3>Dean’s Offices</h3>
                     </div>
                   </div>
                   <div className="column">
@@ -78,10 +78,17 @@ const Offices_Department = () => {
                       <div className="icon-wrapper">
                         <i className="fas fa-building"></i>
                       </div>
-                      <h3>Dean’s Offices </h3>
+                      <h3>Students Affair’s Office </h3>
                     </div>
                   </div>
-
+                  <div className="column">
+                    <div className="card">
+                      <div className="icon-wrapper">
+                        <i className="fas fa-ticket"></i>
+                      </div>
+                      <h3>Research Department</h3>
+                    </div>
+                  </div>
                   <div className="column">
                     <div className="card">
                       <div className="icon-wrapper">
@@ -111,15 +118,7 @@ const Offices_Department = () => {
                       <div className="icon-wrapper">
                         <i className="fas fa-person"></i>
                       </div>
-                      <h3>Human Resource </h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-calculator"></i>
-                      </div>
-                      <h3>Accounts </h3>
+                      <h3>Human Resource Development </h3>
                     </div>
                   </div>
                 </div>
