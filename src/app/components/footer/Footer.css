@@ -33,7 +33,6 @@
   color: var(--green-color);
 }
 
-
 #footer {
   padding-top: 2rem;
   padding-bottom: 20px;
@@ -42,7 +41,6 @@
 }
 
 #footer2 {
-
   padding-top: 7rem;
   padding-bottom: 80px;
   background-image: url("/Hotel\ Wallpaper\ Pattern.png");
@@ -58,8 +56,6 @@ section {
   padding: 10px;
 }
 
-
-
 .social-links h2 {
   padding-bottom: 5px;
   padding-top: 10px;
@@ -68,7 +64,6 @@ section {
 
   font-weight: 300;
   font-family: unset;
-
 }
 
 .social-links img {
@@ -103,12 +98,8 @@ section {
   text-decoration: none !important;
 }
 
-
-
-
-
 .fb_clr {
-  background-color: #1877F2;
+  background-color: #1877f2;
   padding: 2px;
   width: 50px;
 }
@@ -117,26 +108,19 @@ section {
   background-color: #ff1980;
   padding: 2px;
   width: 50px;
-
 }
 
 .youtube_clr {
-  background-color: #CD201F;
+  background-color: #cd201f;
   padding: 2px;
   width: 50px;
-
 }
 
 .play_clr {
   background-color: #1fcd2d;
   padding: 2px;
   width: 50px;
-
 }
-
-
-
-
 
 .social-icons a i {
   /* box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px; */
@@ -216,7 +200,6 @@ li {
   padding-right: 8px;
   color: #fff;
   text-decoration: none;
-
 }
 
 .address-links li i:nth-child(1) {
@@ -228,7 +211,6 @@ li {
   font-size: medium;
   display: flex;
   text-decoration: none;
-
 }
 
 .address-links {
@@ -243,30 +225,27 @@ li {
   color: #fff;
   text-align: center;
   text-decoration: none;
-
 }
 
 .copy-right-sec a {
   color: #fcd462;
   font-weight: 500;
   text-decoration: none;
-
 }
 
 a {
   text-decoration: none;
 }
 
-
 /* footer section end */
-
 
 .back-to-top {
   display: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #e59500;
   width: 40px;
   height: 40px;
@@ -289,10 +268,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-
 @media (max-width: 991px) {
-
-
   .use-links li a {
     color: #fff;
     font-size: small;
@@ -303,5 +279,4 @@ a {
   .social-icons {
     font-size: small;
   }
-
 }

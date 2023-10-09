@@ -12,8 +12,6 @@
   --font-PT-serif: "PT Serif", serif;
 }
 
-
-
 body p {
   color: #474747;
   font-family: unset;
@@ -23,17 +21,11 @@ body p {
 
 .container p {
   font-size: medium !important;
-
 }
 
 img {
   object-fit: cover;
 }
-
-
-
-
-
 
 /* flag */
 
@@ -113,7 +105,8 @@ img {
   padding-left: 5px;
 }
 
-.sl-nav li ul li span:hover, .sl-nav li ul li span.active {
+.sl-nav li ul li span:hover,
+.sl-nav li ul li span.active {
   color: #146c78;
 }
 
@@ -141,11 +134,7 @@ img {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAABhUlEQVQ4T2Ows82PjGixsc4LD2tysC/09Kjw8622tyuICG8u0w/cpGSCBzF4e1VmZkzw9anOzOj38a4KCW4IC22ECHYk1l9tn4gHMeTlTnZxLikvm+XiUpKW2hvgX+vnV5OVOQEoOGfOtv94AYOzU3Fd7XxHh6Lq6rlurqUx0W0J8Z1AnbW18yotonaYuOJBDBXls4A+bGpaBCTz86YEBtQCvVBSPAPIbY0oP1/aiAcxABU1Ny+2tclvbFjo5FgUF9uenNwNDLnmpkWEnV1TPRcY1O1tS4H6i4umA/0MDK2K8tlAwRqHpP1uoXgQKKraWpcClTY3LQZaCLQ5NaUX5OaWJY3++SeTC/AgBmA4AXUClUJs9ver8fKsAAYEUJCws4G21dXNB1oFdD/Qz8DQTk4C+bm2dn6DZ9bRiDQ8iAEYt8CoBpK5YBIYw0AEEZwSXX4oMB4PYoC6gCzAcDqrjGzEsMfen2xEmbMv1rSTjRi26dqRjShz9o2+6WQjBrSShQSkZAIADvW/HLrLY6cAAAAASUVORK5CYII=");
 }
 
-
 /* flag */
-
-
-
 
 .Visionpage .container {
   width: 100%;
@@ -291,21 +280,17 @@ img {
   /* 41.65px */
 }
 
-
-
 .addres_box {
   border-radius: 9px;
   margin: 3%;
-  border: 0px solid #D9D9D9;
+  border: 0px solid #d9d9d9;
   width: 94%;
   float: left;
 }
 
 .addres_box p {
-
   text-align: left;
 }
-
 
 .addres_box img {
   padding: 10px;
@@ -328,7 +313,7 @@ img {
 }
 
 .form_bg_gray {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 12%;
 }
 
@@ -366,12 +351,11 @@ img {
     width: 100%;
   }
 
-
   .addres_box {
     border-radius: 9px;
     margin: 3% auto;
     /* Center horizontally with auto margins */
-    border: 0px solid #D9D9D9;
+    border: 0px solid #d9d9d9;
     width: 100%;
     float: left;
     text-align: center;
@@ -389,9 +373,6 @@ img {
     margin-top: 0%;
   }
 }
-
-
-
 
 .course {
   background-color: #f8f8f8;
@@ -490,15 +471,14 @@ img {
   position: relative;
   border-radius: 20px;
   background: #fff;
-  box-shadow: 0px 18.829999923706055px 47.08000183105469px 0px rgba(47, 50, 125, 0.1);
+  box-shadow: 0px 18.829999923706055px 47.08000183105469px 0px
+    rgba(47, 50, 125, 0.1);
   border: none;
   cursor: pointer;
   outline: none;
   width: 100%;
   height: auto;
 }
-
-
 
 .portfolio-modal-images {
   position: relative;
@@ -512,9 +492,7 @@ img {
 
 .portfolio-modal-images img {
   object-fit: cover;
-
 }
-
 
 .portfolio-modal-images:hover {
   transform: translate(0, -10px);
@@ -563,7 +541,6 @@ img {
   font-family: unset;
   font-weight: lighter;
 }
-
 
 .course-data-category,
 .course-modal-category {
@@ -622,7 +599,6 @@ img {
 }
 
 @media (max-width: 759px) {
-
   .portfolio-title {
     text-align: center;
   }
@@ -666,8 +642,6 @@ img {
     text-align: center;
     padding: 0%;
   }
-
-
 
   .explore-btn {
     width: 150px;
@@ -721,14 +695,12 @@ img {
   }
 }
 
-
 .card-body {
   padding: 10px;
   min-height: 110px;
   margin: 2% !important;
   padding-top: 0px !important;
 }
-
 
 .card-body .card-text {
   color: var(--grary-2, #4f4f4f);
@@ -740,11 +712,8 @@ img {
 }
 
 .card-text {
-
   font-size: xx-small !important;
-
 }
-
 
 .faculties-modalitems {
   padding: 1.5em;
@@ -824,32 +793,30 @@ img {
   border-radius: 20px;
 }
 
-.faculties-card img {
-  height: 25vh;
+.faculties-card .facluties_fac_images {
+  height: 22vh;
   object-fit: cover;
-
 }
 
-.modal-content{
+.faculties-card .facluties_fac_images_fill {
+  object-fit: fill;
+  height: 26vh;
+}
+.modal-content {
   text-align: center !important;
 }
 .faculties-cardmodal-title {
- 
   text-align: left;
 }
-.card-text{
+.card-text {
   text-align: left !important;
 }
 
 @media (max-width: 768px) {
-
-
-
   .faculties-cardmodal-title {
- 
     text-align: center;
   }
-  .card-text{
+  .card-text {
     text-align: center !important;
   }
   .card-body {
@@ -859,12 +826,12 @@ img {
     padding-top: 0px !important;
   }
 
-.faculties-cardmodal-title .card-title h5{
-  text-align: center;
-}
-.faculties-cardmodal-text .card-text{
-  text-align: center !important;
-}
+  .faculties-cardmodal-title .card-title h5 {
+    text-align: center;
+  }
+  .faculties-cardmodal-text .card-text {
+    text-align: center !important;
+  }
   .Digitallibrary,
   .AboutUspage-desc {
     padding: 10px;
@@ -1095,7 +1062,6 @@ h3 {
 
 .AboutUspage-mission-desc {
   text-align: left !important;
-
 }
 
 .AboutUspage-mission-desc p {
@@ -1104,7 +1070,6 @@ h3 {
 
 .library p {
   text-align: left !important;
-
 }
 
 .AboutUspage-mission-title,
@@ -1125,7 +1090,6 @@ h3 {
   font-weight: 300;
   line-height: normal;
 }
-
 
 .AboutUspage-mission-img {
   margin-bottom: 1rem;
@@ -1344,8 +1308,6 @@ h3 {
 }
 
 @media (max-width: 786px) {
-
-
   .timeline__event__description p {
     text-align: center;
   }
@@ -1360,8 +1322,6 @@ h3 {
 }
 
 /* timeline__end */
-
-
 
 .Facilities .box {
   min-height: 500px;
@@ -1380,9 +1340,8 @@ h3 {
 .Recognition_img img {
   max-height: 300px;
   min-height: 300px;
-
+  border-radius: 20px;
 }
-
 .box {
   background-color: #f8f8f8;
   border-radius: 20px;
@@ -1441,7 +1400,6 @@ h3 {
   min-height: 300px;
   max-height: 300px;
   border: 5px solid #fff;
-
 }
 
 .box .books img {
@@ -1450,7 +1408,6 @@ h3 {
   max-height: 400px;
   border: 5px solid #fff;
 }
-
 
 .box .caro-des {
   font-size: unset;
@@ -1471,9 +1428,7 @@ h3 {
   padding: 10px;
 }
 
-
-.caro-paragraph p{
-  
+.caro-paragraph p {
   padding: 30px !important;
 }
 .send_button {
@@ -1679,7 +1634,6 @@ h3 {
 
 .footer-address {
   margin-top: -10px;
-
 }
 
 .fa-brands,
@@ -1820,18 +1774,15 @@ h3 {
 .about-description {
   padding: 0rem 2rem 0rem 2rem;
   text-align: center;
-
-
 }
 
 .about-description p {
-  text-align: justify
+  text-align: justify;
 }
 
 .card-text {
   padding: 0rem 0rem 0rem 0rem !important;
 }
-
 
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/ourCourses/Courses.css ***!
@@ -1868,12 +1819,10 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: unset;
-
   font-size: 60px;
   font-style: normal;
   font-weight: 300;
   line-height: 100%;
-  /* 96px */
 }
 
 .grades-title {
@@ -1887,10 +1836,9 @@ h3 {
 }
 
 .grades-items {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  gap: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .grid-items {
@@ -1903,7 +1851,22 @@ h3 {
   width: 80%;
 }
 
-
+@media (max-width: 768px) {
+  .grades-digits {
+    background: linear-gradient(90deg, #3dc55d 0%, #df9000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: unset;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+  }
+  .grades-title {
+    font-size: initial;
+  }
+}
 
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick-theme.css ***!
@@ -1912,7 +1875,8 @@ h3 {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url(/_next/static/media/ajax-loader.0b80f665.gif) center center no-repeat;
+  background: #fff url(/_next/static/media/ajax-loader.0b80f665.gif) center
+    center no-repeat;
 }
 
 /* Icons */
@@ -1922,7 +1886,8 @@ h3 {
   font-style: normal;
 
   src: url(/_next/static/media/slick.25572f22.eot);
-  src: url(/_next/static/media/slick.25572f22.eot?#iefix) format("embedded-opentype"),
+  src: url(/_next/static/media/slick.25572f22.eot?#iefix)
+      format("embedded-opentype"),
     url(/_next/static/media/slick.653a4cbb.woff) format("woff"),
     url(/_next/static/media/slick.6aa1ee46.ttf) format("truetype"),
     url(/_next/static/media/slick.f895cfdf.svg#slick) format("svg");
@@ -2108,14 +2073,13 @@ h3 {
   color: black;
 }
 
-
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./node_modules/slick-carousel/slick/slick.css ***!
         \***************************************************************************************************************************************************************************************************************************************************************************************/
 /* Slider */
 .slick-slider {
   position: relative;
-height: auto;
+  height: auto;
   display: block;
   box-sizing: border-box;
 
@@ -2254,10 +2218,12 @@ height: auto;
 .app_bg {
   padding: 2%;
   background: rgb(255, 255, 255);
-  background: linear-gradient(90deg,
-      rgb(200, 200, 200) 0%,
-      rgb(241, 241, 241) 50%,
-      rgb(197, 197, 197) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(200, 200, 200) 0%,
+    rgb(241, 241, 241) 50%,
+    rgb(197, 197, 197) 100%
+  );
 }
 
 .app_head {
@@ -2299,15 +2265,13 @@ height: auto;
 }
 
 .director-img {
-  width: 100%;
+  width: 95%;
   vertical-align: bottom;
   bottom: 0%;
-
   border-radius: 30px;
-  width: 86%;
-  margin: 12%;
+  margin: 5%;
   vertical-align: bottom;
-  background-color: azure;
+  background-color: transparent;
 }
 
 .director-img img {
@@ -2352,13 +2316,10 @@ height: auto;
   padding-right: 3px !important;
 }
 
-
 .icon_pl img {
   width: 15px;
   margin-top: 22px;
 }
-
-
 
 .icon_arrow_abt {
   border: none;
@@ -2369,7 +2330,6 @@ height: auto;
 } */
 .btn2 {
   border: none !important;
-
 }
 
 .btn {
@@ -2454,24 +2414,17 @@ height: auto;
   text-align: left !important;
 }
 
-
 .noBordder {
   border-bottom: 0px;
 }
-
-
-
-
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-
 .carouselevent {
   display: block;
 }
-
 
 .director-des p {
   font-size: small !important;
@@ -2479,35 +2432,27 @@ height: auto;
 
 .person-detail {
   margin-top: 1rem;
-
 }
 
 .person-detail p {
   text-align: left !important;
 }
-
 
 .person-detail p {
   color: #555555;
   text-align: left !important;
   font-family: unset;
   font-size: medium !important;
-
 }
-
-
-
 
 .person-detail h4 {
   color: #3b3b3bf9;
+  text-transform: capitalize;
   font-weight: 400;
   font-family: unset;
 }
 
 @media (max-width: 767px) {
-
-
-
   .container {
     width: 98%;
     /* Set the desired width of the container */
@@ -2518,22 +2463,16 @@ height: auto;
     padding: 2%;
   }
 
-
-
-
   ::-webkit-scrollbar {
     display: none;
   }
-
 
   body p {
     text-align: justify !important;
   }
 
-
   img {
     object-fit: cover;
-
   }
 
   .about-Title h1 {
@@ -2544,17 +2483,15 @@ height: auto;
     font-size: 1.5rem !important;
   }
 
-  .faculties-card img {
-    height: 35vh !important;
+  .faculties-card .facluties_fac_images_fill {
+    height: 26.3vh;
   }
-
 
   .faculties-card-title {
     font-size: small !important;
     font-style: normal;
     font-weight: 300;
     padding-top: 2%;
-
   }
 
   .btn {
@@ -2572,24 +2509,18 @@ height: auto;
   .card-body {
     padding: 0px !important;
     text-align: center;
-
   }
 
   .card-body p {
     text-align: center;
-
   }
-
-
 
   .card-body {
     padding: 2px;
     min-height: 160px !;
   }
 
-
-.caro-paragraph p{
-  
+  .caro-paragraph p {
     padding: 30px;
   }
   .what-box h3 {
@@ -2601,31 +2532,24 @@ height: auto;
     color: #000;
   }
 
-  
   .faculties-card-text {
-
     font-size: small !important;
   }
 
-
-
   .events-section {
     padding: 4% !important;
-
   }
 
   .director-img {
     width: 100%;
     vertical-align: bottom;
     bottom: 0%;
-
     border-radius: 30px;
-    width: 98%;
+    width: 100%;
     margin: 2%;
     vertical-align: bottom;
-    background-color: azure;
+    background-color: transparent;
   }
-
 
   .AboutUspage-items {
     text-align: justify;
@@ -2652,7 +2576,7 @@ height: auto;
   }
 
   .about-Title {
-    margin-top: 1rem !important;
+    margin-top: 3rem !important;
   }
 
   .person-detail p {
@@ -2663,25 +2587,20 @@ height: auto;
     text-align: center;
   }
 
-  .row>* {
+  .row > * {
     width: 100% !important;
     padding: 1%;
   }
-
-
 
   .column {
     margin: 5%;
   }
 
   .about-Title h1 {
-
     margin-top: 0rem !important;
-
   }
 
   .addres_box p {
-
     text-align: center;
   }
 
@@ -2689,15 +2608,12 @@ height: auto;
     padding: 0rem 1rem 0rem 1rem !important;
   }
 
-
   .about-description p {
     text-align: center;
   }
 
   .about-description {
     padding: 0rem;
-
-
   }
 
   .box .caro-img img {
@@ -2705,7 +2621,6 @@ height: auto;
     min-height: none;
     max-height: none;
     border: 5px solid #fff;
-
   }
 
   .box .books img {
@@ -2715,28 +2630,20 @@ height: auto;
     border: 5px solid #fff;
   }
 
-
-
   img {
     object-fit: cover;
-
   }
 
-  .faculties-card img {
-    height: 35vh !important;
+  .faculties-card .facluties_fac_images {
+    height: 15vh !important;
   }
 
   .footer .container {
     overflow: visible !important;
   }
-
 }
 
-
-
 @media (max-width: 991px) {
-
-
   .app_head {
     font-size: larger;
     text-align: center;
@@ -2746,7 +2653,6 @@ height: auto;
   .about-Title h1 {
     font-size: 1.5rem;
   }
-
 
   .page_padd {
     padding-left: 1rem;
@@ -2781,7 +2687,7 @@ height: auto;
   }
 
   .about-Title {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .work_box {
@@ -2851,7 +2757,6 @@ height: auto;
     line-height: 50px;
   }
 
-
   .coursePage-text p {
     position: absolute;
     padding: 0% 22% 1%;
@@ -2863,16 +2768,12 @@ height: auto;
     font-size: 15px;
   }
 
-
-
-
-
   .More_btn2 {
     background: linear-gradient(90deg, #3dc55d 0%, #619a46 100%);
     border-radius: 999px;
     box-shadow: #b3d3a4 0 10px 20px -10px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     font-family: unset;
     font-size: smaller;
@@ -2887,16 +2788,13 @@ height: auto;
     word-break: break-word;
     border: 0;
   }
-
-
-
 
   .More_btn2:hover {
     background: #3dc55d;
     border-radius: 999px;
     box-shadow: #619a46 0 10px 20px -10px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     font-family: unset;
     font-size: smaller;
@@ -2911,9 +2809,6 @@ height: auto;
     word-break: break-word;
     border: 0;
   }
-
-
-
 
   .center_div {
     text-align: center;
@@ -2965,9 +2860,6 @@ height: auto;
     margin-top: auto;
   }
 
-
-
-
   .AboutUspage-campus-title {
     font-size: 1.5rem;
   }
@@ -2977,11 +2869,9 @@ height: auto;
     padding-top: 2rem !important;
   }
 
-
   .TitleStyle {
     font-size: 1.5rem;
   }
-
 
   #footer p {
     text-align: center !important;
@@ -3031,6 +2921,5 @@ height: auto;
   .faculties-card img {
     height: auto;
     object-fit: cover;
-
   }
 }
