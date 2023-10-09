@@ -16,6 +16,7 @@ const Videoslider = () => {
       modestbranding: 1, // Reduce the YouTube logo to a small watermark
       disablekb: 1, // Disable keyboard controls
       iv_load_policy: 3, // Hide annotations
+      loading: "eager", // or "lazy" for lazy loading
     },
   };
 
