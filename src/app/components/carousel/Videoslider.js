@@ -24,7 +24,6 @@ const Videoslider = () => {
   const onEndHandler = (event) => {
     event.target.playVideo();
   };
-
   return (
     <div className="header">
       <div className="header-contents">
