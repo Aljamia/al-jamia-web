@@ -1,32 +1,9 @@
+/* eslint-disable @next/next/no-page-custom-font */
 "use client";
-import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import Card from "react-bootstrap/Card";
 import "./Offices_Department";
-import { getManagementCommitee } from "@/app/hooks/UseApi";
-import Image from "next/image";
 
 const Offices_Department = () => {
-  const [commitee, Setcommitee] = useState([]);
-  const [show, setShow] = useState(false);
-  const [modalVal, setModalVal] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = (data) => {
-    setShow(true);
-    setModalVal(data);
-  };
-  useEffect(() => {
-    const fetchCommitee = async () => {
-      const data = await getManagementCommitee();
-      console.log(data);
-      Setcommitee(data?.response);
-    };
-    fetchCommitee();
-  }, []);
-
   return (
     <div>
       <div className="AboutUspage-items">
@@ -41,7 +18,6 @@ const Offices_Department = () => {
                 href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
                 rel="stylesheet"
               />
-
               <section>
                 <h1 className="TitleStyle center_aln p-1">
                   Offices & Department

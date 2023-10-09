@@ -3,7 +3,7 @@
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../globals.css";
@@ -27,7 +27,7 @@ function HomePage(eventId) {
         console.log("updatenews data", response.data.response); // Log the data to the console
       })
       .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  }, [eventId.params.eventId]);
   console.log({ events });
 
   return (

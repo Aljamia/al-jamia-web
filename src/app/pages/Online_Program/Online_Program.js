@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 "use client";
 import React, { useEffect, useState } from "react";
 import { getAboutUs } from "@/app/hooks/UseApi";
@@ -5,7 +6,6 @@ import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
-import World_Campus from "@/app/components/World_Campus/World_Campus";
 import Link from "next/link";
 
 function Online_Program() {
@@ -75,7 +75,6 @@ function Online_Program() {
                   href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
                   rel="stylesheet"
                 />
-
                 <section>
                   <h1 className="TitleStyle center_aln  p-4">
                     Highlights of Programs
@@ -349,8 +348,6 @@ function Online_Program() {
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-
-
                 <Col xl={12} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
@@ -369,8 +366,8 @@ function Online_Program() {
                     aspirants in Islamic Finance and Banking sector.
                   </p>
                 </Col>
- <Col xl={6} lg={6} xs={12}>
-                <div className="AboutUspage-mission-img mt-1">
+                <Col xl={6} lg={6} xs={12}>
+                  <div className="AboutUspage-mission-img mt-1">
                     <Image
                       src="/banner/Islamic Finance.jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
@@ -381,7 +378,6 @@ function Online_Program() {
                       className="AboutUspage-vision-img2"
                     />
                   </div>
-                
                 </Col>
                 <Col xl={6} lg={12} xs={12}>
                   <div
@@ -408,8 +404,6 @@ function Online_Program() {
                     of the course enrolled FREE OF COST.
                   </div>
                 </Col>
-
-               
               </Row>
             </Container>
           </div>
@@ -685,36 +679,32 @@ function Online_Program() {
                 </Col>
               </Row>
             </Container>
-
-          
-
           </div>
         </div>
         <div className="app_bg">
-        <Container>
-          <Row>
-            <Col xl={12} lg={12} xs={12}>
-              {/* <h1 className="app_head">Click</h1> */}
-              <div className="app_icon">
-                <Link
-                  href="https://aljamiaworldcampus.net"
-                  target="blank"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <Image
-                    src="/aljamia_worldcampus_logo_blue.png"
-                    layout="intrinsic"
-                    width={1000}
-                    height={500}
-                    alt="Image"
-                  />
-                </Link>{" "}
-              </div>
-            </Col>
-
-          </Row>
-        </Container>
-      </div>
+          <Container>
+            <Row>
+              <Col xl={12} lg={12} xs={12}>
+                {/* <h1 className="app_head">Click</h1> */}
+                <div className="app_icon">
+                  <Link
+                    href="https://aljamiaworldcampus.net"
+                    target="blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <Image
+                      src="/aljamia_worldcampus_logo_blue.png"
+                      layout="intrinsic"
+                      width={1000}
+                      height={500}
+                      alt="Image"
+                    />
+                  </Link>{" "}
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
 
         <Footer />
       </div>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import { Col, Container, Row } from "react-bootstrap";
@@ -17,11 +18,8 @@ function Recognition_Awards_data() {
               href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
               rel="stylesheet"
             />
-
             <section>
-              <h1 className="TitleStyle center_aln">
-                Recognition & Awards
-              </h1>
+              <h1 className="TitleStyle center_aln">Recognition & Awards</h1>
               <p>
                 We take immense pride in celebrating the achievements of our
                 remarkable alumni. Our Alumni Recognition & Awards program
