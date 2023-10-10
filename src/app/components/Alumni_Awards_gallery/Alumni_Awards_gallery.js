@@ -35,6 +35,7 @@ const Alumni_Awards_gallery = () => {
                 height={240}
                 alt={`Picture ${index + 1}`}
                 className="gallery__image"
+                loading="lazy"
               />
               {/* <figcaption className="gallery__caption">
                {item.title}

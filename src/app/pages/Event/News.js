@@ -111,7 +111,7 @@ const News = () => {
             <Row>
               <Col xl={4}>
                 <div className="event-img">
-                  <img src="image 13.png" alt="" width="100%" />
+                  <img src="image 13.png" alt="" width="100%" loading="lazy" />
                 </div>
                 <div className="event-btn">
                   <button>Up Coming Events</button>
@@ -152,6 +152,7 @@ const News = () => {
                           <div className="right-evnt-img">
                             <img
                               src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${newsItem.image}`}
+                              loading="lazy"
                               alt={newsItem.title}
                               width="100%"
                             />

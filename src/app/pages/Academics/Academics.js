@@ -22,6 +22,7 @@ const Academics = () => {
           width={1000}
           height={500}
           alt="Image"
+          loading="lazy"
         />
       </div>
 
@@ -74,6 +75,7 @@ const Academics = () => {
                     height={800} // Adjust the height as needed to make it taller
                     alt="Image"
                     objectFit="cover"
+                    loading="lazy"
                   />
 
                   <p className="PreparatoryTittle">CHRD</p>
@@ -91,6 +93,7 @@ const Academics = () => {
                     height={800} // Adjust the height as needed to make it taller
                     alt="Image"
                     objectFit="cover"
+                    loading="lazy"
                   />
 
                   <p className="PreparatoryTittle">Registration</p>
@@ -108,6 +111,7 @@ const Academics = () => {
                     height={800} // Adjust the height as needed to make it taller
                     alt="Image"
                     objectFit="cover"
+                    loading="lazy"
                   />
 
                   <p className="PreparatoryTittle">Online Programmes</p>
@@ -125,8 +129,8 @@ const Academics = () => {
                     height={800} // Adjust the height as needed to make it taller
                     alt="Image"
                     objectFit="cover"
+                    loading="lazy"
                   />
-
                   <p className="PreparatoryTittle">Research</p>
                   <div className="right-learn-btn">
                     <button className="event-btn-right">Read More</button>
@@ -136,9 +140,7 @@ const Academics = () => {
             </Row>
           </Container>
         </div>
-
         <Library />
-
         <Footer />
       </div>
     </div>

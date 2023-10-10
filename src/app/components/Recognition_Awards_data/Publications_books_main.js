@@ -39,7 +39,7 @@ const Publications_books_main = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true, // Add this property to enable autoplay
-    autoplaySpeed: 2000, // Set the autoplay speed in milliseconds (e.g., 2000ms = 2 seconds)
+    autoplaySpeed: 1300, // Set the autoplay speed in milliseconds (e.g., 2000ms = 2 seconds)
     responsive: [
       {
         breakpoint: 1024,
@@ -92,6 +92,7 @@ const Publications_books_main = () => {
                         width={100}
                         height={100}
                         layout="responsive"
+                        loading="lazy"
                       />
                     </div>
                     {/* <div className="caro-items">

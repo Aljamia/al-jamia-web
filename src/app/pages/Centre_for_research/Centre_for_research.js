@@ -32,9 +32,7 @@ function Centre_for_research() {
             alt="Image"
           />
         </div>
-
-        <Centre_for_research_main/>
-        
+        <Centre_for_research_main />
         <Footer />
       </div>
     );

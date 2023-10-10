@@ -57,6 +57,7 @@ function Information_Technology() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
+                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>

@@ -41,6 +41,7 @@ const Venture = () => {
                     <img
                       src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${venture.image}`}
                       alt="image"
+                      loading="lazy"
                     />
                   </div>
                   <div className="content">

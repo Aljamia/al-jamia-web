@@ -42,7 +42,7 @@ const Library_books = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true, // Add this property to enable autoplay
-    autoplaySpeed: 2000, // Set the autoplay speed in milliseconds (e.g., 2000ms = 2 seconds)
+    autoplaySpeed: 1300, // Set the autoplay speed in milliseconds (e.g., 2000ms = 2 seconds)
     responsive: [
       {
         breakpoint: 1024,
@@ -82,6 +82,7 @@ const Library_books = () => {
             layout="responsive"
             width={1000}
             height={500}
+            loading="lazy"
             alt="Image"
           />
         </div>

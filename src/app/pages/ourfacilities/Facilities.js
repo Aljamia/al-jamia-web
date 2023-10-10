@@ -20,6 +20,7 @@ const Facilities = () => {
           width={1000}
           height={200}
           alt="Image"
+          loading="lazy"
         />
       </div>
       <div className="facilities-section-one">

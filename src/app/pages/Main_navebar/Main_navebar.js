@@ -64,6 +64,7 @@ function Main_navebar() {
               height={80}
               alt="Picture of the author"
               className="nav-logo "
+              loading="lazy"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarSupportedContent" />

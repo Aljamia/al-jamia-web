@@ -21,30 +21,29 @@ const About = () => {
   return (
     <div>
       <motion.container
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-      <div className="container">
-        <div className="about-Title">
-          <h1 className="pt-1">Welcome to Al Jamia al Islamiya</h1>
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="container">
+          <div className="about-Title">
+            <h1 className="pt-1">Welcome to Al Jamia al Islamiya</h1>
+          </div>
+          <div className="about-description">
+            <p>{aboutdata && aboutdata[0]?.shortDescription}</p>
+          </div>
         </div>
-        <div className="about-description">
-          <p>{aboutdata && aboutdata[0]?.shortDescription}</p>
-        </div>
-      </div>
       </motion.container>
 
       <div className="school-img">
         <div className="btn">
           {" "}
-       
           <Link href="/about">
-              <motion.button
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          > 
+            <motion.button
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
               {" "}
               <div className="icon_arrow_abt">
                 <span className="p-3">Read More</span>
@@ -63,12 +62,16 @@ const About = () => {
                   />
                 </svg>
               </div>{" "}
-             </motion.button>
-            </Link>
-           
+            </motion.button>
+          </Link>
         </div>
         <div className="image">
-          <img src="banner/aljamia.png" alt="photo" width="100%" />
+          <img
+            src="banner/aljamia.png"
+            alt="photo"
+            width="100%"
+            loading="lazy"
+          />
         </div>
       </div>
       {/* <Annoucement /> */}

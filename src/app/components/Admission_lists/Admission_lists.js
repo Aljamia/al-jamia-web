@@ -14,6 +14,7 @@ function Admission_lists() {
               variant="top"
               className="portfolio-modal-images"
               src="/Registration.png"
+              loading="lazy"
             />
             <h5>PC</h5>
             <p className="p-3">
@@ -52,6 +53,7 @@ function Admission_lists() {
               variant="top"
               className="portfolio-modal-images"
               src="/Registration.png"
+              loading="lazy"
             />
             <h5>PC</h5>
             <p className="p-3">

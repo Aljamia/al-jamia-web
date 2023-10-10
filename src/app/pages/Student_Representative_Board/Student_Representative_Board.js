@@ -30,6 +30,7 @@ function Student_Representative_Board() {
             width={1000}
             height={500}
             alt="Image"
+            loading="lazy"
           />
         </div>
 

@@ -30,6 +30,7 @@ function Centre_for_it() {
             width={1000}
             height={500}
             alt="Image"
+            loading="lazy"
           />
         </div>
 

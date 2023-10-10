@@ -20,6 +20,7 @@ const Centralib = () => {
             layout="responsive"
             width={1000}
             height={500}
+            loading="lazy"
             alt="Image"
           />
         </div>
@@ -30,7 +31,6 @@ const Centralib = () => {
               Al Jamia Al Islamiya Central Library
             </div>
           </Container>
-
           <Container>
             <Row>
               <Col xl={4} lg={4} xs={12}>
@@ -41,6 +41,7 @@ const Centralib = () => {
                     width={1000}
                     height={200}
                     alt="Image"
+                    loading="lazy"
                   />
                 </div>
               </Col>
@@ -52,6 +53,7 @@ const Centralib = () => {
                     width={1000}
                     height={200}
                     alt="Image"
+                    loading="lazy"
                   />
                 </div>
               </Col>
@@ -63,6 +65,7 @@ const Centralib = () => {
                     width={1000}
                     height={200}
                     alt="Image"
+                    loading="lazy"
                   />
                 </div>
               </Col>
@@ -106,15 +109,12 @@ const Centralib = () => {
             </Container>
           </>
         </div>
-
         <div className="" id="Digitallibrary">
           <Digitallibrary />
         </div>
-
         <div className="">
           <Library_books_main />
         </div>
-
         <Footer />
       </div>
     </div>
