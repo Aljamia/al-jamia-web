@@ -9,6 +9,7 @@ const Videoslider = () => {
       autoplay: 1,
       loop: 1,
       controls: 0,
+      showinfo: 0,
       mute: 1,
       rel: 0,
       fs: 1, // Allow fullscreen

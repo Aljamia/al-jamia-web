@@ -1,11 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
 import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-
 import { getAboutUs, getAboutUsGallery } from "@/app/hooks/UseApi";
 import Recognition_Awards_data from "@/app/components/Recognition_Awards_data/Recognition_Awards_data";
 

@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import "./Digitallibrary.css";
-import Footer from "@/app/components/footer/Footer";
-import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
@@ -16,7 +14,6 @@ const Digitallibrary = () => {
               <div className="AboutUspage-title center_div pt-2">
                 Digital Library
               </div>
-
               <Row>
                 <Col xl={4} lg={4} xs={12}>
                   <div className="Faculties-img">

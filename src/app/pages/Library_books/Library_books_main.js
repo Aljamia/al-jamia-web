@@ -68,7 +68,6 @@ const Library_books_main = () => {
               <hr />
               New Arrivals
             </div>
-
             <p>
               Excitement fills the air as our library welcomes its newest
               additions. Our collection is constantly evolving to offer you the
@@ -88,7 +87,7 @@ const Library_books_main = () => {
                         width={100}
                         height={100}
                         layout="responsive"
-                        loading="lazy"
+                        loading="eager"
                       />
                     </div>
                   </div>

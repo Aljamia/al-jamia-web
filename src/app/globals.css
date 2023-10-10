@@ -2968,6 +2968,10 @@ h3 {
   height: 100%;
 }
 
+.header:hover {
+  cursor: none !important;
+}
+
 /* Hide YouTube video controls and logo */
 .youtube-video:hover .ytp-chrome-top,
 .youtube-video:hover .ytp-gradient-bottom,

@@ -26,20 +26,20 @@ const Alumni_Awards_gallery = () => {
   return (
     <div className="gallery">
       <div className="gallery__column">
-        {galleryItems.slice(0, 27).map((item, index) => (
+        {galleryItems.map((item, index) => (
           <>
             <figure className="gallery__thumb" key={index}>
               <Image
-                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
+                src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
                 width={350}
                 height={240}
                 alt={`Picture ${index + 1}`}
                 className="gallery__image"
-                loading="lazy"
+                loading="eager"
               />
-              {/* <figcaption className="gallery__caption">
-               {item.title}
-              </figcaption> */}
+              <figcaption className="gallery__caption">
+                {item.content}
+              </figcaption>
             </figure>
           </>
         ))}
