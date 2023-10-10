@@ -63,7 +63,6 @@ function Main_navebar() {
               height={80}
               alt="Picture of the author"
               className="nav-logo "
-              loading="lazy"
             />
 
             {/* cssanimation hu__hu__ sequence */}

@@ -44,7 +44,6 @@ const CoursePage = () => {
           width={1000}
           height={500}
           alt="Image"
-          loading="lazy"
         />
       </div>
 
@@ -75,7 +74,6 @@ const CoursePage = () => {
                         variant="top"
                         className="portfolio-modal-images"
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
-                        loading="lazy"
                       />
                       <Container>
                         <div className="course-data-items">
@@ -141,7 +139,6 @@ const CoursePage = () => {
                             variant="top"
                             className="course-card-modalimages"
                             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
-                            loading="lazy"
                           />
                         </Card>
                       </Col>

@@ -24,7 +24,6 @@ function World_Campus() {
                     width={1000}
                     height={500}
                     alt="Image"
-                    loading="lazy"
                   />
                 </Link>{" "}
               </div>

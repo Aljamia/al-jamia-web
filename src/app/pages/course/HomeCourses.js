@@ -35,7 +35,6 @@ const HomeCourses = () => {
             variant="top"
             className="portfolio-modal-images"
             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
-            loading="lazy"
           />
           <Container>
             <div className="course-data-items">
@@ -98,7 +97,6 @@ const HomeCourses = () => {
                   variant="top"
                   className="course-card-modalimages"
                   src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
-                  loading="lazy"
                 />
               </Card>
             </Col>

@@ -28,7 +28,6 @@ function Recognition_MOU() {
             width={1000}
             height={500}
             alt="Image"
-            loading="lazy"
           />
         </div>
         <div>

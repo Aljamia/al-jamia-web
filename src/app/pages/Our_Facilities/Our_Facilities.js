@@ -44,7 +44,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/class_rooms.JPG" alt="" loading="lazy" />
+                      <img src="banner/class_rooms.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Smart class rooms</h4>
@@ -61,11 +61,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img
-                        src="/banner/Digital_labs.JPG"
-                        alt=""
-                        loading="lazy"
-                      />
+                      <img src="/banner/Digital_labs.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Digital labs</h4>
@@ -82,11 +78,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img
-                        src="/banner/Wifi Campus.JPG"
-                        alt=""
-                        loading="lazy"
-                      />
+                      <img src="/banner/Wifi Campus.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Wifi Campus</h4>
@@ -103,11 +95,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img
-                        src="/banner/Conference2.JPG"
-                        alt=""
-                        loading="lazy"
-                      />
+                      <img src="/banner/Conference2.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Conference Halls</h4>
@@ -124,11 +112,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img
-                        src="banner/SeminarHalls.png"
-                        alt=""
-                        loading="lazy"
-                      />
+                      <img src="banner/SeminarHalls.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Seminar Halls</h4>
@@ -146,11 +130,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img
-                        src="banner/Video_conference.JPG"
-                        alt=""
-                        loading="lazy"
-                      />
+                      <img src="banner/Video_conference.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Video conference Hall</h4>
@@ -167,11 +147,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img
-                        src="banner/Students_Centres2.png"
-                        alt=""
-                        loading="lazy"
-                      />
+                      <img src="banner/Students_Centres2.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Students Corners</h4>
@@ -188,11 +164,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img
-                        src="/banner/DigitalStudio.JPG"
-                        alt=""
-                        loading="lazy"
-                      />
+                      <img src="/banner/DigitalStudio.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Digital Studio</h4>
@@ -209,7 +181,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/MentorsHub.JPG" alt="" loading="lazy" />
+                      <img src="/banner/MentorsHub.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mentors Hub</h4>
@@ -226,7 +198,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Hostels.png" alt="" loading="lazy" />
+                      <img src="banner/Hostels.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Hostels</h4>
@@ -245,7 +217,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Mess.png" alt="" loading="lazy" />
+                      <img src="/banner/Mess.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mess hall</h4>
@@ -263,11 +235,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img
-                        src="banner/Medical_Rooms.png"
-                        alt=""
-                        loading="lazy"
-                      />
+                      <img src="banner/Medical_Rooms.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Medical Rooms</h4>

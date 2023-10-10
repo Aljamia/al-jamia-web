@@ -28,7 +28,6 @@ function Faculty() {
             src="/image 7.png"
             layout="responsive"
             width={1000}
-            loading="lazy"
             height={500}
             alt="Image"
           />

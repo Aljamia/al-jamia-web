@@ -19,7 +19,6 @@ function StudentsLife() {
           width={1000}
           height={500}
           alt="Image"
-          loading="lazy"
         />
       </div>
       <div className="AboutUspage-items">

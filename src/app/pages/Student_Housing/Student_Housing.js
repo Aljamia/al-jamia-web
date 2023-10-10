@@ -27,7 +27,6 @@ function Student_Housing() {
             layout="responsive"
             width={1000}
             height={500}
-            loading="lazy"
             alt="Image"
           />
         </div>

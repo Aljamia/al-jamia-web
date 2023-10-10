@@ -40,7 +40,6 @@ const AdministrativeCouncil = () => {
                         className="facluties_fac_images"
                         variant="top"
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
-                        loading="lazy"
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">
@@ -73,7 +72,6 @@ const AdministrativeCouncil = () => {
                                 <Card.Img
                                   variant="top"
                                   src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
-                                  loading="lazy"
                                 />
                               </Card>
                             </Col>

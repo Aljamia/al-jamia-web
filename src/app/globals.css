@@ -799,8 +799,9 @@ img {
 }
 
 .faculties-card .facluties_fac_images_fill {
-  object-fit: fill;
-  height: 26vh;
+  object-fit: cover;
+  height: 36vh;
+  width: auto;
 }
 .modal-content {
   text-align: center !important;
@@ -2503,7 +2504,7 @@ h3 {
   }
 
   .faculties-card .facluties_fac_images_fill {
-    height: 26.3vh;
+    height: auto;
   }
 
   .faculties-card-title {

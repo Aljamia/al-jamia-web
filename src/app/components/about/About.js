@@ -66,12 +66,7 @@ const About = () => {
           </Link>
         </div>
         <div className="image">
-          <img
-            src="banner/aljamia.png"
-            alt="photo"
-            width="100%"
-            loading="lazy"
-          />
+          <img src="banner/aljamia.png" alt="photo" width="100%" />
         </div>
       </div>
       {/* <Annoucement /> */}

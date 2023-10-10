@@ -29,7 +29,6 @@ function Online_Program() {
             layout="responsive"
             width={1000}
             height={500}
-            loading="lazy"
             alt="Image"
           />
         </div>
@@ -154,7 +153,6 @@ function Online_Program() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
-                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
@@ -241,7 +239,6 @@ function Online_Program() {
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
-                      loading="lazy"
                       objectFit="cover"
                       className="AboutUspage-vision-img2"
                     />
@@ -338,7 +335,6 @@ function Online_Program() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
-                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
@@ -379,7 +375,6 @@ function Online_Program() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
-                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
@@ -495,7 +490,6 @@ function Online_Program() {
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
-                      loading="lazy"
                       objectFit="cover"
                       className="AboutUspage-vision-img2"
                     />
@@ -591,7 +585,6 @@ function Online_Program() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
-                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
@@ -680,7 +673,6 @@ function Online_Program() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
-                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
@@ -706,7 +698,6 @@ function Online_Program() {
                       width={1000}
                       height={500}
                       alt="Image"
-                      loading="lazy"
                     />
                   </Link>{" "}
                 </div>

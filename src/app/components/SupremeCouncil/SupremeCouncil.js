@@ -40,7 +40,6 @@ const SupremeCouncil = () => {
                         variant="top"
                         className="facluties_fac_images"
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item.image}`}
-                        loading="lazy"
                       />
                       <Card.Body>
                         <Card.Title className="faculties-card-title">

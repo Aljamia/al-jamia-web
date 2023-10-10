@@ -17,7 +17,6 @@ function Director_message() {
           width={1000}
           height={500}
           alt="Image"
-          loading="lazy"
         />
       </div>
       <Director />
