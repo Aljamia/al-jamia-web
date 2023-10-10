@@ -42,7 +42,6 @@ const Management = () => {
               width={1000}
               height={200}
               alt="Image"
-              loading="lazy"
             />
           </div>
           <p className="Faculties-desc">

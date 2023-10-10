@@ -29,7 +29,6 @@ function Activities_Centre() {
             width={1000}
             height={500}
             alt="Image"
-            loading="lazy"
           />
         </div>
 
@@ -45,7 +44,6 @@ function Activities_Centre() {
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
-                      loading="lazy"
                       objectFit="cover"
                       className="AboutUspage-vision-img2"
                     />

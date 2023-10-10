@@ -98,7 +98,6 @@ const Event = () => {
                   width={1000}
                   layout="responsive"
                   height={1000}
-                  loading="lazy"
                   style={{ borderRadius: "20px" }}
                 />
               </div>

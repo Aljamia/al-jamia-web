@@ -20,7 +20,6 @@ const Centralib = () => {
             layout="responsive"
             width={1000}
             height={500}
-            loading="lazy"
             alt="Image"
           />
         </div>
@@ -41,7 +40,6 @@ const Centralib = () => {
                     width={1000}
                     height={200}
                     alt="Image"
-                    loading="lazy"
                   />
                 </div>
               </Col>
@@ -53,7 +51,6 @@ const Centralib = () => {
                     width={1000}
                     height={200}
                     alt="Image"
-                    loading="lazy"
                   />
                 </div>
               </Col>
@@ -65,7 +62,6 @@ const Centralib = () => {
                     width={1000}
                     height={200}
                     alt="Image"
-                    loading="lazy"
                   />
                 </div>
               </Col>

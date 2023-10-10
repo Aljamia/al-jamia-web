@@ -56,7 +56,6 @@ const Footer = () => {
                 height={80}
                 alt="Picture of the author"
                 className="footer-logo"
-                loading="lazy"
               />
               <div className="footer-about">
                 <p>
@@ -125,7 +124,6 @@ const Footer = () => {
                         height={80}
                         alt="Picture of the author"
                         className="footer-logo"
-                        loading="lazy"
                       />
                       {/* <i className="fa-brands fa-facebook-f fb_clr"></i>{" "} */}
                       Facebook
@@ -142,7 +140,6 @@ const Footer = () => {
                         height={80}
                         alt="Picture of the author"
                         className="footer-logo"
-                        loading="lazy"
                       />{" "}
                       {/* <i className="fa-brands fa-instagram insta_clr"></i>{" "} */}
                       Instagram
@@ -159,7 +156,6 @@ const Footer = () => {
                         height={80}
                         alt="Picture of the author"
                         className="footer-logo"
-                        loading="lazy"
                       />{" "}
                       {/* <i className="fa-brands fa-youtube youtube_clr"></i>{" "} */}
                       youtube

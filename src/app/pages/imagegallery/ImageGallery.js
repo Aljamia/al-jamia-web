@@ -34,7 +34,6 @@ const ImageGallery = () => {
                 width={300}
                 height={250}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               {/* <figcaption className="gallery__caption">
@@ -48,7 +47,6 @@ const ImageGallery = () => {
                 width={270}
                 height={200}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -62,7 +60,6 @@ const ImageGallery = () => {
                 width={350}
                 height={280}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -78,7 +75,6 @@ const ImageGallery = () => {
                 width={350}
                 height={180}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -92,7 +88,6 @@ const ImageGallery = () => {
                 width={300}
                 height={250}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -106,7 +101,6 @@ const ImageGallery = () => {
                 width={200}
                 height={300}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -122,7 +116,6 @@ const ImageGallery = () => {
                 width={350}
                 height={240}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -136,7 +129,6 @@ const ImageGallery = () => {
                 width={350}
                 height={228}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -150,7 +142,6 @@ const ImageGallery = () => {
                 width={350}
                 height={260}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -166,7 +157,6 @@ const ImageGallery = () => {
                 width={350}
                 height={265}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -180,7 +170,6 @@ const ImageGallery = () => {
                 width={350}
                 height={240}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
@@ -194,7 +183,6 @@ const ImageGallery = () => {
                 width={350}
                 height={220}
                 alt="Picture of the author"
-                loading="lazy"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">

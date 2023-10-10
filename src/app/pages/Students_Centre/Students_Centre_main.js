@@ -33,7 +33,6 @@ function Students_Centre_main() {
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
-                      loading="lazy"
                       objectFit="cover"
                       className="AboutUspage-vision-img2"
                     />
