@@ -37,9 +37,9 @@ const Alumni_Awards_gallery = () => {
                 className="gallery__image"
                 loading="eager"
               />
-              <figcaption className="gallery__caption">
+              {/* <figcaption className="gallery__caption">
                 {item.content}
-              </figcaption>
+              </figcaption> */}
             </figure>
           </>
         ))}
