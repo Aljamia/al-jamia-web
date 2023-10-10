@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import YouTube from "react-youtube";
-import "./Videoslider.css";
 
 const Videoslider = () => {
   const playerRef = useRef(null);

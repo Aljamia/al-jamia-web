@@ -1,51 +1,48 @@
 "use client";
-import React, { useState, useEffect } from "react";
-
+import { useRef } from "react";
 import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-
-import { getAboutUs, getAboutUsGallery } from "@/app/hooks/UseApi";
-import Alumni_Chapters from "@/app/components/Alumni_Chapters/Alumni_Chapters";
 import Link from "next/link";
+import YouTube from "react-youtube";
 
 function AljamiaArts_Science() {
-  const [about, setAbout] = useState([]);
-  const [gallery, setGallery] = useState([]);
+  const playerRef = useRef(null);
 
-  useEffect(() => {
-    const fetchAbout = async () => {
-      const data = await getAboutUs();
-      setAbout(data?.response);
-    };
-    const fetchGallery = async () => {
-      const data = await getAboutUsGallery();
-      setGallery(data?.response);
-    };
-    fetchAbout();
-    fetchGallery();
-  }, []);
-  // if (!gallery || gallery.length === 0) {
-  //   return (
-  //     <div className="text-left">
-  //       <h6>Loading...</h6>
-  //     </div>
-  //   );
-  // }
+  const opts = {
+    playerVars: {
+      autoplay: 1,
+      loop: 1,
+      controls: 0,
+      mute: 1,
+      rel: 0,
+      fs: 1, // Allow fullscreen
+      modestbranding: 1, // Reduce the YouTube logo to a small watermark
+      disablekb: 1, // Disable keyboard controls
+      iv_load_policy: 3, // Hide annotations
+      loading: "eager", // or "lazy" for lazy loading
+    },
+  };
 
+  const videoId = "LYotI5Bu8Fw";
+  const onEndHandler = (event) => {
+    event.target.playVideo();
+  };
   return (
     <div>
       <PageHeader />
-
-      <div className="AboutUspage-img">
-        <Image
-          src="/banner/AljamiaArts_Science1.png"
-          layout="responsive"
-          width={1000}
-          height={500}
-          alt="Image"
-        />
+      <div className="header">
+        <div className="header-contents">
+          <div className="header-video">
+            <YouTube
+              videoId={videoId}
+              opts={opts}
+              onEnd={onEndHandler}
+              ref={playerRef}
+              className="youtube-video" // Apply your CSS class here
+            />
+          </div>
+        </div>
       </div>
       <div className="AboutUspage-items">
         <div className="AboutUspage-ourMission">
@@ -84,7 +81,6 @@ function AljamiaArts_Science() {
             </Row>
           </Container>
         </div>
-
         <div className="AboutUspage-ourMission">
           <Container>
             <Row>
@@ -110,13 +106,25 @@ function AljamiaArts_Science() {
                       BSC Geography <br />
                     </li>
                     <li>BSC Computer Science </li>
-                    <li>BCA</li>
-                    <li>B. A. English Language and Literature</li>
-                    <li>B. A. Islamic Studies</li>
-                    <li>B. Com Computer Application </li>
-                    <li>BBA Finance </li>
                   </ul>
                 </div>
+              </Col>
+              <Col xl={4} lg={4} xs={12}>
+                <div>
+                  <div
+                    className="AboutUspage-mission-title"
+                    id="our-mission-header"
+                  >
+                    <h2 className="Chapters_center_div"> UG programs</h2>
+                  </div>
+                </div>
+                <ul className="blog-details-list mt-30">
+                  <li>BCA</li>
+                  <li>B. A. English Language and Literature</li>
+                  <li>B. A. Islamic Studies</li>
+                  <li>B. Com Computer Application </li>
+                  <li>BBA Finance </li>
+                </ul>
               </Col>
               <Col xl={4} lg={4} xs={12}>
                 <div>

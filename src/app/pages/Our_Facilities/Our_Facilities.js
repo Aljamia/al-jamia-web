@@ -38,14 +38,13 @@ function Our_Facilities() {
           <h1 className="TitleStyle center_aln  pt-2 pb-2">
             Our Facilities and General Service
           </h1>
-
           <div className="AboutUspage-ourMission Facilities">
             <Container>
               <Row>
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/class_rooms.JPG" alt="" />
+                      <img src="banner/class_rooms.JPG" alt="" loading="lazy" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Smart class rooms</h4>
@@ -53,7 +52,7 @@ function Our_Facilities() {
                         Experience the future of education through our 40+ Smart
                         Classrooms. Discover a dynamic learning environment
                         equipped with advanced technology, interactive displays,
-                        and collaborative tools
+                        and collaborative tools.
                       </p>
                     </div>
                   </div>
@@ -62,7 +61,11 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Digital_labs.JPG" alt="" />
+                      <img
+                        src="/banner/Digital_labs.JPG"
+                        alt=""
+                        loading="lazy"
+                      />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Digital labs</h4>
@@ -79,7 +82,11 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Wifi Campus.JPG" alt="" />
+                      <img
+                        src="/banner/Wifi Campus.JPG"
+                        alt=""
+                        loading="lazy"
+                      />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Wifi Campus</h4>
@@ -96,7 +103,11 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Conference2.JPG" alt="" />
+                      <img
+                        src="/banner/Conference2.JPG"
+                        alt=""
+                        loading="lazy"
+                      />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Conference Halls</h4>
@@ -104,7 +115,7 @@ function Our_Facilities() {
                         Discover our impressive conference halls, offering a
                         comprehensive range of facilities including advanced
                         sound systems and projectors. Elevate events with
-                        seamless technology
+                        seamless technology.
                       </p>
                     </div>
                   </div>
@@ -113,7 +124,11 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/SeminarHalls.png" alt="" />
+                      <img
+                        src="banner/SeminarHalls.png"
+                        alt=""
+                        loading="lazy"
+                      />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Seminar Halls</h4>
@@ -131,7 +146,11 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Video_conference.JPG" alt="" />
+                      <img
+                        src="banner/Video_conference.JPG"
+                        alt=""
+                        loading="lazy"
+                      />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Video conference Hall</h4>
@@ -148,7 +167,11 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Students_Centres2.png" alt="" />
+                      <img
+                        src="banner/Students_Centres2.png"
+                        alt=""
+                        loading="lazy"
+                      />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Students Corners</h4>
@@ -165,7 +188,11 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/DigitalStudio.JPG" alt="" />
+                      <img
+                        src="/banner/DigitalStudio.JPG"
+                        alt=""
+                        loading="lazy"
+                      />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Digital Studio</h4>
@@ -173,7 +200,7 @@ function Our_Facilities() {
                         Welcome to our advanced Digital Video Recording Studio,
                         where your visual creations take center stage. Capture,
                         edit, and bring your videos to life in a dynamic and
-                        technologically equipped environment
+                        technologically equipped environment.
                       </p>
                     </div>
                   </div>
@@ -182,7 +209,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/MentorsHub.JPG" alt="" />
+                      <img src="/banner/MentorsHub.JPG" alt="" loading="lazy" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mentors Hub</h4>
@@ -190,7 +217,7 @@ function Our_Facilities() {
                         Discover the power of mentorship in our two specialized
                         Hubs, designed to empower both girls and boys. Each Hub
                         is guided by a team of 10 dedicated mentors, creating a
-                        supportive space for growth
+                        supportive space for growth.
                       </p>
                     </div>
                   </div>
@@ -199,7 +226,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Hostels.png" alt="" />
+                      <img src="banner/Hostels.png" alt="" loading="lazy" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Hostels</h4>
@@ -208,7 +235,8 @@ function Our_Facilities() {
                         welcoming hostels, thoughtfully designed to accommodate
                         700+ students. Uncover a vibrant community where comfort
                         and learning intertwine. Stay connected for updates as
-                        we elevate these spaces to provide you with an ex
+                        we elevate these spaces to provide you with an
+                        Excitement.
                       </p>
                     </div>
                   </div>
@@ -217,7 +245,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Mess.png" alt="" />
+                      <img src="/banner/Mess.png" alt="" loading="lazy" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mess hall</h4>
@@ -235,7 +263,11 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Medical_Rooms.png" alt="" />
+                      <img
+                        src="banner/Medical_Rooms.png"
+                        alt=""
+                        loading="lazy"
+                      />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Medical Rooms</h4>
@@ -243,7 +275,7 @@ function Our_Facilities() {
                         Prioritizing student’s well-being, we offer two medical
                         rooms fully equipped with essential first aid supplies
                         and accommodating six beds each. Student’s health and
-                        safety are our commitment
+                        safety are our commitment.
                       </p>
                     </div>
                   </div>
@@ -252,7 +284,6 @@ function Our_Facilities() {
             </Container>
           </div>
         </div>
-
         <Footer />
       </div>
     );

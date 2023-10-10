@@ -5,11 +5,11 @@
   /* color */
   --white-color: #ffffff;
   --light-green-color: #619a46;
-  --goldish-color: #cc9020;
+  --goldish-color: #cca65d;
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
-  --font-PT-serif: "PT Serif", serif;
+  --font-PT-serif: "unset";
 }
 
 body p {
@@ -992,24 +992,6 @@ h3 {
     max-width: 33.33%;
   }
 }
-
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-      !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/pages/aboutus/AboutUs.css ***!
-      \*****************************************************************************************************************************************************************************************************************************************************************************/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
-
-:root {
-  /* color */
-  --white-color: #ffffff;
-  --light-green-color: #619a46;
-  --goldish-color: #cca65d;
-
-  /* fonts */
-  --font-inter: "Inter", sans-serif;
-  --font-PT-serif: "unse";
-}
-
 .page_padd {
   text-align: center;
 }
@@ -1397,9 +1379,34 @@ h3 {
 
 .box .caro-img img {
   border-radius: 2px;
-  min-height: 300px;
   max-height: 300px;
   border: 5px solid #fff;
+  cursor: pointer;
+}
+
+.caro-box-border {
+  --angle: 0deg;
+  border-width: 15px;
+  border-style: dotted;
+  border-image-source: linear-gradient(
+    var(--angle),
+    #6d97e6,
+    #2172ba,
+    #022d53 10em
+  );
+  border-image-slice: 10;
+  animation: 5s rotate linear infinite;
+  -webkit-animation: 10s rotate linear infinite;
+}
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .box .books img {
@@ -1685,12 +1692,24 @@ h3 {
 }
 
 .AboutUspage-img {
-  padding-top: 70px;
+  padding-top: 63px;
   background-color: #000;
 }
+/* styles.css */
 
+/* Default styles */
 .AboutUspage-img img {
-  opacity: 0.7;
+  width: 100%; /* Make the image fill its container */
+  height: 660px; /* Set the initial height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  opacity: 0.8;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .AboutUspage-img img {
+    height: auto; /* Allow height to adjust based on the aspect ratio */
+  }
 }
 
 .director {
@@ -1819,7 +1838,7 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: unset;
-  font-size: 60px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 300;
   line-height: 100%;
@@ -1837,7 +1856,7 @@ h3 {
 
 .grades-items {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -2923,3 +2942,51 @@ h3 {
     object-fit: cover;
   }
 }
+
+/*****  youtube video Section *****/
+/* Header video styles */
+.fullscreen-video {
+  filter: brightness(50%);
+}
+
+/* YouTube video container */
+.youtube-video {
+  position: relative;
+  top: 0px;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive design */
+  padding-top: 0;
+  height: 100px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide YouTube video controls and logo */
+.youtube-video:hover .ytp-chrome-top,
+.youtube-video:hover .ytp-gradient-bottom,
+.youtube-video:hover .ytp-title-link,
+.youtube-video:hover .ytp-logo,
+.youtube-video:hover .ytp-copylink-button {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .youtube-video {
+    position: relative;
+    top: 20px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive design */
+    padding-top: 0;
+    height: 100px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+/***** End  youtube video Section *****/

@@ -24,8 +24,7 @@ function OffCampus() {
         <PageHeader />
         <div className="AboutUspage-img">
           <Image
-            src="/banner/OffCampus.png"
-            layout="responsive"
+            src="/banner/AlamiaMewat.png"
             width={1000}
             height={500}
             alt="Image"

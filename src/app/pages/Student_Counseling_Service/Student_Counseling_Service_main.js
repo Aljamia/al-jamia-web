@@ -42,7 +42,7 @@ function Student_Counseling_Service_main() {
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
                   >
-                    Student Counseling Service
+                    Student Counselling Service
                   </div>
                   <p className="AboutUspage-mission-desc">
                     With the help of the Dean of Students Affairs, Al Jamia

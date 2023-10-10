@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "./Library_books_main.css";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
@@ -31,7 +30,7 @@ const Library_books_main = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true, // Add this property to enable autoplay
-    autoplaySpeed: 2000, // Set the autoplay speed in milliseconds (e.g., 2000ms = 2 seconds)
+    autoplaySpeed: 1300, // Set the autoplay speed in milliseconds (e.g., 2000ms = 2 seconds)
     responsive: [
       {
         breakpoint: 1024,
@@ -64,10 +63,12 @@ const Library_books_main = () => {
       <div className="AboutUspage">
         <div className="department-section events-section">
           <div className="container">
-          <div className="AboutUspage-title center_div"> <hr />
-              New Arrivals</div>
+            <div className="AboutUspage-title center_div">
+              {" "}
+              <hr />
+              New Arrivals
+            </div>
 
-          
             <p>
               Excitement fills the air as our library welcomes its newest
               additions. Our collection is constantly evolving to offer you the
@@ -79,7 +80,7 @@ const Library_books_main = () => {
             <Slider {...settings}>
               {cardValues.map((item, index) => (
                 <>
-                  <div className="box m-2" key={index}>
+                  <div className="box m-2 caro-box-border" key={index}>
                     <div className="caro-img books">
                       <Image
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
@@ -89,16 +90,6 @@ const Library_books_main = () => {
                         layout="responsive"
                       />
                     </div>
-                    {/* <div className="caro-items">
-                      <h4 className="caro-des"> {item.title}</h4>
-                      <p className="caro-paragraph"> {item.author}</p>
-                     <div className="More_btn2">
-                  <button onClick={() => handleShow(department)}>
-                    More Details
-                  </button>
-
-                </div> 
-                    </div> */}
                   </div>
                 </>
               ))}
