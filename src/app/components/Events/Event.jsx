@@ -101,11 +101,11 @@ const Event = () => {
                   style={{ borderRadius: "20px" }}
                 />
               </div>
-              <div className="event-btn ">
+              <div className="event-btn">
                 <button>Up Coming Events</button>
-                <span className="m-2">
-                  {" "}
-                  {new Date(events[0]?.date).toDateString()}
+                <span className=" m-3 ">
+                  {/* {new Date(events[0]?.date).toDateString()} */}
+                  {events[0]?.textDate}
                 </span>
               </div>
               <div className="event-des">
