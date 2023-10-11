@@ -1,12 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import axios from "axios";
 import "./Publications_books_main.css";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Link from "next/link";
 import { getpublication } from "@/app/hooks/UseApi";
 import Image from "next/image";
 
@@ -20,14 +17,6 @@ const Publications_books_main = () => {
       setpublication(data?.response);
     };
     fetchpublication();
-
-    // axios
-    //   .get("https://aljamia-api-ztjhx.ondigitalocean.app/api/v1/department")
-    //   .then((response) => {
-    //     setCardValues(response.data?.response);
-    //     console.log("department data", response.data?.response); // Log the data to the console
-    //   })
-    //   .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   // ... (the rest of your settings and useEffect code)
@@ -35,7 +24,7 @@ const Publications_books_main = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true, // Add this property to enable autoplay
