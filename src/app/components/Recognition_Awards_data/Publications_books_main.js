@@ -84,8 +84,8 @@ const Publications_books_main = () => {
             <Slider {...settings}>
               {publication.map((item, index) => (
                 <>
-                  <div className="box m-2" key={index}>
-                    <div className="caro-img">
+                  <div className=" box m-2 caro-box-border" key={index}>
+                    <div className="caro-img books">
                       <Image
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
                         alt=""
