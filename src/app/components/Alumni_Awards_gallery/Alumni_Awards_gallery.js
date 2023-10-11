@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./Alumni_Awards_gallery.css";
 import Image from "next/image";
-import { getAboutUsGallery } from "@/app/hooks/UseApi";
+import { getAward } from "@/app/hooks/UseApi";
 
 const Alumni_Awards_gallery = () => {
-  const [galleryItems, setGalleryItems] = useState([]);
+  const [Awards, setAwards] = useState([]);
 
   useEffect(() => {
     const fetchGallery = async () => {
       try {
-        const data = await getAboutUsGallery();
-        setGalleryItems(data?.response);
+        const data = await getAward();
+        setAwards(data?.response);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -19,14 +19,14 @@ const Alumni_Awards_gallery = () => {
     fetchGallery();
   }, []);
 
-  if (!galleryItems || galleryItems.length === 0) {
+  if (!Awards || Awards.length === 0) {
     return <div>Loading...</div>;
   }
 
   return (
     <div className="gallery">
       <div className="gallery__column">
-        {galleryItems.map((item, index) => (
+        {Awards.map((item, index) => (
           <>
             <figure className="gallery__thumb" key={index}>
               <Image

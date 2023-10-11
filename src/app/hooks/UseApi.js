@@ -106,3 +106,8 @@ export const getpublication = async () => {
   const response = await axios.get(`${BASE_URL}/publication`);
   return response.data;
 };
+
+export const getAward = async () => {
+  const response = await axios.get(`${BASE_URL}/award`);
+  return response.data;
+};
