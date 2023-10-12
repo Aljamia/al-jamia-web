@@ -46,7 +46,7 @@ function HomePage(eventId) {
                 width="100%"
               />
               <div className="news-para pt-4">
-                <p>{events.description}</p>
+                <p>{events.description}.</p>
               </div>
             </div>
           </div>
