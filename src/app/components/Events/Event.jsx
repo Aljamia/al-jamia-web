@@ -14,27 +14,38 @@ import Image from "next/image";
 const Event = () => {
   const router = useRouter();
   const [events, setEvents] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // Fetch the API data on component mount using Axios
   useEffect(() => {
     const fetchNews = async () => {
       const data = await getNews();
       setEvents(data?.response);
     };
     fetchNews();
+
+    // Check if the screen width is less than 600px (typical mobile width)
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+
+    handleResize(); // Check initial screen width
+    window.addEventListener("resize", handleResize); // Listen for window resize
+    return () => {
+      window.removeEventListener("resize", handleResize); // Cleanup on component unmount
+    };
   }, []);
 
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 3,
+    slidesToShow: isMobile ? 1 : 3, // Adjust the number of slides to show based on mobile or not
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 1300,
-    vertical: true, // Set the vertical option to true
-    verticalSwiping: true, // Enable vertical swiping
+    vertical: !isMobile, // Set the vertical option based on mobile or not
+    verticalSwiping: !isMobile, // Enable/disable vertical swiping based on mobile or not
     responsive: [
       {
         breakpoint: 1024,
@@ -64,7 +75,6 @@ const Event = () => {
   };
 
   const handleClick = (eventId) => {
-    // alert(eventId);
     router.push(`/testpage/${eventId}`);
   };
 
@@ -128,7 +138,10 @@ const Event = () => {
                   {events.map((event) => (
                     <>
                       <ul>
-                        <li className="card news_card" key={event._id}>
+                        <li
+                          className="card card_event_slick news_card"
+                          key={event._id}
+                        >
                           <img
                             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                             alt=""
@@ -136,31 +149,29 @@ const Event = () => {
                           />
                           <article className="card-body">
                             <header>
-                              <a href="utilidata-national-governors-association-meeting">
-                                <div className="title">
-                                  <h4>{event.title}</h4>
-                                </div>
-                                <p className="meta">
-                                  <span className="author">
-                                    {event.description.substring(0, 90)}...
-                                  </span>
-                                  <span> | </span>
-                                  <time
-                                    className="updated"
-                                    datetime=""
-                                    itemprop="datePublished"
+                              <div className="title">
+                                <h4>{event.title}</h4>
+                              </div>
+                              <p className="meta">
+                                <span className="author">
+                                  {event.description.substring(0, 90)}...
+                                </span>
+                                <span> | </span>
+                                <time
+                                  className="updated"
+                                  datetime=""
+                                  itemprop="datePublished"
+                                >
+                                  {" "}
+                                  {new Date(event.date).toDateString()}{" "}
+                                  <button
+                                    className="chip"
+                                    onClick={() => handleClick(event._id)}
                                   >
-                                    {" "}
-                                    {new Date(event.date).toDateString()}{" "}
-                                    <button
-                                      className="chip"
-                                      onClick={() => handleClick(event._id)}
-                                    >
-                                      Read More
-                                    </button>
-                                  </time>
-                                </p>
-                              </a>
+                                    Read More
+                                  </button>
+                                </time>
+                              </p>
                             </header>
                           </article>
                         </li>

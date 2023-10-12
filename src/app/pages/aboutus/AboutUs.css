@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
 
 :root {
   /* color */
@@ -11,42 +12,14 @@
   --white-color: #ffffff;
   --gold--color: #cea553;
   --green-color: #91cf73;
-
-  /* fonts */
-  --font-rubik: "Rubik", sans-serif;
-  --font-martel: "Martel", serif;
-  --font-inter: "Inter", sans-serif;
-}
-
-.datahex-link {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 3px;
-}
-
-.datahex-link:hover {
-  color: var(--green-color);
-}
-
-/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
-        !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/components/deparments/Department.css ***!
-        \****************************************************************************************************************************************************************************************************************************************************************************************/
-
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-    !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[12].use[3]!./src/app/pages/aboutus/AboutUs.css ***!
-    \*****************************************************************************************************************************************************************************************************************************************************************************/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300&family=PT+Serif&display=swap");
-
-:root {
-  /* color */
-  --white-color: #ffffff;
   --light-green-color: #619a46;
   --goldish-color: #cca65d;
 
   /* fonts */
+  --font-rubik: "Rubik", sans-serif;
+  --font-PT-serif: "unset";
+  --font-martel: "Martel", serif;
   --font-inter: "Inter", sans-serif;
-  --font-PT-serif: "unse";
 }
 
 .AboutUspage-header {

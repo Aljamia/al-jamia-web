@@ -20,8 +20,6 @@
   text-align: center;
 }
 
-
-
 .AboutUspage-title {
   color: var(--light-green-color);
   font-size: 40px;
@@ -61,8 +59,6 @@
   --font-pt-serif: "PT Serif", serif;
 }
 
-
-
 .about-description {
   display: flex;
   align-items: center;
@@ -86,8 +82,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .btn button {
@@ -148,8 +142,6 @@
 }
 
 /* about section animations----------- */
-
-
 
 @keyframes fadeLeft {
   from {
@@ -305,7 +297,6 @@
 /***** header video *****/
 .fullscreen-video {
   filter: brightness(50%);
-
 }
 
 .header-video {
@@ -533,7 +524,7 @@ nav.primary-navigation ul li ul {
   background: #fffefe;
 }
 
-nav.primary-navigation ul li:hover>ul,
+nav.primary-navigation ul li:hover > ul,
 nav.primary-navigation ul li ul:hover {
   visibility: visible;
   display: block;
@@ -639,7 +630,7 @@ nav.primary-navigation ul li ul li {
     margin-left: 20px;
   }
 
-  nav.primary-navigation ul li:hover>ul,
+  nav.primary-navigation ul li:hover > ul,
   nav.primary-navigation ul li ul:hover {
     margin-top: -5px;
     z-index: 3;
@@ -700,7 +691,7 @@ nav.primary-navigation ul li ul li {
     margin-left: 20px;
   }
 
-  nav.primary-navigation ul li:hover>ul,
+  nav.primary-navigation ul li:hover > ul,
   nav.primary-navigation ul li ul:hover {
     margin-top: -5px;
     z-index: 3;
@@ -775,7 +766,6 @@ nav.primary-navigation ul li ul li {
   padding: 3em;
   background-color: #f8f8f8;
 }
-
 
 .box h3 {
   text-align: center;
@@ -928,8 +918,6 @@ nav.primary-navigation ul li ul li {
   margin-top: 3rem;
 }
 
-
-
 .director-des p {
   max-width: 100%;
   font-size: medium;
@@ -937,8 +925,6 @@ nav.primary-navigation ul li ul li {
   padding: 0px;
   font-family: unset;
 }
-
-
 
 .facualies {
   margin-top: 6rem;
@@ -1015,8 +1001,6 @@ nav.primary-navigation ul li ul li {
     text-align: center;
     font-size: 15px;
   }
-
-
 }
 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -1419,16 +1403,6 @@ span {
   margin-top: -10px;
 }
 
-.datahex-link {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 3px;
-}
-
-.datahex-link:hover {
-  color: var(--green-color);
-}
-
 @media (max-width: 991px) {
   .footer-contact {
     transform: translateX(0%);
@@ -1471,11 +1445,9 @@ span {
   }
 }
 
-
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
         !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[4].oneOf[7].use[3]!./src/app/page.module.css ***!
         \*****************************************************************************************************************************************************************************************************************************************************************/
-
 
 .grades-desc {
   color: #474747;

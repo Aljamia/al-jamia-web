@@ -100,14 +100,15 @@ span {
 .carouselevent {
   position: relative;
   bottom: 0px;
+  height: 550px;
+  overflow-y: hidden;
 }
 
 .event-slick div {
-  margin: 4.784px;
+  margin: 2.784px;
   background-color: transparent !important;
   opacity: 1;
 }
-
 .right-event-caro {
   display: flex !important;
   border-radius: none;
@@ -232,6 +233,18 @@ span {
   padding-top: 7rem;
 }
 
+.card_event_slick {
+  height: auto;
+  background: linear-gradient(#ffffff 100%, #fff 100%);
+  border-radius: 15px;
+  border: none !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 25px;
+  cursor: pointer;
+  margin: 0px;
+  transition: 0.5s;
+}
+
 /* ----------media query for small screen */
 @media screen and (max-width: 550px) {
   .event-title h1 {
@@ -292,7 +305,6 @@ span {
     padding: 5px 7px 5px;
     color: #fff;
     font-size: smaller;
-
     font-size: 10px;
   }
 
@@ -331,7 +343,11 @@ span {
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-
+.event_error {
+  color: red;
+  display: grid;
+  place-items: center;
+}
 .news_card {
   flex-direction: row;
   height: auto;
@@ -350,54 +366,6 @@ span {
 .event-des p {
   text-align: left;
 }
-
-/* 
-.card {
-  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  border-radius: 9px;
-  display: flex;
-  flex-direction: column;
-} */
-/* 
-.card-body {
-  padding: 10px !important;
-  text-align: left;
-
-}
-
-.card-body p {
-  text-align: left;
-
-}
-
-.card .card-body {
-  flex-flow: row wrap;
-  padding: 15px;
-}
-
-.card header {
-  flex: 100%;
-}
-
-.card .meta {
-  margin-bottom: 12px;
-}
-
-.card .chips {
-  align-self: flex-end;
-}
-
-.card .featured-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  overflow: hidden;
-  width: 100%;
-  height: 300px;
-} */
 
 .carouselevent {
   display: block;
@@ -568,7 +536,24 @@ a.chip.large:active {
   .chip {
     text-align: center;
     margin-left: 5px;
-
     margin-top: 20px;
+  }
+  .card_event_slick {
+    height: 520px !important;
+    background: linear-gradient(#ffffff 100%, #fff 100%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 15px;
+    border: none !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 25px;
+    cursor: pointer;
+    margin: 0px -28px;
+    transition: 0.5s;
+  }
+  .news_card {
+    flex-direction: column;
+    height: auto;
+    width: 100% !important;
   }
 }
