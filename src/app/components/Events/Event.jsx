@@ -134,7 +134,6 @@ const Event = () => {
                             alt=""
                             className="event-img-items featured-image"
                           />
-
                           <article className="card-body">
                             <header>
                               <a href="utilidata-national-governors-association-meeting">
@@ -143,9 +142,7 @@ const Event = () => {
                                 </div>
                                 <p className="meta">
                                   <span className="author">
-                                    <p>
-                                      {event.description.substring(0, 90)}...
-                                    </p>
+                                    {event.description.substring(0, 90)}...
                                   </span>
                                   <span> | </span>
                                   <time
