@@ -136,31 +136,29 @@ const Event = () => {
                           />
                           <article className="card-body">
                             <header>
-                              <a href="utilidata-national-governors-association-meeting">
-                                <div className="title">
-                                  <h4>{event.title}</h4>
-                                </div>
-                                <p className="meta">
-                                  <span className="author">
-                                    {event.description.substring(0, 90)}...
-                                  </span>
-                                  <span> | </span>
-                                  <time
-                                    className="updated"
-                                    datetime=""
-                                    itemprop="datePublished"
+                              <div className="title">
+                                <h4>{event.title}</h4>
+                              </div>
+                              <p className="meta">
+                                <span className="author">
+                                  {event.description.substring(0, 90)}...
+                                </span>
+                                <span> | </span>
+                                <time
+                                  className="updated"
+                                  datetime=""
+                                  itemprop="datePublished"
+                                >
+                                  {" "}
+                                  {new Date(event.date).toDateString()}{" "}
+                                  <button
+                                    className="chip"
+                                    onClick={() => handleClick(event._id)}
                                   >
-                                    {" "}
-                                    {new Date(event.date).toDateString()}{" "}
-                                    <button
-                                      className="chip"
-                                      onClick={() => handleClick(event._id)}
-                                    >
-                                      Read More
-                                    </button>
-                                  </time>
-                                </p>
-                              </a>
+                                    Read More
+                                  </button>
+                                </time>
+                              </p>
                             </header>
                           </article>
                         </li>
