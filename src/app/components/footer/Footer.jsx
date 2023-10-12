@@ -180,13 +180,13 @@ const Footer = () => {
                 <div className="address-links">
                   <li className="address1">
                     <FontAwesomeIcon icon={faLocation} className="pt-2 pr-2" />
-                    Al Jamia Al Islamiya Santhapuram (PO). Pattikkad 673 325,
-                    Malappuram, Kerala
+                    Al Jamia Al Islamiya Santhapuram Pattikkad PO, Malappuram DT
+                    Kerala, India - 679325
                   </li>
                   <li>
                     <a href="">
                       <FontAwesomeIcon icon={faPhone} className="pt-2 pr-2" />
-                      +91 4933270439 , +91 4933270565
+                      +91 9656612612 , +91 4933270439
                     </a>
                   </li>
                   <li>

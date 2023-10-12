@@ -30,10 +30,6 @@ const ContactUs = () => {
                   <h1 className="h1style">Contact us</h1>
                   <p className="pb-3">
                     Our friendly team would love to hear from you!
-                    {/* Al Jamia Arts and Science College (AJAS), a resourceful
-                    destination for higher studies in the region, was
-                    established in 2010 with the main objective of uplifting the
-                    educationally developing Muslims and other communities. */}
                   </p>
                 </div>
 
@@ -127,24 +123,23 @@ const ContactUs = () => {
             <Col xl={4}>
               <div className="addres_box contactbox_shodo">
                 <img src="location_icon.svg" />
-                <p>Santhapuram (PO). Pattikkad 673 325, Malappuram, Kerala</p>
+                <p>
+                  Santhapuram Pattikkad PO, Malappuram DT Kerala, India - 679325
+                </p>
               </div>
             </Col>
             <Col xl={4}>
               <div className="addres_box contactbox_shodo">
                 <img src="mail_icon.svg" />
-                <p>
-                  aljamiaalislamia@gmail.com <br />
-                  www.aljamiaalislamia.com{" "}
-                </p>
+                <p>mail@aljamia.net</p>
               </div>
             </Col>
             <Col xl={4}>
               <div className="addres_box contactbox_shodo">
                 <img src="call_icon.svg" />
                 <p>
-                  00914933 270439 ,
-                  <br /> 00914933 270565{" "}
+                  +91 9656612612
+                  <br /> +91 4933270439
                 </p>
               </div>
             </Col>
