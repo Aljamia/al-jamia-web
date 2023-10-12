@@ -9,6 +9,7 @@
   --white-color: #ffffff;
   --lightgreen-color: #619a46;
   --goldish-color: #cca65d;
+  --blue--light: #40b6ad;
 
   /* fonts */
   --font-inter: "Inter", sans-serif;
@@ -75,11 +76,8 @@
 }
 
 .datahex-link:hover {
-  color: var(--green-color);
+  color: var(--blue--light);
 }
-
-
-
 
 .cont_form {
   border-radius: 0%;
@@ -96,7 +94,6 @@
   background-color: #fff;
   padding: 12%;
 }
-
 
 .CareerBox {
   padding-top: 3rem;
