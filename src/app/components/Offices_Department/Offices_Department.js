@@ -1,131 +1,92 @@
 /* eslint-disable @next/next/no-page-custom-font */
 "use client";
 import { Container, Row, Col } from "react-bootstrap";
-import "./Offices_Department";
+import {
+  FaBuilding,
+  FaDiagnoses,
+  FaRegAddressCard,
+  FaSearch,
+} from "react-icons/fa";
+import {
+  FaBookOpen,
+  FaBookOpenReader,
+  FaBuildingCircleArrowRight,
+  FaBuildingCircleCheck,
+  FaBuildingFlag,
+  FaBuildingLock,
+  FaBuildingUser,
+  FaPeopleGroup,
+} from "react-icons/fa6";
 
 const Offices_Department = () => {
+  const officeData = [
+    {
+      title: "Rector’s Office",
+      icon: <FaBuilding />,
+    },
+    {
+      title: "Deputy Rector’s Office",
+      icon: <FaBuildingUser />,
+    },
+    {
+      title: "Vice President’s Office",
+      icon: <FaBuildingCircleCheck />,
+    },
+    {
+      title: "Administrative Chairman’s Office",
+      icon: <FaBuildingFlag />,
+    },
+    {
+      title: "Administrative Officer",
+      icon: <FaBuildingCircleArrowRight />,
+    },
+    {
+      title: "Dean’s Offices",
+      icon: <FaBuildingLock />,
+    },
+    {
+      title: "Students Affair’s Office",
+      icon: <FaPeopleGroup />,
+    },
+    {
+      title: "Research Department",
+      icon: <FaSearch />,
+    },
+    {
+      title: "Admission and Enrollment",
+      icon: <FaRegAddressCard />,
+    },
+    {
+      title: "Department of Examination",
+      icon: <FaBookOpen />,
+    },
+    {
+      title: "Library",
+      icon: <FaBookOpenReader />,
+    },
+    {
+      title: "Human Resource Development",
+      icon: <FaDiagnoses />,
+    },
+  ];
   return (
-    <div>
-      <div className="AboutUspage-items">
-        <div className="AboutUspage-ourMission">
-          <Container>
-            <Row>
-              {/* <link
-                rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-              />
-              <link
-                href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-                rel="stylesheet"
-              /> */}
-              <section>
-                <h1 className="TitleStyle center_aln p-1">
-                  Offices & Department
-                </h1>
-
-                <div className="row">
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-building"></i>
-                      </div>
-                      <h3>Rector’s Office </h3>
-                    </div>
+    <div className="AboutUs-page-items">
+      <div className="AboutUs-page-ourMission p-3">
+        <Container>
+          <h1 className="TitleStyle text-center p-1">Offices & Department</h1>
+          <Row className="card-row">
+            {officeData.map((office, index) => (
+              <Col key={index} md={3} sm={6} xs={12}>
+                <div className="card">
+                  <div className="icon-wrapper">
+                    <i>{office.icon}</i>
                   </div>
-
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-face-smile"></i>
-                      </div>
-                      <h3>Deputy Rector’s Office</h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-building"></i>
-                      </div>
-                      <h3>Vice President’s Office </h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-building"></i>
-                      </div>
-                      <h3>Administrative Chairman’s Office</h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-business-time"></i>
-                      </div>
-                      <h3>Administrative Officer </h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-building"></i>
-                      </div>
-                      <h3>Dean’s Offices</h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-building"></i>
-                      </div>
-                      <h3>Students Affair’s Office </h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-ticket"></i>
-                      </div>
-                      <h3>Research Department</h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-ticket"></i>
-                      </div>
-                      <h3>Admission and Enrollment </h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-pen"></i>
-                      </div>
-                      <h3>Department of Examination</h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-book "></i>
-                      </div>
-                      <h3>Library</h3>
-                    </div>
-                  </div>
-                  <div className="column">
-                    <div className="card">
-                      <div className="icon-wrapper">
-                        <i className="fas fa-person"></i>
-                      </div>
-                      <h3>Human Resource Development </h3>
-                    </div>
-                  </div>
+                  <h3>{office.title}</h3>
                 </div>
-              </section>
-            </Row>
-          </Container>
-        </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
     </div>
   );
