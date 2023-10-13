@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import "./Preloader.css";
 
 const TIMER = 100; // Milliseconds between moving the next block
@@ -6,7 +7,7 @@ const TRANSITION = 0.5; // Seconds to actually move one block
 const DEF_SIZE = 100; // Pixels height/width
 const GUTTER = 5; // Spacing in percentage between tiles
 
-const Loader = () => {
+const Preloader = () => {
   const initialState = {
     positions: {
       1: "alpha",
@@ -82,7 +83,7 @@ const Loader = () => {
     return null;
   };
 
-  const setNextState = () => {
+  const callNext = () => {
     const currentPositions = state.positions;
     const emptyIndex = positionForTile(null);
     const indexToMove = tileIndexToMove();
@@ -100,7 +101,7 @@ const Loader = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setNextState();
+      callNext();
     }, TIMER);
 
     return () => clearInterval(timer);
@@ -137,4 +138,4 @@ const Loader = () => {
   );
 };
 
-export default Loader;
+export default Preloader;
