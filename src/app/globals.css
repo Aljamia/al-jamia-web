@@ -18,7 +18,10 @@ body p {
   font-size: medium !important;
   font-weight: 300;
 }
-
+.btn_center {
+  width: 100%;
+  margin: auto;
+}
 .container p {
   font-size: medium !important;
 }
@@ -2263,7 +2266,7 @@ h3 {
   vertical-align: bottom;
   bottom: 0%;
   border-radius: 30px;
-  margin: 5%;
+  margin: 7%;
   vertical-align: bottom;
   background-color: transparent;
 }
@@ -2421,6 +2424,7 @@ h3 {
 }
 
 .director-des p {
+  text-align: justify;
   font-size: small !important;
 }
 

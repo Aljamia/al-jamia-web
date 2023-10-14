@@ -158,7 +158,7 @@ const Footer = () => {
                         className="footer-logo"
                       />{" "}
                       {/* <i className="fa-brands fa-youtube youtube_clr"></i>{" "} */}
-                      youtube
+                      YouTube
                     </Link>
                   </li>
                   {/*
