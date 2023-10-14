@@ -39,19 +39,17 @@ function HomePage(eventId) {
             <div className="news-title">
               <h1>{events.title}</h1>
             </div>
-            <div className="new-img">
+            <div className="news_img">
               <img
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events.image}`}
                 alt=""
-                width="100%"
               />
-              <div className="news-para pt-4">
-                <p>{events.description}.</p>
-              </div>
+            </div>
+            <div className="news-para">
+              <p>{events.description}.</p>
             </div>
           </div>
         </Container>
-
         <div className="news-para">
           <Event event-section-2={false} />
         </div>

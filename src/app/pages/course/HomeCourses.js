@@ -3,11 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Modal, Card } from "react-bootstrap";
 import { getCourse } from "@/app/hooks/UseApi";
-// import "./CoursePage.css";
 import "../../globals.css";
-import Image from "next/image";
 
-// import "./CoursePage.css";
 const HomeCourses = () => {
   const [show, setShow] = useState(false);
   const [modalVal, setModalVal] = useState({});
@@ -22,7 +19,6 @@ const HomeCourses = () => {
   useEffect(() => {
     const fetchCourse = async () => {
       const data = await getCourse();
-      // setCourse(data?.response);
       setCardValues(data?.response);
     };
     fetchCourse();
@@ -47,7 +43,6 @@ const HomeCourses = () => {
                 />{" "}
                 {course.category}{" "}
               </span>
-
               <span className="course-data-duration">
                 <img
                   className="icon_pl"
@@ -91,7 +86,7 @@ const HomeCourses = () => {
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <Row className="course-modalitems">
-            <Col xl={12} xs={12} sm={12}>
+            <Col xl={6} xs={12} sm={12}>
               <Card className="faculties-cardmodal shadow-sm">
                 <Card.Img
                   variant="top"
@@ -100,7 +95,7 @@ const HomeCourses = () => {
                 />
               </Card>
             </Col>
-            <Col xl={12} xs={12} sm={12}>
+            <Col xl={6} xs={12} sm={12}>
               <Card.Title className="course-cardmodal-title pt-2">
                 <h2 className="portfolio-title">{modalVal?.courseName} </h2>
               </Card.Title>
@@ -124,10 +119,8 @@ const HomeCourses = () => {
                   {modalVal?.duration}
                 </span>
               </Card.Text>
-
               <br />
-              <Card.Text className="course-cardmodal-text">
-                <br />
+              <Card.Text className="course_cardmodal_desc card-text">
                 {modalVal?.description}
               </Card.Text>
             </Col>

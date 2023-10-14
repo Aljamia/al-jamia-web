@@ -154,23 +154,24 @@ const Event = () => {
                               </div>
                               <p className="meta">
                                 <span className="author">
-                                  {event.description.substring(0, 90)}...
+                                  {event.description.substring(0, 100)}...
                                 </span>
                                 <span> | </span>
                                 <time
+                                  style={{ display: "none" }}
                                   className="updated"
                                   datetime=""
                                   itemprop="datePublished"
                                 >
                                   {" "}
                                   {new Date(event.date).toDateString()}{" "}
-                                  <button
-                                    className="chip"
-                                    onClick={() => handleClick(event._id)}
-                                  >
-                                    Read More
-                                  </button>
                                 </time>
+                                <button
+                                  className="chip"
+                                  onClick={() => handleClick(event._id)}
+                                >
+                                  Read More
+                                </button>
                               </p>
                             </header>
                           </article>

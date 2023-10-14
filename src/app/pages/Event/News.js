@@ -95,15 +95,14 @@ const News = () => {
             <div className="news-title  pt-2">
               <h1>{h1Content}</h1>
             </div>
-            <div className="new-img">
-              <img src={imgSrc} alt="" style={{ width: "50%" }} />
+            <div className="news-img">
+              <img src={imgSrc} alt="Loading" />
             </div>
             <div className="news-para">
               <p>{pContent}</p>
             </div>
           </div>
         </Container>
-
         <div className="event-first-section">
           <Container>
             <Row>

@@ -13,8 +13,7 @@ const Library = () => {
         </div>
         <Container className="headlibrary">
           <div className="row">
-          <Col xl={6} lg={6} xs={12}>
-
+            <Col xl={6} lg={6} xs={12}>
               <div className="image pt-3">
                 <video
                   id="banner-video"
@@ -35,13 +34,12 @@ const Library = () => {
               </div>
             </Col>
             <Col xl={6} lg={6} xs={12}>
-
               <div className="library">
                 <div className="director-heading">
                   <h1>Central Library</h1>
                 </div>
                 <div>
-                  <p>
+                  <p className="central-library_para">
                     Al Jamia Central Library is among the leading reference
                     libraries in India. This celebrated institution, located in
                     a three-story building on the campus of Santapuram al-Jamia,

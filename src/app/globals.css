@@ -560,18 +560,15 @@ img {
   font-size: small;
   font-weight: 400;
   color: gray;
-
   float: right;
   width: auto;
 }
 
-.course-cardmodal-text {
+.course_cardmodal_desc {
   color: #474747;
-  text-align: left;
-  padding: auto;
   width: 100%;
   font-family: unset;
-  font-size: 17px;
+  text-align: justify;
   content: normal;
   font-weight: 300;
 }
@@ -706,13 +703,8 @@ img {
   color: var(--grary-2, #4f4f4f);
   font-family: unset;
   text-align: center !important;
-  font-size: x-small !important;
   font-style: normal;
   font-weight: 400;
-}
-
-.card-text {
-  font-size: xx-small !important;
 }
 
 .faculties-modalitems {
@@ -727,7 +719,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 119%;
-  /* 41.65px */
 }
 
 .faculties-cardmodal-text {
@@ -809,17 +800,16 @@ img {
 .faculties-cardmodal-title {
   text-align: left;
 }
+
 .card-text {
-  text-align: left !important;
+  padding: 1rem 1.3rem 0rem 1rem !important;
 }
 
 @media (max-width: 768px) {
   .faculties-cardmodal-title {
     text-align: center;
   }
-  .card-text {
-    text-align: center !important;
-  }
+
   .card-body {
     padding: 0px;
     min-height: 110px;
@@ -1052,7 +1042,7 @@ h3 {
 }
 
 .library p {
-  text-align: left !important;
+  text-align: justify;
 }
 
 .AboutUspage-mission-title,
@@ -1709,6 +1699,7 @@ h3 {
   font-family: unset;
   font-weight: 300;
   margin-top: 5rem;
+  font-size: 30px;
   text-align: center;
   color: #619a46;
 }
@@ -1740,14 +1731,15 @@ h3 {
 .director-heading h1 {
   padding-bottom: 0rem;
   margin-top: 3.5rem;
-
   font-family: unset;
   font-weight: 300;
   text-align: left;
   font-size: 2rem;
   color: #619a46;
 }
-
+.central-library_para {
+  text-align: justify;
+}
 .about-Title {
   text-align: center;
   color: #619a46;
@@ -1773,7 +1765,8 @@ h3 {
 
 .library p {
   color: #555555;
-  max-width: 90%;
+  max-width: fit-content;
+  text-align: justify;
 }
 
 .about-description {
@@ -1783,10 +1776,6 @@ h3 {
 
 .about-description p {
   text-align: justify;
-}
-
-.card-text {
-  padding: 0rem 0rem 0rem 0rem !important;
 }
 
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -2608,10 +2597,6 @@ h3 {
     text-align: center;
   }
 
-  .card-text {
-    padding: 0rem 1rem 0rem 1rem !important;
-  }
-
   .about-description p {
     text-align: center;
   }
@@ -2645,6 +2630,16 @@ h3 {
   .footer .container {
     overflow: visible !important;
   }
+}
+.news_img {
+  display: flex;
+  justify-content: center;
+}
+.news_img img {
+  width: 40%;
+}
+.news-para {
+  text-align: justify;
 }
 
 @media (max-width: 991px) {
@@ -2708,8 +2703,9 @@ h3 {
     color: #619a46;
   }
 
-  .new-img {
+  .news_img img {
     padding: 2rem;
+    width: 100%;
   }
 
   .director-heading h1 {
@@ -2843,7 +2839,6 @@ h3 {
   .library p {
     color: #555555;
     max-width: 100%;
-    text-align: justify !important;
     padding: 0px !important;
   }
 
@@ -2970,7 +2965,7 @@ h3 {
 @media (max-width: 768px) {
   .youtube-video {
     position: relative;
-    top: 20px;
+    top: 13px;
     padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive design */
     padding-top: 0;
     height: 100px;
