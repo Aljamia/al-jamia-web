@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import "./Preloader.css";
+import Image from "next/image";
 
 const TIMER = 100; // Milliseconds between moving the next block
 const TRANSITION = 0.5; // Seconds to actually move one block
@@ -133,6 +134,17 @@ const Preloader = () => {
         className="sw-loader__wrapper"
       >
         <div className="sw-loader__holder">{renderTiles()}</div>
+      </div>
+
+      <div>
+        <Image
+          src="/al_jamia_logo.png"
+          layout="responsive"
+          width={500}
+          className="Preloader_img"
+          height={500}
+          alt="Image"
+        />
       </div>
     </div>
   );
