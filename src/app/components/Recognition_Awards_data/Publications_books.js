@@ -10,8 +10,6 @@ const Publications_books = () => {
     <div>
       <div className="AboutUspage">
         <Main_navebar />
-        {/* <PageHeader /> */}
-
         <div className="AboutUspage-img">
           <Image
             src="/banner/Publications_books.jpg"

@@ -34,7 +34,6 @@ function Recognition_Awards() {
   return (
     <div>
       <PageHeader />
-
       <div className="AboutUspage-img">
         <Image
           src="/banner/Recognition_Awards.png"
@@ -55,7 +54,6 @@ function Recognition_Awards() {
           </Container>
         </div>
       </div>
-
       <Footer />
     </div>
   );

@@ -203,15 +203,15 @@ function Main_navebar() {
                 </NavDropdown.Item>
                 {/* <NavDropdown.Item href="/Student_Counseling_Service">
                   Student Counseling Service
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/Students_Centre">
-                  Students Centre
-                </NavDropdown.Item> */}
+                </NavDropdown.Item>*/}
                 <NavDropdown.Item href="/Student_Housing">
                   Student Housing
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Student_Life_Services">
                   Student Life & Services
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/Studentrecognition">
+                  Recognition & Awards
                 </NavDropdown.Item>
                 {/* <NavDropdown.Item href="/Student_Representative_Board">
                   Student Representative Board

@@ -6,18 +6,10 @@ import Alumni_Awards_gallery from "../Alumni_Awards_gallery/Alumni_Awards_galler
 
 function Recognition_Awards_data() {
   return (
-    <div className="">
+    <div>
       <div className="AboutUspage-ourMission">
         <Container>
           <Row>
-            {/* <link
-              rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-            />
-            <link
-              href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-              rel="stylesheet"
-            /> */}
             <section>
               <h1 className="TitleStyle center_aln">Recognition & Awards</h1>
               <p>
@@ -28,7 +20,6 @@ function Recognition_Awards_data() {
                 impact that our graduates have on society. Join us in applauding
                 their remarkable journeys and contributions.
               </p>
-
               <Container>
                 <Row>
                   <Col xl={12} lg={12} xs={12}>

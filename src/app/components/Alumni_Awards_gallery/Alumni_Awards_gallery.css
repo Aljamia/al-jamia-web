@@ -78,7 +78,6 @@
   left: auto;
   right: auto;
   border-radius: 0px;
-
   z-index: 3;
 }
 
@@ -99,7 +98,7 @@
 }
 
 /***** image gallery *****/
-.gallery__image>div {
+.gallery__image > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
