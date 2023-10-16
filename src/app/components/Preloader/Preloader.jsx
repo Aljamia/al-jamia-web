@@ -141,7 +141,7 @@ const Preloader = () => {
           src="/al_jamia_logo.png"
           layout="responsive"
           width={500}
-          className="Preloader_img"
+          className="Preloader_img flash"
           height={500}
           alt="Image"
         />

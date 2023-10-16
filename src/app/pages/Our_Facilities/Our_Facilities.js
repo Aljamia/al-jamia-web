@@ -44,7 +44,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/class_rooms.JPG" alt="" />
+                      <img src="/banner/smart classroom.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Smart class rooms</h4>
@@ -147,7 +147,7 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Students_Centres2.png" alt="" />
+                      <img src="/banner/Students Corner.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Students Corners</h4>

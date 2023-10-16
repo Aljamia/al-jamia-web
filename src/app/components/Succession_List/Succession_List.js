@@ -49,7 +49,7 @@ const Succession_List = () => {
                           {item.name}
                         </Card.Title>
 
-                        <Card.Text className="faculties-card-text">
+                        <Card.Text className="faculties-card-year">
                           {item.designation} ({item.year})
                         </Card.Text>
 

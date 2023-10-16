@@ -15,7 +15,7 @@
 body p {
   color: #474747;
   font-family: unset;
-  font-size: medium !important;
+  font-size: medium;
   font-weight: 300;
 }
 .btn_center {
@@ -23,7 +23,7 @@ body p {
   margin: auto;
 }
 .container p {
-  font-size: medium !important;
+  font-size: medium;
 }
 
 img {
@@ -243,14 +243,6 @@ img {
   background-color: var(--goldish-color);
 }
 
-/* .faculties-card {
-  border: none;
-  cursor: pointer;
-  outline: none;
-  width: 100%;
-  margin-top: 0.5em;
-} */
-
 .faculties-card {
   background: linear-gradient(#ffffff 100%, #fff 100%);
   background-size: 100% 200%;
@@ -258,7 +250,6 @@ img {
   border-radius: 15px;
   border: none;
   width: 100%;
-
   box-shadow: 5px 15px 60px rgba(27, 33, 47, 0.05);
   padding: 0px;
   cursor: pointer;
@@ -278,11 +269,17 @@ img {
   font-size: small;
   font-style: normal;
   font-weight: 300;
-  padding-top: 4%;
-
-  /* 41.65px */
+  padding-top: 5px;
 }
-
+.faculties-card-year {
+  color: var(--gold, #cc9020);
+  text-align: center;
+  font-family: unset;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 300;
+  padding-top: 5px;
+}
 .addres_box {
   border-radius: 9px;
   margin: 3%;
@@ -698,14 +695,15 @@ img {
 .card-body {
   padding: 10px;
   min-height: 110px;
-  margin: 2% !important;
   padding-top: 0px !important;
 }
 
 .card-body .card-text {
   color: var(--grary-2, #4f4f4f);
   font-family: unset;
-  text-align: center !important;
+  text-align: center;
+  width: auto;
+  font-size: 14.3px;
   font-style: normal;
   font-weight: 400;
 }
@@ -1816,7 +1814,7 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: unset;
-  font-size: 50px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 300;
   line-height: 100%;

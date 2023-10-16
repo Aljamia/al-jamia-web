@@ -38,7 +38,6 @@ function Student_Life_Services() {
           <h1 className="TitleStyle center_aln  pt-2 pb-4">
             Student Life Services
           </h1>
-
           <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
@@ -100,7 +99,7 @@ function Student_Life_Services() {
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/banner/PlayOff.png"
+                      src="/banner/Sports.JPG"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -128,7 +127,7 @@ function Student_Life_Services() {
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/banner/slamic_Organisation.png"
+                      src="/banner/SIO.JPG"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
@@ -199,7 +198,7 @@ function Student_Life_Services() {
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
                     <Image
-                      src="/banner/Girls_Organisation.png"
+                      src="/banner/GIO.JPG"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
