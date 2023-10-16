@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import Image from "next/image";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,8 +13,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
-  // AOS.init();
-
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
     window.scrollTo({
@@ -59,7 +55,7 @@ const Footer = () => {
               />
               <div className="footer-about">
                 <p>
-                  AL Jamia Al Islamiya is an esteemed university, located in
+                  Al Jamia Al Islamiya is an esteemed university, located in
                   Santhapuram, Kerala, India, offers a wide range of academic
                   programs that blend traditional Islamic knowledge with modern
                   education.
@@ -161,16 +157,6 @@ const Footer = () => {
                       YouTube
                     </Link>
                   </li>
-                  {/*
-                  <li>
-                    <Link
-                      href="https://play.google.com/store/apps/details?id=in.ixian.campus7.aljamia.student&pcampaignid=web_share"
-                      target="blank"
-                    >
-                      <i className="fa-solid fa-angles-right play_clr"></i>{" "}
-                      Playstore
-                    </Link>
-                  </li> */}
                 </div>
               </div>
             </div>

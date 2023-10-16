@@ -67,3 +67,17 @@
     background-position: 100% 50%;
   }
 }
+.Preloader_img {
+  width: 220px !important;
+}
+.flash {
+  animation: flash 600ms ease infinite alternate;
+}
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
