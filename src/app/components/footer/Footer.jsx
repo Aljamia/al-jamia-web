@@ -166,8 +166,8 @@ const Footer = () => {
                 <div className="address-links">
                   <li className="address1">
                     <FontAwesomeIcon icon={faLocation} className="pt-2 pr-2" />
-                    Al Jamia Al Islamiya Santhapuram Pattikkad PO, Malappuram DT
-                    Kerala, India - 679325
+                    Al Jamia Al Islamiya, Santhapuram,Pattikkad PO, Malappuram
+                    DT, Kerala, India - 679325
                   </li>
                   <li>
                     <a href="">

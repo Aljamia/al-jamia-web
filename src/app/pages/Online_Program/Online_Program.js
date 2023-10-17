@@ -678,7 +678,6 @@ function Online_Program() {
           <Container>
             <Row>
               <Col xl={12} lg={12} xs={12}>
-                {/* <h1 className="app_head">Click</h1> */}
                 <div className="btn btn_center">
                   {" "}
                   <Link href="https://aljamiaworldcampus.net/" target="_blank">
