@@ -178,7 +178,13 @@ img {
   font-weight: 250;
   margin-bottom: 20px;
 }
-
+.faculties_card_designation {
+  text-align: center;
+}
+.faculties_card_endesignation {
+  text-align: center;
+  font-size: 12px !important;
+}
 .Faculties-img {
   margin-top: 2em;
   border-radius: 20px;

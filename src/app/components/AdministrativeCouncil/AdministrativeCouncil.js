@@ -46,9 +46,10 @@ const AdministrativeCouncil = () => {
                           {item.enName}
                         </Card.Title>
 
-                        <Card.Text className="faculties-card-text">
+                        <p className="faculties_card_designation">
+                          {" "}
                           {item.enDesignation}
-                        </Card.Text>
+                        </p>
 
                         <Button
                           variant="primary btn-primary-faculties"
