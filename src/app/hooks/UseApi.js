@@ -1,7 +1,8 @@
 "use client";
 import axios from "axios";
 
-const BASE_URL = "https://aljamia-api-ztjhx.ondigitalocean.app/api/v1";
+// const BASE_URL = "https://aljamia-api-ztjhx.ondigitalocean.app/api/v1";
+export const BASE_URL = "http://localhost:8050/api/v1";
 
 export const getAboutUs = async () => {
   const response = await axios.get(`${BASE_URL}/about-us`);
@@ -109,5 +110,10 @@ export const getpublication = async () => {
 
 export const getAward = async () => {
   const response = await axios.get(`${BASE_URL}/award`);
+  return response.data;
+};
+
+export const postCareer = async () => {
+  const response = await axios.post(`${BASE_URL}/career`);
   return response.data;
 };
