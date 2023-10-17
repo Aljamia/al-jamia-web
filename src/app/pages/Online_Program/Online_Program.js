@@ -8,6 +8,14 @@ import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import {
+  FaRegClipboard,
+  FaRegCopy,
+  FaSignal,
+  FaVideo,
+  FaWrench,
+} from "react-icons/fa6";
+import { FaTasks } from "react-icons/fa";
 
 function Online_Program() {
   const [about, setAbout] = useState([]);
@@ -63,7 +71,6 @@ function Online_Program() {
             </Container>
           </div>
         </div>
-
         <div className="">
           <div className="AboutUspage-ourMission">
             <Container>
@@ -72,12 +79,13 @@ function Online_Program() {
                   <h1 className="TitleStyle center_aln  p-4">
                     Highlights of Programs
                   </h1>
-
                   <div className="row pb-5">
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-video"></i>
+                          <i>
+                            <FaVideo />
+                          </i>
                         </div>
                         <h3>Pre-recorded video lessons </h3>
                       </div>
@@ -85,7 +93,9 @@ function Online_Program() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-pen"></i>
+                          <i>
+                            <FaRegClipboard />
+                          </i>
                         </div>
                         <h3>Content summary notes </h3>
                       </div>
@@ -93,7 +103,9 @@ function Online_Program() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-book"></i>
+                          <i>
+                            <FaWrench />
+                          </i>
                         </div>
                         <h3>Reference materials</h3>
                       </div>
@@ -101,7 +113,9 @@ function Online_Program() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-eye"></i>
+                          <i>
+                            <FaSignal />
+                          </i>
                         </div>
                         <h3>Interactive live sessions</h3>
                       </div>
@@ -109,7 +123,9 @@ function Online_Program() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-file"></i>
+                          <i>
+                            <FaTasks />
+                          </i>
                         </div>
                         <h3>Assignments and assessment modules </h3>
                       </div>
@@ -117,7 +133,9 @@ function Online_Program() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-award"></i>
+                          <i>
+                            <FaRegCopy />
+                          </i>
                         </div>
                         <h3>Final evaluation and certification </h3>
                       </div>

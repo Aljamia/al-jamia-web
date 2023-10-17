@@ -19,9 +19,7 @@ function Alumni_Chapters() {
             />
 
             <section>
-              <h1 className="TitleStyle center_aln">
-                Alumni Chapters
-              </h1>
+              <h1 className="TitleStyle center_aln">Alumni Chapters</h1>
               <p>
                 Our global network of Al Jamia alumni chapters brings together
                 graduates from diverse backgrounds and generations. These
@@ -75,7 +73,7 @@ function Alumni_Chapters() {
                         <li>Alappuzha </li>
                         <li>Kottayam </li>
                         <li>Eranamkulam </li>
-                        <li>Thrissure </li>
+                        <li>Thrissur </li>
                         <li>Palakkad</li>
                         <li>Kannur</li>
                         <li>Kozhikkode</li>

@@ -19,8 +19,9 @@
   justify-content: center;
 }
 
-.about-description p {
+.about-description {
   font-size: medium;
+  text-align: justify;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
@@ -51,7 +52,7 @@
 
 /* Apply the Inter font to <p> tags */
 
-.about-description p {
+.about-description {
   font-size: medium;
   font-style: normal;
   font-weight: 300;
