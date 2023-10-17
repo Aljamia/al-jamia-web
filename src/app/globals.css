@@ -178,7 +178,13 @@ img {
   font-weight: 250;
   margin-bottom: 20px;
 }
-
+.faculties_card_designation {
+  text-align: center;
+}
+.faculties_card_endesignation {
+  text-align: center;
+  font-size: 12px !important;
+}
 .Faculties-img {
   margin-top: 2em;
   border-radius: 20px;
@@ -275,7 +281,7 @@ img {
   color: var(--gold, #cc9020);
   text-align: center;
   font-family: unset;
-  font-size: 12px !important;
+  font-size: 10.2px !important;
   font-style: normal;
   font-weight: 300;
   padding-top: 5px;
@@ -596,6 +602,12 @@ img {
 }
 
 @media (max-width: 759px) {
+  .faculties_card_designation {
+    text-align: center !important;
+  }
+  .faculties_card_endesignation {
+    text-align: center !important;
+  }
   .portfolio-title {
     text-align: center;
   }
@@ -1035,11 +1047,7 @@ h3 {
 }
 
 .AboutUspage-mission-desc {
-  text-align: left !important;
-}
-
-.AboutUspage-mission-desc p {
-  text-align: left !important;
+  text-align: justify;
 }
 
 .library p {
@@ -1775,7 +1783,7 @@ h3 {
   text-align: center;
 }
 
-.about-description p {
+.about-description {
   text-align: justify;
 }
 
@@ -1814,7 +1822,7 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: unset;
-  font-size: 45px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 300;
   line-height: 100%;
@@ -2554,15 +2562,6 @@ h3 {
     font-size: 1.5rem;
     text-align: center;
   }
-
-  .AboutUspage-mission-desc p {
-    text-align: justify !important;
-  }
-
-  .AboutUspage-mission-desc {
-    text-align: justify !important;
-  }
-
   .AboutUspage-items {
     padding: 1em;
   }
@@ -2599,7 +2598,7 @@ h3 {
     text-align: center;
   }
 
-  .about-description p {
+  .about-description {
     text-align: center;
   }
 

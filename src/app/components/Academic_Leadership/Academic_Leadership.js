@@ -45,11 +45,9 @@ const Academic_Leadership = () => {
                         <Card.Title className="faculties-card-title">
                           {item.enName}
                         </Card.Title>
-
-                        <Card.Text className="faculties-card-text">
+                        <p className="faculties_card_endesignation">
                           {item.enDesignation}
-                        </Card.Text>
-
+                        </p>
                         <Button
                           variant="primary btn-primary-faculties"
                           onClick={() => handleShow(item)}

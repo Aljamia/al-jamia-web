@@ -49,11 +49,8 @@ const AboutUs = () => {
           </>
         ))}
       </div>
-
       <Vision />
-
       <Director />
-
       <Footer />
     </div>
   );

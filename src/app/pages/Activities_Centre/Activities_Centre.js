@@ -6,6 +6,30 @@ import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
+import {
+  FaFootball,
+  FaMicrophoneLines,
+  FaPeopleGroup,
+  FaVolleyball,
+} from "react-icons/fa6";
+import {
+  FaBlog,
+  FaBookOpen,
+  FaCamera,
+  FaCameraRetro,
+  FaChild,
+  FaEarlybirds,
+  FaFirstAid,
+  FaGrinAlt,
+  FaGripVertical,
+  FaHandHoldingHeart,
+  FaHardHat,
+  FaMarker,
+  FaPalette,
+  FaRecordVinyl,
+  FaSeedling,
+  FaStar,
+} from "react-icons/fa";
 
 function Activities_Centre() {
   const [about, setAbout] = useState([]);
@@ -96,12 +120,13 @@ function Activities_Centre() {
                   <h1 className="TitleStyle center_aln p-4">
                     Major Activities
                   </h1>
-
                   <div className="row">
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-child"></i>
+                          <i>
+                            <FaPeopleGroup />
+                          </i>
                         </div>
                         <h3>Student Parliament </h3>
                       </div>
@@ -109,7 +134,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-play"></i>
+                          <i>
+                            <FaVolleyball />
+                          </i>
                         </div>
                         <h3>Club activities </h3>
                       </div>
@@ -117,7 +144,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-star"></i>
+                          <i>
+                            <FaChild />
+                          </i>
                         </div>
                         <h3>Literary associations </h3>
                       </div>
@@ -125,7 +154,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fa-solid fa-gamepad"></i>
+                          <i>
+                            <FaFootball />
+                          </i>
                         </div>
                         <h3> Sports and Games</h3>
                       </div>
@@ -133,7 +164,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-star"></i>
+                          <i>
+                            <FaBookOpen />
+                          </i>
                         </div>
                         <h3>Tarbiyah</h3>
                       </div>
@@ -141,7 +174,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-plug"></i>
+                          <i>
+                            <FaEarlybirds />
+                          </i>
                         </div>
                         <h3>Khutba Training </h3>
                       </div>
@@ -149,7 +184,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-headphones"></i>
+                          <i>
+                            <FaMicrophoneLines />
+                          </i>
                         </div>
                         <h3>Public Speaking and Performance</h3>
                       </div>
@@ -157,7 +194,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-volume-low"></i>
+                          <i>
+                            <FaHardHat />
+                          </i>
                         </div>
                         <h3>Social activism</h3>
                       </div>
@@ -165,7 +204,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-book"></i>
+                          <i>
+                            <FaBlog />
+                          </i>
                         </div>
                         <h3>Blogging</h3>
                       </div>
@@ -173,7 +214,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-eye"></i>
+                          <i>
+                            <FaCamera />
+                          </i>
                         </div>
                         <h3> Media</h3>
                       </div>
@@ -181,7 +224,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-fire"></i>
+                          <i>
+                            <FaGrinAlt />
+                          </i>
                         </div>
                         <h3>Public Relations </h3>
                       </div>
@@ -189,7 +234,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-camera"></i>
+                          <i>
+                            <FaCameraRetro />
+                          </i>
                         </div>
                         <h3>Photography </h3>
                       </div>
@@ -198,7 +245,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-hospital"></i>
+                          <i>
+                            <FaHandHoldingHeart />
+                          </i>
                         </div>
                         <h3>Health and fitness </h3>
                       </div>
@@ -207,7 +256,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-pen"></i>
+                          <i>
+                            <FaMarker />
+                          </i>
                         </div>
                         <h3>Writings and Publications </h3>
                       </div>
@@ -216,7 +267,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-star"></i>
+                          <i>
+                            <FaPalette />
+                          </i>
                         </div>
                         <h3> Arts & Crafts </h3>
                       </div>
@@ -225,7 +278,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-heart"></i>
+                          <i>
+                            <FaSeedling />
+                          </i>
                         </div>
                         <h3>Social Awareness programs </h3>
                       </div>
@@ -234,7 +289,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-tag"></i>
+                          <i>
+                            <FaRecordVinyl />
+                          </i>
                         </div>
                         <h3> Social Service Wing </h3>
                       </div>
@@ -243,7 +300,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-plus"></i>
+                          <i>
+                            <FaFirstAid />
+                          </i>
                         </div>
                         <h3> Health Service Centre </h3>
                       </div>
@@ -252,7 +311,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-box"></i>
+                          <i>
+                            <FaGripVertical />
+                          </i>
                         </div>
                         <h3>Career Guidance </h3>
                       </div>
@@ -261,7 +322,9 @@ function Activities_Centre() {
                     <div className="column">
                       <div className="card">
                         <div className="icon-wrapper">
-                          <i className="fas fa-laptop"></i>
+                          <i>
+                            <FaStar />
+                          </i>
                         </div>
                         <h3> Soft-Skill development </h3>
                       </div>

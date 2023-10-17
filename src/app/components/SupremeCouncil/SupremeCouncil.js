@@ -45,11 +45,9 @@ const SupremeCouncil = () => {
                         <Card.Title className="faculties-card-title">
                           {item.name}
                         </Card.Title>
-
-                        <Card.Text className="faculties-card-text">
+                        <p className="faculties_card_designation">
                           {item.designation}
-                        </Card.Text>
-
+                        </p>
                         <Button
                           variant="primary btn-primary-faculties"
                           onClick={() => handleShow(item)}
