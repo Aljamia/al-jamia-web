@@ -44,7 +44,7 @@ function Students_Council_main() {
               </div>
               <p className="AboutUspage-mission-desc">
                 Students Council is a committee consists of Al Jamia Authority
-                and Students representatives whic h discusses the matters
+                and Students representatives which discusses the matters
                 regarding academics and other activities in Al Jamia.{" "}
               </p>
             </Col>
