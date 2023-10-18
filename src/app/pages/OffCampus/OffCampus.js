@@ -109,7 +109,6 @@ function OffCampus() {
                       />
                     </div>
                   </Col>
-
                   <Col xl={6} lg={6} xs={12}>
                     <div
                       className="AboutUspage-mission-title"
