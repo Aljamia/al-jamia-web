@@ -5,7 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { BASE_URL } from "@/app/hooks/UseApi";
 import axios from "axios";
 function Career_form() {
-  const [photo, setPhoto] = useState(null)
+  const [photo, setPhoto] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,6 +16,7 @@ function Career_form() {
     date: "",
     gender: "",
     message: "",
+    photo: null,
   });
 
   const handleInputChange = (e) => {
@@ -29,46 +30,46 @@ function Career_form() {
   };
 
   const postCareer = async (formData) => {
-    console.log(formData)
+    console.log(formData);
     const data = new FormData();
     for (const key in formData) {
-        data.append(key, formData[key]);
+      data.append(key, formData[key]);
     }
 
     try {
-        const response = await axios.post(`${BASE_URL}/career`, formData);
-        console.log(data)
-        return response.data;
+      const response = await axios.post(`${BASE_URL}/career`, data);
+      console.log(data);
+      return response.data;
     } catch (error) {
-        throw error;
+      throw error;
     }
-};
+  };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  try {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
       // Check if the photo is present in the files array
       if (e.target.photo.files.length > 0) {
-          // Get the first file (assuming only one file is selected)
-          const photo = e.target.photo.files[0];
-          setFormData({ ...formData, photo });
+        // Get the first file (assuming only one file is selected)
+        const photo = e.target.photo.files[0];
+        setFormData({ ...formData, photo });
       }
 
       // Now you can send the form data with the updated photo
       await postCareer(formData);
       alert("Form submitted successfully");
-  } catch (error) {
+    } catch (error) {
       console.error("Error submitting form: ", error);
       alert("Form submission failed");
-  }
-};
+    }
+  };
 
   return (
     <div className="">
       <div>
         <h2 className="TitleStyle center_div pt-5 pb-3">Apply Now</h2>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} encType="multipart/form-data">
           <Container>
             <Row>
               <Col xl={12} lg={12} xs={12}>
