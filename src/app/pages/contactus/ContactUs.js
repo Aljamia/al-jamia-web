@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
@@ -14,8 +14,50 @@ import {
   FaTwitter,
 } from "react-icons/fa6";
 import Footer from "@/app/components/footer/Footer";
+import { BASE_URL } from "@/app/hooks/UseApi";
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    address: "",
+  });
+
+  const postContact = async (formData) => {
+    console.log(formData);
+    const data = new FormData();
+    for (const key in formData) {
+      data.append(key, formData[key]);
+    }
+
+    try {
+      const response = await axios.post(`${BASE_URL}/contact`, data);
+      console.log(data);
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      // Now you can send the form data with the updated photo
+      await postContact(formData);
+      alert("Form submitted successfully");
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      alert("Form submission failed");
+    }
+  };
+
   return (
     <div className="contact-header">
       <div className="contact-header-page">
@@ -33,65 +75,84 @@ const ContactUs = () => {
                   </p>
                 </div>
 
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="row mb-4">
                     <div className="col">
                       <div className="form-outline">
-                        <label className="form-label" for="form6Example1">
+                        <label className="form-label" htmlFor="firstName">
                           First name
                         </label>
 
-                        <input type="text" id="" className="cont_form" />
+                        <input
+                          type="text"
+                          id="firstName"
+                          name="firstName"
+                          className="cont_form"
+                          value={formData.firstName}
+                          onChange={handleInputChange}
+                        />
                       </div>
                     </div>
                     <div className="col">
                       <div className="form-outline">
-                        <label className="form-label" for="form6Example2">
+                        <label className="form-label" htmlFor="lastName">
                           Last name
                         </label>
 
                         <input
                           type="text"
-                          id="form6Example2"
+                          id="lastName"
+                          name="lastName"
                           className="cont_form"
+                          value={formData.lastName}
+                          onChange={handleInputChange}
                         />
                       </div>
                     </div>
                   </div>
 
                   <div className="form-outline mb-4">
-                    <label className="form-label" for="form6Example5">
+                    <label className="form-label" htmlFor="email">
                       Email
                     </label>
 
                     <input
                       type="email"
-                      id="form6Example5"
+                      id="email"
+                      name="email"
                       className="cont_form"
+                      value={formData.email}
+                      onChange={handleInputChange}
                     />
                   </div>
 
                   <div className="form-outline mb-4">
-                    <label className="form-label" for="form6Example6">
+                    <label className="form-label" htmlFor="phone">
                       Phone
                     </label>
 
                     <input
-                      type="number"
-                      id="form6Example6"
+                      type="tel"
+                      id="phone"
+                      name="phone"
                       className="cont_form"
+                      value={formData.phone}
+                      onChange={handleInputChange}
                     />
                   </div>
 
                   <div className="form-outline mb-4">
-                    <label className="form-label" for="form6Example4">
+                    <label className="form-label" htmlFor="address">
                       Address
                     </label>
 
                     <input
                       type="text"
-                      id="form6Example4"
+                      id="address"
+                      name="address"
                       className="cont_form"
+                      value={formData.address}
+                      onChange={handleInputChange}
                     />
                   </div>
 

@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // const BASE_URL = "https://aljamia-api-ztjhx.ondigitalocean.app/api/v1";
-export const BASE_URL = "https://aljamia-api-ztjhx.ondigitalocean.app/api/v1";
+export const BASE_URL = "http://localhost:8050/api/v1";
 
 export const getAboutUs = async () => {
   const response = await axios.get(`${BASE_URL}/about-us`);
