@@ -24,7 +24,7 @@ body p {
 }
 .container p {
   font-size: 16px;
-  padding: 0px 16px;
+  padding: 0px 25px;
   hyphens: auto;
   -webkit-hyphens: auto;
 }
@@ -2906,7 +2906,7 @@ h3 {
   }
 
   .blog-details-list li {
-    text-align: justify;
+    text-align: left;
   }
 
   .blog-details-list li::before {
