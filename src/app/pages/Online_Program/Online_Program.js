@@ -71,77 +71,75 @@ function Online_Program() {
             </Container>
           </div>
         </div>
-        <div className="">
+        <div>
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <section>
-                  <h1 className="TitleStyle center_aln  p-4">
-                    Highlights of Programs
-                  </h1>
-                  <div className="row pb-5">
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaVideo />
-                          </i>
-                        </div>
-                        <h3>Pre-recorded video lessons </h3>
+                <h1 className="TitleStyle center_aln p-4">
+                  Highlights of Programs
+                </h1>
+                <Row className="ml-1">
+                  <Col sm={12} md={6} lg={4}>
+                    <div className="card">
+                      <div className="icon-wrapper">
+                        <i>
+                          <FaVideo />
+                        </i>
                       </div>
+                      <h3>Pre-recorded video lessons</h3>
                     </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaRegClipboard />
-                          </i>
-                        </div>
-                        <h3>Content summary notes </h3>
+                  </Col>
+                  <Col sm={12} md={6} lg={4}>
+                    <div className="card">
+                      <div className="icon-wrapper">
+                        <i>
+                          <FaRegClipboard />
+                        </i>
                       </div>
+                      <h3>Content summary notes</h3>
                     </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaWrench />
-                          </i>
-                        </div>
-                        <h3>Reference materials</h3>
+                  </Col>
+                  <Col sm={12} md={6} lg={4}>
+                    <div className="card">
+                      <div className="icon-wrapper">
+                        <i>
+                          <FaWrench />
+                        </i>
                       </div>
+                      <h3>Reference materials</h3>
                     </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaSignal />
-                          </i>
-                        </div>
-                        <h3>Interactive live sessions</h3>
+                  </Col>
+                  <Col sm={12} md={6} lg={4}>
+                    <div className="card">
+                      <div className="icon-wrapper">
+                        <i>
+                          <FaSignal />
+                        </i>
                       </div>
+                      <h3>Interactive live sessions</h3>
                     </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaTasks />
-                          </i>
-                        </div>
-                        <h3>Assignments and assessment modules </h3>
+                  </Col>
+                  <Col sm={12} md={6} lg={4}>
+                    <div className="card">
+                      <div className="icon-wrapper">
+                        <i>
+                          <FaTasks />
+                        </i>
                       </div>
+                      <h3>Assignments and assessment modules</h3>
                     </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaRegCopy />
-                          </i>
-                        </div>
-                        <h3>Final evaluation and certification </h3>
+                  </Col>
+                  <Col sm={12} md={6} lg={4}>
+                    <div className="card">
+                      <div className="icon-wrapper">
+                        <i>
+                          <FaRegCopy />
+                        </i>
                       </div>
+                      <h3>Final evaluation and certification</h3>
                     </div>
-                  </div>
-                </section>
+                  </Col>
+                </Row>
               </Row>
             </Container>
           </div>

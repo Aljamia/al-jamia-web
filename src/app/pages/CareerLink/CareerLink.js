@@ -16,15 +16,15 @@ function CareerLink() {
                   {" "}
                   Work with us
                 </div>
-
-                <p className="p_style">
-                  If you're ready to join us and contribute to our exciting
-                  journey, please submit your resume and a cover letter
-                  detailing your qualifications and why you want to work with
-                  us. You can apply for any of our open positions by visiting
-                  our Career Page.
-                </p>
-
+                <div className="p_style">
+                  <p>
+                    If you're ready to join us and contribute to our exciting
+                    journey, please submit your resume and a cover letter
+                    detailing your qualifications and why you want to work with
+                    us. You can apply for any of our open positions by visiting
+                    our Career Page.
+                  </p>
+                </div>
                 <div className="btn">
                   <Link href="/Career">
                     <button>

@@ -23,6 +23,7 @@ const Digitallibrary = () => {
                       width={1000}
                       height={200}
                       alt="Image"
+                      loading="lazy"
                     />
                   </div>
                 </Col>
@@ -34,6 +35,7 @@ const Digitallibrary = () => {
                       width={1000}
                       height={200}
                       alt="Image"
+                      loading="lazy"
                     />
                   </div>
                 </Col>
@@ -45,6 +47,7 @@ const Digitallibrary = () => {
                       width={1000}
                       height={200}
                       alt="Image"
+                      loading="lazy"
                     />
                   </div>
                 </Col>

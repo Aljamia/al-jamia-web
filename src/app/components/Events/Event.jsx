@@ -86,7 +86,7 @@ const Event = () => {
           <hr />
         </div>
         <div id="grades" className="grades">
-          <div className="course-desc aos-init">
+          <div className="container_paragraph">
             <p>
               Discover Al Jamia Al Islamiya latest news and events, celebrating
               academic excellence and vibrant campus life. Stay informed about

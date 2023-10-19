@@ -116,221 +116,207 @@ function Activities_Centre() {
           <div className="AboutUspage-ourMission pb-5">
             <Container>
               <Row>
-                <section>
-                  <h1 className="TitleStyle center_aln p-4">
-                    Major Activities
-                  </h1>
-                  <div className="row">
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaPeopleGroup />
-                          </i>
-                        </div>
-                        <h3>Student Parliament </h3>
-                      </div>
+                <h1 className="TitleStyle center_aln p-4">Major Activities</h1>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaPeopleGroup />
+                      </i>
                     </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaVolleyball />
-                          </i>
-                        </div>
-                        <h3>Club activities </h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaChild />
-                          </i>
-                        </div>
-                        <h3>Literary associations </h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaFootball />
-                          </i>
-                        </div>
-                        <h3> Sports and Games</h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaBookOpen />
-                          </i>
-                        </div>
-                        <h3>Tarbiyah</h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaEarlybirds />
-                          </i>
-                        </div>
-                        <h3>Khutba Training </h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaMicrophoneLines />
-                          </i>
-                        </div>
-                        <h3>Public Speaking and Performance</h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaHardHat />
-                          </i>
-                        </div>
-                        <h3>Social activism</h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaBlog />
-                          </i>
-                        </div>
-                        <h3>Blogging</h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaCamera />
-                          </i>
-                        </div>
-                        <h3> Media</h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaGrinAlt />
-                          </i>
-                        </div>
-                        <h3>Public Relations </h3>
-                      </div>
-                    </div>
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaCameraRetro />
-                          </i>
-                        </div>
-                        <h3>Photography </h3>
-                      </div>
-                    </div>
-
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaHandHoldingHeart />
-                          </i>
-                        </div>
-                        <h3>Health and fitness </h3>
-                      </div>
-                    </div>
-
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaMarker />
-                          </i>
-                        </div>
-                        <h3>Writings and Publications </h3>
-                      </div>
-                    </div>
-
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaPalette />
-                          </i>
-                        </div>
-                        <h3> Arts & Crafts </h3>
-                      </div>
-                    </div>
-
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaSeedling />
-                          </i>
-                        </div>
-                        <h3>Social Awareness programs </h3>
-                      </div>
-                    </div>
-
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaRecordVinyl />
-                          </i>
-                        </div>
-                        <h3> Social Service Wing </h3>
-                      </div>
-                    </div>
-
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaFirstAid />
-                          </i>
-                        </div>
-                        <h3> Health Service Centre </h3>
-                      </div>
-                    </div>
-
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaGripVertical />
-                          </i>
-                        </div>
-                        <h3>Career Guidance </h3>
-                      </div>
-                    </div>
-
-                    <div className="column">
-                      <div className="card">
-                        <div className="icon-wrapper">
-                          <i>
-                            <FaStar />
-                          </i>
-                        </div>
-                        <h3> Soft-Skill development </h3>
-                      </div>
-                    </div>
+                    <h3>Student Parliament</h3>
                   </div>
-                </section>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaVolleyball />
+                      </i>
+                    </div>
+                    <h3>Club activities</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaChild />
+                      </i>
+                    </div>
+                    <h3>Literary associations</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaFootball />
+                      </i>
+                    </div>
+                    <h3>Sports and Games</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaBookOpen />
+                      </i>
+                    </div>
+                    <h3>Tarbiyah</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaEarlybirds />
+                      </i>
+                    </div>
+                    <h3>Khutba Training</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaMicrophoneLines />
+                      </i>
+                    </div>
+                    <h3>Public Speaking and Performance</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaHardHat />
+                      </i>
+                    </div>
+                    <h3>Social activism</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaBlog />
+                      </i>
+                    </div>
+                    <h3>Blogging</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaCamera />
+                      </i>
+                    </div>
+                    <h3>Media</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaGrinAlt />
+                      </i>
+                    </div>
+                    <h3>Public Relations</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaCameraRetro />
+                      </i>
+                    </div>
+                    <h3>Photography</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaHandHoldingHeart />
+                      </i>
+                    </div>
+                    <h3>Health and fitness</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaMarker />
+                      </i>
+                    </div>
+                    <h3>Writings and Publications</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaPalette />
+                      </i>
+                    </div>
+                    <h3>Arts & Crafts</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaSeedling />
+                      </i>
+                    </div>
+                    <h3>Social Awareness programs</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaRecordVinyl />
+                      </i>
+                    </div>
+                    <h3>Social Service Wing</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaFirstAid />
+                      </i>
+                    </div>
+                    <h3>Health Service Centre</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaGripVertical />
+                      </i>
+                    </div>
+                    <h3>Career Guidance</h3>
+                  </div>
+                </Col>
+                <Col sm={6} md={4} lg={3}>
+                  <div className="card">
+                    <div className="icon-wrapper">
+                      <i>
+                        <FaStar />
+                      </i>
+                    </div>
+                    <h3>Soft-Skill development</h3>
+                  </div>
+                </Col>
               </Row>
             </Container>
           </div>

@@ -38,8 +38,8 @@ const Library = () => {
                 <div className="director-heading">
                   <h1>Central Library</h1>
                 </div>
-                <div>
-                  <p className="central-library_para">
+                <div className="container">
+                  <p>
                     Al Jamia Central Library is among the leading reference
                     libraries in India. This celebrated institution, located in
                     a three-story building on the campus of Santapuram al-Jamia,
