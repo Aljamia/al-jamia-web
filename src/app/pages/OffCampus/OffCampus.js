@@ -99,17 +99,16 @@ function OffCampus() {
                   <Col xl={6} lg={6} xs={12}>
                     <div className="AboutUspage-mission-img">
                       <Image
-                        src="/banner/AlamiaMewat.jpg"
+                        src="/banner/aljamia_malda.jpg"
                         layout="responsive" // Use layout="responsive" for responsiveness
                         width={500} // Provide the width of the image
-                        height={800} // Adjust the height as needed to make it taller
+                        height={500} // Adjust the height as needed to make it taller
                         alt="Image"
                         objectFit="cover"
                         className="AboutUspage-vision-img2"
                       />
                     </div>
                   </Col>
-
                   <Col xl={6} lg={6} xs={12}>
                     <div
                       className="AboutUspage-mission-title"
