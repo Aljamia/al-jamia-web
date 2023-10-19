@@ -1,24 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { getAboutUs } from "@/app/hooks/UseApi";
-
 import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
-import { Col, Container, Row } from "react-bootstrap";
 import Student_Counseling_Service_main from "./Student_Counseling_Service_main";
 
 function Student_Counseling_Service() {
-  const [about, setAbout] = useState([]);
-
-  useEffect(() => {
-    const fetchAbout = async () => {
-      const data = await getAboutUs();
-      setAbout(data?.response);
-    };
-
-    fetchAbout();
-  }, []);
   {
     return (
       <div>
@@ -32,9 +18,7 @@ function Student_Counseling_Service() {
             alt="Image"
           />
         </div>
-
         <Student_Counseling_Service_main />
-
         <Footer />
       </div>
     );
