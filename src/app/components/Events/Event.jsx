@@ -108,15 +108,13 @@ const Event = () => {
                   width={1000}
                   layout="responsive"
                   height={1000}
+                  priority
                   style={{ borderRadius: "20px" }}
                 />
               </div>
               <div className="event-btn">
                 <button>Up Coming Events</button>
-                <span className=" m-3 ">
-                  {/* {new Date(events[0]?.date).toDateString()} */}
-                  {events[0]?.textDate}
-                </span>
+                <span className=" m-3 ">{events[0]?.textDate}</span>
               </div>
               <div className="event-des">
                 <h4>{events[0]?.title}</h4>
@@ -146,6 +144,7 @@ const Event = () => {
                             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                             alt=""
                             className="event-img-items featured-image"
+                            loading="lazy"
                           />
                           <article className="card-body">
                             <header>

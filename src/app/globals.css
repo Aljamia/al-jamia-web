@@ -520,7 +520,7 @@ img {
   position: relative;
   height: auto;
   width: 100%;
-
+  text-align: center;
   overflow-y: hidden;
   color: #252641;
   font-family: unset;
