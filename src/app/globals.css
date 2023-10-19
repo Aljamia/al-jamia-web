@@ -23,9 +23,17 @@ body p {
   margin: auto;
 }
 .container p {
-  font-size: medium;
+  font-size: 16px;
+  padding: 0px 16px;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
-
+.container_paragraph {
+  font-size: 16px;
+  padding: 0px 10px;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
 img {
   object-fit: cover;
 }
@@ -203,7 +211,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  /* 39px */
 }
 
 .Faculties-ourleader {
@@ -281,7 +288,7 @@ img {
   color: var(--gold, #cc9020);
   text-align: center;
   font-family: unset;
-  font-size: 10.2px !important;
+  font-size: 9.4px !important;
   font-style: normal;
   font-weight: 300;
   padding-top: 5px;
@@ -347,6 +354,9 @@ img {
 
   .contact-header-phone {
     margin-top: 2em;
+  }
+  .faculties_card_designation {
+    font-size: 14px !important;
   }
 
   .social-details {
@@ -607,6 +617,7 @@ img {
   }
   .faculties_card_endesignation {
     text-align: center !important;
+    font-size: 9.438px !important;
   }
   .portfolio-title {
     text-align: center;
@@ -824,7 +835,7 @@ img {
   }
 
   .card-body {
-    padding: 0px;
+    padding: 0.5px;
     min-height: 110px;
     margin: 0% !important;
     padding-top: 0px !important;
@@ -1092,7 +1103,6 @@ h3 {
   font-style: normal;
   text-align: left;
   font-weight: 500;
-  /* 39px */
 }
 
 .Courses_Head {
@@ -1104,13 +1114,12 @@ h3 {
   font-weight: 400;
   padding: 0px;
   margin: 0px;
-  /* 39px */
 }
 
 .blog-details-list li {
   font-size: 15px;
   margin-bottom: 15px;
-  padding-left: 28px;
+  padding-right: 15px;
   position: relative;
   z-index: 1;
   list-style: none;
@@ -1124,7 +1133,7 @@ h3 {
   height: 8px;
   display: inline-block;
   border-radius: 50%;
-  left: 0;
+  left: -20px;
   top: 8px;
   z-index: 1;
 }
@@ -1812,7 +1821,7 @@ h3 {
 }
 
 .grades {
-  padding: 0em 2em 0em;
+  padding: 0em;
   text-align: center;
 }
 
@@ -2299,15 +2308,14 @@ h3 {
   opacity: 0.7;
 }
 
-.p_style {
+.p_style p {
   color: var(--gray, #ffffff);
-  text-align: center;
-  font-size: medium;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   margin-top: 0.3em;
   line-height: 160%;
-  padding: 2% 5% 1%;
+  padding: 3px;
 }
 
 .white {
@@ -2491,10 +2499,11 @@ h3 {
     height: auto;
   }
   .faculties-card-title {
-    font-size: small !important;
+    margin-top: 10px;
+    font-size: 12px !important;
     font-style: normal;
     font-weight: 300;
-    padding-top: 2%;
+    padding-top: 3%;
   }
 
   .btn {
@@ -2510,17 +2519,12 @@ h3 {
   }
 
   .card-body {
-    padding: 0px !important;
+    padding: 0.5px !important;
     text-align: center;
   }
 
   .card-body p {
     text-align: center;
-  }
-
-  .card-body {
-    padding: 2px;
-    min-height: 160px !;
   }
 
   .caro-paragraph p {
@@ -2625,7 +2629,7 @@ h3 {
   }
 
   .faculties-card .facluties_fac_images {
-    height: 15vh !important;
+    height: 18vh !important;
   }
 
   .footer .container {
@@ -2902,7 +2906,7 @@ h3 {
   }
 
   .blog-details-list li {
-    text-align: left;
+    text-align: justify;
   }
 
   .blog-details-list li::before {

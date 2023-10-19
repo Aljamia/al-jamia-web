@@ -50,6 +50,7 @@ function Student_Life_Services() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
+                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
@@ -105,6 +106,7 @@ function Student_Life_Services() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
+                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
@@ -113,14 +115,11 @@ function Student_Life_Services() {
             </Container>
           </div>
         </div>
-
         <hr />
-
         <div className="AboutUspage-items">
           <h1 className="TitleStyle center_aln  pt-2 pb-2">
             Student Clubs & Union
           </h1>
-
           <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
@@ -133,11 +132,11 @@ function Student_Life_Services() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
+                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
                 </Col>
-
                 <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
@@ -166,7 +165,6 @@ function Student_Life_Services() {
               </Row>
             </Container>
           </div>
-
           <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
@@ -204,6 +202,7 @@ function Student_Life_Services() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
+                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
@@ -211,7 +210,6 @@ function Student_Life_Services() {
               </Row>
             </Container>
           </div>
-
           <div className="AboutUspage-ourMission pt-5">
             <Container>
               <Row>
@@ -224,11 +222,11 @@ function Student_Life_Services() {
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
+                      loading="lazy"
                       className="AboutUspage-vision-img2"
                     />
                   </div>
                 </Col>
-
                 <Col xl={6} lg={6} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
@@ -250,7 +248,6 @@ function Student_Life_Services() {
             </Container>
           </div>
         </div>
-
         <Footer />
       </div>
     );
