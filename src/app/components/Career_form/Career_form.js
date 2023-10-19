@@ -44,7 +44,6 @@ function Career_form() {
       throw error;
     }
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
