@@ -151,7 +151,7 @@ const Event = () => {
                               </div>
                               <p className="meta">
                                 <span className="author">
-                                  {event.description.substring(0, 120)}...
+                                  {event.description.substring(0, 115)}...
                                 </span>
                                 <button
                                   className="chip"

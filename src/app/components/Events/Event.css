@@ -546,7 +546,11 @@ a.chip.large:active {
 }
 @media (max-width: 991px) {
   .author {
-    font-size: 10px;
+    font-size: 14px;
+    text-align: left !important;
+  }
+  .Download_news_button {
+    display: none;
   }
   .chip {
     text-align: center;
