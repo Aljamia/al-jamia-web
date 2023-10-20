@@ -146,19 +146,21 @@ const Event = () => {
                           />
                           <article className="card-body">
                             <header>
-                              <div className="title ml-2 pt-2">
+                              <div className="title ">
                                 <h4>{event.title}</h4>
                               </div>
 
                               <span className="author">
-                                {event.description.substring(0, 115)}...
+                                {event.description.substring(0, 120)}...
                               </span>
-                              <button
-                                className="chip"
-                                onClick={() => handleClick(event._id)}
-                              >
-                                Read More
-                              </button>
+                              <div>
+                                <button
+                                  className="chip"
+                                  onClick={() => handleClick(event._id)}
+                                >
+                                  Read More
+                                </button>
+                              </div>
                               {event?._id === "65321347b5552c3f834edbe5" && (
                                 <div className="Download_news_button btn-3 ">
                                   <a href="/pdf/Application Form.pdf" download>

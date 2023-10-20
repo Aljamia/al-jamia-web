@@ -35,7 +35,7 @@ const Library = () => {
             </Col>
             <Col xl={6} lg={6} xs={12}>
               <div className="library">
-                <div className="director-heading">
+                <div className="director-heading ml-1">
                   <h1>Central Library</h1>
                 </div>
                 <div className="container">

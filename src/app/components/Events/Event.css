@@ -467,7 +467,7 @@ a {
 
 .chip {
   background: linear-gradient(90deg, #3dc55d 0%, #619a46 100%);
-  border-radius: 999px;
+  border-radius: 50px;
   box-shadow: #b3d3a4 0 10px 20px -10px;
   box-sizing: border-box;
   color: #ffffff;
@@ -485,7 +485,7 @@ a {
   width: fit-content;
   word-break: break-word;
   border: 0;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .chip:hover {
@@ -538,7 +538,7 @@ a.chip.large:active {
 .Download_news_button button {
   background-color: #e32636;
   font-size: 12px;
-  padding: 8px 10px;
+  padding: 7px;
   border-radius: 10px;
   color: white;
   outline: none;
