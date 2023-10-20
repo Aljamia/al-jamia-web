@@ -24,7 +24,7 @@ body p {
 }
 .container p {
   font-size: 16px;
-  padding: 0px 25px;
+  padding: 0px 10px;
   hyphens: auto;
   -webkit-hyphens: auto;
 }
@@ -343,7 +343,15 @@ img {
   text-align: left;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 578px) {
+  .container p {
+    font-size: 15px;
+    padding: 0px 16px;
+  }
+  .container_paragraph {
+    font-size: 14px;
+    padding: 0px 10px;
+  }
   .contact-header-title h1 {
     font-size: 30px;
   }
@@ -1749,6 +1757,7 @@ h3 {
 .director-heading h1 {
   padding-bottom: 0rem;
   margin-top: 3.5rem;
+  margin-left: 14px;
   font-family: unset;
   font-weight: 300;
   text-align: left;
@@ -2439,24 +2448,14 @@ h3 {
 
 .director-des p {
   text-align: justify;
+  margin-left: 6px;
   font-size: small !important;
 }
 
 .person-detail {
   margin-top: 1rem;
+  margin-left: 15px;
 }
-
-.person-detail p {
-  text-align: left !important;
-}
-
-.person-detail p {
-  color: #555555;
-  text-align: left !important;
-  font-family: unset;
-  font-size: medium !important;
-}
-
 .person-detail h4 {
   color: #3b3b3bf9;
   text-transform: capitalize;
@@ -2464,17 +2463,26 @@ h3 {
   font-family: unset;
 }
 
+.person-detail p {
+  color: #555555;
+  font-family: unset;
+  margin-left: -8px;
+  font-size: medium !important;
+}
+
 @media (max-width: 767px) {
   .container {
     width: 98%;
-    /* Set the desired width of the container */
     height: auto;
-    /* Set the desired height of the container */
     overflow: auto;
-    /* Add a scrollbar if content overflows */
     padding: 2%;
   }
-
+  .person-detail {
+    margin-left: 0px;
+  }
+  .director-des p {
+    margin-left: 0px;
+  }
   ::-webkit-scrollbar {
     display: none;
   }
@@ -2568,9 +2576,6 @@ h3 {
   }
   .AboutUspage-items {
     padding: 1em;
-  }
-  .carouselevent {
-    display: none;
   }
 
   .about-Title {
