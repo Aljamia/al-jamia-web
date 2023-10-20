@@ -438,7 +438,7 @@ span {
 }
 
 .author {
-  font-size: 13px;
+  font-size: 14px;
   font-family: unset;
 }
 
@@ -532,15 +532,29 @@ a.chip.large:hover,
 a.chip.large:active {
   color: black;
 }
-
+.Download_news_button {
+  margin-top: 10px !important;
+}
+.Download_news_button button {
+  background-color: #e32636;
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  border: none;
+}
 @media (max-width: 991px) {
+  .author {
+    font-size: 10px;
+  }
   .chip {
     text-align: center;
     margin-left: 5px;
     margin-top: 20px;
   }
   .card_event_slick {
-    height: 520px !important;
+    height: 530px !important;
     background: linear-gradient(#ffffff 100%, #fff 100%);
     background-size: 100% 200%;
     background-position: 0 2.5%;

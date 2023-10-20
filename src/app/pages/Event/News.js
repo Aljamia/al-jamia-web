@@ -61,9 +61,9 @@ const News = () => {
   const [newsData, setNewsData] = useState([]);
 
   // Initialize state variables for h1, img, and p tags
-  const [h1Content, setH1Content] = useState("");
-  const [imgSrc, setImgSrc] = useState("");
-  const [pContent, setPContent] = useState("");
+  const [h1Content] = useState("");
+  const [imgSrc] = useState("");
+  const [pContent] = useState("");
 
   useEffect(() => {
     async function fetchData() {
@@ -72,9 +72,7 @@ const News = () => {
           "https://aljamia-api-ztjhx.ondigitalocean.app/api/v1/news"
         );
         const data = await response.json();
-        setNewsData(data.response.slice(0, 4)); // Slice the array to extract the first 4 elements
-
-        // Check if there is data available before setting the state
+        setNewsData(data.response.slice(0, 4));
 
         console.log("news data", data.response);
       } catch (error) {
@@ -92,7 +90,7 @@ const News = () => {
       <div className="news-section">
         <Container id="news-container">
           <div className="header-news">
-            <div className="news-title  pt-2">
+            <div className="news-title pt-2">
               <h1>{h1Content}</h1>
             </div>
             <div className="news-img">

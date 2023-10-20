@@ -1735,7 +1735,9 @@ h3 {
   text-align: center;
   color: #619a46;
 }
-
+.news_img img {
+  width: 40%;
+}
 .event-title .about-Title h1 {
   padding: 0rem;
   font-family: unset;
@@ -2653,6 +2655,7 @@ h3 {
 }
 
 .news-para {
+  margin-top: 10px;
   text-align: justify;
 }
 

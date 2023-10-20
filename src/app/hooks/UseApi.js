@@ -1,7 +1,6 @@
 "use client";
 import axios from "axios";
 
-// const BASE_URL = "https://aljamia-api-ztjhx.ondigitalocean.app/api/v1";
 export const BASE_URL = "https://aljamia-api-ztjhx.ondigitalocean.app/api/v1";
 
 export const getAboutUs = async () => {

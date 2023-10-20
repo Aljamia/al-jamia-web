@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../globals.css";
 import Event from "@/app/components/Events/Event";
 import Footer from "@/app/components/footer/Footer";
+import { FaFilePdf } from "react-icons/fa6";
 
 function HomePage(eventId) {
   console.log("connected", { eventId });
@@ -48,6 +49,23 @@ function HomePage(eventId) {
             <div className="news-para">
               <p>{events.description}.</p>
             </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              padding: "5px",
+            }}
+          >
+            {events?._id === "65321347b5552c3f834edbe5" && (
+              <div className="Download_news_button">
+                <a href="/pdf/Application Form.pdf" download>
+                  <button>
+                    <FaFilePdf /> Download PDF
+                  </button>
+                </a>
+              </div>
+            )}
           </div>
         </Container>
         <div className="news-para">

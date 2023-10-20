@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
-// import { useRouter } from "next/router";
-//
 import { Col, Container, Row } from "react-bootstrap";
 import "./Event.css";
 import "slick-carousel/slick/slick.css";
@@ -10,6 +8,7 @@ import Slider from "react-slick";
 import { useRouter } from "next/navigation";
 import { getNews } from "@/app/hooks/UseApi";
 import Image from "next/image";
+import { FaFilePdf } from "react-icons/fa6";
 
 const Event = () => {
   const router = useRouter();
@@ -96,7 +95,6 @@ const Event = () => {
           </div>
         </div>
       </div>
-      <div></div>
       <div className="event-first-section">
         <Container>
           <Row>
@@ -148,29 +146,31 @@ const Event = () => {
                           />
                           <article className="card-body">
                             <header>
-                              <div className="title">
+                              <div className="title ml-2 pt-2">
                                 <h4>{event.title}</h4>
                               </div>
                               <p className="meta">
                                 <span className="author">
-                                  {event.description.substring(0, 100)}...
+                                  {event.description.substring(0, 120)}...
                                 </span>
-                                <span> | </span>
-                                <time
-                                  style={{ display: "none" }}
-                                  className="updated"
-                                  datetime=""
-                                  itemprop="datePublished"
-                                >
-                                  {" "}
-                                  {new Date(event.date).toDateString()}{" "}
-                                </time>
                                 <button
                                   className="chip"
                                   onClick={() => handleClick(event._id)}
                                 >
                                   Read More
                                 </button>
+                                {event?._id === "65321347b5552c3f834edbe5" && (
+                                  <div className="Download_news_button btn-3 ">
+                                    <a
+                                      href="/pdf/Application Form.pdf"
+                                      download
+                                    >
+                                      <button>
+                                        <FaFilePdf /> Download PDF
+                                      </button>
+                                    </a>
+                                  </div>
+                                )}
                               </p>
                             </header>
                           </article>
