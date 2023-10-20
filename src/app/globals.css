@@ -543,10 +543,10 @@ img {
 
 .portfolio-text {
   color: #474747;
-  text-align: left;
+  text-align: center;
   padding: auto;
   width: 100%;
-  height: 125px;
+  height: auto;
   font-family: unset;
   font-size: medium;
   content: normal;
