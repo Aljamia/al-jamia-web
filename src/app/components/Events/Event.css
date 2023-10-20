@@ -355,7 +355,7 @@ span {
 }
 
 .news_card img {
-  height: auto;
+  height: 300px;
   width: 100% !important;
 }
 
@@ -403,7 +403,8 @@ span {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 0;
-    max-width: 21%;
+    max-width: 150px;
+    padding: 12px;
     height: auto;
   }
 }
@@ -437,7 +438,7 @@ span {
 }
 
 .author {
-  font-size: 14px;
+  font-size: 13px;
   font-family: unset;
 }
 

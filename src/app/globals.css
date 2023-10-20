@@ -935,6 +935,12 @@ img {
   margin: 0px 0px 20px;
   transition: 0.5s;
 }
+@media (max-width: 568px) {
+  .card {
+    margin: 0px;
+    padding: 20px;
+  }
+}
 
 .card h3 {
   color: #3c3c3c;
@@ -2645,9 +2651,7 @@ h3 {
   display: flex;
   justify-content: center;
 }
-.news_img img {
-  width: 40%;
-}
+
 .news-para {
   text-align: justify;
 }
