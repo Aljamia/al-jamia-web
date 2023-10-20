@@ -149,29 +149,25 @@ const Event = () => {
                               <div className="title ml-2 pt-2">
                                 <h4>{event.title}</h4>
                               </div>
-                              <p className="meta">
-                                <span className="author">
-                                  {event.description.substring(0, 115)}...
-                                </span>
-                                <button
-                                  className="chip"
-                                  onClick={() => handleClick(event._id)}
-                                >
-                                  Read More
-                                </button>
-                                {event?._id === "65321347b5552c3f834edbe5" && (
-                                  <div className="Download_news_button btn-3 ">
-                                    <a
-                                      href="/pdf/Application Form.pdf"
-                                      download
-                                    >
-                                      <button>
-                                        <FaFilePdf /> Download PDF
-                                      </button>
-                                    </a>
-                                  </div>
-                                )}
-                              </p>
+
+                              <span className="author">
+                                {event.description.substring(0, 115)}...
+                              </span>
+                              <button
+                                className="chip"
+                                onClick={() => handleClick(event._id)}
+                              >
+                                Read More
+                              </button>
+                              {event?._id === "65321347b5552c3f834edbe5" && (
+                                <div className="Download_news_button btn-3 ">
+                                  <a href="/pdf/Application Form.pdf" download>
+                                    <button>
+                                      <FaFilePdf /> Download PDF
+                                    </button>
+                                  </a>
+                                </div>
+                              )}
                             </header>
                           </article>
                         </li>
