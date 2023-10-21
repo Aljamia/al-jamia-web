@@ -544,8 +544,8 @@ a.chip.large:active {
 }
 .Download_news_button button {
   background-color: #e32636;
-  font-size: 10px;
-  padding: 6px 10px;
+  font-size: 12px;
+  padding: 10px 16px;
   border-radius: 50px;
   color: white;
   outline: none;
@@ -563,7 +563,7 @@ a.chip.large:active {
     gap: 10px;
   }
   .Download_news_button button {
-    padding: 5px 10px;
+    padding: 10px 10px;
   }
   .chip {
     text-align: center;
