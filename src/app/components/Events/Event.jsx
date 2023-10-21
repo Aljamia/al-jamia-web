@@ -108,7 +108,7 @@ const Event = () => {
                     url: `https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`,
                   }))}
                   showBullets={true}
-                  showNavs={false}
+                  showNavs={true}
                 />
               </div>
             </Col>
