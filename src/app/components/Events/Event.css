@@ -105,7 +105,8 @@ span {
 }
 
 .event-slick div {
-  margin: 2.784px;
+  margin: 0.784px;
+  padding: 0px 5px;
   background-color: transparent !important;
   opacity: 1;
 }
@@ -397,6 +398,7 @@ span {
   .carouselevent .card {
     margin: 0px;
     padding: 0px;
+    margin-top: -5px;
   }
 
   .card .featured-image {
@@ -422,7 +424,8 @@ span {
   font-size: medium;
   color: #000 !important;
   font-family: unset;
-  margin-top: 0%;
+  margin-top: 10px;
+  margin-left: -5px;
   font-weight: 400;
 }
 
@@ -567,7 +570,7 @@ a.chip.large:active {
     margin: 0;
   }
   .card_event_slick {
-    height: 530px !important;
+    height: 540px !important;
     background: linear-gradient(#ffffff 100%, #fff 100%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
