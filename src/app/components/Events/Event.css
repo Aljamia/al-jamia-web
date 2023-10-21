@@ -588,3 +588,6 @@ a.chip.large:active {
     width: 100% !important;
   }
 }
+.event_image_slider > images {
+  object-fit: contain;
+}

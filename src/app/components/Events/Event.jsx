@@ -101,15 +101,31 @@ const Event = () => {
               <div className="event_slider_section">
                 <SimpleImageSlider
                   className="event_image_slider"
-                  width={360}
-                  object-fit="contain"
+                  width={350}
                   height={500}
                   images={events.map((event) => ({
                     url: `https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`,
                   }))}
                   showBullets={true}
+                  autoPlay={true}
+                  autoPlayInterval={1000}
                   showNavs={true}
-                />
+                  slideDuration={0.5}
+                >
+                  {events.map((event, index) => (
+                    <div key={index}>
+                      <img
+                        src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
+                        alt={event.name}
+                        style={{
+                          objectFit: "contain",
+                          width: "10%",
+                          height: "100%",
+                        }}
+                      />
+                    </div>
+                  ))}
+                </SimpleImageSlider>
               </div>
             </Col>
             <Col xl={8} className="pt-3">
