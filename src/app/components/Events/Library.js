@@ -59,11 +59,9 @@ const Library = () => {
                     style={{ textDecoration: "none", color: "white" }}
                   >
                     {" "}
-                    <button>
-                      {" "}
+                    <button className="icon_arrow_btn">
                       <div className="icon_arrow_abt">
-                        <span className="p-3">More About</span>
-
+                        <span className="p-1">More About</span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="50"

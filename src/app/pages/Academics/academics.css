@@ -906,7 +906,7 @@ nav.primary-navigation ul li ul li {
   font-weight: 300;
   display: flex;
   font-size: 2rem;
-
+  margin-left: 26px;
   color: #619a46;
 }
 

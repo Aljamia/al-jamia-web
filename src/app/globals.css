@@ -1764,11 +1764,11 @@ h3 {
 .director-heading h1 {
   padding-bottom: 0rem;
   margin-top: 3.5rem;
-  margin-left: 13px;
   font-family: unset;
   font-weight: 300;
   text-align: left;
   font-size: 2rem;
+  margin-left: 25px;
   color: #619a46;
 }
 .central-library_para {
@@ -2351,10 +2351,9 @@ h3 {
 .icon_arrow_abt {
   border: none;
 }
-
-/* .icon_arrow_abt svg {
-  width: 30px !important;
-} */
+.icon_arrow_btn {
+  margin-left: 25px;
+}
 .btn2 {
   border: none !important;
 }
@@ -2374,12 +2373,10 @@ h3 {
 .btn button {
   color: #619a46;
   background-color: #ffffff;
-  /* padding: 7px 20px; */
   border: solid 1px #619a46;
   border-radius: 55px;
   width: auto;
   transition: 500ms;
-
   padding: 0px 0px 0px 20px;
 }
 
@@ -2465,6 +2462,7 @@ h3 {
 }
 .person-detail h4 {
   color: #3b3b3bf9;
+  margin-left: 13px;
   text-transform: capitalize;
   font-weight: 400;
   font-family: unset;
@@ -2478,13 +2476,16 @@ h3 {
 }
 
 @media (max-width: 767px) {
+  .icon_arrow_btn {
+    margin-left: 0px;
+  }
   .container {
     width: 98%;
     height: auto;
     overflow: auto;
     padding: 2%;
   }
-  .person-detail {
+  .person-detail h4 {
     margin-left: 0px;
   }
   .director-des p {
@@ -2730,6 +2731,7 @@ h3 {
     font-weight: 300;
     font-size: 1.5rem !important;
     text-align: center;
+    margin-left: 0px;
     color: #619a46;
   }
 
