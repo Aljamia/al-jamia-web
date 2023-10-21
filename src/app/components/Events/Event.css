@@ -405,7 +405,8 @@ span {
     border-top-right-radius: 0;
     max-width: 150px;
     padding: 12px;
-    height: auto;
+    object-fit: contain;
+    height: 140px;
   }
 }
 
@@ -532,14 +533,17 @@ a.chip.large:hover,
 a.chip.large:active {
   color: black;
 }
-.Download_news_button {
-  margin-top: 10px !important;
+.news_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
 }
 .Download_news_button button {
   background-color: #e32636;
-  font-size: 12px;
-  padding: 7px;
-  border-radius: 10px;
+  font-size: 10px;
+  padding: 6px 10px;
+  border-radius: 50px;
   color: white;
   outline: none;
   border: none;
@@ -548,6 +552,12 @@ a.chip.large:active {
   .author {
     font-size: 14px;
     text-align: left !important;
+  }
+  .news_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
   }
   .Download_news_button button {
     padding: 5px 10px;

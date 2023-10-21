@@ -153,23 +153,28 @@ const Event = () => {
                               <span className="author">
                                 {event.description.substring(0, 120)}...
                               </span>
-                              <div>
-                                <button
-                                  className="chip"
-                                  onClick={() => handleClick(event._id)}
-                                >
-                                  Read More
-                                </button>
-                              </div>
-                              {event?._id === "65321347b5552c3f834edbe5" && (
-                                <div className="Download_news_button btn-3 ">
-                                  <a href="/pdf/Application Form.pdf" download>
-                                    <button>
-                                      <FaFilePdf /> Download PDF
-                                    </button>
-                                  </a>
+                              <div className="news_button">
+                                <div>
+                                  <button
+                                    className="chip"
+                                    onClick={() => handleClick(event._id)}
+                                  >
+                                    Read More
+                                  </button>
                                 </div>
-                              )}
+                                {event?._id === "65321347b5552c3f834edbe5" && (
+                                  <div className="Download_news_button btn-3 ">
+                                    <a
+                                      href="/pdf/Application Form.pdf"
+                                      download
+                                    >
+                                      <button>
+                                        <FaFilePdf /> Download PDF
+                                      </button>
+                                    </a>
+                                  </div>
+                                )}
+                              </div>
                             </header>
                           </article>
                         </li>
