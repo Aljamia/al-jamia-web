@@ -7,8 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRouter } from "next/navigation";
 import { getNews } from "@/app/hooks/UseApi";
-import Image from "next/image";
-import { FaFilePdf } from "react-icons/fa6";
+import SimpleImageSlider from "react-simple-image-slider";
 
 const Event = () => {
   const router = useRouter();
@@ -99,35 +98,20 @@ const Event = () => {
         <Container>
           <Row>
             <Col xl={4}>
-              <div className="event-img pt-3">
-                <Image
-                  src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events[0]?.image}`}
-                  alt=""
-                  width={1000}
-                  layout="responsive"
-                  height={1000}
-                  priority
-                  style={{ borderRadius: "20px" }}
+              <div className="event_slider_section">
+                <SimpleImageSlider
+                  className="event_image_slider"
+                  width={360}
+                  object-fit="contain"
+                  height={500}
+                  images={events.map((event) => ({
+                    url: `https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`,
+                  }))}
+                  showBullets={true}
+                  showNavs={false}
                 />
               </div>
-              <div className="event-btn">
-                <button>Up Coming Events</button>
-                <span className=" m-3 ">{events[0]?.textDate}</span>
-              </div>
-              <div className="event-des">
-                <h4>{events[0]?.title}</h4>
-                <p>{events[0]?.description.substring(0, 100)}...</p>
-              </div>
-              <div className="learn-btn">
-                <button
-                  className="chip m-0"
-                  onClick={() => handleClick(events[0]?._id)}
-                >
-                  Read More
-                </button>
-              </div>
             </Col>
-
             <Col xl={8} className="pt-3">
               <div className="carouselevent">
                 <Slider {...settings} className="event-slick">
