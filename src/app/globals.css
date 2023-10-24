@@ -822,7 +822,7 @@ img {
 }
 
 .faculties-card .facluties_fac_images_fill {
-  object-fit: cover;
+  object-fit: contain;
   height: 22vh;
   width: auto;
 }
