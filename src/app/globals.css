@@ -188,6 +188,7 @@ img {
 }
 .faculties_card_designation {
   text-align: center;
+  font-size: 13px !important;
 }
 .faculties_card_endesignation {
   text-align: center;
@@ -279,19 +280,19 @@ img {
   color: var(--gold, #cc9020);
   text-align: center;
   font-family: unset;
-  font-size: small;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   padding-top: 5px;
 }
 .faculties-card-year {
   color: var(--gold, #cc9020);
-  text-align: center;
+  text-align: center !important;
   font-family: unset;
-  font-size: 9.4px !important;
+  font-size: 11.4px !important;
   font-style: normal;
   font-weight: 300;
-  padding-top: 5px;
+  padding-top: 2px;
 }
 .addres_box {
   border-radius: 9px;
@@ -346,7 +347,7 @@ img {
 @media (max-width: 578px) {
   .container p {
     font-size: 15px;
-    padding: 0px 16px;
+    padding: 0px 13px;
   }
   .container_paragraph {
     font-size: 14px;
@@ -364,7 +365,7 @@ img {
     margin-top: 2em;
   }
   .faculties_card_designation {
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
 
   .social-details {
@@ -625,7 +626,7 @@ img {
   }
   .faculties_card_endesignation {
     text-align: center !important;
-    font-size: 9.438px !important;
+    font-size: 12.438px !important;
   }
   .portfolio-title {
     text-align: center;
@@ -937,7 +938,7 @@ img {
 @media (max-width: 568px) {
   .card {
     margin: 0px;
-    padding: 20px;
+    padding: 15px;
   }
 }
 
@@ -2642,7 +2643,7 @@ h3 {
   }
 
   .faculties-card .facluties_fac_images {
-    height: 18vh !important;
+    height: 12vh !important;
   }
 
   .footer .container {

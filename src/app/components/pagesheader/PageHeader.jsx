@@ -252,7 +252,7 @@ function Main_navebar() {
               </Nav.Link>
               <Nav.Link className="pl-1 pl-md-0 ml-0 ml-md-1"></Nav.Link>
 
-              <Nav.Link href="/contact" className="pl-4 pl-md-0 ml-0 ml-md-4">
+              <Nav.Link href="/" className="pl-4 pl-md-0 ml-0 ml-md-4">
                 <div className="sl-nav">
                   <ul>
                     <li>

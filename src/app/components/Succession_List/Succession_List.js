@@ -49,10 +49,15 @@ const Succession_List = () => {
                           {item.name}
                         </Card.Title>
 
-                        <Card.Text className="faculties-card-year">
-                          {item.designation} ({item.year})
-                        </Card.Text>
-
+                        <Card.Title
+                          className="faculties-card-title"
+                          style={{ color: "black" }}
+                        >
+                          {item.designation}
+                        </Card.Title>
+                        <p className="faculties_card_designation">
+                          ({item.year})
+                        </p>
                         <Button
                           variant="primary btn-primary-faculties"
                           onClick={() => handleShow(item)}
