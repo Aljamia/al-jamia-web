@@ -2643,7 +2643,8 @@ h3 {
   }
 
   .faculties-card .facluties_fac_images {
-    height: 12vh !important;
+    height: 150px;
+    padding: 10px;
   }
 
   .footer .container {
