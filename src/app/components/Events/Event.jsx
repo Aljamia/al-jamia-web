@@ -7,8 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRouter } from "next/navigation";
 import { getNews } from "@/app/hooks/UseApi";
-import SimpleImageSlider from "react-simple-image-slider";
-import CustomSlider from "@/app/customSlider/customSlider";
+import CustomSlider from "@/app/customSlider/CustomSlider";
 
 const Event = () => {
   const router = useRouter();
