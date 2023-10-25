@@ -106,7 +106,7 @@ span {
 
 .event-slick div {
   margin: 0.784px;
-  padding: 0px 5px;
+  padding: 0px 2px;
   background-color: transparent !important;
   opacity: 1;
 }
@@ -571,7 +571,7 @@ a.chip.large:active {
     margin: 0;
   }
   .card_event_slick {
-    height: 500px !important;
+    height: 520px !important;
     background: linear-gradient(#ffffff 100%, #fff 100%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
