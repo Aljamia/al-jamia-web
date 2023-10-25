@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import { useRouter } from "next/navigation";
 import { getNews } from "@/app/hooks/UseApi";
 import SimpleImageSlider from "react-simple-image-slider";
+import CustomSlider from "@/app/customSlider/customSlider";
 
 const Event = () => {
   const router = useRouter();
@@ -99,33 +100,17 @@ const Event = () => {
           <Row>
             <Col xl={4}>
               <div className="event_slider_section">
-                <SimpleImageSlider
-                  className="event_image_slider"
-                  width={350}
-                  height={500}
-                  images={events.map((event) => ({
-                    url: `https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`,
-                  }))}
-                  showBullets={true}
-                  autoPlay={true}
-                  autoPlayInterval={1000}
-                  showNavs={true}
-                  slideDuration={0.5}
-                >
+                <CustomSlider>
                   {events.map((event, index) => (
-                    <div key={index}>
+                    <>
                       <img
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
-                        alt={event.name}
-                        style={{
-                          objectFit: "contain",
-                          width: "100%",
-                          height: "100%",
-                        }}
+                        key={index}
+                        alt="Image Loading"
                       />
-                    </div>
+                    </>
                   ))}
-                </SimpleImageSlider>
+                </CustomSlider>
               </div>
             </Col>
             <Col xl={8} className="pt-3">
