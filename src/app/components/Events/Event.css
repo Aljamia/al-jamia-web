@@ -356,7 +356,8 @@ span {
 }
 
 .news_card img {
-  height: 300px;
+  height: 280px;
+  object-fit: fill;
   width: 100% !important;
 }
 
@@ -570,7 +571,7 @@ a.chip.large:active {
     margin: 0;
   }
   .card_event_slick {
-    height: 540px !important;
+    height: 500px !important;
     background: linear-gradient(#ffffff 100%, #fff 100%);
     background-size: 100% 200%;
     background-position: 0 2.5%;

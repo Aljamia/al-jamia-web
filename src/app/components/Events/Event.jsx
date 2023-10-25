@@ -107,6 +107,7 @@ const Event = () => {
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                         key={index}
                         alt="Image Loading"
+                        loading="lazy"
                       />
                     </>
                   ))}
