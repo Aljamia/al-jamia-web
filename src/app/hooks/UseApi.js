@@ -116,3 +116,8 @@ export const postCareer = async () => {
   const response = await axios.post(`${BASE_URL}/career`);
   return response.data;
 };
+
+export const getEvents = async () => {
+  const response = await axios.post(`${BASE_URL}/events`);
+  return response.data;
+};

@@ -6,20 +6,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRouter } from "next/navigation";
-import { getNews } from "@/app/hooks/UseApi";
+import { getNews, getEvents } from "@/app/hooks/UseApi";
 import CustomSlider from "../customSlider/CustomSlider";
 
 const Event = () => {
   const router = useRouter();
   const [events, setEvents] = useState([]);
+  const [news, setNews] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const fetchNews = async () => {
       const data = await getNews();
-      setEvents(data?.response);
+      setNews(data?.response);
     };
     fetchNews();
+
+    const fetchEvents = async () => {
+      const data = await getEvents();
+      setEvents(data?.response);
+    };
+    fetchEvents();
 
     // Check if the screen width is less than 600px (typical mobile width)
     const handleResize = () => {
@@ -116,7 +123,7 @@ const Event = () => {
             <Col xl={8} className="pt-3">
               <div className="carouselevent">
                 <Slider {...settings} className="event-slick">
-                  {events.map((event) => (
+                  {news.map((event) => (
                     <>
                       <ul>
                         <li
