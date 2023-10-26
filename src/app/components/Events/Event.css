@@ -49,8 +49,12 @@
     background-position: 100% 50%;
   }
 }
-
-.event-btn button {
+.upcoming_events_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.upcoming_gradient_btn {
   border: none;
   border-radius: 20px;
   padding: 6px 10px;

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import "./Event.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -118,6 +118,11 @@ const Event = () => {
                     </>
                   ))}
                 </CustomSlider>
+                <div className="upcoming_events_btn">
+                  <Button className="upcoming_gradient_btn">
+                    Upcoming Events
+                  </Button>
+                </div>
               </div>
             </Col>
             <Col xl={8} className="pt-3">

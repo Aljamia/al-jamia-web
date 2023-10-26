@@ -1080,6 +1080,7 @@ h3 {
 .AboutUspage-campus-title {
   color: var(--light-green-color);
   font-size: 1.5rem;
+  margin-left: 22px;
   font-style: normal;
   padding-bottom: 10px;
   font-weight: 300;
