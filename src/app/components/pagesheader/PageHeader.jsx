@@ -210,9 +210,9 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Student_Life_Services">
                   Student Life & Services
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/Studentrecognition">
+                {/* <NavDropdown.Item href="/Studentrecognition">
                   Recognition & Awards
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 {/* <NavDropdown.Item href="/Student_Representative_Board">
                   Student Representative Board
                 </NavDropdown.Item> */}
