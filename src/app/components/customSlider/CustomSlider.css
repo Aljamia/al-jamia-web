@@ -3,7 +3,7 @@
   top: 20px;
   width: 100%;
   padding: 0;
-  height: 470px;
+  height: auto;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;

@@ -104,7 +104,7 @@ span {
 .carouselevent {
   position: relative;
   bottom: 0px;
-  height: 550px;
+  height: auto;
   overflow-y: hidden;
 }
 
@@ -250,6 +250,33 @@ span {
   transition: 0.5s;
 }
 
+/***** featured badge *****/
+.event_slider_title {
+  padding: 5px 20px;
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+.ribbon {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0px;
+  width: 3rem;
+  height: 1.7rem;
+  border-radius: 5px;
+  color: white;
+  transform: translate3d(0, 0, 0);
+}
+
+.ribbon.ribbon--red {
+  background: linear-gradient(to bottom, #cca552 0%, #e6d374);
+  padding: 3px;
+}
+/***** End featured badge *****/
+
 /* ----------media query for small screen */
 @media screen and (max-width: 550px) {
   .event-title h1 {
@@ -289,6 +316,7 @@ span {
   .carouselevent {
     position: relative;
     bottom: 0px;
+    height: 550px;
   }
 
   .right-event-caro {
@@ -562,8 +590,9 @@ a.chip.large:active {
     text-align: left !important;
   }
   .news_button {
+    margin-top: 5px !important;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 10px;
   }

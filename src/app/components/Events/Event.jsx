@@ -44,7 +44,7 @@ const Event = () => {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: isMobile ? 1 : 3, // Adjust the number of slides to show based on mobile or not
+    slidesToShow: isMobile ? 1 : 4, // Adjust the number of slides to show based on mobile or not
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
@@ -109,12 +109,15 @@ const Event = () => {
                 <CustomSlider>
                   {events.map((event, index) => (
                     <>
-                      <img
-                        src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
-                        key={index}
-                        alt="Image Loading"
-                        loading="lazy"
-                      />
+                      <div>
+                        <img
+                          src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
+                          key={index}
+                          alt="Image Loading"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="event_slider_title">{event.title}</div>
                     </>
                   ))}
                 </CustomSlider>
@@ -159,6 +162,7 @@ const Event = () => {
                                     Read More
                                   </button>
                                 </div>
+                                {/* <div class="ribbon  ribbon--red">New</div> */}
                               </div>
                             </header>
                           </article>
