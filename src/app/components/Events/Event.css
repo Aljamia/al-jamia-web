@@ -587,10 +587,10 @@ a.chip.large:active {
 }
 @media (max-width: 991px) {
   .title h4 {
-    padding: 5px;
+    padding: 3px;
   }
   .author {
-    padding: 5px;
+    padding: 3px;
     font-size: 14px;
     text-align: left !important;
   }
