@@ -44,7 +44,7 @@ const Event = () => {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: isMobile ? 1 : 4, // Adjust the number of slides to show based on mobile or not
+    slidesToShow: isMobile ? 1 : 3, // Adjust the number of slides to show based on mobile or not
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
@@ -149,7 +149,6 @@ const Event = () => {
                               <div className="title">
                                 <h4>{event.title}</h4>
                               </div>
-
                               <span className="author">
                                 {event.description.substring(0, 100)}...
                               </span>

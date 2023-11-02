@@ -102,5 +102,13 @@
 
 .slider__item img {
   width: 100%;
-  height: auto;
+  object-fit: cover;
+  height: 500px;
+}
+
+@media (max-width: 600px) {
+  .slider__item img {
+    object-fit: contain;
+    height: auto;
+  }
 }
