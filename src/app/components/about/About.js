@@ -37,7 +37,7 @@ const About = () => {
       <div className="school-img">
         <div className="btn">
           {" "}
-          <Link href="/https://aljamiaworldcampus.net/">
+          <Link href="https://www.aljamiaworldcampus.net/" target="_blank">
             <motion.button
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
