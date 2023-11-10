@@ -55,7 +55,7 @@ const Event = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -150,7 +150,7 @@ const Event = () => {
                                 <h4>{event.title}</h4>
                               </div>
                               <span className="author">
-                                {event.description.substring(0, 100)}...
+                                {event.description.substring(0, 105)}...
                               </span>
                               <div className="news_button">
                                 <div>

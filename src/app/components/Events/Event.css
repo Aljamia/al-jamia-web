@@ -104,12 +104,12 @@ span {
 .carouselevent {
   position: relative;
   bottom: 0px;
-  height: 500px;
+  height: 550px;
   overflow-y: hidden;
 }
 
 .event-slick div {
-  margin: 0.784px;
+  margin: 1.184px;
   padding: 0px 2px;
   background-color: transparent !important;
   opacity: 1;
