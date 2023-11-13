@@ -10,6 +10,7 @@ import "../../globals.css";
 import Event from "@/app/components/Events/Event";
 import Footer from "@/app/components/footer/Footer";
 import { FaFilePdf } from "react-icons/fa6";
+import Link from "next/link";
 
 function HomePage(eventId) {
   console.log("connected", { eventId });
@@ -66,6 +67,12 @@ function HomePage(eventId) {
                 </a>
               </div>
             )}
+          </div>
+          <div
+            style={{ display: "flex", justifyContent: "center", gap: "20px" }}
+          >
+            <h5>Click here</h5>
+            <a href={events.link}>{events.link}</a>
           </div>
         </Container>
         <div className="news-para">
