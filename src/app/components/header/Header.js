@@ -86,6 +86,7 @@ function Main_navebar() {
                 <NavDropdown.Item href="/about">
                   Al Jamia Al Islamiya
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/faculties">Faculties</NavDropdown.Item>
                 <NavDropdown.Item href="/about#Director_message">
                   Rector's Message
                 </NavDropdown.Item>
@@ -103,7 +104,6 @@ function Main_navebar() {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/Career">Career</NavDropdown.Item>
               </NavDropdown>
-
               <NavDropdown
                 title="Academics"
                 id="basic-nav-dropdown"
@@ -145,7 +145,12 @@ function Main_navebar() {
                   Aljamia Arts & Science College
                 </NavDropdown.Item>
               </NavDropdown>
-
+              <Nav.Link
+                href="/Studentrecognition"
+                className="pl-4 pl-md-0 ml-0 ml-md-4"
+              >
+                Gallery
+              </Nav.Link>
               <NavDropdown
                 title="Library"
                 id="basic-nav-dropdown"
@@ -212,9 +217,6 @@ function Main_navebar() {
                 <NavDropdown.Item href="/Student_Life_Services">
                   Student Life & Services
                 </NavDropdown.Item>
-                {/* <NavDropdown.Item href="/Studentrecognition">
-                  Recognition & Awards
-                </NavDropdown.Item> */}
                 {/* <NavDropdown.Item href="/Student_Representative_Board">
                   Student Representative Board
                 </NavDropdown.Item> */}

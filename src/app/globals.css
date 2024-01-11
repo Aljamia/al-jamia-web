@@ -162,6 +162,7 @@ img {
 }
 
 .TitleStyle {
+  margin-bottom: 20px;
   color: var(--light-green-color);
   font-style: normal;
   font-weight: 300;

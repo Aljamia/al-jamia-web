@@ -83,6 +83,7 @@ function Main_navebar() {
                 <NavDropdown.Item href="/about">
                   Al Jamia Al Islamiya
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/faculties">Faculties</NavDropdown.Item>
                 <NavDropdown.Item href="/about#Director_message">
                   Rector's Message
                 </NavDropdown.Item>
@@ -143,7 +144,12 @@ function Main_navebar() {
                   Aljamia Arts & Science College
                 </NavDropdown.Item>
               </NavDropdown>
-
+              <Nav.Link
+                href="/Studentrecognition"
+                className="pl-4 pl-md-0 ml-0 ml-md-4"
+              >
+                Gallery
+              </Nav.Link>
               <NavDropdown
                 title="Library"
                 id="basic-nav-dropdown"
