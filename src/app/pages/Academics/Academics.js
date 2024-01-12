@@ -28,18 +28,6 @@ const Academics = () => {
       <div>
         <Container>
           <Row>
-            <Col xl={6} lg={6} xs={12}>
-              {/* <div className="AboutUspage-mission-img pt-5">
-                <Image
-                  src="/academics.png"
-                  layout="responsive" // Use layout="responsive" for responsiveness
-                  width={500} // Provide the width of the image
-                  height={800} // Adjust the height as needed to make it taller
-                  alt="Image"
-                  objectFit="cover"
-                />
-              </div> */}
-            </Col>
             <Col xl={6} lg={6} xs={12} className="Academicsstyle">
               <div className="Colleges_div_bg">
                 <h1>Colleges</h1>
@@ -54,9 +42,7 @@ const Academics = () => {
             </Col>
           </Row>
         </Container>
-
         <Courses />
-
         <div className="PreparatoryStyle">
           <h4 className="PreparatoryH4">Preparatory Programme</h4>
           <h2 className="PreparatoryH2">
