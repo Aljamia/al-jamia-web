@@ -86,7 +86,6 @@ function Main_navebar() {
                 <NavDropdown.Item href="/about">
                   Al Jamia Al Islamiya
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/faculties">Faculties</NavDropdown.Item>
                 <NavDropdown.Item href="/about#Director_message">
                   Rector's Message
                 </NavDropdown.Item>
@@ -132,7 +131,7 @@ function Main_navebar() {
                 {/* <NavDropdown.Item href="/Research_Academic">
                   Al Jamia Centre for Research & Academic Excellence
                 </NavDropdown.Item> */}
-                <NavDropdown.Item href="/colleges#Faculty">
+                <NavDropdown.Item href="/faculties">
                   Our Faculties
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/colleges#Students_Council">
