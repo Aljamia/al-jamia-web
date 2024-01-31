@@ -1,11 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { getAboutUs } from "@/app/hooks/UseApi";
-
 import Footer from "@/app/components/footer/Footer";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import Image from "next/image";
-import { Col, Container, Row } from "react-bootstrap";
 import Students_Council_main from "./Students_Council_main";
 
 function Students_Council() {
