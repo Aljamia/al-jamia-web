@@ -57,9 +57,9 @@ function Studentgallery() {
                   <div className="image-container">
                     <motion.figure
                       ref={(el) => (imagesRef.current[index] = el)}
-                      initial={{ opacity: 0, translateY: "100%" }}
+                      initial={{ opacity: 0.5, translateY: "100%" }}
                       animate={{ opacity: 1, translateY: "0%" }}
-                      transition={{ duration: 3.3 }}
+                      transition={{ duration: 2.2 }}
                     >
                       <Image
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
@@ -67,7 +67,7 @@ function Studentgallery() {
                         height={300}
                         layout="responsive"
                         alt={`Picture ${index + 1}`}
-                        loading="eager"
+                        loading="lazy"
                       />
                     </motion.figure>
                   </div>

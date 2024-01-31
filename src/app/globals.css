@@ -162,7 +162,8 @@ img {
 }
 
 .TitleStyle {
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
   color: var(--light-green-color);
   font-style: normal;
   font-weight: 300;
@@ -2508,6 +2509,7 @@ h3 {
   }
 
   .TitleStyle {
+    margin-top: 40px;
     font-size: 1.5rem !important;
   }
 

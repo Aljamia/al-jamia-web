@@ -144,12 +144,6 @@ function Main_navebar() {
                   Aljamia Arts & Science College
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link
-                href="/Studentrecognition"
-                className="pl-4 pl-md-0 ml-0 ml-md-4"
-              >
-                Gallery
-              </Nav.Link>
               <NavDropdown
                 title="Library"
                 id="basic-nav-dropdown"
@@ -252,12 +246,16 @@ function Main_navebar() {
                   Alumni Membership
                 </NavDropdown.Item>
               </NavDropdown>
-
+              <Nav.Link
+                href="/Studentrecognition"
+                className="pl-4 pl-md-0 ml-0 ml-md-4"
+              >
+                Gallery
+              </Nav.Link>
               <Nav.Link href="/contact" className="pl-4 pl-md-0 ml-0 ml-md-4">
                 Contact
               </Nav.Link>
               <Nav.Link className="pl-1 pl-md-0 ml-0 ml-md-1"></Nav.Link>
-
               <Nav.Link href="/" className="pl-4 pl-md-0 ml-0 ml-md-4">
                 <div className="sl-nav">
                   <ul>

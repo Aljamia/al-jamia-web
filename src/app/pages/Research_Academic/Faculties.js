@@ -66,7 +66,6 @@ const Faculties = () => {
           </p>
         </Container>
       </div>
-
       <Footer />
     </div>
   );
