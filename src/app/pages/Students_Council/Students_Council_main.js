@@ -34,7 +34,6 @@ function Students_Council_main() {
                 />
               </div>
             </Col>
-
             <Col xl={12} lg={12} xs={12} id="Students_Council">
               <div
                 className="AboutUspage-mission-title"
