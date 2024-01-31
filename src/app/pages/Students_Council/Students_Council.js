@@ -30,9 +30,7 @@ function Students_Council() {
             alt="Image"
           />
         </div>
-
         <Students_Council_main />
-
         <Footer />
       </div>
     );

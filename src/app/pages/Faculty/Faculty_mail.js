@@ -25,12 +25,10 @@ function Faculty_mail() {
               <div className="AboutUspage-mission-img">
                 <Image
                   src="/faculty image.jpg"
-                  layout="responsive" // Use layout="responsive" for responsiveness
-                  width={500} // Provide the width of the image
-                  height={800} // Adjust the height as needed to make it taller
+                  width={600}
+                  height={330}
                   alt="Image"
-                  objectFit="contain"
-                  className="AboutUspage-vision-img2"
+                  className="AboutUspage-vision-img2 faculty-img"
                 />
               </div>
             </Col>
