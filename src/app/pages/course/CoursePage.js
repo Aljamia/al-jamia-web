@@ -188,9 +188,9 @@ const CoursePage = () => {
             <Centre_for_research_main />
 
             <Row className="course-modalitems">
-              <Col xl={6} xs={12} sm={12}>
+              {/* <Col xl={6} xs={12} sm={12}>
                 <Faculty_mail />
-              </Col>
+              </Col> */}
               <Col xl={6} xs={12} sm={12}>
                 <Students_Council_main />
               </Col>

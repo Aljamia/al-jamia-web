@@ -22,7 +22,7 @@ function Students_Council_main() {
         <Container>
           <Row>
             <Col xl={12} lg={12} xs={12}>
-              <div className="AboutUspage-mission-img">
+              {/* <div className="AboutUspage-mission-img">
                 <Image
                   src="/banner/Students_Council2.png"
                   layout="responsive" // Use layout="responsive" for responsiveness
@@ -31,6 +31,15 @@ function Students_Council_main() {
                   alt="Image"
                   objectFit="cover"
                   className="AboutUspage-vision-img2"
+                />
+              </div> */}
+              <div className="AboutUspage-mission-img">
+                <Image
+                  src="/faculty image.jpg"
+                  width={600}
+                  height={330}
+                  alt="Image"
+                  className="AboutUspage-vision-img2 faculty-img"
                 />
               </div>
             </Col>

@@ -56,10 +56,10 @@ const Faculties = () => {
                         />
                         <Card.Body style={{ minHeight: "60px" }}>
                           <Card.Title className="faculties-card-title">
-                            {item.name}
+                            {item?.name}
                           </Card.Title>
                           <p className="faculties_card_designation">
-                            {item.designation}
+                            {item?.designation}
                           </p>
                         </Card.Body>
                       </Card>
