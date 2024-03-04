@@ -55,26 +55,23 @@ function Vision() {
 
                     <ul className="blog-details-list mt-30">
                       <li>
-                        To produce the sufficient number of scholars competent
-                        in Islamic as well as temporal branches of knowledge.
-                      </li>
-                      <li>
-                        To produce empowered men and women with firm faith in
-                        God, capable of discharging their responsibilities in
-                        the present dynamic world.
-                      </li>
-                      <li>
-                        To design and develop a cohesive, contextually relevant,
-                        and comprehensive curriculum combining the best of the
-                        old and new aspects of knowledge as practiced in
+                        Design and develop cohesive, contextually relevant
+                        and comprehensive Islamic curriculum combining the best
+                        of the old and new aspects of knowledge as practiced in
                         universities around the world.
                       </li>
-
                       <li>
-                        To conceive, design and conduct tailor-made courses and
-                        programs for men and women to help them hone their
-                        skills in the field of Islamic thought and social
-                        sciences with true Islamic candour and character.
+                        To create empowered and sensitized generation who could
+                        peer into the keyhole of tomorrow to build a brave new
+                        world for humanity with abiding Islamic ethos, justice
+                        and values.
+                      </li>
+                      <li>
+                        To produce empowered men and women with firm faith in God,
+                        capable of discharging their responsibilities rhythmically.
+                      </li>
+                      <li>
+                        To contribute to the creation of a truly vibrant ideal society.
                       </li>
                     </ul>
                   </p>
