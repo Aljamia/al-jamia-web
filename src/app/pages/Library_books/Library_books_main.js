@@ -88,6 +88,7 @@ const Library_books_main = () => {
                         height={100}
                         layout="responsive"
                         loading="lazy"
+                        unoptimized={true} 
                       />
                     </div>
                   </div>
