@@ -58,7 +58,8 @@ function Main_navebar() {
       >
         <div className="container">
           <Navbar.Brand href="/">
-            <Image
+            <Image unoptimized={true}
+          unselectable={true}
               src="/al_jamia_logo.png"
               width={350}
               height={80}
@@ -179,7 +180,6 @@ function Main_navebar() {
                 onMouseLeave={handleDropdownLeave}
                 show={hovered === "Admissions"}
               >
-                {" "}
                 <NavDropdown.Item href="/Preparatory_Course">
                   Preparatory Course Admission
                 </NavDropdown.Item>
@@ -231,7 +231,6 @@ function Main_navebar() {
                 onMouseLeave={handleDropdownLeave}
                 show={hovered === "Alumni"}
               >
-                {" "}
                 <NavDropdown.Item href="/Alumni">
                   Alumni Chapters
                 </NavDropdown.Item>

@@ -18,14 +18,13 @@ function Student_Counseling_Service_main() {
   }, []);
   {
     return (
-      <div>
-        <div className="AboutUspage-items">
           <div className="AboutUspage-ourMission">
             <Container>
               <Row>
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={12} xs={12}>
                   <div className="AboutUspage-mission-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Student_CounselingService.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
@@ -33,11 +32,12 @@ function Student_Counseling_Service_main() {
                       alt="Image"
                       objectFit="cover"
                       className="AboutUspage-vision-img2"
+                      style={{height:"auto",width:"100%"}}
                     />
                   </div>
                 </Col>
 
-                <Col xl={6} lg={6} xs={12}>
+                <Col xl={6} lg={12} xs={12}>
                   <div
                     className="AboutUspage-mission-title"
                     id="our-mission-header"
@@ -58,8 +58,6 @@ function Student_Counseling_Service_main() {
               </Row>
             </Container>
           </div>
-        </div>
-      </div>
     );
   }
 }

@@ -29,7 +29,8 @@ const ImageGallery = () => {
         <div className="gallery">
           <div className="gallery__column">
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[0]?.image}`}
                 width={300}
                 height={250}
@@ -42,7 +43,8 @@ const ImageGallery = () => {
             </figure>
 
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[1]?.image}`}
                 width={270}
                 height={200}
@@ -55,7 +57,8 @@ const ImageGallery = () => {
             </figure>
 
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[2]?.image}`}
                 width={350}
                 height={280}
@@ -70,7 +73,8 @@ const ImageGallery = () => {
 
           <div className="gallery__column">
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[3]?.image}`}
                 width={350}
                 height={180}
@@ -83,7 +87,8 @@ const ImageGallery = () => {
             </figure>
 
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[4]?.image}`}
                 width={300}
                 height={250}
@@ -96,7 +101,8 @@ const ImageGallery = () => {
             </figure>
 
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[5]?.image}`}
                 width={200}
                 height={300}
@@ -111,7 +117,8 @@ const ImageGallery = () => {
 
           <div className="gallery__column">
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[6]?.image}`}
                 width={350}
                 height={240}
@@ -124,7 +131,8 @@ const ImageGallery = () => {
             </figure>
 
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[7]?.image}`}
                 width={350}
                 height={228}
@@ -137,7 +145,8 @@ const ImageGallery = () => {
             </figure>
 
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[8]?.image}`}
                 width={350}
                 height={260}
@@ -152,7 +161,8 @@ const ImageGallery = () => {
 
           <div className="gallery__column">
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[9]?.image}`}
                 width={350}
                 height={265}
@@ -165,7 +175,8 @@ const ImageGallery = () => {
             </figure>
 
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[10]?.image}`}
                 width={350}
                 height={240}
@@ -178,7 +189,8 @@ const ImageGallery = () => {
             </figure>
 
             <figure className="gallery__thumb">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${galleryitems[11]?.image}`}
                 width={350}
                 height={220}

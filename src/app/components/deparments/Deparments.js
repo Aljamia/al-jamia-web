@@ -6,6 +6,7 @@ import axios from "axios";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Row, Card, Modal } from "react-bootstrap";
+import Image from "next/image";
 const Departments = () => {
   const [show, setShow] = useState(false);
   const [modalVal, setModalVal] = useState(false);
@@ -90,7 +91,8 @@ const Departments = () => {
             {cardValues.map((department) => (
               <div className="box" key={department.id}>
                 <div className="caro-img">
-                  <img src="book.png" alt="" />
+                  <Image unoptimized={true}
+          unselectable={true} src="book.png" alt="" />
                 </div>
                 <div className="caro-items">
                   <h4 className="caro-des">{department.courseName}</h4>

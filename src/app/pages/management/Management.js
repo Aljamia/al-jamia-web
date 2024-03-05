@@ -36,11 +36,13 @@ const Management = () => {
         <Container>
           <h2 className="Faculties-title">Supreme Council</h2>
           <div className="Faculties-img">
-            <Image
+            <Image unoptimized={true}
+          unselectable={true}
               src="/Rectangle 991.jpg"
               layout="responsive"
               width={1000}
               height={200}
+              style={{height:"50%",width:"100%"}}
               alt="Image"
             />
           </div>

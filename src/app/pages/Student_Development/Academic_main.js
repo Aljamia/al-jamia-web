@@ -27,7 +27,8 @@ function Academic_main() {
               <Row>
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Academic_Careers.JPG"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
@@ -35,6 +36,7 @@ function Academic_main() {
                       alt="Image"
                       objectFit="cover"
                       className="AboutUspage-vision-img2"
+                      style={{height:"50%",width:"100%"}}
                     />
                   </div>
                 </Col>

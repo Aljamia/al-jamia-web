@@ -81,9 +81,10 @@ const Library_books_main = () => {
                 <>
                   <div className="box m-2 caro-box-border" key={index}>
                     <div className="caro-img books">
-                      <Image
+                      <Image unoptimized={true}
+          unselectable={true}
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
-                        alt=""
+                        alt="image"
                         width={100}
                         height={100}
                         layout="responsive"
@@ -105,7 +106,6 @@ const Library_books_main = () => {
               target="_blank"
             >
               <button>
-                {" "}
                 <div className="icon_arrow_abt">
                   <span className="p-3">Explore More</span>
 

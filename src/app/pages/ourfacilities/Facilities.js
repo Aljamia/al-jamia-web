@@ -14,7 +14,8 @@ const Facilities = () => {
         <div className="facilities-title">Our Facilities</div>
       </div>
       <div className="facilities-section-three">
-        <Image
+        <Image unoptimized={true}
+          unselectable={true}
           src="/Rectangle 991.jpg"
           layout="responsive"
           width={1000}
@@ -29,7 +30,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2098.png"
                     width={80}
                     height={80}
@@ -43,7 +45,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2098.png"
                     width={80}
                     height={80}
@@ -59,7 +62,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2098.png"
                     width={80}
                     height={80}
@@ -73,7 +77,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2098.png"
                     width={80}
                     height={80}
@@ -89,7 +94,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2098.png"
                     width={80}
                     height={80}
@@ -103,7 +109,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2098.png"
                     width={80}
                     height={80}
@@ -125,7 +132,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -139,7 +147,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -153,7 +162,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -167,7 +177,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -184,7 +195,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -198,7 +210,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -212,7 +225,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -225,7 +239,8 @@ const Facilities = () => {
               </div>
             </Col>
             <Col xs={12} xl={4}>
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src="/Rectangle 990.jpg"
                 layout="responsive"
                 width={1000}
@@ -241,7 +256,8 @@ const Facilities = () => {
         <Container>
           <Row>
             <Col xl={4} xs={12}>
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src="/Rectangle 990.jpg"
                 layout="responsive"
                 width={1000}
@@ -254,7 +270,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -268,7 +285,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -282,7 +300,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -296,7 +315,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -313,7 +333,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -327,7 +348,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -341,7 +363,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}
@@ -355,7 +378,8 @@ const Facilities = () => {
               <div className="facilities-item-two">
                 <div>
                   {" "}
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Group 2062.svg"
                     width={80}
                     height={80}

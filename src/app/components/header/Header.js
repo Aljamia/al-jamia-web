@@ -57,12 +57,14 @@ function Main_navebar() {
       >
         <div className="container">
           <Navbar.Brand href="/">
-            <Image
+            <Image unoptimized={true}
+          unselectable={true}
               src="/al_jamia_logo.png"
               width={350}
               height={80}
               alt="Picture of the author"
               className="nav-logo "
+              
             />
 
             {/* cssanimation hu__hu__ sequence */}

@@ -46,7 +46,8 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-6 col-lg-3">
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src="/aljamiya_logo.png"
                 width={350}
                 height={80}
@@ -114,7 +115,8 @@ const Footer = () => {
                       href="https://www.facebook.com/aljamiasantapuram"
                       target="_blank"
                     >
-                      <Image
+                      <Image unoptimized={true}
+          unselectable={true}
                         src="/facebook.png"
                         width={350}
                         height={80}
@@ -130,7 +132,8 @@ const Footer = () => {
                       href="https://www.instagram.com/aljamiaalislamiya/"
                       target="_blank"
                     >
-                      <Image
+                      <Image unoptimized={true}
+          unselectable={true}
                         src="/instagram.png"
                         width={350}
                         height={80}
@@ -146,7 +149,8 @@ const Footer = () => {
                       href="https://www.youtube.com/aljamiachannel"
                       target="_blank"
                     >
-                      <Image
+                      <Image unoptimized={true}
+          unselectable={true}
                         src="/youtube.png"
                         width={350}
                         height={80}

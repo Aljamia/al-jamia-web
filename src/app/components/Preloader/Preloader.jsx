@@ -137,7 +137,8 @@ const Preloader = () => {
       </div>
 
       <div>
-        <Image
+        <Image unoptimized={true}
+          unselectable={true}
           src="/al_jamia_logo.png"
           layout="responsive"
           width={500}

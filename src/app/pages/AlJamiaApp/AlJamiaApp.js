@@ -18,7 +18,8 @@ function AlJamiaApp() {
                   target="blank"
                   style={{ textDecoration: "none", color: "white" }}
                 >
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/aljamia_worldcampus_logo_blue.png"
                     layout="intrinsic"
                     width={1000}
@@ -37,7 +38,8 @@ function AlJamiaApp() {
                   target="blank"
                   style={{ textDecoration: "none", color: "white" }}
                 >
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Campus7ERP.png"
                     layout="intrinsic"
                     width={1000}
@@ -56,7 +58,8 @@ function AlJamiaApp() {
                   target="blank"
                   style={{ textDecoration: "none", color: "white" }}
                 >
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/playstor.png"
                     layout="intrinsic"
                     width={1000}

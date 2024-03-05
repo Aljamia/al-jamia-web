@@ -46,7 +46,8 @@ function Centre_for_research_main() {
 
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Research.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
@@ -54,6 +55,7 @@ function Centre_for_research_main() {
                       alt="Image"
                       objectFit="cover"
                       className="AboutUspage-vision-img2"
+                      style={{width:"100%", height:"100%",objectFit:"cover"}}
                     />
                   </div>
                 </Col>

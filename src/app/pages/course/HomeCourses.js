@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Modal, Card } from "react-bootstrap";
 import { getCourse } from "@/app/hooks/UseApi";
 import "../../globals.css";
+import Image from "next/image";
 
 const HomeCourses = () => {
   const [show, setShow] = useState(false);
@@ -30,24 +31,28 @@ const HomeCourses = () => {
           <Card.Img
             variant="top"
             className="portfolio-modal-images"
+            style={{height:"250px",width:"100%"}}
             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
           />
           <Container>
             <div className="course-data-items">
               <span className="course-data-category">
-                <img
+                <img unoptimized={true}
+          unselectable={true}
                   className="icon_pl"
                   src="forbox.svg"
                   alt="photo"
-                  width="auto"
+                  style={{ width: "20px", height: "20px", objectFit: "contain" }}
                 />{" "}
                 {course.category}{" "}
               </span>
               <span className="course-data-duration">
-                <img
+                <img unoptimized={true}
+          unselectable={true}
                   className="icon_pl"
                   src="time.svg"
                   alt="photo"
+                  style={{ width: "20px", height: "20px", objectFit: "contain" }}
                   width="auto"
                 />
                 {course.duration}
@@ -101,16 +106,16 @@ const HomeCourses = () => {
               </Card.Title>
               <Card.Text className="course-cardmodal-desc">
                 <span className="course-modal-category">
-                  <img
+                  <img unoptimized={true}
+          unselectable={true}
                     className="icon_pl"
                     src="forbox.svg"
                     alt="photo"
-                    width="auto"
                   />{" "}
                   {modalVal?.category}{" "}
                 </span>
                 <span className="course-modal-duration">
-                  <img
+                  <img 
                     className="icon_pl"
                     src="time.svg"
                     alt="photo"

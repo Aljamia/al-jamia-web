@@ -25,12 +25,14 @@ function Our_Facilities() {
         <PageHeader />
 
         <div className="AboutUspage-img">
-          <Image
+          <Image unoptimized={true}
+          unselectable={true}
             src="/banner/Facilities_bg.png"
             layout="responsive"
             width={1000}
             height={500}
             alt="Image"
+            style={{height:"50%",width:"100%"}}
           />
         </div>
 
@@ -44,7 +46,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/smart classroom.JPG" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="/banner/smart classroom.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Smart class rooms</h4>
@@ -61,7 +64,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Digital_labs.JPG" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="/banner/Digital_labs.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Digital labs</h4>
@@ -78,7 +82,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Wifi Campus.JPG" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="/banner/Wifi Campus.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Wifi Campus</h4>
@@ -95,7 +100,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Conference2.JPG" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="/banner/Conference2.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Conference Halls</h4>
@@ -112,7 +118,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/SeminarHalls.png" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="banner/SeminarHalls.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Seminar Halls</h4>
@@ -130,7 +137,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Video_conference.JPG" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="banner/Video_conference.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Video conference Hall</h4>
@@ -147,7 +155,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Students Corner.JPG" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="/banner/Students Corner.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Students Corners</h4>
@@ -164,7 +173,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/DigitalStudio.JPG" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="/banner/DigitalStudio.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Digital Studio</h4>
@@ -181,7 +191,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/MentorsHub.JPG" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="/banner/MentorsHub.JPG" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mentors Hub</h4>
@@ -198,7 +209,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Hostels.png" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="banner/Hostels.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Hostels</h4>
@@ -217,7 +229,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="/banner/Mess.png" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="/banner/Mess.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Mess hall</h4>
@@ -235,7 +248,8 @@ function Our_Facilities() {
                 <Col xl={4} lg={6} xs={12}>
                   <div className="box">
                     <div className="caro-img">
-                      <img src="banner/Medical_Rooms.png" alt="" />
+                      <Image unoptimized={true}
+          unselectable={true} src="banner/Medical_Rooms.png" alt="" />
                     </div>
                     <div className="caro-items">
                       <h4 className="caro-des"> Medical Rooms</h4>

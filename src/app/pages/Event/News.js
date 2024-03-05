@@ -94,7 +94,8 @@ const News = () => {
               <h1>{h1Content}</h1>
             </div>
             <div className="news-img">
-              <img src={imgSrc} alt="Loading" />
+              <Image unoptimized={true}
+          unselectable={true} src={imgSrc} alt="Loading" />
             </div>
             <div className="news-para">
               <p>{pContent}</p>
@@ -106,7 +107,8 @@ const News = () => {
             <Row>
               <Col xl={4}>
                 <div className="event-img">
-                  <img src="image 13.png" alt="" width="100%" />
+                  <Image unoptimized={true}
+          unselectable={true} src="image 13.png" alt="" width="100%" />
                 </div>
                 <div className="event-btn">
                   <button>Up Coming Events</button>
@@ -145,7 +147,8 @@ const News = () => {
                             </div>
                           </div>
                           <div className="right-evnt-img">
-                            <img
+                            <Image unoptimized={true}
+          unselectable={true}
                               src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${newsItem.image}`}
                               alt={newsItem.title}
                               width="100%"

@@ -20,10 +20,11 @@ function Students_Council_main() {
     return (
       <div>
         <Container>
-          <Row>
-            <Col xl={12} lg={12} xs={12}>
+          <Row style={{ paddingBottom: "60px" }}>
+            <Col xl={6} lg={6} xs={12}>
               {/* <div className="AboutUspage-mission-img">
-                <Image
+                <Image unoptimized={true}
+          unselectable={true}
                   src="/banner/Students_Council2.png"
                   layout="responsive" // Use layout="responsive" for responsiveness
                   width={500} // Provide the width of the image
@@ -34,27 +35,15 @@ function Students_Council_main() {
                 />
               </div> */}
               <div className="AboutUspage-mission-img">
-                <Image
-                  src="/faculty image.jpg"
-                  width={600}
-                  height={330}
-                  alt="Image"
-                  className="AboutUspage-vision-img2 faculty-img"
-                />
+                <Image unoptimized={true}
+          unselectable={true} src="/faculty image.jpg" width={600} height={330} alt="Image" className="AboutUspage-vision-img2 faculty-img" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
             </Col>
-            <Col xl={12} lg={12} xs={12} id="Students_Council">
-              <div
-                className="AboutUspage-mission-title"
-                id="our-mission-header"
-              >
+            <Col xl={6} lg={6} xs={12} id="Students_Council">
+              <div className="AboutUspage-mission-title" id="our-mission-header">
                 Students Council
               </div>
-              <p className="AboutUspage-mission-desc">
-                Students Council is a committee consists of Al Jamia Authority
-                and Students representatives which discusses the matters
-                regarding academics and other activities in Al Jamia.{" "}
-              </p>
+              <p className="AboutUspage-mission-desc">Students Council is a committee consists of Al Jamia Authority and Students representatives which discusses the matters regarding academics and other activities in Al Jamia. </p>
             </Col>
           </Row>
         </Container>

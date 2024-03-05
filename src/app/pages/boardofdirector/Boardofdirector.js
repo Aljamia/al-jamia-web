@@ -26,7 +26,8 @@ const Boardofdirector = () => {
         <Container>
           <h2 className="Faculties-title">Administrative Council</h2>
           <div className="Faculties-img">
-            <Image
+            <Image unoptimized={true}
+          unselectable={true}
               src="/the library.jpg"
               layout="responsive"
               width={1000}

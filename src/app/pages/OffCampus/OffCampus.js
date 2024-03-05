@@ -24,11 +24,13 @@ function OffCampus() {
       <div>
         <PageHeader />
         <div className="AboutUspage-img">
-          <Image
+          <Image unoptimized={true}
+          unselectable={true}
             src="/banner/OffCampus2.jpeg"
             width={1000}
             height={500}
             alt="Image"
+            
           />
         </div>
 
@@ -39,7 +41,8 @@ function OffCampus() {
                 <Row>
                   <Col xl={6} lg={6} xs={12}>
                     <div className="AboutUspage-mission-img">
-                      <Image
+                      <Image unoptimized={true}
+          unselectable={true}
                         src="/banner/mewatnew.jpg"
                         layout="responsive" // Use layout="responsive" for responsiveness
                         width={500} // Provide the width of the image
@@ -47,6 +50,7 @@ function OffCampus() {
                         alt="Image"
                         objectFit="cover"
                         className="AboutUspage-vision-img2"
+                        style={{height:"80%",width:"100%", objectFit:"cover"}}
                       />
                     </div>
                   </Col>
@@ -98,7 +102,8 @@ function OffCampus() {
                 <Row>
                   <Col xl={6} lg={6} xs={12}>
                     <div className="AboutUspage-mission-img">
-                      <Image
+                      <Image unoptimized={true}
+          unselectable={true}
                         src="/banner/aljamia_malda.jpg"
                         layout="responsive" // Use layout="responsive" for responsiveness
                         width={500} // Provide the width of the image
@@ -106,6 +111,7 @@ function OffCampus() {
                         alt="Image"
                         objectFit="cover"
                         className="AboutUspage-vision-img2"
+                        style={{height:"80%",width:"100%", objectFit:"cover"}}
                       />
                     </div>
                   </Col>

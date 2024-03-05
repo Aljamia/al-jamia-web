@@ -23,11 +23,13 @@ function Vision() {
               <Row>
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Vision.png"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
+                      style={{height:"80%",width:"100%"}}
                       alt="Image"
                       objectFit="cover"
                       className="AboutUspage-vision-img2"

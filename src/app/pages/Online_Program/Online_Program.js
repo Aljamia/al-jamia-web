@@ -33,7 +33,8 @@ function Online_Program() {
       <div>
         <PageHeader />
         <div className="AboutUspage-img">
-          <Image
+          <Image unoptimized={true}
+          unselectable={true}
             src="/banner/WorldCampus.png"
             layout="responsive"
             width={1000}
@@ -155,7 +156,8 @@ function Online_Program() {
               <Row>
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Teachings of Jesus Christ.jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
@@ -242,7 +244,8 @@ function Online_Program() {
 
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Ulum al Quran (Intermediate).jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
@@ -337,7 +340,8 @@ function Online_Program() {
 
                 <Col xl={6} lg={12} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Ulum al Quran (Beginner).jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
@@ -377,7 +381,8 @@ function Online_Program() {
                 </Col>
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img mt-1">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Islamic Finance.jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
@@ -493,7 +498,8 @@ function Online_Program() {
 
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Study of Prophetic Tradition.jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
@@ -587,7 +593,8 @@ function Online_Program() {
 
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Maqasid al-Sharia.jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
@@ -675,7 +682,8 @@ function Online_Program() {
 
                 <Col xl={6} lg={12} xs={12}>
                   <div className="AboutUspage-mission-img mt-5">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Maqasid al-Sharia_Intermediate.jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image

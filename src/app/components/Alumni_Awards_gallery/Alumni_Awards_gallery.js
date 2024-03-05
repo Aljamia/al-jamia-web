@@ -29,7 +29,8 @@ const Alumni_Awards_gallery = () => {
         {Awards.map((item, index) => (
           <>
             <figure className="gallery__thumb" key={index}>
-              <Image
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
                 width={350}
                 height={240}

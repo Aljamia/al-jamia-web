@@ -18,7 +18,8 @@ function World_Campus() {
                   target="blank"
                   style={{ textDecoration: "none", color: "white" }}
                 >
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/aljamia_worldcampus_logo.png"
                     layout="intrinsic"
                     width={1000}

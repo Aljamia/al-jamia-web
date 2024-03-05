@@ -38,7 +38,8 @@ const Venture = () => {
               <>
                 <div className="card" key={index}>
                   <div className="image">
-                    <img
+                    <Image unoptimized={true}
+          unselectable={true}
                       src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${venture.image}`}
                       alt="image"
                     />

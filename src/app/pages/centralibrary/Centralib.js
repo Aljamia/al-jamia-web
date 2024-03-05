@@ -15,12 +15,14 @@ const Centralib = () => {
         <PageHeader />
 
         <div className="AboutUspage-img">
-          <Image
+          <Image unoptimized={true}
+          unselectable={true}
             src="/banner/Publications.jpg"
             layout="responsive"
             width={1000}
             height={500}
             alt="Image"
+            style={{height:"80%",width:"100%"}}
           />
         </div>
 
@@ -34,34 +36,40 @@ const Centralib = () => {
             <Row>
               <Col xl={4} lg={4} xs={12}>
                 <div className="Faculties-img">
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/banner/Central_Library5.JPG"
                     layout="responsive"
                     width={1000}
                     height={200}
+                    style={{height:"80%",width:"100%"}}
                     alt="Image"
                   />
                 </div>
               </Col>
               <Col xl={4} lg={4} xs={12}>
                 <div className="Faculties-img">
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/banner/Central_Library2.png"
                     layout="responsive"
                     width={1000}
                     height={200}
+                    style={{height:"80%",width:"100%"}}
                     alt="Image"
                   />
                 </div>
               </Col>
               <Col xl={4} lg={4} xs={12}>
                 <div className="Faculties-img">
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/banner/Central_Library3.png"
                     layout="responsive"
                     width={1000}
                     height={200}
                     alt="Image"
+                    style={{height:"80%",width:"100%"}}
                   />
                 </div>
               </Col>

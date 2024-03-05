@@ -16,11 +16,13 @@ function Admission() {
       <PageHeader />
 
       <div className="AboutUspage-img">
-        <Image
+        <Image unoptimized={true}
+          unselectable={true}
           src="/image 7.png"
           layout="responsive"
           width={1000}
           height={500}
+          style={{height:"50%",width:"100%"}}
           alt="Image"
         />
       </div>

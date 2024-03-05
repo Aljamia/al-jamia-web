@@ -75,13 +75,15 @@ const Publications_books_main = () => {
                 <>
                   <div className=" box m-2 caro-box-border" key={index}>
                     <div className="caro-img books">
-                      <Image
+                      <Image unoptimized={true}
+          unselectable={true}
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
                         alt=""
                         width={100}
                         height={100}
                         layout="responsive"
                         loading="lazy"
+                        style={{height:"auto",width:"100%"}}
                       />
                     </div>
                   </div>

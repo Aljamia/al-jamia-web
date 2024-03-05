@@ -17,37 +17,43 @@ const Digitallibrary = () => {
               <Row>
                 <Col xl={4} lg={4} xs={12}>
                   <div className="Faculties-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Wifi Campus.JPG"
                       layout="responsive"
                       width={1000}
                       height={200}
                       alt="Image"
                       loading="lazy"
+                      style={{height:"80%",width:"100%"}}
                     />
                   </div>
                 </Col>
                 <Col xl={4} lg={4} xs={12}>
                   <div className="Faculties-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Digital_labs.JPG"
                       layout="responsive"
                       width={1000}
                       height={200}
                       alt="Image"
                       loading="lazy"
+                      style={{height:"80%",width:"100%"}}
                     />
                   </div>
                 </Col>
                 <Col xl={4} lg={4} xs={12}>
                   <div className="Faculties-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/Digital_labs3.png"
                       layout="responsive"
                       width={1000}
                       height={200}
                       alt="Image"
                       loading="lazy"
+                      style={{height:"80%",width:"100%"}}
                     />
                   </div>
                 </Col>

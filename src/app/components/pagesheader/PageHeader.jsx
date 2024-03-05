@@ -57,7 +57,8 @@ function Main_navebar() {
       >
         <div className="container">
           <Navbar.Brand href="/">
-            <Image
+            <Image unoptimized={true}
+          unselectable={true}
               src="/al_jamia_logo.png"
               width={350}
               height={80}

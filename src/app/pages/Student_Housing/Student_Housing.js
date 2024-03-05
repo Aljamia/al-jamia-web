@@ -22,12 +22,14 @@ function Student_Housing() {
       <div>
         <PageHeader />
         <div className="AboutUspage-img">
-          <Image
+          <Image unoptimized={true}
+          unselectable={true}
             src="/banner/Hostels1.png"
             layout="responsive"
             width={1000}
             height={500}
             alt="Image"
+            style={{height:"50%",width:"100%"}}
           />
         </div>
 

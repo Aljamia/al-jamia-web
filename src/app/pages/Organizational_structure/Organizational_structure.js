@@ -34,11 +34,13 @@ const Organizational_structure = () => {
     <div>
       <PageHeader />
       <div className="AboutUspage-img">
-        <Image
+        <Image unoptimized={true}
+          unselectable={true}
           src="/banner/Facilities.png"
           layout="responsive"
           width={1000}
           height={500}
+          style={{height:"50%",width:"100%"}}
           alt="Image"
           loading="lazy"
         />

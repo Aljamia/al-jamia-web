@@ -40,11 +40,13 @@ function Studentgallery() {
     <div>
       <PageHeader />
       <div className="AboutUspage-img">
-        <Image
+        <Image unoptimized={true}
+          unselectable={true}
           src="/banner/Recognition_Awards.png"
           layout="responsive"
           width={1000}
           height={500}
+          style={{height:"50%",width:"100%"}}
           alt="Image"
         />
       </div>
@@ -61,7 +63,8 @@ function Studentgallery() {
                       animate={{ opacity: 1, translateY: "0%" }}
                       transition={{ duration: 2.2 }}
                     >
-                      <Image
+                      <Image unoptimized={true}
+          unselectable={true}
                         src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${item?.image}`}
                         width={300}
                         height={300}

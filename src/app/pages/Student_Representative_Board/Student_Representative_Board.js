@@ -24,7 +24,8 @@ function Student_Representative_Board() {
       <div>
         <PageHeader />
         <div className="AboutUspage-img">
-          <Image
+          <Image unoptimized={true}
+          unselectable={true}
             src="/image 7.png"
             layout="responsive"
             width={1000}

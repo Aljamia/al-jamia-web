@@ -30,7 +30,10 @@ const AboutUs = () => {
           layout="responsive"
           width={1000}
           height={500}
+          style={{height:"50%",width:"100%"}}
           alt="Image"
+          unoptimized={true}
+          unselectable={true}
         />
       </div>
 

@@ -11,11 +11,13 @@ function Research() {
       <PageHeader />
 
       <div className="AboutUspage-img">
-        <Image
+        <Image unoptimized={true}
+          unselectable={true}
           src="/image 7.png"
           layout="responsive"
           width={1000}
           height={500}
+          style={{height:"50%",width:"100%"}}
           alt="Image"
         />
       </div>
@@ -25,7 +27,8 @@ function Research() {
             <Row>
               <Col xl={6} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/vision.png"
                     layout="responsive" // Use layout="responsive" for responsiveness
                     width={500} // Provide the width of the image

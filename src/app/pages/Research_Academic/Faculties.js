@@ -29,7 +29,8 @@ const Faculties = () => {
             Al Jamia Centre for Research & Academic Excellence
           </h2>
           <div className="Faculties-img">
-            <Image
+            <Image unoptimized={true}
+          unselectable={true}
               src="/banner/Facilities.png"
               layout="responsive"
               width={1000}

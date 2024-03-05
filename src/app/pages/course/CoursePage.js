@@ -38,13 +38,8 @@ const CoursePage = () => {
       <PageHeader />
 
       <div className="AboutUspage-img">
-        <Image
-          src="/banner/aljamia.png"
-          layout="responsive"
-          width={1000}
-          height={500}
-          alt="Image"
-        />
+        <Image unoptimized={true}
+          unselectable={true} src="/banner/aljamia.png" layout="responsive" width={1000} height={500} style={{ height: "50%", width: "100%" }} alt="Image" />
       </div>
 
       <div>
@@ -55,12 +50,7 @@ const CoursePage = () => {
                 <div className="about-Title m-0">
                   <h1>Colleges</h1>
                 </div>
-                <p className="about-description">
-                  Al Jamia offers good academic programs with a few
-                  specializations to meet the needs of both the Nation and
-                  Society. It includes the Preparatory program, two Bachelor
-                  programs, three Masters programs and one Diploma program.
-                </p>
+                <p className="about-description">Al Jamia offers good academic programs with a few specializations to meet the needs of both the Nation and Society. It includes the Preparatory program, two Bachelor programs, three Masters programs and one Diploma program.</p>
               </Container>
             </>
           </div>
@@ -70,52 +60,31 @@ const CoursePage = () => {
                 {cardValues.map((course) => (
                   <>
                     <Card className="portfolio-card" key={course.id}>
-                      <Card.Img
-                        variant="top"
-                        className="portfolio-modal-images"
-                        src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`}
-                      />
+                      <Card.Img variant="top" className="portfolio-modal-images" src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${course.image}`} style={{ width: "auto", height: "200px" }} />
                       <Container>
                         <div className="course-data-items">
                           <span className="course-data-category">
-                            <img
-                              className="icon_pl"
-                              src="forbox.svg"
-                              alt="photo"
-                              width="auto"
-                            />{" "}
-                            {course.category}{" "}
+                            <img unoptimized={true}
+          unselectable={true} className="icon_pl" src="forbox.svg" alt="photo" width="auto" style={{ width: "20px", height: "20px", objectFit: "contain" }} /> {course.category}{" "}
                           </span>
 
                           <span className="course-data-duration">
-                            <img
-                              className="icon_pl"
-                              src="time.svg"
-                              alt="photo"
-                              width="auto"
-                            />
+                            <img unoptimized={true}
+          unselectable={true} className="icon_pl" src="time.svg" alt="photo" width="auto" style={{ width: "20px", height: "20px", objectFit: "contain" }} />
                             {course.duration}
                           </span>
                         </div>
                       </Container>
                       <Card.Body>
                         <Card.Title>
-                          <h2 className="portfolio-title">
-                            {course.courseName}
-                          </h2>
+                          <h2 className="portfolio-title">{course.courseName}</h2>
                         </Card.Title>
                         <Card.Text>
-                          <p className="portfolio-text">
-                            {course.description.substring(0, 150)}...
-                          </p>
+                          <p className="portfolio-text">{course.description.substring(0, 150)}...</p>
                         </Card.Text>
                       </Card.Body>
                       <div className="center_div mb-4">
-                        <button
-                          variant="primary btn-primary"
-                          className="portfolio-btn More_btn"
-                          onClick={() => handleShow(course)}
-                        >
+                        <button variant="primary btn-primary" className="portfolio-btn More_btn" onClick={() => handleShow(course)}>
                           {" "}
                           <span className="">More Details</span>{" "}
                         </button>
@@ -123,49 +92,27 @@ const CoursePage = () => {
                     </Card>
                   </>
                 ))}
-                <Modal
-                  key={modalVal?.id}
-                  show={show}
-                  onHide={handleClose}
-                  size="lg"
-                  className="Course-modal"
-                >
+                <Modal key={modalVal?.id} show={show} onHide={handleClose} size="lg" className="Course-modal">
                   <Modal.Header closeButton></Modal.Header>
                   <Modal.Body>
                     <Row className="course-modalitems">
                       <Col xl={12} xs={12} sm={12}>
                         <Card className="faculties-cardmodal shadow-sm">
-                          <Card.Img
-                            variant="top"
-                            className="course-card-modalimages"
-                            src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`}
-                          />
+                          <Card.Img variant="top" className="course-card-modalimages" src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${modalVal?.image}`} />
                         </Card>
                       </Col>
                       <Col xl={12} xs={12} sm={12}>
                         <Card.Title className="course-cardmodal-title pt-2">
-                          <h2 className="portfolio-title">
-                            {modalVal?.courseName}{" "}
-                          </h2>
+                          <h2 className="portfolio-title">{modalVal?.courseName} </h2>
                         </Card.Title>
                         <Card.Text className="course-cardmodal-desc">
                           <span className="course-modal-category">
-                            <img
-                              className="icon_pl"
-                              src="forbox.svg"
-                              alt="photo"
-                              width="auto"
-                            />{" "}
-                            {modalVal?.category}{" "}
+                            <Image unoptimized={true}
+          unselectable={true} className="icon_pl" src="forbox.svg" alt="photo"  /> {modalVal?.category}{" "}
                           </span>
                           <span className="course-modal-duration">
-                            <img
-                              className="icon_pl"
-                              src="time.svg"
-                              alt="photo"
-                              width="auto"
-                            />{" "}
-                            {modalVal?.duration}
+                            <Image unoptimized={true}
+          unselectable={true} className="icon_pl" src="time.svg" alt="photo" style={{ width: "100%", height: "100%", objectFit: "cover" }} /> {modalVal?.duration}
                           </span>
                         </Card.Text>
 
@@ -186,15 +133,7 @@ const CoursePage = () => {
             <Information_Technology />
             <Centre_for_hr_main />
             <Centre_for_research_main />
-
-            <Row className="course-modalitems">
-              {/* <Col xl={6} xs={12} sm={12}>
-                <Faculty_mail />
-              </Col> */}
-              <Col xl={6} xs={12} sm={12}>
-                <Students_Council_main />
-              </Col>
-            </Row>
+            <Students_Council_main />
           </Container>
         </div>
       </div>

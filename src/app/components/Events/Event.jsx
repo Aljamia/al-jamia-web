@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import { useRouter } from "next/navigation";
 import { getNews, getEvents } from "@/app/hooks/UseApi";
 import CustomSlider from "../customSlider/CustomSlider";
+import Image from "next/image";
 
 const Event = () => {
   const router = useRouter();
@@ -110,7 +111,8 @@ const Event = () => {
                   {events.map((event, index) => (
                     <>
                       <div>
-                        <img
+                        <img unoptimized={true}
+          unselectable={true}
                           src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                           key={index}
                           alt="Image Loading"
@@ -138,7 +140,8 @@ const Event = () => {
                           className="card card_event_slick news_card"
                           key={event._id}
                         >
-                          <img
+                          <img unoptimized={true}
+          unselectable={true}
                             src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
                             alt=""
                             className="event-img-items featured-image"

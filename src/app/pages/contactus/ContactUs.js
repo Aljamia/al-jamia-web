@@ -183,7 +183,8 @@ const ContactUs = () => {
           <Row>
             <Col xl={4}>
               <div className="addres_box contactbox_shodo">
-                <img src="location_icon.svg" />
+                <img unoptimized={true}
+          unselectable={true} src="location_icon.svg" />
                 <p>
                   Santhapuram Pattikkad PO, Malappuram DT Kerala, India - 679325
                 </p>
@@ -191,13 +192,15 @@ const ContactUs = () => {
             </Col>
             <Col xl={4}>
               <div className="addres_box contactbox_shodo">
-                <img src="mail_icon.svg" />
+                <img unoptimized={true}
+          unselectable={true} src="mail_icon.svg" />
                 <p>mail@aljamia.net</p>
               </div>
             </Col>
             <Col xl={4}>
               <div className="addres_box contactbox_shodo">
-                <img src="call_icon.svg" />
+                <img unoptimized={true}
+          unselectable={true} src="call_icon.svg" />
                 <p>
                   +91 9656612612
                   <br /> +91 4933270439

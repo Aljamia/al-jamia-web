@@ -42,7 +42,8 @@ function HomePage(eventId) {
               <h1>{events.title}</h1>
             </div>
             <div className="news_img">
-              <img
+              <Image unoptimized={true}
+          unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events.image}`}
                 alt=""
               />

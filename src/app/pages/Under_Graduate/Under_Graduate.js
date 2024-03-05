@@ -25,12 +25,14 @@ function Under_Graduate() {
       <div>
         <PageHeader />
         <div className="AboutUspage-img">
-          <Image
+          <Image unoptimized={true}
+          unselectable={true}
             src="/banner/Under_Graduate1.jpg"
             layout="responsive"
             width={1000}
             height={500}
             alt="Image"
+            style={{height:"50%",width:"100%"}}
           />
         </div>
 

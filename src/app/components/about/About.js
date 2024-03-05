@@ -4,6 +4,7 @@ import "./About.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { getAboutUs } from "@/app/hooks/UseApi";
+import Image from "next/image";
 
 const About = () => {
   const [aboutdata, setAboutData] = useState({});
@@ -65,7 +66,15 @@ const About = () => {
           </Link>
         </div>
         <div className="image">
-          <img src="banner/aljamia.png" alt="photo" width="100%" />
+        <Image
+  unoptimized={true}
+  unselectable={true}
+  src="banner/aljamia.png"
+  alt="photo"
+  width={1000}
+  height={100}
+  style={{ width: "100%", height: "auto" }}
+/>
         </div>
       </div>
     </div>

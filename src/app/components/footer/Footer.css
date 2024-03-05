@@ -168,7 +168,9 @@ li {
   font-weight: 300;
   color: #fff;
 }
-
+.use-links li a svg{
+  height: 15px;
+} 
 .use-links li a:hover {
   color: #000;
   text-decoration: none !important;
@@ -213,7 +215,9 @@ li {
   display: flex;
   text-decoration: none;
 }
-
+.address-links svg {
+  height: 15px;
+}
 .address-links {
   line-height: 32px;
   color: #fff;

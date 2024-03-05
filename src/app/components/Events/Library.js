@@ -4,12 +4,14 @@ import React from "react";
 import { Col, Container } from "react-bootstrap";
 import "./Event.css";
 import Link from "next/link";
+import Image from "next/image";
 const Library = () => {
   return (
     <div className="library-event">
       <div className="event-section-2">
         <div className="event-s-img ">
-          <image src="Mask group.png" alt="" width="100%" />
+          <img unoptimized={true}
+          unselectable={true} src="Mask group.png" alt="" width="100%" />
         </div>
         <Container className="headlibrary">
           <div className="row">
@@ -30,7 +32,8 @@ const Library = () => {
                   <source src="banner/Library_video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                {/* <img src="libraryHome.png" alt="photo" width="100%" /> */}
+                {/* <Image unoptimized={true}
+          unselectable={true} src="libraryHome.png" alt="photo" width="100%" /> */}
               </div>
             </Col>
             <Col xl={6} lg={6} xs={12}>

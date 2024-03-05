@@ -29,11 +29,13 @@ const Director = () => {
           <Row>
             <Col xl={5}>
               <div className="director-img">
-                <Image
+                <Image unoptimized={true}
+          unselectable={true}
                   src="/person.png"
                   layout="intrinsic"
                   width={1000}
                   height={500}
+                  style={{height:"50%",width:"100%"}}
                   priority
                   alt="Image"
                 />

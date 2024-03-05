@@ -23,7 +23,8 @@ function Faculty_mail() {
           <Row>
             <Col xl={12} lg={12} xs={12}>
               <div className="AboutUspage-mission-img">
-                <Image
+                <Image unoptimized={true}
+          unselectable={true}
                   src="/faculty image.jpg"
                   width={600}
                   height={330}

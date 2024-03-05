@@ -12,7 +12,8 @@ function faqbox() {
           <p className="p-0">OUR</p>
           <h2>FAQ</h2>
 
-          <Image
+          <Image unoptimized={true}
+          unselectable={true}
             src="/FAQ.png"
             layout="responsive"
             width={1000}

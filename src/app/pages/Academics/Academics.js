@@ -15,13 +15,8 @@ const Academics = () => {
     <div>
       <PageHeader />
       <div className="AboutUspage-img">
-        <Image
-          src="/image 7.png"
-          layout="responsive"
-          width={1000}
-          height={500}
-          alt="Image"
-        />
+        <Image unoptimized={true}
+          unselectable={true} src="/image 7.png" layout="responsive" width={1000} height={500} style={{ height: "50%", width: "100%" }} alt="Image" />
       </div>
 
       <div>
@@ -30,13 +25,7 @@ const Academics = () => {
             <Col xl={6} lg={6} xs={12} className="Academicsstyle">
               <div className="Colleges_div_bg">
                 <h1>Colleges</h1>
-                <p>
-                  Al Jamia offers excellent academic programs with
-                  specializations designed to address the needs of both the
-                  nation and society. These programs encompass the Preparatory
-                  Program, Bachelor's Programs, Master's Programs, Diplomas, and
-                  Certificates.
-                </p>
+                <p>Al Jamia offers excellent academic programs with specializations designed to address the needs of both the nation and society. These programs encompass the Preparatory Program, Bachelor's Programs, Master's Programs, Diplomas, and Certificates.</p>
               </div>
             </Col>
           </Row>
@@ -52,7 +41,8 @@ const Academics = () => {
             <Row>
               <Col xl={3} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/chrd.png"
                     layout="responsive" // Use layout="responsive" for responsiveness
                     width={500} // Provide the width of the image
@@ -69,7 +59,8 @@ const Academics = () => {
               </Col>
               <Col xl={3} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/chrd.png"
                     layout="responsive" // Use layout="responsive" for responsiveness
                     width={500} // Provide the width of the image
@@ -86,7 +77,8 @@ const Academics = () => {
               </Col>
               <Col xl={3} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Registration.png"
                     layout="responsive" // Use layout="responsive" for responsiveness
                     width={500} // Provide the width of the image
@@ -103,7 +95,8 @@ const Academics = () => {
               </Col>
               <Col xl={3} lg={6} xs={12}>
                 <div className="AboutUspage-mission-img">
-                  <Image
+                  <Image unoptimized={true}
+          unselectable={true}
                     src="/Online.png"
                     layout="responsive" // Use layout="responsive" for responsiveness
                     width={500} // Provide the width of the image

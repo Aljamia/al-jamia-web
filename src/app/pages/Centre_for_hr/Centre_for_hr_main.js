@@ -25,13 +25,15 @@ function Centre_for_hr_main() {
               <Row>
                 <Col xl={6} lg={6} xs={12}>
                   <div className="AboutUspage-mission-img">
-                    <Image
+                    <Image unoptimized={true}
+          unselectable={true}
                       src="/banner/hr.jpg"
                       layout="responsive" // Use layout="responsive" for responsiveness
                       width={500} // Provide the width of the image
                       height={800} // Adjust the height as needed to make it taller
                       alt="Image"
                       objectFit="cover"
+                      style={{width:"100%", height:"100%",objectFit:"cover"}}
                       className="AboutUspage-vision-img2"
                     />
                   </div>
