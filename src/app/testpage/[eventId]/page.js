@@ -11,6 +11,7 @@ import Event from "@/app/components/Events/Event";
 import Footer from "@/app/components/footer/Footer";
 import { FaFilePdf } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 function HomePage(eventId) {
   console.log("connected", { eventId });

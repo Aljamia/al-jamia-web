@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import "./Venture.css";
 import Link from "next/link";
 import { getventures } from "@/app/hooks/UseApi";
+import Image from "next/image";
 const Venture = () => {
   const [ventures, setVentures] = useState([]);
 
