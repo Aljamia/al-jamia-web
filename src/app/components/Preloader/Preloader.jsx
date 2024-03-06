@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./Preloader.css";
 import Image from "next/image";
 
@@ -51,7 +51,7 @@ const Preloader = () => {
     }
   };
 
-  const tileIndexToMove = () => {
+  const tileIndexToMove = useCallback(() => {
     switch (state.stateNumber) {
       case 0:
         return 7;
@@ -72,9 +72,9 @@ const Preloader = () => {
       default:
         return 0;
     }
-  };
+  },[state.stateNumber]);
 
-  const positionForTile = (radioCommand) => {
+  const positionForTile = useCallback((radioCommand) => {
     for (const position in state.positions) {
       const tile = state.positions[position];
       if (tile === radioCommand) {
@@ -82,9 +82,9 @@ const Preloader = () => {
       }
     }
     return null;
-  };
+  },[state.positions]);
 
-  const callNext = () => {
+  const callNext = useCallback(() => {
     const currentPositions = state.positions;
     const emptyIndex = positionForTile(null);
     const indexToMove = tileIndexToMove();
@@ -93,59 +93,40 @@ const Preloader = () => {
       [indexToMove]: null,
       [emptyIndex]: currentPositions[indexToMove],
     };
-
+  
     const currentState = state.stateNumber;
     const nextState = currentState === 7 ? 0 : currentState + 1;
-
+  
     setState({ stateNumber: nextState, positions: newPositions });
-  };
-
+  }, [state, positionForTile, tileIndexToMove]);
+  
   useEffect(() => {
     const timer = setInterval(() => {
       callNext();
     }, TIMER);
-
+  
     return () => clearInterval(timer);
-  }, [state]);
-
+  }, [callNext]);
+  
   const renderTiles = () => {
-    return ["alpha", "bravo", "charlie", "delta", "echo", "foxtrot"].map(
-      (radioCommand) => {
-        const pos = positionForTile(radioCommand);
-        const styles = {
-          transition: TRANSITION + "s cubic-bezier(0.86, 0, 0.07, 1)",
-          WebkitClipPath: clipPathForPosition(pos),
-        };
-        return (
-          <div
-            key={"rect-" + radioCommand}
-            style={styles}
-            className={"rect " + radioCommand}
-          />
-        );
-      }
-    );
+    return ["alpha", "bravo", "charlie", "delta", "echo", "foxtrot"].map((radioCommand) => {
+      const pos = positionForTile(radioCommand);
+      const styles = {
+        transition: TRANSITION + "s cubic-bezier(0.86, 0, 0.07, 1)",
+        WebkitClipPath: clipPathForPosition(pos),
+      };
+      return <div key={"rect-" + radioCommand} style={styles} className={"rect " + radioCommand} />;
+    });
   };
 
   return (
     <div className="wrapper_items_center">
-      <div
-        style={{ width: DEF_SIZE + "px", height: DEF_SIZE + "px" }}
-        className="sw-loader__wrapper"
-      >
+      <div style={{ width: DEF_SIZE + "px", height: DEF_SIZE + "px" }} className="sw-loader__wrapper">
         <div className="sw-loader__holder">{renderTiles()}</div>
       </div>
 
       <div>
-        <Image unoptimized={true}
-          unselectable={true}
-          src="/al_jamia_logo.png"
-          layout="responsive"
-          width={500}
-          className="Preloader_img flash"
-          height={500}
-          alt="Image"
-        />
+        <Image unoptimized={true} unselectable={true} src="/al_jamia_logo.png" layout="responsive" width={500} className="Preloader_img flash" height={500} alt="Image" />
       </div>
     </div>
   );

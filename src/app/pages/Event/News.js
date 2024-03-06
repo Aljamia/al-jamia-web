@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import PageHeader from "@/app/components/pagesheader/PageHeader";
 import "../../globals.css";
+import Image from "next/image";
 
 const News = () => {
   var settings = {
