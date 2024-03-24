@@ -96,7 +96,7 @@ const Library_books_main = () => {
               ))}
             </Slider>
           </div>{" "}
-          <div
+          {/* <div
             className="btn"
             style={{ display: "flex", justifyContent: "center" }}
           >
@@ -125,7 +125,7 @@ const Library_books_main = () => {
                 </div>{" "}
               </button>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="mb-5"> </div>
       </div>
