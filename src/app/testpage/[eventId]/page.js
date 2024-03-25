@@ -27,7 +27,7 @@ function HomePage(eventId) {
       })
       .then((response) => {
         setEvents(response.data.response);
-        console.log("updatenews data", response.data.response); // Log the data to the console
+        console.log("updatenews data", response.data.response);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, [eventId.params.eventId]);
@@ -43,10 +43,13 @@ function HomePage(eventId) {
               <h1>{events.title}</h1>
             </div>
             <div className="news_img">
-              <Image unoptimized={true}
-          unselectable={true}
+              <Image
+                unoptimized={true}
+                unselectable={true}
                 src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${events.image}`}
                 alt=""
+                width={100}
+                height={500}
               />
             </div>
             <div className="news-para">
@@ -71,10 +74,15 @@ function HomePage(eventId) {
             )}
           </div>
           <div
-            style={{ display: "flex", justifyContent: "center", gap: "20px" }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              height: "40px",
+            }}
           >
-            <h5>Click here</h5>
-            <a href={events.link}>{events.link}</a>
+            <a href={events.link}>
+              <button className="click-button">Click here</button>
+            </a>
           </div>
         </Container>
         <div className="news-para">
