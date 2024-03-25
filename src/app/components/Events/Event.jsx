@@ -105,7 +105,7 @@ const Event = () => {
       <div className="event-first-section">
         <Container>
           <Row>
-            <Col xl={4}>
+            <Col xl={5}>
               <div className="event_slider_section">
                 <CustomSlider>
                   {events.map((event, index) => (
@@ -130,7 +130,7 @@ const Event = () => {
                 </div>
               </div>
             </Col>
-            <Col xl={8} className="pt-3">
+            <Col xl={7} className="pt-3">
               <div className="carouselevent">
                 <Slider {...settings} className="event-slick">
                   {news.map((event) => (
