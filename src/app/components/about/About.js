@@ -26,7 +26,7 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <div className="container">
-          <div className="about-Title">
+          <div className="about-Title title-head">
             <h1 className="pt-1">Welcome to Al Jamia Al Islamiya</h1>
           </div>
           <div className="about-description">

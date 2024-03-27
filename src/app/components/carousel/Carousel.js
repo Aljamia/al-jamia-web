@@ -15,6 +15,16 @@ const CarouselComponent = () => {
     fetchNotification();
   }, []);
 
+  const handleReadMoreClick = () => {
+    const rowiseElement = document.querySelector(".rowise");
+    if (rowiseElement) {
+      rowiseElement.scroll({
+        top: rowiseElement.scrollHeight,
+        behavior: "smooth"
+      });
+    }
+  };
+  
   return (
     <div className="header" style={{ position: "relative" }}>
       <Header />
@@ -23,7 +33,7 @@ const CarouselComponent = () => {
           <div>
             <Videoslider />
           </div>
-          {/* <div className="notification">
+          <div className="notification">
             <img
               src="/notification-icon.png"
               alt="Notification Icon"
@@ -57,7 +67,10 @@ const CarouselComponent = () => {
                   </div>
                 ))}
             </div>
-          </div> */}
+            <button className="read-more" onClick={handleReadMoreClick}>
+            More
+            </button>{" "}
+          </div>
         </div>
       </div>
     </div>
