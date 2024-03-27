@@ -23,7 +23,7 @@ const CarouselComponent = () => {
           <div>
             <Videoslider />
           </div>
-          <div className="notification">
+          {/* <div className="notification">
             <img
               src="/notification-icon.png"
               alt="Notification Icon"
@@ -57,7 +57,7 @@ const CarouselComponent = () => {
                   </div>
                 ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
