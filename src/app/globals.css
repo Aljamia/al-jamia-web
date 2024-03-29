@@ -854,9 +854,9 @@ img {
   border-radius: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top:8px;
-  padding-bottom:8px;
-  color:#ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #ffffff;
   box-shadow: #b3d3a4 0 10px 20px -10px;
   font-family: unset;
   opacity: 1;
@@ -865,12 +865,12 @@ img {
   background: #01a226;
   border-radius: 999px;
   box-shadow: #407029 0 10px 20px -10px;
-} 
+}
 .notification {
   position: absolute;
-  top:70%;
-  left:50%;
-  transform:translate(-50%);
+  top: 165%;
+  left: 50%;
+  transform: translate(-50%);
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -879,9 +879,9 @@ img {
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: #fff;
-  width:75%;
-  height:300px;
-  border-radius:10px;
+  width: 75%;
+  height: 150px;
+  border-radius: 10px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
   padding: 20px;
   cursor: pointer;
@@ -890,29 +890,40 @@ img {
   position: relative;
   z-index: 0;
 }
-.rowise {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  overflow-y: scroll;
-  max-height: 240px;
-}
-.notifi-box{
+  .rowise {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+.notifi-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:45%;
-  text-align:center;
-  padding: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
 }
 .notifi-box a {
   color: #619a46;
   font-size: 18px;
 }
+.read-more {
+  width: auto;
+  height: auto;
+  align-self: flex-end;
+  border-radius: 10px;
+  border: 1px solid #619a46;
+  padding: 2px 10px 2px 10px;
+  color: #619a46;
+  background-color: transparent;
+  font-size: 14px;
+}
+.read-more:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
 .detail-box {
-  color:rgb(158, 157, 157) !important;
+  color: rgb(158, 157, 157) !important; 
   font-size: 14px;
 }
 .notification-icon {
@@ -921,6 +932,9 @@ img {
   left: -40px;
   width: 90px;
   height: 90px;
+}
+.image-aboutUs {
+  margin-top: 100px;
 }
 @media (max-width: 768px) {
   .faculties-cardmodal-title {
@@ -1020,7 +1034,7 @@ img {
   margin: 0px 0px 20px;
   transition: 0.5s;
 }
-.card img{
+.card img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -1414,10 +1428,21 @@ h3 {
   }
   .notification {
     height: 100px;
-    padding:10px;
+    padding: 10px;
+    top:120%;
+  }
+  .notification-icon {
+    top: -25px;
+    left: -25px;
+    width: 60px;
+    height: 60px;
   }
   .notifi-box a {
     font-size: 14px;
+  }
+  .read-more {
+    padding: 2px 8px 2px 8px;
+    font-size: 12px;
   }
   .detail-box {
     font-size: 10px;
@@ -1886,7 +1911,7 @@ h3 {
   font-size: 2rem;
 }
 .title-head {
-  margin-top:160px;
+  margin-top: 160px;
 }
 .library {
   margin-top: 2rem;
@@ -2810,9 +2835,9 @@ h3 {
   .about-Title {
     margin-top: 3rem;
   }
-.title-head {
-  margin-top: 90px !important;
-}
+  .title-head {
+    margin-top: 130px !important;
+  }
   .work_box {
     padding-top: 2rem;
   }
