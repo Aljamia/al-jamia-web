@@ -9,8 +9,8 @@ import Image from "next/image";
 
 const About = () => {
   const [aboutdata, setAboutData] = useState({});
-  const [notificationData, setNotificationData] = useState({});
-
+   const [notificationData, setNotificationData] = useState({});
+  
   useEffect(() => {
     const fetchNotification = async () => {
       const data = await getNotification();
@@ -24,7 +24,7 @@ const About = () => {
     if (rowiseElement) {
       rowiseElement.scroll({
         top: rowiseElement.scrollHeight,
-        behavior: "smooth",
+        behavior: "smooth"
       });
     }
   };
@@ -83,12 +83,13 @@ const About = () => {
           </Link>
         </div>
         <div className="notification-container">
-          <img
-            src="/notification-icon.png"
-            alt="Notification Icon"
-            className="notification-icon"
-          />
-          <div className="notification">
+        <img
+              src="/notification-icon.png"
+              alt="Notification Icon"
+              className="notification-icon"
+            />
+        <div className="notification">
+         
             <div className="rowise">
               {notificationData &&
                 Array.isArray(notificationData) &&
@@ -118,10 +119,10 @@ const About = () => {
                 ))}
             </div>
             <button className="read-more" onClick={handleReadMoreClick}>
-              More
+            More
             </button>{" "}
           </div>
-        </div>
+          </div>
         <div className="image">
           <Image
             unoptimized={true}
