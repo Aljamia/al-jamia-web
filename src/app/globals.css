@@ -868,7 +868,7 @@ img {
 }
 .notification {
   position: absolute;
-  top: 90%;
+  top: 165%;
   left: 50%;
   transform: translate(-50%);
   z-index: 1;
@@ -932,6 +932,9 @@ img {
   left: -40px;
   width: 90px;
   height: 90px;
+}
+.image-aboutUs {
+  margin-top: 100px;
 }
 @media (max-width: 768px) {
   .faculties-cardmodal-title {
@@ -1426,6 +1429,7 @@ h3 {
   .notification {
     height: 100px;
     padding: 10px;
+    top:120%;
   }
   .notification-icon {
     top: -25px;

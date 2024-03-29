@@ -4,10 +4,30 @@ import "./About.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { getAboutUs } from "@/app/hooks/UseApi";
+import { getNotification } from "@/app/hooks/UseApi";
 import Image from "next/image";
 
 const About = () => {
   const [aboutdata, setAboutData] = useState({});
+  const [notificationData, setNotificationData] = useState({});
+  
+  useEffect(() => {
+    const fetchNotification = async () => {
+      const data = await getNotification();
+      setNotificationData(data?.response);
+    };
+    fetchNotification();
+  }, []);
+
+  const handleReadMoreClick = () => {
+    const rowiseElement = document.querySelector(".rowise");
+    if (rowiseElement) {
+      rowiseElement.scroll({
+        top: rowiseElement.scrollHeight,
+        behavior: "smooth"
+      });
+    }
+  };
 
   useEffect(() => {
     const fetchAboutus = async () => {
@@ -26,7 +46,7 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <div className="container">
-          <div className="about-Title title-head">
+          <div className="about-Title">
             <h1 className="pt-1">Welcome to Al Jamia Al Islamiya</h1>
           </div>
           <div className="about-description">
@@ -34,7 +54,6 @@ const About = () => {
           </div>
         </div>
       </motion.container>
-
       <div className="school-img">
         <div className="btn">
           <Link href="https://www.aljamiaworldcampus.net/" target="_blank">
@@ -63,7 +82,45 @@ const About = () => {
             </motion.button>
           </Link>
         </div>
-        <div className="image">
+        <div className="notification">
+            <img
+              src="/notification-icon.png"
+              alt="Notification Icon"
+              className="notification-icon"
+            />
+            <div className="rowise">
+              {notificationData &&
+                Array.isArray(notificationData) &&
+                notificationData.map((notification) => (
+                  <div key={notification._id} className="notifi-box">
+                    <a
+                      href={notification.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {notification.title}
+                    </a>
+                    <div className="detail-box">
+                      {new Date(notification?.createdAt).toLocaleString(
+                        "en-US",
+                        {
+                          month: "long",
+                          day: "numeric",
+                          year: "numeric",
+                          hour: "numeric",
+                          minute: "numeric",
+                          hour12: true,
+                        }
+                      )}
+                    </div>
+                  </div>
+                ))}
+            </div>
+            <button className="read-more" onClick={handleReadMoreClick}>
+            More
+            </button>{" "}
+          </div>
+        <div className="image-aboutUs">
           <Image
             unoptimized={true}
             unselectable={true}
