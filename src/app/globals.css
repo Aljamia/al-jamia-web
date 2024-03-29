@@ -866,11 +866,12 @@ img {
   border-radius: 999px;
   box-shadow: #407029 0 10px 20px -10px;
 }
+.notification-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .notification {
-  position: absolute;
-  top: 165%;
-  left: 50%;
-  transform: translate(-50%);
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -880,7 +881,7 @@ img {
   margin-bottom: 50px;
   background-color: #fff;
   width: 75%;
-  height: 150px;
+  max-height: 320px;
   border-radius: 10px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
   padding: 20px;
@@ -890,11 +891,11 @@ img {
   position: relative;
   z-index: 0;
 }
-  .rowise {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-  }
+.rowise {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
 .notifi-box {
   display: flex;
   flex-direction: column;
@@ -923,18 +924,16 @@ img {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
 }
 .detail-box {
-  color: rgb(158, 157, 157) !important; 
+  color: rgb(158, 157, 157) !important;
   font-size: 14px;
 }
 .notification-icon {
   position: absolute;
-  top: -40px;
-  left: -40px;
+  top: 10px;
+  left: 100px;
   width: 90px;
   height: 90px;
-}
-.image-aboutUs {
-  margin-top: 100px;
+  z-index: 2;
 }
 @media (max-width: 768px) {
   .faculties-cardmodal-title {
@@ -1427,13 +1426,13 @@ h3 {
     border-radius: 4px 4px 0 0;
   }
   .notification {
-    height: 100px;
+    max-height: 310px;
     padding: 10px;
-    top:120%;
+    top: 120%;
   }
   .notification-icon {
-    top: -25px;
-    left: -25px;
+    top: 15px;
+    left: 25px;
     width: 60px;
     height: 60px;
   }
