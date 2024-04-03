@@ -5,12 +5,15 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { getAboutUs } from "@/app/hooks/UseApi";
 import { getNotification } from "@/app/hooks/UseApi";
+import { getBanner } from "@/app/hooks/UseApi";
 import Image from "next/image";
+import CustomSlider from "../customSlider/CustomSlider";
 
 const About = () => {
   const [aboutdata, setAboutData] = useState({});
-   const [notificationData, setNotificationData] = useState({});
-  
+  //  const [notificationData, setNotificationData] = useState({});
+  const [bannerData, setBannerData] = useState([]);
+
   useEffect(() => {
     const fetchNotification = async () => {
       const data = await getNotification();
@@ -19,22 +22,29 @@ const About = () => {
     fetchNotification();
   }, []);
 
-  const handleReadMoreClick = () => {
-    const rowiseElement = document.querySelector(".rowise");
-    if (rowiseElement) {
-      rowiseElement.scroll({
-        top: rowiseElement.scrollHeight,
-        behavior: "smooth"
-      });
-    }
-  };
+  useEffect(() => {
+    const fetchBanner = async () => {
+      const data = await getBanner();
+      setBannerData(data?.response);
+    };
+    fetchBanner();
+  }, []);
+
+  // const handleReadMoreClick = () => {
+  //   const rowiseElement = document.querySelector(".rowise");
+  //   if (rowiseElement) {
+  //     rowiseElement.scroll({
+  //       top: rowiseElement.scrollHeight,
+  //       behavior: "smooth"
+  //     });
+  //   }
+  // };
 
   useEffect(() => {
     const fetchAboutus = async () => {
       const data = await getAboutUs();
       setAboutData(data?.response);
     };
-
     fetchAboutus();
   }, []);
 
@@ -82,7 +92,7 @@ const About = () => {
             </motion.button>
           </Link>
         </div>
-        <div className="notification-container">
+        {/* <div className="notification-container">
         <img
               src="/notification-icon.png"
               alt="Notification Icon"
@@ -122,17 +132,31 @@ const About = () => {
             More
             </button>{" "}
           </div>
-          </div>
+          </div> */}
         <div className="image">
-          <Image
-            unoptimized={true}
-            unselectable={true}
-            src="banner/aljamia.png"
-            alt="photo"
-            width={1000}
-            height={100}
-            style={{ width: "100%", height: "auto" }}
-          />
+          <CustomSlider>
+            {bannerData.map((event, index) => (
+              <a
+                key={index}
+                href={event.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div>
+                  <Image
+                    unoptimized={true}
+                    unselectable={true}
+                    src={`https://event-manager.syd1.cdn.digitaloceanspaces.com/${event.image}`}
+                    alt="photo"
+                    width={1000}
+                    height={100}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </div>
+                <div className="event_slider_title"></div>
+              </a>
+            ))}
+          </CustomSlider>
         </div>
       </div>
     </div>
