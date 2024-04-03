@@ -125,3 +125,8 @@ export const getEvents = async () => {
   const response = await axios.get(`${BASE_URL}/events`);
   return response.data;
 };
+
+export const getBanner = async () => {
+  const response = await axios.get(`${BASE_URL}/banner`);
+  return response.data;
+};
